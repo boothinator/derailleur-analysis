@@ -22,7 +22,6 @@ with open(input_file, newline='') as csvfile:
 
 header = data[0]
 data = data[1:]
-#data = data[7:50]
 
 # Convert to numbers
 for row in data:
@@ -99,10 +98,17 @@ result = np.polynomial.Polynomial.fit(cable_pull, jockey_position, 3)
 x_new = np.linspace(cable_pull[0], cable_pull[-1], 50)
 y_new = result(x_new)
 
-print(result.coef)
+print(result.convert().coef)
 
 plt.plot(cable_pull,jockey_position,'o', x_new, y_new)
 plt.xlim([cable_pull[0]-1, cable_pull[-1] + 1 ])
 plt.show()
+
+starting_pull = 4
+ending_pull = 32
+
+pull_ratio = (result(ending_pull) - result(starting_pull))/(ending_pull - starting_pull)
+
+print(pull_ratio)
 
 print("done")
