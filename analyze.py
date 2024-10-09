@@ -104,6 +104,8 @@ y_new = result(x_new)
 
 print(result.convert().coef)
 
+# TODO: make this automatic, and make it work across different runs
+# In fact, I really need to write the code for combining runs
 starting_pull = 4
 ending_pull = 32
 
