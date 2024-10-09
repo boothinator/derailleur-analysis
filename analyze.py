@@ -73,7 +73,7 @@ jockey_position_diffs = jockey_position[1:] - jockey_position[:-1]
 average_jockey_position_diff = np.mean(jockey_position_diffs)
 
 low_outlier_cutoff = average_jockey_position_diff * 0.8
-high_outlier_cutoff = average_jockey_position_diff * 0.5
+high_outlier_cutoff = average_jockey_position_diff * 0.4
 
 low_cutoff_index = 0
 
