@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 input_file = 'Campagnolo Ekar 13-Speed Derailleur Ratio - 10_6 11_05 AM Pulling.csv'
+#input_file = 'Campagnolo Ekar 13-Speed Derailleur Ratio - 10_6 3_38 pm Relaxing.csv'
 
 data = []
 
@@ -30,7 +31,6 @@ for row in data:
       row[key] = 0
     else:
       row[key] = float(row[key])
-
 
 # Calculate additional columns
 
@@ -62,20 +62,23 @@ for row in data:
   prev_row = row
 
 # Get cable pull and jockey position data
-cable_pull = np.array([d["Cable Pull (mm)"] for d in data])
-jockey_position = np.array([d["Jockey Position (mm)"] for d in data])
+cable_pull = np.sort(np.array([d["Cable Pull (mm)"] for d in data]))
+jockey_position = np.sort(np.array([d["Jockey Position (mm)"] for d in data]))
+
+jockey_position = jockey_position - jockey_position.min() + jockey_wheel_center_at_full_slack
 
 # Outliers
 jockey_position_diffs = jockey_position[1:] - jockey_position[:-1]
 
 average_jockey_position_diff = np.mean(jockey_position_diffs)
 
-outlier_cutoff = average_jockey_position_diff * 0.8
+low_outlier_cutoff = average_jockey_position_diff * 0.8
+high_outlier_cutoff = average_jockey_position_diff * 0.5
 
 low_cutoff_index = 0
 
 for (i,d) in enumerate(jockey_position_diffs):
-  if d < outlier_cutoff:
+  if d < low_outlier_cutoff:
     low_cutoff_index = i
   else:
     break
@@ -83,7 +86,7 @@ for (i,d) in enumerate(jockey_position_diffs):
 high_cutoff_index = len(jockey_position)
 
 for (i,d) in reversed([e for e in enumerate(jockey_position_diffs)]):
-  if d < outlier_cutoff:
+  if d < high_outlier_cutoff:
     high_cutoff_index = i + 2
   else:
     break
@@ -100,15 +103,15 @@ y_new = result(x_new)
 
 print(result.convert().coef)
 
-plt.plot(cable_pull,jockey_position,'o', x_new, y_new)
-plt.xlim([cable_pull[0]-1, cable_pull[-1] + 1 ])
-plt.show()
-
 starting_pull = 4
 ending_pull = 32
 
 pull_ratio = (result(ending_pull) - result(starting_pull))/(ending_pull - starting_pull)
 
 print(pull_ratio)
+
+plt.plot(cable_pull,jockey_position,'o', x_new, y_new)
+plt.xlim([cable_pull[0]-1, cable_pull[-1] + 1 ])
+plt.show()
 
 print("done")
