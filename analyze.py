@@ -62,10 +62,10 @@ for row in data:
   prev_row = row
 
 # Get cable pull and jockey position data
-cable_pull = np.sort(np.array([d["Cable Pull (mm)"] for d in data]))
+cable_pull_raw = cable_pull = np.sort(np.array([d["Cable Pull (mm)"] for d in data]))
 jockey_position = np.sort(np.array([d["Jockey Position (mm)"] for d in data]))
 
-jockey_position = jockey_position - jockey_position.min() + jockey_wheel_center_at_full_slack
+jockey_position_raw = jockey_position = jockey_position - jockey_position.min() + jockey_wheel_center_at_full_slack
 
 # Outliers
 jockey_position_diffs = jockey_position[1:] - jockey_position[:-1]
@@ -73,7 +73,7 @@ jockey_position_diffs = jockey_position[1:] - jockey_position[:-1]
 average_jockey_position_diff = np.mean(jockey_position_diffs)
 
 low_outlier_cutoff = average_jockey_position_diff * 0.8
-high_outlier_cutoff = average_jockey_position_diff * 0.4
+high_outlier_cutoff = average_jockey_position_diff * 0.6
 
 low_cutoff_index = 0
 
@@ -95,6 +95,7 @@ cable_pull = cable_pull[low_cutoff_index:high_cutoff_index]
 jockey_position = jockey_position[low_cutoff_index:high_cutoff_index]
 
 # Adjust cable pull start
+cable_pull_raw = cable_pull_raw - cable_pull.min()
 cable_pull = cable_pull - cable_pull.min()
 
 result = np.polynomial.Polynomial.fit(cable_pull, jockey_position, 3)
@@ -110,8 +111,8 @@ pull_ratio = (result(ending_pull) - result(starting_pull))/(ending_pull - starti
 
 print(pull_ratio)
 
-plt.plot(cable_pull,jockey_position,'o', x_new, y_new)
-plt.xlim([cable_pull[0]-1, cable_pull[-1] + 1 ])
+plt.plot(cable_pull_raw,jockey_position_raw,'o', x_new, y_new)
+plt.xlim([cable_pull_raw[0]-1, cable_pull_raw[-1] + 1 ])
 plt.show()
 
 print("done")
