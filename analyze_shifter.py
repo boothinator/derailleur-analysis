@@ -19,18 +19,27 @@ def analyze(input_file):
     for row in data[4:]
   ])
 
-  # TODO: normalize data and graph
+  # TODO: normalize data between runs
+  # todo: graph, diff between pulling and relaxing, average pulling, average relaxing
 
   # Calculate differences
   diffs = np.array([column[:-1] - column[1:] for column in measurement_data.T])
+
+  #TODO: diff between pulling and relaxing, average pulling, average relaxing, 95% confidence interval
 
   # Calculate averages
   clean_data = [[c for c in row if not math.isnan(c)] for row in diffs.T]
   averages = [np.mean(row) for row in clean_data]
   stdev = [np.std(row) for row in clean_data]
-  print(averages)
-  print(stdev)
+  print(len(averages[1:-1]))
+  print(averages[1:-1])
+  cable_pull = np.mean(averages[1:-1])
+
+  print(cable_pull)
+
+  # TODO: generate cable pull graph
   
+
   
 
 
