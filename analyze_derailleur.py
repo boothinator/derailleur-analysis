@@ -156,6 +156,7 @@ for dir in os.listdir('derailleurs'):
   dropout_width = (info["minDropoutWidth"] + info["maxDropoutWidth"])/2
   small_cog_offset = info["smallCogOffset"]
   small_cog_position = dropout_width + small_cog_offset
+  biggest_cog_position = small_cog_position + info["designCogPitch"] * (info["designSpeeds"] - 1)
   second_smallest_cog_position = info["designCogPitch"] + small_cog_position
 
   total_pitch_inner_cogs = info["designCogPitch"] * (info["designSpeeds"] - 3)
@@ -164,17 +165,21 @@ for dir in os.listdir('derailleurs'):
 
   curve = np.polynomial.polynomial.Polynomial(avg_coefs)
 
+  smallest_cog_pull = [r for r in (curve - small_cog_position).roots()
+                              if r >= 0 and r < max_pull][0]
+
   second_smallest_cog_pull = [r for r in (curve - second_smallest_cog_position).roots()
                               if r >= 0 and r < max_pull][0]
   
   second_biggest_cog_pull = [r for r in (curve - second_biggest_cog_position).roots()
                               if r >= 0 and r < max_pull][0]
 
+  biggest_cog_pull = [r for r in (curve - biggest_cog_position).roots()
+                              if r >= 0 and r < max_pull][0]
+
   pull_ratio = total_pitch_inner_cogs/(second_biggest_cog_pull - second_smallest_cog_pull)
   print(pull_ratio)
 
-  x_new = np.linspace(0, max_pull, 50)
-  y_new = curve(x_new)
 
   info_out = {**info,
               "pullRatio": pull_ratio,
@@ -186,8 +191,27 @@ for dir in os.listdir('derailleurs'):
   with open(f"derailleurs/{dir}/info_out.json", "w") as info_file:
     json.dump(info_out, info_file, indent=2)
   
+  x_new = np.linspace(0, max_pull, 50)
+  y_new = curve(x_new)
+  
   plt.clf()
   plt.plot(x_new, y_new)
   plt.xlim([0, max_pull])
   plt.ylim([0, curve(max_pull) + 10])
+  plt.savefig(f"derailleurs/{dir}/pull_curve.png")
+  
+  pull_ratio_curve = curve.deriv(1)
+  x_new = np.linspace(0, max_pull, 50)
+  y_new = pull_ratio_curve(x_new)
+
+  x_pr = [smallest_cog_pull, biggest_cog_pull]
+  y_pr = [pull_ratio, pull_ratio]
+
+  x_cogs = [second_smallest_cog_pull, second_biggest_cog_pull]
+  y_cogs = [pull_ratio, pull_ratio]
+  
+  plt.clf()
+  plt.plot(x_new, y_new, x_pr, y_pr, x_cogs, y_cogs, "o")
+  plt.xlim([0, max_pull])
+  plt.ylim([0, pull_ratio*1.4])
   plt.savefig(f"derailleurs/{dir}/pull_ratio_curve.png")
