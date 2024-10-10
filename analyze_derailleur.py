@@ -171,11 +171,11 @@ for dir in os.listdir('derailleurs'):
   pull_ratio = total_pitch_inner_cogs/(second_biggest_cog_pull - second_smallest_cog_pull)
   print(pull_ratio)
 
-  x_new = np.linspace(-100, 100, 50)
+  x_new = np.linspace(0, max_pull, 50)
   y_new = curve(x_new)
   
   plt.clf()
   plt.plot(x_new, y_new)
   plt.xlim([0, max_pull])
-  plt.ylim([0, curve(max_pull) + 1])
+  plt.ylim([0, curve(max_pull) + 10])
   plt.show()
