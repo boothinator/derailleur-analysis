@@ -5,5 +5,15 @@
   "designSpeeds": 13,
   "designCogPitch": 3.3,
   "distanceFromCarriageToJockeyWheel": 36.52,
-  "jockeyWheelThickness": 1.75
+  "jockeyWheelThickness": 1.75,
+  "minDropoutWidth": 10.2,
+  "maxDropoutWidth": 12.2,
+  "smallCogOffset": 2.2,
+  "pullRatio": 1.2610989547101656,
+  "coef": [
+    10.53397260009244,
+    1.2072779666261344,
+    0.013384695542140407,
+    -0.0003748554592123232
+  ]
 }

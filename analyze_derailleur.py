@@ -151,8 +151,10 @@ for dir in os.listdir('derailleurs'):
 
   avg_coefs = np.mean(coefs.T, 1)
 
-  dropout_width = 12
-  small_cog_offset = 2.2
+  # Calculate pull ratio
+
+  dropout_width = (info["minDropoutWidth"] + info["maxDropoutWidth"])/2
+  small_cog_offset = info["smallCogOffset"]
   small_cog_position = dropout_width + small_cog_offset
   second_smallest_cog_position = info["designCogPitch"] + small_cog_position
 
@@ -173,9 +175,17 @@ for dir in os.listdir('derailleurs'):
 
   x_new = np.linspace(0, max_pull, 50)
   y_new = curve(x_new)
+
+  info_out = {**info,
+              "pullRatio": pull_ratio,
+              "coef": [c for c in avg_coefs]
+              }
+  
+  with open(f"derailleurs/{dir}/info.json", "w") as info_file:
+    json.dump(info_out, info_file, indent=2)
   
   plt.clf()
   plt.plot(x_new, y_new)
   plt.xlim([0, max_pull])
   plt.ylim([0, curve(max_pull) + 10])
-  plt.show()
+  plt.savefig(f"derailleurs/{dir}/pull_ratio_curve.png")
