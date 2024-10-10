@@ -38,6 +38,11 @@ def analyze(input_file):
   print(cable_pull)
 
   # TODO: generate cable pull graph
+
+  return {
+    "shifts": averages,
+    "cablePull": cable_pull
+  }
   
 
   
@@ -48,3 +53,11 @@ for dir in os.listdir('shifters'):
     info = json.load(info_file)
   
   result = analyze(f"shifters/{dir}/measurements.csv")
+
+  info_out = {
+    **info,
+    **result
+  }
+  
+  with open(f"shifters/{dir}/info_out.json", "w") as info_file:
+    json.dump(info_out, info_file, indent=2)
