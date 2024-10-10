@@ -178,10 +178,12 @@ for dir in os.listdir('derailleurs'):
 
   info_out = {**info,
               "pullRatio": pull_ratio,
-              "coef": [c for c in avg_coefs]
+              "coef": [c for c in avg_coefs],
+              "minPosition": curve(0),
+              "maxPosition": curve(max_pull)
               }
   
-  with open(f"derailleurs/{dir}/info.json", "w") as info_file:
+  with open(f"derailleurs/{dir}/info_out.json", "w") as info_file:
     json.dump(info_out, info_file, indent=2)
   
   plt.clf()

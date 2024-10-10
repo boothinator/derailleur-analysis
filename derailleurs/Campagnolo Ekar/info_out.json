@@ -12,5 +12,14 @@
   "oneByOnly": true,
   "chain": "Campagnolo C13",
   "maxTooth": 44,
-  "chainWrap": 35
+  "chainWrap": 35,
+  "pullRatio": 1.2610989547101656,
+  "coef": [
+    10.53397260009244,
+    1.2072779666261344,
+    0.013384695542140407,
+    -0.0003748554592123232
+  ],
+  "minPosition": 10.53397260009244,
+  "maxPosition": 55.59443424396477
 }
