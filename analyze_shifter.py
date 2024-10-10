@@ -29,6 +29,7 @@ def analyze(input_file):
   averages = [np.mean(row) for row in clean_data]
   stdev = [np.std(row) for row in clean_data]
   print(averages)
+  print(stdev)
   
   
 
