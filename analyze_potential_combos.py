@@ -36,6 +36,7 @@ for shifter in shifters:
 
       distFromMotionMultiplierAvg = abs(multiplier - motion_multiplier_avg)
 
+      # Confidence = how close to the center of the normal distribution are we?
       confidence = 1 - norm.cdf(distFromMotionMultiplierAvg, scale=motion_multiplier_stdev) \
                    + norm.cdf(-distFromMotionMultiplierAvg, scale=motion_multiplier_stdev)
 
