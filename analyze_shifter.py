@@ -40,7 +40,7 @@ def analyze(input_file):
   # TODO: generate cable pull graph
 
   return {
-    "shifts": averages,
+    "shiftSpacings": averages,
     "cablePull": cable_pull
   }
   

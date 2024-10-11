@@ -2,8 +2,8 @@
   "brand": "Campagnolo",
   "series": "Ekar",
   "partNumber": "EP21-EKD13-R4",
-  "designSpeeds": 13,
-  "shifts": [
+  "speeds": 13,
+  "shiftSpacings": [
     2.8699999999999974,
     2.3450000000000006,
     2.5966666666666676,
