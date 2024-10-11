@@ -1,0 +1,67 @@
+[
+  {
+    "brand": "SRAM",
+    "name": "Apex 1 11-speed",
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettePartNumber": "sram-11-speed"
+  },
+  {
+    "brand": "SRAM",
+    "name": "GX 10-speed",
+    "shifterPartNumber": "SL-GX-A1",
+    "derailleurPartNumber": "RD-GX-T21-A1",
+    "cassettePartNumber": "CS-PG-1050-A1"
+  },
+  {
+    "brand": "Shimano",
+    "name": "CUES 9-speed",
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-LG300-9"
+  },
+  {
+    "brand": "SRAM",
+    "name": "SRAM SX Eagle 12-speed",
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "CS-PG-1210-A1"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Deore 11-speed",
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "shimano-11-speed"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Deore 10-speed",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-M4120",
+    "cassetteBrand": "Generic",
+    "cassettePartNumber": "generic-10-speed"
+  },
+  {
+    "brand": "Shimano",
+    "name": "GRX 10-speed",
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-RX400",
+    "cassetteBrand": "Generic",
+    "cassettePartNumber": "generic-10-speed"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Ultegra RX 11-speed",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-RX800",
+    "cassettePartNumber": "shimano-11-speed"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Ultegra/105 11-speed",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-5800",
+    "cassettePartNumber": "shimano-11-speed"
+  }
+]

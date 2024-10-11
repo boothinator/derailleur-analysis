@@ -46,7 +46,7 @@
   {
     "name": "Eagle 11-50 12-Speed",
     "brand": "SRAM",
-    "partNumber": "PG1210",
+    "partNumber": "CS-PG-1210-A1",
     "speeds": 12,
     "standard": "12-speed SRAM",
     "pitches": [ 3.88, 3.8, 3.65, 3.65, 3.65, 3.65, 3.65, 3.65, 3.45, 3.7, 3.94 ],
