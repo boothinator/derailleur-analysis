@@ -15,8 +15,6 @@ with open(f"compatibility_ranges.json") as f:
 
 motion_multiplier_avg = compatibility_ranges["motionMultiplierAvg"]
 motion_multiplier_stdev = compatibility_ranges["motionMultiplierStdev"]
-motion_multiplier_min = compatibility_ranges["motionMultiplierMin"]
-motion_multiplier_max = compatibility_ranges["motionMultiplierMax"]
 
 potential_combos = []
 extra_gear_potential_combos = []
