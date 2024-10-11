@@ -50,7 +50,11 @@ for shifter in shifters:
           brand = "Mixed"
         
         if shifter['name'] == derailleur['name']:
-          name = f"{shifter['name']}/{cassette['name']}"
+          if cassette['brand'] == shifter['brand']:
+            name = shifter['name']
+          else:
+            name = f"{shifter['name']}/{cassette['name']}"
+
         else:
           name = f"{shifter['name']}/{derailleur['name']}/{cassette['name']}"
 
