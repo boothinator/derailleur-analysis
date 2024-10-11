@@ -1,0 +1,562 @@
+[
+  {
+    "brand": "Mixed",
+    "name": "Apex 1 11-Speed Apex 1 11-Speed 11-speed road",
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.9850198556512642
+  },
+  {
+    "brand": "SRAM",
+    "name": "Apex 1 11-Speed GX 10-Speed 11-speed road",
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD-GX-T21-A1",
+    "cassettePartNumber": "sram-11-speed",
+    "confidence": 0.08074409611386904
+  },
+  {
+    "brand": "Mixed",
+    "name": "Apex 1 11-Speed GX 10-Speed 11-speed road",
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD-GX-T21-A1",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.1726304585361969
+  },
+  {
+    "brand": "Mixed",
+    "name": "Apex 1 11-Speed GX 10-Speed 10-Speed",
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD-GX-T21-A1",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.2353205889612297
+  },
+  {
+    "brand": "Mixed",
+    "name": "Apex 1 11-Speed GX 10-Speed 10-Speed",
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD-GX-T21-A1",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.18874776825915696
+  },
+  {
+    "brand": "Mixed",
+    "name": "GX 10-Speed Apex 1 11-Speed 10-Speed",
+    "shifterPartNumber": "SL-GX-A1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.5947904820954348
+  },
+  {
+    "brand": "Mixed",
+    "name": "GX 10-Speed Apex 1 11-Speed LinkGlide 9-Speed",
+    "shifterPartNumber": "SL-GX-A1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettePartNumber": "CS-LG300-9",
+    "confidence": 0.07335582215562542
+  },
+  {
+    "brand": "Mixed",
+    "name": "GX 10-Speed Apex 1 11-Speed 10-Speed",
+    "shifterPartNumber": "SL-GX-A1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.5106812723943126
+  },
+  {
+    "brand": "SRAM",
+    "name": "GX 10-Speed Apex 1 11-Speed 10-Speed",
+    "shifterPartNumber": "SL-GX-A1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 0.07335582215562542
+  },
+  {
+    "brand": "Mixed",
+    "name": "GX 10-Speed GX 10-Speed 10-Speed",
+    "shifterPartNumber": "SL-GX-A1",
+    "derailleurPartNumber": "RD-GX-T21-A1",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.40756763775240495
+  },
+  {
+    "brand": "Mixed",
+    "name": "GX 10-Speed GX 10-Speed LinkGlide 9-Speed",
+    "shifterPartNumber": "SL-GX-A1",
+    "derailleurPartNumber": "RD-GX-T21-A1",
+    "cassettePartNumber": "CS-LG300-9",
+    "confidence": 0.6920391273665154
+  },
+  {
+    "brand": "Mixed",
+    "name": "GX 10-Speed GX 10-Speed 10-Speed",
+    "shifterPartNumber": "SL-GX-A1",
+    "derailleurPartNumber": "RD-GX-T21-A1",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.4803407932741592
+  },
+  {
+    "brand": "Mixed",
+    "name": "CUES 9-Speed SX 12-Speed LinkGlide 9-Speed",
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "CS-LG300-9",
+    "confidence": 0.9271876879000298
+  },
+  {
+    "brand": "Mixed",
+    "name": "SLX 12-Speed Apex 1 11-Speed LinkGlide 9-Speed",
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettePartNumber": "CS-LG300-9",
+    "confidence": 0.2128867903626721
+  },
+  {
+    "brand": "Mixed",
+    "name": "SLX 12-Speed Apex 1 11-Speed 10-Speed",
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 0.2128867903626721
+  },
+  {
+    "brand": "Mixed",
+    "name": "SLX 12-Speed CUES 9-Speed 11-speed road",
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "sram-11-speed",
+    "confidence": 0.4880886014462375
+  },
+  {
+    "brand": "Shimano",
+    "name": "SLX 12-Speed CUES 9-Speed 11-speed road",
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.2732485644291607
+  },
+  {
+    "brand": "Mixed",
+    "name": "SLX 12-Speed CUES 9-Speed Eagle 11-50 12-Speed",
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-PG-1210-A1",
+    "confidence": 0.8062593829869067
+  },
+  {
+    "brand": "Mixed",
+    "name": "SLX 12-Speed SX 12-Speed 11-speed road",
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "sram-11-speed",
+    "confidence": 0.2548235534594374
+  },
+  {
+    "brand": "Mixed",
+    "name": "SLX 12-Speed SX 12-Speed 11-speed road",
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.12245200928059125
+  },
+  {
+    "brand": "Mixed",
+    "name": "SLX 12-Speed SX 12-Speed Eagle 11-50 12-Speed",
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "CS-PG-1210-A1",
+    "confidence": 0.8479581312769979
+  },
+  {
+    "brand": "Mixed",
+    "name": "SX 12-Speed Apex 1 11-Speed LinkGlide 9-Speed",
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettePartNumber": "CS-LG300-9",
+    "confidence": 0.04708883660233028
+  },
+  {
+    "brand": "SRAM",
+    "name": "SX 12-Speed Apex 1 11-Speed 10-Speed",
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 0.04708883660233028
+  },
+  {
+    "brand": "Mixed",
+    "name": "SX 12-Speed CUES 9-Speed 11-speed road",
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "sram-11-speed",
+    "confidence": 0.9390971875726286
+  },
+  {
+    "brand": "Mixed",
+    "name": "SX 12-Speed CUES 9-Speed 11-speed road",
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.7492354600737074
+  },
+  {
+    "brand": "Mixed",
+    "name": "SX 12-Speed CUES 9-Speed Eagle 11-50 12-Speed",
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-PG-1210-A1",
+    "confidence": 0.3170557435314627
+  },
+  {
+    "brand": "SRAM",
+    "name": "SX 12-Speed SX 12-Speed 11-speed road",
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "sram-11-speed",
+    "confidence": 0.7172908995012452
+  },
+  {
+    "brand": "Mixed",
+    "name": "SX 12-Speed SX 12-Speed 11-speed road",
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.44625683581038844
+  },
+  {
+    "brand": "Mixed",
+    "name": "SX 12-Speed Deore 11-Speed Eagle 11-50 12-Speed",
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "CS-PG-1210-A1",
+    "confidence": 0.13053799762970403
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 10-Speed CUES 9-Speed 10-Speed",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.5245544569216465
+  },
+  {
+    "brand": "Shimano",
+    "name": "Deore 10-Speed CUES 9-Speed LinkGlide 9-Speed",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-LG300-9",
+    "confidence": 0.5533236243994755
+  },
+  {
+    "brand": "Shimano",
+    "name": "Deore 10-Speed CUES 9-Speed 10-Speed",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.6076520929782454
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 10-Speed CUES 9-Speed 10-Speed",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 0.5533236243994755
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 10-Speed SX 12-Speed 10-Speed",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.8392494773510053
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 10-Speed SX 12-Speed LinkGlide 9-Speed",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "CS-LG300-9",
+    "confidence": 0.2996200665004109
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 10-Speed SX 12-Speed 10-Speed",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.9371572041848852
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 10-Speed SX 12-Speed 10-Speed",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 0.2996200665004109
+  },
+  {
+    "brand": "Mixed",
+    "name": "Ultegra 10-Speed Ultegra 9-Speed 10-Speed",
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-6500",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.04582008268900871
+  },
+  {
+    "brand": "Mixed",
+    "name": "Ultegra 10-Speed Tiagra 10-Speed 10-Speed",
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-4601-SS",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.09788409809599036
+  },
+  {
+    "brand": "Shimano",
+    "name": "Ultegra 10-Speed Tiagra 10-Speed 10-Speed",
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-4601-SS",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.07443774877029519
+  },
+  {
+    "brand": "Mixed",
+    "name": "Ultegra 11-Speed GRX 10-Speed 11-speed road",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-RX400",
+    "cassettePartNumber": "sram-11-speed",
+    "confidence": 0.2398645581115711
+  },
+  {
+    "brand": "Shimano",
+    "name": "Ultegra 11-Speed GRX 10-Speed 11-speed road",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-RX400",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.4306175123572975
+  },
+  {
+    "brand": "Mixed",
+    "name": "Ultegra 11-Speed GRX 10-Speed 10-Speed",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-RX400",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.07295193820031295
+  },
+  {
+    "brand": "Shimano",
+    "name": "Ultegra 11-Speed GRX 10-Speed 10-Speed",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-RX400",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.05458127690345087
+  },
+  {
+    "brand": "Mixed",
+    "name": "Ultegra 11-Speed Ultegra RX 11-Speed 10-Speed",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-RX800",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.4282354949356835
+  },
+  {
+    "brand": "Shimano",
+    "name": "Ultegra 11-Speed Ultegra RX 11-Speed 10-Speed",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-RX800",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.3582294512576272
+  },
+  {
+    "brand": "Shimano",
+    "name": "Ultegra 11-Speed Ultegra 9-Speed LinkGlide 9-Speed",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-6500",
+    "cassettePartNumber": "CS-LG300-9",
+    "confidence": 0.18504735042826614
+  },
+  {
+    "brand": "Mixed",
+    "name": "Ultegra 11-Speed Ultegra 9-Speed 10-Speed",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-6500",
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 0.18504735042826614
+  },
+  {
+    "brand": "Shimano",
+    "name": "Ultegra 11-Speed Tiagra 10-Speed LinkGlide 9-Speed",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-4601-SS",
+    "cassettePartNumber": "CS-LG300-9",
+    "confidence": 0.09996335742179113
+  },
+  {
+    "brand": "Mixed",
+    "name": "Ultegra 11-Speed Tiagra 10-Speed 10-Speed",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-4601-SS",
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 0.09996335742179113
+  },
+  {
+    "brand": "Mixed",
+    "name": "Ultegra 11-Speed 105 11-Speed 11-speed road",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-5800",
+    "cassettePartNumber": "sram-11-speed",
+    "confidence": 0.9139526966908849
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 11-Speed CUES 9-Speed 10-Speed",
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.6128389801534957
+  },
+  {
+    "brand": "Shimano",
+    "name": "Deore 11-Speed CUES 9-Speed LinkGlide 9-Speed",
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-LG300-9",
+    "confidence": 0.07771959959161316
+  },
+  {
+    "brand": "Shimano",
+    "name": "Deore 11-Speed CUES 9-Speed 10-Speed",
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.5274979638587494
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 11-Speed CUES 9-Speed 10-Speed",
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 0.07771959959161316
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 11-Speed SX 12-Speed 11-speed road",
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "sram-11-speed",
+    "confidence": 0.04888029881926184
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 11-Speed SX 12-Speed 11-speed road",
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.11209425996377437
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 11-Speed SX 12-Speed 10-Speed",
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.3422586767109533
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 11-Speed SX 12-Speed 10-Speed",
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.2816411430334058
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 11-Speed Deore 11-Speed 11-speed road",
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "sram-11-speed",
+    "confidence": 0.9579661052000707
+  },
+  {
+    "brand": "Mixed",
+    "name": "Advent X 10-Speed CUES 9-Speed 10-Speed",
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.14450149159843212
+  },
+  {
+    "brand": "Mixed",
+    "name": "Advent X 10-Speed CUES 9-Speed LinkGlide 9-Speed",
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-LG300-9",
+    "confidence": 0.8018634871809223
+  },
+  {
+    "brand": "Mixed",
+    "name": "Advent X 10-Speed CUES 9-Speed 10-Speed",
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.18076553506843496
+  },
+  {
+    "brand": "Mixed",
+    "name": "Advent X 10-Speed CUES 9-Speed 10-Speed",
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 0.8018634871809223
+  },
+  {
+    "brand": "Mixed",
+    "name": "Advent X 10-Speed SX 12-Speed 10-Speed",
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.3015611253041199
+  },
+  {
+    "brand": "Mixed",
+    "name": "Advent X 10-Speed SX 12-Speed LinkGlide 9-Speed",
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "CS-LG300-9",
+    "confidence": 0.8524510483037597
+  },
+  {
+    "brand": "Mixed",
+    "name": "Advent X 10-Speed SX 12-Speed 10-Speed",
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.3621989249173843
+  },
+  {
+    "brand": "Mixed",
+    "name": "Advent X 10-Speed SX 12-Speed 10-Speed",
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 0.8524510483037597
+  },
+  {
+    "brand": "Mixed",
+    "name": "Advent X 10-Speed Deore 11-Speed 10-Speed",
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.303309791695546
+  },
+  {
+    "brand": "Mixed",
+    "name": "Advent X 10-Speed Deore 11-Speed 10-Speed",
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.24748024467173457
+  }
+]

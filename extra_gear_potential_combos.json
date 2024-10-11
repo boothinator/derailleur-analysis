@@ -1,0 +1,194 @@
+[
+  {
+    "brand": "SRAM",
+    "name": "Apex 1 11-Speed Apex 1 11-Speed Eagle 11-50 12-Speed",
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettePartNumber": "CS-PG-1210-A1",
+    "confidence": 0.1835428151155844
+  },
+  {
+    "brand": "Mixed",
+    "name": "GX 10-Speed Apex 1 11-Speed 11-speed road",
+    "shifterPartNumber": "SL-GX-A1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.04708883660233144
+  },
+  {
+    "brand": "Mixed",
+    "name": "CUES 9-Speed CUES 9-Speed 10-Speed",
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.08410230080429953
+  },
+  {
+    "brand": "Shimano",
+    "name": "CUES 9-Speed CUES 9-Speed 10-Speed",
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.10800756910539942
+  },
+  {
+    "brand": "Mixed",
+    "name": "CUES 9-Speed CUES 9-Speed 10-Speed",
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 0.5989874309675587
+  },
+  {
+    "brand": "Mixed",
+    "name": "CUES 9-Speed SX 12-Speed 10-Speed",
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.19236374557567748
+  },
+  {
+    "brand": "Mixed",
+    "name": "CUES 9-Speed SX 12-Speed 10-Speed",
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.2370490554244738
+  },
+  {
+    "brand": "Mixed",
+    "name": "CUES 9-Speed SX 12-Speed 10-Speed",
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 0.9271876879000298
+  },
+  {
+    "brand": "Shimano",
+    "name": "CUES 9-Speed Deore 11-Speed 11-speed road",
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.07490220968630967
+  },
+  {
+    "brand": "Mixed",
+    "name": "CUES 9-Speed Deore 11-Speed 10-Speed",
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "generic-10-speed",
+    "confidence": 0.4549139694525261
+  },
+  {
+    "brand": "Shimano",
+    "name": "CUES 9-Speed Deore 11-Speed 10-Speed",
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "CS-HG-500-10",
+    "confidence": 0.38230160477218617
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 10-Speed Deore 11-Speed 11-speed road",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "sram-11-speed",
+    "confidence": 0.2804813938836621
+  },
+  {
+    "brand": "Shimano",
+    "name": "Deore 10-Speed Deore 11-Speed 11-speed road",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.48939357621981566
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 10-Speed Deore 11-Speed Eagle 11-50 12-Speed",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "CS-PG-1210-A1",
+    "confidence": 0.04720124442144605
+  },
+  {
+    "brand": "Mixed",
+    "name": "Ultegra 10-Speed Ultegra RX 11-Speed Eagle 11-50 12-Speed",
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-RX800",
+    "cassettePartNumber": "CS-PG-1210-A1",
+    "confidence": 0.14633228769508433
+  },
+  {
+    "brand": "Mixed",
+    "name": "Ultegra 10-Speed Ultegra 9-Speed 11-speed road",
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-6500",
+    "cassettePartNumber": "sram-11-speed",
+    "confidence": 0.3254680391895856
+  },
+  {
+    "brand": "Shimano",
+    "name": "Ultegra 10-Speed Ultegra 9-Speed 11-speed road",
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-6500",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.5521479548268808
+  },
+  {
+    "brand": "Mixed",
+    "name": "Ultegra 10-Speed Ultegra 9-Speed Eagle 11-50 12-Speed",
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-6500",
+    "cassettePartNumber": "CS-PG-1210-A1",
+    "confidence": 0.05871246210695262
+  },
+  {
+    "brand": "Mixed",
+    "name": "Ultegra 10-Speed Tiagra 10-Speed 11-speed road",
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-4601-SS",
+    "cassettePartNumber": "sram-11-speed",
+    "confidence": 0.19181591292527367
+  },
+  {
+    "brand": "Shimano",
+    "name": "Ultegra 10-Speed Tiagra 10-Speed 11-speed road",
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-4601-SS",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.35805186831047653
+  },
+  {
+    "brand": "Mixed",
+    "name": "Ultegra 11-Speed 105 11-Speed Eagle 11-50 12-Speed",
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-5800",
+    "cassettePartNumber": "CS-PG-1210-A1",
+    "confidence": 0.41247910639365815
+  },
+  {
+    "brand": "Mixed",
+    "name": "Deore 11-Speed Deore 11-Speed Eagle 11-50 12-Speed",
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "CS-PG-1210-A1",
+    "confidence": 0.3822024620697539
+  },
+  {
+    "brand": "Mixed",
+    "name": "Advent X 10-Speed Deore 11-Speed 11-speed road",
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "sram-11-speed",
+    "confidence": 0.0581424446936758
+  },
+  {
+    "brand": "Mixed",
+    "name": "Advent X 10-Speed Deore 11-Speed 11-speed road",
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettePartNumber": "shimano-11-speed",
+    "confidence": 0.13022043736827096
+  }
+]
