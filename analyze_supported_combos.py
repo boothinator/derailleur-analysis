@@ -33,10 +33,21 @@ for combo in supported_combos:
   names.append(f"{combo['name']}")
   motion_multipliers.append(motion_multiplier)
 
+  # TODO: calculate jockey positions and compare to cog positions, taking into account roller size
+
 motion_multiplier_avg = np.mean(motion_multipliers)
 motion_multiplier_stdev = np.std(motion_multipliers)
 motion_multiplier_min = motion_multiplier_avg - 2*motion_multiplier_stdev
 motion_multiplier_max = motion_multiplier_avg + 2*motion_multiplier_stdev
+
+# Validate that all supported combos are in range
+out_of_range = [supported_combos[i]["name"] for (i, mm) in enumerate(motion_multipliers)
+                if mm < motion_multiplier_min or motion_multiplier_max < mm]
+
+if len(out_of_range) > 0:
+  print("out of range: ", out_of_range)
+else:
+  print("All supported combos are in range")
 
 print(motion_multiplier_avg)
 print(motion_multiplier_min)
