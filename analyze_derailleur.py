@@ -182,9 +182,9 @@ for dir in os.listdir('derailleurs'):
 
   info_out = {**info,
               "pullRatio": pull_ratio,
-              "coef": [c for c in avg_coefs],
-              "minPosition": curve(0),
-              "maxPosition": curve(max_pull)
+              "coefficients": [c for c in avg_coefs],
+              "physicalLowLimit": curve(0),
+              "physicalHighLimit": curve(max_pull)
               }
   
   with open(f"derailleurs/{dir}/info_out.json", "w") as info_file:
