@@ -1,7 +1,7 @@
 [
   {
     "brand": "SRAM",
-    "name": "Apex 1 11-Speed/Eagle 11-50 12-Speed",
+    "name": "Apex 1 11-Speed",
     "shifterPartNumber": "SB-APX-B1",
     "derailleurPartNumber": "RD-APX-1-A1",
     "cassettePartNumber": "CS-PG-1210-A1",
@@ -25,7 +25,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "CUES 9-Speed/Shimano 10-Speed",
+    "name": "CUES 9-Speed",
     "shifterPartNumber": "SL-U4000",
     "derailleurPartNumber": "RD-U4020",
     "cassettePartNumber": "CS-HG-500-10",
