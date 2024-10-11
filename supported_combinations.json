@@ -22,7 +22,7 @@
   },
   {
     "brand": "SRAM",
-    "name": "SRAM SX Eagle 12-speed",
+    "name": "SX Eagle 12-speed",
     "shifterPartNumber": "SL-SX-1-A1",
     "derailleurPartNumber": "RD-SX-1-B1",
     "cassettePartNumber": "CS-PG-1210-A1"
@@ -39,14 +39,6 @@
     "name": "Deore 10-speed",
     "shifterPartNumber": "SL-M4100",
     "derailleurPartNumber": "RD-M4120",
-    "cassetteBrand": "Generic",
-    "cassettePartNumber": "generic-10-speed"
-  },
-  {
-    "brand": "Shimano",
-    "name": "GRX 10-speed",
-    "shifterPartNumber": "ST-6700",
-    "derailleurPartNumber": "RD-RX400",
     "cassetteBrand": "Generic",
     "cassettePartNumber": "generic-10-speed"
   },
