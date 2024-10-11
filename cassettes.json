@@ -1,6 +1,6 @@
 [
   {
-    "name": "11-speed road",
+    "name": "SRAM 11-speed road",
     "brand": "SRAM",
     "partNumber": "sram-11-speed",
     "speeds": 11,
@@ -11,7 +11,7 @@
     "source": "https://en.wikibooks.org/wiki/Bicycles/Maintenance_and_Repair/Gear-changing_Dimensions#Cog-set_Stack_Width"
   },
   {
-    "name": "11-speed road",
+    "name": "Shimano 11-speed road",
     "brand": "Shimano",
     "partNumber": "shimano-11-speed",
     "speeds": 11,
@@ -22,7 +22,7 @@
     "source": "https://en.wikibooks.org/wiki/Bicycles/Maintenance_and_Repair/Gear-changing_Dimensions#Cog-set_Stack_Width"
   },
   {
-    "name": "10-Speed",
+    "name": "Generic 10-Speed",
     "brand": "Generic",
     "partNumber": "generic-10-speed",
     "speeds": 10,
@@ -55,7 +55,7 @@
     "source": "https://docs.google.com/spreadsheets/d/1251cmc6JOUUULPyqbn2MrdiI40J8G2-B4L_jE3tlGA4/edit?usp=sharing"
   },
   {
-    "name": "10-Speed",
+    "name": "Shimano 10-Speed",
     "brand": "Shimano",
     "partNumber": "CS-HG-500-10",
     "speeds": 10,
@@ -66,7 +66,7 @@
     "source": "https://docs.google.com/spreadsheets/d/1rqV2qpU2hzQhhdejQ6YgvZV2T9zg580vXTBdCKbOJ8k/edit?usp=sharing"
   },
   {
-    "name": "10-Speed",
+    "name": "SRAM 10-Speed",
     "brand": "SRAM",
     "partNumber": "CS-PG-1050-A1",
     "speeds": 10,

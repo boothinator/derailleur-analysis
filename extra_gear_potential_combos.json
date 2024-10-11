@@ -1,7 +1,7 @@
 [
   {
     "brand": "SRAM",
-    "name": "Apex 1 11-Speed Apex 1 11-Speed Eagle 11-50 12-Speed",
+    "name": "Apex 1 11-Speed/Eagle 11-50 12-Speed",
     "shifterPartNumber": "SB-APX-B1",
     "derailleurPartNumber": "RD-APX-1-A1",
     "cassettePartNumber": "CS-PG-1210-A1",
@@ -9,7 +9,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "GX 10-Speed Apex 1 11-Speed 11-speed road",
+    "name": "GX 10-Speed/Apex 1 11-Speed/Shimano 11-speed road",
     "shifterPartNumber": "SL-GX-A1",
     "derailleurPartNumber": "RD-APX-1-A1",
     "cassettePartNumber": "shimano-11-speed",
@@ -17,7 +17,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "CUES 9-Speed CUES 9-Speed 10-Speed",
+    "name": "CUES 9-Speed/Generic 10-Speed",
     "shifterPartNumber": "SL-U4000",
     "derailleurPartNumber": "RD-U4020",
     "cassettePartNumber": "generic-10-speed",
@@ -25,7 +25,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "CUES 9-Speed CUES 9-Speed 10-Speed",
+    "name": "CUES 9-Speed/Shimano 10-Speed",
     "shifterPartNumber": "SL-U4000",
     "derailleurPartNumber": "RD-U4020",
     "cassettePartNumber": "CS-HG-500-10",
@@ -33,7 +33,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "CUES 9-Speed CUES 9-Speed 10-Speed",
+    "name": "CUES 9-Speed/SRAM 10-Speed",
     "shifterPartNumber": "SL-U4000",
     "derailleurPartNumber": "RD-U4020",
     "cassettePartNumber": "CS-PG-1050-A1",
@@ -41,7 +41,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "CUES 9-Speed SX 12-Speed 10-Speed",
+    "name": "CUES 9-Speed/SX 12-Speed/Generic 10-Speed",
     "shifterPartNumber": "SL-U4000",
     "derailleurPartNumber": "RD-SX-1-B1",
     "cassettePartNumber": "generic-10-speed",
@@ -49,7 +49,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "CUES 9-Speed SX 12-Speed 10-Speed",
+    "name": "CUES 9-Speed/SX 12-Speed/Shimano 10-Speed",
     "shifterPartNumber": "SL-U4000",
     "derailleurPartNumber": "RD-SX-1-B1",
     "cassettePartNumber": "CS-HG-500-10",
@@ -57,7 +57,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "CUES 9-Speed SX 12-Speed 10-Speed",
+    "name": "CUES 9-Speed/SX 12-Speed/SRAM 10-Speed",
     "shifterPartNumber": "SL-U4000",
     "derailleurPartNumber": "RD-SX-1-B1",
     "cassettePartNumber": "CS-PG-1050-A1",
@@ -65,7 +65,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "CUES 9-Speed Deore 11-Speed 11-speed road",
+    "name": "CUES 9-Speed/Deore 11-Speed/Shimano 11-speed road",
     "shifterPartNumber": "SL-U4000",
     "derailleurPartNumber": "RD-M4120",
     "cassettePartNumber": "shimano-11-speed",
@@ -73,7 +73,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "CUES 9-Speed Deore 11-Speed 10-Speed",
+    "name": "CUES 9-Speed/Deore 11-Speed/Generic 10-Speed",
     "shifterPartNumber": "SL-U4000",
     "derailleurPartNumber": "RD-M4120",
     "cassettePartNumber": "generic-10-speed",
@@ -81,7 +81,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "CUES 9-Speed Deore 11-Speed 10-Speed",
+    "name": "CUES 9-Speed/Deore 11-Speed/Shimano 10-Speed",
     "shifterPartNumber": "SL-U4000",
     "derailleurPartNumber": "RD-M4120",
     "cassettePartNumber": "CS-HG-500-10",
@@ -89,7 +89,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "Deore 10-Speed Deore 11-Speed 11-speed road",
+    "name": "Deore 10-Speed/Deore 11-Speed/SRAM 11-speed road",
     "shifterPartNumber": "SL-M4100",
     "derailleurPartNumber": "RD-M4120",
     "cassettePartNumber": "sram-11-speed",
@@ -97,7 +97,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Deore 10-Speed Deore 11-Speed 11-speed road",
+    "name": "Deore 10-Speed/Deore 11-Speed/Shimano 11-speed road",
     "shifterPartNumber": "SL-M4100",
     "derailleurPartNumber": "RD-M4120",
     "cassettePartNumber": "shimano-11-speed",
@@ -105,7 +105,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "Deore 10-Speed Deore 11-Speed Eagle 11-50 12-Speed",
+    "name": "Deore 10-Speed/Deore 11-Speed/Eagle 11-50 12-Speed",
     "shifterPartNumber": "SL-M4100",
     "derailleurPartNumber": "RD-M4120",
     "cassettePartNumber": "CS-PG-1210-A1",
@@ -113,7 +113,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "Ultegra 10-Speed Ultegra RX 11-Speed Eagle 11-50 12-Speed",
+    "name": "Ultegra 10-Speed/Ultegra RX 11-Speed/Eagle 11-50 12-Speed",
     "shifterPartNumber": "ST-6700",
     "derailleurPartNumber": "RD-RX800",
     "cassettePartNumber": "CS-PG-1210-A1",
@@ -121,7 +121,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "Ultegra 10-Speed Ultegra 9-Speed 11-speed road",
+    "name": "Ultegra 10-Speed/Ultegra 9-Speed/SRAM 11-speed road",
     "shifterPartNumber": "ST-6700",
     "derailleurPartNumber": "RD-6500",
     "cassettePartNumber": "sram-11-speed",
@@ -129,7 +129,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra 10-Speed Ultegra 9-Speed 11-speed road",
+    "name": "Ultegra 10-Speed/Ultegra 9-Speed/Shimano 11-speed road",
     "shifterPartNumber": "ST-6700",
     "derailleurPartNumber": "RD-6500",
     "cassettePartNumber": "shimano-11-speed",
@@ -137,7 +137,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "Ultegra 10-Speed Ultegra 9-Speed Eagle 11-50 12-Speed",
+    "name": "Ultegra 10-Speed/Ultegra 9-Speed/Eagle 11-50 12-Speed",
     "shifterPartNumber": "ST-6700",
     "derailleurPartNumber": "RD-6500",
     "cassettePartNumber": "CS-PG-1210-A1",
@@ -145,7 +145,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "Ultegra 10-Speed Tiagra 10-Speed 11-speed road",
+    "name": "Ultegra 10-Speed/Tiagra 10-Speed/SRAM 11-speed road",
     "shifterPartNumber": "ST-6700",
     "derailleurPartNumber": "RD-4601-SS",
     "cassettePartNumber": "sram-11-speed",
@@ -153,7 +153,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra 10-Speed Tiagra 10-Speed 11-speed road",
+    "name": "Ultegra 10-Speed/Tiagra 10-Speed/Shimano 11-speed road",
     "shifterPartNumber": "ST-6700",
     "derailleurPartNumber": "RD-4601-SS",
     "cassettePartNumber": "shimano-11-speed",
@@ -161,7 +161,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "Ultegra 11-Speed 105 11-Speed Eagle 11-50 12-Speed",
+    "name": "Ultegra 11-Speed/105 11-Speed/Eagle 11-50 12-Speed",
     "shifterPartNumber": "ST-R8020",
     "derailleurPartNumber": "RD-5800",
     "cassettePartNumber": "CS-PG-1210-A1",
@@ -169,7 +169,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "Deore 11-Speed Deore 11-Speed Eagle 11-50 12-Speed",
+    "name": "Deore 11-Speed/Eagle 11-50 12-Speed",
     "shifterPartNumber": "SL-M5100",
     "derailleurPartNumber": "RD-M4120",
     "cassettePartNumber": "CS-PG-1210-A1",
@@ -177,7 +177,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "Advent X 10-Speed Deore 11-Speed 11-speed road",
+    "name": "Advent X 10-Speed/Deore 11-Speed/SRAM 11-speed road",
     "shifterPartNumber": "SB-M100A",
     "derailleurPartNumber": "RD-M4120",
     "cassettePartNumber": "sram-11-speed",
@@ -185,7 +185,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "Advent X 10-Speed Deore 11-Speed 11-speed road",
+    "name": "Advent X 10-Speed/Deore 11-Speed/Shimano 11-speed road",
     "shifterPartNumber": "SB-M100A",
     "derailleurPartNumber": "RD-M4120",
     "cassettePartNumber": "shimano-11-speed",
