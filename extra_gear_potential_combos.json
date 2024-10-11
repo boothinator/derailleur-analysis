@@ -9,14 +9,6 @@
   },
   {
     "brand": "Mixed",
-    "name": "GX 10-Speed/Apex 1 11-Speed/Shimano 11-speed road",
-    "shifterPartNumber": "SL-GX-A1",
-    "derailleurPartNumber": "RD-APX-1-A1",
-    "cassettePartNumber": "shimano-11-speed",
-    "confidence": 0.04708883660233144
-  },
-  {
-    "brand": "Mixed",
     "name": "CUES 9-Speed/Generic 10-Speed",
     "shifterPartNumber": "SL-U4000",
     "derailleurPartNumber": "RD-U4020",
@@ -102,14 +94,6 @@
     "derailleurPartNumber": "RD-M4120",
     "cassettePartNumber": "shimano-11-speed",
     "confidence": 0.48939357621981566
-  },
-  {
-    "brand": "Mixed",
-    "name": "Deore 10-Speed/Deore 11-Speed/Eagle 11-50 12-Speed",
-    "shifterPartNumber": "SL-M4100",
-    "derailleurPartNumber": "RD-M4120",
-    "cassettePartNumber": "CS-PG-1210-A1",
-    "confidence": 0.04720124442144605
   },
   {
     "brand": "Mixed",

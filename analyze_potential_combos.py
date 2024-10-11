@@ -32,18 +32,17 @@ for shifter in shifters:
               and cassette["partNumber"] == combo["cassettePartNumber"]]):
         continue
       
+      # Check to see how close [cable pull] * [pull ratio] is to [cog pitch]
       multiplier = cassette["averagePitch"] / (shifter["cablePull"] * derailleur["pullRatio"])
 
       distFromMotionMultiplierAvg = abs(multiplier - motion_multiplier_avg)
 
-      # Confidence = how close to the center of the normal distribution are we?
+      # Confidence = how close to the average motion multiplier are we, assuming a normal distribution?
+      # 1.0 means we're dead on, < 0.05 means we're further away than 95% of all groupsets
       confidence = 1 - norm.cdf(distFromMotionMultiplierAvg, scale=motion_multiplier_stdev) \
                    + norm.cdf(-distFromMotionMultiplierAvg, scale=motion_multiplier_stdev)
 
-      minCogPitch = shifter["cablePull"] * derailleur["pullRatio"] * motion_multiplier_min
-      maxCogPitch = shifter["cablePull"] * derailleur["pullRatio"] * motion_multiplier_max
-
-      if minCogPitch <= cassette["averagePitch"] and cassette["averagePitch"] <= maxCogPitch:
+      if confidence > 0.05:
         if shifter["brand"] == derailleur["brand"] and derailleur["brand"] == cassette["brand"]:
           brand = shifter["brand"]
         else:
