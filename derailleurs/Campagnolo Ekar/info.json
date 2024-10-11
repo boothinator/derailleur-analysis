@@ -3,7 +3,7 @@
   "series": "Ekar",
   "partNumber": "RD21-EK13",
   "designSpeeds": 13,
-  "designCogPitch": 3.3,
+  "designCogPitch": 3.15,
   "distanceFromCarriageToJockeyWheel": 36.52,
   "jockeyWheelThickness": 1.75,
   "minDropoutWidth": 10.2,
