@@ -20,52 +20,59 @@ combos = []
 
 for shifter in shifters:
   for derailleur in derailleurs:
-    for cassette in cassettes:
+    for speeds in range(9, 14):
       
-      # Check to see how close [cable pull] * [pull ratio] is to [cog pitch]
-      multiplier = cassette["averagePitch"] / (shifter["cablePull"] * derailleur["pullRatio"])
+      if shifter["brand"] == derailleur["brand"]:
+        brand = shifter["brand"]
+      else:
+        brand = "Mixed"
 
-      distFromMotionMultiplierAvg = abs(multiplier - motion_multiplier_avg)
+      if shifter["name"] == derailleur["name"]:
+        name = f"{shifter['name']}/{speeds}-speed cassette"
+      else:
+        name = f"{shifter['name']}/{derailleur['name']}/{speeds}-speed cassette"
 
-      # Confidence = how close to the average motion multiplier are we, assuming a normal distribution?
-      # 1.0 means we're dead on, < 0.05 means we're further away than 95% of all groupsets
-      confidence = 1 - norm.cdf(distFromMotionMultiplierAvg, scale=motion_multiplier_stdev) \
-                   + norm.cdf(-distFromMotionMultiplierAvg, scale=motion_multiplier_stdev)
+      combo = {
+        "brand": brand,
+        "name": name,
+        "speeds": speeds,
+        "shifterPartNumber": shifter["partNumber"],
+        "derailleurPartNumber": derailleur["partNumber"],
+        "cassettes": [],
+        "shifterType": shifter["type"],
+        "noMatchingFrontShifter": shifter["hasMatchingFrontShifters"] == False
+          and derailleur["supportsMultipleFrontChainrings"],
+        "moreCogsThanShifts": shifter["speeds"] < speeds,
+        "maxTooth": derailleur["maxTooth"],
+        "chainWrap": derailleur["chainWrap"]
+      }
 
-      if confidence > 0.05:
-        if shifter["brand"] == derailleur["brand"] and derailleur["brand"] == cassette["brand"]:
-          brand = shifter["brand"]
-        else:
-          brand = "Mixed"
+      cassettesTested = 0
+
+      for cassette in [c for c in cassettes if c["speeds"] == speeds]:
+        cassettesTested = cassettesTested + 1
         
-        if shifter['name'] == derailleur['name']:
-          if cassette['brand'] == shifter['brand'] and cassette['speeds'] == shifter['speeds']:
-            name = shifter['name']
-          else:
-            name = f"{shifter['name']}/{cassette['name']}"
+        # Check to see how close [cable pull] * [pull ratio] is to [cog pitch]
+        multiplier = cassette["averagePitch"] / (shifter["cablePull"] * derailleur["pullRatio"])
 
-        else:
-          name = f"{shifter['name']}/{derailleur['name']}/{cassette['name']}"
+        distFromMotionMultiplierAvg = abs(multiplier - motion_multiplier_avg)
 
-        combo = {
-          "brand": brand,
-          "name": name,
-          "shifterPartNumber": shifter["partNumber"],
-          "derailleurPartNumber": derailleur["partNumber"],
-          "cassettePartNumber": cassette["partNumber"],
-          "confidence": confidence,
-          "supported": any([combo for combo in supported_combos
-              if shifter["partNumber"] == combo["shifterPartNumber"]
-              and derailleur["partNumber"] == combo["derailleurPartNumber"]
-              and cassette["partNumber"] == combo["cassettePartNumber"]]),
-          "shifterType": shifter["type"],
-          "noMatchingFrontShifter": shifter["hasMatchingFrontShifters"] == False
-            and derailleur["supportsMultipleFrontChainrings"],
-          "moreCogsThanShifts": shifter["speeds"] < cassette["speeds"],
-          "maxTooth": derailleur["maxTooth"],
-          "chainWrap": derailleur["chainWrap"]
-        }
+        # Confidence = how close to the average motion multiplier are we, assuming a normal distribution?
+        # 1.0 means we're dead on, < 0.05 means we're further away than 95% of all groupsets
+        confidence = 1 - norm.cdf(distFromMotionMultiplierAvg, scale=motion_multiplier_stdev) \
+                    + norm.cdf(-distFromMotionMultiplierAvg, scale=motion_multiplier_stdev)
 
+        if confidence > 0.05:
+          combo["cassettes"].append({
+            "cassettePartNumber": cassette["partNumber"],
+            "confidence": confidence,
+            "supported": any([combo for combo in supported_combos
+                if shifter["partNumber"] == combo["shifterPartNumber"]
+                and derailleur["partNumber"] == combo["derailleurPartNumber"]
+                and cassette["partNumber"] == combo["cassettePartNumber"]]),
+          })
+      
+      if len(combo["cassettes"]) > 0:
         combos.append(combo)
 
 
