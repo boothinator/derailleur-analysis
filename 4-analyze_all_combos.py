@@ -13,12 +13,12 @@ widest_range_with_drop_bar_shifters_combos = []
 
 for combo in combos:
   if combo["shifterType"] == "drop-bar" and combo["moreCogsThanShifts"] == False:
-    if combo["maxTooth"] >= lowest_max_tooth:
+    if combo["maxToothAvailableAndCompatible"] >= lowest_max_tooth:
       lowest_gearing_with_drop_bar_shifters_combos.append(combo)
     if combo["chainWrap"] >= lowest_chain_wrap:
       widest_range_with_drop_bar_shifters_combos.append(combo)
 
-lowest_gearing_with_drop_bar_shifters_combos.sort(key=lambda combo: combo["maxTooth"], reverse=True)
+lowest_gearing_with_drop_bar_shifters_combos.sort(key=lambda combo: combo["maxToothAvailableAndCompatible"], reverse=True)
 widest_range_with_drop_bar_shifters_combos.sort(key=lambda combo: combo["chainWrap"], reverse=True)
 
 with open(f"lowest_gearing_with_drop_bar_shifters_combos.json", "w") as info_file:

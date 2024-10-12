@@ -43,7 +43,7 @@ for shifter in shifters:
         "noMatchingFrontShifter": shifter["hasMatchingFrontShifters"] == False
           and derailleur["supportsMultipleFrontChainrings"],
         "moreCogsThanShifts": shifter["speeds"] < speeds,
-        "maxTooth": derailleur["maxTooth"],
+        "maxToothAvailableAndCompatible": 0,
         "chainWrap": derailleur["chainWrap"]
       }
 
@@ -63,6 +63,8 @@ for shifter in shifters:
                     + norm.cdf(-distFromMotionMultiplierAvg, scale=motion_multiplier_stdev)
 
         if confidence > 0.05:
+          maxToothAvailableAndCompatible = min(derailleur["maxTooth"], cassette["maxToothAvailable"])
+
           combo["cassettes"].append({
             "cassettePartNumber": cassette["partNumber"],
             "confidence": confidence,
@@ -70,7 +72,10 @@ for shifter in shifters:
                 if shifter["partNumber"] == combo["shifterPartNumber"]
                 and derailleur["partNumber"] == combo["derailleurPartNumber"]
                 and cassette["partNumber"] == combo["cassettePartNumber"]]),
+            "maxToothAvailableAndCompatible": maxToothAvailableAndCompatible
           })
+
+          combo["maxToothAvailableAndCompatible"] = max(combo["maxToothAvailableAndCompatible"], maxToothAvailableAndCompatible)
       
       if len(combo["cassettes"]) > 0:
         combos.append(combo)
