@@ -58,6 +58,7 @@ for shifter in shifters:
               if shifter["partNumber"] == combo["shifterPartNumber"]
               and derailleur["partNumber"] == combo["derailleurPartNumber"]
               and cassette["partNumber"] == combo["cassettePartNumber"]]),
+          "shifterType": shifter["type"],
           "noMatchingFrontShifter": shifter["hasMatchingFrontShifters"] == False
             and derailleur["supportsMultipleFrontChainrings"],
           "moreCogsThanShifts": shifter["speeds"] < cassette["speeds"],
