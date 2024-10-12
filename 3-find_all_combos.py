@@ -24,13 +24,18 @@ for shifter in shifters:
       
       if shifter["brand"] == derailleur["brand"]:
         brand = shifter["brand"]
+        
+        if shifter["name"] == derailleur["name"]:
+          name = f"{shifter["brand"]} {shifter['name']} group with {speeds}-speed cassette"
+        else:
+          name = f"{shifter["brand"]} {shifter['name']} shifter/" \
+              + f"{derailleur['name']} derailleur/{speeds}-speed cassette"
       else:
         brand = "Mixed"
 
-      if shifter["name"] == derailleur["name"]:
-        name = f"{shifter['name']}/{speeds}-speed cassette"
-      else:
-        name = f"{shifter['name']}/{derailleur['name']}/{speeds}-speed cassette"
+        name = f"{shifter["brand"]} {shifter['name']} shifter/" \
+            + f"{derailleur["brand"]} {derailleur['name']} derailleur/" \
+            + f"{speeds}-speed cassette"
 
       combo = {
         "brand": brand,
