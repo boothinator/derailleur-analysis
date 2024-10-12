@@ -16,19 +16,11 @@ with open(f"compatibility_ranges.json") as f:
 motion_multiplier_avg = compatibility_ranges["motionMultiplierAvg"]
 motion_multiplier_stdev = compatibility_ranges["motionMultiplierStdev"]
 
-potential_combos = []
-extra_gear_potential_combos = []
+combos = []
 
 for shifter in shifters:
   for derailleur in derailleurs:
     for cassette in cassettes:
-      
-      # Ignore supported combos
-      if any([combo for combo in supported_combos
-              if shifter["partNumber"] == combo["shifterPartNumber"]
-              and derailleur["partNumber"] == combo["derailleurPartNumber"]
-              and cassette["partNumber"] == combo["cassettePartNumber"]]):
-        continue
       
       # Check to see how close [cable pull] * [pull ratio] is to [cog pitch]
       multiplier = cassette["averagePitch"] / (shifter["cablePull"] * derailleur["pullRatio"])
@@ -61,19 +53,21 @@ for shifter in shifters:
           "shifterPartNumber": shifter["partNumber"],
           "derailleurPartNumber": derailleur["partNumber"],
           "cassettePartNumber": cassette["partNumber"],
-          "confidence": confidence
+          "confidence": confidence,
+          "supported": any([combo for combo in supported_combos
+              if shifter["partNumber"] == combo["shifterPartNumber"]
+              and derailleur["partNumber"] == combo["derailleurPartNumber"]
+              and cassette["partNumber"] == combo["cassettePartNumber"]]),
+          "noMatchingFrontShifter": shifter["hasMatchingFrontShifters"] == False
+            and derailleur["supportsMultipleFrontChainrings"],
+          "moreCogsThanShifts": shifter["speeds"] < cassette["speeds"],
+          "maxTooth": derailleur["maxTooth"],
+          "chainWrap": derailleur["chainWrap"]
         }
 
-        # Record combos with more gears than shifts separately
-        if shifter["speeds"] < cassette["speeds"]:
-          extra_gear_potential_combos.append(combo)
-        else:
-          potential_combos.append(combo)
+        combos.append(combo)
 
 
 
-with open(f"potential_combos.json", "w") as info_file:
-  json.dump(potential_combos, info_file, indent=2)
-
-with open(f"extra_gear_potential_combos.json", "w") as info_file:
-  json.dump(extra_gear_potential_combos, info_file, indent=2)
+with open(f"combinations.json", "w") as info_file:
+  json.dump(combos, info_file, indent=2)

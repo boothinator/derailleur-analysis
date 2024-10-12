@@ -12,7 +12,10 @@
     "yawDegrees": 3,
     "yawCablePull": 26.36,
     "yawCoefficients": [ 0, 0.114 ],
-    "source": "https://youtu.be/i8SdJiiZWac"
+    "source": "https://youtu.be/i8SdJiiZWac",
+    "maxTooth": 42,
+    "chainWrap": 32,
+    "supportsMultipleFrontChainrings": false
   },
   {
     "name": "GX 10-Speed",
@@ -27,7 +30,10 @@
     "yawDegrees": 3.5,
     "yawCablePull": 26,
     "yawCoefficients": [ 0, 0.135 ],
-    "source": "https://youtu.be/B8jEOt5SXKg"
+    "source": "https://youtu.be/B8jEOt5SXKg",
+    "maxTooth": 36,
+    "chainWrap": 47,
+    "supportsMultipleFrontChainrings": true
   },
   {
     "name": "CUES 9-Speed",
@@ -42,7 +48,10 @@
     "yawDegrees": 0,
     "yawCablePull": 0,
     "yawCoefficients": [],
-    "source": "https://youtu.be/v3DrbjFyn8A"
+    "source": "https://youtu.be/v3DrbjFyn8A",
+    "maxTooth": 36,
+    "chainWrap": 41,
+    "supportsMultipleFrontChainrings": true
   },
   {
     "name": "SX 12-Speed",
@@ -57,7 +66,10 @@
     "yawDegrees": 2.5,
     "yawCablePull": 33.58,
     "yawCoefficients": [ 0, 0.0745 ],
-    "source": ""
+    "source": "",
+    "maxTooth": 50,
+    "chainWrap": 40,
+    "supportsMultipleFrontChainrings": false
   },
   {
     "name": "Deore 11-Speed",
@@ -72,7 +84,10 @@
     "yawDegrees": 1.2,
     "yawCablePull": 32,
     "yawCoefficients": [ 0, 0.0375 ],
-    "source": "https://youtu.be/ybfcNhWYL44"
+    "source": "https://youtu.be/ybfcNhWYL44",
+    "maxTooth": 42,
+    "chainWrap": 41,
+    "supportsMultipleFrontChainrings": true
   },
   {
     "name": "GRX 10-Speed",
@@ -87,7 +102,10 @@
     "yawDegrees": 2.1,
     "yawCablePull": 36,
     "yawCoefficients": [ 0, 0.114, -0.00151 ],
-    "source": "https://youtu.be/4Bh7QUWcSew"
+    "source": "https://youtu.be/4Bh7QUWcSew",
+    "maxTooth": 36,
+    "chainWrap": 41,
+    "supportsMultipleFrontChainrings": true
   },
   {
     "name": "Ultegra RX 11-Speed",
@@ -102,7 +120,10 @@
     "yawDegrees": 2.1,
     "yawCablePull": 36,
     "yawCoefficients": [ 0, 0.1382, -0.002088 ],
-    "source": "https://youtu.be/pIl8qiARYjc"
+    "source": "https://youtu.be/pIl8qiARYjc",
+    "maxTooth": 34,
+    "chainWrap": 39,
+    "supportsMultipleFrontChainrings": true
   },
   {
     "name": "Ultegra 9-Speed",
@@ -117,7 +138,10 @@
     "yawDegrees": 0,
     "yawCablePull": 36,
     "yawCoefficients": [ 0 ],
-    "source": ""
+    "source": "",
+    "maxTooth": 27,
+    "chainWrap": 37,
+    "supportsMultipleFrontChainrings": true
   },
   {
     "name": "Tiagra 10-Speed",
@@ -132,7 +156,10 @@
     "yawDegrees": 0,
     "yawCablePull": 36,
     "yawCoefficients": [ 0 ],
-    "source": ""
+    "source": "",
+    "maxTooth": 30,
+    "chainWrap": 34,
+    "supportsMultipleFrontChainrings": true
   },
   {
     "name": "105 11-Speed",
@@ -147,6 +174,9 @@
     "yawDegrees": 1.9,
     "yawCablePull": 36,
     "yawCoefficients": [ 0, 0.066116, -0.000333 ],
-    "source": ""
+    "source": "",
+    "maxTooth": 32,
+    "chainWrap": 37,
+    "supportsMultipleFrontChainrings": true
   }
 ]
