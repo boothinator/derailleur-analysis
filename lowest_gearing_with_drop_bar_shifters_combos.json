@@ -1,7 +1,7 @@
 [
   {
     "brand": "Mixed",
-    "name": "Advent X 10-Speed/SX 12-Speed/10-speed cassette",
+    "name": "Microshift Advent X 10-Speed shifter/SRAM SX 12-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SB-M100A",
     "derailleurPartNumber": "RD-SX-1-B1",
@@ -29,11 +29,22 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 48,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
-    "name": "Advent X 10-Speed/SX 12-Speed/9-speed cassette",
+    "name": "Microshift Advent X 10-Speed shifter/SRAM SX 12-Speed derailleur/9-speed cassette",
     "speeds": 9,
     "shifterPartNumber": "SB-M100A",
     "derailleurPartNumber": "RD-SX-1-B1",
@@ -49,11 +60,22 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 46,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "SRAM",
-    "name": "Apex 1 11-Speed/11-speed cassette",
+    "name": "SRAM Apex 1 11-Speed group with 11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SB-APX-B1",
     "derailleurPartNumber": "RD-APX-1-A1",
@@ -75,11 +97,45 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 32
+    "chainWrap": 32,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-RIV-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-FOR-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      }
+    ]
   },
   {
     "brand": "Mixed",
-    "name": "Advent X 10-Speed/Deore 11-Speed/10-speed cassette",
+    "name": "Microshift Advent X 10-Speed shifter/Shimano Deore 11-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SB-M100A",
     "derailleurPartNumber": "RD-M4120",
@@ -101,11 +157,22 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "SRAM",
-    "name": "Apex 1 11-Speed/GX 10-Speed/10-speed cassette",
+    "name": "SRAM Apex 1 11-Speed shifter/GX 10-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SB-APX-B1",
     "derailleurPartNumber": "RD-GX-T21-A1",
@@ -127,11 +194,30 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 47
+    "chainWrap": 47,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "SRAM",
-    "name": "Apex 1 11-Speed/GX 10-Speed/11-speed cassette",
+    "name": "SRAM Apex 1 11-Speed shifter/GX 10-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SB-APX-B1",
     "derailleurPartNumber": "RD-GX-T21-A1",
@@ -153,11 +239,30 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 47
+    "chainWrap": 47,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra 11-Speed/GRX 10-Speed/10-speed cassette",
+    "name": "Shimano Ultegra 11-Speed shifter/GRX 10-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "ST-R8020",
     "derailleurPartNumber": "RD-RX400",
@@ -179,11 +284,13 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra 11-Speed/GRX 10-Speed/11-speed cassette",
+    "name": "Shimano Ultegra 11-Speed shifter/GRX 10-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "ST-R8020",
     "derailleurPartNumber": "RD-RX400",
@@ -205,11 +312,13 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
-    "name": "Advent X 10-Speed/CUES 9-Speed/9-speed cassette",
+    "name": "Microshift Advent X 10-Speed shifter/Shimano CUES 9-Speed derailleur/9-speed cassette",
     "speeds": 9,
     "shifterPartNumber": "SB-M100A",
     "derailleurPartNumber": "RD-U4020",
@@ -225,11 +334,22 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
-    "name": "Advent X 10-Speed/CUES 9-Speed/10-speed cassette",
+    "name": "Microshift Advent X 10-Speed shifter/Shimano CUES 9-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SB-M100A",
     "derailleurPartNumber": "RD-U4020",
@@ -257,6 +377,17 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": []
   }
 ]

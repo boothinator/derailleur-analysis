@@ -23,7 +23,41 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 32
+    "chainWrap": 32,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-RIV-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-FOR-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      }
+    ]
   },
   {
     "brand": "SRAM",
@@ -43,7 +77,41 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": true,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 32
+    "chainWrap": 32,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-RIV-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-FOR-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      }
+    ]
   },
   {
     "brand": "SRAM",
@@ -69,7 +137,26 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 47
+    "chainWrap": 47,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "SRAM",
@@ -95,7 +182,26 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 47
+    "chainWrap": 47,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "SRAM",
@@ -115,7 +221,24 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 32
+    "chainWrap": 32,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-RIV-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-FOR-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      }
+    ]
   },
   {
     "brand": "SRAM",
@@ -147,7 +270,24 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 32
+    "chainWrap": 32,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-RIV-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-FOR-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      }
+    ]
   },
   {
     "brand": "SRAM",
@@ -167,7 +307,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 47
+    "chainWrap": 47,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "SRAM",
@@ -199,7 +341,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 47
+    "chainWrap": 47,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -219,7 +363,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -251,7 +397,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": true,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -271,7 +419,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 46,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -303,7 +453,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": true,
     "maxToothAvailableAndCompatible": 48,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -329,7 +481,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": true,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -349,7 +503,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": true,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -369,7 +525,24 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 32
+    "chainWrap": 32,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-RIV-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-FOR-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      }
+    ]
   },
   {
     "brand": "Mixed",
@@ -389,7 +562,24 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 32
+    "chainWrap": 32,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-RIV-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-FOR-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      }
+    ]
   },
   {
     "brand": "Shimano",
@@ -415,7 +605,9 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -435,7 +627,9 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -461,7 +655,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 50,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -481,7 +677,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 50,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -507,7 +705,9 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -527,7 +727,9 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "SRAM",
@@ -553,7 +755,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 50,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "SRAM",
@@ -573,7 +777,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 50,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -593,7 +799,9 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -613,7 +821,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -645,7 +855,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -665,7 +877,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 46,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -697,7 +911,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 48,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -717,7 +933,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -743,7 +961,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": true,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -763,7 +983,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": true,
     "maxToothAvailableAndCompatible": 34,
-    "chainWrap": 39
+    "chainWrap": 39,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -789,7 +1011,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": true,
     "maxToothAvailableAndCompatible": 27,
-    "chainWrap": 37
+    "chainWrap": 37,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -809,7 +1033,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": true,
     "maxToothAvailableAndCompatible": 27,
-    "chainWrap": 37
+    "chainWrap": 37,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -835,7 +1061,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 30,
-    "chainWrap": 34
+    "chainWrap": 34,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -861,7 +1089,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": true,
     "maxToothAvailableAndCompatible": 30,
-    "chainWrap": 34
+    "chainWrap": 34,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -887,7 +1117,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -913,7 +1145,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -939,7 +1173,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 34,
-    "chainWrap": 39
+    "chainWrap": 39,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -959,7 +1195,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 34,
-    "chainWrap": 39
+    "chainWrap": 39,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -979,7 +1217,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 27,
-    "chainWrap": 37
+    "chainWrap": 37,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -999,7 +1239,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 27,
-    "chainWrap": 37
+    "chainWrap": 37,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -1019,7 +1261,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 30,
-    "chainWrap": 34
+    "chainWrap": 34,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -1039,7 +1283,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 30,
-    "chainWrap": 34
+    "chainWrap": 34,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -1065,7 +1311,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 32,
-    "chainWrap": 37
+    "chainWrap": 37,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -1085,7 +1333,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": true,
     "maxToothAvailableAndCompatible": 32,
-    "chainWrap": 37
+    "chainWrap": 37,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -1105,7 +1355,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -1137,7 +1389,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -1163,7 +1417,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 48,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -1183,7 +1439,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 50,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -1209,7 +1467,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Shimano",
@@ -1229,7 +1489,9 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": true,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -1249,7 +1511,18 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -1281,7 +1554,18 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -1301,7 +1585,18 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 46,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -1333,7 +1628,18 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 48,
-    "chainWrap": 40
+    "chainWrap": 40,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -1359,7 +1665,18 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": []
   },
   {
     "brand": "Mixed",
@@ -1385,6 +1702,17 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": true,
     "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 41
+    "chainWrap": 41,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": []
   }
 ]

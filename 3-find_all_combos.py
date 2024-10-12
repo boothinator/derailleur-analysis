@@ -4,8 +4,12 @@ from scipy.stats import norm
 
 with open(f"other_shifters.json") as f:
   shifters = json.load(f)
+with open(f"equivalent_shifters.json") as f:
+  equivalent_shifters = json.load(f)
 with open(f"other_derailleurs.json") as f:
   derailleurs = json.load(f)
+with open(f"equivalent_derailleurs.json") as f:
+  equivalent_derailleurs = json.load(f)
 with open(f"cassettes.json") as f:
   cassettes = json.load(f)
 with open(f"supported_combinations.json") as f:
@@ -19,7 +23,11 @@ motion_multiplier_stdev = compatibility_ranges["motionMultiplierStdev"]
 combos = []
 
 for shifter in shifters:
+  equiv_shifters = [s for s in equivalent_shifters if s["equivalentPartNumber"] == shifter["partNumber"]]
+
   for derailleur in derailleurs:
+    equiv_derailleurs = [s for s in equivalent_derailleurs if s["equivalentPartNumber"] == derailleur["partNumber"]]
+
     for speeds in range(9, 14):
       
       if shifter["brand"] == derailleur["brand"]:
@@ -49,7 +57,9 @@ for shifter in shifters:
           and derailleur["supportsMultipleFrontChainrings"],
         "moreCogsThanShifts": shifter["speeds"] < speeds,
         "maxToothAvailableAndCompatible": 0,
-        "chainWrap": derailleur["chainWrap"]
+        "chainWrap": derailleur["chainWrap"],
+        "equivalentShifters": equiv_shifters,
+        "equivalentDerailleurs": equiv_derailleurs
       }
 
       cassettesTested = 0
