@@ -66,11 +66,12 @@ for shifter in shifters:
         "equivalentDerailleurs": equiv_derailleurs
       }
 
-      cassettesTested = 0
-
       # Look for compatible cassettes
       for cassette in [c for c in cassettes if c["speeds"] == speeds]:
-        cassettesTested = cassettesTested + 1
+        
+        # TODO: check if jockey can move from smallest to largest cog
+
+        # TODO: calculate each gear position and check if the angle is less than about 1.3 degrees
         
         # Check to see how close [cable pull] * [pull ratio] is to [cog pitch]
         multiplier = cassette["averagePitch"] / (shifter["cablePull"] * derailleur["pullRatio"])

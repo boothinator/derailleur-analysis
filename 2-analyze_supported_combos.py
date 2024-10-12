@@ -34,6 +34,7 @@ for combo in supported_combos:
   motion_multipliers.append(motion_multiplier)
 
   # TODO: calculate jockey positions and compare to cog positions, taking into account roller size
+  # Also, figure out the angles generated from jockey to cog
 
 motion_multiplier_avg = np.mean(motion_multipliers)
 motion_multiplier_stdev = np.std(motion_multipliers)
