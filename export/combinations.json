@@ -1,0 +1,1787 @@
+[
+  {
+    "brand": "SRAM",
+    "name": "SRAM Apex 1 11-Speed group with 11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.680250880734544,
+        "supported": true,
+        "maxToothAvailableAndCompatible": 42
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.9850198556512642,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 32,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-RIV-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-FOR-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "brand": "SRAM",
+    "name": "SRAM Apex 1 11-Speed group with 12-speed cassette",
+    "speeds": 12,
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-PG-1210-A1",
+        "confidence": 0.1835428151155844,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 32,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-RIV-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-FOR-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "brand": "SRAM",
+    "name": "SRAM Apex 1 11-Speed shifter/GX 10-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD-GX-T21-A1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.2353205889612297,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.18874776825915696,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 47,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": [
+      {
+        "shifterPartNumber": "SB-RIV-B1",
+        "derailleurPartNumber": "RD-GX-T21-A1",
+        "cassettePartNumber": "generic-10-speed",
+        "publisher": "Path Less Pedaled",
+        "title": "TESTING BAD IDEAS THE INTERNET SAID SHOULD WORK",
+        "url": "https://youtu.be/0hoLpd8Igxo?t=101",
+        "sentiment": "positive",
+        "note": "Tested using a Rival 11-speed 1x shifter. Russ is positive on the compatibility, negative on the combination's ability to clear a 50t cog"
+      }
+    ]
+  },
+  {
+    "brand": "SRAM",
+    "name": "SRAM Apex 1 11-Speed shifter/GX 10-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD-GX-T21-A1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.08074409611386904,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.1726304585361969,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 47,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "SRAM",
+    "name": "SRAM GX 10-Speed shifter/Apex 1 11-Speed derailleur/9-speed cassette",
+    "speeds": 9,
+    "shifterPartNumber": "SL-GX-A1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-LG300-9",
+        "confidence": 0.07335582215562542,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 32,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-RIV-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-FOR-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "brand": "SRAM",
+    "name": "SRAM GX 10-Speed shifter/Apex 1 11-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SL-GX-A1",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.5947904820954348,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.5106812723943126,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      },
+      {
+        "cassettePartNumber": "CS-PG-1050-A1",
+        "confidence": 0.07335582215562542,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 32,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-RIV-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-FOR-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "brand": "SRAM",
+    "name": "SRAM GX 10-Speed group with 9-speed cassette",
+    "speeds": 9,
+    "shifterPartNumber": "SL-GX-A1",
+    "derailleurPartNumber": "RD-GX-T21-A1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-LG300-9",
+        "confidence": 0.6920391273665154,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 47,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "SRAM",
+    "name": "SRAM GX 10-Speed group with 10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SL-GX-A1",
+    "derailleurPartNumber": "RD-GX-T21-A1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.40756763775240495,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.4803407932741592,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      },
+      {
+        "cassettePartNumber": "CS-PG-1050-A1",
+        "confidence": 0.6920391273665154,
+        "supported": true,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 47,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano CUES 9-Speed group with 9-speed cassette",
+    "speeds": 9,
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-LG300-9",
+        "confidence": 0.5989874309675587,
+        "supported": true,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano CUES 9-Speed group with 10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.08410230080429953,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.10800756910539942,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      },
+      {
+        "cassettePartNumber": "CS-PG-1050-A1",
+        "confidence": 0.5989874309675587,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano CUES 9-Speed shifter/SRAM SX 12-Speed derailleur/9-speed cassette",
+    "speeds": 9,
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-LG300-9",
+        "confidence": 0.9271876879000298,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 46
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 46,
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano CUES 9-Speed shifter/SRAM SX 12-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.19236374557567748,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 48
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.2370490554244738,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      },
+      {
+        "cassettePartNumber": "CS-PG-1050-A1",
+        "confidence": 0.9271876879000298,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "maxToothAvailableAndCompatible": 48,
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano CUES 9-Speed shifter/Deore 11-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.4549139694525261,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.38230160477218617,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano CUES 9-Speed shifter/Deore 11-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "SL-U4000",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettes": [
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.07490220968630967,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano SLX 12-Speed shifter/SRAM Apex 1 11-Speed derailleur/9-speed cassette",
+    "speeds": 9,
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-LG300-9",
+        "confidence": 0.2128867903626721,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 32,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-RIV-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-FOR-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano SLX 12-Speed shifter/SRAM Apex 1 11-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-APX-1-A1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-PG-1050-A1",
+        "confidence": 0.2128867903626721,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 32,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-RIV-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "RD-FOR-1-A2",
+        "equivalentPartNumber": "RD-APX-1-A1",
+        "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano SLX 12-Speed shifter/CUES 9-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.4880886014462375,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.2732485644291607,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano SLX 12-Speed shifter/CUES 9-Speed derailleur/12-speed cassette",
+    "speeds": 12,
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-PG-1210-A1",
+        "confidence": 0.8062593829869067,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano SLX 12-Speed shifter/SRAM SX 12-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.2548235534594374,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 50
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.12245200928059125,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 50
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 50,
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano SLX 12-Speed shifter/SRAM SX 12-Speed derailleur/12-speed cassette",
+    "speeds": 12,
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-PG-1210-A1",
+        "confidence": 0.8479581312769979,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 50
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 50,
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "SRAM SX 12-Speed shifter/Shimano CUES 9-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.9390971875726286,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.7492354600737074,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "SRAM SX 12-Speed shifter/Shimano CUES 9-Speed derailleur/12-speed cassette",
+    "speeds": 12,
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-PG-1210-A1",
+        "confidence": 0.3170557435314627,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "SRAM",
+    "name": "SRAM SX 12-Speed group with 11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.7172908995012452,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 50
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.44625683581038844,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 50
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 50,
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "SRAM",
+    "name": "SRAM SX 12-Speed group with 12-speed cassette",
+    "speeds": 12,
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-PG-1210-A1",
+        "confidence": 0.5684801882514634,
+        "supported": true,
+        "maxToothAvailableAndCompatible": 50
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 50,
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "SRAM SX 12-Speed shifter/Shimano Deore 11-Speed derailleur/12-speed cassette",
+    "speeds": 12,
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-PG-1210-A1",
+        "confidence": 0.13053799762970403,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Deore 10-Speed shifter/CUES 9-Speed derailleur/9-speed cassette",
+    "speeds": 9,
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-LG300-9",
+        "confidence": 0.5533236243994755,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Deore 10-Speed shifter/CUES 9-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.5245544569216465,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.6076520929782454,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      },
+      {
+        "cassettePartNumber": "CS-PG-1050-A1",
+        "confidence": 0.5533236243994755,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano Deore 10-Speed shifter/SRAM SX 12-Speed derailleur/9-speed cassette",
+    "speeds": 9,
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-LG300-9",
+        "confidence": 0.2996200665004109,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 46
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 46,
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano Deore 10-Speed shifter/SRAM SX 12-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.8392494773510053,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 48
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.9371572041848852,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      },
+      {
+        "cassettePartNumber": "CS-PG-1050-A1",
+        "confidence": 0.2996200665004109,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 48,
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Deore 10-Speed shifter/Deore 11-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.05807134698589668,
+        "supported": true,
+        "maxToothAvailableAndCompatible": 42
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Deore 10-Speed shifter/Deore 11-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.2804813938836621,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.48939357621981566,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 10-Speed shifter/Ultegra RX 11-Speed derailleur/12-speed cassette",
+    "speeds": 12,
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-RX800",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-PG-1210-A1",
+        "confidence": 0.14633228769508433,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "maxToothAvailableAndCompatible": 34,
+    "chainWrap": 39,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 10-Speed shifter/Ultegra 9-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-6500",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.3254680391895856,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 27
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.5521479548268808,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 27
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "maxToothAvailableAndCompatible": 27,
+    "chainWrap": 37,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 10-Speed shifter/Ultegra 9-Speed derailleur/12-speed cassette",
+    "speeds": 12,
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-6500",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-PG-1210-A1",
+        "confidence": 0.05871246210695262,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 27
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "maxToothAvailableAndCompatible": 27,
+    "chainWrap": 37,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 10-Speed shifter/Tiagra 10-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-4601-SS",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.09788409809599036,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 30
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.07443774877029519,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 30
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 30,
+    "chainWrap": 34,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 10-Speed shifter/Tiagra 10-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "ST-6700",
+    "derailleurPartNumber": "RD-4601-SS",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.19181591292527367,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 30
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.35805186831047653,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 30
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "maxToothAvailableAndCompatible": 30,
+    "chainWrap": 34,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 11-Speed shifter/GRX 10-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-RX400",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.07295193820031295,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.05458127690345087,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 11-Speed shifter/GRX 10-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-RX400",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.2398645581115711,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.4306175123572975,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 11-Speed shifter/Ultegra RX 11-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-RX800",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.4282354949356835,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.3582294512576272,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 34,
+    "chainWrap": 39,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 11-Speed shifter/Ultegra RX 11-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-RX800",
+    "cassettes": [
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.08214517585019494,
+        "supported": true,
+        "maxToothAvailableAndCompatible": 34
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 34,
+    "chainWrap": 39,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 11-Speed shifter/Ultegra 9-Speed derailleur/9-speed cassette",
+    "speeds": 9,
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-6500",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-LG300-9",
+        "confidence": 0.18504735042826614,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 27
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 27,
+    "chainWrap": 37,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 11-Speed shifter/Ultegra 9-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-6500",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-PG-1050-A1",
+        "confidence": 0.18504735042826614,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 27
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 27,
+    "chainWrap": 37,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 11-Speed shifter/Tiagra 10-Speed derailleur/9-speed cassette",
+    "speeds": 9,
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-4601-SS",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-LG300-9",
+        "confidence": 0.09996335742179113,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 30
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 30,
+    "chainWrap": 34,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 11-Speed shifter/Tiagra 10-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-4601-SS",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-PG-1050-A1",
+        "confidence": 0.09996335742179113,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 30
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 30,
+    "chainWrap": 34,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 11-Speed shifter/105 11-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-5800",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.9139526966908849,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 32
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.613141669008316,
+        "supported": true,
+        "maxToothAvailableAndCompatible": 32
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 32,
+    "chainWrap": 37,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 11-Speed shifter/105 11-Speed derailleur/12-speed cassette",
+    "speeds": 12,
+    "shifterPartNumber": "ST-R8020",
+    "derailleurPartNumber": "RD-5800",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-PG-1210-A1",
+        "confidence": 0.41247910639365815,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 32
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "maxToothAvailableAndCompatible": 32,
+    "chainWrap": 37,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Deore 11-Speed shifter/CUES 9-Speed derailleur/9-speed cassette",
+    "speeds": 9,
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-LG300-9",
+        "confidence": 0.07771959959161316,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Deore 11-Speed shifter/CUES 9-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.6128389801534957,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.5274979638587494,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      },
+      {
+        "cassettePartNumber": "CS-PG-1050-A1",
+        "confidence": 0.07771959959161316,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano Deore 11-Speed shifter/SRAM SX 12-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.3422586767109533,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 48
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.2816411430334058,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 48,
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano Deore 11-Speed shifter/SRAM SX 12-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.11209425996377437,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 50
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 50,
+    "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Deore 11-Speed group with 11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.9579661052000707,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.652854986054674,
+        "supported": true,
+        "maxToothAvailableAndCompatible": 42
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Deore 11-Speed group with 12-speed cassette",
+    "speeds": 12,
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-PG-1210-A1",
+        "confidence": 0.3822024620697539,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 41,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Microshift Advent X 10-Speed shifter/Shimano CUES 9-Speed derailleur/9-speed cassette",
+    "speeds": 9,
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-LG300-9",
+        "confidence": 0.8018634871809223,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Microshift Advent X 10-Speed shifter/Shimano CUES 9-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-U4020",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.14450149159843212,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.18076553506843496,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      },
+      {
+        "cassettePartNumber": "CS-PG-1050-A1",
+        "confidence": 0.8018634871809223,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "chainWrap": 41,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Microshift Advent X 10-Speed shifter/SRAM SX 12-Speed derailleur/9-speed cassette",
+    "speeds": 9,
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-LG300-9",
+        "confidence": 0.8524510483037597,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 46
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 46,
+    "chainWrap": 40,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Microshift Advent X 10-Speed shifter/SRAM SX 12-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-SX-1-B1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.3015611253041199,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 48
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.3621989249173843,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      },
+      {
+        "cassettePartNumber": "CS-PG-1050-A1",
+        "confidence": 0.8524510483037597,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 48,
+    "chainWrap": 40,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Microshift Advent X 10-Speed shifter/Shimano Deore 11-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.303309791695546,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "confidence": 0.24748024467173457,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 41,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  },
+  {
+    "brand": "Mixed",
+    "name": "Microshift Advent X 10-Speed shifter/Shimano Deore 11-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-M4120",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.0581424446936758,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.13022043736827096,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 42
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": true,
+    "maxToothAvailableAndCompatible": 42,
+    "chainWrap": 41,
+    "equivalentShifters": [
+      {
+        "name": "Sword 10-speed",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": []
+  }
+]

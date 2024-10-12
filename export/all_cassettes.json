@@ -1,0 +1,152 @@
+[
+  {
+    "name": "SRAM 11-speed",
+    "brand": "SRAM",
+    "partNumber": "sram-11-speed",
+    "speeds": 11,
+    "pitches": [
+      3.72,
+      3.72,
+      3.72,
+      3.72,
+      3.72,
+      3.72,
+      3.72,
+      3.72,
+      3.72,
+      3.72
+    ],
+    "averagePitch": 3.72,
+    "cogWidth": 1.65,
+    "maxToothAvailable": 51,
+    "source": "https://en.wikibooks.org/wiki/Bicycles/Maintenance_and_Repair/Gear-changing_Dimensions#Cog-set_Stack_Width"
+  },
+  {
+    "name": "Shimano 11-speed",
+    "brand": "Shimano",
+    "partNumber": "shimano-11-speed",
+    "speeds": 11,
+    "pitches": [
+      3.75,
+      3.75,
+      3.75,
+      3.75,
+      3.75,
+      3.75,
+      3.75,
+      3.75,
+      3.75,
+      3.75
+    ],
+    "averagePitch": 3.75,
+    "cogWidth": 1.65,
+    "maxToothAvailable": 51,
+    "source": "https://en.wikibooks.org/wiki/Bicycles/Maintenance_and_Repair/Gear-changing_Dimensions#Cog-set_Stack_Width"
+  },
+  {
+    "name": "Generic 10-Speed",
+    "brand": "Generic",
+    "partNumber": "generic-10-speed",
+    "speeds": 10,
+    "pitches": [
+      3.95,
+      3.95,
+      3.95,
+      3.95,
+      3.95,
+      3.95,
+      3.95,
+      3.95,
+      3.95
+    ],
+    "averagePitch": 3.95,
+    "cogWidth": 1.65,
+    "maxToothAvailable": 48,
+    "source": "https://en.wikibooks.org/wiki/Bicycles/Maintenance_and_Repair/Gear-changing_Dimensions#Cog-set_Stack_Width"
+  },
+  {
+    "name": "LinkGlide 9-Speed",
+    "brand": "Shimano",
+    "partNumber": "CS-LG300-9",
+    "speeds": 9,
+    "pitches": [
+      4.05,
+      4.0,
+      4.1,
+      4.05,
+      4.05,
+      4.1,
+      4.05,
+      4
+    ],
+    "averagePitch": 4.05,
+    "cogWidth": 1.95,
+    "maxToothAvailable": 46,
+    "source": "https://youtu.be/q75AiGAUpp8"
+  },
+  {
+    "name": "Eagle 12-Speed",
+    "brand": "SRAM",
+    "partNumber": "CS-PG-1210-A1",
+    "speeds": 12,
+    "pitches": [
+      3.88,
+      3.8,
+      3.65,
+      3.65,
+      3.65,
+      3.65,
+      3.65,
+      3.65,
+      3.45,
+      3.7,
+      3.94
+    ],
+    "averagePitch": 3.65,
+    "cogWidth": 1.65,
+    "maxToothAvailable": 52,
+    "source": "https://docs.google.com/spreadsheets/d/1251cmc6JOUUULPyqbn2MrdiI40J8G2-B4L_jE3tlGA4/edit?usp=sharing"
+  },
+  {
+    "name": "Shimano 10-Speed",
+    "brand": "Shimano",
+    "partNumber": "CS-HG-500-10",
+    "speeds": 10,
+    "pitches": [
+      4.16,
+      3.9,
+      3.9,
+      3.91,
+      3.94,
+      3.98,
+      4.09,
+      3.82,
+      3.99
+    ],
+    "averagePitch": 3.96,
+    "cogWidth": 1.71,
+    "maxToothAvailable": 34,
+    "source": "https://docs.google.com/spreadsheets/d/1rqV2qpU2hzQhhdejQ6YgvZV2T9zg580vXTBdCKbOJ8k/edit?usp=sharing"
+  },
+  {
+    "name": "SRAM 10-Speed",
+    "brand": "SRAM",
+    "partNumber": "CS-PG-1050-A1",
+    "speeds": 10,
+    "pitches": [
+      3.95,
+      3.97,
+      3.94,
+      4.03,
+      4.21,
+      4.21,
+      4.13,
+      4.0,
+      4.07
+    ],
+    "averagePitch": 4.05,
+    "cogWidth": 1.78,
+    "maxToothAvailable": 36,
+    "source": "https://docs.google.com/spreadsheets/d/1cwWfOT6iPUawM9y10gzjh8jaenWdDtznxEDxzCVvy0s/edit?usp=sharing"
+  }
+]

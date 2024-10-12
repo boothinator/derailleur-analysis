@@ -119,3 +119,12 @@ for shifter in shifters:
 
 with open(f"combinations.json", "w") as info_file:
   json.dump(combos, info_file, indent=2)
+
+with open(f"all_shifters.json", "w") as info_file:
+  json.dump(shifters, info_file, indent=2)
+
+with open(f"all_derailleurs.json", "w") as info_file:
+  json.dump(derailleurs, info_file, indent=2)
+
+with open(f"all_cassettes.json", "w") as info_file:
+  json.dump(cassettes, info_file, indent=2)
