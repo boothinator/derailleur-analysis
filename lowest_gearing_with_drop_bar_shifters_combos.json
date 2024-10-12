@@ -40,7 +40,8 @@
         "note": "Presumably Sword uses the same shift points as Advent X"
       }
     ],
-    "equivalentDerailleurs": []
+    "equivalentDerailleurs": [],
+    "reviews": []
   },
   {
     "brand": "Mixed",
@@ -71,7 +72,8 @@
         "note": "Presumably Sword uses the same shift points as Advent X"
       }
     ],
-    "equivalentDerailleurs": []
+    "equivalentDerailleurs": [],
+    "reviews": []
   },
   {
     "brand": "SRAM",
@@ -131,7 +133,8 @@
         "equivalentPartNumber": "RD-APX-1-A1",
         "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
       }
-    ]
+    ],
+    "reviews": []
   },
   {
     "brand": "Mixed",
@@ -168,7 +171,8 @@
         "note": "Presumably Sword uses the same shift points as Advent X"
       }
     ],
-    "equivalentDerailleurs": []
+    "equivalentDerailleurs": [],
+    "reviews": []
   },
   {
     "brand": "SRAM",
@@ -213,7 +217,19 @@
         "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
       }
     ],
-    "equivalentDerailleurs": []
+    "equivalentDerailleurs": [],
+    "reviews": [
+      {
+        "shifterPartNumber": "SB-RIV-B1",
+        "derailleurPartNumber": "RD-GX-T21-A1",
+        "cassettePartNumber": "generic-10-speed",
+        "publisher": "Path Less Pedaled",
+        "title": "TESTING BAD IDEAS THE INTERNET SAID SHOULD WORK",
+        "url": "https://youtu.be/0hoLpd8Igxo?t=101",
+        "sentiment": "positive",
+        "note": "Tested using a Rival 11-speed 1x shifter. Russ is positive on the compatibility, negative on the combination's ability to clear a 50t cog"
+      }
+    ]
   },
   {
     "brand": "SRAM",
@@ -258,7 +274,8 @@
         "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
       }
     ],
-    "equivalentDerailleurs": []
+    "equivalentDerailleurs": [],
+    "reviews": []
   },
   {
     "brand": "Shimano",
@@ -286,7 +303,8 @@
     "maxToothAvailableAndCompatible": 36,
     "chainWrap": 41,
     "equivalentShifters": [],
-    "equivalentDerailleurs": []
+    "equivalentDerailleurs": [],
+    "reviews": []
   },
   {
     "brand": "Shimano",
@@ -314,7 +332,8 @@
     "maxToothAvailableAndCompatible": 36,
     "chainWrap": 41,
     "equivalentShifters": [],
-    "equivalentDerailleurs": []
+    "equivalentDerailleurs": [],
+    "reviews": []
   },
   {
     "brand": "Mixed",
@@ -345,7 +364,8 @@
         "note": "Presumably Sword uses the same shift points as Advent X"
       }
     ],
-    "equivalentDerailleurs": []
+    "equivalentDerailleurs": [],
+    "reviews": []
   },
   {
     "brand": "Mixed",
@@ -388,6 +408,7 @@
         "note": "Presumably Sword uses the same shift points as Advent X"
       }
     ],
-    "equivalentDerailleurs": []
+    "equivalentDerailleurs": [],
+    "reviews": []
   }
 ]

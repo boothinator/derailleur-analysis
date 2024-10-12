@@ -14,6 +14,8 @@ with open(f"cassettes.json") as f:
   cassettes = json.load(f)
 with open(f"supported_combinations.json") as f:
   supported_combos = json.load(f)
+with open(f"reviewed_combinations.json") as f:
+  reviewed_combos = json.load(f)
 with open(f"compatibility_ranges.json") as f:
   compatibility_ranges = json.load(f)
 
@@ -30,6 +32,7 @@ for shifter in shifters:
 
     for speeds in range(9, 14):
       
+      # Generate a name for this combo
       if shifter["brand"] == derailleur["brand"]:
         brand = shifter["brand"]
         
@@ -45,6 +48,7 @@ for shifter in shifters:
             + f"{derailleur["brand"]} {derailleur['name']} derailleur/" \
             + f"{speeds}-speed cassette"
 
+      # Build combo info
       combo = {
         "brand": brand,
         "name": name,
@@ -64,6 +68,7 @@ for shifter in shifters:
 
       cassettesTested = 0
 
+      # Look for compatible cassettes
       for cassette in [c for c in cassettes if c["speeds"] == speeds]:
         cassettesTested = cassettesTested + 1
         
@@ -92,7 +97,22 @@ for shifter in shifters:
 
           combo["maxToothAvailableAndCompatible"] = max(combo["maxToothAvailableAndCompatible"], maxToothAvailableAndCompatible)
       
+      # Save combo if compatible cassette was found
       if len(combo["cassettes"]) > 0:
+        # Find reviews
+        combo["reviews"] = [r for r in reviewed_combos
+                    if (shifter["partNumber"] == r["shifterPartNumber"]
+                        or any([e for e in equiv_shifters
+                                if e["partNumber"] == r["shifterPartNumber"]])
+                      )
+                      and (derailleur["partNumber"] == r["derailleurPartNumber"]
+                        or any([e for e in equiv_derailleurs
+                                if e["partNumber"] == r["derailleurPartNumber"]])
+                      )
+                      and any([c for c in combo["cassettes"]
+                               if c["cassettePartNumber"] == r["cassettePartNumber"]])
+                  ]
+        
         combos.append(combo)
 
 
