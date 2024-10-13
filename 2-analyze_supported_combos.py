@@ -50,16 +50,9 @@ if len(out_of_range) > 0:
 else:
   print("All supported combos are in range")
 
-print(motion_multiplier_avg)
-print(motion_multiplier_min)
-print(motion_multiplier_max)
-print(motion_multiplier_stdev)
-
 compatibility_ranges = {
   "motionMultiplierAvg": motion_multiplier_avg,
-  "motionMultiplierStdev": motion_multiplier_stdev,
-  "motionMultiplierMin": motion_multiplier_min,
-  "motionMultiplierMax": motion_multiplier_max
+  "motionMultiplierStdev": motion_multiplier_stdev
 }
 
 with open(f"compatibility_ranges.json", "w") as info_file:
