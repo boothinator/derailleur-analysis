@@ -1,6 +1,7 @@
 
 import json
 from scipy.stats import norm
+from util import calculate_max_angle
 
 with open(f"other_shifters.json") as f:
   shifters = json.load(f)
@@ -21,6 +22,7 @@ with open(f"compatibility_ranges.json") as f:
 
 motion_multiplier_avg = compatibility_ranges["motionMultiplierAvg"]
 motion_multiplier_stdev = compatibility_ranges["motionMultiplierStdev"]
+max_angle_max = compatibility_ranges["maxAngleMax"]
 
 combos = []
 
@@ -70,8 +72,6 @@ for shifter in shifters:
       for cassette in [c for c in cassettes if c["speeds"] == speeds]:
         
         # TODO: check if jockey can move from smallest to largest cog
-
-        # TODO: calculate each gear position and check if the angle is less than about 1.3 degrees
         
         # Check to see how close [cable pull] * [pull ratio] is to [cog pitch]
         multiplier = cassette["averagePitch"] / (shifter["cablePull"] * derailleur["pullRatio"])
@@ -82,8 +82,12 @@ for shifter in shifters:
         # 1.0 means we're dead on, < 0.05 means we're further away than 95% of all groupsets
         confidence = 1 - norm.cdf(distFromMotionMultiplierAvg, scale=motion_multiplier_stdev) \
                     + norm.cdf(-distFromMotionMultiplierAvg, scale=motion_multiplier_stdev)
+        
+        max_angle = calculate_max_angle(shifter, derailleur, cassette)
 
-        if confidence > 0.05:
+        # TODO: log combos with high enough confidence but bad max angle, and vice versa
+
+        if confidence > 0.05 and max_angle <= max_angle_max:
           maxToothAvailableAndCompatible = min(derailleur["maxTooth"], cassette["maxToothAvailable"])
 
           combo["cassettes"].append({
@@ -93,7 +97,8 @@ for shifter in shifters:
                 if shifter["partNumber"] == combo["shifterPartNumber"]
                 and derailleur["partNumber"] == combo["derailleurPartNumber"]
                 and cassette["partNumber"] == combo["cassettePartNumber"]]),
-            "maxToothAvailableAndCompatible": maxToothAvailableAndCompatible
+            "maxToothAvailableAndCompatible": maxToothAvailableAndCompatible,
+            "maxAngle": max_angle # TODO: come up with better name
           })
 
           combo["maxToothAvailableAndCompatible"] = max(combo["maxToothAvailableAndCompatible"], maxToothAvailableAndCompatible)

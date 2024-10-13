@@ -1,4 +1,7 @@
 {
   "motionMultiplierAvg": 1.0176410645689447,
-  "motionMultiplierStdev": 0.020689276419003665
+  "motionMultiplierStdev": 0.020689276419003665,
+  "maxAngleAvg": 0.27014520041551787,
+  "maxAngleStdev": 0.3512050419055769,
+  "maxAngleMax": 0.9725552842266716
 }

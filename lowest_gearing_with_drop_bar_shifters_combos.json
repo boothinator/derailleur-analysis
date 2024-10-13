@@ -10,57 +10,14 @@
         "cassettePartNumber": "generic-10-speed",
         "confidence": 0.3015611253041199,
         "supported": false,
-        "maxToothAvailableAndCompatible": 48
-      },
-      {
-        "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.3621989249173843,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 34
-      },
-      {
-        "cassettePartNumber": "CS-PG-1050-A1",
-        "confidence": 0.8524510483037597,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 48,
+        "maxAngle": 0.9145936972290528
       }
     ],
     "shifterType": "drop-bar",
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 48,
-    "chainWrap": 40,
-    "equivalentShifters": [
-      {
-        "name": "Sword 10-speed",
-        "brand": "Microshift",
-        "partNumber": "SB-G7000-R",
-        "type": "drop-bar",
-        "equivalentPartNumber": "SB-M100A",
-        "note": "Presumably Sword uses the same shift points as Advent X"
-      }
-    ],
-    "equivalentDerailleurs": [],
-    "reviews": []
-  },
-  {
-    "brand": "Mixed",
-    "name": "Microshift Advent X 10-Speed shifter/SRAM SX 12-Speed derailleur/9-speed cassette",
-    "speeds": 9,
-    "shifterPartNumber": "SB-M100A",
-    "derailleurPartNumber": "RD-SX-1-B1",
-    "cassettes": [
-      {
-        "cassettePartNumber": "CS-LG300-9",
-        "confidence": 0.8524510483037597,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 46
-      }
-    ],
-    "shifterType": "drop-bar",
-    "noMatchingFrontShifter": false,
-    "moreCogsThanShifts": false,
-    "maxToothAvailableAndCompatible": 46,
     "chainWrap": 40,
     "equivalentShifters": [
       {
@@ -86,13 +43,15 @@
         "cassettePartNumber": "sram-11-speed",
         "confidence": 0.680250880734544,
         "supported": true,
-        "maxToothAvailableAndCompatible": 42
+        "maxToothAvailableAndCompatible": 42,
+        "maxAngle": 0.6793979145354543
       },
       {
         "cassettePartNumber": "shimano-11-speed",
         "confidence": 0.9850198556512642,
         "supported": false,
-        "maxToothAvailableAndCompatible": 42
+        "maxToothAvailableAndCompatible": 42,
+        "maxAngle": 0.9273055249558058
       }
     ],
     "shifterType": "drop-bar",
@@ -137,44 +96,6 @@
     "reviews": []
   },
   {
-    "brand": "Mixed",
-    "name": "Microshift Advent X 10-Speed shifter/Shimano Deore 11-Speed derailleur/10-speed cassette",
-    "speeds": 10,
-    "shifterPartNumber": "SB-M100A",
-    "derailleurPartNumber": "RD-M4120",
-    "cassettes": [
-      {
-        "cassettePartNumber": "generic-10-speed",
-        "confidence": 0.303309791695546,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 42
-      },
-      {
-        "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.24748024467173457,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 34
-      }
-    ],
-    "shifterType": "drop-bar",
-    "noMatchingFrontShifter": true,
-    "moreCogsThanShifts": false,
-    "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 41,
-    "equivalentShifters": [
-      {
-        "name": "Sword 10-speed",
-        "brand": "Microshift",
-        "partNumber": "SB-G7000-R",
-        "type": "drop-bar",
-        "equivalentPartNumber": "SB-M100A",
-        "note": "Presumably Sword uses the same shift points as Advent X"
-      }
-    ],
-    "equivalentDerailleurs": [],
-    "reviews": []
-  },
-  {
     "brand": "SRAM",
     "name": "SRAM Apex 1 11-Speed shifter/GX 10-Speed derailleur/10-speed cassette",
     "speeds": 10,
@@ -185,13 +106,15 @@
         "cassettePartNumber": "generic-10-speed",
         "confidence": 0.2353205889612297,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxAngle": 0.5962442310173838
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
         "confidence": 0.18874776825915696,
         "supported": false,
-        "maxToothAvailableAndCompatible": 34
+        "maxToothAvailableAndCompatible": 34,
+        "maxAngle": 0.6352715919785195
       }
     ],
     "shifterType": "drop-bar",
@@ -242,13 +165,15 @@
         "cassettePartNumber": "sram-11-speed",
         "confidence": 0.08074409611386904,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxAngle": 0.0
       },
       {
         "cassettePartNumber": "shimano-11-speed",
         "confidence": 0.1726304585361969,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxAngle": 0.0
       }
     ],
     "shifterType": "drop-bar",
@@ -288,13 +213,15 @@
         "cassettePartNumber": "generic-10-speed",
         "confidence": 0.07295193820031295,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxAngle": 0.6574157942269288
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
         "confidence": 0.05458127690345087,
         "supported": false,
-        "maxToothAvailableAndCompatible": 34
+        "maxToothAvailableAndCompatible": 34,
+        "maxAngle": 0.610915167592128
       }
     ],
     "shifterType": "drop-bar",
@@ -317,13 +244,15 @@
         "cassettePartNumber": "sram-11-speed",
         "confidence": 0.2398645581115711,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxAngle": 0.0
       },
       {
         "cassettePartNumber": "shimano-11-speed",
         "confidence": 0.4306175123572975,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxAngle": 0.0
       }
     ],
     "shifterType": "drop-bar",
@@ -332,38 +261,6 @@
     "maxToothAvailableAndCompatible": 36,
     "chainWrap": 41,
     "equivalentShifters": [],
-    "equivalentDerailleurs": [],
-    "reviews": []
-  },
-  {
-    "brand": "Mixed",
-    "name": "Microshift Advent X 10-Speed shifter/Shimano CUES 9-Speed derailleur/9-speed cassette",
-    "speeds": 9,
-    "shifterPartNumber": "SB-M100A",
-    "derailleurPartNumber": "RD-U4020",
-    "cassettes": [
-      {
-        "cassettePartNumber": "CS-LG300-9",
-        "confidence": 0.8018634871809223,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 36
-      }
-    ],
-    "shifterType": "drop-bar",
-    "noMatchingFrontShifter": true,
-    "moreCogsThanShifts": false,
-    "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41,
-    "equivalentShifters": [
-      {
-        "name": "Sword 10-speed",
-        "brand": "Microshift",
-        "partNumber": "SB-G7000-R",
-        "type": "drop-bar",
-        "equivalentPartNumber": "SB-M100A",
-        "note": "Presumably Sword uses the same shift points as Advent X"
-      }
-    ],
     "equivalentDerailleurs": [],
     "reviews": []
   },
@@ -378,19 +275,15 @@
         "cassettePartNumber": "generic-10-speed",
         "confidence": 0.14450149159843212,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxAngle": 0.0
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
         "confidence": 0.18076553506843496,
         "supported": false,
-        "maxToothAvailableAndCompatible": 34
-      },
-      {
-        "cassettePartNumber": "CS-PG-1050-A1",
-        "confidence": 0.8018634871809223,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 34,
+        "maxAngle": 0.5575717112466755
       }
     ],
     "shifterType": "drop-bar",

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os
 import json
 import math
-
+from util import calculate_max_angle
 
 with open(f"other_shifters.json") as f:
   shifters = json.load(f)
@@ -17,6 +17,7 @@ with open(f"supported_combinations.json") as f:
 
 names = []
 motion_multipliers = []
+max_angles = []
 
 for combo in supported_combos:
   shifter = [s for s in shifters
@@ -35,11 +36,18 @@ for combo in supported_combos:
 
   # TODO: calculate jockey positions and compare to cog positions, taking into account roller size
   # Also, figure out the angles generated from jockey to cog
+  max_angle = calculate_max_angle(shifter, derailleur, cassette)
+  max_angles.append(max_angle)
+
 
 motion_multiplier_avg = np.mean(motion_multipliers)
 motion_multiplier_stdev = np.std(motion_multipliers)
 motion_multiplier_min = motion_multiplier_avg - 2*motion_multiplier_stdev
 motion_multiplier_max = motion_multiplier_avg + 2*motion_multiplier_stdev
+
+max_angle_avg = np.mean(max_angles)
+max_angle_stdev = np.std(max_angles)
+max_angle_max = max_angle_avg + 2*max_angle_stdev
 
 # Validate that all supported combos are in range
 out_of_range = [supported_combos[i]["name"] for (i, mm) in enumerate(motion_multipliers)
@@ -52,7 +60,10 @@ else:
 
 compatibility_ranges = {
   "motionMultiplierAvg": motion_multiplier_avg,
-  "motionMultiplierStdev": motion_multiplier_stdev
+  "motionMultiplierStdev": motion_multiplier_stdev,
+  "maxAngleAvg": max_angle_avg,
+  "maxAngleStdev": max_angle_stdev,
+  "maxAngleMax": max_angle_max
 }
 
 with open(f"compatibility_ranges.json", "w") as info_file:
