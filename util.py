@@ -1,6 +1,5 @@
 import numpy as np
 
-roller_width = 2.2 # TODO: take this from the cassette, since cog spacing determines chain roller width
 smallest_cog_position = 15 # TODO: put this on the cassette, or figure out from derailleur
 jockey_to_cog_distance = 2.5 * 25.4 / 2 
 max_cable_pull = 50 # Assume that no shifter will be able to pull 50 mm of cable
@@ -9,7 +8,7 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
   derailleur_curve = np.polynomial.Polynomial(coef=derailleur["coefficients"])
   shift_spacings = np.array(shifter["shiftSpacings"])
   cassette_pitches = cassette["pitches"]
-  roller_cog_free_play = roller_width - cassette["cogWidth"]
+  roller_cog_free_play = cassette["chainRollerWidth"] - cassette["cogWidth"]
   num_positions = min([cassette["speeds"], shifter["speeds"]])
 
   # Calculate barrel adjuster
