@@ -5,6 +5,10 @@ import os
 import json
 import math
 import re
+import pandas as pd
+
+def convert_to_float(c):
+  return float(c) if len(c) > 0 else float('nan')
 
 def analyze(input_file):
   data = []
@@ -19,7 +23,7 @@ def analyze(input_file):
   set_row_index = row_headers.index("Set")
   direction_row_index = row_headers.index("Direction")
   
-  # Find where measurements tart
+  # Find where measurements start
   gear_headers = [(i, h, m[1]) for i, h, m in 
     [(i,h,re.match(r'^(\d{1,2}).*', h)) for i,h in enumerate(row_headers)]
     if m
@@ -32,6 +36,24 @@ def analyze(input_file):
     [(float(c) if len(c) > 0 else float('nan')) for c in row[1:]]
     for row in data[first_gear_row_index:last_gear_row_index+1]
   ]
+
+  # Create DataFrame
+  d = [dict([(row_header, data[row_index][col_index])
+             for row_index,row_header in enumerate(row_headers[0:first_gear_row_index])]
+             + [('Gear', int(re.match(r'^(\d{1,2}).*', data[gear_row_index][0])[1])),
+                ('Measurement', convert_to_float(data[gear_row_index][col_index]))
+                ])
+       for col_index in range(1, len(data[0]))
+       for gear_row_index in range(first_gear_row_index, last_gear_row_index + 1)]
+  df = pd.DataFrame(d)
+
+  sets = sorted(list(set(df["Set"])))
+
+  # Get set averages
+  set_gear_averages = df.groupby(["Set", "Gear"])["Measurement"].mean()
+
+  set_average_diffs = [set_gear_averages[set] - set_gear_averages[sets[0]] for set in sets[1:]]
+
 
   # TODO: graph, diff between pulling and relaxing, average pulling, average relaxing
   # TODO: normalize, make queryable
