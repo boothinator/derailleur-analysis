@@ -16,6 +16,9 @@ def analyze(input_file):
       data.append(row)
       row_headers.append(row[0])
   
+  set_row_index = row_headers.index("Set")
+  direction_row_index = row_headers.index("Direction")
+  
   # Find where measurements tart
   gear_headers = [(i, h, m[1]) for i, h, m in 
     [(i,h,re.match(r'^(\d{1,2}).*', h)) for i,h in enumerate(row_headers)]
@@ -25,16 +28,49 @@ def analyze(input_file):
   last_gear_row_index = max([i for i,_,_ in gear_headers])
   
   # Extract just the measurements and convert to numbers
-  measurement_data = np.array([
+  measurement_data = [
     [(float(c) if len(c) > 0 else float('nan')) for c in row[1:]]
     for row in data[first_gear_row_index:last_gear_row_index+1]
-  ])
+  ]
 
-  # TODO: normalize data between runs
-  # todo: graph, diff between pulling and relaxing, average pulling, average relaxing
+  # TODO: graph, diff between pulling and relaxing, average pulling, average relaxing
+  set_row = data[set_row_index][1:]
+  set_numbers = sorted(list(set(set_row)))
+
+  set_col_indexes = [(set, [i for i,s in enumerate(set_row) if s == set]) for set in set_numbers]
+
+  set_measurement_data = [
+    (set, [[val for i,val in enumerate(row) if i in indexes] for row in measurement_data])
+    for set,indexes in set_col_indexes
+  ]
+
+  set_row_averages = [(sd[0], np.array([np.mean([v for v in row if not np.isnan(v)]) for row in sd[1]]))
+                  for sd in set_measurement_data]
+  
+  row_avg_diffs = [set_row_averages[set_index][1] - set_row_averages[0][1]
+                   for set_index in range(1, len(set_row_averages))]
+  
+  avg_set_diffs = [0] + [np.mean([d for d in row_diffs if not np.isnan(d)])
+                         for row_diffs in row_avg_diffs]
+  
+  normalized_set_data = [(set, np.array(data) - avg_set_diffs[i])
+                                 for i,(set,data) in enumerate(set_measurement_data)]
+  
+  normalized_measurement_data = [
+    np.array([ normalized_set_data[set_index][1][row_index] for set_index in range(len(set_numbers))]).flatten()
+    for row_index in range(len(measurement_data))]
+  
+  clean_normalized_row_data = [[c for c in row if not math.isnan(c)] for row in normalized_measurement_data]
+
+  min_clean_normalized_row_data = min([min(row) for row in clean_normalized_row_data])
+
+  clean_normalized_row_data = [[c - min_clean_normalized_row_data for c in row] for row in clean_normalized_row_data]
+  
+  row_averages = [np.mean(row) for row in clean_normalized_row_data]
+  row_stdevs = [np.std(row) for row in clean_normalized_row_data]
 
   # Calculate differences
-  diffs = np.array([column[:-1] - column[1:] for column in measurement_data.T])
+  diffs = np.array([column[:-1] - column[1:] for column in np.array(measurement_data).T])
 
   #TODO: diff between pulling and relaxing, average pulling, average relaxing, 95% confidence interval
 
