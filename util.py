@@ -1,8 +1,8 @@
 import numpy as np
 
-roller_width = 2.2
-smallest_cog_position = 15
-jockey_to_cog_distance = 2.5 * 25.4 / 2
+roller_width = 2.2 # TODO: take this from the cassette, since cog spacing determines chain roller width
+smallest_cog_position = 15 # TODO: put this on the cassette, or figure out from derailleur
+jockey_to_cog_distance = 2.5 * 25.4 / 2 
 
 def calculate_max_angle(shifter, derailleur, cassette):
   derailleur_curve = np.polynomial.Polynomial(coef=derailleur["coefficients"])
