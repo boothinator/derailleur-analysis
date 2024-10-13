@@ -34,6 +34,7 @@ def analyze(input_file):
   ]
 
   # TODO: graph, diff between pulling and relaxing, average pulling, average relaxing
+  # TODO: normalize, make queryable
   set_row = data[set_row_index][1:]
   set_numbers = sorted(list(set(set_row)))
 
@@ -68,6 +69,10 @@ def analyze(input_file):
   
   row_averages = [np.mean(row) for row in clean_normalized_row_data]
   row_stdevs = [np.std(row) for row in clean_normalized_row_data]
+
+  plt.clf()
+  plt.plot(row_stdevs, "o")
+  plt.show()
 
   # Calculate differences
   diffs = np.array([column[:-1] - column[1:] for column in np.array(measurement_data).T])
