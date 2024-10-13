@@ -9,7 +9,6 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
   derailleur_curve = np.polynomial.Polynomial(coef=derailleur["coefficients"])
   shift_spacings = np.array(shifter["shiftSpacings"])
   cassette_pitches = cassette["pitches"]
-  average_cog_pitch = np.mean(cassette_pitches)
   roller_cog_free_play = roller_width - cassette["cogWidth"]
   num_positions = min([cassette["speeds"], shifter["speeds"]])
 
