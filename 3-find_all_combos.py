@@ -72,8 +72,6 @@ for shifter in shifters:
       # Look for compatible cassettes
       for cassette in [c for c in cassettes if c["speeds"] == speeds]:
         
-        # TODO: check if jockey can move from smallest to largest cog
-        
         # Check to see how close [cable pull] * [pull ratio] is to [cog pitch]
         multiplier = cassette["averagePitch"] / (shifter["cablePull"] * derailleur["pullRatio"])
 
