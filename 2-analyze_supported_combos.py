@@ -1,9 +1,6 @@
-import csv
 import numpy as np
 import matplotlib.pyplot as plt
-import os
 import json
-import math
 from util import calculate_max_chain_angle
 
 with open(f"other_shifters.json") as f:
