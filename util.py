@@ -17,6 +17,8 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
   barrel_adjuster = 0
   barrel_adjuster_values = [barrel_adjuster]
 
+  # Use Newton's method to find the barrel adjuster amount that will minimize distance
+  # from jockey to cog for all shifts
   for i in range(0, 5):
     shift_positions = [barrel_adjuster + np.sum([shift_spacings[0:i]])
                       for i in range(0, len(shift_spacings) + 1) ]
@@ -50,11 +52,13 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
 
   max_chain_angle = np.arcsin(max_diff_minus_free_play/jockey_to_cog_distance) * 180 / np.pi
 
+  # Calculate end jockey positions based on second smallest or second biggest positions, plus the cog pitch
+  # Yeah, this ignores the motion multiplier, but it shouldn't affect the pull too low or pull too high determinations
   least_pull = get_cable_pull_for_jockey_position(derailleur,
-                                                  jockey_positions[1] - average_cog_pitch)
+                                                  jockey_positions[1] - cassette_pitches[0])
   least_pull_too_low = least_pull < 0
   most_pull = get_cable_pull_for_jockey_position(derailleur,
-                                                 jockey_positions[-2] + average_cog_pitch)
+                                                 jockey_positions[-2] + cassette_pitches[-1])
   most_pull_too_high = derailleur_curve(most_pull) > derailleur["physicalHighLimit"]
 
   return {
@@ -70,17 +74,6 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
     "max_chain_angle": max_chain_angle
   }
 
-def derailleur_can_clear_cassette(derailleur, cassette):
-  
-  derailleur_range = derailleur["physicalHighLimit"] - derailleur["physicalLowLimit"]
-  cassette_total_pitch = np.sum(cassette["pitches"])
-
-  return {
-    "derailleur_range": derailleur_range,
-    "cassette_total_pitch": cassette_total_pitch,
-    "can_clear": cassette_total_pitch > (derailleur_range * 1.02)
-  }
-
 def get_cable_pull_for_jockey_position(derailleur, jockey_position):
   derailleur_curve = np.polynomial.Polynomial(coef=derailleur["coefficients"])
   roots = (derailleur_curve - jockey_position).roots()
@@ -88,13 +81,16 @@ def get_cable_pull_for_jockey_position(derailleur, jockey_position):
   valid_roots = [r for r in roots
                 if r > 0 and r < max_cable_pull
                   and np.iscomplex(r) == False  # Don't consider complex results
+                  # Commented out because this fails for SRAM GX 10-speed
                   #and derailleur_curve(r) <= derailleur["physicalHighLimit"]]
                 ]
   
+  # Return -1 since we flag negative values as invalid anyway
   if len(valid_roots) == 0:
     print(f"Warning: no valid cable pull values for jockey position {jockey_position} on {derailleur['partNumber']}.", roots)
     return -1
   
+  # Just warn, and return the smallest valid root instead of throwing an error
   if len(valid_roots) > 1:
     print(f"Warning: too many cable pull values for jockey position {jockey_position} on {derailleur['partNumber']}.", valid_roots)
 

@@ -33,7 +33,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 3.3147976037783677,
       "least_pull_too_low": false,
-      "most_pull": 34.23699218000352,
+      "most_pull": 34.1724369549191,
       "most_pull_too_high": false,
       "diffs": [
         -1.3257984498738544,
@@ -147,9 +147,9 @@
         2.772122596499516
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.381164586676484,
+      "least_pull": 3.2219529758224015,
       "least_pull_too_low": false,
-      "most_pull": 34.12484508608538,
+      "most_pull": 34.156278162504115,
       "most_pull_too_high": false,
       "diffs": [
         -1.212469394658644,
@@ -206,9 +206,9 @@
         2.9971859995863963
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.5412829691330265,
+      "least_pull": 3.628224339789631,
       "least_pull_too_low": false,
-      "most_pull": 34.527731085258914,
+      "most_pull": 34.54531734316945,
       "most_pull_too_high": false,
       "diffs": [
         -1.7096399232344162,
@@ -267,7 +267,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 2.8686492112291844,
       "least_pull_too_low": false,
-      "most_pull": 32.40350942916976,
+      "most_pull": 32.363663051044995,
       "most_pull_too_high": true,
       "diffs": [
         -0.9052366698891134,
@@ -318,7 +318,7 @@
             2.0596488256118373
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 2.6190856827692275,
+          "least_pull": 2.6190856827692293,
           "least_pull_too_low": false,
           "most_pull": 31.995285063825623,
           "most_pull_too_high": true,
@@ -362,9 +362,9 @@
             2.220554392650944
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 2.7740659701476558,
+          "least_pull": 2.6121017807587577,
           "least_pull_too_low": false,
-          "most_pull": 32.173435616164,
+          "most_pull": 32.19287175439097,
           "most_pull_too_high": true,
           "diffs": [
             -0.5970232011247809,
@@ -411,9 +411,9 @@
         2.3553470558634726
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.838993690878068,
+      "least_pull": 2.927590799082153,
       "least_pull_too_low": false,
-      "most_pull": 32.38498209707251,
+      "most_pull": 32.39560861473149,
       "most_pull_too_high": true,
       "diffs": [
         -0.9762151020035361,
@@ -470,9 +470,9 @@
         1.1071910292534433
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.8364773092384705,
+      "least_pull": 1.6820448886961568,
       "least_pull_too_low": false,
-      "most_pull": 30.817439877503844,
+      "most_pull": 31.007845174311715,
       "most_pull_too_high": true,
       "diffs": [
         0.5101995050440777,
@@ -533,7 +533,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 8.593138700183015,
       "least_pull_too_low": false,
-      "most_pull": 39.220632951538214,
+      "most_pull": 39.17193029537133,
       "most_pull_too_high": false,
       "diffs": [
         -2.609205898832876,
@@ -647,9 +647,9 @@
         8.536505085568512
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 8.705268396821968,
+      "least_pull": 8.52604820781236,
       "least_pull_too_low": false,
-      "most_pull": 39.1732476700073,
+      "most_pull": 39.19705487880554,
       "most_pull_too_high": false,
       "diffs": [
         -2.5364453351816323,
@@ -706,9 +706,9 @@
         8.777433454195677
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 8.867557711896476,
+      "least_pull": 8.965665054788575,
       "least_pull_too_low": false,
-      "most_pull": 39.51246946391954,
+      "most_pull": 39.52550453659974,
       "most_pull_too_high": false,
       "diffs": [
         -3.013844424468619,
@@ -887,9 +887,9 @@
         7.5171399536285985
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.911274853463439,
+      "least_pull": 7.741871900367746,
       "least_pull_too_low": false,
-      "most_pull": 37.85872996368614,
+      "most_pull": 38.0920641926631,
       "most_pull_too_high": false,
       "diffs": [
         -1.6886431914599171,
@@ -950,7 +950,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 6.039485937417661,
       "least_pull_too_low": false,
-      "most_pull": 36.68255145684556,
+      "most_pull": 36.63604191197174,
       "most_pull_too_high": false,
       "diffs": [
         -2.806853956790288,
@@ -1064,9 +1064,9 @@
         6.12339493491018
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 6.144250034124464,
+      "least_pull": 5.957198805828187,
       "least_pull_too_low": false,
-      "most_pull": 36.62734428172834,
+      "most_pull": 36.6500796341069,
       "most_pull_too_high": false,
       "diffs": [
         -2.7213506579540763,
@@ -1123,9 +1123,9 @@
         6.367177298735274
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 6.307114020959787,
+      "least_pull": 6.409472572163638,
       "least_pull_too_low": false,
-      "most_pull": 36.9603684347602,
+      "most_pull": 36.97279284584792,
       "most_pull_too_high": false,
       "diffs": [
         -3.192001327650374,
@@ -1304,9 +1304,9 @@
         5.066930281236662
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.317980264866167,
+      "least_pull": 5.140998280302915,
       "least_pull_too_low": false,
-      "most_pull": 35.305279694673665,
+      "most_pull": 35.52956233303146,
       "most_pull_too_high": false,
       "diffs": [
         -1.8763899874149281,
@@ -1367,7 +1367,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 9.48042761009978,
       "least_pull_too_low": false,
-      "most_pull": 40.497126643842215,
+      "most_pull": 40.44521465160163,
       "most_pull_too_high": false,
       "diffs": [
         -2.8711586491571346,
@@ -1481,9 +1481,9 @@
         9.651709589040818
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 9.649293971341637,
+      "least_pull": 9.460001052544941,
       "least_pull_too_low": false,
-      "most_pull": 40.49791010759753,
+      "most_pull": 40.523305941153005,
       "most_pull_too_high": false,
       "diffs": [
         -2.8501966516070887,
@@ -1540,9 +1540,9 @@
         9.901806837503633
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 9.82012433955529,
+      "least_pull": 9.923591164094548,
       "least_pull_too_low": false,
-      "most_pull": 40.8580761328661,
+      "most_pull": 40.87201142662911,
       "most_pull_too_high": false,
       "diffs": [
         -3.327148979860354,
@@ -1721,9 +1721,9 @@
         8.64962672887946
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 8.87174089381302,
+      "least_pull": 8.69220874925233,
       "least_pull_too_low": false,
-      "most_pull": 39.16611218341444,
+      "most_pull": 39.413434243700294,
       "most_pull_too_high": false,
       "diffs": [
         -2.0659548422624887,
@@ -1784,7 +1784,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 3.045236164479361,
       "least_pull_too_low": false,
-      "most_pull": 32.41916031968578,
+      "most_pull": 32.375800806326446,
       "most_pull_too_high": true,
       "diffs": [
         0.5940317264974375,
@@ -1839,7 +1839,7 @@
         1.8181198740516327
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.6448083507134474,
+      "least_pull": 2.6448083507134466,
       "least_pull_too_low": false,
       "most_pull": 31.83828880743657,
       "most_pull_too_high": true,
@@ -1898,9 +1898,9 @@
         1.9292127332739697
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.752389146737921,
+      "least_pull": 2.6012737183896584,
       "least_pull_too_low": false,
-      "most_pull": 31.974922593880386,
+      "most_pull": 31.995775360266776,
       "most_pull_too_high": true,
       "diffs": [
         1.167732861380891,
@@ -1957,9 +1957,9 @@
         2.119134728335593
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.886389416309341,
+      "least_pull": 2.9686846175975563,
       "least_pull_too_low": false,
-      "most_pull": 32.26491693469888,
+      "most_pull": 32.276420357209474,
       "most_pull_too_high": true,
       "diffs": [
         0.6934792937321852,
@@ -2138,9 +2138,9 @@
         0.7954067412038429
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.7392736762003465,
+      "least_pull": 1.5927330736264125,
       "least_pull_too_low": false,
-      "most_pull": 30.50646463748456,
+      "most_pull": 30.70338021953142,
       "most_pull_too_high": true,
       "diffs": [
         2.442672404165883,
@@ -2201,7 +2201,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 5.196688142137844,
       "least_pull_too_low": false,
-      "most_pull": 34.50340805054492,
+      "most_pull": 34.462887993823706,
       "most_pull_too_high": true,
       "diffs": [
         0.8511283574602082,
@@ -2315,9 +2315,9 @@
         4.125024563776526
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.794000688416466,
+      "least_pull": 4.631397993748077,
       "least_pull_too_low": false,
-      "most_pull": 33.96810102615783,
+      "most_pull": 33.987525927467,
       "most_pull_too_high": true,
       "diffs": [
         1.5329506183569102,
@@ -2374,9 +2374,9 @@
         4.321117757085294
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.937952751879768,
+      "least_pull": 5.026131939144807,
       "least_pull_too_low": false,
-      "most_pull": 34.25742265735446,
+      "most_pull": 34.2681345178053,
       "most_pull_too_high": true,
       "diffs": [
         1.0585605481853797,
@@ -2555,9 +2555,9 @@
         2.914355808578512
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.6592497128773367,
+      "least_pull": 3.4982423120832116,
       "least_pull_too_low": false,
-      "most_pull": 32.443525825440844,
+      "most_pull": 32.6269330411427,
       "most_pull_too_high": true,
       "diffs": [
         2.848966385804566,
@@ -2673,7 +2673,7 @@
         1.1279799260266166
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.6418992744083454,
+      "least_pull": 2.6418992744083467,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -2732,7 +2732,7 @@
         1.2229297350297137
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.729991251692227,
+      "least_pull": 2.6170477903643725,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -2791,7 +2791,7 @@
         1.312683951234705
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.768910127502568,
+      "least_pull": 2.830762700572192,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -2972,7 +2972,7 @@
         0.5634708124696973
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.210978891376159,
+      "least_pull": 2.104045995824619,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -3090,7 +3090,7 @@
         -1.0036789674082827
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.514631225012944,
+      "least_pull": 0.5146312250129453,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -3149,7 +3149,7 @@
         -0.8606712330804857
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.652093707305972,
+      "least_pull": 0.539374740772914,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -3208,7 +3208,7 @@
         -0.7551480399487366
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.707380604081149,
+      "least_pull": 0.7690951058842062,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -3359,67 +3359,6 @@
   },
   {
     "confidence_too_low": true,
-    "max_chain_angle_too_high": true,
-    "barrel_adjuster_too_low": true,
-    "least_pull_too_low": false,
-    "brand": "Mixed",
-    "name": "SRAM Apex 1 11-Speed shifter/Shimano Tiagra 10-Speed derailleur/12-speed cassette",
-    "speeds": 12,
-    "shifterPartNumber": "SB-APX-B1",
-    "derailleurPartNumber": "RD-4601-SS",
-    "cassettes": [],
-    "shifterType": "drop-bar",
-    "noMatchingFrontShifter": true,
-    "moreCogsThanShifts": true,
-    "maxToothAvailableAndCompatible": 0,
-    "chainWrap": 34,
-    "equivalentShifters": [],
-    "equivalentDerailleurs": [],
-    "cassettePartNumber": "CS-PG-1210-A1",
-    "confidence": 1.9131880683336022e-33,
-    "maxChainAngle": 5.369756940782585,
-    "maxAngleAnalysis": {
-      "barrel_adjuster": -1.627820854974147,
-      "barrel_adjuster_values": [
-        0,
-        -1.4734665977442332,
-        -1.6090369607468518,
-        -1.6255843685474984,
-        -1.6275804235026838,
-        -1.627820854974147
-      ],
-      "barrel_adjuster_too_low": true,
-      "least_pull": 0.021788875587296943,
-      "least_pull_too_low": false,
-      "most_pull": 32.71602315635474,
-      "most_pull_too_high": true,
-      "diffs": [
-        3.245461977486805,
-        2.0621164387771884,
-        0.738510444169659,
-        -0.5254222857518975,
-        -1.6412868624492205,
-        -2.4983525398601714,
-        -3.1035563823542773,
-        -3.2462539587538046,
-        -2.8733658081673923
-      ],
-      "diffs_minus_free_play": [
-        2.9704619774868046,
-        1.7871164387771883,
-        0.4635104441696589,
-        0.0,
-        -1.3662868624492204,
-        -2.223352539860171,
-        -2.828556382354277,
-        -2.9712539587538043,
-        -2.598365808167392
-      ],
-      "max_chain_angle": 5.369756940782585
-    }
-  },
-  {
-    "confidence_too_low": true,
     "max_chain_angle_too_high": false,
     "barrel_adjuster_too_low": false,
     "least_pull_too_low": false,
@@ -3452,7 +3391,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 4.123882195682208,
       "least_pull_too_low": false,
-      "most_pull": 33.35101990492448,
+      "most_pull": 33.311251867854814,
       "most_pull_too_high": true,
       "diffs": [
         0.24339441842548482,
@@ -3507,7 +3446,7 @@
         2.9105863042832305
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.686624587705482,
+      "least_pull": 3.686624587705484,
       "least_pull_too_low": false,
       "most_pull": 32.75508839883144,
       "most_pull_too_high": true,
@@ -3566,9 +3505,9 @@
         3.004310475393051
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.774356396328783,
+      "least_pull": 3.6213941925013295,
       "least_pull_too_low": false,
-      "most_pull": 32.86721974768131,
+      "most_pull": 32.88644008260019,
       "most_pull_too_high": true,
       "diffs": [
         0.8848919856161181,
@@ -3625,9 +3564,9 @@
         3.213188751677346
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.9257067459354404,
+      "least_pull": 4.009065942185976,
       "least_pull_too_low": false,
-      "most_pull": 33.162320926095425,
+      "most_pull": 33.172881433273055,
       "most_pull_too_high": true,
       "diffs": [
         0.39066399308628874,
@@ -3806,9 +3745,9 @@
         1.837791389127766
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.741330257502574,
+      "least_pull": 2.593683942397934,
       "least_pull_too_low": false,
-      "most_pull": 31.42392183747016,
+      "most_pull": 31.60884473848127,
       "most_pull_too_high": false,
       "diffs": [
         2.1717231566270208,
@@ -3869,7 +3808,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 2.8198908236558466,
       "least_pull_too_low": false,
-      "most_pull": 31.124742585830422,
+      "most_pull": 31.070147938133537,
       "most_pull_too_high": false,
       "diffs": [
         -0.7237332389574362,
@@ -3920,7 +3859,7 @@
             2.3381055871660936
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 2.784076566130877,
+          "least_pull": 2.7840765661308784,
           "least_pull_too_low": false,
           "most_pull": 30.884498382946315,
           "most_pull_too_high": false,
@@ -3964,9 +3903,9 @@
             2.4322288668824767
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 2.8697105104817213,
+          "least_pull": 2.709111380817815,
           "least_pull_too_low": false,
-          "most_pull": 31.01056687854719,
+          "most_pull": 31.03716798565168,
           "most_pull_too_high": false,
           "diffs": [
             -0.5896660522209061,
@@ -4013,9 +3952,9 @@
         2.7015317147659825
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.0762367547429625,
+      "least_pull": 3.1638390239777867,
       "least_pull_too_low": false,
-      "most_pull": 31.425103204312002,
+      "most_pull": 31.439891067304163,
       "most_pull_too_high": false,
       "diffs": [
         -1.1416222180499425,
@@ -4190,9 +4129,9 @@
         1.3290946688975402
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.9368600701109842,
+      "least_pull": 1.7833210294896773,
       "least_pull_too_low": false,
-      "most_pull": 29.468651211323888,
+      "most_pull": 29.71721657226047,
       "most_pull_too_high": false,
       "diffs": [
         0.5202046115518826,
@@ -4367,9 +4306,9 @@
         0.8702702280266577
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.4319868552127288,
+      "least_pull": 1.2765285085322928,
       "least_pull_too_low": false,
-      "most_pull": 28.277332932853035,
+      "most_pull": 28.46350989511835,
       "most_pull_too_high": false,
       "diffs": [
         0.9878301392068956,
@@ -4428,7 +4367,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 8.091648124527074,
       "least_pull_too_low": false,
-      "most_pull": 36.53996814325071,
+      "most_pull": 36.49258833718466,
       "most_pull_too_high": false,
       "diffs": [
         -2.0661885686060444,
@@ -4542,9 +4481,9 @@
         8.225494430705313
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 8.233981797078346,
+      "least_pull": 8.054146048557989,
       "least_pull_too_low": false,
-      "most_pull": 36.524655127558155,
+      "most_pull": 36.54782290701939,
       "most_pull_too_high": false,
       "diffs": [
         -2.0256615085804768,
@@ -4601,9 +4540,9 @@
         8.467083435948537
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 8.396934941113136,
+      "least_pull": 8.495369603229792,
       "least_pull_too_low": false,
-      "most_pull": 36.86026813723528,
+      "most_pull": 36.87294467221341,
       "most_pull_too_high": false,
       "diffs": [
         -2.503185625841599,
@@ -4778,9 +4717,9 @@
         7.131999986283069
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.363883751524034,
+      "least_pull": 7.193755457327491,
       "least_pull_too_low": false,
-      "most_pull": 35.14805828196222,
+      "most_pull": 35.37550921606793,
       "most_pull_too_high": false,
       "diffs": [
         -1.0990580458338783,
@@ -4839,7 +4778,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 5.525231012617156,
       "least_pull_too_low": false,
-      "most_pull": 34.04148720029945,
+      "most_pull": 33.99559312350335,
       "most_pull_too_high": false,
       "diffs": [
         -2.273444197949427,
@@ -4953,9 +4892,9 @@
         5.800314340207966
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.658153656792391,
+      "least_pull": 5.470353577867586,
       "least_pull_too_low": false,
-      "most_pull": 34.01460171571033,
+      "most_pull": 34.03703954441097,
       "most_pull_too_high": false,
       "diffs": [
         -2.216656719411173,
@@ -5012,9 +4951,9 @@
         6.044607037896651
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.821448561321098,
+      "least_pull": 5.924208029687581,
       "least_pull_too_low": false,
-      "most_pull": 34.34590476059195,
+      "most_pull": 34.35816161495157,
       "most_pull_too_high": false,
       "diffs": [
         -2.6870865005433657,
@@ -5189,9 +5128,9 @@
         4.69271787349114
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.779307067888683,
+      "least_pull": 4.601496754707305,
       "least_pull_too_low": false,
-      "most_pull": 32.648440181227045,
+      "most_pull": 32.87007314323416,
       "most_pull_too_high": false,
       "diffs": [
         -1.3210937175514026,
@@ -5250,7 +5189,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 8.967908064411766,
       "least_pull_too_low": false,
-      "most_pull": 37.76677092432648,
+      "most_pull": 37.71694243259523,
       "most_pull_too_high": false,
       "diffs": [
         -2.3467262182062143,
@@ -5364,9 +5303,9 @@
         9.339720468357662
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 9.16977086177807,
+      "least_pull": 8.979405295496287,
       "least_pull_too_low": false,
-      "most_pull": 37.802468809928286,
+      "most_pull": 37.82685339550171,
       "most_pull_too_high": false,
       "diffs": [
         -2.358455516372416,
@@ -5423,9 +5362,9 @@
         9.590835230201732
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 9.341656778168058,
+      "least_pull": 9.445691593622279,
       "least_pull_too_low": false,
-      "most_pull": 38.15645024361194,
+      "most_pull": 38.16981480572696,
       "most_pull_too_high": false,
       "diffs": [
         -2.8355150632633013,
@@ -5600,9 +5539,9 @@
         8.202898691055251
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 8.251663745391513,
+      "least_pull": 8.070717211305176,
       "least_pull_too_low": false,
-      "most_pull": 36.353660802320505,
+      "most_pull": 36.591655701033474,
       "most_pull_too_high": false,
       "diffs": [
         -1.4365762012454546,
@@ -5661,7 +5600,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 2.5038927148492975,
       "least_pull_too_low": false,
-      "most_pull": 29.555772090212187,
+      "most_pull": 29.51657750508468,
       "most_pull_too_high": false,
       "diffs": [
         1.292574921814687,
@@ -5716,7 +5655,7 @@
         1.4997264556141274
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.1387519822065215,
+      "least_pull": 2.1387519822065224,
       "least_pull_too_low": false,
       "most_pull": 29.03561274388447,
       "most_pull_too_high": false,
@@ -5775,9 +5714,9 @@
         1.61191386415551
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.2479420425879337,
+      "least_pull": 2.0944967076571444,
       "least_pull_too_low": false,
-      "most_pull": 29.16835102531322,
+      "most_pull": 29.18730922545093,
       "most_pull_too_high": false,
       "diffs": [
         1.8134033249357202,
@@ -5834,9 +5773,9 @@
         1.8037055487784839
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.383917784242969,
+      "least_pull": 2.4674392923464756,
       "least_pull_too_low": false,
-      "most_pull": 29.446211369888793,
+      "most_pull": 29.456636508852565,
       "most_pull_too_high": false,
       "diffs": [
         1.339214502189872,
@@ -6011,9 +5950,9 @@
         0.742984086795133
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.519862028862533,
+      "least_pull": 1.3722508097789197,
       "least_pull_too_low": false,
-      "most_pull": 28.034687490078355,
+      "most_pull": 28.217536471459354,
       "most_pull_too_high": false,
       "diffs": [
         2.715938143239331,
@@ -6072,7 +6011,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 4.599483400640441,
       "least_pull_too_low": false,
-      "most_pull": 31.631616722340095,
+      "most_pull": 31.594887137974368,
       "most_pull_too_high": false,
       "diffs": [
         1.5709537056476002,
@@ -6127,7 +6066,7 @@
         3.675310164954006
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.131905490623823,
+      "least_pull": 4.131905490623825,
       "least_pull_too_low": false,
       "most_pull": 31.03530929626361,
       "most_pull_too_high": false,
@@ -6186,9 +6125,9 @@
         3.7862697499254896
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.244061125302786,
+      "least_pull": 4.077401218349044,
       "least_pull_too_low": false,
-      "most_pull": 31.16487527393627,
+      "most_pull": 31.182610047907012,
       "most_pull_too_high": false,
       "diffs": [
         2.185008435852051,
@@ -6245,9 +6184,9 @@
         3.9758358790470885
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.380720095954571,
+      "least_pull": 4.471052012175975,
       "least_pull_too_low": false,
-      "most_pull": 31.43387724446303,
+      "most_pull": 31.443622820998048,
       "most_pull_too_high": false,
       "diffs": [
         1.7233480481550636,
@@ -6422,9 +6361,9 @@
         2.9253375634625938
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.501265906607525,
+      "least_pull": 3.3389901659478727,
       "least_pull_too_low": false,
-      "most_pull": 30.060456604662274,
+      "most_pull": 30.231923174316133,
       "most_pull_too_high": false,
       "diffs": [
         3.0282754946782564,
@@ -6538,7 +6477,7 @@
         0.8332444674705638
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.18608107167935,
+      "least_pull": 2.1860810716793515,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -6597,7 +6536,7 @@
         0.9294761506458126
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.2757537029938586,
+      "least_pull": 2.162070125580366,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -6656,7 +6595,7 @@
         1.029080794358646
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.3247476839144094,
+      "least_pull": 2.3869841225053183,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -6833,9 +6772,9 @@
         0.31206825888274103
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.7988344088133847,
+      "least_pull": 1.6911928179210347,
       "least_pull_too_low": false,
-      "most_pull": 30.82839296344449,
+      "most_pull": 31.978436968036615,
       "most_pull_too_high": false,
       "diffs": [
         3.4769395417525892,
@@ -6894,7 +6833,7 @@
       "barrel_adjuster_too_low": true,
       "least_pull": 0.2868822843776608,
       "least_pull_too_low": false,
-      "most_pull": 28.699292968433593,
+      "most_pull": 28.606517864360157,
       "most_pull_too_high": false,
       "diffs": [
         2.6083531732626533,
@@ -6949,7 +6888,7 @@
         -1.2688304085035982
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.0885895130142773,
+      "least_pull": 0.08858951301427831,
       "least_pull_too_low": false,
       "most_pull": 28.066449634715195,
       "most_pull_too_high": false,
@@ -7008,9 +6947,9 @@
         -1.1591576957851677
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.19216385815078424,
+      "least_pull": 0.07869011883004542,
       "least_pull_too_low": false,
-      "most_pull": 28.28691559326739,
+      "most_pull": 28.329351719682617,
       "most_pull_too_high": false,
       "diffs": [
         2.9653577693469835,
@@ -7067,9 +7006,9 @@
         -1.0626410192898945
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.2381928829297831,
+      "least_pull": 0.3003165962328991,
       "least_pull_too_low": false,
-      "most_pull": 28.62813515405685,
+      "most_pull": 28.652813427230765,
       "most_pull_too_high": false,
       "diffs": [
         2.58527811363545,
@@ -7128,7 +7067,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 3.533964173680073,
       "least_pull_too_low": false,
-      "most_pull": 30.5363872984495,
+      "most_pull": 30.49907357356575,
       "most_pull_too_high": false,
       "diffs": [
         0.9957002296903887,
@@ -7183,7 +7122,7 @@
         2.5658576910331843
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.1577424383135857,
+      "least_pull": 3.1577424383135866,
       "least_pull_too_low": false,
       "most_pull": 30.015658527434788,
       "most_pull_too_high": false,
@@ -7242,9 +7181,9 @@
         2.678187156378891
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.2656409790485275,
+      "least_pull": 3.110688073554793,
       "least_pull_too_low": false,
-      "most_pull": 30.14480521472086,
+      "most_pull": 30.162919745897334,
       "most_pull_too_high": false,
       "diffs": [
         1.5286897031274833,
@@ -7301,9 +7240,9 @@
         2.8701668529311175
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.398844768904353,
+      "least_pull": 3.483297346453426,
       "least_pull_too_low": false,
-      "most_pull": 30.413874168761037,
+      "most_pull": 30.423805253080833,
       "most_pull_too_high": false,
       "diffs": [
         1.0598037288908877,
@@ -7478,9 +7417,9 @@
         1.8075947484533121
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.5482732240809587,
+      "least_pull": 2.3998398701227766,
       "least_pull_too_low": false,
-      "most_pull": 29.039839219713535,
+      "most_pull": 29.216427961140617,
       "most_pull_too_high": false,
       "diffs": [
         2.410502640344344,
@@ -7539,7 +7478,7 @@
       "barrel_adjuster_too_low": true,
       "least_pull": 1.138696254082596,
       "least_pull_too_low": false,
-      "most_pull": 29.74657397582478,
+      "most_pull": 29.695110152878403,
       "most_pull_too_high": false,
       "diffs": [
         1.2812556077415316,
@@ -7594,7 +7533,7 @@
         -0.7162517711500878
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.840686002819062,
+      "least_pull": 0.8406860028190637,
       "least_pull_too_low": false,
       "most_pull": 29.234975796482406,
       "most_pull_too_high": false,
@@ -7651,9 +7590,9 @@
         -0.5291886656288616
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.0258061295643592,
+      "least_pull": 0.8593057711689993,
       "least_pull_too_low": false,
-      "most_pull": 29.462002668127173,
+      "most_pull": 29.4869184683788,
       "most_pull_too_high": false,
       "diffs": [
         1.6079333760416432,
@@ -7708,9 +7647,9 @@
         -0.39218447178561017
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.0932592706148374,
+      "least_pull": 1.1842133115442661,
       "least_pull_too_low": false,
-      "most_pull": 29.710757896757517,
+      "most_pull": 29.72447980726438,
       "most_pull_too_high": false,
       "diffs": [
         1.2278496153651375,
@@ -7879,9 +7818,9 @@
         -1.475663336197583
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.25219919568728016,
+      "least_pull": 0.09298658217514297,
       "least_pull_too_low": false,
-      "most_pull": 28.137823678678078,
+      "most_pull": 28.374356194412446,
       "most_pull_too_high": false,
       "diffs": [
         2.493598178553956,
@@ -7938,7 +7877,7 @@
       "barrel_adjuster_too_low": true,
       "least_pull": 0.49627912928929974,
       "least_pull_too_low": false,
-      "most_pull": 28.340667300419426,
+      "most_pull": 28.302330633141928,
       "most_pull_too_high": false,
       "diffs": [
         1.8977101921482848,
@@ -7993,7 +7932,7 @@
         -1.2764323780064821
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.2311804771182656,
+      "least_pull": 0.2311804771182671,
       "least_pull_too_low": false,
       "most_pull": 27.92441420890455,
       "most_pull_too_high": false,
@@ -8050,9 +7989,9 @@
         -1.1037765554709087
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.3997447634456244,
+      "least_pull": 0.23133106929263428,
       "least_pull_too_low": false,
-      "most_pull": 28.112129575941722,
+      "most_pull": 28.130843711908415,
       "most_pull_too_high": false,
       "diffs": [
         2.203872822987414,
@@ -8107,9 +8046,9 @@
         -0.9665242382778209
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.4657146586185928,
+      "least_pull": 0.5577803439950869,
       "least_pull_too_low": false,
-      "most_pull": 28.321798629823785,
+      "most_pull": 28.332022162678275,
       "most_pull_too_high": false,
       "diffs": [
         1.826436111259735,
@@ -8278,9 +8217,9 @@
         4.057634871880703
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.451407794875417,
+      "least_pull": 5.278452992297961,
       "least_pull_too_low": false,
-      "most_pull": 33.64920496156498,
+      "most_pull": 33.87394253146737,
       "most_pull_too_high": false,
       "diffs": [
         0.9401326682234945,
@@ -8449,9 +8388,9 @@
         1.5866586211285558
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.8259412411995353,
+      "least_pull": 2.6448539313484787,
       "least_pull_too_low": false,
-      "most_pull": 31.13853955293601,
+      "most_pull": 31.358992573180025,
       "most_pull_too_high": false,
       "diffs": [
         0.6700846625505115,
@@ -8508,7 +8447,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 7.190126426223162,
       "least_pull_too_low": false,
-      "most_pull": 36.40824107500961,
+      "most_pull": 36.359268707786576,
       "most_pull_too_high": false,
       "diffs": [
         -0.5535759073231432,
@@ -8559,7 +8498,7 @@
             5.9093222125199425
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 6.867502099367739,
+          "least_pull": 6.867502099367741,
           "least_pull_too_low": false,
           "most_pull": 35.89138508195322,
           "most_pull_too_high": false,
@@ -8601,9 +8540,9 @@
             6.1182270077264045
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 7.070894645848816,
+          "least_pull": 6.8752070324449095,
           "least_pull_too_low": false,
-          "most_pull": 36.12336867680175,
+          "most_pull": 36.14723988984454,
           "most_pull_too_high": false,
           "diffs": [
             -0.24039244109986768,
@@ -8648,9 +8587,9 @@
         6.284372462866607
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.153572935921515,
+      "least_pull": 7.260567192648268,
       "least_pull_too_low": false,
-      "most_pull": 36.385145632204974,
+      "most_pull": 36.39820617628477,
       "most_pull_too_high": false,
       "diffs": [
         -0.6238189723180163,
@@ -8805,9 +8744,9 @@
         5.058885702540806
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 6.23122879770867,
+      "least_pull": 6.045058831917414,
       "least_pull_too_low": false,
-      "most_pull": 34.7672963886981,
+      "most_pull": 35.0010424370399,
       "most_pull_too_high": false,
       "diffs": [
         0.5783323235457694,
@@ -8864,7 +8803,7 @@
       "barrel_adjuster_too_low": true,
       "least_pull": 0.6044425048671851,
       "least_pull_too_low": false,
-      "most_pull": 28.116366137002238,
+      "most_pull": 28.0787288084084,
       "most_pull_too_high": false,
       "diffs": [
         3.651562417389613,
@@ -8976,9 +8915,9 @@
         -1.1889848827834444
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.5098750344058003,
+      "least_pull": 0.34705862283559047,
       "least_pull_too_low": false,
-      "most_pull": 27.893709184817304,
+      "most_pull": 27.91201747043466,
       "most_pull_too_high": false,
       "diffs": [
         3.9594821600186947,
@@ -9033,9 +8972,9 @@
         -1.0614536904101002
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.5747485748683495,
+      "least_pull": 0.6634410065758587,
       "least_pull_too_low": false,
-      "most_pull": 28.098052101656855,
+      "most_pull": 28.108090167380947,
       "most_pull_too_high": false,
       "diffs": [
         3.580569021957558,
@@ -9092,7 +9031,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 2.510947277701312,
       "least_pull_too_low": false,
-      "most_pull": 30.11829740266868,
+      "most_pull": 30.083015762813083,
       "most_pull_too_high": false,
       "diffs": [
         3.937215250048446,
@@ -9147,7 +9086,7 @@
         0.8256958650433078
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.242422262510005,
+      "least_pull": 2.2424222625100065,
       "least_pull_too_low": false,
       "most_pull": 29.72216484447846,
       "most_pull_too_high": false,
@@ -9204,9 +9143,9 @@
         0.9855694194644606
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.4154508209178953,
+      "least_pull": 2.232425813763231,
       "least_pull_too_low": false,
-      "most_pull": 29.9016319207061,
+      "most_pull": 29.918802168502946,
       "most_pull_too_high": false,
       "diffs": [
         4.23390839125371,
@@ -9261,9 +9200,9 @@
         1.1125854604874281
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.47921208115315,
+      "least_pull": 2.578473718325639,
       "least_pull_too_low": false,
-      "most_pull": 30.099977748148277,
+      "most_pull": 30.109387103179788,
       "most_pull_too_high": false,
       "diffs": [
         3.864587789953408,
@@ -9432,9 +9371,9 @@
         0.1728234851664134
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.7156388685769863,
+      "least_pull": 1.536451293164301,
       "least_pull_too_low": false,
-      "most_pull": 28.862462778101225,
+      "most_pull": 29.029332984368345,
       "most_pull_too_high": false,
       "diffs": [
         4.954708214359394,
@@ -9491,7 +9430,7 @@
       "barrel_adjuster_too_low": true,
       "least_pull": 1.170404077150659,
       "least_pull_too_low": false,
-      "most_pull": -1,
+      "most_pull": 32.507037904518604,
       "most_pull_too_high": false,
       "diffs": [
         4.35619830102446,
@@ -9546,7 +9485,7 @@
         -1.5562573021583566
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.9695845900484533,
+      "least_pull": 0.9695845900484542,
       "least_pull_too_low": false,
       "most_pull": 30.857746759493537,
       "most_pull_too_high": false,
@@ -9603,9 +9542,9 @@
         -1.4558310799627463
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.064349429350648,
+      "least_pull": 0.9482739241813111,
       "least_pull_too_low": false,
-      "most_pull": 31.29813989447975,
+      "most_pull": 31.41044656326565,
       "most_pull_too_high": false,
       "diffs": [
         4.728677454099024,
@@ -9660,9 +9599,9 @@
         -1.3518619657810644
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.1177393325338436,
+      "least_pull": 1.1812418391132133,
       "least_pull_too_low": false,
-      "most_pull": 32.76488186740712,
+      "most_pull": -1,
       "most_pull_too_high": false,
       "diffs": [
         4.337984871280545,
@@ -9831,9 +9770,9 @@
         -2.214568843072549
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.4395104047272118,
+      "least_pull": 0.32903811684787304,
       "least_pull_too_low": false,
-      "most_pull": 28.676030286986485,
+      "most_pull": 29.147077911510735,
       "most_pull_too_high": false,
       "diffs": [
         5.758373506096564,
@@ -9890,7 +9829,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 1.636530893494468,
       "least_pull_too_low": false,
-      "most_pull": 29.112787933166228,
+      "most_pull": 29.07643272897546,
       "most_pull_too_high": false,
       "diffs": [
         3.3380800916330564,
@@ -9945,7 +9884,7 @@
         -0.2891902685365958
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.3824197813534487,
+      "least_pull": 1.38241978135345,
       "least_pull_too_low": false,
       "most_pull": 28.717132835534127,
       "most_pull_too_high": false,
@@ -10002,9 +9941,9 @@
         -0.12841208539275198
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.5441976584202572,
+      "least_pull": 1.3815403703432285,
       "least_pull_too_low": false,
-      "most_pull": 28.895575726576052,
+      "most_pull": 28.913292824381394,
       "most_pull_too_high": false,
       "diffs": [
         3.643327899054352,
@@ -10059,9 +9998,9 @@
         -0.0006049740283265094
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.6071660792201619,
+      "least_pull": 1.6958895119827675,
       "least_pull_too_low": false,
-      "most_pull": 29.09480605459284,
+      "most_pull": 29.104501603219,
       "most_pull_too_high": false,
       "diffs": [
         3.266685614417426,
@@ -10230,9 +10169,9 @@
         -0.9446252375346692
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.8829140177082759,
+      "least_pull": 0.7268789767345217,
       "least_pull_too_low": false,
-      "most_pull": 27.856693522850083,
+      "most_pull": 28.02998343564466,
       "most_pull_too_high": false,
       "diffs": [
         4.4160698828594285,
@@ -10283,9 +10222,9 @@
             1.4254063536706607
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 2.52529362792597,
+          "least_pull": 2.613737664615234,
           "least_pull_too_low": false,
-          "most_pull": 41.76137255294125,
+          "most_pull": 41.80062846095493,
           "most_pull_too_high": true,
           "diffs": [
             -0.4744529476891408,
@@ -10332,7 +10271,7 @@
         0.9797029250802447
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.1460489732808106,
+      "least_pull": 2.1460489732808115,
       "least_pull_too_low": false,
       "most_pull": 40.57555478305128,
       "most_pull_too_high": true,
@@ -10387,9 +10326,9 @@
             1.4254063536706607
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 2.52529362792597,
+          "least_pull": 2.613737664615234,
           "least_pull_too_low": false,
-          "most_pull": 41.76137255294125,
+          "most_pull": 41.80062846095493,
           "most_pull_too_high": true,
           "diffs": [
             -0.4744529476891408,
@@ -10436,9 +10375,9 @@
         1.0482568506975833
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.2051029147388372,
+      "least_pull": 2.042545213546969,
       "least_pull_too_low": false,
-      "most_pull": 40.74295783422434,
+      "most_pull": 40.8033308253733,
       "most_pull_too_high": true,
       "diffs": [
         0.21138453552305947,
@@ -10617,9 +10556,9 @@
         0.22708915919374406
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.5667865206877511,
+      "least_pull": 1.4121076123755836,
       "least_pull_too_low": false,
-      "most_pull": 38.770469045398535,
+      "most_pull": 39.242936988960246,
       "most_pull_too_high": true,
       "diffs": [
         0.95969002410855,
@@ -10682,7 +10621,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 1.962514686589972,
       "least_pull_too_low": false,
-      "most_pull": 37.37471273993137,
+      "most_pull": 37.33197237921339,
       "most_pull_too_high": true,
       "diffs": [
         0.17800694044684207,
@@ -10737,7 +10676,7 @@
         0.46860302644187657
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.5823312375968148,
+      "least_pull": 1.582331237596816,
       "least_pull_too_low": false,
       "most_pull": 36.824019413859844,
       "most_pull_too_high": true,
@@ -10796,9 +10735,9 @@
         0.568660733218446
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.674041136071321,
+      "least_pull": 1.5092588777919809,
       "least_pull_too_low": false,
-      "most_pull": 36.942135686226464,
+      "most_pull": 36.96289164834309,
       "most_pull_too_high": true,
       "diffs": [
         0.714101727022463,
@@ -10855,9 +10794,9 @@
         0.7995080727351664
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.8390179435939087,
+      "least_pull": 1.9289873653161227,
       "least_pull_too_low": false,
-      "most_pull": 37.262125760011024,
+      "most_pull": 37.27350674491689,
       "most_pull_too_high": true,
       "diffs": [
         0.217795645819006,
@@ -11036,9 +10975,9 @@
         -1.0284842586237914
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.22711093501630947,
+      "least_pull": 0.06836763313960136,
       "least_pull_too_low": false,
-      "most_pull": 35.05092493616713,
+      "most_pull": 35.25138852062622,
       "most_pull_too_high": true,
       "diffs": [
         2.391464983657645,
@@ -11101,7 +11040,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 7.676685019548448,
       "least_pull_too_low": false,
-      "most_pull": 44.19071384619826,
+      "most_pull": 44.13871328935896,
       "most_pull_too_high": true,
       "diffs": [
         -1.6183921797764675,
@@ -11215,9 +11154,9 @@
         6.999826880329625
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.747166519203297,
+      "least_pull": 7.566665806267291,
       "least_pull_too_low": false,
-      "most_pull": 44.09479996531048,
+      "most_pull": 44.12020031387943,
       "most_pull_too_high": true,
       "diffs": [
         -1.499906232116178,
@@ -11274,9 +11213,9 @@
         7.24213335043462
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.9108341943457425,
+      "least_pull": 8.00962262778638,
       "least_pull_too_low": false,
-      "most_pull": 44.445805423125236,
+      "most_pull": 44.45973382838799,
       "most_pull_too_high": true,
       "diffs": [
         -1.977561506402708,
@@ -11457,7 +11396,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 5.099287914340162,
       "least_pull_too_low": false,
-      "most_pull": 41.51595230140272,
+      "most_pull": 41.46788074347995,
       "most_pull_too_high": true,
       "diffs": [
         -1.8333657998541923,
@@ -11571,9 +11510,9 @@
         4.561550734540042
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.155428238940452,
+      "least_pull": 4.96682577975316,
       "least_pull_too_low": false,
-      "most_pull": 41.409118717844535,
+      "most_pull": 41.43260696079214,
       "most_pull_too_high": true,
       "diffs": [
         -1.6968336071804195,
@@ -11630,9 +11569,9 @@
         4.806396930525798
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.31918861148917,
+      "least_pull": 5.422377719473058,
       "least_pull_too_low": false,
-      "most_pull": 41.74835734056052,
+      "most_pull": 41.76120380584421,
       "most_pull_too_high": true,
       "diffs": [
         -2.1670324447136977,
@@ -11813,7 +11752,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 8.543327535935754,
       "least_pull_too_low": false,
-      "most_pull": 45.59730577157817,
+      "most_pull": 45.53983443371952,
       "most_pull_too_high": true,
       "diffs": [
         -1.9147322214286184,
@@ -11927,9 +11866,9 @@
         8.112999316709011
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 8.673995888740924,
+      "least_pull": 8.482467266876613,
       "least_pull_too_low": false,
-      "most_pull": 45.55013860799738,
+      "most_pull": 45.578232791156196,
       "most_pull_too_high": true,
       "diffs": [
         -1.8529960365266227,
@@ -11986,9 +11925,9 @@
         8.3652221678744
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 8.84702479137421,
+      "least_pull": 8.951675568873073,
       "least_pull_too_low": false,
-      "most_pull": 45.93158774359662,
+      "most_pull": 45.94705008323324,
       "most_pull_too_high": true,
       "diffs": [
         -2.330168860214581,
@@ -12167,9 +12106,9 @@
         7.101916435844798
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.886167794758402,
+      "least_pull": 7.704347642546703,
       "least_pull_too_low": false,
-      "most_pull": 44.149900862780015,
+      "most_pull": 44.42090701761901,
       "most_pull_too_high": true,
       "diffs": [
         -1.0679277391020996,
@@ -12232,7 +12171,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 2.0534841855835797,
       "least_pull_too_low": false,
-      "most_pull": 38.018937439875394,
+      "most_pull": 37.95985074051256,
       "most_pull_too_high": true,
       "diffs": [
         1.8652165859447045,
@@ -12287,7 +12226,7 @@
         0.26599162629234446
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.6133856811359089,
+      "least_pull": 1.6133856811359102,
       "least_pull_too_low": false,
       "most_pull": 37.299726708000165,
       "most_pull_too_high": true,
@@ -12346,9 +12285,9 @@
         0.3793849196795813
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.724358404469271,
+      "least_pull": 1.5683205384772425,
       "least_pull_too_low": false,
-      "most_pull": 37.45893020612308,
+      "most_pull": 37.4867614732327,
       "most_pull_too_high": true,
       "diffs": [
         2.473028018220255,
@@ -12405,9 +12344,9 @@
         0.5732377387343285
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.8625380863009884,
+      "least_pull": 1.9474224715357185,
       "least_pull_too_low": false,
-      "most_pull": 37.80858654516183,
+      "most_pull": 37.82414378600287,
       "most_pull_too_high": true,
       "diffs": [
         1.9988997748232613,
@@ -12586,9 +12525,9 @@
         -1.123831410759512
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.30031066065419393,
+      "least_pull": 0.146122898617953,
       "least_pull_too_low": false,
-      "most_pull": 35.35853651135278,
+      "most_pull": 35.602494271157646,
       "most_pull_too_high": true,
       "diffs": [
         4.19782068199255,
@@ -12651,7 +12590,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 4.1097651259691705,
       "least_pull_too_low": false,
-      "most_pull": 39.98046347627641,
+      "most_pull": 39.92574829386969,
       "most_pull_too_high": true,
       "diffs": [
         2.1473657882224657,
@@ -12706,7 +12645,7 @@
         2.4176200556003797
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.554332753717161,
+      "least_pull": 3.5543327537171634,
       "least_pull_too_low": false,
       "most_pull": 39.17330488826956,
       "most_pull_too_high": true,
@@ -12765,9 +12704,9 @@
         2.530000167082267
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.6690436446352184,
+      "least_pull": 3.4977508243627518,
       "least_pull_too_low": false,
-      "most_pull": 39.32737208815669,
+      "most_pull": 39.35297511782921,
       "most_pull_too_high": true,
       "diffs": [
         2.8495219627794874,
@@ -12824,9 +12763,9 @@
         2.721989400994989
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.808564804312494,
+      "least_pull": 3.901306844691709,
       "least_pull_too_low": false,
-      "most_pull": 39.66179700259672,
+      "most_pull": 39.676088505915715,
       "most_pull_too_high": true,
       "diffs": [
         2.3888314332270433,
@@ -13005,9 +12944,9 @@
         0.8106705046246027
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.924246451142979,
+      "least_pull": 1.747312362033392,
       "least_pull_too_low": false,
-      "most_pull": 37.02597943691415,
+      "most_pull": 37.24839899668405,
       "most_pull_too_high": true,
       "diffs": [
         4.739474245706919,
@@ -13125,7 +13064,7 @@
         -0.1781715358219489
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.917432778979039,
+      "least_pull": 1.9174327789790409,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -13184,7 +13123,7 @@
         -0.08111642515430235
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 2.008113801562522,
+      "least_pull": 1.8939552394370538,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -13243,7 +13182,7 @@
         0.019344718623736643
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.0579778414805916,
+      "least_pull": 2.1204654725493506,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -13424,7 +13363,7 @@
         -0.7635465234966612
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.4637698633292069,
+      "least_pull": 1.3555025574276973,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -13453,6 +13392,65 @@
         0.0
       ],
       "max_chain_angle": 6.8194903471912
+    }
+  },
+  {
+    "confidence_too_low": true,
+    "max_chain_angle_too_high": true,
+    "barrel_adjuster_too_low": true,
+    "least_pull_too_low": false,
+    "brand": "Shimano",
+    "name": "Shimano SLX 12-Speed shifter/Tiagra 10-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SL-M7100",
+    "derailleurPartNumber": "RD-4601-SS",
+    "cassettes": [],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 0,
+    "chainWrap": 34,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 4.209852435073134e-33,
+    "maxChainAngle": 5.184157134499375,
+    "maxAngleAnalysis": {
+      "barrel_adjuster": -2.0928743031217247,
+      "barrel_adjuster_values": [
+        0,
+        -1.9825026663498773,
+        -2.0823472121493145,
+        -2.0918866661787194,
+        -2.0927890277843764,
+        -2.0928743031217247
+      ],
+      "barrel_adjuster_too_low": true,
+      "least_pull": 0.012536584198114244,
+      "least_pull_too_low": false,
+      "most_pull": -1,
+      "most_pull_too_high": false,
+      "diffs": [
+        3.0785603483327186,
+        1.579665090094199,
+        -0.01508106181545088,
+        -1.544261192802999,
+        -2.5234822984417065,
+        -3.0451853422771435,
+        -3.078841245293944,
+        -2.529929175731098
+      ],
+      "diffs_minus_free_play": [
+        2.8685603483327187,
+        1.3696650900941991,
+        0.0,
+        -1.334261192802999,
+        -2.3134822984417065,
+        -2.8351853422771436,
+        -2.868841245293944,
+        -2.3199291757310982
+      ],
+      "max_chain_angle": 5.184157134499375
     }
   },
   {
@@ -13489,7 +13487,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 3.0835248002495153,
       "least_pull_too_low": false,
-      "most_pull": 38.47985788405444,
+      "most_pull": 38.432810488465854,
       "most_pull_too_high": true,
       "diffs": [
         1.562695055901706,
@@ -13544,7 +13542,7 @@
         1.3227447243253607
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.6284063223315495,
+      "least_pull": 2.6284063223315517,
       "least_pull_too_low": false,
       "most_pull": 37.825390360857824,
       "most_pull_too_high": true,
@@ -13603,9 +13601,9 @@
         1.4359889586666386
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.73762828368912,
+      "least_pull": 2.580478089383699,
       "least_pull_too_low": false,
-      "most_pull": 37.966722123554916,
+      "most_pull": 37.989286690630685,
       "most_pull_too_high": true,
       "diffs": [
         2.1880308649499973,
@@ -13662,9 +13660,9 @@
         1.6295303982618767
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.8723786003105753,
+      "least_pull": 2.9579936826746587,
       "least_pull_too_low": false,
-      "most_pull": 38.26931155790228,
+      "most_pull": 38.28176581176361,
       "most_pull_too_high": true,
       "diffs": [
         1.719530669480669,
@@ -13843,9 +13841,9 @@
         -0.20557868999638454
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.186119753315768,
+      "least_pull": 1.0315849471436844,
       "least_pull_too_low": false,
-      "most_pull": 35.91350528671325,
+      "most_pull": 36.12232571346657,
       "most_pull_too_high": true,
       "diffs": [
         4.058388275280144,
@@ -13908,7 +13906,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 2.3915972007674977,
       "least_pull_too_low": false,
-      "most_pull": 42.596143388248535,
+      "most_pull": 42.424340511938404,
       "most_pull_too_high": true,
       "diffs": [
         -0.2068672973608372,
@@ -13963,7 +13961,7 @@
         1.3835979621904873
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.1081028274614955,
+      "least_pull": 2.1081028274614964,
       "least_pull_too_low": false,
       "most_pull": 41.47468476432195,
       "most_pull_too_high": true,
@@ -14022,9 +14020,9 @@
         1.4522257193721977
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.1672718923155463,
+      "least_pull": 2.004597210166357,
       "least_pull_too_low": false,
-      "most_pull": 41.665736967637486,
+      "most_pull": 41.73661072647577,
       "most_pull_too_high": true,
       "diffs": [
         0.2566897412764355,
@@ -14081,9 +14079,9 @@
         1.7920193980969419
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.448254598783958,
+      "least_pull": 2.5368215917048866,
       "least_pull_too_low": false,
-      "most_pull": 42.77705683160123,
+      "most_pull": 42.826207422845386,
       "most_pull_too_high": true,
       "diffs": [
         -0.38167980127778023,
@@ -14262,9 +14260,9 @@
         0.6353641554512288
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.5331757001496331,
+      "least_pull": 1.3783904318745213,
       "least_pull_too_low": false,
-      "most_pull": 39.500343442141556,
+      "most_pull": 40.01878238532468,
       "most_pull_too_high": true,
       "diffs": [
         0.9994445078051335,
@@ -14327,7 +14325,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 1.9057136984522545,
       "least_pull_too_low": false,
-      "most_pull": 37.83359553613146,
+      "most_pull": 37.79051631953616,
       "most_pull_too_high": true,
       "diffs": [
         0.24540330621264062,
@@ -14382,7 +14380,7 @@
         0.8084388594199103
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.4772990384778484,
+      "least_pull": 1.4772990384778502,
       "least_pull_too_low": false,
       "most_pull": 37.2330311754531,
       "most_pull_too_high": true,
@@ -14441,9 +14439,9 @@
         0.9298307573289379
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.5914025648497712,
+      "least_pull": 1.4263971293616875,
       "least_pull_too_low": false,
-      "most_pull": 37.37384193564939,
+      "most_pull": 37.39474818907881,
       "most_pull_too_high": true,
       "diffs": [
         0.8116812426286408,
@@ -14500,9 +14498,9 @@
         1.1372761029168528
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.7318179009395194,
+      "least_pull": 1.8219418877237892,
       "least_pull_too_low": false,
-      "most_pull": 37.67021193436167,
+      "most_pull": 37.68167252643017,
       "most_pull_too_high": true,
       "diffs": [
         0.34469016423720333,
@@ -14683,7 +14681,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 7.6818104324634,
       "least_pull_too_low": false,
-      "most_pull": 44.714512541832164,
+      "most_pull": 44.66208850186771,
       "most_pull_too_high": true,
       "diffs": [
         -1.6239144893298736,
@@ -14797,9 +14795,9 @@
         7.370477082425956
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.67614377350884,
+      "least_pull": 7.495543537884534,
       "least_pull_too_low": false,
-      "most_pull": 44.539229330104845,
+      "most_pull": 44.564804201270505,
       "most_pull_too_high": true,
       "diffs": [
         -1.4233645895727136,
@@ -14856,9 +14854,9 @@
         7.61289123224558
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.839918167330425,
+      "least_pull": 7.938759562551823,
       "least_pull_too_low": false,
-      "most_pull": 44.891469979376325,
+      "most_pull": 44.90549629107118,
       "most_pull_too_high": true,
       "diffs": [
         -1.9010391576974222,
@@ -14917,7 +14915,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 5.104550904704976,
       "least_pull_too_low": false,
-      "most_pull": 42.02499844529955,
+      "most_pull": 41.97672628577414,
       "most_pull_too_high": true,
       "diffs": [
         -1.8387937188070502,
@@ -15031,9 +15029,9 @@
         4.930236498806103
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.082031373942401,
+      "least_pull": 4.8933093567581,
       "least_pull_too_low": false,
-      "most_pull": 41.8392442116164,
+      "most_pull": 41.86281468665946,
       "most_pull_too_high": true,
       "diffs": [
         -1.6211257605273737,
@@ -15090,9 +15088,9 @@
         5.175165702163468
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.245861443329191,
+      "least_pull": 5.34911457411891,
       "least_pull_too_low": false,
-      "most_pull": 42.17910440523475,
+      "most_pull": 42.1919968811685,
       "most_pull_too_high": true,
       "diffs": [
         -2.0912906993755414,
@@ -15273,7 +15271,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 8.54857469725726,
       "least_pull_too_low": false,
-      "most_pull": 46.14052354674269,
+      "most_pull": 46.08229593509647,
       "most_pull_too_high": true,
       "diffs": [
         -1.920057115580942,
@@ -15387,9 +15385,9 @@
         8.483492223381022
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 8.601627169240613,
+      "least_pull": 8.409924074652231,
       "least_pull_too_low": false,
-      "most_pull": 46.01050808297857,
+      "most_pull": 46.038914621902734,
       "most_pull_too_high": true,
       "diffs": [
         -1.7794707659858595,
@@ -15446,9 +15444,9 @@
         8.735881656252229
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 8.77482740723351,
+      "least_pull": 8.879570592342759,
       "least_pull_too_low": false,
-      "most_pull": 46.394344268050865,
+      "most_pull": 46.40998384735813,
       "most_pull_too_high": true,
       "diffs": [
         -2.2566603321887904,
@@ -15627,9 +15625,9 @@
         7.34090451549895
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.676719037940204,
+      "least_pull": 7.494384543561308,
       "least_pull_too_low": false,
-      "most_pull": 44.46157862623769,
+      "most_pull": 44.73444743836786,
       "most_pull_too_high": true,
       "diffs": [
         -0.8574729641704231,
@@ -15692,7 +15690,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 2.059055932936157,
       "least_pull_too_low": false,
-      "most_pull": 38.66199626077466,
+      "most_pull": 38.599907012776754,
       "most_pull_too_high": true,
       "diffs": [
         1.8581814217712171,
@@ -15747,7 +15745,7 @@
         0.6354234404126773
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.5364636187657674,
+      "least_pull": 1.5364636187657688,
       "least_pull_too_low": false,
       "most_pull": 37.826624323312416,
       "most_pull_too_high": true,
@@ -15806,9 +15804,9 @@
         0.7489993310648142
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.6477079522491473,
+      "least_pull": 1.4912748366536157,
       "least_pull_too_low": false,
-      "most_pull": 37.989361326377846,
+      "most_pull": 38.01827915031691,
       "most_pull_too_high": true,
       "diffs": [
         2.568669244255492,
@@ -15865,9 +15863,9 @@
         0.9431642427462643
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.7862232210486677,
+      "least_pull": 1.8713152282760415,
       "least_pull_too_low": false,
-      "most_pull": 38.348498979325775,
+      "most_pull": 38.36470112849504,
       "most_pull_too_high": true,
       "diffs": [
         2.0945503986376472,
@@ -16017,69 +16015,6 @@
   {
     "confidence_too_low": true,
     "max_chain_angle_too_high": true,
-    "barrel_adjuster_too_low": true,
-    "least_pull_too_low": false,
-    "brand": "Mixed",
-    "name": "SRAM SX 12-Speed shifter/Shimano GRX 10-Speed derailleur/12-speed cassette",
-    "speeds": 12,
-    "shifterPartNumber": "SL-SX-1-A1",
-    "derailleurPartNumber": "RD-RX400",
-    "cassettes": [],
-    "shifterType": "flat-bar",
-    "noMatchingFrontShifter": true,
-    "moreCogsThanShifts": false,
-    "maxToothAvailableAndCompatible": 0,
-    "chainWrap": 41,
-    "equivalentShifters": [],
-    "equivalentDerailleurs": [],
-    "cassettePartNumber": "CS-PG-1210-A1",
-    "confidence": 5.019846033094848e-38,
-    "maxChainAngle": 7.650733667295292,
-    "maxAngleAnalysis": {
-      "barrel_adjuster": -0.9152706812799349,
-      "barrel_adjuster_values": [
-        0,
-        -0.7503855623866491,
-        -0.8859184269025226,
-        -0.910165601298645,
-        -0.9144971020064614,
-        -0.9152706812799349
-      ],
-      "barrel_adjuster_too_low": true,
-      "least_pull": 0.04510058604837733,
-      "least_pull_too_low": false,
-      "most_pull": 35.662296150790404,
-      "most_pull_too_high": true,
-      "diffs": [
-        4.499687791807927,
-        4.009016847272285,
-        3.1177413534834244,
-        2.130339228351648,
-        1.0622037746334811,
-        -0.06389153526771452,
-        -1.2357020430372643,
-        -2.365380539949726,
-        -3.5857481435713083,
-        -4.502005435311254
-      ],
-      "diffs_minus_free_play": [
-        4.224687791807927,
-        3.734016847272285,
-        2.842741353483424,
-        1.8553392283516479,
-        0.787203774633481,
-        0.0,
-        -0.9607020430372641,
-        -2.0903805399497255,
-        -3.310748143571308,
-        -4.227005435311254
-      ],
-      "max_chain_angle": 7.650733667295292
-    }
-  },
-  {
-    "confidence_too_low": true,
-    "max_chain_angle_too_high": true,
     "barrel_adjuster_too_low": false,
     "least_pull_too_low": false,
     "brand": "Mixed",
@@ -16111,7 +16046,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 4.115825793830172,
       "least_pull_too_low": false,
-      "most_pull": 40.61354339262508,
+      "most_pull": 40.55609261206912,
       "most_pull_too_high": true,
       "diffs": [
         2.1403103166799404,
@@ -16166,7 +16101,7 @@
         2.7834100822682504
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.469310553134454,
+      "least_pull": 3.4693105531344557,
       "least_pull_too_low": false,
       "most_pull": 39.68624099438705,
       "most_pull_too_high": true,
@@ -16225,9 +16160,9 @@
         2.8960064800350986
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.58442369867887,
+      "least_pull": 3.4124125794266247,
       "least_pull_too_low": false,
-      "most_pull": 39.84355233240024,
+      "most_pull": 39.87011268263007,
       "most_pull_too_high": true,
       "diffs": [
         2.9457830103406906,
@@ -16284,9 +16219,9 @@
         3.0883632974361466
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.724383110743397,
+      "least_pull": 3.8174981986596173,
       "least_pull_too_low": false,
-      "most_pull": 40.18652941236775,
+      "most_pull": 40.20138726271715,
       "most_pull_too_high": true,
       "diffs": [
         2.4852439118351732,
@@ -16465,9 +16400,9 @@
         1.0013659774661468
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.6297553945605898,
+      "least_pull": 1.449615450974654,
       "least_pull_too_low": false,
-      "most_pull": 37.30307216116617,
+      "most_pull": 37.528879276247416,
       "most_pull_too_high": true,
       "diffs": [
         5.042537763207488,
@@ -16644,7 +16579,7 @@
         0.3891726451270914
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.039246211401916,
+      "least_pull": 1.925144412532617,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -16703,7 +16638,7 @@
         0.48953125969789363
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.089006087472055,
+      "least_pull": 2.151463691181126,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -16884,7 +16819,7 @@
         -0.31957203780558585
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.467786981515334,
+      "least_pull": 1.3595274468265408,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -16913,6 +16848,65 @@
         0.0
       ],
       "max_chain_angle": 6.806696585556926
+    }
+  },
+  {
+    "confidence_too_low": true,
+    "max_chain_angle_too_high": true,
+    "barrel_adjuster_too_low": true,
+    "least_pull_too_low": false,
+    "brand": "Mixed",
+    "name": "SRAM SX 12-Speed shifter/Shimano Tiagra 10-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SL-SX-1-A1",
+    "derailleurPartNumber": "RD-4601-SS",
+    "cassettes": [],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 0,
+    "chainWrap": 34,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "cassettePartNumber": "CS-PG-1050-A1",
+    "confidence": 3.578255031456411e-36,
+    "maxChainAngle": 5.171071497252241,
+    "maxAngleAnalysis": {
+      "barrel_adjuster": -1.6487702180058779,
+      "barrel_adjuster_values": [
+        0,
+        -1.5412713313588335,
+        -1.6385359042152883,
+        -1.6478115732004146,
+        -1.6486875661418567,
+        -1.6487702180058779
+      ],
+      "barrel_adjuster_too_low": true,
+      "least_pull": 0.016753794079081324,
+      "least_pull_too_low": false,
+      "most_pull": -1,
+      "most_pull_too_high": false,
+      "diffs": [
+        3.07134727562954,
+        1.4116742806417406,
+        -0.25185947402260567,
+        -1.5852223326957713,
+        -2.450592294120767,
+        -2.950911790398031,
+        -3.0716195308696257,
+        -2.669281716497977
+      ],
+      "diffs_minus_free_play": [
+        2.86134727562954,
+        1.2016742806417406,
+        0.0,
+        -1.3752223326957713,
+        -2.240592294120767,
+        -2.740911790398031,
+        -2.8616195308696257,
+        -2.459281716497977
+      ],
+      "max_chain_angle": 5.171071497252241
     }
   },
   {
@@ -16949,7 +16943,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 3.089099497310202,
       "least_pull_too_low": false,
-      "most_pull": 39.04350195523542,
+      "most_pull": 38.995329207990366,
       "most_pull_too_high": true,
       "diffs": [
         1.5557181375409144,
@@ -17004,7 +16998,7 @@
         1.6907644953093746
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.5509369644633937,
+      "least_pull": 2.550936964463395,
       "least_pull_too_low": false,
       "most_pull": 38.29521409386291,
       "most_pull_too_high": true,
@@ -17063,9 +17057,9 @@
         1.8041468505830247
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.660359673235384,
+      "least_pull": 2.5028762075437747,
       "least_pull_too_low": false,
-      "most_pull": 38.43780022693947,
+      "most_pull": 38.460794553317925,
       "most_pull_too_high": true,
       "diffs": [
         2.283740647073323,
@@ -17122,9 +17116,9 @@
         1.997924091476302
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.7953445340352907,
+      "least_pull": 2.881135851873499,
       "least_pull_too_low": false,
-      "most_pull": 38.743781339908494,
+      "most_pull": 38.75648108559029,
       "most_pull_too_high": true,
       "diffs": [
         1.8152979694024545,
@@ -17303,9 +17297,9 @@
         -0.009185283775106575
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.9214523200076535,
+      "least_pull": 0.7656110540900237,
       "least_pull_too_low": false,
-      "most_pull": 36.18244079395661,
+      "most_pull": 36.39314543125603,
       "most_pull_too_high": true,
       "diffs": [
         4.370797854663429,
@@ -17368,7 +17362,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 1.5279047707165756,
       "least_pull_too_low": false,
-      "most_pull": 33.74651228341662,
+      "most_pull": 33.683873134185916,
       "most_pull_too_high": false,
       "diffs": [
         0.8229491735965517,
@@ -17423,7 +17417,7 @@
         -0.18020870936287653
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.1863403826879129,
+      "least_pull": 1.1863403826879142,
       "least_pull_too_low": false,
       "most_pull": 33.1275229199209,
       "most_pull_too_high": false,
@@ -17482,9 +17476,9 @@
         -0.04224047157460331
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.3190820522381925,
+      "least_pull": 1.15362102078062,
       "least_pull_too_low": false,
-      "most_pull": 33.314824449085776,
+      "most_pull": 33.34476254605082,
       "most_pull_too_high": false,
       "diffs": [
         1.2637497718975261,
@@ -17541,9 +17535,9 @@
         0.19403833749529198
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.49165851851486,
+      "least_pull": 1.581865105372663,
       "least_pull_too_low": false,
-      "most_pull": 33.718900960686405,
+      "most_pull": 33.73561682154203,
       "most_pull_too_high": false,
       "diffs": [
         0.7591191991111188,
@@ -17718,9 +17712,9 @@
         -1.1063724405787485
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.4215848094644777,
+      "least_pull": 0.26300121282159183,
       "least_pull_too_low": false,
-      "most_pull": 31.72940480344145,
+      "most_pull": 32.00434083738255,
       "most_pull_too_high": false,
       "diffs": [
         2.2984487570169705,
@@ -17779,7 +17773,7 @@
       "barrel_adjuster_too_low": true,
       "least_pull": 0.9241752052094351,
       "least_pull_too_low": false,
-      "most_pull": 31.84125054086374,
+      "most_pull": 31.80165384945109,
       "most_pull_too_high": true,
       "diffs": [
         1.4002310169052805,
@@ -17834,7 +17828,7 @@
         -1.0763599142028333
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.22071181861463393,
+      "least_pull": 0.2207118186146355,
       "least_pull_too_low": false,
       "most_pull": 30.991515698631385,
       "most_pull_too_high": true,
@@ -17893,9 +17887,9 @@
         -0.9535453578619435
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.33673957778934854,
+      "least_pull": 0.16813541589043032,
       "least_pull_too_low": false,
-      "most_pull": 31.12988241878537,
+      "most_pull": 31.14910174654681,
       "most_pull_too_high": true,
       "diffs": [
         2.276684860378669,
@@ -17952,9 +17946,9 @@
         -0.7436722765397679
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.4792713609758929,
+      "least_pull": 0.5713150784348601,
       "least_pull_too_low": false,
-      "most_pull": 31.41738956814712,
+      "most_pull": 31.427903686268753,
       "most_pull_too_high": true,
       "diffs": [
         1.8107402832715884,
@@ -18129,9 +18123,9 @@
         4.431124389198142
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.619458975546303,
+      "least_pull": 5.446771408264178,
       "least_pull_too_low": false,
-      "most_pull": 36.90409969330478,
+      "most_pull": 37.135210888181405,
       "most_pull_too_high": false,
       "diffs": [
         0.7623075590853396,
@@ -18190,7 +18184,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 4.1588032159767385,
       "least_pull_too_low": false,
-      "most_pull": 36.157173182531174,
+      "most_pull": 36.1107986974724,
       "most_pull_too_high": false,
       "diffs": [
         -0.867412894308071,
@@ -18241,7 +18235,7 @@
             3.0782445405019456
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 3.8997315192567843,
+          "least_pull": 3.899731519256787,
           "least_pull_too_low": false,
           "most_pull": 35.712847762054096,
           "most_pull_too_high": false,
@@ -18285,9 +18279,9 @@
             3.2310500145538397
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 4.042144969083526,
+          "least_pull": 3.8516613570163427,
           "least_pull_too_low": false,
-          "most_pull": 35.882529695487136,
+          "most_pull": 35.90517252144322,
           "most_pull_too_high": false,
           "diffs": [
             -0.5537166303039278,
@@ -18334,9 +18328,9 @@
         3.392829467966348
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.1199272623524035,
+      "least_pull": 4.22420605485535,
       "least_pull_too_low": false,
-      "most_pull": 36.13146563254301,
+      "most_pull": 36.143832406673084,
       "most_pull_too_high": false,
       "diffs": [
         -0.9343252084021927,
@@ -18511,9 +18505,9 @@
         2.0458756439490555
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.0831573334988485,
+      "least_pull": 2.9025269163139207,
       "least_pull_too_low": false,
-      "most_pull": 34.43232771770192,
+      "most_pull": 34.65565691128744,
       "most_pull_too_high": false,
       "diffs": [
         0.4099799755079907,
@@ -18572,7 +18566,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 7.601830616784202,
       "least_pull_too_low": false,
-      "most_pull": 39.97597876433637,
+      "most_pull": 39.924505232625584,
       "most_pull_too_high": false,
       "diffs": [
         -0.9650957451818307,
@@ -18623,7 +18617,7 @@
             6.513771174798633
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 7.280879735383524,
+          "least_pull": 7.280879735383526,
           "least_pull_too_low": false,
           "most_pull": 39.44907927742286,
           "most_pull_too_high": false,
@@ -18672,9 +18666,9 @@
         6.721947269172236
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.483199144579111,
+      "least_pull": 7.2886415597963,
       "least_pull_too_low": false,
-      "most_pull": 39.684414380942,
+      "most_pull": 39.70947855820495,
       "most_pull_too_high": false,
       "diffs": [
         -0.6518337921308373,
@@ -18727,7 +18721,7 @@
             6.513771174798633
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 7.280879735383524,
+          "least_pull": 7.280879735383526,
           "least_pull_too_low": false,
           "most_pull": 39.44907927742286,
           "most_pull_too_high": false,
@@ -18776,9 +18770,9 @@
         6.902510510442115
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.581165050585981,
+      "least_pull": 7.687531955694472,
       "least_pull_too_low": false,
-      "most_pull": 39.96868822345181,
+      "most_pull": 39.982420053085725,
       "most_pull_too_high": false,
       "diffs": [
         -1.051050630790069,
@@ -18835,9 +18829,9 @@
         5.6010957585688015
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 6.579512655542203,
+      "least_pull": 6.394313943369488,
       "least_pull_too_low": false,
-      "most_pull": 38.23586671675755,
+      "most_pull": 38.47982937881221,
       "most_pull_too_high": false,
       "diffs": [
         0.23511311188792305,
@@ -18896,7 +18890,7 @@
       "barrel_adjuster_too_low": true,
       "least_pull": 1.0476533364180232,
       "least_pull_too_low": false,
-      "most_pull": 31.828436466383106,
+      "most_pull": 31.786075758537727,
       "most_pull_too_high": true,
       "diffs": [
         3.1145515122254945,
@@ -18951,7 +18945,7 @@
         -1.2197086946577391
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.2569421900594585,
+      "least_pull": 0.25694219005946006,
       "least_pull_too_low": false,
       "most_pull": 30.87047819783385,
       "most_pull_too_high": true,
@@ -19010,9 +19004,9 @@
         -1.102855997559373
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.3731398837875587,
+      "least_pull": 0.20948648786282714,
       "least_pull_too_low": false,
-      "most_pull": 31.011446907190116,
+      "most_pull": 31.031565905223804,
       "most_pull_too_high": true,
       "diffs": [
         4.122858059051655,
@@ -19069,9 +19063,9 @@
         -0.9030903314341769
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.5177694393328494,
+      "least_pull": 0.6066463167310062,
       "least_pull_too_low": false,
-      "most_pull": 31.30678410659315,
+      "most_pull": 31.317873293802556,
       "most_pull_too_high": true,
       "diffs": [
         3.648913291602767,
@@ -19130,7 +19124,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 3.0041446193405594,
       "least_pull_too_low": false,
-      "most_pull": 33.8174374488388,
+      "most_pull": 33.777971426135956,
       "most_pull_too_high": true,
       "diffs": [
         3.400605512018391,
@@ -19185,7 +19179,7 @@
         0.8625474855191216
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.0381319084780785,
+      "least_pull": 2.0381319084780802,
       "least_pull_too_low": false,
       "most_pull": 32.751601582687876,
       "most_pull_too_high": true,
@@ -19244,9 +19238,9 @@
         0.9790411093904972
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.1607761609942093,
+      "least_pull": 1.9750501388455795,
       "least_pull_too_low": false,
-      "most_pull": 32.88986847079333,
+      "most_pull": 32.90856122300283,
       "most_pull_too_high": true,
       "diffs": [
         4.503924606118822,
@@ -19303,9 +19297,9 @@
         1.1780358344098536
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.309045229329936,
+      "least_pull": 2.409248447687391,
       "least_pull_too_low": false,
-      "most_pull": 33.17651026185328,
+      "most_pull": 33.18680491075926,
       "most_pull_too_high": true,
       "diffs": [
         4.046086103754444,
@@ -19480,9 +19474,9 @@
         0.07487338562194307
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.3501542307373713,
+      "least_pull": 1.1668095430364687,
       "least_pull_too_low": false,
-      "most_pull": 31.71495314869971,
+      "most_pull": 31.894262998573403,
       "most_pull_too_high": false,
       "diffs": [
         5.325281749509774,
@@ -19655,7 +19649,7 @@
         -0.9036847485973618
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.4185109115947776,
+      "least_pull": 1.303200186219262,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -19714,7 +19708,7 @@
         -0.7754433519612333
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.4968085791644896,
+      "least_pull": 1.5598770253594327,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -19891,7 +19885,7 @@
         -1.7111419814968207
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.7434404353033456,
+      "least_pull": 0.633670098974629,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -19952,7 +19946,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 2.0787204929103766,
       "least_pull_too_low": false,
-      "most_pull": 32.71436492822909,
+      "most_pull": 32.67522568117842,
       "most_pull_too_high": true,
       "diffs": [
         2.8032186343956624,
@@ -20066,9 +20060,9 @@
         -0.07366375634765124
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.375385957950941,
+      "least_pull": 1.211883958027708,
       "least_pull_too_low": false,
-      "most_pull": 31.891452433513614,
+      "most_pull": 31.91023465193785,
       "most_pull_too_high": true,
       "diffs": [
         3.8451105812868143,
@@ -20125,9 +20119,9 @@
         0.1243149347789204
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.5145921596766894,
+      "least_pull": 1.603561920175711,
       "least_pull_too_low": false,
-      "most_pull": 32.17170342630975,
+      "most_pull": 32.18201308208356,
       "most_pull_too_high": true,
       "diffs": [
         3.377679357860327,
@@ -20302,9 +20296,9 @@
         -0.971584889137812
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.6247996849168808,
+      "least_pull": 0.4674429809736286,
       "least_pull_too_low": false,
-      "most_pull": 30.741767515327957,
+      "most_pull": 30.924053863503964,
       "most_pull_too_high": false,
       "diffs": [
         4.717839936105923,
@@ -20363,7 +20357,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 5.186467956805876,
       "least_pull_too_low": false,
-      "most_pull": 28.01970324640284,
+      "most_pull": 27.971413273930008,
       "most_pull_too_high": false,
       "diffs": [
         -3.6447564516644952,
@@ -20477,9 +20471,9 @@
         6.037846481069563
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.344859000954842,
+      "least_pull": 5.190091118022213,
       "least_pull_too_low": false,
-      "most_pull": 28.036289430252932,
+      "most_pull": 28.059940048106096,
       "most_pull_too_high": false,
       "diffs": [
         -3.6493039468761133,
@@ -20536,9 +20530,9 @@
         6.255085761536263
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.496098689293743,
+      "least_pull": 5.580719878477982,
       "least_pull_too_low": false,
-      "most_pull": 28.36661941626157,
+      "most_pull": 28.379665669571942,
       "most_pull_too_high": false,
       "diffs": [
         -4.140784860471545,
@@ -20713,9 +20707,9 @@
         5.05830144873142
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.549130783631962,
+      "least_pull": 4.40215832605788,
       "least_pull_too_low": false,
-      "most_pull": 26.70726506112383,
+      "most_pull": 26.933035665533446,
       "most_pull_too_high": false,
       "diffs": [
         -2.66542413514037,
@@ -20774,7 +20768,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 4.874223022676747,
       "least_pull_too_low": false,
-      "most_pull": 27.099012054981557,
+      "most_pull": 27.06101068453362,
       "most_pull_too_high": false,
       "diffs": [
         -3.353754005011453,
@@ -20888,9 +20882,9 @@
         5.594979528063313
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.857446531097697,
+      "least_pull": 4.700102124393751,
       "least_pull_too_low": false,
-      "most_pull": 26.951464892463015,
+      "most_pull": 26.97002899216028,
       "most_pull_too_high": false,
       "diffs": [
         -3.1385543912280234,
@@ -20947,9 +20941,9 @@
         5.797357528674023
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.993442825188607,
+      "least_pull": 5.079477180445214,
       "least_pull_too_low": false,
-      "most_pull": 27.22632607524748,
+      "most_pull": 27.2364698972628,
       "most_pull_too_high": false,
       "diffs": [
         -3.6080410214861196,
@@ -21124,9 +21118,9 @@
         4.677064667387415
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.124632269693242,
+      "least_pull": 3.975346751523714,
       "least_pull_too_low": false,
-      "most_pull": 25.817986843924256,
+      "most_pull": 26.001170573077594,
       "most_pull_too_high": false,
       "diffs": [
         -2.248041591885613,
@@ -21185,7 +21179,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 10.506599054424493,
       "least_pull_too_low": false,
-      "most_pull": 33.82334110478512,
+      "most_pull": 33.77703344678806,
       "most_pull_too_high": false,
       "diffs": [
         -4.698312091189411,
@@ -21299,9 +21293,9 @@
         11.931342890652775
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 10.769291575994028,
+      "least_pull": 10.592453139463549,
       "least_pull_too_low": false,
-      "most_pull": 33.93213852925968,
+      "most_pull": 33.954802445393995,
       "most_pull_too_high": false,
       "diffs": [
         -4.792640930408638,
@@ -21358,9 +21352,9 @@
         12.169760512749084
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 10.928981695903932,
+      "least_pull": 11.025824796862699,
       "least_pull_too_low": false,
-      "most_pull": 34.26096277160384,
+      "most_pull": 34.273355898228644,
       "most_pull_too_high": false,
       "diffs": [
         -5.269512127550247,
@@ -21535,9 +21529,9 @@
         10.852184053723446
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 9.91575484786396,
+      "least_pull": 9.748709847020569,
       "least_pull_too_low": false,
-      "most_pull": 32.58216902491737,
+      "most_pull": 32.80519113531943,
       "most_pull_too_high": false,
       "diffs": [
         -3.8677453009189477,
@@ -21596,7 +21590,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 7.9966738260697285,
       "least_pull_too_low": false,
-      "most_pull": 31.410515813241137,
+      "most_pull": 31.365083779312297,
       "most_pull_too_high": false,
       "diffs": [
         -4.8567340906460466,
@@ -21710,9 +21704,9 @@
         9.564202374113865
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 8.266484972841829,
+      "least_pull": 8.082405782490774,
       "least_pull_too_low": false,
-      "most_pull": 31.520997891514693,
+      "most_pull": 31.54321966469856,
       "most_pull_too_high": false,
       "diffs": [
         -4.947207586094134,
@@ -21769,9 +21763,9 @@
         9.80603930354352
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 8.427683334740665,
+      "least_pull": 8.528451612346736,
       "least_pull_too_low": false,
-      "most_pull": 31.847995800664048,
+      "most_pull": 31.860130027110277,
       "most_pull_too_high": false,
       "diffs": [
         -5.418798753443081,
@@ -21946,9 +21940,9 @@
         8.467780463109195
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.3995816017809295,
+      "least_pull": 7.225514958591988,
       "least_pull_too_low": false,
-      "most_pull": 30.17254426404647,
+      "most_pull": 30.392361719538382,
       "most_pull_too_high": false,
       "diffs": [
         -4.045433653672038,
@@ -22007,7 +22001,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 11.430388116035155,
       "least_pull_too_low": false,
-      "most_pull": 35.02893129736948,
+      "most_pull": 34.98071977755297,
       "most_pull_too_high": false,
       "diffs": [
         -4.893996880830908,
@@ -22121,9 +22115,9 @@
         13.050338517626097
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 11.744679045671132,
+      "least_pull": 11.559506279344216,
       "least_pull_too_low": false,
-      "most_pull": 35.18233966766341,
+      "most_pull": 35.20595781397473,
       "most_pull_too_high": false,
       "diffs": [
         -5.02937674316523,
@@ -22180,9 +22174,9 @@
         13.29659308493329
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 11.911436041051562,
+      "least_pull": 12.012723010872943,
       "least_pull_too_low": false,
-      "most_pull": 35.52555722011337,
+      "most_pull": 35.53848791171974,
       "most_pull_too_high": false,
       "diffs": [
         -5.505884217423027,
@@ -22357,9 +22351,9 @@
         11.935502496807649
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 10.853021457553606,
+      "least_pull": 10.677472343783174,
       "least_pull_too_low": false,
-      "most_pull": 33.77552674276571,
+      "most_pull": 34.00694733747513,
       "most_pull_too_high": false,
       "diffs": [
         -4.108001108325933,
@@ -22418,7 +22412,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 5.084363220437344,
       "least_pull_too_low": false,
-      "most_pull": 26.78439568955992,
+      "most_pull": 26.747953927492222,
       "most_pull_too_high": false,
       "diffs": [
         -2.1304834155092536,
@@ -22532,9 +22526,9 @@
         5.40669462423963
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.9990484450988655,
+      "least_pull": 4.856583072686678,
       "least_pull_too_low": false,
-      "most_pull": 26.57616960365046,
+      "most_pull": 26.59391394560733,
       "most_pull_too_high": false,
       "diffs": [
         -1.8192921776060587,
@@ -22591,9 +22585,9 @@
         5.530704369289438
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.063458686378509,
+      "least_pull": 5.141299943918503,
       "least_pull_too_low": false,
-      "most_pull": 26.7732285696439,
+      "most_pull": 26.782948975983143,
       "most_pull_too_high": false,
       "diffs": [
         -2.208522843548579,
@@ -22768,9 +22762,9 @@
         4.681985539950543
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.430687713490601,
+      "least_pull": 4.294992916531805,
       "least_pull_too_low": false,
-      "most_pull": 25.62358596258512,
+      "most_pull": 25.796589065506197,
       "most_pull_too_high": false,
       "diffs": [
         -1.0591490089500546,
@@ -22829,7 +22823,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 7.3557931496048665,
       "least_pull_too_low": false,
-      "most_pull": 28.968861037618343,
+      "most_pull": 28.93448295770982,
       "most_pull_too_high": false,
       "diffs": [
         -1.8952943001770954,
@@ -22943,9 +22937,9 @@
         7.746216731844592
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.271675505004456,
+      "least_pull": 7.1237053814287705,
       "least_pull_too_low": false,
-      "most_pull": 28.767783881118714,
+      "most_pull": 28.784529971345513,
       "most_pull_too_high": false,
       "diffs": [
         -1.5898910191281992,
@@ -23002,9 +22996,9 @@
         7.862889156948335
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.329065552872381,
+      "least_pull": 7.40978317865626,
       "least_pull_too_low": false,
-      "most_pull": 28.952486978986073,
+      "most_pull": 28.96165550330872,
       "most_pull_too_high": false,
       "diffs": [
         -1.9666718849015972,
@@ -23179,9 +23173,9 @@
         7.123784199430236
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 6.802158423782409,
+      "least_pull": 6.660891907369663,
       "least_pull_too_low": false,
-      "most_pull": 27.937096314559014,
+      "most_pull": 28.100951652877235,
       "most_pull_too_high": false,
       "diffs": [
         -0.9879331881334217,
@@ -23240,7 +23234,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 4.495439422718675,
       "least_pull_too_low": false,
-      "most_pull": 27.10788042786427,
+      "most_pull": 27.038296405291945,
       "most_pull_too_high": false,
       "diffs": [
         -1.3723212596044654,
@@ -23354,9 +23348,9 @@
         4.407126362711225
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.572861009207766,
+      "least_pull": 4.462120474765999,
       "least_pull_too_low": false,
-      "most_pull": 27.03585112991829,
+      "most_pull": 27.06976885078665,
       "most_pull_too_high": false,
       "diffs": [
         -1.3138356931453892,
@@ -23413,9 +23407,9 @@
         4.590526815211316
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.705938210587697,
+      "least_pull": 4.766588135130625,
       "least_pull_too_low": false,
-      "most_pull": 27.458151042872302,
+      "most_pull": 27.47786287418234,
       "most_pull_too_high": false,
       "diffs": [
         -1.8488279815831667,
@@ -23474,7 +23468,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 2.3983920076720673,
       "least_pull_too_low": false,
-      "most_pull": 24.264919342509813,
+      "most_pull": 24.213449376139263,
       "most_pull_too_high": false,
       "diffs": [
         -1.0670625797508926,
@@ -23529,7 +23523,7 @@
         2.09648518585267
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.277721389908909,
+      "least_pull": 2.27772138990891,
       "least_pull_too_low": false,
       "most_pull": 23.938378220907616,
       "most_pull_too_high": false,
@@ -23588,9 +23582,9 @@
         2.1982149842984375
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.371960348318588,
+      "least_pull": 2.261423395147446,
       "least_pull_too_low": false,
-      "most_pull": 24.08387397338574,
+      "most_pull": 24.10871820942669,
       "most_pull_too_high": false,
       "diffs": [
         -0.8260942247566909,
@@ -23647,9 +23641,9 @@
         2.3726550033505407
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.496830775496568,
+      "least_pull": 2.5573578328091706,
       "least_pull_too_low": false,
-      "most_pull": 24.403121727864498,
+      "most_pull": 24.417062863252934,
       "most_pull_too_high": false,
       "diffs": [
         -1.3470907071073697,
@@ -23706,9 +23700,9 @@
         1.4916787168850896
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.8080971807652646,
+      "least_pull": 1.7036533435928738,
       "least_pull_too_low": false,
-      "most_pull": 22.945290035798564,
+      "most_pull": 23.171808336580423,
       "most_pull_too_high": false,
       "diffs": [
         0.15196193519480872,
@@ -23767,7 +23761,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 6.1183842694861506,
       "least_pull_too_low": false,
-      "most_pull": 27.854767948666282,
+      "most_pull": 27.81912760642807,
       "most_pull_too_high": false,
       "diffs": [
         -2.3763270997180435,
@@ -23881,9 +23875,9 @@
         6.508575792576342
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 6.03246668755662,
+      "least_pull": 5.887022656401719,
       "least_pull_too_low": false,
-      "most_pull": 27.647958990802234,
+      "most_pull": 27.665337631470273,
       "most_pull_too_high": false,
       "diffs": [
         -2.066755893684828,
@@ -23940,9 +23934,9 @@
         6.640912430239669
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 6.10349001754713,
+      "least_pull": 6.182988169744574,
       "least_pull_too_low": false,
-      "most_pull": 27.849742625198736,
+      "most_pull": 27.85924916492457,
       "most_pull_too_high": false,
       "diffs": [
         -2.4630220212092127,
@@ -24117,9 +24111,9 @@
         5.746917115171567
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.433770927928578,
+      "least_pull": 5.295412712750972,
       "least_pull_too_low": false,
-      "most_pull": 26.673580518008208,
+      "most_pull": 26.844054945406302,
       "most_pull_too_high": false,
       "diffs": [
         -1.2817373386600543,
@@ -24178,7 +24172,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 4.273164884949864,
       "least_pull_too_low": false,
-      "most_pull": 31.623090243798803,
+      "most_pull": 31.567202844927106,
       "most_pull_too_high": false,
       "diffs": [
         -2.5053623016990834,
@@ -24292,9 +24286,9 @@
         4.5893727382537595
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.57240963188421,
+      "least_pull": 4.416053353443226,
       "least_pull_too_low": false,
-      "most_pull": 31.791584685212726,
+      "most_pull": 31.819188642163517,
       "most_pull_too_high": false,
       "diffs": [
         -2.68268334600522,
@@ -24351,9 +24345,9 @@
         4.8094021122796065
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.726854031823648,
+      "least_pull": 4.8123037114560265,
       "least_pull_too_low": false,
-      "most_pull": 32.15639103708822,
+      "most_pull": 32.171720874089175,
       "most_pull_too_high": false,
       "diffs": [
         -3.176274003733326,
@@ -24532,9 +24526,9 @@
         3.9066196522615053
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.081859297277898,
+      "least_pull": 3.9338884932697304,
       "least_pull_too_low": false,
-      "most_pull": 30.702695343929644,
+      "most_pull": 30.964582462024214,
       "most_pull_too_high": false,
       "diffs": [
         -2.085801689299828,
@@ -24595,7 +24589,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 3.899263325328139,
       "least_pull_too_low": false,
-      "most_pull": 30.2633658751771,
+      "most_pull": 30.22439758494529,
       "most_pull_too_high": true,
       "diffs": [
         -2.1550569856516653,
@@ -24709,9 +24703,9 @@
         4.07682859419634
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.0089812089788746,
+      "least_pull": 3.849862369422177,
       "least_pull_too_low": false,
-      "most_pull": 30.237628988800612,
+      "most_pull": 30.25668073767606,
       "most_pull_too_high": true,
       "diffs": [
         -2.094733896526847,
@@ -24768,9 +24762,9 @@
         4.280353820548969
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.145982959707212,
+      "least_pull": 4.232964659355697,
       "least_pull_too_low": false,
-      "most_pull": 30.5174072835218,
+      "most_pull": 30.527826437433028,
       "most_pull_too_high": true,
       "diffs": [
         -2.563599130412424,
@@ -24949,9 +24943,9 @@
         3.2323813757549122
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.352173099024482,
+      "least_pull": 3.2012688497437525,
       "least_pull_too_low": false,
-      "most_pull": 29.166152756936413,
+      "most_pull": 29.353671280530648,
       "most_pull_too_high": false,
       "diffs": [
         -1.3065885688879106,
@@ -25012,7 +25006,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 9.573902541975869,
       "least_pull_too_low": false,
-      "most_pull": 37.03585130823337,
+      "most_pull": 36.9882476986926,
       "most_pull_too_high": false,
       "diffs": [
         -3.6767365654020736,
@@ -25126,9 +25120,9 @@
         10.436842519673638
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 9.960547644881368,
+      "least_pull": 9.782835599763809,
       "least_pull_too_low": false,
-      "most_pull": 37.268719386202946,
+      "most_pull": 37.292053352768924,
       "most_pull_too_high": false,
       "diffs": [
         -3.9050589891396825,
@@ -25185,9 +25179,9 @@
         10.676170819378306
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 10.121198005727958,
+      "least_pull": 10.218504309642682,
       "least_pull_too_low": false,
-      "most_pull": 37.60312658142289,
+      "most_pull": 37.615896068173335,
       "most_pull_too_high": false,
       "diffs": [
         -4.382133482984667,
@@ -25366,9 +25360,9 @@
         9.703648949046311
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 9.4589703945218,
+      "least_pull": 9.291428132198737,
       "least_pull_too_low": false,
-      "most_pull": 36.25853432722373,
+      "most_pull": 36.48823703673685,
       "most_pull_too_high": false,
       "diffs": [
         -3.3685434241312286,
@@ -25429,7 +25423,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 7.043636147526595,
       "least_pull_too_low": false,
-      "most_pull": 34.556740250425094,
+      "most_pull": 34.51073835414025,
       "most_pull_too_high": false,
       "diffs": [
         -3.8547596433223212,
@@ -25543,9 +25537,9 @@
         8.053010310420719
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.436197732217789,
+      "least_pull": 7.251011994429353,
       "least_pull_too_low": false,
-      "most_pull": 34.78785711322309,
+      "most_pull": 34.81037519392352,
       "most_pull_too_high": false,
       "diffs": [
         -4.072184478753552,
@@ -25602,9 +25596,9 @@
         8.295553957298496
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.5980065286518625,
+      "least_pull": 7.699366689288605,
       "least_pull_too_low": false,
-      "most_pull": 35.11801081445257,
+      "most_pull": 35.13031285636304,
       "most_pull_too_high": false,
       "diffs": [
         -4.543411983108143,
@@ -25783,9 +25777,9 @@
         7.296564706106607
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 6.9173158480362265,
+      "least_pull": 6.7426129280043074,
       "least_pull_too_low": false,
-      "most_pull": 33.774813986235216,
+      "most_pull": 33.99747909583834,
       "most_pull_too_high": false,
       "diffs": [
         -3.539757842753346,
@@ -25846,7 +25840,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 10.480967823911808,
       "least_pull_too_low": false,
-      "most_pull": 38.278573726407934,
+      "most_pull": 38.228393230106725,
       "most_pull_too_high": false,
       "diffs": [
         -3.903857699932601,
@@ -25960,9 +25954,9 @@
         11.5544498617582
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 10.924525082387563,
+      "least_pull": 10.737845852428805,
       "least_pull_too_low": false,
-      "most_pull": 38.561533626451336,
+      "most_pull": 38.58617829578725,
       "most_pull_too_high": false,
       "diffs": [
         -4.170805866119938,
@@ -26019,9 +26013,9 @@
         11.802093775277722
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 11.092775778411191,
+      "least_pull": 11.194859289624747,
       "least_pull_too_low": false,
-      "most_pull": 38.91375405547515,
+      "most_pull": 38.927264750705135,
       "most_pull_too_high": false,
       "diffs": [
         -4.647483227028616,
@@ -26200,9 +26194,9 @@
         10.83702612511827
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 10.442095794247173,
+      "least_pull": 10.265784751503466,
       "least_pull_too_low": false,
-      "most_pull": 37.5429800367428,
+      "most_pull": 37.78462160240773,
       "most_pull_too_high": false,
       "diffs": [
         -3.680797430711028,
@@ -26263,7 +26257,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 4.095270782574517,
       "least_pull_too_low": false,
-      "most_pull": 30.11328094199646,
+      "most_pull": 30.073397645164683,
       "most_pull_too_high": false,
       "diffs": [
         -0.7913196814028289,
@@ -26314,7 +26308,7 @@
             3.7361403104509607
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 3.9814126561172145,
+          "least_pull": 3.9814126561172154,
           "least_pull_too_low": false,
           "most_pull": 29.841293441225,
           "most_pull_too_high": false,
@@ -26358,9 +26352,9 @@
             3.8446459732612093
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 4.085248336559107,
+          "least_pull": 3.939578243241977,
           "least_pull_too_low": false,
-          "most_pull": 29.97131649247027,
+          "most_pull": 29.99074507119287,
           "most_pull_too_high": false,
           "diffs": [
             -0.5834704508203146,
@@ -26407,9 +26401,9 @@
         4.030144638309868
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.214595899808217,
+      "least_pull": 4.294020296446591,
       "least_pull_too_low": false,
-      "most_pull": 30.24584524270086,
+      "most_pull": 30.256535378489005,
       "most_pull_too_high": false,
       "diffs": [
         -1.0578414787909125,
@@ -26466,9 +26460,9 @@
         3.021105793358461
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.4105020717706775,
+      "least_pull": 3.2711515208100472,
       "least_pull_too_low": false,
-      "most_pull": 28.8745544156495,
+      "most_pull": 29.06166640142477,
       "most_pull_too_high": false,
       "diffs": [
         0.29929191707210734,
@@ -26529,7 +26523,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 6.308072627652769,
       "least_pull_too_low": false,
-      "most_pull": 32.242825834932084,
+      "most_pull": 32.205415716525884,
       "most_pull_too_high": true,
       "diffs": [
         -0.5355236928352305,
@@ -26580,7 +26574,7 @@
             5.984176311959884
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 6.125120093624093,
+          "least_pull": 6.125120093624094,
           "least_pull_too_low": false,
           "most_pull": 31.91163310978308,
           "most_pull_too_high": false,
@@ -26624,9 +26618,9 @@
             6.090836558291665
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 6.229958606663686,
+          "least_pull": 6.076481643993515,
           "least_pull_too_low": false,
-          "most_pull": 32.03789402905138,
+          "most_pull": 32.056083917208746,
           "most_pull_too_high": true,
           "diffs": [
             -0.24169154393042902,
@@ -26673,9 +26667,9 @@
         6.273069531571556
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 6.358382187571334,
+      "least_pull": 6.441819136712152,
       "least_pull_too_low": false,
-      "most_pull": 32.30248443137012,
+      "most_pull": 32.31248648707943,
       "most_pull_too_high": true,
       "diffs": [
         -0.7063512566611472,
@@ -26840,9 +26834,9 @@
         5.235013013171317
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.503007607974197,
+      "least_pull": 5.354696684955596,
       "least_pull_too_low": false,
-      "most_pull": 30.927213288319482,
+      "most_pull": 31.102553060276257,
       "most_pull_too_high": false,
       "diffs": [
         0.6576542997219725,
@@ -26901,7 +26895,7 @@
         2.424263895135409
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.2813180427676594,
+      "least_pull": 3.281318042767661,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -26960,7 +26954,7 @@
         2.4841606613768197
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.3335208794826494,
+      "least_pull": 3.221436714617961,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -27019,7 +27013,7 @@
         2.8022595642786032
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.6036387889978863,
+      "least_pull": 3.6648816573606102,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -27200,9 +27194,9 @@
         1.9799752344893877
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.9743499271315477,
+      "least_pull": 2.868559728625333,
       "least_pull_too_low": false,
-      "most_pull": 31.511911163546323,
+      "most_pull": -1,
       "most_pull_too_high": false,
       "diffs": [
         1.461682728336502,
@@ -27263,7 +27257,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 1.374085728524939,
       "least_pull_too_low": false,
-      "most_pull": 28.880361901545378,
+      "most_pull": 28.78410150186882,
       "most_pull_too_high": false,
       "diffs": [
         0.7271922398512309,
@@ -27318,7 +27312,7 @@
         0.3875557005053643
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.251971292172681,
+      "least_pull": 1.251971292172682,
       "least_pull_too_low": false,
       "most_pull": 28.362286213174865,
       "most_pull_too_high": false,
@@ -27377,9 +27371,9 @@
         0.46676164546541477
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.3238029671279208,
+      "least_pull": 1.2120532494272596,
       "least_pull_too_low": false,
-      "most_pull": 28.53570521055321,
+      "most_pull": 28.580213662335318,
       "most_pull_too_high": false,
       "diffs": [
         1.009212201910831,
@@ -27436,9 +27430,9 @@
         0.5015496564536128
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.3069517480470345,
+      "least_pull": 1.3682041022139781,
       "least_pull_too_low": false,
-      "most_pull": 28.771092568561617,
+      "most_pull": 28.796503368276973,
       "most_pull_too_high": false,
       "diffs": [
         0.7374386839501454,
@@ -27617,9 +27611,9 @@
         -0.06706751799813045
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.9335773944696935,
+      "least_pull": 0.8280549278540384,
       "least_pull_too_low": false,
-      "most_pull": 27.202766177496475,
+      "most_pull": 27.563568585708612,
       "most_pull_too_high": false,
       "diffs": [
         1.6753354429466327,
@@ -27680,7 +27674,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 5.127185263409014,
       "least_pull_too_low": false,
-      "most_pull": 31.092755859498272,
+      "most_pull": 31.05501988304522,
       "most_pull_too_high": false,
       "diffs": [
         -1.0602860556739166,
@@ -27735,7 +27729,7 @@
         4.831314546178732
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.01459169389124,
+      "least_pull": 5.014591693891241,
       "least_pull_too_low": false,
       "most_pull": 30.829354294283448,
       "most_pull_too_high": false,
@@ -27794,9 +27788,9 @@
         4.940822353486027
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.118449873737332,
+      "least_pull": 4.970204338497924,
       "least_pull_too_low": false,
-      "most_pull": 30.956293737089464,
+      "most_pull": 30.974701111739776,
       "most_pull_too_high": false,
       "diffs": [
         -0.8543643851453346,
@@ -27853,9 +27847,9 @@
         5.127984442478404
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.246929079012545,
+      "least_pull": 5.3278276611925115,
       "least_pull_too_low": false,
-      "most_pull": 31.22240264596438,
+      "most_pull": 31.232498011332773,
       "most_pull_too_high": false,
       "diffs": [
         -1.3244992501862036,
@@ -27914,7 +27908,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 1.5702499459819732,
       "least_pull_too_low": false,
-      "most_pull": 37.53012410170777,
+      "most_pull": 37.447035487878125,
       "most_pull_too_high": true,
       "diffs": [
         0.7728647165744427,
@@ -27969,7 +27963,7 @@
         0.3998849618392586
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.3239474245323908,
+      "least_pull": 1.3239474245323926,
       "least_pull_too_low": false,
       "most_pull": 36.92056629560905,
       "most_pull_too_high": true,
@@ -28028,9 +28022,9 @@
         0.5299473365729985
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.4482547803504744,
+      "least_pull": 1.2832388335121168,
       "least_pull_too_low": false,
-      "most_pull": 37.12869427515566,
+      "most_pull": 37.168071073504485,
       "most_pull_too_high": true,
       "diffs": [
         1.1114842748139715,
@@ -28087,9 +28081,9 @@
         0.6441765744742782
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.4918478306012692,
+      "least_pull": 1.5820540716062004,
       "least_pull_too_low": false,
-      "most_pull": 37.441099163693956,
+      "most_pull": 37.463180912348435,
       "most_pull_too_high": true,
       "diffs": [
         0.7588955475971737,
@@ -28268,9 +28262,9 @@
         -0.39450093824070637
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.6992006067360137,
+      "least_pull": 0.5416183220157385,
       "least_pull_too_low": false,
-      "most_pull": 35.47596935189974,
+      "most_pull": 35.82197973739155,
       "most_pull_too_high": true,
       "diffs": [
         1.9769704621949131,
@@ -28331,7 +28325,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 1.022695677616226,
       "least_pull_too_low": false,
-      "most_pull": 34.83733775736847,
+      "most_pull": 34.79623928265554,
       "most_pull_too_high": true,
       "diffs": [
         1.285168478655244,
@@ -28386,7 +28380,7 @@
         -0.3310834545361842
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.5319160175229062,
+      "least_pull": 0.531916017522908,
       "least_pull_too_low": false,
       "most_pull": 34.186094074757264,
       "most_pull_too_high": true,
@@ -28445,9 +28439,9 @@
         -0.20863630313235657
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.6474463606173606,
+      "least_pull": 0.4797712180739188,
       "least_pull_too_low": false,
-      "most_pull": 34.32587707049768,
+      "most_pull": 34.345837275758846,
       "most_pull_too_high": true,
       "diffs": [
         1.9168281480049068,
@@ -28504,9 +28498,9 @@
         0.0006098231589961636
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 0.7894306703708325,
+      "least_pull": 0.8809789337939146,
       "least_pull_too_low": false,
-      "most_pull": 34.6178640708756,
+      "most_pull": 34.628794230166314,
       "most_pull_too_high": true,
       "diffs": [
         1.4506190867643802,
@@ -28565,7 +28559,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 6.850599280224213,
       "least_pull_too_low": false,
-      "most_pull": 41.73359892433089,
+      "most_pull": 41.683380978365314,
       "most_pull_too_high": true,
       "diffs": [
         -0.7312517001560686,
@@ -28616,7 +28610,7 @@
             6.126369526943177
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 6.6610132698659985,
+          "least_pull": 6.661013269865999,
           "least_pull_too_low": false,
           "most_pull": 41.3449058032452,
           "most_pull_too_high": true,
@@ -28660,9 +28654,9 @@
             6.268956185537059
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 6.792831992596952,
+          "least_pull": 6.610939482057688,
           "least_pull_too_low": false,
-          "most_pull": 41.509532438452425,
+          "most_pull": 41.534023436177044,
           "most_pull_too_high": true,
           "diffs": [
             -0.4749919842368051,
@@ -28709,9 +28703,9 @@
         6.512774551730277
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 6.957988092515708,
+      "least_pull": 7.0575174575283,
       "least_pull_too_low": false,
-      "most_pull": 41.85625146262799,
+      "most_pull": 41.869670334264036,
       "most_pull_too_high": true,
       "diffs": [
         -0.952910624461957,
@@ -28890,9 +28884,9 @@
         5.092064298054959
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.836185007031243,
+      "least_pull": 5.663836579960975,
       "least_pull_too_low": false,
-      "most_pull": 40.01702334452236,
+      "most_pull": 40.25604389980303,
       "most_pull_too_high": true,
       "diffs": [
         0.5325762243380687,
@@ -28953,7 +28947,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 4.250196506985159,
       "least_pull_too_low": false,
-      "most_pull": 39.10311926439377,
+      "most_pull": 39.055902051947726,
       "most_pull_too_high": false,
       "diffs": [
         -0.9609265287602895,
@@ -29004,7 +28998,7 @@
             3.659183543380366
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 4.034810638547812,
+          "least_pull": 4.034810638547813,
           "least_pull_too_low": false,
           "most_pull": 38.69853049661972,
           "most_pull_too_high": false,
@@ -29048,9 +29042,9 @@
             3.8031241455642157
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 4.168054363189991,
+          "least_pull": 3.9777908786996603,
           "least_pull_too_low": false,
-          "most_pull": 38.86024062840383,
+          "most_pull": 38.88329212332723,
           "most_pull_too_high": false,
           "diffs": [
             -0.6824306976174803,
@@ -29097,9 +29091,9 @@
         4.049134234237275
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.332788875883345,
+      "least_pull": 4.436867539569293,
       "least_pull_too_low": false,
-      "most_pull": 39.1977554835041,
+      "most_pull": 39.210357499848755,
       "most_pull_too_high": false,
       "diffs": [
         -1.1521682524172938,
@@ -29264,9 +29258,9 @@
         2.6416435006095407
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.2335314050519557,
+      "least_pull": 3.053164440185091,
       "least_pull_too_low": false,
-      "most_pull": 37.42388594143559,
+      "most_pull": 37.65083522588529,
       "most_pull_too_high": false,
       "diffs": [
         0.2576160069374218,
@@ -29327,7 +29321,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 7.696712543181123,
       "least_pull_too_low": false,
-      "most_pull": 43.05764093219665,
+      "most_pull": 43.003252522582606,
       "most_pull_too_high": false,
       "diffs": [
         -1.0602642779440963,
@@ -29382,7 +29376,7 @@
         7.231061468117479
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.560561310769856,
+      "least_pull": 7.560561310769857,
       "least_pull_too_low": false,
       "most_pull": 42.70702642618082,
       "most_pull_too_high": false,
@@ -29441,9 +29435,9 @@
         7.379939456164117
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.700701448876824,
+      "least_pull": 7.506722760334208,
       "least_pull_too_low": false,
-      "most_pull": 42.88354273143667,
+      "most_pull": 42.910062347309186,
       "most_pull_too_high": false,
       "diffs": [
         -0.8698234583777058,
@@ -29500,9 +29494,9 @@
         7.634507816574222
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.876134081705448,
+      "least_pull": 7.9820825542265395,
       "least_pull_too_low": false,
-      "most_pull": 43.2564362701472,
+      "most_pull": 43.27100785079466,
       "most_pull_too_high": true,
       "diffs": [
         -1.34722635765878,
@@ -29561,7 +29555,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 1.149477632418186,
       "least_pull_too_low": false,
-      "most_pull": 35.13122634182726,
+      "most_pull": 35.081994026931966,
       "most_pull_too_high": true,
       "diffs": [
         2.989987089419934,
@@ -29616,7 +29610,7 @@
         -0.4820693731093406
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.574611868365015,
+      "least_pull": 0.5746118683650165,
       "least_pull_too_low": false,
       "most_pull": 34.33743410690265,
       "most_pull_too_high": true,
@@ -29675,9 +29669,9 @@
         -0.36607323408839404
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.6894991181431626,
+      "least_pull": 0.5277582519161118,
       "least_pull_too_low": false,
-      "most_pull": 34.48645477649135,
+      "most_pull": 34.50977264251952,
       "most_pull_too_high": true,
       "diffs": [
         3.743609094491484,
@@ -29734,9 +29728,9 @@
         -0.16777161235301416
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.8325123363251096,
+      "least_pull": 0.9203881701319309,
       "least_pull_too_low": false,
-      "most_pull": 34.804971306462946,
+      "most_pull": 34.8178962395758,
       "most_pull_too_high": true,
       "diffs": [
         3.2696175253830297,
@@ -29795,7 +29789,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 3.1168789067996774,
       "least_pull_too_low": false,
-      "most_pull": 37.0873749315555,
+      "most_pull": 37.041735021592686,
       "most_pull_too_high": true,
       "diffs": [
         3.275965963099882,
@@ -29850,7 +29844,7 @@
         1.6174472344881397
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.3967914712467207,
+      "least_pull": 2.396791471246723,
       "least_pull_too_low": false,
       "most_pull": 36.19530701989822,
       "most_pull_too_high": true,
@@ -29909,9 +29903,9 @@
         1.7329180939897224
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.517390144980026,
+      "least_pull": 2.3354136070385727,
       "least_pull_too_low": false,
-      "most_pull": 36.34069908858647,
+      "most_pull": 36.36221646997615,
       "most_pull_too_high": true,
       "diffs": [
         4.124741774066884,
@@ -29968,9 +29962,9 @@
         1.9301700431977813
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.663400984348904,
+      "least_pull": 2.761673088134487,
       "least_pull_too_low": false,
-      "most_pull": 36.64783414143151,
+      "most_pull": 36.65974877052023,
       "most_pull_too_high": true,
       "diffs": [
         3.666196226069598,
@@ -30149,9 +30143,9 @@
         0.33727350038783915
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.1255176412061618,
+      "least_pull": 0.939476837309857,
       "least_pull_too_low": false,
-      "most_pull": 34.54844042566659,
+      "most_pull": 34.74645337195294,
       "most_pull_too_high": true,
       "diffs": [
         5.5488665409177305,
@@ -30267,7 +30261,7 @@
         -0.5624757113095813
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.3149623591835655,
+      "least_pull": 1.3149623591835666,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -30326,7 +30320,7 @@
         -0.4633691686413725
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.4081340876660033,
+      "least_pull": 1.2928017457644674,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -30385,7 +30379,7 @@
         -0.36077360638503214
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 1.4601466835544104,
+      "least_pull": 1.5232556127735917,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -30566,7 +30560,7 @@
         -1.1925050107506723
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.8142373190578188,
+      "least_pull": 0.7046245821834225,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -30629,7 +30623,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 2.1803728441321555,
       "least_pull_too_low": false,
-      "most_pull": 35.84199925998147,
+      "most_pull": 35.799259690199705,
       "most_pull_too_high": true,
       "diffs": [
         2.6792887562952785,
@@ -30684,7 +30678,7 @@
         0.5546653027768463
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.582213440803433,
+      "least_pull": 1.5822134408034343,
       "least_pull_too_low": false,
       "most_pull": 35.07184235845839,
       "most_pull_too_high": true,
@@ -30743,9 +30737,9 @@
         0.669868604353785
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.694304528069355,
+      "least_pull": 1.5323840267114832,
       "least_pull_too_low": false,
-      "most_pull": 35.21011249273348,
+      "most_pull": 35.23061653736378,
       "most_pull_too_high": true,
       "diffs": [
         3.463038063770586,
@@ -30802,9 +30796,9 @@
         0.8667544893555881
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.8324041086599174,
+      "least_pull": 1.9205394618083316,
       "least_pull_too_low": false,
-      "most_pull": 35.50156876768845,
+      "most_pull": 35.51285273947955,
       "most_pull_too_high": true,
       "diffs": [
         2.9953459386082386,
@@ -30983,9 +30977,9 @@
         -0.6661920481304436
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.4669768548633915,
+      "least_pull": 0.3087911388012023,
       "least_pull_too_low": false,
-      "most_pull": 33.550731193730435,
+      "most_pull": 33.74539546791582,
       "most_pull_too_high": true,
       "diffs": [
         4.901107077849709,
@@ -31046,7 +31040,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 1.742475420271972,
       "least_pull_too_low": false,
-      "most_pull": 33.36720527540095,
+      "most_pull": 33.30594432586021,
       "most_pull_too_high": false,
       "diffs": [
         0.5687224533293254,
@@ -31101,7 +31095,7 @@
         0.9782789625738475
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.4278119720638731,
+      "least_pull": 1.427811972063875,
       "least_pull_too_low": false,
       "most_pull": 32.78613628015844,
       "most_pull_too_high": false,
@@ -31160,9 +31154,9 @@
         1.1153768644692335
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.5594295304547465,
+      "least_pull": 1.394790559036209,
       "least_pull_too_low": false,
-      "most_pull": 32.970539225374736,
+      "most_pull": 32.99989982783961,
       "most_pull_too_high": false,
       "diffs": [
         0.9801112688080771,
@@ -31219,9 +31213,9 @@
         1.2954383436125774
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.6728136722226308,
+      "least_pull": 1.7626932786668161,
       "least_pull_too_low": false,
-      "most_pull": 33.30083272113149,
+      "most_pull": 33.317143070225605,
       "most_pull_too_high": false,
       "diffs": [
         0.5447118678170177,
@@ -31396,9 +31390,9 @@
         0.05788421596591431
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 0.6698773684242944,
+      "least_pull": 0.5121910302554163,
       "least_pull_too_low": false,
-      "most_pull": 31.408001918906784,
+      "most_pull": 31.678636683297476,
       "most_pull_too_high": false,
       "diffs": [
         2.0110215840949515,
@@ -31457,7 +31451,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 1.1593922273728854,
       "least_pull_too_low": false,
-      "most_pull": 31.54634985619412,
+      "most_pull": 31.506878579714655,
       "most_pull_too_high": true,
       "diffs": [
         1.125200803118748,
@@ -31512,7 +31506,7 @@
         0.11784907012775415
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 0.4991924028770464,
+      "least_pull": 0.499192402877048,
       "least_pull_too_low": false,
       "most_pull": 30.73921234810464,
       "most_pull_too_high": true,
@@ -31571,9 +31565,9 @@
         0.24033438402794782
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 0.6147744200216341,
+      "least_pull": 0.4470027915965829,
       "least_pull_too_low": false,
-      "most_pull": 30.877114648403122,
+      "most_pull": 30.89628487662097,
       "most_pull_too_high": true,
       "diffs": [
         1.9547610282232206,
@@ -31630,9 +31624,9 @@
         0.4496456326543927
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 0.7568156109467531,
+      "least_pull": 0.8484153354990421,
       "least_pull_too_low": false,
-      "most_pull": 31.163691127481712,
+      "most_pull": 31.17417756261401,
       "most_pull_too_high": true,
       "diffs": [
         1.488579549615391,
@@ -31691,7 +31685,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 6.978986672510854,
       "least_pull_too_low": false,
-      "most_pull": 38.415614901093214,
+      "most_pull": 38.36733936090287,
       "most_pull_too_high": false,
       "diffs": [
         -0.8687411461638312,
@@ -31742,7 +31736,7 @@
             6.620897737639711
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 6.6759376213887,
+          "least_pull": 6.675937621388701,
           "least_pull_too_low": false,
           "most_pull": 37.91937443307787,
           "most_pull_too_high": false,
@@ -31786,9 +31780,9 @@
             6.820848396767399
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 6.866624397576252,
+          "least_pull": 6.684843757480564,
           "least_pull_too_low": false,
-          "most_pull": 38.141210513307854,
+          "most_pull": 38.16475248668064,
           "most_pull_too_high": false,
           "diffs": [
             -0.5539605477054117,
@@ -31835,9 +31829,9 @@
         6.979895287129694
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 6.9447777555885475,
+      "least_pull": 7.04431784400068,
       "least_pull_too_low": false,
-      "most_pull": 38.39379338998936,
+      "most_pull": 38.406668067458824,
       "most_pull_too_high": false,
       "diffs": [
         -0.9387594850785739,
@@ -32012,9 +32006,9 @@
         5.682770242025257
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 5.9498967797124385,
+      "least_pull": 5.777723835393725,
       "least_pull_too_low": false,
-      "most_pull": 36.71021345180719,
+      "most_pull": 36.94089374717992,
       "most_pull_too_high": false,
       "diffs": [
         0.41186237381756996,
@@ -32073,7 +32067,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 4.382259956301209,
       "least_pull_too_low": false,
-      "most_pull": 35.85882031031341,
+      "most_pull": 35.812519681663005,
       "most_pull_too_high": false,
       "diffs": [
         -1.0961903863146496,
@@ -32124,7 +32118,7 @@
             4.178187880275933
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 4.075044294267064,
+          "least_pull": 4.075044294267066,
           "least_pull_too_low": false,
           "most_pull": 35.36743933614292,
           "most_pull_too_high": false,
@@ -32173,9 +32167,9 @@
         4.381462124159724
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.269462283446207,
+      "least_pull": 4.079374704105593,
       "least_pull_too_low": false,
-      "most_pull": 35.58827247485996,
+      "most_pull": 35.61088046664988,
       "most_pull_too_high": false,
       "diffs": [
         -0.7862047116193445,
@@ -32228,7 +32222,7 @@
             4.178187880275933
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 4.075044294267064,
+          "least_pull": 4.075044294267066,
           "least_pull_too_low": false,
           "most_pull": 35.36743933614292,
           "most_pull_too_high": false,
@@ -32277,9 +32271,9 @@
         4.543084555468963
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 4.347182028257289,
+      "least_pull": 4.451247265954237,
       "least_pull_too_low": false,
-      "most_pull": 35.83683371860366,
+      "most_pull": 35.84918103034956,
       "most_pull_too_high": false,
       "diffs": [
         -1.1669133645090746,
@@ -32454,9 +32448,9 @@
         3.340827519774262
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 3.4595596340439183,
+      "least_pull": 3.2795836432312333,
       "least_pull_too_low": false,
-      "most_pull": 34.28539069418951,
+      "most_pull": 34.508567489272366,
       "most_pull_too_high": false,
       "diffs": [
         0.0281829632636601,
@@ -32515,7 +32509,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 7.828415330240724,
       "least_pull_too_low": false,
-      "most_pull": 39.66605484199465,
+      "most_pull": 39.61483249347514,
       "most_pull_too_high": false,
       "diffs": [
         -1.1925663557402082,
@@ -32570,7 +32564,7 @@
         7.681248549947217
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.529383270993156,
+      "least_pull": 7.529383270993157,
       "least_pull_too_low": false,
       "most_pull": 39.162215973487626,
       "most_pull_too_high": false,
@@ -32629,9 +32623,9 @@
         7.868928397363238
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.710104212267816,
+      "least_pull": 7.516150285519842,
       "least_pull_too_low": false,
-      "most_pull": 39.37560083955828,
+      "most_pull": 39.400545345138994,
       "most_pull_too_high": false,
       "diffs": [
         -0.8792617686880568,
@@ -32688,9 +32682,9 @@
         8.084819714760076
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 7.845098363331648,
+      "least_pull": 7.951090319688413,
       "least_pull_too_low": false,
-      "most_pull": 39.696429623447,
+      "most_pull": 39.71010234726627,
       "most_pull_too_high": false,
       "diffs": [
         -1.316008590584552,
@@ -32747,9 +32741,9 @@
         6.892003888401902
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 6.957287743686257,
+      "least_pull": 6.773108113164581,
       "least_pull_too_low": false,
-      "most_pull": 38.080133482388305,
+      "most_pull": 38.32356133476718,
       "most_pull_too_high": false,
       "diffs": [
         -0.1391583728788639,
@@ -32808,7 +32802,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 1.290641866208088,
       "least_pull_too_low": false,
-      "most_pull": 31.508409415837875,
+      "most_pull": 31.46655631782968,
       "most_pull_too_high": true,
       "diffs": [
         2.816572580846362,
@@ -32863,7 +32857,7 @@
         -0.032350799855225744
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.5411548346953076,
+      "least_pull": 0.5411548346953091,
       "least_pull_too_low": false,
       "most_pull": 30.593777758717607,
       "most_pull_too_high": true,
@@ -32922,9 +32916,9 @@
         0.08373398746076982
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 0.6561773653234523,
+      "least_pull": 0.4942390013093764,
       "least_pull_too_low": false,
-      "most_pull": 30.733371401655365,
+      "most_pull": 30.75329613859952,
       "most_pull_too_high": true,
       "diffs": [
         3.7837620836746453,
@@ -32981,9 +32975,9 @@
         0.2821871117893021
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 0.7993573165011617,
+      "least_pull": 0.8873365757896469,
       "least_pull_too_low": false,
-      "most_pull": 31.02578342650708,
+      "most_pull": 31.036761218955142,
       "most_pull_too_high": true,
       "diffs": [
         3.309775673443852,
@@ -33042,7 +33036,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 3.272850316682975,
       "least_pull_too_low": false,
-      "most_pull": 33.51253684404936,
+      "most_pull": 33.47350634830646,
       "most_pull_too_high": true,
       "diffs": [
         3.1023252058399713,
@@ -33097,7 +33091,7 @@
         2.0653741569473083
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.3590657453458754,
+      "least_pull": 2.3590657453458763,
       "least_pull_too_low": false,
       "most_pull": 32.49456335592209,
       "most_pull_too_high": true,
@@ -33156,9 +33150,9 @@
         2.1809509986351205
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.4798757124766935,
+      "least_pull": 2.297515449474457,
       "least_pull_too_low": false,
-      "most_pull": 32.631383417638965,
+      "most_pull": 32.64991702628267,
       "most_pull_too_high": true,
       "diffs": [
         4.164987701264053,
@@ -33215,9 +33209,9 @@
         2.3783835046059245
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 2.626120777556834,
+      "least_pull": 2.7245907352760614,
       "least_pull_too_low": false,
-      "most_pull": 32.91508291026964,
+      "most_pull": 32.92528613969088,
       "most_pull_too_high": true,
       "diffs": [
         3.7065126739628766,
@@ -33392,9 +33386,9 @@
         1.2839500998896272
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.6811762632285527,
+      "least_pull": 1.5016082879962172,
       "least_pull_too_low": false,
-      "most_pull": 31.468175022994068,
+      "most_pull": 31.64619209006086,
       "most_pull_too_high": false,
       "diffs": [
         4.990006759491244,
@@ -33508,7 +33502,7 @@
         0.024055965665604265
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.4249913562189502,
+      "least_pull": 1.4249913562189513,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -33567,7 +33561,7 @@
         0.18235596512580646
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.5791611034062811,
+      "least_pull": 1.4641790471268823,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -33626,7 +33620,7 @@
         0.28431158871685946
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.6305428108702371,
+      "least_pull": 1.6934662576484856,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -33803,7 +33797,7 @@
         -0.6165773645013672
       ],
       "barrel_adjuster_too_low": true,
-      "least_pull": 0.9132823538500596,
+      "least_pull": 0.8038864155595657,
       "least_pull_too_low": false,
       "most_pull": -1,
       "most_pull_too_high": false,
@@ -33864,7 +33858,7 @@
       "barrel_adjuster_too_low": false,
       "least_pull": 2.3213241677383225,
       "least_pull_too_low": false,
-      "most_pull": 32.4099741170558,
+      "most_pull": 32.371119218179345,
       "most_pull_too_high": true,
       "diffs": [
         2.506853484102887,
@@ -33978,9 +33972,9 @@
         1.118982700486297
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.6607713781162137,
+      "least_pull": 1.498687436988947,
       "least_pull_too_low": false,
-      "most_pull": 31.629609612385835,
+      "most_pull": 31.648282630474032,
       "most_pull_too_high": false,
       "diffs": [
         3.503384196622708,
@@ -34037,9 +34031,9 @@
         1.3159818714221718
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 1.798985685578679,
+      "least_pull": 1.887207296861574,
       "least_pull_too_low": false,
-      "most_pull": 31.90803119652422,
+      "most_pull": 31.918278888614832,
       "most_pull_too_high": true,
       "diffs": [
         3.035718857883573,
@@ -34214,9 +34208,9 @@
         0.22552468566694742
       ],
       "barrel_adjuster_too_low": false,
-      "least_pull": 0.9156864073979439,
+      "least_pull": 0.7598162078042163,
       "least_pull_too_low": false,
-      "most_pull": 30.4872282452451,
+      "most_pull": 30.668585017053754,
       "most_pull_too_high": false,
       "diffs": [
         4.377574778540827,
