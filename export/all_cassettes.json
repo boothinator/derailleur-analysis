@@ -18,6 +18,7 @@
     ],
     "averagePitch": 3.72,
     "cogWidth": 1.65,
+    "chainRollerWidth": 2.2,
     "maxToothAvailable": 51,
     "source": "https://en.wikibooks.org/wiki/Bicycles/Maintenance_and_Repair/Gear-changing_Dimensions#Cog-set_Stack_Width"
   },
@@ -40,6 +41,7 @@
     ],
     "averagePitch": 3.75,
     "cogWidth": 1.65,
+    "chainRollerWidth": 2.2,
     "maxToothAvailable": 51,
     "source": "https://en.wikibooks.org/wiki/Bicycles/Maintenance_and_Repair/Gear-changing_Dimensions#Cog-set_Stack_Width"
   },
@@ -61,6 +63,7 @@
     ],
     "averagePitch": 3.95,
     "cogWidth": 1.65,
+    "chainRollerWidth": 2.2,
     "maxToothAvailable": 48,
     "source": "https://en.wikibooks.org/wiki/Bicycles/Maintenance_and_Repair/Gear-changing_Dimensions#Cog-set_Stack_Width"
   },
@@ -81,6 +84,7 @@
     ],
     "averagePitch": 4.05,
     "cogWidth": 1.95,
+    "chainRollerWidth": 2.2,
     "maxToothAvailable": 46,
     "source": "https://youtu.be/q75AiGAUpp8"
   },
@@ -104,6 +108,7 @@
     ],
     "averagePitch": 3.65,
     "cogWidth": 1.65,
+    "chainRollerWidth": 2.2,
     "maxToothAvailable": 52,
     "source": "https://docs.google.com/spreadsheets/d/1251cmc6JOUUULPyqbn2MrdiI40J8G2-B4L_jE3tlGA4/edit?usp=sharing"
   },
@@ -125,6 +130,7 @@
     ],
     "averagePitch": 3.96,
     "cogWidth": 1.71,
+    "chainRollerWidth": 2.2,
     "maxToothAvailable": 34,
     "source": "https://docs.google.com/spreadsheets/d/1rqV2qpU2hzQhhdejQ6YgvZV2T9zg580vXTBdCKbOJ8k/edit?usp=sharing"
   },
@@ -146,6 +152,7 @@
     ],
     "averagePitch": 4.05,
     "cogWidth": 1.78,
+    "chainRollerWidth": 2.2,
     "maxToothAvailable": 36,
     "source": "https://docs.google.com/spreadsheets/d/1cwWfOT6iPUawM9y10gzjh8jaenWdDtznxEDxzCVvy0s/edit?usp=sharing"
   }

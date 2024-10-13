@@ -10,13 +10,89 @@
         "cassettePartNumber": "generic-10-speed",
         "confidence": 0.2353205889612297,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxChainAngle": 0.5962442310173838,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 2.0596488256118373,
+          "barrel_adjuster_values": [
+            0,
+            2.0231567625349562,
+            2.059217964514442,
+            2.0596437800862093,
+            2.0596487672086567,
+            2.0596488256118373
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 2.6190856827692293,
+          "least_pull_too_low": false,
+          "most_pull": 31.995285063825623,
+          "most_pull_too_high": true,
+          "diffs": [
+            -0.6053978758995093,
+            -0.22684235698680766,
+            0.086967657576146,
+            0.32134688661056643,
+            0.48621284409608023,
+            0.6053980296166799,
+            0.5829572807284791,
+            0.4890366090811966
+          ],
+          "diffs_minus_free_play": [
+            -0.3303978758995092,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.33039802961667974,
+            0.30795728072847894,
+            0.0
+          ],
+          "max_chain_angle": 0.5962442310173838
+        }
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
         "confidence": 0.18874776825915696,
         "supported": false,
-        "maxToothAvailableAndCompatible": 34
+        "maxToothAvailableAndCompatible": 34,
+        "maxChainAngle": 0.6352715919785195,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 2.220554392650944,
+          "barrel_adjuster_values": [
+            0,
+            2.1789493266572983,
+            2.2199802664498307,
+            2.2205465176191455,
+            2.220554286083214,
+            2.220554392650944
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 2.6121017807587577,
+          "least_pull_too_low": false,
+          "most_pull": 32.19287175439097,
+          "most_pull_too_high": true,
+          "diffs": [
+            -0.5970232011247809,
+            -0.27433696515740635,
+            -0.014981821930472705,
+            0.17630166576421757,
+            0.3294421213556973,
+            0.4783017743614124,
+            0.5970234816110462,
+            0.37588865959228457
+          ],
+          "diffs_minus_free_play": [
+            -0.3520232011247808,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.35202348161104613,
+            0.0
+          ],
+          "max_chain_angle": 0.6352715919785195
+        }
       }
     ],
     "shifterType": "drop-bar",
@@ -67,13 +143,93 @@
         "cassettePartNumber": "sram-11-speed",
         "confidence": 0.08074409611386904,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxChainAngle": 0.0,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 1.2225543283050697,
+          "barrel_adjuster_values": [
+            0,
+            1.225934629929335,
+            1.222546905370716,
+            1.2225543446212233,
+            1.222554328269127,
+            1.2225543283050697
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 1.9378040164847865,
+          "least_pull_too_low": false,
+          "most_pull": 30.953529977611648,
+          "most_pull_too_high": true,
+          "diffs": [
+            0.20733449806467874,
+            0.38770611061645965,
+            0.49596476487479535,
+            0.5177264607591425,
+            0.46285547787375947,
+            0.35502964887668753,
+            0.09788695264116853,
+            -0.23914471313137398,
+            -0.5177264606645409
+          ],
+          "diffs_minus_free_play": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_chain_angle": 0.0
+        }
       },
       {
         "cassettePartNumber": "shimano-11-speed",
         "confidence": 0.1726304585361969,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxChainAngle": 0.0,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 1.3704198817349131,
+          "barrel_adjuster_values": [
+            0,
+            1.3741109217226457,
+            1.3704125021698799,
+            1.3704198965079093,
+            1.3704198817052793,
+            1.3704198817349131
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 2.0669627200697462,
+          "least_pull_too_low": false,
+          "most_pull": 31.128770559179273,
+          "most_pull_too_high": true,
+          "diffs": [
+            0.053917202166729794,
+            0.25851241328015817,
+            0.392297176545803,
+            0.4408326038226065,
+            0.4139918216645597,
+            0.3354799833156932,
+            0.10900369414529365,
+            -0.19588063013666357,
+            -0.4408326037446102
+          ],
+          "diffs_minus_free_play": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_chain_angle": 0.0
+        }
       }
     ],
     "shifterType": "drop-bar",
@@ -113,13 +269,89 @@
         "cassettePartNumber": "generic-10-speed",
         "confidence": 0.07295193820031295,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxChainAngle": 0.6574157942269288,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 3.7361403104509607,
+          "barrel_adjuster_values": [
+            0,
+            3.5416445803223606,
+            3.727096578787419,
+            3.735721260634575,
+            3.736121717782862,
+            3.7361403104509607
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 3.9814126561172154,
+          "least_pull_too_low": false,
+          "most_pull": 29.841293441225,
+          "most_pull_too_high": false,
+          "diffs": [
+            -0.6392380304746617,
+            -0.4608812741569288,
+            -0.3021089589318109,
+            -0.1854533860480707,
+            -0.06460203877791315,
+            0.07418772677966246,
+            0.3047303181575671,
+            0.6392937341082856
+          ],
+          "diffs_minus_free_play": [
+            -0.3642380304746615,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.36429373410828547
+          ],
+          "max_chain_angle": 0.6574157942269288
+        }
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
         "confidence": 0.05458127690345087,
         "supported": false,
-        "maxToothAvailableAndCompatible": 34
+        "maxToothAvailableAndCompatible": 34,
+        "maxChainAngle": 0.610915167592128,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 3.8446459732612093,
+          "barrel_adjuster_values": [
+            0,
+            3.6451158753824418,
+            3.835383449644015,
+            3.844217330534558,
+            3.8446269778126414,
+            3.8446459732612093
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 3.939578243241977,
+          "least_pull_too_low": false,
+          "most_pull": 29.99074507119287,
+          "most_pull_too_high": false,
+          "diffs": [
+            -0.5834704508203146,
+            -0.4613637795515686,
+            -0.3566635230090185,
+            -0.28208893129564316,
+            -0.1713741278580514,
+            -0.0008007617417717938,
+            0.37340817614656174,
+            0.583527361184224
+          ],
+          "diffs_minus_free_play": [
+            -0.33847045082031446,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.3385273611842239
+          ],
+          "max_chain_angle": 0.610915167592128
+        }
       }
     ],
     "shifterType": "drop-bar",
@@ -142,13 +374,93 @@
         "cassettePartNumber": "sram-11-speed",
         "confidence": 0.2398645581115711,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxChainAngle": 0.0,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 2.9872800467332175,
+          "barrel_adjuster_values": [
+            0,
+            2.939561282150934,
+            2.9857364833273787,
+            2.987230324052192,
+            2.987278493646304,
+            2.9872800467332175
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 3.357124141189001,
+          "least_pull_too_low": false,
+          "most_pull": 28.855855163795216,
+          "most_pull_too_high": false,
+          "diffs": [
+            0.18664055907574095,
+            0.18051412971536962,
+            0.13970759144683598,
+            0.04302467180632874,
+            -0.06290022781981008,
+            -0.16413848254142493,
+            -0.18663590602734814,
+            -0.11815225336897583,
+            0.12607122011833383
+          ],
+          "diffs_minus_free_play": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_chain_angle": 0.0
+        }
       },
       {
         "cassettePartNumber": "shimano-11-speed",
         "confidence": 0.4306175123572975,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxChainAngle": 0.0,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 3.128485836107706,
+          "barrel_adjuster_values": [
+            0,
+            2.9896280378251663,
+            3.1248324972250545,
+            3.1283867095754063,
+            3.1284832136179928,
+            3.128485836107706
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 3.4849085302867273,
+          "least_pull_too_low": false,
+          "most_pull": 29.03015773789277,
+          "most_pull_too_high": false,
+          "diffs": [
+            0.018711719230665835,
+            0.033684103884766614,
+            0.01683144734233366,
+            -0.05330057187862991,
+            -0.13013824818442998,
+            -0.1997904749102446,
+            -0.18824583038072973,
+            -0.08326128526142895,
+            0.19979833188942564
+          ],
+          "diffs_minus_free_play": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_chain_angle": 0.0
+        }
       }
     ],
     "shifterType": "drop-bar",
@@ -157,38 +469,6 @@
     "maxToothAvailableAndCompatible": 36,
     "chainWrap": 41,
     "equivalentShifters": [],
-    "equivalentDerailleurs": [],
-    "reviews": []
-  },
-  {
-    "brand": "Mixed",
-    "name": "Microshift Advent X 10-Speed shifter/Shimano CUES 9-Speed derailleur/9-speed cassette",
-    "speeds": 9,
-    "shifterPartNumber": "SB-M100A",
-    "derailleurPartNumber": "RD-U4020",
-    "cassettes": [
-      {
-        "cassettePartNumber": "CS-LG300-9",
-        "confidence": 0.8018634871809223,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 36
-      }
-    ],
-    "shifterType": "drop-bar",
-    "noMatchingFrontShifter": true,
-    "moreCogsThanShifts": false,
-    "maxToothAvailableAndCompatible": 36,
-    "chainWrap": 41,
-    "equivalentShifters": [
-      {
-        "name": "Sword 10-speed",
-        "brand": "Microshift",
-        "partNumber": "SB-G7000-R",
-        "type": "drop-bar",
-        "equivalentPartNumber": "SB-M100A",
-        "note": "Presumably Sword uses the same shift points as Advent X"
-      }
-    ],
     "equivalentDerailleurs": [],
     "reviews": []
   },
@@ -203,19 +483,89 @@
         "cassettePartNumber": "generic-10-speed",
         "confidence": 0.14450149159843212,
         "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 36,
+        "maxChainAngle": 0.0,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 6.620897737639711,
+          "barrel_adjuster_values": [
+            0,
+            6.428338203858407,
+            6.615821846011361,
+            6.620764168808129,
+            6.620894310808979,
+            6.620897737639711
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 6.675937621388701,
+          "least_pull_too_low": false,
+          "most_pull": 37.91937443307787,
+          "most_pull_too_high": false,
+          "diffs": [
+            -0.5444415255555803,
+            -0.38159046689685994,
+            0.021849785719254555,
+            0.24176124062696758,
+            0.29881215632059366,
+            0.5109037662936231,
+            0.5444492701930344,
+            0.4482569466631148
+          ],
+          "diffs_minus_free_play": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_chain_angle": 0.0
+        }
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
         "confidence": 0.18076553506843496,
         "supported": false,
-        "maxToothAvailableAndCompatible": 34
-      },
-      {
-        "cassettePartNumber": "CS-PG-1050-A1",
-        "confidence": 0.8018634871809223,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 34,
+        "maxChainAngle": 0.5575717112466755,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 6.820848396767399,
+          "barrel_adjuster_values": [
+            0,
+            6.608434625522122,
+            6.8152599005757235,
+            6.8207015757541125,
+            6.820844635822011,
+            6.820848396767399
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 6.684843757480564,
+          "least_pull_too_low": false,
+          "most_pull": 38.16475248668064,
+          "most_pull_too_high": false,
+          "diffs": [
+            -0.5539605477054117,
+            -0.4448784544241491,
+            -0.09361101661173521,
+            0.08537405996930048,
+            0.13291962643806698,
+            0.3769022023439419,
+            0.5539690474419885,
+            0.33317758568411904
+          ],
+          "diffs_minus_free_play": [
+            -0.3089605477054116,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.3089690474419884,
+            0.0
+          ],
+          "max_chain_angle": 0.5575717112466755
+        }
       }
     ],
     "shifterType": "drop-bar",
@@ -223,76 +573,6 @@
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
     "chainWrap": 41,
-    "equivalentShifters": [
-      {
-        "name": "Sword 10-speed",
-        "brand": "Microshift",
-        "partNumber": "SB-G7000-R",
-        "type": "drop-bar",
-        "equivalentPartNumber": "SB-M100A",
-        "note": "Presumably Sword uses the same shift points as Advent X"
-      }
-    ],
-    "equivalentDerailleurs": [],
-    "reviews": []
-  },
-  {
-    "brand": "Mixed",
-    "name": "Microshift Advent X 10-Speed shifter/Shimano Deore 11-Speed derailleur/10-speed cassette",
-    "speeds": 10,
-    "shifterPartNumber": "SB-M100A",
-    "derailleurPartNumber": "RD-M4120",
-    "cassettes": [
-      {
-        "cassettePartNumber": "generic-10-speed",
-        "confidence": 0.303309791695546,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 42
-      },
-      {
-        "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.24748024467173457,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 34
-      }
-    ],
-    "shifterType": "drop-bar",
-    "noMatchingFrontShifter": true,
-    "moreCogsThanShifts": false,
-    "maxToothAvailableAndCompatible": 42,
-    "chainWrap": 41,
-    "equivalentShifters": [
-      {
-        "name": "Sword 10-speed",
-        "brand": "Microshift",
-        "partNumber": "SB-G7000-R",
-        "type": "drop-bar",
-        "equivalentPartNumber": "SB-M100A",
-        "note": "Presumably Sword uses the same shift points as Advent X"
-      }
-    ],
-    "equivalentDerailleurs": [],
-    "reviews": []
-  },
-  {
-    "brand": "Mixed",
-    "name": "Microshift Advent X 10-Speed shifter/SRAM SX 12-Speed derailleur/9-speed cassette",
-    "speeds": 9,
-    "shifterPartNumber": "SB-M100A",
-    "derailleurPartNumber": "RD-SX-1-B1",
-    "cassettes": [
-      {
-        "cassettePartNumber": "CS-LG300-9",
-        "confidence": 0.8524510483037597,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 46
-      }
-    ],
-    "shifterType": "drop-bar",
-    "noMatchingFrontShifter": false,
-    "moreCogsThanShifts": false,
-    "maxToothAvailableAndCompatible": 46,
-    "chainWrap": 40,
     "equivalentShifters": [
       {
         "name": "Sword 10-speed",
@@ -317,19 +597,45 @@
         "cassettePartNumber": "generic-10-speed",
         "confidence": 0.3015611253041199,
         "supported": false,
-        "maxToothAvailableAndCompatible": 48
-      },
-      {
-        "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.3621989249173843,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 34
-      },
-      {
-        "cassettePartNumber": "CS-PG-1050-A1",
-        "confidence": 0.8524510483037597,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 36
+        "maxToothAvailableAndCompatible": 48,
+        "maxChainAngle": 0.9145936972290528,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 4.178187880275933,
+          "barrel_adjuster_values": [
+            0,
+            4.009726502177854,
+            4.172437574610949,
+            4.177992975276338,
+            4.1781814849732966,
+            4.178187880275933
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 4.075044294267066,
+          "least_pull_too_low": false,
+          "most_pull": 35.36743933614292,
+          "most_pull_too_high": false,
+          "diffs": [
+            -0.7817789663543451,
+            -0.4777298152605063,
+            0.0415086742340236,
+            0.36181550793552475,
+            0.4951980706893835,
+            0.747649741624727,
+            0.7817932918322512,
+            0.6318389232747066
+          ],
+          "diffs_minus_free_play": [
+            -0.5067789663543449,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.47264974162472684,
+            0.5067932918322511,
+            0.35683892327470645
+          ],
+          "max_chain_angle": 0.9145936972290528
+        }
       }
     ],
     "shifterType": "drop-bar",
