@@ -1,7 +1,7 @@
 
 import json
 from scipy.stats import norm
-from util import calculate_max_angle
+from util import calculate_max_chain_angle
 
 with open(f"other_shifters.json") as f:
   shifters = json.load(f)
@@ -22,9 +22,10 @@ with open(f"compatibility_ranges.json") as f:
 
 motion_multiplier_avg = compatibility_ranges["motionMultiplierAvg"]
 motion_multiplier_stdev = compatibility_ranges["motionMultiplierStdev"]
-max_angle_max = compatibility_ranges["maxAngleMax"]
+max_chain_angle_max = compatibility_ranges["maxChainAngleMax"]
 
 combos = []
+partial_fail_combos = []
 
 for shifter in shifters:
   equiv_shifters = [s for s in equivalent_shifters if s["equivalentPartNumber"] == shifter["partNumber"]]
@@ -83,11 +84,36 @@ for shifter in shifters:
         confidence = 1 - norm.cdf(distFromMotionMultiplierAvg, scale=motion_multiplier_stdev) \
                     + norm.cdf(-distFromMotionMultiplierAvg, scale=motion_multiplier_stdev)
         
-        max_angle = calculate_max_angle(shifter, derailleur, cassette)
+        max_chain_angle_results = calculate_max_chain_angle(shifter, derailleur, cassette)
 
-        # TODO: log combos with high enough confidence but bad max angle, and vice versa
+        barrel_adjuster_too_low = max_chain_angle_results["barrel_adjuster_too_low"]
+        least_pull_too_low = max_chain_angle_results["least_pull_too_low"]
+        max_chain_angle_too_high = max_chain_angle_results["max_chain_angle"] > max_chain_angle_max
+        confidence_too_low = confidence < 0.05
 
-        if confidence > 0.05 and max_angle <= max_angle_max:
+        fail_criteria = [confidence_too_low, max_chain_angle_too_high, barrel_adjuster_too_low, least_pull_too_low]
+
+        #Log combos that fail any, but not all criteria
+        if any(fail_criteria):
+          if not all(fail_criteria):
+            partial_fail_combos.append({
+              "confidence_too_low": bool(confidence_too_low),
+              "max_chain_angle_too_high": bool(max_chain_angle_too_high),
+              "barrel_adjuster_too_low": bool(barrel_adjuster_too_low),
+              "least_pull_too_low": bool(least_pull_too_low),
+              **combo,
+              "cassettePartNumber": cassette["partNumber"],
+              "confidence": confidence,
+              "maxChainAngle": max_chain_angle_results["max_chain_angle"],
+              "maxAngleAnalysis": max_chain_angle_results,
+              "equivalentShifters": [],
+              "equivalentDerailleurs": []
+            })
+        else:
+        
+          if max_chain_angle_results["most_pull_too_high"]:
+            print(f"Warning: most pull too high for {combo['name']} with cassette {cassette["partNumber"]}")
+          
           maxToothAvailableAndCompatible = min(derailleur["maxTooth"], cassette["maxToothAvailable"])
 
           combo["cassettes"].append({
@@ -98,7 +124,8 @@ for shifter in shifters:
                 and derailleur["partNumber"] == combo["derailleurPartNumber"]
                 and cassette["partNumber"] == combo["cassettePartNumber"]]),
             "maxToothAvailableAndCompatible": maxToothAvailableAndCompatible,
-            "maxAngle": max_angle # TODO: come up with better name
+            "maxChainAngle": max_chain_angle_results["max_chain_angle"],
+            "maxAngleAnalysis": max_chain_angle_results
           })
 
           combo["maxToothAvailableAndCompatible"] = max(combo["maxToothAvailableAndCompatible"], maxToothAvailableAndCompatible)
@@ -125,6 +152,9 @@ for shifter in shifters:
 
 with open(f"combinations.json", "w") as info_file:
   json.dump(combos, info_file, indent=2)
+
+with open(f"partial_fail_combos.json", "w") as info_file:
+  json.dump(partial_fail_combos, info_file, indent=2)
 
 with open(f"all_shifters.json", "w") as info_file:
   json.dump(shifters, info_file, indent=2)
