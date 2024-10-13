@@ -1,5 +1,7 @@
 import numpy as np
 
+# Could calculate using dropout thickness (7 to 8 mm for shimano?) and then use the distance from 
+# end of cassette to dropout to figure out the first cog position, maybe
 smallest_cog_position = 15 # TODO: put this on the cassette, or figure out from derailleur
 jockey_to_cog_distance = 2.5 * 25.4 / 2 
 max_cable_pull = 50 # Assume that no shifter will be able to pull 50 mm of cable
