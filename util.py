@@ -48,6 +48,6 @@ def calculate_max_angle(shifter, derailleur, cassette):
 
   max_angle = np.arcsin(max_diff_after_free_play/jockey_to_cog_distance) * 180 / np.pi
 
-  print(max_angle)
+  # TODO: return failure to converge, can't shift error, etc
 
   return max_angle
