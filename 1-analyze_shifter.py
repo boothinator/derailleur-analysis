@@ -62,10 +62,10 @@ def analyze(input_file, out_folder):
 
   avgs = pd.DataFrame([gear_averages, pulling_gear_averages, relaxing_gear_averages]).T
 
-  plt.clf()
   avgs.plot.bar()
   plt.ylim(bottom=-1)
   plt.savefig(f"{out_folder}/meas_avgs.png")
+  plt.close()
 
   # Plot Stdev
 
@@ -75,16 +75,16 @@ def analyze(input_file, out_folder):
 
   avgs = pd.DataFrame([gear_stdev, pulling_gear_stdev, relaxing_gear_stdev]).T
 
-  plt.clf()
   avgs.plot.bar()
   plt.savefig(f"{out_folder}/meas_stdev.png")
+  plt.close()
 
   # Diff between relaxing and pulling averages
   relaxing_pulling_diffs = relaxing_gear_averages - pulling_gear_averages
 
-  plt.clf()
   relaxing_pulling_diffs.plot.bar()
   plt.savefig(f"{out_folder}/meas_diffs.png")
+  plt.close()
 
   # Calculate shift amounts by calculating differences between subsequent positions
   # Use MeasurementData to ensure that we wouldn't be affected by problems from normalization
@@ -109,18 +109,18 @@ def analyze(input_file, out_folder):
 
   shift_avgs_df = pd.DataFrame([shift_averages, pulling_shift_averages, relaxing_shift_averages]).T
 
-  plt.clf()
   shift_avgs_df.plot.bar()
   plt.savefig(f"{out_folder}/shift_avgs.png")
+  plt.close()
 
   # Cable Pull chart
 
   cable_pull = np.mean(shift_averages[1:-1])
 
-  plt.clf()
   shift_averages.plot.bar()
   # TODO: plot average line
   plt.savefig(f"{out_folder}/cable_pull.png")
+  plt.close()
 
   # Plot Shift Std Dev
 
@@ -133,14 +133,15 @@ def analyze(input_file, out_folder):
   plt.clf()
   shift_stdevs_df.plot.bar()
   plt.savefig(f"{out_folder}/shift_stdev.png")
+  plt.close()
 
   # Plot Shift Differences
 
   shift_relaxing_pulling_diffs = relaxing_shift_averages - pulling_shift_averages
 
-  plt.clf()
   shift_relaxing_pulling_diffs.plot.bar()
   plt.savefig(f"{out_folder}/shift_diffs.png")
+  plt.close()
 
 
   return {
@@ -157,13 +158,15 @@ for dir in os.listdir('shifters'):
     continue
   
   #FIXME:TESTING
-  #if dir != "Microshift Advent X":
+  #if dir != "Shimano Deore 11-Speed":
   #  continue
 
   with open(f"shifters/{dir}/info.json") as info_file:
     info = json.load(info_file)
   
   result = analyze(f"shifters/{dir}/measurements.csv", f"shifters/{dir}")
+
+  print(f"{dir}: {result['cablePull']}")
 
   info_out = {
     **info,
