@@ -52,7 +52,7 @@ def analyze(input_file, out_folder):
 
   normalized_measurements = df.apply(lambda row: row["Measurement"] - set_average_diffs[row["Set"]], axis=1)
 
-  df["NormalizedMeasurement"] = normalized_measurements - normalized_measurements.min()
+  df["NormalizedMeasurement"] = normalized_measurements.max() - normalized_measurements
 
   # Plot Averages
 
@@ -80,7 +80,7 @@ def analyze(input_file, out_folder):
   plt.close()
 
   # Diff between relaxing and pulling averages
-  relaxing_pulling_diffs = relaxing_gear_averages - pulling_gear_averages
+  relaxing_pulling_diffs = pulling_gear_averages - relaxing_gear_averages
 
   relaxing_pulling_diffs.plot.bar()
   plt.savefig(f"{out_folder}/meas_diffs.png")
@@ -137,7 +137,7 @@ def analyze(input_file, out_folder):
 
   # Plot Shift Differences
 
-  shift_relaxing_pulling_diffs = relaxing_shift_averages - pulling_shift_averages
+  shift_relaxing_pulling_diffs = pulling_shift_averages - relaxing_shift_averages
 
   shift_relaxing_pulling_diffs.plot.bar()
   plt.savefig(f"{out_folder}/shift_diffs.png")
@@ -158,7 +158,7 @@ for dir in os.listdir('shifters'):
     continue
   
   #FIXME:TESTING
-  if dir != "Shimano Ultegra 11-Speed":
+  if dir != "Shimano Ultegra 6600":
     continue
 
   with open(f"shifters/{dir}/info.json") as info_file:
