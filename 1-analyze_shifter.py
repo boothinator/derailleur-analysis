@@ -10,7 +10,7 @@ import pandas as pd
 def convert_to_float(c):
   return float(c) if len(c) > 0 else float('nan')
 
-def analyze(input_file):
+def analyze(input_file, out_folder):
   data = []
   row_headers = []
 
@@ -19,9 +19,6 @@ def analyze(input_file):
     for row in reader:
       data.append(row)
       row_headers.append(row[0])
-  
-  set_row_index = row_headers.index("Set")
-  direction_row_index = row_headers.index("Direction")
   
   # Find where measurements start
   gear_headers = [(i, h, m[1]) for i, h, m in 
@@ -37,10 +34,16 @@ def analyze(input_file):
     for row in data[first_gear_row_index:last_gear_row_index+1]
   ]
 
+  # Get Run Data
+  run_info = pd.DataFrame(dict([(row_headers[i], data[i][1:])
+                                for i in range(0, first_gear_row_index)]),
+                          index=data[row_headers.index("Run")][1:])
+
   # Create DataFrame
   d = [dict([(row_header, data[row_index][col_index])
              for row_index,row_header in enumerate(row_headers[0:first_gear_row_index])]
              + [('Gear', int(re.match(r'^(\d{1,2}).*', data[gear_row_index][0])[1])),
+                ('Gear Label', data[gear_row_index][0]),
                 ('Measurement', convert_to_float(data[gear_row_index][col_index]))
                 ])
        for col_index in range(1, len(data[0]))
@@ -49,63 +52,74 @@ def analyze(input_file):
 
   sets = sorted(list(set(df["Set"])))
 
-  # Get set averages
-  set_gear_averages = df.groupby(["Set", "Gear"])["Measurement"].mean()
+  # Get set averages and normalize data
+  set_gear_data = df.groupby(["Set", "Gear"])["Measurement"]
+  set_gear_averages = set_gear_data.mean()
 
-  set_average_diffs = [set_gear_averages[set] - set_gear_averages[sets[0]] for set in sets[1:]]
+  set_gear_average_diffs = [(set, set_gear_averages[set] - set_gear_averages[sets[0]])
+                            for set in sets[1:]]
 
+  set_average_diffs = dict([(sets[0], 0)] + [(set, d.mean()) for set, d in set_gear_average_diffs])
 
-  # TODO: graph, diff between pulling and relaxing, average pulling, average relaxing
-  # TODO: normalize, make queryable
-  set_row = data[set_row_index][1:]
-  set_numbers = sorted(list(set(set_row)))
+  normalized_measurements = df.apply(lambda row: row["Measurement"] - set_average_diffs[row["Set"]], axis=1)
 
-  set_col_indexes = [(set, [i for i,s in enumerate(set_row) if s == set]) for set in set_numbers]
+  df["NormalizedMeasurement"] = normalized_measurements - normalized_measurements.min()
 
-  set_measurement_data = [
-    (set, [[val for i,val in enumerate(row) if i in indexes] for row in measurement_data])
-    for set,indexes in set_col_indexes
-  ]
+  # Plot Averages
 
-  set_row_averages = [(sd[0], np.array([np.mean([v for v in row if not np.isnan(v)]) for row in sd[1]]))
-                  for sd in set_measurement_data]
-  
-  row_avg_diffs = [set_row_averages[set_index][1] - set_row_averages[0][1]
-                   for set_index in range(1, len(set_row_averages))]
-  
-  avg_set_diffs = [0] + [np.mean([d for d in row_diffs if not np.isnan(d)])
-                         for row_diffs in row_avg_diffs]
-  
-  normalized_set_data = [(set, np.array(data) - avg_set_diffs[i])
-                                 for i,(set,data) in enumerate(set_measurement_data)]
-  
-  normalized_measurement_data = [
-    np.array([ normalized_set_data[set_index][1][row_index] for set_index in range(len(set_numbers))]).flatten()
-    for row_index in range(len(measurement_data))]
-  
-  clean_normalized_row_data = [[c for c in row if not math.isnan(c)] for row in normalized_measurement_data]
+  gear_averages = df.groupby(["Gear"])["NormalizedMeasurement"].mean().rename("Average")
+  pulling_gear_averages = df[df["Direction"] == 'Pulling'].groupby(["Gear"])["NormalizedMeasurement"].mean().rename("Average Pulling")
+  relaxing_gear_averages = df[df["Direction"] == 'Relaxing'].groupby(["Gear"])["NormalizedMeasurement"].mean().rename("Average Relaxing")
 
-  min_clean_normalized_row_data = min([min(row) for row in clean_normalized_row_data])
-
-  clean_normalized_row_data = [[c - min_clean_normalized_row_data for c in row] for row in clean_normalized_row_data]
-  
-  row_averages = [np.mean(row) for row in clean_normalized_row_data]
-  row_stdevs = [np.std(row) for row in clean_normalized_row_data]
+  avgs = pd.DataFrame([gear_averages, pulling_gear_averages, relaxing_gear_averages]).T
 
   plt.clf()
-  plt.plot(row_stdevs, "o")
-  plt.show()
+  avgs.plot.bar()
+  plt.ylim(bottom=-1)
+  plt.savefig(f"{out_folder}/meas_avgs.png")
 
-  # Calculate differences
-  diffs = np.array([column[:-1] - column[1:] for column in np.array(measurement_data).T])
+  # Plot Stdev
+
+  gear_stdev = df.groupby(["Gear"])["NormalizedMeasurement"].std().rename("Std Dev")
+  pulling_gear_stdev = df[df["Direction"] == 'Pulling'].groupby(["Gear"])["NormalizedMeasurement"].std().rename("Std Dev Pulling")
+  relaxing_gear_stdev = df[df["Direction"] == 'Relaxing'].groupby(["Gear"])["NormalizedMeasurement"].std().rename("Std Dev Relaxing")
+
+  avgs = pd.DataFrame([gear_stdev, pulling_gear_stdev, relaxing_gear_stdev]).T
+
+  plt.clf()
+  avgs.plot.bar()
+  plt.savefig(f"{out_folder}/meas_stdev.png")
+
+  # Diff between relaxing and pulling averages
+  relaxing_pulling_diffs = df[df["Direction"] == "Relaxing"].groupby(["Gear"])["NormalizedMeasurement"].mean() \
+                          - df[df["Direction"] == "Pulling"].groupby(["Gear"])["NormalizedMeasurement"].mean()
+
+  plt.clf()
+  relaxing_pulling_diffs.plot.bar()
+  plt.savefig(f"{out_folder}/meas_diffs.png")
+
+  # Calculate shift amounts by calculating differences between subsequent positions
+  # Use MeasurementData to ensure that we wouldn't be affected by problems from normalization
+  # Besides, here we only care about differences, not absolute values
+  md = df.groupby(["Run"], sort=False)
+
+  gear_step_df = md.apply(lambda d: pd.DataFrame(dict(
+    [(header, d[header].iloc[:-1])
+     for header in row_headers[:first_gear_row_index]
+     if header != "Run"]+
+    [
+      ("GearStep", [f"{d["Gear"].iloc[i]}-{d["Gear"].iloc[i + 1]}" for i in range(d.shape[0] - 1)]),
+      ("Shift", d["Measurement"].iloc[:-1].to_numpy()-d["Measurement"].iloc[1:].to_numpy())
+    ]))).reset_index()
+
 
   #TODO: diff between pulling and relaxing, average pulling, average relaxing, 95% confidence interval
 
+  gb = gear_step_df.groupby(["GearStep"], sort=False)["Shift"].mean()
+
   # Calculate averages
-  clean_data = [[c for c in row if not math.isnan(c)] for row in diffs.T]
-  averages = [np.mean(row) for row in clean_data]
-  stdev = [np.std(row) for row in clean_data]
-  print(len(averages[1:-1]))
+  averages = gear_step_df.groupby(["GearStep"], sort=False)["Shift"].mean()
+  stdev = gear_step_df.groupby(["GearStep"], sort=False)["Shift"].std()
   print(averages[1:-1])
   cable_pull = np.mean(averages[1:-1])
 
@@ -114,7 +128,7 @@ def analyze(input_file):
   # TODO: generate cable pull graph
 
   return {
-    "shiftSpacings": averages,
+    "shiftSpacings": averages.to_list(),
     "cablePull": cable_pull
   }
   
@@ -133,7 +147,7 @@ for dir in os.listdir('shifters'):
   with open(f"shifters/{dir}/info.json") as info_file:
     info = json.load(info_file)
   
-  result = analyze(f"shifters/{dir}/measurements.csv")
+  result = analyze(f"shifters/{dir}/measurements.csv", f"shifters/{dir}")
 
   info_out = {
     **info,
