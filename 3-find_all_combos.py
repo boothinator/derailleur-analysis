@@ -139,7 +139,7 @@ for shifter in shifters:
       # Save combo if compatible cassette was found
       if len(combo["cassettes"]) > 0:
         # Find reviews
-        combo["reviews"] = [r for r in reviewed_combos
+        reviews  = [r for r in reviewed_combos
                     if (shifter["partNumber"] == r["shifterPartNumber"]
                         or any([e for e in equiv_shifters
                                 if e["partNumber"] == r["shifterPartNumber"]])
@@ -151,6 +151,20 @@ for shifter in shifters:
                       and any([c for c in combo["cassettes"]
                                if c["cassettePartNumber"] == r["cassettePartNumber"]])
                   ]
+        
+        combo["reviews"] = reviews
+
+        if len(reviews) > 0:
+          positive_reviews = [r for r in reviews if r["sentiment"] == "positive"]
+          negative_reviews = [r for r in reviews if r["sentiment"] == "negative"]
+          if len(positive_reviews) > 0 and len(negative_reviews) > 0:
+            combo["reviewsSentiment"] = "mixed"
+          elif len(positive_reviews) > 0:
+            combo["reviewsSentiment"] = "positive"
+          else:
+            combo["reviewsSentiment"] = "negative"
+        else:
+          combo["reviewsSentiment"] = "none"
         
         combos.append(combo)
 

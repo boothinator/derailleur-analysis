@@ -160,7 +160,8 @@
         "sentiment": "positive",
         "note": "Tested using a Rival 11-speed 1x shifter. Russ is positive on the compatibility, negative on the combination's ability to clear a 50t cog"
       }
-    ]
+    ],
+    "reviewsSentiment": "positive"
   },
   {
     "brand": "SRAM",
@@ -318,7 +319,8 @@
       }
     ],
     "equivalentDerailleurs": [],
-    "reviews": []
+    "reviews": [],
+    "reviewsSentiment": "none"
   },
   {
     "brand": "Mixed",
@@ -459,7 +461,8 @@
     "chainWrap": 41,
     "equivalentShifters": [],
     "equivalentDerailleurs": [],
-    "reviews": []
+    "reviews": [],
+    "reviewsSentiment": "none"
   },
   {
     "brand": "Mixed",
@@ -542,7 +545,8 @@
     "chainWrap": 41,
     "equivalentShifters": [],
     "equivalentDerailleurs": [],
-    "reviews": []
+    "reviews": [],
+    "reviewsSentiment": "none"
   },
   {
     "brand": "Mixed",
@@ -686,7 +690,8 @@
       }
     ],
     "equivalentDerailleurs": [],
-    "reviews": []
+    "reviews": [],
+    "reviewsSentiment": "none"
   },
   {
     "brand": "Mixed",
@@ -821,7 +826,8 @@
     "chainWrap": 41,
     "equivalentShifters": [],
     "equivalentDerailleurs": [],
-    "reviews": []
+    "reviews": [],
+    "reviewsSentiment": "none"
   },
   {
     "brand": "Mixed",
@@ -962,7 +968,8 @@
     "chainWrap": 41,
     "equivalentShifters": [],
     "equivalentDerailleurs": [],
-    "reviews": []
+    "reviews": [],
+    "reviewsSentiment": "none"
   },
   {
     "brand": "Shimano",
@@ -1097,7 +1104,8 @@
     "chainWrap": 41,
     "equivalentShifters": [],
     "equivalentDerailleurs": [],
-    "reviews": []
+    "reviews": [],
+    "reviewsSentiment": "none"
   },
   {
     "brand": "Shimano",
@@ -1238,7 +1246,8 @@
     "chainWrap": 41,
     "equivalentShifters": [],
     "equivalentDerailleurs": [],
-    "reviews": []
+    "reviews": [],
+    "reviewsSentiment": "none"
   },
   {
     "brand": "Mixed",
@@ -1382,6 +1391,7 @@
       }
     ],
     "equivalentDerailleurs": [],
-    "reviews": []
+    "reviews": [],
+    "reviewsSentiment": "none"
   }
 ]
