@@ -159,7 +159,7 @@ for dir in os.listdir('shifters'):
     continue
   
   #FIXME:TESTING
-  if dir != "SRAM Apex 1":
+  if dir != "SRAM GX 10-Speed":
     continue
 
   with open(f"shifters/{dir}/info.json") as info_file:
