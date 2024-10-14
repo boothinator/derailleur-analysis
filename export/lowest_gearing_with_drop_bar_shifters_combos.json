@@ -49,6 +49,7 @@
           ],
           "max_diff_minus_free_play": 0.5085203534788418,
           "max_chain_angle": 0.9177107364311745,
+          "cable_pull_at_max_chain_angle": 28.03662545108148,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.917684864729609,
@@ -60,7 +61,8 @@
             0.9177107364311745,
             0.6387831691427619
           ]
-        }
+        },
+        "motionMultiplier": 1.0342058869733695
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -105,6 +107,7 @@
           ],
           "max_diff_minus_free_play": 0.5429470103032346,
           "max_chain_angle": 0.9798453098700126,
+          "cable_pull_at_max_chain_angle": 28.23989826578462,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.9798195301782325,
@@ -116,7 +119,8 @@
             0.9798453098700126,
             0.47029606827697773
           ]
-        }
+        },
+        "motionMultiplier": 1.0368241297252008
       }
     ],
     "shifterType": "drop-bar",
@@ -191,6 +195,7 @@
           ],
           "max_diff_minus_free_play": 0.6259964684812884,
           "max_chain_angle": 1.1297410974830695,
+          "cable_pull_at_max_chain_angle": 28.585791273055513,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -203,7 +208,8 @@
             0.0,
             1.1297410974830695
           ]
-        }
+        },
+        "motionMultiplier": 1.0087824233669238
       }
     ],
     "shifterType": "drop-bar",
@@ -301,6 +307,7 @@
           ],
           "max_diff_minus_free_play": 0.28646119479430454,
           "max_chain_angle": 0.5169524454866468,
+          "cable_pull_at_max_chain_angle": 25.785506891653895,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.5166843210378155,
@@ -313,7 +320,8 @@
             0.0,
             0.5169524454866468
           ]
-        }
+        },
+        "motionMultiplier": 1.028428112137737
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -360,6 +368,7 @@
           ],
           "max_diff_minus_free_play": 0.4073315894901326,
           "max_chain_angle": 0.735087282079759,
+          "cable_pull_at_max_chain_angle": 25.8920721477816,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.7348112834865591,
@@ -372,7 +381,8 @@
             0.0,
             0.735087282079759
           ]
-        }
+        },
+        "motionMultiplier": 1.036721887235622
       }
     ],
     "shifterType": "drop-bar",
@@ -440,6 +450,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.639375889612644,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -453,7 +464,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0090759702426721
       }
     ],
     "shifterType": "drop-bar",
@@ -517,6 +529,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.32249592948427,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -528,7 +541,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0250536224868796
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -573,6 +587,7 @@
           ],
           "max_diff_minus_free_play": 0.3107264620837329,
           "max_chain_angle": 0.5607432777677455,
+          "cable_pull_at_max_chain_angle": 30.679249982315824,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.5607279441029677,
@@ -584,7 +599,8 @@
             0.5607432777677455,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0276486949488717
       }
     ],
     "shifterType": "drop-bar",
@@ -657,6 +673,7 @@
           ],
           "max_diff_minus_free_play": 0.38512828180216574,
           "max_chain_angle": 0.6950162608633521,
+          "cable_pull_at_max_chain_angle": 24.391623609756827,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.6949119885636031,
@@ -668,7 +685,8 @@
             0.0,
             0.6950162608633521
           ]
-        }
+        },
+        "motionMultiplier": 1.0495357049998695
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -713,6 +731,7 @@
           ],
           "max_diff_minus_free_play": 0.3593581576348912,
           "max_chain_angle": 0.6485085165445902,
+          "cable_pull_at_max_chain_angle": 24.50010491054013,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.6484215331395592,
@@ -724,7 +743,8 @@
             0.5748093528458981,
             0.6485085165445902
           ]
-        }
+        },
+        "motionMultiplier": 1.0521927574175907
       }
     ],
     "shifterType": "drop-bar",
@@ -790,6 +810,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.228312122322538,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -802,7 +823,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9884234993922822
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -849,6 +871,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.3399165331023255,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -861,7 +884,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9963946566454457
       }
     ],
     "shifterType": "drop-bar",
@@ -925,6 +949,7 @@
           ],
           "max_diff_minus_free_play": 0.3717334499526983,
           "max_chain_angle": 0.6708423440536723,
+          "cable_pull_at_max_chain_angle": 24.40094424862561,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.6707425673814146,
@@ -936,7 +961,8 @@
             0.0,
             0.6708423440536723
           ]
-        }
+        },
+        "motionMultiplier": 1.05535527678195
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -981,6 +1007,7 @@
           ],
           "max_diff_minus_free_play": 0.3459676677073604,
           "max_chain_angle": 0.6243426615252556,
+          "cable_pull_at_max_chain_angle": 24.509439600176865,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.6242407249343974,
@@ -992,7 +1019,8 @@
             0.0,
             0.6243426615252556
           ]
-        }
+        },
+        "motionMultiplier": 1.0580270622927905
       }
     ],
     "shifterType": "drop-bar",
@@ -1058,6 +1086,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.100080138338253,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1070,7 +1099,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9939042100326214
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -1117,6 +1147,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.244693763578545,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1129,7 +1160,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0019195665651426
       }
     ],
     "shifterType": "drop-bar",
@@ -1193,6 +1225,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 5.685791861135915,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1204,7 +1237,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0418513115140304
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -1249,6 +1283,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 5.797125075025018,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1260,7 +1295,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.044488909771028
       }
     ],
     "shifterType": "drop-bar",
@@ -1354,6 +1390,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 4.88073883800047,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1366,7 +1403,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.981186551603087
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -1413,6 +1451,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 4.975512829391016,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1425,7 +1464,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9890993463740796
       }
     ],
     "shifterType": "drop-bar",

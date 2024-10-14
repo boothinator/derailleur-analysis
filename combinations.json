@@ -51,6 +51,7 @@
           ],
           "max_diff_minus_free_play": 0.28646119479430454,
           "max_chain_angle": 0.5169524454866468,
+          "cable_pull_at_max_chain_angle": 25.785506891653895,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.5166843210378155,
@@ -63,7 +64,8 @@
             0.0,
             0.5169524454866468
           ]
-        }
+        },
+        "motionMultiplier": 1.028428112137737
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -110,6 +112,7 @@
           ],
           "max_diff_minus_free_play": 0.4073315894901326,
           "max_chain_angle": 0.735087282079759,
+          "cable_pull_at_max_chain_angle": 25.8920721477816,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.7348112834865591,
@@ -122,7 +125,8 @@
             0.0,
             0.735087282079759
           ]
-        }
+        },
+        "motionMultiplier": 1.036721887235622
       }
     ],
     "shifterType": "drop-bar",
@@ -190,6 +194,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.639375889612644,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -203,7 +208,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0090759702426721
       }
     ],
     "shifterType": "drop-bar",
@@ -269,6 +275,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 8.848033234137903,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -281,7 +288,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0082364607214203
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -328,6 +336,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 8.940977326021297,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -340,7 +349,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0163673999207865
       }
     ],
     "shifterType": "drop-bar",
@@ -408,6 +418,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 8.896069196298523,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -421,7 +432,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9892642692562322
       }
     ],
     "shifterType": "drop-bar",
@@ -483,6 +495,7 @@
           ],
           "max_diff_minus_free_play": 0.6313567967727919,
           "max_chain_angle": 1.1394161971229937,
+          "cable_pull_at_max_chain_angle": 20.516548242181898,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -493,7 +506,8 @@
             0.0,
             1.1394161971229937
           ]
-        }
+        },
+        "motionMultiplier": 1.0252140208100726
       }
     ],
     "shifterType": "drop-bar",
@@ -555,6 +569,7 @@
           ],
           "max_diff_minus_free_play": 0.4314774494206687,
           "max_chain_angle": 0.778664498387991,
+          "cable_pull_at_max_chain_angle": 18.301448251965205,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.4416959328381247,
@@ -565,7 +580,8 @@
             0.0,
             0.778664498387991
           ]
-        }
+        },
+        "motionMultiplier": 1.0183668111993192
       }
     ],
     "shifterType": "drop-bar",
@@ -629,6 +645,7 @@
           ],
           "max_diff_minus_free_play": 0.5591168938832765,
           "max_chain_angle": 1.0090297399575583,
+          "cable_pull_at_max_chain_angle": 20.48281435448087,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -640,7 +657,8 @@
             0.0,
             1.0090297399575583
           ]
-        }
+        },
+        "motionMultiplier": 0.9932219516635336
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -685,6 +703,7 @@
           ],
           "max_diff_minus_free_play": 0.6193101207136182,
           "max_chain_angle": 1.1176726502786662,
+          "cable_pull_at_max_chain_angle": 20.53798547699996,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.6833685447025764,
@@ -696,7 +715,8 @@
             0.0,
             1.1176726502786662
           ]
-        }
+        },
+        "motionMultiplier": 0.9957364376171121
       }
     ],
     "shifterType": "drop-bar",
@@ -762,6 +782,7 @@
           ],
           "max_diff_minus_free_play": 0.5537020605773775,
           "max_chain_angle": 0.9992566770480712,
+          "cable_pull_at_max_chain_angle": 26.871010629487095,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.9991808078950519,
@@ -774,7 +795,8 @@
             0.5639555192839117,
             0.9992566770480712
           ]
-        }
+        },
+        "motionMultiplier": 1.0559186511188006
       }
     ],
     "shifterType": "drop-bar",
@@ -842,6 +864,7 @@
           ],
           "max_diff_minus_free_play": 0.36682519674490366,
           "max_chain_angle": 0.661984352961303,
+          "cable_pull_at_max_chain_angle": 29.331464286296107,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.6617314024672988,
@@ -855,7 +878,8 @@
             0.0,
             0.661984352961303
           ]
-        }
+        },
+        "motionMultiplier": 1.0360492141353823
       }
     ],
     "shifterType": "drop-bar",
@@ -919,6 +943,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.32249592948427,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -930,7 +955,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0250536224868796
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -975,6 +1001,7 @@
           ],
           "max_diff_minus_free_play": 0.3107264620837329,
           "max_chain_angle": 0.5607432777677455,
+          "cable_pull_at_max_chain_angle": 30.679249982315824,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.5607279441029677,
@@ -986,7 +1013,8 @@
             0.5607432777677455,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0276486949488717
       }
     ],
     "shifterType": "drop-bar",
@@ -1059,6 +1087,7 @@
           ],
           "max_diff_minus_free_play": 0.5085203534788418,
           "max_chain_angle": 0.9177107364311745,
+          "cable_pull_at_max_chain_angle": 28.03662545108148,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.917684864729609,
@@ -1070,7 +1099,8 @@
             0.9177107364311745,
             0.6387831691427619
           ]
-        }
+        },
+        "motionMultiplier": 1.0342058869733695
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -1115,6 +1145,7 @@
           ],
           "max_diff_minus_free_play": 0.5429470103032346,
           "max_chain_angle": 0.9798453098700126,
+          "cable_pull_at_max_chain_angle": 28.23989826578462,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.9798195301782325,
@@ -1126,7 +1157,8 @@
             0.9798453098700126,
             0.47029606827697773
           ]
-        }
+        },
+        "motionMultiplier": 1.0368241297252008
       }
     ],
     "shifterType": "drop-bar",
@@ -1199,6 +1231,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 7.218237919823286,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1210,7 +1243,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9818410319367431
       }
     ],
     "shifterType": "drop-bar",
@@ -1283,6 +1317,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.547934402525117,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1294,7 +1329,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0157026630567962
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -1339,6 +1375,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.641286282776877,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1350,7 +1387,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0238938135653188
       }
     ],
     "shifterType": "drop-bar",
@@ -1423,6 +1461,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.590175079187524,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1434,7 +1473,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9965899785369102
       }
     ],
     "shifterType": "drop-bar",
@@ -1507,6 +1547,7 @@
           ],
           "max_diff_minus_free_play": 0.38512828180216574,
           "max_chain_angle": 0.6950162608633521,
+          "cable_pull_at_max_chain_angle": 24.391623609756827,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.6949119885636031,
@@ -1518,7 +1559,8 @@
             0.0,
             0.6950162608633521
           ]
-        }
+        },
+        "motionMultiplier": 1.0495357049998695
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -1563,6 +1605,7 @@
           ],
           "max_diff_minus_free_play": 0.3593581576348912,
           "max_chain_angle": 0.6485085165445902,
+          "cable_pull_at_max_chain_angle": 24.50010491054013,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.6484215331395592,
@@ -1574,7 +1617,8 @@
             0.5748093528458981,
             0.6485085165445902
           ]
-        }
+        },
+        "motionMultiplier": 1.0521927574175907
       }
     ],
     "shifterType": "drop-bar",
@@ -1640,6 +1684,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.228312122322538,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1652,7 +1697,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9884234993922822
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -1699,6 +1745,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.3399165331023255,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1711,7 +1758,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9963946566454457
       }
     ],
     "shifterType": "drop-bar",
@@ -1773,6 +1821,7 @@
           ],
           "max_diff_minus_free_play": 0.5156603184156906,
           "max_chain_angle": 0.93059713259311,
+          "cable_pull_at_max_chain_angle": 24.35497407911636,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.9305199262204478,
@@ -1783,7 +1832,8 @@
             0.8073152699724906,
             0.93059713259311
           ]
-        }
+        },
+        "motionMultiplier": 1.054978489075437
       }
     ],
     "shifterType": "drop-bar",
@@ -1847,6 +1897,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 9.141345553066401,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1858,7 +1909,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0289296374933277
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -1903,6 +1955,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 9.268901425865002,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1914,7 +1967,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0315345226515384
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
@@ -1959,6 +2013,7 @@
           ],
           "max_diff_minus_free_play": 0.5176909883509716,
           "max_chain_angle": 0.9342621475733683,
+          "cable_pull_at_max_chain_angle": 26.928979065363926,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.9339971978441357,
@@ -1970,7 +2025,8 @@
             0.8756222219092372,
             0.9342621475733683
           ]
-        }
+        },
+        "motionMultiplier": 1.054978489075437
       }
     ],
     "shifterType": "drop-bar",
@@ -2032,6 +2088,7 @@
           ],
           "max_diff_minus_free_play": 0.3401296051557806,
           "max_chain_angle": 0.6130053131090052,
+          "cable_pull_at_max_chain_angle": 20.74272480430078,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.4711920035809141,
@@ -2042,7 +2099,8 @@
             0.0,
             0.6130053131090052
           ]
-        }
+        },
+        "motionMultiplier": 0.9853344323394058
       }
     ],
     "shifterType": "drop-bar",
@@ -2104,6 +2162,7 @@
           ],
           "max_diff_minus_free_play": 0.43568062928981977,
           "max_chain_angle": 0.7862502283312294,
+          "cable_pull_at_max_chain_angle": 3.767367218452277,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.7862502283312294,
@@ -2114,7 +2173,8 @@
             -0.471690263305648,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9787535709212312
       }
     ],
     "shifterType": "drop-bar",
@@ -2178,6 +2238,7 @@
           ],
           "max_diff_minus_free_play": 0.47423826941604197,
           "max_chain_angle": 0.8558381662023119,
+          "cable_pull_at_max_chain_angle": 21.281887016353743,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.5046927477306603,
@@ -2189,7 +2250,8 @@
             0.0,
             0.8558381662023119
           ]
-        }
+        },
+        "motionMultiplier": 0.9787535709212312
       }
     ],
     "shifterType": "drop-bar",
@@ -2255,6 +2317,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 7.287342369900756,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -2267,7 +2330,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0148446895748038
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -2314,6 +2378,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 7.346078979569348,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -2326,7 +2391,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0230289209423424
       }
     ],
     "shifterType": "drop-bar",
@@ -2392,6 +2458,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 7.300414527489236,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -2404,7 +2471,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9957481497172134
       }
     ],
     "shifterType": "drop-bar",
@@ -2466,6 +2534,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.084664343678718,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -2476,7 +2545,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0066240071195516
       }
     ],
     "shifterType": "flat-bar",
@@ -2538,6 +2608,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 9.710860476440129,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -2548,7 +2619,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9817690933635135
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -2591,6 +2663,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 9.837484408175719,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -2601,7 +2674,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9842545847391172
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
@@ -2644,6 +2718,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 9.998668643909106,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -2654,7 +2729,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0066240071195516
       }
     ],
     "shifterType": "flat-bar",
@@ -2716,6 +2792,7 @@
           ],
           "max_diff_minus_free_play": 0.3210837502629359,
           "max_chain_angle": 0.5794348770993974,
+          "cable_pull_at_max_chain_angle": 29.017308466354365,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.5794151632919089,
@@ -2726,7 +2803,8 @@
             0.38110180367103985,
             0.5794348770993974
           ]
-        }
+        },
+        "motionMultiplier": 1.0156117214688332
       }
     ],
     "shifterType": "flat-bar",
@@ -2788,6 +2866,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 7.260705065789761,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -2798,7 +2877,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9905348888399733
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -2841,6 +2921,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 7.464543905266568,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -2851,7 +2932,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9930425721028592
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
@@ -2894,6 +2976,7 @@
           ],
           "max_diff_minus_free_play": 0.3068540785766424,
           "max_chain_angle": 0.5537548769563392,
+          "cable_pull_at_max_chain_angle": 28.989531316837525,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.5537352348759598,
@@ -2904,7 +2987,8 @@
             0.0,
             0.5537548769563392
           ]
-        }
+        },
+        "motionMultiplier": 1.0156117214688332
       }
     ],
     "shifterType": "flat-bar",
@@ -2966,6 +3050,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.752903972910314,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -2976,7 +3061,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0329600330547208
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -3019,6 +3105,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.96180201429651,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -3029,7 +3116,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0355751217459985
       }
     ],
     "shifterType": "flat-bar",
@@ -3091,6 +3179,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 9.992815720251265,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -3101,7 +3190,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9806582592291653
       }
     ],
     "shifterType": "flat-bar",
@@ -3163,6 +3253,7 @@
           ],
           "max_diff_minus_free_play": 0.5136633330071801,
           "max_chain_angle": 0.9269929161871735,
+          "cable_pull_at_max_chain_angle": 31.07628069381239,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.926980568714395,
@@ -3173,7 +3264,8 @@
             0.9189177057857714,
             0.9269929161871735
           ]
-        }
+        },
+        "motionMultiplier": 1.0295825414033466
       }
     ],
     "shifterType": "flat-bar",
@@ -3237,6 +3329,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.157457532734599,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -3248,7 +3341,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.004160750257585
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -3293,6 +3387,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.311268758500068,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -3304,7 +3399,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0067029293721612
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
@@ -3349,6 +3445,7 @@
           ],
           "max_diff_minus_free_play": 0.49868276236370057,
           "max_chain_angle": 0.8999556696381866,
+          "cable_pull_at_max_chain_angle": 31.048981826144605,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.8999408777785044,
@@ -3360,7 +3457,8 @@
             0.8999556696381866,
             0.6916602097007861
           ]
-        }
+        },
+        "motionMultiplier": 1.0295825414033466
       }
     ],
     "shifterType": "flat-bar",
@@ -3424,6 +3522,7 @@
           ],
           "max_diff_minus_free_play": 0.3312963961584201,
           "max_chain_angle": 0.5978655036500937,
+          "cable_pull_at_max_chain_angle": 24.645068774380707,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.5978493077772323,
@@ -3435,7 +3534,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0131264712420276
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -3480,6 +3580,7 @@
           ],
           "max_diff_minus_free_play": 0.3149574517814928,
           "max_chain_angle": 0.5683788564049619,
+          "cable_pull_at_max_chain_angle": 28.44542789218978,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.5683588271541918,
@@ -3491,7 +3592,8 @@
             0.5683788564049619,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0156913483844123
       }
     ],
     "shifterType": "flat-bar",
@@ -3555,6 +3657,7 @@
           ],
           "max_diff_minus_free_play": 0.3751784957142077,
           "max_chain_angle": 0.677059674399441,
+          "cable_pull_at_max_chain_angle": 31.72807103173971,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.6770575908811028,
@@ -3566,7 +3669,8 @@
             0.677059674399441,
             0.6186208277577678
           ]
-        }
+        },
+        "motionMultiplier": 1.0565192251313509
       }
     ],
     "shifterType": "flat-bar",
@@ -3630,6 +3734,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.27734492370984,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -3641,7 +3746,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9950003841743356
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -3686,6 +3792,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.449189531819016,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -3697,7 +3804,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0030245808209028
       }
     ],
     "shifterType": "flat-bar",
@@ -3759,6 +3867,7 @@
           ],
           "max_diff_minus_free_play": 0.6051149387644513,
           "max_chain_angle": 1.0920513821324276,
+          "cable_pull_at_max_chain_angle": 30.993130560852343,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -1.092035912078407,
@@ -3769,7 +3878,8 @@
             0.559706675116239,
             1.0920513821324276
           ]
-        }
+        },
+        "motionMultiplier": 1.0547362826975368
       }
     ],
     "shifterType": "flat-bar",
@@ -3833,6 +3943,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.305324831819757,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -3844,7 +3955,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0286934115198199
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -3889,6 +4001,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.447912123560215,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -3900,7 +4013,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0312976986375915
       }
     ],
     "shifterType": "flat-bar",
@@ -3964,6 +4078,7 @@
           ],
           "max_diff_minus_free_play": 0.46456644187858687,
           "max_chain_angle": 0.8383825607625343,
+          "cable_pull_at_max_chain_angle": 31.650194319959784,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.8383472328606665,
@@ -3975,7 +4090,8 @@
             0.0,
             0.8383825607625343
           ]
-        }
+        },
+        "motionMultiplier": 1.0378781741226752
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -4020,6 +4136,7 @@
           ],
           "max_diff_minus_free_play": 0.43632920815500587,
           "max_chain_angle": 0.7874207586003675,
+          "cable_pull_at_max_chain_angle": 31.79413556978708,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.7873848545460281,
@@ -4031,7 +4148,8 @@
             0.6710461624035101,
             0.7874207586003675
           ]
-        }
+        },
+        "motionMultiplier": 1.0405057138039986
       }
     ],
     "shifterType": "flat-bar",
@@ -4097,6 +4215,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.923691709957243,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -4109,7 +4228,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9774447614522411
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -4156,6 +4276,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 7.026645932384989,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -4168,7 +4289,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9853273804962107
       }
     ],
     "shifterType": "flat-bar",
@@ -4234,6 +4356,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.54284687811559,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -4246,7 +4369,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0193092484418156
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -4293,6 +4417,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.68976614388395,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -4305,7 +4430,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0275294843163465
       }
     ],
     "shifterType": "flat-bar",
@@ -4371,6 +4497,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.464707604879209,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -4383,7 +4510,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0001286980679105
       }
     ],
     "shifterType": "flat-bar",
@@ -4445,6 +4573,7 @@
           ],
           "max_diff_minus_free_play": 0.14740709130116147,
           "max_chain_angle": 0.2660105368123008,
+          "cable_pull_at_max_chain_angle": 24.474969831648956,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -4455,7 +4584,8 @@
             0.0,
             0.2660105368123008
           ]
-        }
+        },
+        "motionMultiplier": 0.9921095935679205
       }
     ],
     "shifterType": "flat-bar",
@@ -4534,6 +4664,7 @@
           ],
           "max_diff_minus_free_play": 0.5315439422931413,
           "max_chain_angle": 0.9592644837687705,
+          "cable_pull_at_max_chain_angle": 27.73056584505247,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.4974076370497397,
@@ -4545,7 +4676,8 @@
             0.0,
             0.9592644837687705
           ]
-        }
+        },
+        "motionMultiplier": 0.9921095935679205
       }
     ],
     "shifterType": "flat-bar",
@@ -4626,6 +4758,7 @@
           ],
           "max_diff_minus_free_play": 0.560068457016895,
           "max_chain_angle": 1.0107471894564124,
+          "cable_pull_at_max_chain_angle": 35.585806715388756,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -1.0106642265887806,
@@ -4638,7 +4771,8 @@
             0.7061784166541349,
             1.0107471894564124
           ]
-        }
+        },
+        "motionMultiplier": 1.0322362156086553
       }
     ],
     "shifterType": "flat-bar",
@@ -4706,6 +4840,7 @@
           ],
           "max_diff_minus_free_play": 0.3054296123595661,
           "max_chain_angle": 0.5511841778503231,
+          "cable_pull_at_max_chain_angle": 32.20625473776672,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.5511593904506116,
@@ -4719,7 +4854,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0128124158525784
       }
     ],
     "shifterType": "flat-bar",
@@ -4787,6 +4923,7 @@
           ],
           "max_diff_minus_free_play": 0.5348717608327063,
           "max_chain_angle": 0.9652706838015506,
+          "cable_pull_at_max_chain_angle": 29.75478044844688,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.9652453113929857,
@@ -4800,7 +4937,8 @@
             0.6519695803986943,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0218553838512618
       }
     ],
     "shifterType": "flat-bar",
@@ -4864,6 +5002,7 @@
           ],
           "max_diff_minus_free_play": 0.3717334499526983,
           "max_chain_angle": 0.6708423440536723,
+          "cable_pull_at_max_chain_angle": 24.40094424862561,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.6707425673814146,
@@ -4875,7 +5014,8 @@
             0.0,
             0.6708423440536723
           ]
-        }
+        },
+        "motionMultiplier": 1.05535527678195
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -4920,6 +5060,7 @@
           ],
           "max_diff_minus_free_play": 0.3459676677073604,
           "max_chain_angle": 0.6243426615252556,
+          "cable_pull_at_max_chain_angle": 24.509439600176865,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.6242407249343974,
@@ -4931,7 +5072,8 @@
             0.0,
             0.6243426615252556
           ]
-        }
+        },
+        "motionMultiplier": 1.0580270622927905
       }
     ],
     "shifterType": "drop-bar",
@@ -4997,6 +5139,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.100080138338253,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -5009,7 +5152,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9939042100326214
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -5056,6 +5200,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.244693763578545,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -5068,7 +5213,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0019195665651426
       }
     ],
     "shifterType": "drop-bar",
@@ -5132,6 +5278,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 9.099556454760302,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -5143,7 +5290,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0346349506671213
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -5188,6 +5336,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 9.206209853158068,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -5199,7 +5348,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.037254279656152
       }
     ],
     "shifterType": "drop-bar",
@@ -5265,6 +5415,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 8.503600721138211,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -5277,7 +5428,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9822483708865075
       }
     ],
     "shifterType": "drop-bar",
@@ -5339,6 +5491,7 @@
           ],
           "max_diff_minus_free_play": 0.4650143720449086,
           "max_chain_angle": 0.8391909783521656,
+          "cable_pull_at_max_chain_angle": 5.679931788868227,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.8391909783521656,
@@ -5349,7 +5502,8 @@
             -0.22684785726088708,
             0.562643355061928
           ]
-        }
+        },
+        "motionMultiplier": 0.9907980144081603
       }
     ],
     "shifterType": "drop-bar",
@@ -5411,6 +5565,7 @@
           ],
           "max_diff_minus_free_play": 0.6011301621910937,
           "max_chain_angle": 1.0848591905116318,
+          "cable_pull_at_max_chain_angle": 3.674236669220026,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             1.0848591905116318,
@@ -5421,7 +5576,8 @@
             -0.7685406885922993,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9841806627636612
       }
     ],
     "shifterType": "drop-bar",
@@ -5485,6 +5641,7 @@
           ],
           "max_diff_minus_free_play": 0.6129242349987657,
           "max_chain_angle": 1.10614394124004,
+          "cable_pull_at_max_chain_angle": 21.16765461131102,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.930977320873546,
@@ -5496,7 +5653,8 @@
             0.0,
             1.10614394124004
           ]
-        }
+        },
+        "motionMultiplier": 0.9841806627636612
       }
     ],
     "shifterType": "drop-bar",
@@ -5562,6 +5720,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 7.2921723892094175,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -5574,7 +5733,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0204719031040896
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -5621,6 +5781,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 7.399903872236079,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -5633,7 +5794,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0287015152258967
       }
     ],
     "shifterType": "drop-bar",
@@ -5699,6 +5861,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 7.2470113056583685,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -5711,7 +5874,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.001269474819873
       }
     ],
     "shifterType": "drop-bar",
@@ -5775,6 +5939,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.00903917875533,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -5786,7 +5951,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9980011233261492
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -5831,6 +5997,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.100363155958857,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -5842,7 +6009,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0060495194820052
       }
     ],
     "shifterType": "drop-bar",
@@ -5906,6 +6074,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.039750557772898,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -5917,7 +6086,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9792215322958184
       }
     ],
     "shifterType": "drop-bar",
@@ -5981,6 +6151,7 @@
           ],
           "max_diff_minus_free_play": 0.588171381401912,
           "max_chain_angle": 1.061469782292225,
+          "cable_pull_at_max_chain_angle": 20.45990086258259,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -1.0613879320409425,
@@ -5992,7 +6163,8 @@
             0.715633497589547,
             1.061469782292225
           ]
-        }
+        },
+        "motionMultiplier": 1.0526279222500083
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -6037,6 +6209,7 @@
           ],
           "max_diff_minus_free_play": 0.5894814089254554,
           "max_chain_angle": 1.063834253458087,
+          "cable_pull_at_max_chain_angle": 20.56161188593311,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -1.0637400319257744,
@@ -6048,7 +6221,8 @@
             0.9203879873649555,
             1.063834253458087
           ]
-        }
+        },
+        "motionMultiplier": 1.055292803065831
       }
     ],
     "shifterType": "drop-bar",
@@ -6112,6 +6286,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 3.9601855643305486,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -6123,7 +6298,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9913356634860837
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -6168,6 +6344,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 4.046985790373175,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -6179,7 +6356,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9993303059335521
       }
     ],
     "shifterType": "drop-bar",
@@ -6243,6 +6421,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 5.997785476901449,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -6254,7 +6433,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9962572761724134
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -6299,6 +6479,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 6.089141435864679,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -6310,7 +6491,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0042916090447715
       }
     ],
     "shifterType": "drop-bar",
@@ -6374,6 +6556,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 5.997874925912795,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -6385,7 +6568,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9775104994702443
       }
     ],
     "shifterType": "drop-bar",
@@ -6449,6 +6633,7 @@
           ],
           "max_diff_minus_free_play": 0.5675121570330062,
           "max_chain_angle": 1.0241821454251594,
+          "cable_pull_at_max_chain_angle": 20.476190554020587,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -1.0239869933931849,
@@ -6460,7 +6645,8 @@
             0.512831019551847,
             1.0241821454251594
           ]
-        }
+        },
+        "motionMultiplier": 1.0507886235125072
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -6505,6 +6691,7 @@
           ],
           "max_diff_minus_free_play": 0.5688787058529146,
           "max_chain_angle": 1.026648602774032,
+          "cable_pull_at_max_chain_angle": 20.577948818794685,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -1.0264800210159664,
@@ -6516,7 +6703,8 @@
             0.7182723122968115,
             1.026648602774032
           ]
-        }
+        },
+        "motionMultiplier": 1.05344884787583
       }
     ],
     "shifterType": "drop-bar",
@@ -6580,6 +6768,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 3.895761142856152,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -6591,7 +6780,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9896034631560827
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -6636,6 +6826,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 3.997369975458106,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -6647,7 +6838,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9975841362460511
       }
     ],
     "shifterType": "drop-bar",
@@ -6713,6 +6905,7 @@
           ],
           "max_diff_minus_free_play": 0.6259964684812884,
           "max_chain_angle": 1.1297410974830695,
+          "cable_pull_at_max_chain_angle": 28.585791273055513,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -6725,7 +6918,8 @@
             0.0,
             1.1297410974830695
           ]
-        }
+        },
+        "motionMultiplier": 1.0087824233669238
       }
     ],
     "shifterType": "drop-bar",
@@ -6823,6 +7017,7 @@
           ],
           "max_diff_minus_free_play": 0.3429349358716307,
           "max_chain_angle": 0.6188694973900264,
+          "cable_pull_at_max_chain_angle": 28.42169027906863,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -6835,7 +7030,8 @@
             0.0,
             0.6188694973900264
           ]
-        }
+        },
+        "motionMultiplier": 0.9897999584110946
       }
     ],
     "shifterType": "drop-bar",
@@ -6931,6 +7127,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 5.685791861135915,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -6942,7 +7139,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0418513115140304
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -6987,6 +7185,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 5.797125075025018,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -6998,7 +7197,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.044488909771028
       }
     ],
     "shifterType": "drop-bar",
@@ -7092,6 +7292,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 4.88073883800047,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -7104,7 +7305,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.981186551603087
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -7151,6 +7353,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 4.975512829391016,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -7163,7 +7366,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9890993463740796
       }
     ],
     "shifterType": "drop-bar",
@@ -7242,6 +7446,7 @@
           ],
           "max_diff_minus_free_play": 0.6157300217101634,
           "max_chain_angle": 1.1112108118020054,
+          "cable_pull_at_max_chain_angle": 24.067938826719757,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -1.0794425761222781,
@@ -7252,7 +7457,8 @@
             0.0,
             1.1112108118020054
           ]
-        }
+        },
+        "motionMultiplier": 1.0564029843350027
       }
     ],
     "shifterType": "flat-bar",
@@ -7331,6 +7537,7 @@
           ],
           "max_diff_minus_free_play": 0.46944883315359776,
           "max_chain_angle": 0.8471942357341041,
+          "cable_pull_at_max_chain_angle": 26.93397033200403,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.7315927927556154,
@@ -7342,7 +7549,8 @@
             0.0,
             0.8471942357341041
           ]
-        }
+        },
+        "motionMultiplier": 1.0303189600304348
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -7387,6 +7595,7 @@
           ],
           "max_diff_minus_free_play": 0.4972854440722161,
           "max_chain_angle": 0.8974337707346666,
+          "cable_pull_at_max_chain_angle": 27.02946480598479,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.6251756741398831,
@@ -7398,7 +7607,8 @@
             0.0,
             0.8974337707346666
           ]
-        }
+        },
+        "motionMultiplier": 1.0329273624608915
       }
     ],
     "shifterType": "flat-bar",
@@ -7477,6 +7687,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 4.9972350538771035,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -7488,7 +7699,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9781509114212988
       }
     ],
     "shifterType": "flat-bar",
@@ -7565,6 +7777,7 @@
           ],
           "max_diff_minus_free_play": 0.14749450827252264,
           "max_chain_angle": 0.2661682904353024,
+          "cable_pull_at_max_chain_angle": 23.64066656129948,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.2661673469739369,
@@ -7575,7 +7788,8 @@
             0.0,
             0.2661682904353024
           ]
-        }
+        },
+        "motionMultiplier": 1.0275044224534982
       }
     ],
     "shifterType": "flat-bar",
@@ -7639,6 +7853,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 5.329395011414672,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -7650,7 +7865,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.002133942886745
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -7695,6 +7911,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 5.4328336204197125,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -7706,7 +7923,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0046709908434204
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
@@ -7751,6 +7969,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 5.644982451978981,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -7762,7 +7981,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0275044224534982
       }
     ],
     "shifterType": "flat-bar",
@@ -7828,6 +8048,7 @@
           ],
           "max_diff_minus_free_play": 0.4083414921099531,
           "max_chain_angle": 0.7369098941159234,
+          "cable_pull_at_max_chain_angle": 35.72846992473353,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.7368286334312353,
@@ -7840,7 +8061,8 @@
             0.6631880742567436,
             0.7369098941159234
           ]
-        }
+        },
+        "motionMultiplier": 1.0142400555953808
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -7887,6 +8109,7 @@
           ],
           "max_diff_minus_free_play": 0.5307679410910053,
           "max_chain_angle": 0.9578639226089599,
+          "cable_pull_at_max_chain_angle": 35.86739987865999,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.9577750667033472,
@@ -7899,7 +8122,8 @@
             0.8228690788517351,
             0.9578639226089599
           ]
-        }
+        },
+        "motionMultiplier": 1.0224194108824403
       }
     ],
     "shifterType": "flat-bar",
@@ -7967,6 +8191,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 10.210004355187415,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -7980,7 +8205,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 0.9951548932589085
       }
     ],
     "shifterType": "flat-bar",
@@ -8046,6 +8272,7 @@
           ],
           "max_diff_minus_free_play": 0.6182472650944162,
           "max_chain_angle": 1.1157542657233688,
+          "cable_pull_at_max_chain_angle": 29.842171936918717,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -1.1157247695112749,
@@ -8058,7 +8285,8 @@
             1.1157542657233688,
             1.0531960716792397
           ]
-        }
+        },
+        "motionMultiplier": 1.0232957703774823
       }
     ],
     "shifterType": "flat-bar",
@@ -8126,6 +8354,7 @@
           ],
           "max_diff_minus_free_play": 0.4484895599794838,
           "max_chain_angle": 0.8093673567259254,
+          "cable_pull_at_max_chain_angle": 29.832907419939943,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -0.8093382728225922,
@@ -8139,7 +8368,8 @@
             0.0,
             0.0
           ]
-        }
+        },
+        "motionMultiplier": 1.0040402048058628
       }
     ],
     "shifterType": "flat-bar",
@@ -8207,6 +8437,7 @@
           ],
           "max_diff_minus_free_play": 0.5790649564854802,
           "max_chain_angle": 1.0450336284043196,
+          "cable_pull_at_max_chain_angle": 33.35413995445409,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             -1.0450242749889638,
@@ -8220,7 +8451,8 @@
             0.8876635134972054,
             0.9119298789890848
           ]
-        }
+        },
+        "motionMultiplier": 1.047043788996803
       }
     ],
     "shifterType": "flat-bar",

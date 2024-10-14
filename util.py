@@ -55,6 +55,8 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
 
   max_chain_angle = chain_angles.max()
 
+  cable_pull_at_max_chain_angle = shift_positions[chain_angles.argmax() + 1]
+
   # Calculate end jockey positions based on second smallest or second biggest positions, plus the cog pitch
   # Yeah, this ignores the motion multiplier, but it shouldn't affect the pull too low or pull too high determinations
   least_pull = get_cable_pull_for_jockey_position(derailleur,
@@ -76,6 +78,7 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
     "diffs_minus_free_play": diffs_minus_free_play.tolist(),
     "max_diff_minus_free_play": float(max_diff_minus_free_play),
     "max_chain_angle": float(max_chain_angle),
+    "cable_pull_at_max_chain_angle": cable_pull_at_max_chain_angle,
     "jockey_to_cog_links": jockey_to_cog_links,
     "chain_angles": chain_angles.tolist()
   }

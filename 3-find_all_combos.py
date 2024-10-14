@@ -106,6 +106,7 @@ for shifter in shifters:
               "confidence": confidence,
               "maxChainAngle": max_chain_angle_results["max_chain_angle"],
               "maxAngleAnalysis": max_chain_angle_results,
+              "motionMultiplier": multiplier,
               "equivalentShifters": [],
               "equivalentDerailleurs": []
             })
@@ -126,7 +127,8 @@ for shifter in shifters:
             "supported": supported,
             "maxToothAvailableAndCompatible": maxToothAvailableAndCompatible,
             "maxChainAngle": max_chain_angle_results["max_chain_angle"],
-            "maxAngleAnalysis": max_chain_angle_results
+            "maxAngleAnalysis": max_chain_angle_results,
+            "motionMultiplier": multiplier,
           })
 
           combo["maxToothAvailableAndCompatible"] = max(combo["maxToothAvailableAndCompatible"], maxToothAvailableAndCompatible)
