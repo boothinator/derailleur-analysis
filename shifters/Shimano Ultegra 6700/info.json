@@ -3,5 +3,7 @@
   "series": "Ultegra",
   "partNumber": "ST-6700",
   "type": "drop-bar",
-  "speeds": 10
+  "speeds": 10,
+  "source": "",
+  "hasMatchingFrontShifters": true
 }

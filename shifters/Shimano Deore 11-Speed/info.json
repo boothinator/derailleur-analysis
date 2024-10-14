@@ -3,5 +3,7 @@
   "series": "Deore",
   "partNumber": "SL-M5100",
   "type": "flat-bar",
-  "speeds": 11
+  "speeds": 11,
+  "source": "https://youtu.be/TScsDQyM9bU",
+  "hasMatchingFrontShifters": true
 }

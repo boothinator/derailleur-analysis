@@ -3,5 +3,7 @@
   "series": "SX",
   "partNumber": "SL-SX-1-A1",
   "type": "flat-bar",
-  "speeds": 12
+  "speeds": 12,
+  "source": "https://youtu.be/iPky8y1lex8",
+  "hasMatchingFrontShifters": false
 }

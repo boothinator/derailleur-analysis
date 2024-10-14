@@ -3,5 +3,7 @@
   "series": "CUES 9-Speed",
   "partNumber": "SL-U4000",
   "type": "flat-bar",
-  "speeds": 9
+  "speeds": 9,
+  "source": "https://youtu.be/QhxCUEAp4PQ",
+  "hasMatchingFrontShifters": true
 }

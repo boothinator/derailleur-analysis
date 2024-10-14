@@ -3,5 +3,6 @@
   "series": "Ekar",
   "partNumber": "EP21-EKD13-R4",
   "type": "drop-bar",
-  "speeds": 13
+  "speeds": 13,
+  "hasMatchingFrontShifters": false
 }

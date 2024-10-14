@@ -4,5 +4,7 @@
   "partNumber": "SB-APX-B1",
   "type": "drop-bar",
   "speeds": 11,
-  "mostPullIsLowestMeasurement": true
+  "mostPullIsLowestMeasurement": true,
+  "source": "https://youtu.be/jDw4xsK3_po",
+  "hasMatchingFrontShifters": false
 }

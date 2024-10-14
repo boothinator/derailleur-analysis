@@ -3,5 +3,7 @@
   "series": "GX",
   "partNumber": "SL-GX-A1",
   "type": "flat-bar",
-  "speeds": 10
+  "speeds": 10,
+  "source": "https://youtu.be/jm1fDkf4wYY",
+  "hasMatchingFrontShifters": true
 }

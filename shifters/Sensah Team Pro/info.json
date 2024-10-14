@@ -3,5 +3,6 @@
   "series": "Team Pro",
   "partNumber": "sensah-team-pro-11",
   "type": "drop-bar",
-  "speeds": 11
+  "speeds": 11,
+  "hasMatchingFrontShifters": true
 }
