@@ -10,7 +10,7 @@ import pandas as pd
 def convert_to_float(c):
   return float(c) if len(c) > 0 else float('nan')
 
-def analyze(input_file, out_folder):
+def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
   data = []
   row_headers = []
 
@@ -33,7 +33,8 @@ def analyze(input_file, out_folder):
              for row_index,row_header in enumerate(row_headers[0:first_gear_row_index])]
              + [('Gear', int(re.match(r'^(\d{1,2}).*', data[gear_row_index][0])[1])),
                 ('Gear Label', data[gear_row_index][0]),
-                ('Measurement', convert_to_float(data[gear_row_index][col_index]))
+                ('Measurement', convert_to_float(data[gear_row_index][col_index])
+                 * (-1 if mostPullIsLowestMeasurement else 1))
                 ])
        for col_index in range(1, len(data[0]))
        for gear_row_index in range(first_gear_row_index, last_gear_row_index + 1)]
@@ -158,13 +159,15 @@ for dir in os.listdir('shifters'):
     continue
   
   #FIXME:TESTING
-  #if dir != "Shimano Ultegra 6600":
-  #  continue
+  if dir != "SRAM Apex 1":
+    continue
 
   with open(f"shifters/{dir}/info.json") as info_file:
     info = json.load(info_file)
+
+  mostPullIsLowestMeasurement = info["mostPullIsLowestMeasurement"] if "mostPullIsLowestMeasurement" in info else False
   
-  result = analyze(f"shifters/{dir}/measurements.csv", f"shifters/{dir}")
+  result = analyze(f"shifters/{dir}/measurements.csv", f"shifters/{dir}", mostPullIsLowestMeasurement)
 
   print(f"{dir}: {result['cablePull']}")
 
