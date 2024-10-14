@@ -158,8 +158,8 @@ for dir in os.listdir('shifters'):
     continue
   
   #FIXME:TESTING
-  if dir != "Shimano Ultegra 6600":
-    continue
+  #if dir != "Shimano Ultegra 6600":
+  #  continue
 
   with open(f"shifters/{dir}/info.json") as info_file:
     info = json.load(info_file)
