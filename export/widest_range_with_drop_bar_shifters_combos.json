@@ -99,6 +99,8 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
     "chainWrap": 47,
     "equivalentShifters": [
       {
@@ -236,6 +238,8 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
     "chainWrap": 47,
     "equivalentShifters": [
       {
@@ -358,6 +362,8 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
     "chainWrap": 41,
     "equivalentShifters": [],
     "equivalentDerailleurs": [],
@@ -467,6 +473,8 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
     "chainWrap": 41,
     "equivalentShifters": [],
     "equivalentDerailleurs": [],
@@ -572,6 +580,8 @@
     "noMatchingFrontShifter": true,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 36,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
     "chainWrap": 41,
     "equivalentShifters": [
       {
@@ -642,6 +652,8 @@
     "noMatchingFrontShifter": false,
     "moreCogsThanShifts": false,
     "maxToothAvailableAndCompatible": 48,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
     "chainWrap": 40,
     "equivalentShifters": [
       {

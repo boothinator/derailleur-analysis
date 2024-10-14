@@ -64,6 +64,8 @@ for shifter in shifters:
           and derailleur["supportsMultipleFrontChainrings"],
         "moreCogsThanShifts": shifter["speeds"] < speeds,
         "maxToothAvailableAndCompatible": 0,
+        "maxToothAvailableAndSupported": 0,
+        "supported": False,
         "chainWrap": derailleur["chainWrap"],
         "equivalentShifters": equiv_shifters,
         "equivalentDerailleurs": equiv_derailleurs
@@ -113,20 +115,24 @@ for shifter in shifters:
             print(f"Warning: most pull too high for {combo['name']} with cassette {cassette["partNumber"]}")
           
           maxToothAvailableAndCompatible = min(derailleur["maxTooth"], cassette["maxToothAvailable"])
+          supported = any([combo for combo in supported_combos
+                if shifter["partNumber"] == combo["shifterPartNumber"]
+                and derailleur["partNumber"] == combo["derailleurPartNumber"]
+                and cassette["partNumber"] == combo["cassettePartNumber"]])
 
           combo["cassettes"].append({
             "cassettePartNumber": cassette["partNumber"],
             "confidence": confidence,
-            "supported": any([combo for combo in supported_combos
-                if shifter["partNumber"] == combo["shifterPartNumber"]
-                and derailleur["partNumber"] == combo["derailleurPartNumber"]
-                and cassette["partNumber"] == combo["cassettePartNumber"]]),
+            "supported": supported,
             "maxToothAvailableAndCompatible": maxToothAvailableAndCompatible,
             "maxChainAngle": max_chain_angle_results["max_chain_angle"],
             "maxAngleAnalysis": max_chain_angle_results
           })
 
           combo["maxToothAvailableAndCompatible"] = max(combo["maxToothAvailableAndCompatible"], maxToothAvailableAndCompatible)
+          if supported:
+            combo["maxToothAvailableAndSupported"] = max(combo["maxToothAvailableAndSupported"], maxToothAvailableAndCompatible)
+          combo["supported"] = combo["supported"] or supported
       
       # Save combo if compatible cassette was found
       if len(combo["cassettes"]) > 0:
