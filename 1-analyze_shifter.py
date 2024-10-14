@@ -27,17 +27,6 @@ def analyze(input_file, out_folder):
   ]
   first_gear_row_index = min([i for i,_,_ in gear_headers])
   last_gear_row_index = max([i for i,_,_ in gear_headers])
-  
-  # Extract just the measurements and convert to numbers
-  measurement_data = [
-    [(float(c) if len(c) > 0 else float('nan')) for c in row[1:]]
-    for row in data[first_gear_row_index:last_gear_row_index+1]
-  ]
-
-  # Get Run Data
-  run_info = pd.DataFrame(dict([(row_headers[i], data[i][1:])
-                                for i in range(0, first_gear_row_index)]),
-                          index=data[row_headers.index("Run")][1:])
 
   # Create DataFrame
   d = [dict([(row_header, data[row_index][col_index])
