@@ -47,7 +47,19 @@
             0,
             0
           ],
-          "max_chain_angle": 0.0
+          "max_diff_minus_free_play": 0.0,
+          "max_chain_angle": 0.0,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       },
       {
@@ -91,7 +103,19 @@
             0,
             0
           ],
-          "max_chain_angle": 0.0
+          "max_diff_minus_free_play": 0.0,
+          "max_chain_angle": 0.0,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       }
     ],
@@ -184,7 +208,20 @@
             0,
             0
           ],
-          "max_chain_angle": 0.0
+          "max_diff_minus_free_play": 0.0,
+          "max_chain_angle": 0.0,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       },
       {
@@ -230,7 +267,20 @@
             0,
             0
           ],
-          "max_chain_angle": 0.0
+          "max_diff_minus_free_play": 0.0,
+          "max_chain_angle": 0.0,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       }
     ],
@@ -312,7 +362,20 @@
             0.0,
             0.28646119479430454
           ],
-          "max_chain_angle": 0.5169524454866468
+          "max_diff_minus_free_play": 0.28646119479430454,
+          "max_chain_angle": 0.5169524454866468,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.5166843210378155,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5169524454866468
+          ]
         }
       },
       {
@@ -358,7 +421,20 @@
             0.0,
             0.4073315894901326
           ],
-          "max_chain_angle": 0.735087282079759
+          "max_diff_minus_free_play": 0.4073315894901326,
+          "max_chain_angle": 0.735087282079759,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.7348112834865591,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.735087282079759
+          ]
         }
       }
     ],
@@ -425,7 +501,21 @@
             0,
             0
           ],
-          "max_chain_angle": 0.0
+          "max_diff_minus_free_play": 0.0,
+          "max_chain_angle": 0.0,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       }
     ],
@@ -488,7 +578,19 @@
             0,
             0
           ],
-          "max_chain_angle": 0.0
+          "max_diff_minus_free_play": 0.0,
+          "max_chain_angle": 0.0,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       },
       {
@@ -532,7 +634,19 @@
             0.3107264620837329,
             0.0
           ],
-          "max_chain_angle": 0.5607432777677455
+          "max_diff_minus_free_play": 0.3107264620837329,
+          "max_chain_angle": 0.5607432777677455,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.5607279441029677,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5607432777677455,
+            0.0
+          ]
         }
       }
     ],
@@ -604,7 +718,19 @@
             0.0,
             0.38512828180216574
           ],
-          "max_chain_angle": 0.6950162608633521
+          "max_diff_minus_free_play": 0.38512828180216574,
+          "max_chain_angle": 0.6950162608633521,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.6949119885636031,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.6950162608633521
+          ]
         }
       },
       {
@@ -648,7 +774,19 @@
             0.3185206828577565,
             0.3593581576348912
           ],
-          "max_chain_angle": 0.6485085165445902
+          "max_diff_minus_free_play": 0.3593581576348912,
+          "max_chain_angle": 0.6485085165445902,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.6484215331395592,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5748093528458981,
+            0.6485085165445902
+          ]
         }
       }
     ],
@@ -713,7 +851,20 @@
             0,
             0
           ],
-          "max_chain_angle": 0.0
+          "max_diff_minus_free_play": 0.0,
+          "max_chain_angle": 0.0,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       },
       {
@@ -759,7 +910,20 @@
             0,
             0
           ],
-          "max_chain_angle": 0.0
+          "max_diff_minus_free_play": 0.0,
+          "max_chain_angle": 0.0,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       }
     ],
@@ -822,7 +986,19 @@
             0.0,
             0.3717334499526983
           ],
-          "max_chain_angle": 0.6708423440536723
+          "max_diff_minus_free_play": 0.3717334499526983,
+          "max_chain_angle": 0.6708423440536723,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.6707425673814146,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.6708423440536723
+          ]
         }
       },
       {
@@ -866,7 +1042,19 @@
             0.0,
             0.3459676677073604
           ],
-          "max_chain_angle": 0.6243426615252556
+          "max_diff_minus_free_play": 0.3459676677073604,
+          "max_chain_angle": 0.6243426615252556,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.6242407249343974,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.6243426615252556
+          ]
         }
       }
     ],
@@ -931,7 +1119,20 @@
             0,
             0
           ],
-          "max_chain_angle": 0.0
+          "max_diff_minus_free_play": 0.0,
+          "max_chain_angle": 0.0,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       },
       {
@@ -977,7 +1178,20 @@
             0,
             0
           ],
-          "max_chain_angle": 0.0
+          "max_diff_minus_free_play": 0.0,
+          "max_chain_angle": 0.0,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
         }
       }
     ],
@@ -1040,7 +1254,19 @@
             0.5085203534788418,
             0.3539692738647189
           ],
-          "max_chain_angle": 0.9177107364311745
+          "max_diff_minus_free_play": 0.5085203534788418,
+          "max_chain_angle": 0.9177107364311745,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.917684864729609,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.8527487664210507,
+            0.9177107364311745,
+            0.6387831691427619
+          ]
         }
       },
       {
@@ -1084,7 +1310,19 @@
             0.5429470103032346,
             0.26060789508368476
           ],
-          "max_chain_angle": 0.9798453098700126
+          "max_diff_minus_free_play": 0.5429470103032346,
+          "max_chain_angle": 0.9798453098700126,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.9798195301782325,
+            -0.5216670844120347,
+            0.0,
+            0.0,
+            0.0,
+            0.6606433798323657,
+            0.9798453098700126,
+            0.47029606827697773
+          ]
         }
       }
     ],

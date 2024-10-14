@@ -3,7 +3,8 @@ import numpy as np
 # Could calculate using dropout thickness (7 to 8 mm for shimano?) and then use the distance from 
 # end of cassette to dropout to figure out the first cog position, maybe
 smallest_cog_position = 15 # TODO: put this on the cassette, or figure out from derailleur
-jockey_to_cog_distance = 2.5 * 25.4 / 2 
+jockey_to_cog_links = 2.5
+jockey_to_cog_distance = jockey_to_cog_links * 25.4 / 2 
 max_cable_pull = 50 # Assume that no shifter will be able to pull 50 mm of cable
 
 def calculate_max_chain_angle(shifter, derailleur, cassette):
@@ -50,7 +51,9 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
   
   max_diff_minus_free_play = max(np.abs([diffs_minus_free_play.min(), diffs_minus_free_play.max()]))
 
-  max_chain_angle = np.arcsin(max_diff_minus_free_play/jockey_to_cog_distance) * 180 / np.pi
+  chain_angles = np.arcsin(diffs_minus_free_play/jockey_to_cog_distance) * 180 / np.pi
+
+  max_chain_angle = chain_angles.max()
 
   # Calculate end jockey positions based on second smallest or second biggest positions, plus the cog pitch
   # Yeah, this ignores the motion multiplier, but it shouldn't affect the pull too low or pull too high determinations
@@ -71,7 +74,10 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
     "most_pull_too_high": bool(most_pull_too_high),
     "diffs": diffs.tolist(),
     "diffs_minus_free_play": diffs_minus_free_play.tolist(),
-    "max_chain_angle": max_chain_angle
+    "max_diff_minus_free_play": float(max_diff_minus_free_play),
+    "max_chain_angle": float(max_chain_angle),
+    "jockey_to_cog_links": jockey_to_cog_links,
+    "chain_angles": chain_angles.tolist()
   }
 
 def get_cable_pull_for_jockey_position(derailleur, jockey_position):
