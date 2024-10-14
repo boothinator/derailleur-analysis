@@ -152,15 +152,15 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
   
 
   
-
+all_info = []
 
 for dir in os.listdir('shifters'):
   if dir == "template":
     continue
   
   #FIXME:TESTING
-  if dir != "SRAM SX":
-    continue
+  #if dir != "SRAM SX":
+  #  continue
 
   with open(f"shifters/{dir}/info.json") as info_file:
     info = json.load(info_file)
@@ -175,6 +175,11 @@ for dir in os.listdir('shifters'):
     **info,
     **result
   }
+
+  all_info.append(info_out)
   
   with open(f"shifters/{dir}/info_out.json", "w") as info_file:
     json.dump(info_out, info_file, indent=2)
+
+with open(f"all_shifters.json", "w") as info_file:
+  json.dump(all_info, info_file, indent=2)

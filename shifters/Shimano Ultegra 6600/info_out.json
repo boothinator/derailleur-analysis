@@ -1,9 +1,11 @@
 {
   "brand": "Shimano",
-  "series": "Ultegra",
+  "name": "Ultegra",
   "partNumber": "ST-6600",
   "type": "drop-bar",
   "speeds": 10,
+  "source": "",
+  "hasMatchingFrontShifters": true,
   "shiftSpacings": [
     2.405,
     2.077083333333334,

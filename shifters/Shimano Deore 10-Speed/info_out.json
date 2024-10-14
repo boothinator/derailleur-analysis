@@ -1,9 +1,11 @@
 {
   "brand": "Shimano",
-  "series": "Deore",
+  "name": "Deore",
   "partNumber": "SL-M4100",
   "type": "flat-bar",
   "speeds": 10,
+  "source": "https://youtu.be/fbm876mdWKk",
+  "hasMatchingFrontShifters": true,
   "shiftSpacings": [
     4.629999999999999,
     3.475,

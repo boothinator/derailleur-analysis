@@ -1,9 +1,11 @@
 {
   "brand": "Shimano",
-  "series": "Ultegra",
+  "name": "Ultegra",
   "partNumber": "ST-R8020",
   "type": "drop-bar",
   "speeds": 11,
+  "source": "https://youtu.be/J-Yi6OzVvhc",
+  "hasMatchingFrontShifters": true,
   "shiftSpacings": [
     3.1161538461538467,
     2.6008333333333336,

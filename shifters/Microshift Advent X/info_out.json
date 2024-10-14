@@ -1,9 +1,11 @@
 {
-  "brand": "BRAND",
-  "series": "SERIES",
-  "partNumber": "PART-NUMBER",
+  "brand": "Microshift",
+  "name": "Advent X",
+  "partNumber": "SB-M100A",
   "type": "drop-bar",
-  "speeds": 13,
+  "speeds": 10,
+  "source": "https://youtu.be/FzP2hvDBTLs",
+  "hasMatchingFrontShifters": false,
   "shiftSpacings": [
     3.6966666666666668,
     3.4158333333333335,

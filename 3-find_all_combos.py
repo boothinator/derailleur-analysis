@@ -3,7 +3,7 @@ import json
 from scipy.stats import norm
 from util import calculate_max_chain_angle
 
-with open(f"other_shifters.json") as f:
+with open(f"all_shifters.json") as f:
   shifters = json.load(f)
 with open(f"equivalent_shifters.json") as f:
   equivalent_shifters = json.load(f)
@@ -159,9 +159,6 @@ with open(f"combinations.json", "w") as info_file:
 
 with open(f"partial_fail_combos.json", "w") as info_file:
   json.dump(partial_fail_combos, info_file, indent=2)
-
-with open(f"all_shifters.json", "w") as info_file:
-  json.dump(shifters, info_file, indent=2)
 
 with open(f"all_derailleurs.json", "w") as info_file:
   json.dump(derailleurs, info_file, indent=2)

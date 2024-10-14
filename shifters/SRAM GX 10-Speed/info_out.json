@@ -1,9 +1,11 @@
 {
   "brand": "SRAM",
-  "series": "GX",
+  "name": "GX",
   "partNumber": "SL-GX-A1",
   "type": "flat-bar",
   "speeds": 10,
+  "source": "https://youtu.be/jm1fDkf4wYY",
+  "hasMatchingFrontShifters": true,
   "shiftSpacings": [
     3.620000000000001,
     3.1233333333333326,

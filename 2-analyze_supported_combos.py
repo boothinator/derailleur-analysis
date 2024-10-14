@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import json
 from util import calculate_max_chain_angle
 
-with open(f"other_shifters.json") as f:
+with open(f"all_shifters.json") as f:
   shifters = json.load(f)
 with open(f"other_derailleurs.json") as f:
   derailleurs = json.load(f)

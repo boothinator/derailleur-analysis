@@ -1,9 +1,10 @@
 {
   "brand": "Campagnolo",
-  "series": "Ekar",
+  "name": "Ekar",
   "partNumber": "EP21-EKD13-R4",
   "type": "drop-bar",
   "speeds": 13,
+  "hasMatchingFrontShifters": false,
   "shiftSpacings": [
     2.8699999999999974,
     2.3450000000000006,

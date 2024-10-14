@@ -1,9 +1,11 @@
 {
   "brand": "Sensah",
-  "series": "Team Pro",
+  "name": "Team Pro",
   "partNumber": "sensah-team-pro-11",
   "type": "drop-bar",
   "speeds": 11,
+  "source": "",
+  "hasMatchingFrontShifters": true,
   "shiftSpacings": [
     2.944285714285715,
     2.440000000000001,

@@ -1,6 +1,6 @@
 {
   "brand": "BRAND",
-  "series": "SERIES",
+  "name": "NAME",
   "partNumber": "PART-NUMBER",
   "type": "drop-bar",
   "speeds": 13

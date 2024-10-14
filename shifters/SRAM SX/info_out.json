@@ -1,9 +1,11 @@
 {
   "brand": "SRAM",
-  "series": "SX",
+  "name": "SX",
   "partNumber": "SL-SX-1-A1",
   "type": "flat-bar",
   "speeds": 12,
+  "source": "https://youtu.be/iPky8y1lex8",
+  "hasMatchingFrontShifters": false,
   "shiftSpacings": [
     3.943333333333333,
     3.17125,
