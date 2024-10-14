@@ -112,8 +112,6 @@ def analyze(input_file, out_folder):
     ]))).reset_index()
 
 
-  #TODO: diff between pulling and relaxing, average pulling, average relaxing, 95% confidence interval
-
   # Plot Shift Averages
 
   shift_averages = shifts_df.groupby(["GearStep"], sort=False)["Shift"].mean()
@@ -125,6 +123,15 @@ def analyze(input_file, out_folder):
   plt.clf()
   shift_avgs_df.plot.bar()
   plt.savefig(f"{out_folder}/shift_avgs.png")
+
+  # Cable Pull chart
+
+  cable_pull = np.mean(shift_averages[1:-1])
+
+  plt.clf()
+  shift_averages.plot.bar()
+  # TODO: plot average line
+  plt.savefig(f"{out_folder}/cable_pull.png")
 
   # Plot Shift Std Dev
 
@@ -145,15 +152,7 @@ def analyze(input_file, out_folder):
   plt.clf()
   shift_relaxing_pulling_diffs.plot.bar()
   plt.savefig(f"{out_folder}/shift_diffs.png")
-  
-  ###
 
-  print(shift_averages[1:-1])
-  cable_pull = np.mean(shift_averages[1:-1])
-
-  print(cable_pull)
-
-  # TODO: generate cable pull graph
 
   return {
     "shiftSpacings": shift_averages.to_list(),
