@@ -109,7 +109,7 @@ def analyze(input_file, out_folder):
     [
       ("GearStep", [f"{d["Gear"].iloc[i]}-{d["Gear"].iloc[i + 1]}" for i in range(d.shape[0] - 1)]),
       ("Shift", d["Measurement"].iloc[:-1].to_numpy()-d["Measurement"].iloc[1:].to_numpy())
-    ]))).reset_index()
+    ])), include_groups=False).reset_index()
 
 
   # Plot Shift Averages
