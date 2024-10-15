@@ -41,7 +41,7 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
   barrel_adjuster_too_low = barrel_adjuster < 0
 
   diffs_minus_free_play = np.array([(
-      0 if abs(d) < roller_cog_free_play
+      0 if abs(d) < roller_cog_free_play/2
       else (
         d - roller_cog_free_play/2 if d > 0
         else d + roller_cog_free_play/2
