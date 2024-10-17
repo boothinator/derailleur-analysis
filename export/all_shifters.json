@@ -7,20 +7,20 @@
     "speeds": 13,
     "hasMatchingFrontShifters": false,
     "shiftSpacings": [
-      2.8699999999999974,
-      2.3450000000000006,
-      2.5966666666666676,
-      2.3775,
-      2.505,
-      2.2925000000000004,
-      2.3099999999999996,
-      2.3175,
-      2.4125000000000005,
-      2.4800000000000004,
-      2.51,
-      3.21
+      2.866666666666666,
+      2.351666666666667,
+      2.576666666666666,
+      2.3950000000000005,
+      2.5016666666666665,
+      2.290416666666667,
+      2.3158333333333334,
+      2.3108333333333326,
+      2.4320833333333334,
+      2.4850000000000003,
+      2.523333333333333,
+      3.2016666666666667
     ],
-    "cablePull": 2.4146666666666667
+    "cablePull": 2.4182499999999996
   },
   {
     "brand": "Microshift",
@@ -87,7 +87,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Deore 10-Speed",
+    "name": "Deore",
     "partNumber": "SL-M4100",
     "type": "flat-bar",
     "speeds": 10,
@@ -108,7 +108,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Deore 11-Speed",
+    "name": "Deore",
     "partNumber": "SL-M5100",
     "type": "flat-bar",
     "speeds": 11,
@@ -130,7 +130,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "SLX 12-Speed",
+    "name": "SLX",
     "partNumber": "SL-M7100",
     "type": "flat-bar",
     "speeds": 12,
@@ -153,7 +153,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra 11-Speed",
+    "name": "Ultegra",
     "partNumber": "ST-R8020",
     "type": "drop-bar",
     "speeds": 11,
@@ -175,7 +175,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra 10-Speed",
+    "name": "Ultegra",
     "partNumber": "ST-6600",
     "type": "drop-bar",
     "speeds": 10,
@@ -196,7 +196,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra 10-Speed",
+    "name": "Ultegra",
     "partNumber": "ST-6700",
     "type": "drop-bar",
     "speeds": 10,
@@ -240,7 +240,7 @@
   },
   {
     "brand": "SRAM",
-    "name": "GX 10-Speed",
+    "name": "GX",
     "partNumber": "SL-GX-A1",
     "type": "flat-bar",
     "speeds": 10,
@@ -261,7 +261,7 @@
   },
   {
     "brand": "SRAM",
-    "name": "SX 12-Speed",
+    "name": "SX",
     "partNumber": "SL-SX-1-A1",
     "type": "flat-bar",
     "speeds": 12,
