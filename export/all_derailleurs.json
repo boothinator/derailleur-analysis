@@ -256,5 +256,30 @@
     "maxTooth": 32,
     "chainWrap": 37,
     "supportsMultipleFrontChainrings": true
+  },
+  {
+    "name": "Ekar 13-Speed",
+    "brand": "Campagnolo",
+    "partNumber": "RD21-EK13",
+    "compatibleWith": null,
+    "photoUrl": null,
+    "pullRatio": 1.2797477439176388,
+    "physicalLowLimit": 10.53397260009244,
+    "physicalHighLimit": 55.59443424396477,
+    "coefficients": [
+      10.53397260009244,
+      1.2072779666261344,
+      0.013384695542140407,
+      -0.0003748554592123232
+    ],
+    "yawCoefficients": [
+      0,
+      0,
+      0
+    ],
+    "source": "",
+    "maxTooth": 44,
+    "chainWrap": 35,
+    "supportsMultipleFrontChainrings": false
   }
 ]

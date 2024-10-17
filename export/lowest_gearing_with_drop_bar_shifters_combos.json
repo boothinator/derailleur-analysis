@@ -145,8 +145,167 @@
     "reviewsSentiment": "none"
   },
   {
+    "brand": "Mixed",
+    "name": "SRAM Apex 1 11-Speed shifter/Campagnolo Ekar 13-Speed derailleur/11-speed cassette",
+    "speeds": 11,
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD21-EK13",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "confidence": 0.6737872820901094,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxChainAngle": 0.7709206616619083,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 2.79694504977246,
+          "barrel_adjuster_values": [
+            0,
+            2.7732186444059983,
+            2.7950961962351997,
+            2.796801319151864,
+            2.7969346254084346,
+            2.79694504977246
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 3.21978893800495,
+          "least_pull_too_low": false,
+          "most_pull": 33.021854553691746,
+          "most_pull_too_high": false,
+          "diffs": [
+            0.4526000295293109,
+            0.10408777860873286,
+            -0.3065611398876271,
+            -0.6116648070191317,
+            -0.7021599751930907,
+            -0.6566367435110649,
+            -0.43366180623285544,
+            0.015090538026363731,
+            0.702186656305777
+          ],
+          "diffs_minus_free_play": [
+            0.17760002952931075,
+            0.0,
+            -0.03156113988762699,
+            -0.3366648070191316,
+            -0.42715997519309057,
+            -0.3816367435110648,
+            -0.1586618062328553,
+            0.0,
+            0.4271866563057769
+          ],
+          "max_diff_minus_free_play": 0.4271866563057769,
+          "max_chain_angle": 0.7709206616619083,
+          "cable_pull_at_max_chain_angle": 29.114520964591996,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.32049717164625924,
+            0.0,
+            -0.056954973543149545,
+            -0.6075538281917577,
+            -0.7708725087948032,
+            -0.6887150012060989,
+            -0.2863209355317174,
+            0.0,
+            0.7709206616619083
+          ]
+        },
+        "motionMultiplier": 1.0089812684153194
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "confidence": 0.9760277679881812,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxChainAngle": 0.9267527357992387,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 2.9753103361859106,
+          "barrel_adjuster_values": [
+            0,
+            2.8552660639064764,
+            2.96563618442764,
+            2.9745241689081707,
+            2.9752508503551534,
+            2.9753103361859106
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 3.3811310926689035,
+          "least_pull_too_low": false,
+          "most_pull": 33.27056776785304,
+          "most_pull_too_high": false,
+          "diffs": [
+            0.24553723690660334,
+            -0.07811169215344194,
+            -0.46022563349933776,
+            -0.7332140961798679,
+            -0.7883780026568559,
+            -0.7043662502386212,
+            -0.43979423060247314,
+            0.05359873735301335,
+            0.7885302563722689
+          ],
+          "diffs_minus_free_play": [
+            0.0,
+            0.0,
+            -0.18522563349933763,
+            -0.45821409617986775,
+            -0.5133780026568557,
+            -0.42936625023862107,
+            -0.164794230602473,
+            0.0,
+            0.5135302563722688
+          ],
+          "max_diff_minus_free_play": 0.5135302563722688,
+          "max_chain_angle": 0.9267527357992387,
+          "cable_pull_at_max_chain_angle": 29.292837189538716,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            -0.33425849627658677,
+            -0.826917961211304,
+            -0.9264779441064789,
+            -0.7748542961913316,
+            -0.2973875998954884,
+            0.0,
+            0.9267527357992387
+          ]
+        },
+        "motionMultiplier": 1.0171182141283461
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 44,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
+    "chainWrap": 35,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": [],
+    "reviewsSentiment": "none"
+  },
+  {
     "brand": "SRAM",
-    "name": "SRAM Apex 1 shifter/Apex 1 11-Speed derailleur/11-speed cassette",
+    "name": "SRAM Apex 1 11-Speed group with 11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SB-APX-B1",
     "derailleurPartNumber": "RD-APX-1-A1",
@@ -259,7 +418,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "Campagnolo Ekar shifter/Shimano GRX 10-Speed derailleur/11-speed cassette",
+    "name": "Campagnolo Ekar 13-Speed shifter/Shimano GRX 10-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "EP21-EKD13-R4",
     "derailleurPartNumber": "RD-RX400",
@@ -401,7 +560,7 @@
   },
   {
     "brand": "Mixed",
-    "name": "Campagnolo Ekar shifter/Shimano GRX 10-Speed derailleur/12-speed cassette",
+    "name": "Campagnolo Ekar 13-Speed shifter/Shimano GRX 10-Speed derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "EP21-EKD13-R4",
     "derailleurPartNumber": "RD-RX400",
@@ -908,7 +1067,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Shimano Ultegra shifter/GRX 10-Speed derailleur/10-speed cassette",
+    "name": "Shimano Ultegra 11-Speed shifter/GRX 10-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "ST-R8020",
     "derailleurPartNumber": "RD-RX400",
@@ -1044,7 +1203,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Shimano Ultegra shifter/GRX 10-Speed derailleur/11-speed cassette",
+    "name": "Shimano Ultegra 11-Speed shifter/GRX 10-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "ST-R8020",
     "derailleurPartNumber": "RD-RX400",
@@ -1186,7 +1345,7 @@
   },
   {
     "brand": "SRAM",
-    "name": "SRAM Apex 1 shifter/GX 10-Speed derailleur/10-speed cassette",
+    "name": "SRAM Apex 1 11-Speed shifter/GX 10-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SB-APX-B1",
     "derailleurPartNumber": "RD-GX-T21-A1",
@@ -1350,7 +1509,7 @@
   },
   {
     "brand": "SRAM",
-    "name": "SRAM Apex 1 shifter/GX 10-Speed derailleur/11-speed cassette",
+    "name": "SRAM Apex 1 11-Speed shifter/GX 10-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SB-APX-B1",
     "derailleurPartNumber": "RD-GX-T21-A1",
