@@ -1,14 +1,14 @@
 [
   {
     "brand": "Mixed",
-    "name": "Microshift Advent X shifter/SRAM SX 12-Speed derailleur/10-speed cassette",
+    "name": "Microshift Advent X 10-Speed shifter/SRAM SX 12-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SB-M100A",
     "derailleurPartNumber": "RD-SX-1-B1",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
-        "confidence": 0.42902635341154394,
+        "confidence": 0.673068461853324,
         "supported": false,
         "maxToothAvailableAndCompatible": 48,
         "maxChainAngle": 0.9177107364311745,
@@ -66,7 +66,7 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.3593303989865802,
+        "confidence": 0.5963834776995851,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
         "maxChainAngle": 0.9798453098700126,
@@ -146,6 +146,101 @@
   },
   {
     "brand": "Mixed",
+    "name": "SRAM Apex 1 11-Speed shifter/Campagnolo Ekar 13-Speed derailleur/10-speed cassette",
+    "speeds": 10,
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD21-EK13",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "confidence": 0.051177877805539215,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxChainAngle": 1.0839287919819107,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 3.6727326134389497,
+          "barrel_adjuster_values": [
+            0,
+            3.618253379219368,
+            3.6704647743676957,
+            3.672637359743015,
+            3.6727287659853336,
+            3.6727326134389497
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 3.9477150350506554,
+          "least_pull_too_low": false,
+          "most_pull": 34.36740483275893,
+          "most_pull_too_high": false,
+          "diffs": [
+            -0.4854929262012355,
+            -0.6271554296945112,
+            -0.8129192322632512,
+            -0.875604834051046,
+            -0.7079653425680306,
+            -0.38881519100493733,
+            0.12304310176723021,
+            0.875614681591216
+          ],
+          "diffs_minus_free_play": [
+            -0.2104929262012354,
+            -0.3521554296945111,
+            -0.5379192322632511,
+            -0.6006048340510459,
+            -0.43296534256803043,
+            -0.1138151910049372,
+            0.0,
+            0.6006146815912159
+          ],
+          "max_diff_minus_free_play": 0.6006146815912159,
+          "max_chain_angle": 1.0839287919819107,
+          "cable_pull_at_max_chain_angle": 27.193999315695212,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.37985652404344505,
+            -0.6355097190081836,
+            -0.9707709097753303,
+            -1.0839110180143492,
+            -0.7813497865181135,
+            -0.20539036395412724,
+            0.0,
+            1.0839287919819107
+          ]
+        },
+        "motionMultiplier": 1.071364518881858
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 44,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
+    "chainWrap": 35,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": [],
+    "reviewsSentiment": "none"
+  },
+  {
+    "brand": "Mixed",
     "name": "SRAM Apex 1 11-Speed shifter/Campagnolo Ekar 13-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SB-APX-B1",
@@ -153,7 +248,7 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
-        "confidence": 0.6737872820901094,
+        "confidence": 0.5383226950739155,
         "supported": false,
         "maxToothAvailableAndCompatible": 44,
         "maxChainAngle": 0.7709206616619083,
@@ -214,7 +309,7 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
-        "confidence": 0.9760277679881812,
+        "confidence": 0.7789080989279309,
         "supported": false,
         "maxToothAvailableAndCompatible": 44,
         "maxChainAngle": 0.9267527357992387,
@@ -312,64 +407,64 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
-        "confidence": 0.6668257050872901,
+        "confidence": 0.15658918683984363,
         "supported": true,
         "maxToothAvailableAndCompatible": 42,
-        "maxChainAngle": 1.1297410974830695,
+        "maxChainAngle": 1.1294966847504906,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 2.2683335788252186,
+          "barrel_adjuster": 2.268346485618887,
           "barrel_adjuster_values": [
             0,
-            2.0937408186735285,
-            2.2522049434197724,
-            2.266834035831872,
-            2.2682049338719508,
-            2.2683335788252186
+            2.1967116786082923,
+            2.2648595922653554,
+            2.2681751211684262,
+            2.2683384362755197,
+            2.268346485618887
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 2.52479091755016,
+          "least_pull": 2.524930563096434,
           "least_pull_too_low": false,
-          "most_pull": 32.55969350921778,
+          "most_pull": 32.55985244045522,
           "most_pull_too_high": false,
           "diffs": [
-            -0.3671804794666862,
-            -0.5194745205490996,
-            -0.7517312143595838,
-            -0.900667137400923,
-            -0.8580817672338412,
-            -0.6973475985902482,
-            -0.37687751691566973,
-            0.15153146709418053,
-            0.9009964684812886
+            -0.36734876167430386,
+            -0.5196475132826528,
+            -0.7519061905792768,
+            -0.9008414150358846,
+            -0.8582529228485072,
+            -0.6975132801607202,
+            -0.37703541004084684,
+            0.15138362902737867,
+            0.9008610554337011
           ],
           "diffs_minus_free_play": [
-            -0.09218047946668606,
-            -0.24447452054909946,
-            -0.47673121435958365,
-            -0.6256671374009228,
-            -0.5830817672338411,
-            -0.42234759859024806,
-            -0.1018775169156696,
+            -0.09234876167430373,
+            -0.24464751328265266,
+            -0.47690619057927663,
+            -0.6258414150358844,
+            -0.583252922848507,
+            -0.4225132801607201,
+            -0.10203541004084671,
             0.0,
-            0.6259964684812884
+            0.625861055433701
           ],
-          "max_diff_minus_free_play": 0.6259964684812884,
-          "max_chain_angle": 1.1297410974830695,
-          "cable_pull_at_max_chain_angle": 28.585791273055513,
+          "max_diff_minus_free_play": 0.625861055433701,
+          "max_chain_angle": 1.1294966847504906,
+          "cable_pull_at_max_chain_angle": 28.585924775459084,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
-            -0.1663483416349208,
-            -0.4411809966974107,
-            -0.8603374179792733,
-            -1.1291466739333291,
-            -1.052283545131436,
-            -0.7621873577292161,
-            -0.18384761458758067,
+            -0.16665202355539618,
+            -0.44149318717214653,
+            -0.8606532141886415,
+            -1.1294612349681126,
+            -1.0525924632088797,
+            -0.762486371746743,
+            -0.1841325486452619,
             0.0,
-            1.1297410974830695
+            1.1294966847504906
           ]
         },
-        "motionMultiplier": 1.0087824233669238
+        "motionMultiplier": 1.0583946736964447
       }
     ],
     "shifterType": "drop-bar",
@@ -425,7 +520,7 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
-        "confidence": 0.6598800023474001,
+        "confidence": 0.9031532205724231,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.4947287146614428,
@@ -486,7 +581,7 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
-        "confidence": 0.4020704007935869,
+        "confidence": 0.6439149941839517,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.7128646456293388,
@@ -567,7 +662,7 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
-        "confidence": 0.6253806161908084,
+        "confidence": 0.5009826356001232,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.22799172815911745,
@@ -644,14 +739,14 @@
   },
   {
     "brand": "Mixed",
-    "name": "Microshift Advent X shifter/Shimano CUES 9-Speed derailleur/10-speed cassette",
+    "name": "Microshift Advent X 10-Speed shifter/Shimano CUES 9-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SB-M100A",
     "derailleurPartNumber": "RD-U4020",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
-        "confidence": 0.7254568100903938,
+        "confidence": 0.9636456379521228,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.48942310235614406,
@@ -709,7 +804,7 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.6341847375187328,
+        "confidence": 0.878954815495532,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
         "maxChainAngle": 0.5607432777677455,
@@ -789,14 +884,14 @@
   },
   {
     "brand": "Mixed",
-    "name": "Sensah Team Pro shifter/Shimano GRX 10-Speed derailleur/10-speed cassette",
+    "name": "Sensah Team Pro 11-speed shifter/Shimano GRX 10-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "sensah-team-pro-11",
     "derailleurPartNumber": "RD-RX400",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
-        "confidence": 0.12668196332618725,
+        "confidence": 0.29264525877471964,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.6950162608633521,
@@ -854,7 +949,7 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.0979315357891149,
+        "confidence": 0.24539790142202023,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
         "maxChainAngle": 0.6485085165445902,
@@ -925,14 +1020,14 @@
   },
   {
     "brand": "Mixed",
-    "name": "Sensah Team Pro shifter/Shimano GRX 10-Speed derailleur/11-speed cassette",
+    "name": "Sensah Team Pro 11-speed shifter/Shimano GRX 10-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "sensah-team-pro-11",
     "derailleurPartNumber": "RD-RX400",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
-        "confidence": 0.15896212844884344,
+        "confidence": 0.14408897478847488,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.0,
@@ -993,7 +1088,7 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
-        "confidence": 0.30506660744429276,
+        "confidence": 0.25723921263229294,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.0,
@@ -1067,14 +1162,14 @@
   },
   {
     "brand": "Shimano",
-    "name": "Shimano Ultegra shifter/GRX 10-Speed derailleur/10-speed cassette",
+    "name": "Shimano Ultegra 11-Speed shifter/GRX 10-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "ST-R8020",
     "derailleurPartNumber": "RD-RX400",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
-        "confidence": 0.0707785342883058,
+        "confidence": 0.19647839465165662,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.6708423440536723,
@@ -1132,7 +1227,7 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.0529595162266612,
+        "confidence": 0.1610587322515593,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
         "maxChainAngle": 0.6243426615252556,
@@ -1203,14 +1298,14 @@
   },
   {
     "brand": "Shimano",
-    "name": "Shimano Ultegra shifter/GRX 10-Speed derailleur/11-speed cassette",
+    "name": "Shimano Ultegra 11-Speed shifter/GRX 10-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "ST-R8020",
     "derailleurPartNumber": "RD-RX400",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
-        "confidence": 0.25209642202351423,
+        "confidence": 0.21669907652857368,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.0,
@@ -1271,7 +1366,7 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
-        "confidence": 0.44713097724833806,
+        "confidence": 0.3650713116482986,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.0,
@@ -1345,6 +1440,98 @@
   },
   {
     "brand": "SRAM",
+    "name": "SRAM Apex 1 11-Speed shifter/GX 10-Speed derailleur/9-speed cassette",
+    "speeds": 9,
+    "shifterPartNumber": "SB-APX-B1",
+    "derailleurPartNumber": "RD-GX-T21-A1",
+    "cassettes": [
+      {
+        "cassettePartNumber": "CS-LG300-9",
+        "confidence": 0.06861055797911604,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36,
+        "maxChainAngle": 0.8730004064295543,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 2.6521634019403275,
+          "barrel_adjuster_values": [
+            0,
+            2.5970971445945477,
+            2.651343984152291,
+            2.652151295472563,
+            2.652163225658373,
+            2.6521634019403275
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 2.621878450203538,
+          "least_pull_too_low": false,
+          "most_pull": 32.09690646537982,
+          "most_pull_too_high": true,
+          "diffs": [
+            -0.6087470418421859,
+            -0.46144887731739814,
+            -0.32090645188266365,
+            -0.20296173927149042,
+            0.029184535534710676,
+            0.3271175861181277,
+            0.6087475058162894
+          ],
+          "diffs_minus_free_play": [
+            -0.48374704184218575,
+            -0.33644887731739803,
+            -0.19590645188266353,
+            -0.0779617392714903,
+            0.0,
+            0.20211758611812758,
+            0.48374750581628934
+          ],
+          "max_diff_minus_free_play": 0.48374750581628934,
+          "max_chain_angle": 0.8730004064295543,
+          "cable_pull_at_max_chain_angle": 23.38962425155873,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.8729995690486394,
+            -0.6071641413974633,
+            -0.3535333574204568,
+            -0.14068923189132457,
+            0.0,
+            0.36474213755843665,
+            0.8730004064295543
+          ]
+        },
+        "motionMultiplier": 1.0682272940840059
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": true,
+    "moreCogsThanShifts": false,
+    "maxToothAvailableAndCompatible": 36,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
+    "chainWrap": 47,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1 11-Speed",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": [],
+    "reviewsSentiment": "none"
+  },
+  {
+    "brand": "SRAM",
     "name": "SRAM Apex 1 11-Speed shifter/GX 10-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SB-APX-B1",
@@ -1352,7 +1539,7 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
-        "confidence": 0.24680186335980325,
+        "confidence": 0.4615255295909415,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.24896253213887817,
@@ -1410,7 +1597,7 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.1988394265816471,
+        "confidence": 0.39822194492311325,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
         "maxChainAngle": 0.21746518165337667,
@@ -1465,6 +1652,64 @@
           ]
         },
         "motionMultiplier": 1.044488909771028
+      },
+      {
+        "cassettePartNumber": "CS-PG-1050-A1",
+        "confidence": 0.06861055797911604,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36,
+        "maxChainAngle": 1.1031856762613585,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 2.74192282022156,
+          "barrel_adjuster_values": [
+            0,
+            2.67196623448656,
+            2.740449137806853,
+            2.741891918897946,
+            2.7419221853530877,
+            2.74192282022156
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 2.798865469419609,
+          "least_pull_too_low": false,
+          "most_pull": 32.24511502973503,
+          "most_pull_too_high": true,
+          "diffs": [
+            -0.82128211608104,
+            -0.7074633253955014,
+            -0.7295052432846632,
+            -0.6332150749578958,
+            -0.24185285703700288,
+            0.16608328692939978,
+            0.5284879629029717,
+            0.8212837870548597
+          ],
+          "diffs_minus_free_play": [
+            -0.6112821160810399,
+            -0.4974633253955013,
+            -0.5195052432846631,
+            -0.4232150749578957,
+            -0.0318528570370028,
+            0.0,
+            0.31848796290297166,
+            0.6112837870548596
+          ],
+          "max_diff_minus_free_play": 0.6112837870548596,
+          "max_chain_angle": 1.1031856762613585,
+          "cable_pull_at_max_chain_angle": 26.263192735062965,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -1.1031826602772072,
+            -0.897754813250018,
+            -0.9375365733970817,
+            -0.7637529369981289,
+            -0.05748140408819981,
+            0.0,
+            0.5747503037230045,
+            1.1031856762613585
+          ]
+        },
+        "motionMultiplier": 1.0682272940840059
       }
     ],
     "shifterType": "drop-bar",
@@ -1516,7 +1761,7 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
-        "confidence": 0.07904732643256109,
+        "confidence": 0.07869114933094631,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.15011279346398884,
@@ -1577,7 +1822,7 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
-        "confidence": 0.16878992314736457,
+        "confidence": 0.15187504514301622,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.0,

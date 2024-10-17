@@ -1,7 +1,7 @@
 {
-  "motionMultiplierAvg": 1.0177437066632422,
-  "motionMultiplierStdev": 0.020815572774060712,
-  "maxChainAngleAvg": 0.45142935549981517,
-  "maxChainAngleStdev": 0.3473599156252773,
-  "maxChainAngleMax": 1.1461491867503697
+  "motionMultiplierAvg": 1.0239452379544323,
+  "motionMultiplierStdev": 0.024317763977364616,
+  "maxChainAngleAvg": 0.45139880390824283,
+  "maxChainAngleStdev": 0.3473002598766641,
+  "maxChainAngleMax": 1.145999323661571
 }

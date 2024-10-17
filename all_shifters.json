@@ -24,7 +24,7 @@
   },
   {
     "brand": "Microshift",
-    "name": "Advent X",
+    "name": "Advent X 10-Speed",
     "partNumber": "SB-M100A",
     "type": "drop-bar",
     "speeds": 10,
@@ -45,7 +45,7 @@
   },
   {
     "brand": "Sensah",
-    "name": "Team Pro",
+    "name": "Team Pro 11-speed",
     "partNumber": "sensah-team-pro-11",
     "type": "drop-bar",
     "speeds": 11,
@@ -87,7 +87,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Deore",
+    "name": "Deore 10-Speed",
     "partNumber": "SL-M4100",
     "type": "flat-bar",
     "speeds": 10,
@@ -108,7 +108,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Deore",
+    "name": "Deore 11-Speed",
     "partNumber": "SL-M5100",
     "type": "flat-bar",
     "speeds": 11,
@@ -130,7 +130,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "SLX",
+    "name": "SLX 12-Speed",
     "partNumber": "SL-M7100",
     "type": "flat-bar",
     "speeds": 12,
@@ -153,7 +153,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra",
+    "name": "Ultegra 11-Speed",
     "partNumber": "ST-R8020",
     "type": "drop-bar",
     "speeds": 11,
@@ -175,7 +175,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra",
+    "name": "Ultegra 10-Speed",
     "partNumber": "ST-6600",
     "type": "drop-bar",
     "speeds": 10,
@@ -196,7 +196,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra",
+    "name": "Ultegra 10-Speed",
     "partNumber": "ST-6700",
     "type": "drop-bar",
     "speeds": 10,
@@ -240,7 +240,7 @@
   },
   {
     "brand": "SRAM",
-    "name": "GX",
+    "name": "GX 10-Speed",
     "partNumber": "SL-GX-A1",
     "type": "flat-bar",
     "speeds": 10,
@@ -261,7 +261,7 @@
   },
   {
     "brand": "SRAM",
-    "name": "SX",
+    "name": "SX 12-Speed",
     "partNumber": "SL-SX-1-A1",
     "type": "flat-bar",
     "speeds": 12,

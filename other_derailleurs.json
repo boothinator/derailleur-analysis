@@ -5,7 +5,7 @@
     "partNumber": "RD-APX-1-A1",
     "compatibleWith": null,
     "photoUrl": null,
-    "pullRatio": 1.28,
+    "pullRatio": 1.22,
     "physicalLowLimit": 12.5,
     "physicalHighLimit": 53.0,
     "coefficients": [ 12.4, 1.143, 0.0137, -0.000372 ],
