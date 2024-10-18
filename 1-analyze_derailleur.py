@@ -124,7 +124,7 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   plt.savefig(graph_file)
 
   with open(input_file.replace('.csv', '.json'), "w") as infofile:
-    json.dump(info, infofile)
+    json.dump(info, infofile, indent=2)
   
   return info
 
@@ -158,17 +158,22 @@ def calc_pull_ratio(info, coefficients, max_pull):
 
   curve = np.polynomial.polynomial.Polynomial(coefficients)
 
-  smallest_cog_pull = [r for r in (curve - small_cog_position).roots()
-                              if r >= 0 and r < max_pull][0]
+  smallest_cog_pull = [r for r in (curve - small_cog_position).roots() if r >= 0][0]
+  if smallest_cog_pull > max_pull:
+    print(f"Warning: smallest_cog_pull {smallest_cog_pull} > max_pull {max_pull}")
 
-  second_smallest_cog_pull = [r for r in (curve - second_smallest_cog_position).roots()
-                              if r >= 0 and r < max_pull][0]
+  second_smallest_cog_pull = [r for r in (curve - second_smallest_cog_position).roots() if r >= 0][0]
+  if second_smallest_cog_pull > max_pull:
+    print(f"Warning: second_smallest_cog_pull {second_smallest_cog_pull} > max_pull {max_pull}")
   
-  second_biggest_cog_pull = [r for r in (curve - second_biggest_cog_position).roots()
-                              if r >= 0 and r < max_pull][0]
+  second_biggest_cog_pull = [r for r in (curve - second_biggest_cog_position).roots() if r >= 0][0]
+  if second_biggest_cog_pull > max_pull:
+    print(f"Warning: second_biggest_cog_pull {second_biggest_cog_pull} > max_pull {max_pull}")
 
-  biggest_cog_pull = [r for r in (curve - biggest_cog_position).roots()
-                              if r >= 0 and r < max_pull][0]
+  biggest_cog_pull = [r for r in (curve - biggest_cog_position).roots() if r >= 0][0]
+  if biggest_cog_pull > max_pull:
+    print(f"Warning: biggest_cog_pull {biggest_cog_pull} > max_pull {max_pull}")
+  
 
   pull_ratio = total_pitch_inner_cogs/(second_biggest_cog_pull - second_smallest_cog_pull)
 
@@ -195,9 +200,11 @@ def process_der(dir):
   max_pulls = []
 
   run_types = []
+  run_files = []
 
   for datafile in os.listdir(f"derailleurs/{dir}/pullratio"):
     if datafile.endswith('.csv'):
+      run_files.append(datafile)
       result = analyze(f"derailleurs/{dir}/pullratio/{datafile}", info["jockeyWheelThickness"], info["distanceFromCarriageToJockeyWheel"])
       coefs.append(result["coef"])
       max_pulls.append(result["max_pull"])
@@ -212,7 +219,12 @@ def process_der(dir):
   coefs = np.array(coefs)
   max_pull = np.mean(max_pulls)
 
-  run_pr_calcs = [calc_pull_ratio(info, c, max_pull) for c in coefs]
+  run_pr_calcs = []
+  for c,file in zip(coefs, run_files):
+    try:
+      run_pr_calcs.append(calc_pull_ratio(info, c, max_pull))
+    except Exception as ex:
+      raise Exception(f"Error calculating pull ratio for {file}: {ex}")
 
   pulling_pr_calcs = [c for t, c in zip(run_types, run_pr_calcs) if t == 'pulling']
   relaxing_pr_calcs = [c for t, c in zip(run_types, run_pr_calcs) if t == 'relaxing']
@@ -287,8 +299,8 @@ for dir in os.listdir('derailleurs'):
     continue
 
   # TESTING
-  #if dir != "Shimano CUES 9-Speed":
-  #  continue
+  if dir != "Shimano CUES 9-Speed":
+    continue
 
   print(dir)
 
