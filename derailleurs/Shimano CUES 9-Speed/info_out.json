@@ -1,0 +1,29 @@
+{
+  "brand": "Shimano",
+  "name": "CUES 9-Speed",
+  "partNumber": "RD-U4020",
+  "designSpeeds": 9,
+  "designCogPitch": 4.05,
+  "distanceFromCarriageToJockeyWheel": 35.47,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": null,
+  "maxDropoutWidth": null,
+  "smallCogOffset": null,
+  "oneByOnly": false,
+  "chain": "11-speed",
+  "maxTooth": 36,
+  "chainWrap": 41,
+  "pullRatio": 1.11243610114714,
+  "coefficients": [
+    7.712042433306082,
+    0.987005711714981,
+    0.005714904800228712,
+    -7.386152112772976e-05
+  ],
+  "physicalLowLimit": 7.712042433306082,
+  "physicalHighLimit": 52.99603347034908,
+  "Pull Ratio Averaged Across Pulling Runs": "1.109 +/- 0.004",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.116 +/- 0.012",
+  "Pull Ratio Averaged Across All Runs": "1.113 +/- 0.012",
+  "Pull Ratio 95% Confidence Interval": "1.101 to 1.124"
+}
