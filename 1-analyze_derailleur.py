@@ -107,16 +107,12 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   x_new = np.linspace(cable_pull[0], cable_pull[-1], 50)
   y_new = result(x_new)
 
-  print(result.convert().coef)
-
   # TODO: make this automatic, and make it work across different runs
   # In fact, I really need to write the code for combining runs
   starting_pull = 4
   ending_pull = 32
 
   pull_ratio = (result(ending_pull) - result(starting_pull))/(ending_pull - starting_pull)
-
-  print(pull_ratio)
 
   info = {
     "coef": [x for x in result.convert().coef],
@@ -139,9 +135,14 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   return info
 
 for dir in os.listdir('derailleurs'):
-  # TESTING
-  if dir != "Shimano 105 11-speed":
+  if dir == "template":
     continue
+
+  # TESTING
+  #if dir != "Shimano 105 11-speed":
+  #  continue
+
+  print(dir)
 
   with open(f"derailleurs/{dir}/info.json") as info_file:
     info = json.load(info_file)
@@ -151,7 +152,6 @@ for dir in os.listdir('derailleurs'):
 
   for datafile in os.listdir(f"derailleurs/{dir}/pullratio"):
     if datafile.endswith('.csv'):
-      print(datafile)
       result = analyze(f"derailleurs/{dir}/pullratio/{datafile}", info["jockeyWheelThickness"], info["distanceFromCarriageToJockeyWheel"])
       coefs.append(result["coef"])
       max_pulls.append(result["max_pull"])
@@ -191,6 +191,8 @@ for dir in os.listdir('derailleurs'):
                               if r >= 0 and r < max_pull][0]
 
   pull_ratio = total_pitch_inner_cogs/(second_biggest_cog_pull - second_smallest_cog_pull)
+
+  print(curve.convert().coef)
   print(pull_ratio)
   
   x_new = np.linspace(0, max_pull, 50)
