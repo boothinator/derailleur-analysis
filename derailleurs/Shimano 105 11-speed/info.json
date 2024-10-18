@@ -1,0 +1,16 @@
+{
+  "brand": "Shimano",
+  "name": "105 11-Speed",
+  "partNumber": "RD-5800",
+  "designSpeeds": 11,
+  "designCogPitch": 3.95,
+  "distanceFromCarriageToJockeyWheel": 34.49,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": null,
+  "maxDropoutWidth": null,
+  "smallCogOffset": null,
+  "oneByOnly": false,
+  "chain": "10-speed",
+  "maxTooth": 32,
+  "chainWrap": 37
+}
