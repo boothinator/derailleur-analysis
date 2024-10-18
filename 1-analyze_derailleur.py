@@ -203,14 +203,37 @@ for dir in os.listdir('derailleurs'):
   coefs = []
   max_pulls = []
 
+  run_types = []
+
   for datafile in os.listdir(f"derailleurs/{dir}/pullratio"):
     if datafile.endswith('.csv'):
       result = analyze(f"derailleurs/{dir}/pullratio/{datafile}", info["jockeyWheelThickness"], info["distanceFromCarriageToJockeyWheel"])
       coefs.append(result["coef"])
       max_pulls.append(result["max_pull"])
+
+      if datafile.lower().find("pulling") >= 0:
+        run_types.append('pulling')
+      elif datafile.lower().find("relaxing") >= 0:
+        run_types.append('relaxing')
+      else:
+        raise Exception(f"File {datafile} not pulling or relaxing!")
     
   coefs = np.array(coefs)
   max_pull = np.mean(max_pulls)
+
+  run_pr_calcs = [calc_pull_ratio(info, c) for c in coefs]
+
+  pulling_pr_calcs = [c for t, c in zip(run_types, run_pr_calcs) if t == 'pulling']
+  relaxing_pr_calcs = [c for t, c in zip(run_types, run_pr_calcs) if t == 'relaxing']
+
+  pulling_pull_ratio_avg = np.mean([c.pull_ratio for c in pulling_pr_calcs])
+  pulling_pull_ratio_stdev = np.std([c.pull_ratio for c in pulling_pr_calcs])
+
+  relaxing_pull_ratio_avg = np.mean([c.pull_ratio for c in relaxing_pr_calcs])
+  relaxing_pull_ratio_stdev = np.std([c.pull_ratio for c in relaxing_pr_calcs])
+
+  pull_ratio_avg = np.mean([c.pull_ratio for c in run_pr_calcs])
+  pull_ratio_stdev = np.std([c.pull_ratio for c in run_pr_calcs])
 
   avg_coefs = np.mean(coefs.T, 1)
 
@@ -218,9 +241,17 @@ for dir in os.listdir('derailleurs'):
   pr_calc = calc_pull_ratio(info, avg_coefs)
 
   curve = np.polynomial.polynomial.Polynomial(pr_calc.coefficients)
+  
+  print(f"Best Fit Curve Coefficients: {pr_calc.coefficients[0]:.2f}, {pr_calc.coefficients[1]:.3f}, {pr_calc.coefficients[2]:.5f}, {pr_calc.coefficients[3]:.6f}, ")
 
-  print(pr_calc.coefficients)
-  print(pr_calc.pull_ratio)
+  print(f"Pull Ratio Averaged Across Pulling Runs: {round(pulling_pull_ratio_avg, 3):.3f} +/- {round(2*pulling_pull_ratio_stdev, 3):.3f}")
+  print(f"Pull Ratio Averaged Across Relaxing Runs: {round(relaxing_pull_ratio_avg, 3):.3f} +/- {round(2*relaxing_pull_ratio_stdev, 3):.3f}")
+  print(f"Pull Ratio Averaged Across All Runs: {round(pull_ratio_avg, 3):.3f} +/- {round(2*pull_ratio_stdev, 3):.3f}")
+  print(f"Pull Ratio 95% Confidence Interval: {round(pull_ratio_avg - 2 * pull_ratio_stdev, 3):.3f} to {round(pull_ratio_avg + 2 * pull_ratio_stdev, 3):.3f}")
+  print(f"Pull Ratio of Best Fit Curve: {round(pr_calc.pull_ratio, 3):.3f}")
+
+  if round(pr_calc.pull_ratio, 2) != round(pull_ratio_avg, 2):
+    raise Exception("Pull ratio of best fit curve not the same as the average over all runs!")
   
   x_new = np.linspace(0, max_pull, 50)
   y_new = curve(x_new)
