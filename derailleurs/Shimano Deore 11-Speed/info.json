@@ -1,0 +1,16 @@
+{
+  "brand": "Shimano",
+  "name": "Deore 11-Speed",
+  "partNumber": "RD-M4120",
+  "designSpeeds": 11,
+  "designCogPitch": 3.75,
+  "distanceFromCarriageToJockeyWheel": 34.34,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": null,
+  "maxDropoutWidth": null,
+  "smallCogOffset": null,
+  "oneByOnly": false,
+  "chain": "11-speed",
+  "maxTooth": 42,
+  "chainWrap": 41
+}

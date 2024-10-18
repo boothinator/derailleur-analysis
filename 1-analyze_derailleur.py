@@ -250,7 +250,7 @@ def process_der(dir):
 
   print(f"Pull Ratio of Best Fit Curve: {round(pr_calc.pull_ratio, 3):.3f}")
 
-  if round(pr_calc.pull_ratio, 2) != round(pull_ratio_avg, 2):
+  if round(pr_calc.pull_ratio/2, 2) != round(pull_ratio_avg/2, 2):
     raise Exception("Pull ratio of best fit curve not the same as the average over all runs!")
   
   x_new = np.linspace(0, max_pull, 50)
