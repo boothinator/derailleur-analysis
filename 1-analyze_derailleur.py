@@ -142,7 +142,7 @@ class PullRatioInfo(BaseModel):
   coefficients: list[float]
 
 
-def calc_pull_ratio(info, coefficients):
+def calc_pull_ratio(info, coefficients, max_pull):
   if info["minDropoutWidth"] != None and info["maxDropoutWidth"] != None:
     dropout_width = (info["minDropoutWidth"] + info["maxDropoutWidth"])/2
   else:
@@ -186,17 +186,8 @@ def calc_pull_ratio(info, coefficients):
     coefficients=curve.convert().coef
     )
 
-
-for dir in os.listdir('derailleurs'):
-  if dir == "template":
-    continue
-
-  # TESTING
-  if dir != "Shimano 105 11-speed":
-    continue
-
-  print(dir)
-
+def process_der(dir):
+  
   with open(f"derailleurs/{dir}/info.json") as info_file:
     info = json.load(info_file)
   
@@ -221,7 +212,7 @@ for dir in os.listdir('derailleurs'):
   coefs = np.array(coefs)
   max_pull = np.mean(max_pulls)
 
-  run_pr_calcs = [calc_pull_ratio(info, c) for c in coefs]
+  run_pr_calcs = [calc_pull_ratio(info, c, max_pull) for c in coefs]
 
   pulling_pr_calcs = [c for t, c in zip(run_types, run_pr_calcs) if t == 'pulling']
   relaxing_pr_calcs = [c for t, c in zip(run_types, run_pr_calcs) if t == 'relaxing']
@@ -238,7 +229,7 @@ for dir in os.listdir('derailleurs'):
   avg_coefs = np.mean(coefs.T, 1)
 
   # Calculate pull ratio
-  pr_calc = calc_pull_ratio(info, avg_coefs)
+  pr_calc = calc_pull_ratio(info, avg_coefs, max_pull)
 
   curve = np.polynomial.polynomial.Polynomial(pr_calc.coefficients)
   
@@ -288,3 +279,17 @@ for dir in os.listdir('derailleurs'):
   
   with open(f"derailleurs/{dir}/info_out.json", "w") as info_file:
     json.dump(info_out, info_file, indent=2)
+
+
+
+for dir in os.listdir('derailleurs'):
+  if dir == "template":
+    continue
+
+  # TESTING
+  #if dir != "Shimano CUES 9-Speed":
+  #  continue
+
+  print(dir)
+
+  process_der(dir)
