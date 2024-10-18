@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import json
+from pydantic import BaseModel
 
 extrusion_thickness=19.93
 
@@ -107,13 +108,6 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   x_new = np.linspace(cable_pull[0], cable_pull[-1], 50)
   y_new = result(x_new)
 
-  # TODO: make this automatic, and make it work across different runs
-  # In fact, I really need to write the code for combining runs
-  starting_pull = 4
-  ending_pull = 32
-
-  pull_ratio = (result(ending_pull) - result(starting_pull))/(ending_pull - starting_pull)
-
   info = {
     "coef": [x for x in result.convert().coef],
     "extrusion_to_carriage_slack": extrusion_to_carriage_slack,
@@ -134,13 +128,72 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   
   return info
 
+class PullRatioInfo(BaseModel):
+  dropout_width: float
+  small_cog_offset: float
+  small_cog_position: float
+  smallest_cog_pull: float
+  second_smallest_cog_pull: float
+  second_biggest_cog_pull: float
+  biggest_cog_pull: float
+  biggest_cog_position: float
+  total_pitch_inner_cogs: float
+  pull_ratio: float
+  coefficients: list[float]
+
+
+def calc_pull_ratio(info, coefficients):
+  if info["minDropoutWidth"] != None and info["maxDropoutWidth"] != None:
+    dropout_width = (info["minDropoutWidth"] + info["maxDropoutWidth"])/2
+  else:
+    dropout_width = 8
+  small_cog_offset = info["smallCogOffset"] if info["smallCogOffset"] != None else 3
+  small_cog_position = dropout_width + small_cog_offset
+  biggest_cog_position = small_cog_position + info["designCogPitch"] * (info["designSpeeds"] - 1)
+  second_smallest_cog_position = info["designCogPitch"] + small_cog_position
+
+  total_pitch_inner_cogs = info["designCogPitch"] * (info["designSpeeds"] - 3)
+
+  second_biggest_cog_position = second_smallest_cog_position + total_pitch_inner_cogs
+
+  curve = np.polynomial.polynomial.Polynomial(coefficients)
+
+  smallest_cog_pull = [r for r in (curve - small_cog_position).roots()
+                              if r >= 0 and r < max_pull][0]
+
+  second_smallest_cog_pull = [r for r in (curve - second_smallest_cog_position).roots()
+                              if r >= 0 and r < max_pull][0]
+  
+  second_biggest_cog_pull = [r for r in (curve - second_biggest_cog_position).roots()
+                              if r >= 0 and r < max_pull][0]
+
+  biggest_cog_pull = [r for r in (curve - biggest_cog_position).roots()
+                              if r >= 0 and r < max_pull][0]
+
+  pull_ratio = total_pitch_inner_cogs/(second_biggest_cog_pull - second_smallest_cog_pull)
+
+  return PullRatioInfo(
+    dropout_width=dropout_width,
+    small_cog_offset=small_cog_offset,
+    small_cog_position=small_cog_position,
+    smallest_cog_pull=smallest_cog_pull,
+    second_smallest_cog_pull=second_smallest_cog_pull,
+    second_biggest_cog_pull=second_biggest_cog_pull,
+    biggest_cog_pull=biggest_cog_pull,
+    biggest_cog_position=biggest_cog_position,
+    total_pitch_inner_cogs=total_pitch_inner_cogs,
+    pull_ratio=pull_ratio,
+    coefficients=curve.convert().coef
+    )
+
+
 for dir in os.listdir('derailleurs'):
   if dir == "template":
     continue
 
   # TESTING
-  #if dir != "Shimano 105 11-speed":
-  #  continue
+  if dir != "Shimano 105 11-speed":
+    continue
 
   print(dir)
 
@@ -162,38 +215,12 @@ for dir in os.listdir('derailleurs'):
   avg_coefs = np.mean(coefs.T, 1)
 
   # Calculate pull ratio
+  pr_calc = calc_pull_ratio(info, avg_coefs)
 
-  if info["minDropoutWidth"] != None and info["maxDropoutWidth"] != None:
-    dropout_width = (info["minDropoutWidth"] + info["maxDropoutWidth"])/2
-  else:
-    dropout_width = 8
-  small_cog_offset = info["smallCogOffset"] if info["smallCogOffset"] != None else 3
-  small_cog_position = dropout_width + small_cog_offset
-  biggest_cog_position = small_cog_position + info["designCogPitch"] * (info["designSpeeds"] - 1)
-  second_smallest_cog_position = info["designCogPitch"] + small_cog_position
+  curve = np.polynomial.polynomial.Polynomial(pr_calc.coefficients)
 
-  total_pitch_inner_cogs = info["designCogPitch"] * (info["designSpeeds"] - 3)
-
-  second_biggest_cog_position = second_smallest_cog_position + total_pitch_inner_cogs
-
-  curve = np.polynomial.polynomial.Polynomial(avg_coefs)
-
-  smallest_cog_pull = [r for r in (curve - small_cog_position).roots()
-                              if r >= 0 and r < max_pull][0]
-
-  second_smallest_cog_pull = [r for r in (curve - second_smallest_cog_position).roots()
-                              if r >= 0 and r < max_pull][0]
-  
-  second_biggest_cog_pull = [r for r in (curve - second_biggest_cog_position).roots()
-                              if r >= 0 and r < max_pull][0]
-
-  biggest_cog_pull = [r for r in (curve - biggest_cog_position).roots()
-                              if r >= 0 and r < max_pull][0]
-
-  pull_ratio = total_pitch_inner_cogs/(second_biggest_cog_pull - second_smallest_cog_pull)
-
-  print(curve.convert().coef)
-  print(pull_ratio)
+  print(pr_calc.coefficients)
+  print(pr_calc.pull_ratio)
   
   x_new = np.linspace(0, max_pull, 50)
   y_new = curve(x_new)
@@ -208,21 +235,21 @@ for dir in os.listdir('derailleurs'):
   x_new = np.linspace(0, max_pull, 50)
   y_new = pull_ratio_curve(x_new)
 
-  x_pr = [smallest_cog_pull, biggest_cog_pull]
-  y_pr = [pull_ratio, pull_ratio]
+  x_pr = [pr_calc.smallest_cog_pull, pr_calc.biggest_cog_pull]
+  y_pr = [pr_calc.pull_ratio, pr_calc.pull_ratio]
 
-  x_cogs = [second_smallest_cog_pull, second_biggest_cog_pull]
-  y_cogs = [pull_ratio, pull_ratio]
+  x_cogs = [pr_calc.second_smallest_cog_pull, pr_calc.second_biggest_cog_pull]
+  y_cogs = [pr_calc.pull_ratio, pr_calc.pull_ratio]
   
   plt.clf()
   plt.plot(x_new, y_new, x_pr, y_pr, x_cogs, y_cogs, "o")
   plt.xlim([0, max_pull])
-  plt.ylim([0, pull_ratio*1.4])
+  plt.ylim([0, pr_calc.pull_ratio*1.4])
   plt.savefig(f"derailleurs/{dir}/pull_ratio_curve.png")
 
 
   info_out = {**info,
-              "pullRatio": pull_ratio,
+              "pullRatio": pr_calc.pull_ratio,
               "coefficients": [c for c in avg_coefs],
               "physicalLowLimit": curve(0),
               "physicalHighLimit": curve(max_pull)
