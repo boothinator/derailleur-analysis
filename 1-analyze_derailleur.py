@@ -20,7 +20,7 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   for row in data:
     for key in row.keys():
       if len(row[key]) == 0:
-        row[key] = 0.0
+        row[key] = np.nan
       else:
         row[key] = float(row[key])
     
@@ -35,24 +35,24 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
 
   # I didn't used to record the exact puller location. If there's no puller data,
   # calculate it as the row number / 3
-  calculate_puller_meas = len([1 for row in data if row["Puller Meas. (neg) (mm)"] != 0]) == 0
+  calculate_puller_meas = len([1 for row in data if not np.isnan(row["Puller Meas. (neg) (mm)"])]) == 0
 
   prev_row = {
-    "Puller Indicator After Move (neg) (mm)": 0,
+    "Puller Indicator After Move (neg) (mm)": np.nan,
     "Puller Meas. (neg) (mm)": 0,
     "Puller Indicator Offset (mm)": 0,
-    "Carriage Indicator After Move (mm)": 0,
+    "Carriage Indicator After Move (mm)": np.nan,
     "Carriage Meas. (mm)": 0,
     "Carriage Indicator Offset (mm)": 0
   }
   for i, row in enumerate(data):
-    if prev_row["Puller Indicator After Move (neg) (mm)"] == 0:
+    if np.isnan(prev_row["Puller Indicator After Move (neg) (mm)"]):
       row["Puller Indicator Offset (mm)"] = prev_row["Puller Indicator Offset (mm)"]
     else:    
       row["Puller Indicator Offset (mm)"] = prev_row["Puller Meas. (neg) (mm)"] \
                                             - prev_row["Puller Indicator After Move (neg) (mm)"]
     
-    if prev_row["Carriage Indicator After Move (mm)"] == 0:
+    if np.isnan(prev_row["Carriage Indicator After Move (mm)"]):
       row["Carriage Indicator Offset (mm)"] = prev_row["Carriage Indicator Offset (mm)"]
     else:
       row["Carriage Indicator Offset (mm)"] = prev_row["Carriage Meas. (mm)"]\
@@ -204,6 +204,7 @@ def process_der(dir):
 
   for datafile in os.listdir(f"derailleurs/{dir}/pullratio"):
     if datafile.endswith('.csv'):
+      print(f"Processing {datafile}")
       run_files.append(datafile)
       result = analyze(f"derailleurs/{dir}/pullratio/{datafile}", info["jockeyWheelThickness"], info["distanceFromCarriageToJockeyWheel"])
       coefs.append(result["coef"])
@@ -299,8 +300,8 @@ for dir in os.listdir('derailleurs'):
     continue
 
   # TESTING
-  if dir != "Shimano CUES 9-Speed":
-    continue
+  #if dir != "Shimano CUES 9-Speed":
+  #  continue
 
   print(dir)
 

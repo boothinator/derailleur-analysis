@@ -21,5 +21,9 @@
     -0.0003748554592123232
   ],
   "physicalLowLimit": 10.53397260009244,
-  "physicalHighLimit": 55.59443424396477
+  "physicalHighLimit": 55.59443424396477,
+  "Pull Ratio Averaged Across Pulling Runs": "1.279 +/- 0.000",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.281 +/- 0.000",
+  "Pull Ratio Averaged Across All Runs": "1.280 +/- 0.002",
+  "Pull Ratio 95% Confidence Interval": "1.278 to 1.281"
 }

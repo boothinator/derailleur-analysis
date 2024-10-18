@@ -1,1 +1,11 @@
-{"coef": [9.275830177946332, 1.1588254730373733, 0.018637333628056207, -0.00032613454931484194], "extrusion_to_carriage_slack": 64.42, "extrusion_to_carriage_max_pull": 110.95, "max_pull": 33.0}
+{
+  "coef": [
+    9.275830177946332,
+    1.1588254730373733,
+    0.018637333628056207,
+    -0.00032613454931484194
+  ],
+  "extrusion_to_carriage_slack": 64.42,
+  "extrusion_to_carriage_max_pull": 110.95,
+  "max_pull": 33.0
+}
