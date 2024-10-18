@@ -19,7 +19,7 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   for row in data:
     for key in row.keys():
       if len(row[key]) == 0:
-        row[key] = 0
+        row[key] = 0.0
       else:
         row[key] = float(row[key])
     
@@ -32,6 +32,10 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
 
   # Calculate additional columns
 
+  # I didn't used to record the exact puller location. If there's no puller data,
+  # calculate it as the row number / 3
+  calculate_puller_meas = len([1 for row in data if row["Puller Meas. (neg) (mm)"] != 0]) == 0
+
   prev_row = {
     "Puller Indicator After Move (neg) (mm)": 0,
     "Puller Meas. (neg) (mm)": 0,
@@ -40,7 +44,7 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
     "Carriage Meas. (mm)": 0,
     "Carriage Indicator Offset (mm)": 0
   }
-  for row in data:
+  for i, row in enumerate(data):
     if prev_row["Puller Indicator After Move (neg) (mm)"] == 0:
       row["Puller Indicator Offset (mm)"] = prev_row["Puller Indicator Offset (mm)"]
     else:    
@@ -53,7 +57,10 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
       row["Carriage Indicator Offset (mm)"] = prev_row["Carriage Meas. (mm)"]\
                                               - prev_row["Carriage Indicator After Move (mm)"]
     
-    row["Cable Pull (mm)"] = row["Puller Meas. (neg) (mm)"] + row["Puller Indicator Offset (mm)"]
+    if calculate_puller_meas:
+      row["Cable Pull (mm)"] = i / 3
+    else:
+      row["Cable Pull (mm)"] = row["Puller Meas. (neg) (mm)"] + row["Puller Indicator Offset (mm)"]
     row["Jockey Position (mm)"] = row["Carriage Meas. (mm)"] + row["Carriage Indicator Offset (mm)"] \
                                   + jockey_wheel_center_at_full_slack
     
@@ -132,6 +139,10 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   return info
 
 for dir in os.listdir('derailleurs'):
+  # TESTING
+  if dir != "Shimano 105 11-speed":
+    continue
+
   with open(f"derailleurs/{dir}/info.json") as info_file:
     info = json.load(info_file)
   
@@ -152,8 +163,11 @@ for dir in os.listdir('derailleurs'):
 
   # Calculate pull ratio
 
-  dropout_width = (info["minDropoutWidth"] + info["maxDropoutWidth"])/2
-  small_cog_offset = info["smallCogOffset"]
+  if info["minDropoutWidth"] != None and info["maxDropoutWidth"] != None:
+    dropout_width = (info["minDropoutWidth"] + info["maxDropoutWidth"])/2
+  else:
+    dropout_width = 8
+  small_cog_offset = info["smallCogOffset"] if info["smallCogOffset"] != None else 3
   small_cog_position = dropout_width + small_cog_offset
   biggest_cog_position = small_cog_position + info["designCogPitch"] * (info["designSpeeds"] - 1)
   second_smallest_cog_position = info["designCogPitch"] + small_cog_position
@@ -178,17 +192,6 @@ for dir in os.listdir('derailleurs'):
 
   pull_ratio = total_pitch_inner_cogs/(second_biggest_cog_pull - second_smallest_cog_pull)
   print(pull_ratio)
-
-
-  info_out = {**info,
-              "pullRatio": pull_ratio,
-              "coefficients": [c for c in avg_coefs],
-              "physicalLowLimit": curve(0),
-              "physicalHighLimit": curve(max_pull)
-              }
-  
-  with open(f"derailleurs/{dir}/info_out.json", "w") as info_file:
-    json.dump(info_out, info_file, indent=2)
   
   x_new = np.linspace(0, max_pull, 50)
   y_new = curve(x_new)
@@ -214,3 +217,14 @@ for dir in os.listdir('derailleurs'):
   plt.xlim([0, max_pull])
   plt.ylim([0, pull_ratio*1.4])
   plt.savefig(f"derailleurs/{dir}/pull_ratio_curve.png")
+
+
+  info_out = {**info,
+              "pullRatio": pull_ratio,
+              "coefficients": [c for c in avg_coefs],
+              "physicalLowLimit": curve(0),
+              "physicalHighLimit": curve(max_pull)
+              }
+  
+  with open(f"derailleurs/{dir}/info_out.json", "w") as info_file:
+    json.dump(info_out, info_file, indent=2)
