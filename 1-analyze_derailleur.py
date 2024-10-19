@@ -175,19 +175,27 @@ def calc_pull_ratio(info, coefficients, max_pull):
 
   smallest_cog_pull = [r for r in (curve - small_cog_position).roots() if r >= 0][0]
   if smallest_cog_pull > max_pull:
-    print(f"Warning: smallest_cog_pull {smallest_cog_pull} > max_pull {max_pull}")
+    print(f"Warning: smallest_cog_pull {smallest_cog_pull} > max_pull {max_pull}", (curve - small_cog_position).roots())
+    print("dropout_width", dropout_width)
+    print("small_cog_offset", small_cog_offset)
 
   second_smallest_cog_pull = [r for r in (curve - second_smallest_cog_position).roots() if r >= 0][0]
   if second_smallest_cog_pull > max_pull:
-    print(f"Warning: second_smallest_cog_pull {second_smallest_cog_pull} > max_pull {max_pull}")
+    print(f"Warning: second_smallest_cog_pull {second_smallest_cog_pull} > max_pull {max_pull}", (curve - second_smallest_cog_position).roots())
+    print("dropout_width", dropout_width)
+    print("small_cog_offset", small_cog_offset)
   
   second_biggest_cog_pull = [r for r in (curve - second_biggest_cog_position).roots() if r >= 0][0]
   if second_biggest_cog_pull > max_pull:
-    print(f"Warning: second_biggest_cog_pull {second_biggest_cog_pull} > max_pull {max_pull}")
+    print(f"Warning: second_biggest_cog_pull {second_biggest_cog_pull} > max_pull {max_pull}",(curve - second_biggest_cog_position).roots())
+    print("dropout_width", dropout_width)
+    print("small_cog_offset", small_cog_offset)
 
   biggest_cog_pull = [r for r in (curve - biggest_cog_position).roots() if r >= 0][0]
   if biggest_cog_pull > max_pull:
-    print(f"Warning: biggest_cog_pull {biggest_cog_pull} > max_pull {max_pull}")
+    print(f"Warning: biggest_cog_pull {biggest_cog_pull} > max_pull {max_pull}",(curve - biggest_cog_position).roots())
+    print("dropout_width", dropout_width)
+    print("small_cog_offset", small_cog_offset)
   
 
   pull_ratio = total_pitch_inner_cogs/(second_biggest_cog_pull - second_smallest_cog_pull)
@@ -315,7 +323,7 @@ for dir in os.listdir('derailleurs'):
     continue
 
   # TESTING
-  #if dir != "Shimano GRX 10-Speed":
+  #if dir != "Tiagra 4600 10-Speed":
   #  continue
 
   print(dir)
