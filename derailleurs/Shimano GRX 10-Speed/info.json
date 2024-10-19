@@ -1,0 +1,16 @@
+{
+  "brand": "Shimano",
+  "name": "GRX",
+  "partNumber": "RD-RX400",
+  "designSpeeds": 10,
+  "designCogPitch": 3.95,
+  "distanceFromCarriageToJockeyWheel": 33.32,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": null,
+  "maxDropoutWidth": null,
+  "smallCogOffset": null,
+  "oneByOnly": false,
+  "chain": "10-speed",
+  "maxTooth": 36,
+  "chainWrap": 41
+}
