@@ -8,12 +8,12 @@
   "jockeyWheelThickness": 2.2,
   "minDropoutWidth": null,
   "maxDropoutWidth": null,
-  "smallCogOffset": null,
+  "smallCogOffset": 3.2,
   "oneByOnly": false,
   "chain": "10-speed",
   "maxTooth": 36,
   "chainWrap": 41,
-  "pullRatio": 1.4436749107420788,
+  "pullRatio": 1.4451541692394148,
   "coefficients": [
     10.610392334722084,
     1.1175846530114248,
@@ -22,8 +22,8 @@
   ],
   "physicalLowLimit": 10.610392334722084,
   "physicalHighLimit": 56.620199149895974,
-  "Pull Ratio Averaged Across Pulling Runs": "1.429 +/- 0.029",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.458 +/- 0.008",
-  "Pull Ratio Averaged Across All Runs": "1.444 +/- 0.036",
-  "Pull Ratio 95% Confidence Interval": "1.407 to 1.480"
+  "Pull Ratio Averaged Across Pulling Runs": "1.431 +/- 0.030",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.460 +/- 0.008",
+  "Pull Ratio Averaged Across All Runs": "1.445 +/- 0.036",
+  "Pull Ratio 95% Confidence Interval": "1.409 to 1.481"
 }

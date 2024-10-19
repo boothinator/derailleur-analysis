@@ -1,0 +1,65 @@
+{% extends "main_template.htm" %}
+
+{% block title %}
+{{ info.brand }} {{ info.name }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ info.brand }} {{ info.name }}</h1>
+<table>
+  <tr>
+    <th>Part Number</th>
+    <td>{{info.partNumber}}</td>
+  </tr>
+  <tr>
+    <th>Pull Ratio</th>
+    <td>{{"%.2f" | format(info.pullRatio)}}</td>
+  </tr>
+  <tr>
+    <th>Curve Coefficients</th>
+    <td>{{info.coefficients}}</td>
+  </tr>
+  <tr>
+    <th>Physical Low Limit</th>
+    <td>{{"%.2f" | format(info.physicalLowLimit)}}</td>
+  </tr>
+  <tr>
+    <th>Physical High Limit</th>
+    <td>{{"%.2f" | format(info.physicalHighLimit)}}</td>
+  </tr>
+  <tr>
+    <th>Pull Ratio Averaged Across Pulling Runs</th>
+    <td>{{info["Pull Ratio Averaged Across Pulling Runs"]}}</td>
+  </tr>
+  <tr>
+    <th>Pull Ratio Averaged Across Relaxing Runs</th>
+    <td>{{info["Pull Ratio Averaged Across Relaxing Runs"]}}</td>
+  </tr>
+  <tr>
+    <th>Pull Ratio Averaged Across All Runs</th>
+    <td>{{info["Pull Ratio Averaged Across All Runs"]}}</td>
+  </tr>
+  <tr>
+    <th>Pull Ratio 95% Confidence Interval</th>
+    <td>{{info["Pull Ratio 95% Confidence Interval"]}}</td>
+  </tr>
+</table>
+<figure>
+<img src="pull_curve.png"/>
+<figcaption>Pull Curve</figcaption>
+</figure>
+<figure>
+<img src="pull_ratio_curve.png"/>
+<figcaption>Pull Ratio Curve. Second smallest and second largest cog positions marked by dots</figcaption>
+</figure>
+
+<h1>Runs</h1>
+{% for r in runs %}
+<h2>{{r.name}}</h2>
+<figure>
+<img src="{{r.chart}}"/>
+<figcaption>Data and best fit line, excluding points taken at limits</figcaption>
+</figure>
+{% endfor %}
+
+{% endblock %}

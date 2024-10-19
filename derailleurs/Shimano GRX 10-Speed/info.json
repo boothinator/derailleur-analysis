@@ -8,7 +8,7 @@
   "jockeyWheelThickness": 2.2,
   "minDropoutWidth": null,
   "maxDropoutWidth": null,
-  "smallCogOffset": null,
+  "smallCogOffset": 3.2,
   "oneByOnly": false,
   "chain": "10-speed",
   "maxTooth": 36,

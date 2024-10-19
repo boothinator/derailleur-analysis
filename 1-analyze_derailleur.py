@@ -3,8 +3,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import json
-import re
+import datetime
 from pydantic import BaseModel
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+# Template environment
+environment = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
+template = environment.get_template("derailleur_analysis.htm")
 
 extrusion_thickness=19.93
 
@@ -269,7 +274,8 @@ def process_der(dir):
 
   curve = np.polynomial.polynomial.Polynomial(pr_calc.coefficients)
   
-  print(f"Best Fit Curve Coefficients: {pr_calc.coefficients[0]:.2f}, {pr_calc.coefficients[1]:.3f}, {pr_calc.coefficients[2]:.5f}, {pr_calc.coefficients[3]:.6f}")
+  coefficients_str = f"{pr_calc.coefficients[0]:.2f}, {pr_calc.coefficients[1]:.3f}, {pr_calc.coefficients[2]:.5f}, {pr_calc.coefficients[3]:.6f}"
+  print(f"Best Fit Curve Coefficients: {coefficients_str}")
 
   print(f"Pull Ratio of Best Fit Curve: {round(pr_calc.pull_ratio, 3):.3f}")
 
@@ -316,6 +322,23 @@ def process_der(dir):
   with open(f"derailleurs/{dir}/info_out.json", "w") as info_file:
     json.dump(info_out, info_file, indent=2)
 
+  today = datetime.date.today()
+
+  runs = [{'name': r.replace('.csv', ''), 'chart': 'pullratio/'+r.replace('.csv', '.png')} for r in run_files]
+
+  info_render = {
+    **info_out,
+    "coefficients": coefficients_str
+  }
+
+  output = template.render(year=str(today.year), generation_date=str(today),
+                           info=info_render, runs=runs)
+  
+  with open(f"derailleurs/{dir}/default.htm", 'w') as f:
+    print(output, file = f)
+
+  return info_out
+
 
 
 for dir in os.listdir('derailleurs'):
@@ -323,7 +346,7 @@ for dir in os.listdir('derailleurs'):
     continue
 
   # TESTING
-  #if dir != "Tiagra 4600 10-Speed":
+  #if dir != "Shimano Tiagra 4600 10-Speed":
   #  continue
 
   print(dir)

@@ -1,0 +1,90 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250,250,250);
+  font-family: "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+
+}
+
+.header {
+  background-color: rgb(235, 243, 252);
+  color: rgb(17, 94, 163);
+  flex: "0 0 0";
+  padding: 4px;
+}
+
+.header a:link, .header a:visited {
+  text-decoration: none;
+  color: rgb(17, 94, 163);
+}
+
+.content {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.content > section {
+  padding: 4px 20px;
+  max-width: 800px;
+}
+
+.content h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.content h2 {
+  font-size: 20px;
+  color: rgb(15, 108, 189);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.content h3 {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+.content h4 {
+  font-size: 16px;
+  text-decoration: underline;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.spacer {
+  flex: "1 1 0";
+}
+
+.footer {
+  background-color: rgb(235, 243, 252);
+  color: rgb(17, 94, 163);
+  flex: "0 0 0";
+  padding: 4px;
+}
+
+table td {
+  padding: 4px
+}
+
+p {
+  margin-bottom: 4px;
+}
+
+figure {
+  width: fit-content;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  
+}
+
+table.info-table th {
+  text-align: right;
+}
+
+#compat:not(:target) { display: none; }
