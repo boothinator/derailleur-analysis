@@ -1,0 +1,16 @@
+{
+  "brand": "Shimano",
+  "name": "Ultegra",
+  "partNumber": "RD-6500",
+  "designSpeeds": 9,
+  "designCogPitch": 4.34,
+  "distanceFromCarriageToJockeyWheel": 36.74,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": null,
+  "maxDropoutWidth": null,
+  "smallCogOffset": null,
+  "oneByOnly": false,
+  "chain": "9-speed",
+  "maxTooth": 28,
+  "chainWrap": 33
+}
