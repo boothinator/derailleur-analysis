@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import json
+import re
 from pydantic import BaseModel
 
 extrusion_thickness=19.93
@@ -22,7 +23,11 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
       if len(row[key]) == 0:
         row[key] = np.nan
       else:
-        row[key] = float(row[key])
+        try:
+          row[key] = float(row[key])
+        except:
+          # Ignore failed conversion attempts
+          pass
     
   # Get run values
   extrusion_to_carriage_slack = data[0]["Distance from outside of extrusion to carriage when cable is slack (mm)"]
@@ -73,13 +78,13 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
 
   jockey_position_raw = jockey_position = jockey_position - jockey_position.min() + jockey_wheel_center_at_full_slack
 
-  # Outliers
+  # Calculate point-by-point differences for outliers calculation
   jockey_position_diffs = jockey_position[1:] - jockey_position[:-1]
 
   average_jockey_position_diff = np.mean(jockey_position_diffs)
 
+  # Find end of low outliers
   low_outlier_cutoff = average_jockey_position_diff * 0.8
-  high_outlier_cutoff = average_jockey_position_diff * 0.6
 
   low_cutoff_index = 0
 
@@ -89,13 +94,23 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
     else:
       break
 
-  high_cutoff_index = len(jockey_position)
+  # Find end of high outliers
+  high_outlier_cutoff = average_jockey_position_diff * 0.6
 
-  for (i,d) in reversed([e for e in enumerate(jockey_position_diffs)]):
-    if d < high_outlier_cutoff:
-      high_cutoff_index = i + 2
-    else:
-      break
+  if "Exclude Cable Pull Greater Than (mm)" in data[0] \
+        and not np.isnan(data[0]["Exclude Cable Pull Greater Than (mm)"]):
+    exclude_cable_pull_greater_than = data[0]["Exclude Cable Pull Greater Than (mm)"] \
+                                        + cable_pull[low_cutoff_index]
+    high_cutoff_index = low_cutoff_index + np.min([i for i,p in enumerate(cable_pull[low_cutoff_index:])
+                                if p > exclude_cable_pull_greater_than])
+  else:
+    high_cutoff_index = len(jockey_position)
+
+    for (i,d) in reversed([e for e in enumerate(jockey_position_diffs)]):
+      if d < high_outlier_cutoff:
+        high_cutoff_index = i + 2
+      else:
+        break
 
   cable_pull = cable_pull[low_cutoff_index:high_cutoff_index]
   jockey_position = jockey_position[low_cutoff_index:high_cutoff_index]
@@ -300,7 +315,7 @@ for dir in os.listdir('derailleurs'):
     continue
 
   # TESTING
-  #if dir != "Shimano CUES 9-Speed":
+  #if dir != "Shimano GRX 10-Speed":
   #  continue
 
   print(dir)
