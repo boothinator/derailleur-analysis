@@ -1,0 +1,16 @@
+{
+  "brand": "SRAM",
+  "name": "SX 12-Speed",
+  "partNumber": "RD-SX-1-B1",
+  "designSpeeds": 12,
+  "designCogPitch": 3.65,
+  "distanceFromCarriageToJockeyWheel": 36.17,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": 13.8,
+  "maxDropoutWidth": 13.8,
+  "smallCogOffset": 2,
+  "oneByOnly": true,
+  "chain": "12-speed",
+  "maxTooth": 50,
+  "chainWrap": 40
+}

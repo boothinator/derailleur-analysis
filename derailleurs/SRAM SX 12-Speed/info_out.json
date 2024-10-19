@@ -1,0 +1,29 @@
+{
+  "brand": "SRAM",
+  "name": "SX 12-Speed",
+  "partNumber": "RD-SX-1-B1",
+  "designSpeeds": 12,
+  "designCogPitch": 3.65,
+  "distanceFromCarriageToJockeyWheel": 36.17,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": 13.8,
+  "maxDropoutWidth": 13.8,
+  "smallCogOffset": 2,
+  "oneByOnly": true,
+  "chain": "12-speed",
+  "maxTooth": 50,
+  "chainWrap": 40,
+  "pullRatio": 1.0772277290143308,
+  "coefficients": [
+    15.0246764304295,
+    0.9647493892857769,
+    0.007737809647767723,
+    -0.0001377480571381672
+  ],
+  "physicalLowLimit": 15.0246764304295,
+  "physicalHighLimit": 56.76751008638469,
+  "Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.015",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.081 +/- 0.024",
+  "Pull Ratio Averaged Across All Runs": "1.077 +/- 0.021",
+  "Pull Ratio 95% Confidence Interval": "1.055 to 1.098"
+}
