@@ -1,0 +1,16 @@
+{
+  "brand": "Shimano",
+  "name": "Tiagra 4600 10-speed",
+  "partNumber": "RD-4601-SS",
+  "designSpeeds": 10,
+  "designCogPitch": 3.95,
+  "distanceFromCarriageToJockeyWheel": 34.61,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": null,
+  "maxDropoutWidth": null,
+  "smallCogOffset": 4,
+  "oneByOnly": false,
+  "chain": "10-speed",
+  "maxTooth": 30,
+  "chainWrap": 34
+}

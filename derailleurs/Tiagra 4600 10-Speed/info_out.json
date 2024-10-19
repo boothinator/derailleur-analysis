@@ -1,0 +1,29 @@
+{
+  "brand": "Shimano",
+  "name": "Tiagra 4600 10-speed",
+  "partNumber": "RD-4601-SS",
+  "designSpeeds": 10,
+  "designCogPitch": 3.95,
+  "distanceFromCarriageToJockeyWheel": 34.61,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": null,
+  "maxDropoutWidth": null,
+  "smallCogOffset": 4,
+  "oneByOnly": false,
+  "chain": "10-speed",
+  "maxTooth": 30,
+  "chainWrap": 34,
+  "pullRatio": 1.6746696277984687,
+  "coefficients": [
+    11.52730937290294,
+    1.658544208739223,
+    0.0182878323346238,
+    -0.000903274839447965
+  ],
+  "physicalLowLimit": 11.52730937290294,
+  "physicalHighLimit": 49.803533068723446,
+  "Pull Ratio Averaged Across Pulling Runs": "1.668 +/- 0.011",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.681 +/- 0.009",
+  "Pull Ratio Averaged Across All Runs": "1.675 +/- 0.017",
+  "Pull Ratio 95% Confidence Interval": "1.658 to 1.691"
+}
