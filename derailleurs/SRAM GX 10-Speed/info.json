@@ -1,0 +1,16 @@
+{
+  "brand": "SRAM",
+  "name": "GX 10-Speed",
+  "partNumber": "RD-GX-T21-A1",
+  "designSpeeds": 10,
+  "designCogPitch": 3.95,
+  "distanceFromCarriageToJockeyWheel": 28.2,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": 12.5,
+  "maxDropoutWidth": 12.5,
+  "smallCogOffset": null,
+  "oneByOnly": false,
+  "chain": "10-speed",
+  "maxTooth": 36,
+  "chainWrap": 47
+}
