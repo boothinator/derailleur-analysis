@@ -1,0 +1,16 @@
+{
+  "brand": "Shimano",
+  "name": "Ultegra RX 11-Speed",
+  "partNumber": "RD-RX800",
+  "designSpeeds": 11,
+  "designCogPitch": 3.75,
+  "distanceFromCarriageToJockeyWheel": 35.49,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": null,
+  "maxDropoutWidth": null,
+  "smallCogOffset": 3.5,
+  "oneByOnly": false,
+  "chain": "11-speed",
+  "maxTooth": 34,
+  "chainWrap": 39
+}
