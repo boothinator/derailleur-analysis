@@ -63,6 +63,7 @@ for shifter in shifters:
         "noMatchingFrontShifter": shifter["hasMatchingFrontShifters"] == False
           and derailleur["supportsMultipleFrontChainrings"],
         "moreCogsThanShifts": shifter["speeds"] < speeds,
+        "moreShiftsThanCogs": shifter["speeds"] > speeds,
         "maxToothAvailableAndCompatible": 0,
         "maxToothAvailableAndSupported": 0,
         "supported": False,
