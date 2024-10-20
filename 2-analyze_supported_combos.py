@@ -5,10 +5,8 @@ from util import calculate_max_chain_angle
 
 with open(f"all_shifters.json") as f:
   shifters = json.load(f)
-with open(f"other_derailleurs.json") as f:
-  derailleurs = json.load(f)
 with open(f"all_derailleurs.json") as f:
-  derailleurs = [*derailleurs, *json.load(f)]
+  derailleurs = json.load(f)
 with open(f"cassettes.json") as f:
   cassettes = json.load(f)
 with open(f"supported_combinations.json") as f:

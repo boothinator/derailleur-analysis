@@ -340,7 +340,8 @@ def process_der(dir):
   return info_out
 
 
-all_info = []
+with open(f"other_derailleurs.json") as f:
+  all_info = json.load(f)
 
 for dir in os.listdir('derailleurs'):
   if dir == "template":
