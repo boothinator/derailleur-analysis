@@ -1,6 +1,8 @@
 {
   "motionMultiplierAvg": 1.0239452379544323,
   "motionMultiplierStdev": 0.024317763977364616,
+  "motionMultiplierMin": 0.975309709999703,
+  "motionMultiplierMax": 1.0725807659091615,
   "maxChainAngleAvg": 0.45139880390824283,
   "maxChainAngleStdev": 0.3473002598766641,
   "maxChainAngleMax": 1.145999323661571

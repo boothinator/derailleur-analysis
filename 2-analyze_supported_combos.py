@@ -66,6 +66,8 @@ else:
 compatibility_ranges = {
   "motionMultiplierAvg": motion_multiplier_avg,
   "motionMultiplierStdev": motion_multiplier_stdev,
+  "motionMultiplierMin": motion_multiplier_min,
+  "motionMultiplierMax": motion_multiplier_max,
   "maxChainAngleAvg": max_chain_angle_avg,
   "maxChainAngleStdev": max_chain_angle_stdev,
   "maxChainAngleMax": max_chain_angle_max
