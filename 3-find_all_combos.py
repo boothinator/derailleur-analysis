@@ -179,8 +179,5 @@ with open(f"combinations.json", "w") as info_file:
 with open(f"partial_fail_combos.json", "w") as info_file:
   json.dump(partial_fail_combos, info_file, indent=2)
 
-with open(f"all_derailleurs.json", "w") as info_file:
-  json.dump(derailleurs, info_file, indent=2)
-
 with open(f"all_cassettes.json", "w") as info_file:
   json.dump(cassettes, info_file, indent=2)
