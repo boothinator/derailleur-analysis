@@ -1,248 +1,6 @@
 [
   {
     "brand": "Mixed",
-    "name": "Microshift Advent X 10-Speed shifter/SRAM SX 12-Speed derailleur/10-speed cassette",
-    "speeds": 10,
-    "shifterPartNumber": "SB-M100A",
-    "derailleurPartNumber": "RD-SX-1-B1",
-    "cassettes": [
-      {
-        "cassettePartNumber": "generic-10-speed",
-        "confidence": 0.673068461853324,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 48,
-        "maxChainAngle": 0.9177107364311745,
-        "maxAngleAnalysis": {
-          "barrel_adjuster": 4.1831596283050185,
-          "barrel_adjuster_values": [
-            0,
-            4.0144888800980505,
-            4.17740329644197,
-            4.182964558631095,
-            4.183153228859257,
-            4.1831596283050185
-          ],
-          "barrel_adjuster_too_low": false,
-          "least_pull": 4.076734164412612,
-          "least_pull_too_low": false,
-          "most_pull": 35.37009026723095,
-          "most_pull_too_high": false,
-          "diffs": [
-            -0.7835060187203347,
-            -0.4750066090502578,
-            0.04184331112266193,
-            0.35708696721837896,
-            0.4955385453655765,
-            0.747526493421212,
-            0.783520353478842,
-            0.628969273864719
-          ],
-          "diffs_minus_free_play": [
-            -0.5085060187203345,
-            -0.2000066090502577,
-            0.0,
-            0.08208696721837883,
-            0.22053854536557638,
-            0.4725264934212119,
-            0.5085203534788418,
-            0.3539692738647189
-          ],
-          "max_diff_minus_free_play": 0.5085203534788418,
-          "max_chain_angle": 0.9177107364311745,
-          "cable_pull_at_max_chain_angle": 28.03662545108148,
-          "jockey_to_cog_links": 2.5,
-          "chain_angles": [
-            -0.917684864729609,
-            -0.3609326099382244,
-            0.0,
-            0.14813360675147108,
-            0.39798518053037635,
-            0.8527487664210507,
-            0.9177107364311745,
-            0.6387831691427619
-          ]
-        },
-        "motionMultiplier": 1.0342058869733695
-      },
-      {
-        "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.5963834776995851,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 34,
-        "maxChainAngle": 0.9798453098700126,
-        "maxAngleAnalysis": {
-          "barrel_adjuster": 4.386432420134734,
-          "barrel_adjuster_values": [
-            0,
-            4.210917451526624,
-            4.38052896789751,
-            4.386235270625223,
-            4.386426043562397,
-            4.386432420134734
-          ],
-          "barrel_adjuster_too_low": false,
-          "least_pull": 4.0810654494042,
-          "least_pull_too_low": false,
-          "most_pull": 35.613531355225604,
-          "most_pull_too_high": false,
-          "diffs": [
-            -0.7879327267812002,
-            -0.5340736671027884,
-            -0.0705187241345655,
-            0.20230983242392497,
-            0.32936477494909866,
-            0.6110821566597195,
-            0.7879470103032347,
-            0.5056078950836849
-          ],
-          "diffs_minus_free_play": [
-            -0.5429327267812001,
-            -0.28907366710278826,
-            0.0,
-            0.0,
-            0.08436477494909855,
-            0.36608215665971944,
-            0.5429470103032346,
-            0.26060789508368476
-          ],
-          "max_diff_minus_free_play": 0.5429470103032346,
-          "max_chain_angle": 0.9798453098700126,
-          "cable_pull_at_max_chain_angle": 28.23989826578462,
-          "jockey_to_cog_links": 2.5,
-          "chain_angles": [
-            -0.9798195301782325,
-            -0.5216670844120347,
-            0.0,
-            0.0,
-            0.15224413329998387,
-            0.6606433798323657,
-            0.9798453098700126,
-            0.47029606827697773
-          ]
-        },
-        "motionMultiplier": 1.0368241297252008
-      }
-    ],
-    "shifterType": "drop-bar",
-    "noMatchingFrontShifter": false,
-    "moreCogsThanShifts": false,
-    "moreShiftsThanCogs": false,
-    "maxToothAvailableAndCompatible": 48,
-    "maxToothAvailableAndSupported": 0,
-    "supported": false,
-    "chainWrap": 40,
-    "equivalentShifters": [
-      {
-        "name": "Sword 10-speed",
-        "brand": "Microshift",
-        "partNumber": "SB-G7000-R",
-        "type": "drop-bar",
-        "equivalentPartNumber": "SB-M100A",
-        "note": "Presumably Sword uses the same shift points as Advent X"
-      }
-    ],
-    "equivalentDerailleurs": [],
-    "reviews": [],
-    "reviewsSentiment": "none"
-  },
-  {
-    "brand": "Mixed",
-    "name": "SRAM Apex 1 11-Speed shifter/Campagnolo Ekar 13-Speed derailleur/10-speed cassette",
-    "speeds": 10,
-    "shifterPartNumber": "SB-APX-B1",
-    "derailleurPartNumber": "RD21-EK13",
-    "cassettes": [
-      {
-        "cassettePartNumber": "generic-10-speed",
-        "confidence": 0.051177877805539215,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 44,
-        "maxChainAngle": 1.0839287919819107,
-        "maxAngleAnalysis": {
-          "barrel_adjuster": 3.6727326134389497,
-          "barrel_adjuster_values": [
-            0,
-            3.618253379219368,
-            3.6704647743676957,
-            3.672637359743015,
-            3.6727287659853336,
-            3.6727326134389497
-          ],
-          "barrel_adjuster_too_low": false,
-          "least_pull": 3.9477150350506554,
-          "least_pull_too_low": false,
-          "most_pull": 34.36740483275893,
-          "most_pull_too_high": false,
-          "diffs": [
-            -0.4854929262012355,
-            -0.6271554296945112,
-            -0.8129192322632512,
-            -0.875604834051046,
-            -0.7079653425680306,
-            -0.38881519100493733,
-            0.12304310176723021,
-            0.875614681591216
-          ],
-          "diffs_minus_free_play": [
-            -0.2104929262012354,
-            -0.3521554296945111,
-            -0.5379192322632511,
-            -0.6006048340510459,
-            -0.43296534256803043,
-            -0.1138151910049372,
-            0.0,
-            0.6006146815912159
-          ],
-          "max_diff_minus_free_play": 0.6006146815912159,
-          "max_chain_angle": 1.0839287919819107,
-          "cable_pull_at_max_chain_angle": 27.193999315695212,
-          "jockey_to_cog_links": 2.5,
-          "chain_angles": [
-            -0.37985652404344505,
-            -0.6355097190081836,
-            -0.9707709097753303,
-            -1.0839110180143492,
-            -0.7813497865181135,
-            -0.20539036395412724,
-            0.0,
-            1.0839287919819107
-          ]
-        },
-        "motionMultiplier": 1.071364518881858
-      }
-    ],
-    "shifterType": "drop-bar",
-    "noMatchingFrontShifter": false,
-    "moreCogsThanShifts": false,
-    "moreShiftsThanCogs": true,
-    "maxToothAvailableAndCompatible": 44,
-    "maxToothAvailableAndSupported": 0,
-    "supported": false,
-    "chainWrap": 35,
-    "equivalentShifters": [
-      {
-        "name": "Rival 1 11-Speed",
-        "brand": "SRAM",
-        "partNumber": "SB-RIV-B1",
-        "type": "drop-bar",
-        "equivalentPartNumber": "SB-APX-B1",
-        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
-      },
-      {
-        "name": "Force 1 11-Speed",
-        "brand": "SRAM",
-        "partNumber": "SB-FOR-B1",
-        "type": "drop-bar",
-        "equivalentPartNumber": "SB-APX-B1",
-        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
-      }
-    ],
-    "equivalentDerailleurs": [],
-    "reviews": [],
-    "reviewsSentiment": "none"
-  },
-  {
-    "brand": "Mixed",
     "name": "SRAM Apex 1 11-Speed shifter/Campagnolo Ekar 13-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SB-APX-B1",
@@ -250,7 +8,7 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
-        "confidence": 0.5383226950739155,
+        "confidence": 0.25218995579943876,
         "supported": false,
         "maxToothAvailableAndCompatible": 44,
         "maxChainAngle": 0.7709206616619083,
@@ -311,7 +69,7 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
-        "confidence": 0.7789080989279309,
+        "confidence": 0.4621096389728558,
         "supported": false,
         "maxToothAvailableAndCompatible": 44,
         "maxChainAngle": 0.9267527357992387,
@@ -410,7 +168,7 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
-        "confidence": 0.15658918683984363,
+        "confidence": 0.17935012284413127,
         "supported": true,
         "maxToothAvailableAndCompatible": 42,
         "maxChainAngle": 1.1294966847504906,
@@ -517,132 +275,71 @@
   },
   {
     "brand": "Mixed",
-    "name": "Campagnolo Ekar 13-Speed shifter/Shimano GRX 10-Speed derailleur/11-speed cassette",
+    "name": "Campagnolo Ekar 13-Speed shifter/Shimano GRX derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "EP21-EKD13-R4",
     "derailleurPartNumber": "RD-RX400",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
-        "confidence": 0.9031532205724231,
+        "confidence": 0.0993715059998013,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 0.4947287146614428,
+        "maxChainAngle": 1.090831793139759,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 3.753514737322517,
+          "barrel_adjuster": 4.27397630539512,
           "barrel_adjuster_values": [
             0,
-            3.5129229211197237,
-            3.7389710404559002,
-            3.7526379185024257,
-            3.753464716249272,
-            3.753514737322517
+            4.044178247626459,
+            4.262924007828411,
+            4.273445952614184,
+            4.273951970021923,
+            4.27397630539512
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 3.9136949910080223,
+          "least_pull": 4.356807181026156,
           "least_pull_too_low": false,
-          "most_pull": 34.03485881303404,
+          "most_pull": 34.599087797400855,
           "most_pull_too_high": true,
           "diffs": [
-            -0.5489967081959577,
-            -0.2219614011364648,
-            -0.344881372991491,
-            -0.27289238822380923,
-            -0.3980493399298908,
-            -0.19204928479271643,
-            0.01730089709949567,
-            0.3118512266946354,
-            0.5491465713313985
+            -0.8793688991190862,
+            -0.46374809735870315,
+            -0.4893373136934791,
+            -0.3279261371888893,
+            -0.36211864114655157,
+            -0.07619736670782373,
+            0.20956391053641,
+            0.5748515765966573,
+            0.8794392358511587
           ],
           "diffs_minus_free_play": [
-            -0.27399670819595756,
+            -0.6043688991190861,
+            -0.18874809735870302,
+            -0.21433731369347897,
+            -0.052926137188889166,
+            -0.08711864114655143,
             0.0,
-            -0.06988137299149089,
             0.0,
-            -0.12304933992989064,
-            0.0,
-            0.0,
-            0.03685122669463525,
-            0.2741465713313984
+            0.2998515765966572,
+            0.6044392358511586
           ],
-          "max_diff_minus_free_play": 0.2741465713313984,
-          "max_chain_angle": 0.4947287146614428,
-          "cable_pull_at_max_chain_angle": 25.794298049582608,
+          "max_diff_minus_free_play": 0.6044392358511586,
+          "max_chain_angle": 1.090831793139759,
+          "cable_pull_at_max_chain_angle": 26.314785303355258,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
-            -0.49445826284747374,
+            -1.0907048410675857,
+            -0.340615214792208,
+            -0.3867942282299679,
+            -0.09551010051236064,
+            -0.15721375490189277,
             0.0,
-            -0.12610743218015338,
             0.0,
-            -0.22205434642649102,
-            0.0,
-            0.0,
-            0.06650142467873296,
-            0.4947287146614428
+            0.5411176446935853,
+            1.090831793139759
           ]
         },
-        "motionMultiplier": 1.0269041999139557
-      },
-      {
-        "cassettePartNumber": "shimano-11-speed",
-        "confidence": 0.6439149941839517,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 0.7128646456293388,
-        "maxAngleAnalysis": {
-          "barrel_adjuster": 3.8600995717659763,
-          "barrel_adjuster_values": [
-            0,
-            3.6130564324681873,
-            3.8451572709694912,
-            3.8591978501134623,
-            3.8600480815718226,
-            3.8600995717659763
-          ],
-          "barrel_adjuster_too_low": false,
-          "least_pull": 4.004367698881907,
-          "least_pull_too_low": false,
-          "most_pull": 34.18481824559683,
-          "most_pull_too_high": true,
-          "diffs": [
-            -0.669863810973041,
-            -0.3186326851979686,
-            -0.4159806309036398,
-            -0.31629629056126873,
-            -0.4119972676401815,
-            -0.17482581270255082,
-            0.06733132003179776,
-            0.3963087652590218,
-            0.6700180755947258
-          ],
-          "diffs_minus_free_play": [
-            -0.3948638109730409,
-            -0.04363268519796848,
-            -0.14098063090363966,
-            -0.0412962905612686,
-            -0.13699726764018139,
-            0.0,
-            0.0,
-            0.12130876525902168,
-            0.3950180755947257
-          ],
-          "max_diff_minus_free_play": 0.3950180755947257,
-          "max_chain_angle": 0.7128646456293388,
-          "cable_pull_at_max_chain_angle": 25.900881414905157,
-          "jockey_to_cog_links": 2.5,
-          "chain_angles": [
-            -0.7125862394674268,
-            -0.07873919677378151,
-            -0.2544132815072536,
-            -0.07452295514479512,
-            -0.2472248692150387,
-            0.0,
-            0.0,
-            0.2189132969465456,
-            0.7128646456293388
-          ]
-        },
-        "motionMultiplier": 1.0351856853971326
+        "motionMultiplier": 1.0644556298659227
       }
     ],
     "shifterType": "drop-bar",
@@ -660,74 +357,74 @@
   },
   {
     "brand": "Mixed",
-    "name": "Campagnolo Ekar 13-Speed shifter/Shimano GRX 10-Speed derailleur/12-speed cassette",
+    "name": "Campagnolo Ekar 13-Speed shifter/Shimano GRX derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "EP21-EKD13-R4",
     "derailleurPartNumber": "RD-RX400",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
-        "confidence": 0.5009826356001232,
+        "confidence": 0.5225246629150773,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 0.22799172815911745,
+        "maxChainAngle": 0.8794796176169528,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 3.7620091740758324,
+          "barrel_adjuster": 4.305028284651196,
           "barrel_adjuster_values": [
             0,
-            3.485650931311938,
-            3.7381537948389623,
-            3.759954950910266,
-            3.7618452156206112,
-            3.7620091740758324
+            3.9942263774202544,
+            4.282149392384027,
+            4.30334451117962,
+            4.304912275533104,
+            4.305028284651196
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 3.8022655535269685,
+          "least_pull": 4.265884957363286,
           "least_pull_too_low": false,
-          "most_pull": 34.250673826139746,
+          "most_pull": 34.843404863773365,
           "most_pull_too_high": true,
           "diffs": [
-            -0.40084824783304995,
-            0.005727922652091877,
-            -0.18754324079161222,
-            -0.18573827985573033,
-            -0.38094094568464953,
-            -0.244851475102962,
-            -0.10528330655108675,
-            0.1196124068436788,
-            0.0874092160859945,
-            0.4013394673648918
+            -0.7620021871207179,
+            -0.26806410705539463,
+            -0.3649535440117546,
+            -0.2742412953644937,
+            -0.3786395673265588,
+            -0.1624369219498618,
+            0.054065405458871396,
+            0.35055011212006804,
+            0.38689132200429555,
+            0.7623374892420784
           ],
           "diffs_minus_free_play": [
-            -0.12584824783304982,
+            -0.48700218712071774,
+            0.0,
+            -0.08995354401175448,
+            0.0,
+            -0.10363956732655866,
             0.0,
             0.0,
-            0.0,
-            -0.1059409456846494,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.12633946736489166
+            0.0755501121200679,
+            0.11189132200429541,
+            0.4873374892420783
           ],
-          "max_diff_minus_free_play": 0.12633946736489166,
-          "max_chain_angle": 0.22799172815911745,
-          "cable_pull_at_max_chain_angle": 28.287678548953945,
+          "max_diff_minus_free_play": 0.4873374892420783,
+          "max_chain_angle": 0.8794796176169528,
+          "cable_pull_at_max_chain_angle": 28.830745608866437,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
-            -0.2271052705859287,
+            -0.8788744630234164,
+            0.0,
+            -0.16232961635319637,
+            0.0,
+            -0.18702741240210977,
             0.0,
             0.0,
-            0.0,
-            -0.19118048280207497,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.22799172815911745
+            0.13633721736076043,
+            0.20191854441345689,
+            0.8794796176169528
           ]
         },
-        "motionMultiplier": 1.0075807337865423
+        "motionMultiplier": 1.0444255508093059
       }
     ],
     "shifterType": "drop-bar",
@@ -752,119 +449,119 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
-        "confidence": 0.9636456379521228,
+        "confidence": 0.6319606753642728,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 0.48942310235614406,
+        "maxChainAngle": 0.4965651616059492,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 6.625832703384979,
+          "barrel_adjuster": 7.614175825928079,
           "barrel_adjuster_values": [
             0,
-            6.43230650738401,
-            6.6207330358911385,
-            6.625698554576191,
-            6.625829262817604,
-            6.625832703384979
+            7.501510829102161,
+            7.613979522784743,
+            7.614175511157393,
+            7.614175825424229,
+            7.614175825928079
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 6.677581841591386,
+          "least_pull": 7.636946899433306,
           "least_pull_too_low": false,
-          "most_pull": 37.92203643186905,
+          "most_pull": 38.751664761626365,
           "most_pull_too_high": false,
           "diffs": [
-            -0.5461988412654541,
-            -0.37872719072874617,
-            0.02223626598324202,
-            0.23696022494876345,
-            0.2991995225891344,
-            0.510821014781051,
-            0.5462066169477211,
-            0.4454862177582015
+            -0.5501641845846379,
+            -0.35087301938429505,
+            0.0755041903422331,
+            0.3060559203034394,
+            0.3659839490042671,
+            0.5501641857056399,
+            0.5217375433876867,
+            0.3060459503554114
           ],
           "diffs_minus_free_play": [
-            -0.271198841265454,
-            -0.10372719072874603,
+            -0.27516418458463776,
+            -0.07587301938429492,
             0.0,
-            0.0,
-            0.02419952258913427,
-            0.23582101478105089,
-            0.27120661694772097,
-            0.17048621775820139
+            0.03105592030343929,
+            0.09098394900426698,
+            0.2751641857056397,
+            0.2467375433876866,
+            0.031045950355411245
           ],
-          "max_diff_minus_free_play": 0.27120661694772097,
-          "max_chain_angle": 0.48942310235614406,
-          "cable_pull_at_max_chain_angle": 30.479301485039827,
+          "max_diff_minus_free_play": 0.2751641857056397,
+          "max_chain_angle": 0.4965651616059492,
+          "cable_pull_at_max_chain_angle": 27.949314714313118,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
-            -0.4894090699142368,
-            -0.18718553769035648,
+            -0.49656515958292274,
+            -0.13691993471563466,
             0.0,
-            0.0,
-            0.04367025653026278,
-            0.4255645071479149,
-            0.48942310235614406,
-            0.3076594546216985
+            0.056043258142349436,
+            0.16418908397311294,
+            0.4965651616059492,
+            0.4452649506269324,
+            0.05602526645047067
           ]
         },
-        "motionMultiplier": 1.0250536224868796
+        "motionMultiplier": 1.0412378672498388
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.878954815495532,
+        "confidence": 0.5407459519472289,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
-        "maxChainAngle": 0.5607432777677455,
+        "maxChainAngle": 0.5366494935931029,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 6.825781519660557,
+          "barrel_adjuster": 7.7999412324113555,
           "barrel_adjuster_values": [
             0,
-            6.613230109285857,
-            6.820191306544031,
-            6.825634703615716,
-            6.825777760093599,
-            6.825781519660557
+            7.685909590399253,
+            7.799470696583262,
+            7.799939336120946,
+            7.799941224800469,
+            7.7999412324113555
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 6.6864879506098935,
+          "least_pull": 7.62960854014741,
           "least_pull_too_low": false,
-          "most_pull": 38.167415207936386,
+          "most_pull": 38.97694856388993,
           "most_pull_too_high": false,
           "diffs": [
-            -0.5557179654624065,
-            -0.4420108617411884,
-            -0.09322230747794791,
-            0.08057480586820276,
-            0.13330893368053864,
-            0.37682155520224114,
-            0.555726462083733,
-            0.3304131699631583
+            -0.5423756788209815,
+            -0.3966500998432565,
+            -0.022717509199356556,
+            0.16615919846425697,
+            0.21529899961424093,
+            0.4296407647195011,
+            0.542375695754231,
+            0.19901607310141856
           ],
           "diffs_minus_free_play": [
-            -0.3107179654624064,
-            -0.19701086174118831,
+            -0.29737567882098137,
+            -0.1516500998432564,
             0.0,
             0.0,
             0.0,
-            0.13182155520224104,
-            0.3107264620837329,
-            0.08541316996315818
+            0.18464076471950097,
+            0.29737569575423084,
+            0.0
           ],
-          "max_diff_minus_free_play": 0.3107264620837329,
-          "max_chain_angle": 0.5607432777677455,
-          "cable_pull_at_max_chain_angle": 30.679249982315824,
+          "max_diff_minus_free_play": 0.29737569575423084,
+          "max_chain_angle": 0.5366494935931029,
+          "cable_pull_at_max_chain_angle": 31.653413447022693,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
-            -0.5607279441029677,
-            -0.3555264041970495,
+            -0.5366494630341647,
+            -0.2736675188020202,
             0.0,
             0.0,
             0.0,
-            0.23788473893802253,
-            0.5607432777677455,
-            0.15413606477312933
+            0.3332030291546971,
+            0.5366494935931029,
+            0.0
           ]
         },
-        "motionMultiplier": 1.0276486949488717
+        "motionMultiplier": 1.0438739124833827
       }
     ],
     "shifterType": "drop-bar",
@@ -891,179 +588,42 @@
   },
   {
     "brand": "Mixed",
-    "name": "Sensah Team Pro 11-speed shifter/Shimano GRX 10-Speed derailleur/10-speed cassette",
-    "speeds": 10,
-    "shifterPartNumber": "sensah-team-pro-11",
-    "derailleurPartNumber": "RD-RX400",
-    "cassettes": [
-      {
-        "cassettePartNumber": "generic-10-speed",
-        "confidence": 0.29264525877471964,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 0.6950162608633521,
-        "maxAngleAnalysis": {
-          "barrel_adjuster": 3.9165238469889805,
-          "barrel_adjuster_values": [
-            0,
-            3.7116506825157582,
-            3.9070465669507377,
-            3.91608700372699,
-            3.9165045621377805,
-            3.9165238469889805
-          ],
-          "barrel_adjuster_too_low": false,
-          "least_pull": 3.997028756503634,
-          "least_pull_too_low": false,
-          "most_pull": 29.964742787638766,
-          "most_pull_too_high": false,
-          "diffs": [
-            -0.6600705043879707,
-            -0.2462754585549689,
-            0.0013507005554416196,
-            0.12718532139276917,
-            0.21392149452547216,
-            0.36007244846951636,
-            0.4950432814286643,
-            0.6601282818021659
-          ],
-          "diffs_minus_free_play": [
-            -0.3850705043879705,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.08507244846951623,
-            0.22004328142866414,
-            0.38512828180216574
-          ],
-          "max_diff_minus_free_play": 0.38512828180216574,
-          "max_chain_angle": 0.6950162608633521,
-          "cable_pull_at_max_chain_angle": 24.391623609756827,
-          "jockey_to_cog_links": 2.5,
-          "chain_angles": [
-            -0.6949119885636031,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.1535211994523532,
-            0.3970914099358058,
-            0.6950162608633521
-          ]
-        },
-        "motionMultiplier": 1.0495357049998695
-      },
-      {
-        "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.24539790142202023,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 34,
-        "maxChainAngle": 0.6485085165445902,
-        "maxAngleAnalysis": {
-          "barrel_adjuster": 4.025001950395783,
-          "barrel_adjuster_values": [
-            0,
-            3.8533330983778513,
-            4.017076230820518,
-            4.024637093978917,
-            4.024985862921086,
-            4.025001950395783
-          ],
-          "barrel_adjuster_too_low": false,
-          "least_pull": 3.9552164007404893,
-          "least_pull_too_low": false,
-          "most_pull": 30.11444806440375,
-          "most_pull_too_high": false,
-          "diffs": [
-            -0.6043099595606982,
-            -0.2464284493399589,
-            -0.05291740097605668,
-            0.030682674578020652,
-            0.10713140425924195,
-            0.2849189193488897,
-            0.5635206828577566,
-            0.6043581576348913
-          ],
-          "diffs_minus_free_play": [
-            -0.3593099595606981,
-            -0.0014284493399587816,
-            0.0,
-            0.0,
-            0.0,
-            0.03991891934888958,
-            0.3185206828577565,
-            0.3593581576348912
-          ],
-          "max_diff_minus_free_play": 0.3593581576348912,
-          "max_chain_angle": 0.6485085165445902,
-          "cable_pull_at_max_chain_angle": 24.50010491054013,
-          "jockey_to_cog_links": 2.5,
-          "chain_angles": [
-            -0.6484215331395592,
-            -0.0025777675104093575,
-            0.0,
-            0.0,
-            0.0,
-            0.07203736075598756,
-            0.5748093528458981,
-            0.6485085165445902
-          ]
-        },
-        "motionMultiplier": 1.0521927574175907
-      }
-    ],
-    "shifterType": "drop-bar",
-    "noMatchingFrontShifter": false,
-    "moreCogsThanShifts": false,
-    "moreShiftsThanCogs": true,
-    "maxToothAvailableAndCompatible": 36,
-    "maxToothAvailableAndSupported": 0,
-    "supported": false,
-    "chainWrap": 41,
-    "equivalentShifters": [],
-    "equivalentDerailleurs": [],
-    "reviews": [],
-    "reviewsSentiment": "none"
-  },
-  {
-    "brand": "Mixed",
-    "name": "Sensah Team Pro 11-speed shifter/Shimano GRX 10-Speed derailleur/11-speed cassette",
+    "name": "Sensah Team Pro 11-speed shifter/Shimano GRX derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "sensah-team-pro-11",
     "derailleurPartNumber": "RD-RX400",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
-        "confidence": 0.14408897478847488,
+        "confidence": 0.7186109651751829,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
         "maxChainAngle": 0.0,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 3.2840265774580626,
+          "barrel_adjuster": 3.7341938209767003,
           "barrel_adjuster_values": [
             0,
-            3.20334346200838,
-            3.2829949101287785,
-            3.2840132736224263,
-            3.284026408036823,
-            3.2840265774580626
+            3.597453678544612,
+            3.7264309531652047,
+            3.733754390856162,
+            3.734170210881205,
+            3.7341938209767003
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 3.49685125744994,
+          "least_pull": 3.863490773242157,
           "least_pull_too_low": false,
-          "most_pull": 29.102362881968286,
+          "most_pull": 29.597755339275295,
           "most_pull_too_high": false,
           "diffs": [
-            0.0029872858976709438,
-            0.2228918629496377,
-            0.2661656108804813,
-            0.17670474477346687,
-            0.03679715117878146,
-            -0.05493268555834163,
-            -0.16943919781283512,
-            -0.26616510329444765,
-            -0.19360453476230077
+            -0.24601092643361966,
+            0.06981454195293324,
+            0.20965995641607194,
+            0.21588119455759625,
+            0.16832419654106445,
+            0.16298955006427462,
+            0.1300870477349818,
+            0.10850974231341581,
+            0.24607916688950127
           ],
           "diffs_minus_free_play": [
             0,
@@ -1078,7 +638,7 @@
           ],
           "max_diff_minus_free_play": 0.0,
           "max_chain_angle": 0.0,
-          "cable_pull_at_max_chain_angle": 6.228312122322538,
+          "cable_pull_at_max_chain_angle": 6.67845592516692,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
@@ -1092,56 +652,57 @@
             0.0
           ]
         },
-        "motionMultiplier": 0.9884234993922822
+        "motionMultiplier": 1.024567782182651
       },
       {
         "cassettePartNumber": "shimano-11-speed",
-        "confidence": 0.25723921263229294,
+        "confidence": 0.9555955137476078,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 0.0,
+        "maxChainAngle": 0.16488480964698587,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 3.395631138379291,
+          "barrel_adjuster": 3.8442377092549096,
           "barrel_adjuster_values": [
             0,
-            3.2534102176826116,
-            3.393779840487176,
-            3.3956066597858214,
-            3.395630818816611,
-            3.395631138379291
+            3.6701102865626076,
+            3.8343517382740564,
+            3.8436779186024603,
+            3.8442076226542103,
+            3.8442377092549096
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 3.5930145239096904,
+          "least_pull": 3.9576804738815317,
           "least_pull_too_low": false,
-          "most_pull": 29.245376856217163,
+          "most_pull": 29.73927013184926,
           "most_pull_too_high": false,
           "diffs": [
-            -0.1238109354947241,
-            0.11951948476930596,
-            0.18806224226987922,
-            0.12579872737510556,
-            0.01509047034732447,
-            -0.045454772603115146,
-            -0.12673428373702933,
-            -0.18806128486009044,
-            -0.07802581900327255
+            -0.36628251870417117,
+            -0.026943270854403067,
+            0.13817331840966318,
+            0.17150475914687746,
+            0.15296952272188236,
+            0.17855519484218974,
+            0.17851970581232735,
+            0.19187922063997576,
+            0.3663694782570488
           ],
           "diffs_minus_free_play": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            -0.09128251870417103,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.09136947825704866
           ],
-          "max_diff_minus_free_play": 0.0,
-          "max_chain_angle": 0.0,
-          "cable_pull_at_max_chain_angle": 6.3399165331023255,
+          "max_diff_minus_free_play": 0.09136947825704866,
+          "max_chain_angle": 0.16488480964698587,
+          "cable_pull_at_max_chain_angle": 26.88766000360659,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
+            -0.1647278825295073,
             0.0,
             0.0,
             0.0,
@@ -1149,11 +710,10 @@
             0.0,
             0.0,
             0.0,
-            0.0,
-            0.0
+            0.16488480964698587
           ]
         },
-        "motionMultiplier": 0.9963946566454457
+        "motionMultiplier": 1.0328304255873497
       }
     ],
     "shifterType": "drop-bar",
@@ -1171,196 +731,60 @@
   },
   {
     "brand": "Shimano",
-    "name": "Shimano Ultegra 11-Speed shifter/GRX 10-Speed derailleur/10-speed cassette",
-    "speeds": 10,
-    "shifterPartNumber": "ST-R8020",
-    "derailleurPartNumber": "RD-RX400",
-    "cassettes": [
-      {
-        "cassettePartNumber": "generic-10-speed",
-        "confidence": 0.19647839465165662,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 0.6708423440536723,
-        "maxAngleAnalysis": {
-          "barrel_adjuster": 3.7352255226295092,
-          "barrel_adjuster_values": [
-            0,
-            3.5411124425159364,
-            3.7262165230638358,
-            3.734808862403015,
-            3.7352070691384305,
-            3.7352255226295092
-          ],
-          "barrel_adjuster_too_low": false,
-          "least_pull": 3.9869905247294857,
-          "least_pull_too_low": false,
-          "most_pull": 29.834327885605173,
-          "most_pull_too_high": false,
-          "diffs": [
-            -0.6466781632934264,
-            -0.46985697721774855,
-            -0.3062614791208631,
-            -0.18774007437433582,
-            -0.07073404258957794,
-            0.06811981549870438,
-            0.3049943390344936,
-            0.6467334499526984
-          ],
-          "diffs_minus_free_play": [
-            -0.3716781632934263,
-            -0.19485697721774842,
-            -0.03126147912086297,
-            0.0,
-            0.0,
-            0.0,
-            0.029994339034493445,
-            0.3717334499526983
-          ],
-          "max_diff_minus_free_play": 0.3717334499526983,
-          "max_chain_angle": 0.6708423440536723,
-          "cable_pull_at_max_chain_angle": 24.40094424862561,
-          "jockey_to_cog_links": 2.5,
-          "chain_angles": [
-            -0.6707425673814146,
-            -0.3516394485205543,
-            -0.05641420801169206,
-            0.0,
-            0.0,
-            0.0,
-            0.054127536742840515,
-            0.6708423440536723
-          ]
-        },
-        "motionMultiplier": 1.05535527678195
-      },
-      {
-        "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.1610587322515593,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 34,
-        "maxChainAngle": 0.6243426615252556,
-        "maxAngleAnalysis": {
-          "barrel_adjuster": 3.8437212738262163,
-          "barrel_adjuster_values": [
-            0,
-            3.644583737576017,
-            3.834494342153894,
-            3.8432950771937158,
-            3.8437024206896835,
-            3.8437212738262163
-          ],
-          "barrel_adjuster_too_low": false,
-          "least_pull": 3.9451625595402895,
-          "least_pull_too_low": false,
-          "most_pull": 29.983753108221695,
-          "most_pull_too_high": false,
-          "diffs": [
-            -0.5909111837103076,
-            -0.470336963782632,
-            -0.36080434458693844,
-            -0.28436105610420626,
-            -0.17748958234786016,
-            -0.006849214437572471,
-            0.37368658808764366,
-            0.5909676677073605
-          ],
-          "diffs_minus_free_play": [
-            -0.3459111837103075,
-            -0.2253369637826319,
-            -0.11580434458693833,
-            -0.03936105610420615,
-            0.0,
-            0.0,
-            0.12868658808764355,
-            0.3459676677073604
-          ],
-          "max_diff_minus_free_play": 0.3459676677073604,
-          "max_chain_angle": 0.6243426615252556,
-          "cable_pull_at_max_chain_angle": 24.509439600176865,
-          "jockey_to_cog_links": 2.5,
-          "chain_angles": [
-            -0.6242407249343974,
-            -0.4066445790079591,
-            -0.20897999703149528,
-            -0.07103064471259295,
-            0.0,
-            0.0,
-            0.23222735638007744,
-            0.6243426615252556
-          ]
-        },
-        "motionMultiplier": 1.0580270622927905
-      }
-    ],
-    "shifterType": "drop-bar",
-    "noMatchingFrontShifter": false,
-    "moreCogsThanShifts": false,
-    "moreShiftsThanCogs": true,
-    "maxToothAvailableAndCompatible": 36,
-    "maxToothAvailableAndSupported": 0,
-    "supported": false,
-    "chainWrap": 41,
-    "equivalentShifters": [],
-    "equivalentDerailleurs": [],
-    "reviews": [],
-    "reviewsSentiment": "none"
-  },
-  {
-    "brand": "Shimano",
-    "name": "Shimano Ultegra 11-Speed shifter/GRX 10-Speed derailleur/11-speed cassette",
+    "name": "Shimano Ultegra 11-Speed shifter/GRX derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "ST-R8020",
     "derailleurPartNumber": "RD-RX400",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
-        "confidence": 0.21669907652857368,
+        "confidence": 0.9407800626556655,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 0.0,
+        "maxChainAngle": 0.08423296820398726,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 2.9839278568316887,
+          "barrel_adjuster": 3.6177001741880868,
           "barrel_adjuster_values": [
             0,
-            2.935681467863756,
-            2.982369067244734,
-            2.9838777047586826,
-            2.9839262921844063,
-            2.9839278568316887
+            3.4014986020402787,
+            3.605654445444611,
+            3.617030993577986,
+            3.6176648571701304,
+            3.6177001741880868
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 3.360113404735442,
+          "least_pull": 3.9226967497544587,
           "least_pull_too_low": false,
-          "most_pull": 28.846372985421258,
+          "most_pull": 29.538392703853987,
           "most_pull_too_high": false,
           "diffs": [
-            0.1827188828731181,
-            0.17519493529593788,
-            0.1392531250029556,
-            0.044477130433293155,
-            -0.06528746999979518,
-            -0.1665090664763227,
-            -0.18271419518985965,
-            -0.10707842234199205,
-            0.13841282114240272
+            -0.32157493474043974,
+            -0.23841233707282328,
+            -0.18373562635468232,
+            -0.18751762091800828,
+            -0.20727112666678238,
+            -0.22034824038838963,
+            -0.15237014609713384,
+            0.0029875143883231203,
+            0.32167701181192854
           ],
           "diffs_minus_free_play": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            -0.04657493474043961,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.046677011811928404
           ],
-          "max_diff_minus_free_play": 0.0,
-          "max_chain_angle": 0.0,
-          "cable_pull_at_max_chain_angle": 6.100080138338253,
+          "max_diff_minus_free_play": 0.046677011811928404,
+          "max_chain_angle": 0.08423296820398726,
+          "cable_pull_at_max_chain_angle": 26.72215203665731,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
+            -0.08404876059177033,
             0.0,
             0.0,
             0.0,
@@ -1368,72 +792,71 @@
             0.0,
             0.0,
             0.0,
-            0.0,
-            0.0
+            0.08423296820398726
           ]
         },
-        "motionMultiplier": 0.9939042100326214
+        "motionMultiplier": 1.0302489092997318
       },
       {
         "cassettePartNumber": "shimano-11-speed",
-        "confidence": 0.3650713116482986,
+        "confidence": 0.7308353367244051,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 0.0,
+        "maxChainAngle": 0.3012910167539155,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 3.128542599891018,
+          "barrel_adjuster": 3.727620564370833,
           "barrel_adjuster_values": [
             0,
-            2.9857482235379877,
-            3.124794830337838,
-            3.128441061846404,
-            3.1285399174246984,
-            3.128542599891018
+            3.5052937563517,
+            3.7152343305559006,
+            3.7269322466662573,
+            3.727584225487091,
+            3.727620564370833
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 3.4915304811486214,
+          "least_pull": 4.016737380206755,
           "least_pull_too_low": false,
-          "most_pull": 29.02430991838484,
+          "most_pull": 29.679678546433454,
           "most_pull_too_high": false,
           "diffs": [
-            0.009993531642869868,
-            0.023355872190499838,
-            0.011233969291495782,
-            -0.05707120230175633,
-            -0.13776948999142036,
-            -0.20736342275165498,
-            -0.18943469112493716,
-            -0.07715803145121214,
-            0.20737145942074875
+            -0.44185221787447304,
+            -0.33548869056077635,
+            -0.25544854094626857,
+            -0.2319146578996225,
+            -0.22244071337060944,
+            -0.20440440940546267,
+            -0.10346679961904925,
+            0.08669628861515122,
+            0.4419572484531642
           ],
           "diffs_minus_free_play": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            -0.1668522178744729,
+            -0.060488690560776215,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.16695724845316406
           ],
-          "max_diff_minus_free_play": 0.0,
-          "max_chain_angle": 0.0,
-          "cable_pull_at_max_chain_angle": 6.244693763578545,
+          "max_diff_minus_free_play": 0.16695724845316406,
+          "max_chain_angle": 0.3012910167539155,
+          "cable_pull_at_max_chain_angle": 26.832071404974272,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
+            -0.3011014768474658,
+            -0.10915744169967707,
             0.0,
             0.0,
             0.0,
             0.0,
             0.0,
             0.0,
-            0.0,
-            0.0,
-            0.0
+            0.3012910167539155
           ]
         },
-        "motionMultiplier": 1.0019195665651426
+        "motionMultiplier": 1.0385573682456972
       }
     ],
     "shifterType": "drop-bar",
@@ -1458,58 +881,58 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
-        "confidence": 0.06861055797911604,
+        "confidence": 0.20389124569376144,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 0.8730004064295543,
+        "maxChainAngle": 0.845222728329503,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 2.6521634019403275,
+          "barrel_adjuster": 2.66503125959249,
           "barrel_adjuster_values": [
             0,
-            2.5970971445945477,
-            2.651343984152291,
-            2.652151295472563,
-            2.652163225658373,
-            2.6521634019403275
+            2.5975148316246903,
+            2.6637711222346,
+            2.665007939619333,
+            2.6650308358003914,
+            2.66503125959249
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 2.621878450203538,
+          "least_pull": 2.6397145980160066,
           "least_pull_too_low": false,
-          "most_pull": 32.09690646537982,
+          "most_pull": 31.988463362641763,
           "most_pull_too_high": true,
           "diffs": [
-            -0.6087470418421859,
-            -0.46144887731739814,
-            -0.32090645188266365,
-            -0.20296173927149042,
-            0.029184535534710676,
-            0.3271175861181277,
-            0.6087475058162894
+            -0.5933553298617298,
+            -0.43864356676781213,
+            -0.28629748578330094,
+            -0.16001881761326686,
+            0.07043127204052269,
+            0.35088981762729077,
+            0.5933564571726961
           ],
           "diffs_minus_free_play": [
-            -0.48374704184218575,
-            -0.33644887731739803,
-            -0.19590645188266353,
-            -0.0779617392714903,
+            -0.4683553298617297,
+            -0.313643566767812,
+            -0.16129748578330083,
+            -0.03501881761326675,
             0.0,
-            0.20211758611812758,
-            0.48374750581628934
+            0.22588981762729066,
+            0.46835645717269603
           ],
-          "max_diff_minus_free_play": 0.48374750581628934,
-          "max_chain_angle": 0.8730004064295543,
-          "cable_pull_at_max_chain_angle": 23.38962425155873,
+          "max_diff_minus_free_play": 0.46835645717269603,
+          "max_chain_angle": 0.845222728329503,
+          "cable_pull_at_max_chain_angle": 23.402491861700746,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
-            -0.8729995690486394,
-            -0.6071641413974633,
-            -0.3535333574204568,
-            -0.14068923189132457,
+            -0.8452206937723623,
+            -0.5660077145199014,
+            -0.29107732077556,
+            -0.06319467274285803,
             0.0,
-            0.36474213755843665,
-            0.8730004064295543
+            0.40764227953553883,
+            0.845222728329503
           ]
         },
-        "motionMultiplier": 1.0682272940840059
+        "motionMultiplier": 1.0569603092632796
       }
     ],
     "shifterType": "drop-bar",
@@ -1551,177 +974,177 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
-        "confidence": 0.4615255295909415,
+        "confidence": 0.9653859026655776,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 0.24896253213887817,
+        "maxChainAngle": 0.16969386548356014,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 2.4157925065999453,
+          "barrel_adjuster": 2.4056775903669725,
           "barrel_adjuster_values": [
             0,
-            2.3528172983163484,
-            2.414410743833231,
-            2.415762323467594,
-            2.4157918611359146,
-            2.4157925065999453
+            2.3407168622828007,
+            2.4042572204391983,
+            2.4056467238557953,
+            2.4056769336462955,
+            2.4056775903669725
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 2.4584172847540113,
+          "least_pull": 2.453222872817847,
           "least_pull_too_low": false,
-          "most_pull": 31.813769320836382,
+          "most_pull": 31.687363456749985,
           "most_pull_too_high": true,
           "diffs": [
-            -0.41295847182496104,
-            -0.3063703740144632,
-            -0.3088948576837467,
-            -0.28646872634363874,
-            -0.15213821367959923,
-            -0.004094696944711984,
-            0.1756129070038952,
-            0.41296017068629
+            -0.3690326199828249,
+            -0.254852680966664,
+            -0.24496179373038984,
+            -0.21318741405793773,
+            -0.0791895895098449,
+            0.05310949277880894,
+            0.19574598560388523,
+            0.3690343668969902
           ],
           "diffs_minus_free_play": [
-            -0.1379584718249609,
-            -0.031370374014463076,
-            -0.03389485768374656,
-            -0.011468726343638602,
+            -0.09403261998282475,
             0.0,
             0.0,
             0.0,
-            0.13796017068628985
+            0.0,
+            0.0,
+            0.0,
+            0.09403436689699007
           ],
-          "max_diff_minus_free_play": 0.13796017068628985,
-          "max_chain_angle": 0.24896253213887817,
-          "cable_pull_at_max_chain_angle": 25.937062410845794,
+          "max_diff_minus_free_play": 0.09403436689699007,
+          "max_chain_angle": 0.16969386548356014,
+          "cable_pull_at_max_chain_angle": 25.926947483356173,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
-            -0.24895946635925506,
-            -0.05661071890456479,
-            -0.061166383034823794,
-            -0.0206963663045955,
+            -0.16969071300331368,
             0.0,
             0.0,
             0.0,
-            0.24896253213887817
+            0.0,
+            0.0,
+            0.0,
+            0.16969386548356014
           ]
         },
-        "motionMultiplier": 1.0418513115140304
+        "motionMultiplier": 1.0308625238493714
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
-        "confidence": 0.39822194492311325,
+        "confidence": 0.9298783057544626,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
-        "maxChainAngle": 0.21746518165337667,
+        "maxChainAngle": 0.1134345725086321,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 2.5271249817330363,
+          "barrel_adjuster": 2.524778152499523,
           "barrel_adjuster_values": [
             0,
-            2.470598453331547,
-            2.527791457457365,
-            2.5271171436775575,
-            2.5271250750250176,
-            2.5271249817330363
+            2.45725573628433,
+            2.5233325600818652,
+            2.524747399863825,
+            2.524777511715846,
+            2.524778152499523
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 2.399221388234916,
+          "least_pull": 2.4022839758152235,
           "least_pull_too_low": false,
-          "most_pull": 31.9601233963187,
+          "most_pull": 31.83849866871127,
           "most_pull_too_high": true,
           "diffs": [
-            -0.34217583530203655,
-            -0.2899863831872551,
-            -0.3457994407088876,
-            -0.36550655506298924,
-            -0.24222641983495663,
-            -0.06425635330847257,
-            0.25633538398260924,
-            0.3655063095184943
+            -0.3078571195490021,
+            -0.24804570384261382,
+            -0.2916401108317217,
+            -0.30240953319341557,
+            -0.18006017972147248,
+            -0.018625444989659456,
+            0.26391402234820305,
+            0.30785882406984655
           ],
           "diffs_minus_free_play": [
-            -0.09717583530203644,
-            -0.04498638318725501,
-            -0.10079944070888747,
-            -0.12050655506298913,
+            -0.06285711954900197,
+            -0.0030457038426137117,
+            -0.04664011083172159,
+            -0.05740953319341546,
             0.0,
             0.0,
-            0.011335383982609137,
-            0.12050630951849417
+            0.01891402234820294,
+            0.06285882406984644
           ],
-          "max_diff_minus_free_play": 0.12050655506298913,
-          "max_chain_angle": 0.21746518165337667,
-          "cable_pull_at_max_chain_angle": 26.048395624734898,
+          "max_diff_minus_free_play": 0.06285882406984644,
+          "max_chain_angle": 0.1134345725086321,
+          "cable_pull_at_max_chain_angle": 26.046048061425726,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
-            -0.17536295830813725,
-            -0.08118207101182152,
-            -0.18190211753939708,
-            -0.21746562476407208,
+            -0.1134314965388093,
+            -0.0054962512156277255,
+            -0.08416637693756995,
+            -0.1036008109671124,
             0.0,
             0.0,
-            0.020455737800344945,
-            0.21746518165337667
+            0.034132085614640935,
+            0.1134345725086321
           ]
         },
-        "motionMultiplier": 1.044488909771028
+        "motionMultiplier": 1.0334723023907622
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
-        "confidence": 0.06861055797911604,
+        "confidence": 0.20389124569376144,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 1.1031856762613585,
+        "maxChainAngle": 1.0152756062132713,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 2.74192282022156,
+          "barrel_adjuster": 2.7282743387632244,
           "barrel_adjuster_values": [
             0,
-            2.67196623448656,
-            2.740449137806853,
-            2.741891918897946,
-            2.7419221853530877,
-            2.74192282022156
+            2.656499617641779,
+            2.7267922351577294,
+            2.7282439394775646,
+            2.728273727609428,
+            2.7282743387632244
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 2.798865469419609,
+          "least_pull": 2.788381482204642,
           "least_pull_too_low": false,
-          "most_pull": 32.24511502973503,
+          "most_pull": 32.105746666817886,
           "most_pull_too_high": true,
           "diffs": [
-            -0.82128211608104,
-            -0.7074633253955014,
-            -0.7295052432846632,
-            -0.6332150749578958,
-            -0.24185285703700288,
-            0.16608328692939978,
-            0.5284879629029717,
-            0.8212837870548597
+            -0.7725758251990946,
+            -0.6501477639575342,
+            -0.659616349221217,
+            -0.5546532982932106,
+            -0.16504476930046508,
+            0.2249883370386101,
+            0.547436795160003,
+            0.7725774509027801
           ],
           "diffs_minus_free_play": [
-            -0.6112821160810399,
-            -0.4974633253955013,
-            -0.5195052432846631,
-            -0.4232150749578957,
-            -0.0318528570370028,
+            -0.5625758251990945,
+            -0.4401477639575341,
+            -0.44961634922121696,
+            -0.34465329829321056,
             0.0,
-            0.31848796290297166,
-            0.6112837870548596
+            0.014988337038610022,
+            0.3374367951600029,
+            0.56257745090278
           ],
-          "max_diff_minus_free_play": 0.6112837870548596,
-          "max_chain_angle": 1.1031856762613585,
-          "cable_pull_at_max_chain_angle": 26.263192735062965,
+          "max_diff_minus_free_play": 0.56257745090278,
+          "max_chain_angle": 1.0152756062132713,
+          "cable_pull_at_max_chain_angle": 26.249544277319306,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
-            -1.1031826602772072,
-            -0.897754813250018,
-            -0.9375365733970817,
-            -0.7637529369981289,
-            -0.05748140408819981,
+            -1.015272672021603,
+            -0.794312348387975,
+            -0.811400954398547,
+            -0.6219706213844777,
             0.0,
-            0.5747503037230045,
-            1.1031856762613585
+            0.02704782633475778,
+            0.6089470299194275,
+            1.0152756062132713
           ]
         },
-        "motionMultiplier": 1.0682272940840059
+        "motionMultiplier": 1.0569603092632796
       }
     ],
     "shifterType": "drop-bar",
@@ -1764,165 +1187,5 @@
       }
     ],
     "reviewsSentiment": "positive"
-  },
-  {
-    "brand": "SRAM",
-    "name": "SRAM Apex 1 11-Speed shifter/GX 10-Speed derailleur/11-speed cassette",
-    "speeds": 11,
-    "shifterPartNumber": "SB-APX-B1",
-    "derailleurPartNumber": "RD-GX-T21-A1",
-    "cassettes": [
-      {
-        "cassettePartNumber": "sram-11-speed",
-        "confidence": 0.07869114933094631,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 0.15011279346398884,
-        "maxAngleAnalysis": {
-          "barrel_adjuster": 1.6107394850472403,
-          "barrel_adjuster_values": [
-            0,
-            1.5651977987417518,
-            1.6096249677752392,
-            1.6107123121874103,
-            1.6107388380004701,
-            1.6107394850472403
-          ],
-          "barrel_adjuster_too_low": false,
-          "least_pull": 1.8105482309926348,
-          "least_pull_too_low": false,
-          "most_pull": 30.805663933360094,
-          "most_pull_too_high": true,
-          "diffs": [
-            0.3581837140611164,
-            0.2677972310267833,
-            0.0602724764019662,
-            -0.13068589990363222,
-            -0.21761644211341746,
-            -0.2979066725819095,
-            -0.3534636685732053,
-            -0.3581820110340175,
-            -0.3291654751905071
-          ],
-          "diffs_minus_free_play": [
-            0.08318371406111624,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            -0.02290667258190937,
-            -0.07846366857320519,
-            -0.08318201103401734,
-            -0.05416547519050696
-          ],
-          "max_diff_minus_free_play": 0.08318371406111624,
-          "max_chain_angle": 0.15011279346398884,
-          "cable_pull_at_max_chain_angle": 4.88073883800047,
-          "jockey_to_cog_links": 2.5,
-          "chain_angles": [
-            0.15011279346398884,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            -0.041337189779248856,
-            -0.14159501198141336,
-            -0.15010972018524715,
-            -0.09774660249251946
-          ]
-        },
-        "motionMultiplier": 0.981186551603087
-      },
-      {
-        "cassettePartNumber": "shimano-11-speed",
-        "confidence": 0.15187504514301622,
-        "supported": false,
-        "maxToothAvailableAndCompatible": 36,
-        "maxChainAngle": 0.0,
-        "maxAngleAnalysis": {
-          "barrel_adjuster": 1.7055130537479606,
-          "barrel_adjuster_values": [
-            0,
-            1.6708503402773085,
-            1.7048611742550015,
-            1.7055008491196981,
-            1.7055128293910156,
-            1.7055130537479606
-          ],
-          "barrel_adjuster_too_low": false,
-          "least_pull": 1.8842616433840793,
-          "least_pull_too_low": false,
-          "most_pull": 30.926354444171103,
-          "most_pull_too_high": true,
-          "diffs": [
-            0.27084107044184336,
-            0.20645550300776705,
-            0.025876364208173186,
-            -0.13714663079486655,
-            -0.1952103088616397,
-            -0.24580027374916824,
-            -0.270840479934364,
-            -0.2442407296324589,
-            -0.1830927362947108
-          ],
-          "diffs_minus_free_play": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "max_diff_minus_free_play": 0.0,
-          "max_chain_angle": 0.0,
-          "cable_pull_at_max_chain_angle": 4.975512829391016,
-          "jockey_to_cog_links": 2.5,
-          "chain_angles": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
-          ]
-        },
-        "motionMultiplier": 0.9890993463740796
-      }
-    ],
-    "shifterType": "drop-bar",
-    "noMatchingFrontShifter": true,
-    "moreCogsThanShifts": false,
-    "moreShiftsThanCogs": false,
-    "maxToothAvailableAndCompatible": 36,
-    "maxToothAvailableAndSupported": 0,
-    "supported": false,
-    "chainWrap": 47,
-    "equivalentShifters": [
-      {
-        "name": "Rival 1 11-Speed",
-        "brand": "SRAM",
-        "partNumber": "SB-RIV-B1",
-        "type": "drop-bar",
-        "equivalentPartNumber": "SB-APX-B1",
-        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
-      },
-      {
-        "name": "Force 1 11-Speed",
-        "brand": "SRAM",
-        "partNumber": "SB-FOR-B1",
-        "type": "drop-bar",
-        "equivalentPartNumber": "SB-APX-B1",
-        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
-      }
-    ],
-    "equivalentDerailleurs": [],
-    "reviews": [],
-    "reviewsSentiment": "none"
   }
 ]
