@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block content %}
+<section>
 <h1>{{ info.brand }} {{ info.name }}</h1>
 <table>
   <tr>
@@ -52,7 +53,9 @@
 <img src="pull_ratio_curve.png"/>
 <figcaption>Pull Ratio Curve. Second smallest and second largest cog positions marked by dots</figcaption>
 </figure>
+</section>
 
+<section>
 <h1>Runs</h1>
 {% for r in runs %}
 <h2>{{r.name}}</h2>
@@ -60,6 +63,7 @@
 <img src="{{r.chart}}"/>
 <figcaption>Data and best fit line, excluding points taken at limits</figcaption>
 </figure>
+</section>
 {% endfor %}
 
 {% endblock %}
