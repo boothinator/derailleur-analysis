@@ -9,7 +9,7 @@
   "minDropoutWidth": 10.2,
   "maxDropoutWidth": 12.2,
   "smallCogOffset": 2.2,
-  "oneByOnly": true,
+  "supportsMultipleFrontChainrings": false,
   "chain": "Campagnolo C13",
   "maxTooth": 44,
   "chainWrap": 35,

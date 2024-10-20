@@ -9,7 +9,7 @@
   "minDropoutWidth": null,
   "maxDropoutWidth": null,
   "smallCogOffset": 3.2,
-  "oneByOnly": false,
+  "supportsMultipleFrontChainrings": true,
   "chain": "10-speed",
   "maxTooth": 36,
   "chainWrap": 41,
