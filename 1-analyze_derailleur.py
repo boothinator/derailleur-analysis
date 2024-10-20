@@ -340,6 +340,7 @@ def process_der(dir):
   return info_out
 
 
+all_info = []
 
 for dir in os.listdir('derailleurs'):
   if dir == "template":
@@ -351,4 +352,8 @@ for dir in os.listdir('derailleurs'):
 
   print(dir)
 
-  process_der(dir)
+  info_out = process_der(dir)
+  all_info.append(info_out)
+
+with open(f"all_derailleurs.json", "w") as info_file:
+  json.dump(all_info, info_file, indent=2)
