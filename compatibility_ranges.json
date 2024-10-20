@@ -1,9 +1,9 @@
 {
-  "motionMultiplierAvg": 1.0239452379544323,
-  "motionMultiplierStdev": 0.024317763977364616,
-  "motionMultiplierMin": 0.975309709999703,
-  "motionMultiplierMax": 1.0725807659091615,
-  "maxChainAngleAvg": 0.45139880390824283,
-  "maxChainAngleStdev": 0.3473002598766641,
-  "maxChainAngleMax": 1.145999323661571
+  "motionMultiplierAvg": 1.0317244651335624,
+  "motionMultiplierStdev": 0.019862249789992067,
+  "motionMultiplierMin": 0.9919999655535783,
+  "motionMultiplierMax": 1.0714489647135466,
+  "maxChainAngleAvg": 0.4501451661363201,
+  "maxChainAngleStdev": 0.390135375569304,
+  "maxChainAngleMax": 1.230415917274928
 }
