@@ -25,5 +25,6 @@
   "Pull Ratio Averaged Across Pulling Runs": "1.279 +/- 0.000",
   "Pull Ratio Averaged Across Relaxing Runs": "1.281 +/- 0.000",
   "Pull Ratio Averaged Across All Runs": "1.280 +/- 0.002",
-  "Pull Ratio 95% Confidence Interval": "1.278 to 1.281"
+  "Pull Ratio 95% Confidence Interval": "1.278 to 1.281",
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo Ekar/default.htm"
 }

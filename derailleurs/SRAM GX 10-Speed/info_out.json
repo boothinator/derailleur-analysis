@@ -25,5 +25,6 @@
   "Pull Ratio Averaged Across Pulling Runs": "1.326 +/- 0.003",
   "Pull Ratio Averaged Across Relaxing Runs": "1.336 +/- 0.003",
   "Pull Ratio Averaged Across All Runs": "1.331 +/- 0.010",
-  "Pull Ratio 95% Confidence Interval": "1.321 to 1.341"
+  "Pull Ratio 95% Confidence Interval": "1.321 to 1.341",
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM GX 10-Speed/default.htm"
 }

@@ -25,5 +25,6 @@
   "Pull Ratio Averaged Across Pulling Runs": "1.668 +/- 0.011",
   "Pull Ratio Averaged Across Relaxing Runs": "1.681 +/- 0.009",
   "Pull Ratio Averaged Across All Runs": "1.675 +/- 0.017",
-  "Pull Ratio 95% Confidence Interval": "1.658 to 1.691"
+  "Pull Ratio 95% Confidence Interval": "1.658 to 1.691",
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Tiagra 4600 10-Speed/default.htm"
 }

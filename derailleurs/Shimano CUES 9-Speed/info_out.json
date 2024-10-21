@@ -25,5 +25,6 @@
   "Pull Ratio Averaged Across Pulling Runs": "1.109 +/- 0.004",
   "Pull Ratio Averaged Across Relaxing Runs": "1.116 +/- 0.012",
   "Pull Ratio Averaged Across All Runs": "1.113 +/- 0.012",
-  "Pull Ratio 95% Confidence Interval": "1.101 to 1.124"
+  "Pull Ratio 95% Confidence Interval": "1.101 to 1.124",
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 9-Speed/default.htm"
 }
