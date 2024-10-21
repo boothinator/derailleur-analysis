@@ -2,10 +2,16 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import datetime
 import json
 import math
 import re
 import pandas as pd
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+# Template environment
+environment = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
+template = environment.get_template("shifter_analysis.htm")
 
 def convert_to_float(c):
   return float(c) if len(c) > 0 else float('nan')
@@ -147,7 +153,8 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
 
   return {
     "shiftSpacings": shift_averages.to_list(),
-    "cablePull": cable_pull
+    "cablePull": cable_pull,
+    "analysisUrl": f"https://boothinator.github.io/derailleur-analysis/shifters/{dir}/default.htm"
   }
   
 
@@ -180,6 +187,14 @@ for dir in os.listdir('shifters'):
   
   with open(f"shifters/{dir}/info_out.json", "w") as info_file:
     json.dump(info_out, info_file, indent=2)
+
+  today = datetime.date.today()
+
+  output = template.render(year=str(today.year), generation_date=str(today),
+                           info=info_out)
+  
+  with open(f"shifters/{dir}/default.htm", 'w') as f:
+    print(output, file = f)
 
 with open(f"all_shifters.json", "w") as info_file:
   json.dump(all_info, info_file, indent=2)

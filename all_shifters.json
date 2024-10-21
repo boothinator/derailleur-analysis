@@ -20,7 +20,8 @@
       2.523333333333333,
       3.2016666666666667
     ],
-    "cablePull": 2.4182499999999996
+    "cablePull": 2.4182499999999996,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo Ekar/default.htm"
   },
   {
     "brand": "Microshift",
@@ -41,7 +42,8 @@
       3.714166666666667,
       4.45
     ],
-    "cablePull": 3.410138888888889
+    "cablePull": 3.410138888888889,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Microshift Advent X/default.htm"
   },
   {
     "brand": "Sensah",
@@ -63,7 +65,8 @@
       2.5683333333333334,
       2.598333333333333
     ],
-    "cablePull": 2.5123958333333336
+    "cablePull": 2.5123958333333336,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Sensah Team Pro/default.htm"
   },
   {
     "brand": "Shimano",
@@ -83,7 +86,8 @@
       3.546111111111111,
       3.565
     ],
-    "cablePull": 3.560486111111112
+    "cablePull": 3.560486111111112,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano CUES 9-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -104,7 +108,8 @@
       3.7891666666666666,
       4.548333333333333
     ],
-    "cablePull": 3.4810912698412695
+    "cablePull": 3.4810912698412695,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano Deore 10-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -126,7 +131,8 @@
       3.3725,
       3.621666666666666
     ],
-    "cablePull": 3.398072916666667
+    "cablePull": 3.398072916666667,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano Deore 11-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -149,7 +155,8 @@
       3.4933333333333336,
       3.8783333333333334
     ],
-    "cablePull": 3.1892267956215323
+    "cablePull": 3.1892267956215323,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano SLX/default.htm"
   },
   {
     "brand": "Shimano",
@@ -171,7 +178,8 @@
       2.43875,
       2.4858333333333333
     ],
-    "cablePull": 2.4985416666666667
+    "cablePull": 2.4985416666666667,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano Ultegra 11-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -192,7 +200,8 @@
       2.765,
       3.438333333333333
     ],
-    "cablePull": 2.2783928571428573
+    "cablePull": 2.2783928571428573,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano Ultegra 6600/default.htm"
   },
   {
     "brand": "Shimano",
@@ -213,7 +222,8 @@
       2.703333333333333,
       3.549166666666667
     ],
-    "cablePull": 2.282380952380952
+    "cablePull": 2.282380952380952,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano Ultegra 6700/default.htm"
   },
   {
     "brand": "SRAM",
@@ -236,7 +246,8 @@
       2.796315789473684,
       3.745
     ],
-    "cablePull": 2.880948292397945
+    "cablePull": 2.880948292397945,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/SRAM Apex 1/default.htm"
   },
   {
     "brand": "SRAM",
@@ -257,7 +268,8 @@
       2.9786363636363635,
       3.175
     ],
-    "cablePull": 2.9951283240568958
+    "cablePull": 2.9951283240568958,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/SRAM GX 10-Speed/default.htm"
   },
   {
     "brand": "SRAM",
@@ -280,6 +292,7 @@
       3.7216666666666662,
       4.37
     ],
-    "cablePull": 3.2458148148148154
+    "cablePull": 3.2458148148148154,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/SRAM SX/default.htm"
   }
 ]
