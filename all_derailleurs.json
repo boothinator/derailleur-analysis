@@ -52,7 +52,8 @@
     "Pull Ratio Averaged Across Pulling Runs": "1.279 +/- 0.000",
     "Pull Ratio Averaged Across Relaxing Runs": "1.281 +/- 0.000",
     "Pull Ratio Averaged Across All Runs": "1.280 +/- 0.002",
-    "Pull Ratio 95% Confidence Interval": "1.278 to 1.281"
+    "Pull Ratio 95% Confidence Interval": "1.278 to 1.281",
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo Ekar/default.htm"
   },
   {
     "brand": "Shimano",
@@ -81,7 +82,8 @@
     "Pull Ratio Averaged Across Pulling Runs": "1.455 +/- 0.010",
     "Pull Ratio Averaged Across Relaxing Runs": "1.444 +/- 0.028",
     "Pull Ratio Averaged Across All Runs": "1.449 +/- 0.024",
-    "Pull Ratio 95% Confidence Interval": "1.426 to 1.473"
+    "Pull Ratio 95% Confidence Interval": "1.426 to 1.473",
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano 105 11-speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -110,7 +112,8 @@
     "Pull Ratio Averaged Across Pulling Runs": "1.109 +/- 0.004",
     "Pull Ratio Averaged Across Relaxing Runs": "1.116 +/- 0.012",
     "Pull Ratio Averaged Across All Runs": "1.113 +/- 0.012",
-    "Pull Ratio 95% Confidence Interval": "1.101 to 1.124"
+    "Pull Ratio 95% Confidence Interval": "1.101 to 1.124",
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 9-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -139,7 +142,8 @@
     "Pull Ratio Averaged Across Pulling Runs": "1.081 +/- 0.001",
     "Pull Ratio Averaged Across Relaxing Runs": "1.069 +/- 0.003",
     "Pull Ratio Averaged Across All Runs": "1.075 +/- 0.012",
-    "Pull Ratio 95% Confidence Interval": "1.063 to 1.087"
+    "Pull Ratio 95% Confidence Interval": "1.063 to 1.087",
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore 11-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -168,7 +172,8 @@
     "Pull Ratio Averaged Across Pulling Runs": "1.431 +/- 0.030",
     "Pull Ratio Averaged Across Relaxing Runs": "1.460 +/- 0.008",
     "Pull Ratio Averaged Across All Runs": "1.445 +/- 0.036",
-    "Pull Ratio 95% Confidence Interval": "1.409 to 1.481"
+    "Pull Ratio 95% Confidence Interval": "1.409 to 1.481",
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano GRX 10-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -197,7 +202,8 @@
     "Pull Ratio Averaged Across Pulling Runs": "1.668 +/- 0.011",
     "Pull Ratio Averaged Across Relaxing Runs": "1.681 +/- 0.009",
     "Pull Ratio Averaged Across All Runs": "1.675 +/- 0.017",
-    "Pull Ratio 95% Confidence Interval": "1.658 to 1.691"
+    "Pull Ratio 95% Confidence Interval": "1.658 to 1.691",
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Tiagra 4600 10-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -226,7 +232,8 @@
     "Pull Ratio Averaged Across Pulling Runs": "1.669 +/- 0.000",
     "Pull Ratio Averaged Across Relaxing Runs": "1.596 +/- 0.000",
     "Pull Ratio Averaged Across All Runs": "1.632 +/- 0.074",
-    "Pull Ratio 95% Confidence Interval": "1.559 to 1.706"
+    "Pull Ratio 95% Confidence Interval": "1.559 to 1.706",
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra 6500 9-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -255,7 +262,8 @@
     "Pull Ratio Averaged Across Pulling Runs": "1.509 +/- 0.010",
     "Pull Ratio Averaged Across Relaxing Runs": "1.510 +/- 0.006",
     "Pull Ratio Averaged Across All Runs": "1.509 +/- 0.008",
-    "Pull Ratio 95% Confidence Interval": "1.501 to 1.518"
+    "Pull Ratio 95% Confidence Interval": "1.501 to 1.518",
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra RX 11-Speed/default.htm"
   },
   {
     "brand": "SRAM",
@@ -284,7 +292,8 @@
     "Pull Ratio Averaged Across Pulling Runs": "1.326 +/- 0.003",
     "Pull Ratio Averaged Across Relaxing Runs": "1.336 +/- 0.003",
     "Pull Ratio Averaged Across All Runs": "1.331 +/- 0.010",
-    "Pull Ratio 95% Confidence Interval": "1.321 to 1.341"
+    "Pull Ratio 95% Confidence Interval": "1.321 to 1.341",
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM GX 10-Speed/default.htm"
   },
   {
     "brand": "SRAM",
@@ -313,6 +322,7 @@
     "Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.015",
     "Pull Ratio Averaged Across Relaxing Runs": "1.081 +/- 0.024",
     "Pull Ratio Averaged Across All Runs": "1.077 +/- 0.021",
-    "Pull Ratio 95% Confidence Interval": "1.055 to 1.098"
+    "Pull Ratio 95% Confidence Interval": "1.055 to 1.098",
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM SX 12-Speed/default.htm"
   }
 ]
