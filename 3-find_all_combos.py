@@ -51,15 +51,16 @@ for shifter in shifters:
           and speeds == shifter["speeds"] and speeds == derailleur["designSpeeds"]:
         # Same group
         same_group = True
-        partial_name = f"{shifter["brand"]} {shifter['name']} group"
+        combo_name = partial_name = f"{shifter["brand"]} {shifter['name']} {speeds}-Speed group"
       else:
         same_group = False
         partial_name = f"{shifter_name} shifter/{derailleur_name} derailleur"
+        combo_name = partial_name + f"/{speeds}-Speed cassette"
 
       # Build combo info
       combo = {
         "brand": brand,
-        "name": partial_name + f"/{speeds}-Speed cassette",
+        "name": combo_name,
         "partialName": partial_name,
         "shifterPartialName": shifter_name,
         "derailleurPartialName": derailleur_name,
