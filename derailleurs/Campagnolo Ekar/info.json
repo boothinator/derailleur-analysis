@@ -12,5 +12,7 @@
   "supportsMultipleFrontChainrings": false,
   "chain": "Campagnolo C13",
   "maxTooth": 44,
-  "chainWrap": 35
+  "chainWrap": 35,
+  "dataVideo": null,
+  "analysisVideo": null
 }

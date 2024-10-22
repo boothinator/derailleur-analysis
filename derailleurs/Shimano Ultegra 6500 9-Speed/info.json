@@ -12,5 +12,7 @@
   "supportsMultipleFrontChainrings": true,
   "chain": "9-speed",
   "maxTooth": 28,
-  "chainWrap": 33
+  "chainWrap": 33,
+  "dataVideo": null,
+  "analysisVideo": null
 }

@@ -5,5 +5,7 @@
   "type": "drop-bar",
   "speeds": 11,
   "source": "",
-  "hasMatchingFrontShifters": true
+  "hasMatchingFrontShifters": true,
+  "dataVideo": null,
+  "analysisVideo": null
 }

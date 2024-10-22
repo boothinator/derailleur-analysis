@@ -5,5 +5,7 @@
   "type": "flat-bar",
   "speeds": 12,
   "source": "",
-  "hasMatchingFrontShifters": false
+  "hasMatchingFrontShifters": false,
+  "dataVideo": null,
+  "analysisVideo": null
 }

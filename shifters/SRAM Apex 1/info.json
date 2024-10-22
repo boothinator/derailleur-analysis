@@ -6,5 +6,7 @@
   "speeds": 11,
   "mostPullIsLowestMeasurement": true,
   "source": "https://youtu.be/jDw4xsK3_po",
-  "hasMatchingFrontShifters": false
+  "hasMatchingFrontShifters": false,
+  "dataVideo": "https://youtu.be/A9q-Zv6gW7E",
+  "analysisVideo": "https://youtu.be/jDw4xsK3_po"
 }

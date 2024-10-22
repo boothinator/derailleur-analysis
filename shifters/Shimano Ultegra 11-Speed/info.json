@@ -5,5 +5,7 @@
   "type": "drop-bar",
   "speeds": 11,
   "source": "https://youtu.be/J-Yi6OzVvhc",
-  "hasMatchingFrontShifters": true
+  "hasMatchingFrontShifters": true,
+  "dataVideo": "https://youtu.be/rteGCukyrHg",
+  "analysisVideo": "https://youtu.be/J-Yi6OzVvhc"
 }

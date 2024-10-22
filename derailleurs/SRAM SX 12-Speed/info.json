@@ -12,5 +12,7 @@
   "supportsMultipleFrontChainrings": false,
   "chain": "12-speed",
   "maxTooth": 50,
-  "chainWrap": 40
+  "chainWrap": 40,
+  "dataVideo": "https://youtu.be/MbIZ-nNYEKI",
+  "analysisVideo": "https://www.youtube.com/watch?v=HCI9IhSgN3Y"
 }

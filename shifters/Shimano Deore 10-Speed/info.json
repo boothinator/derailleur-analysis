@@ -5,5 +5,7 @@
   "type": "flat-bar",
   "speeds": 10,
   "source": "https://youtu.be/fbm876mdWKk",
-  "hasMatchingFrontShifters": true
+  "hasMatchingFrontShifters": true,
+  "dataVideo": "https://youtu.be/aRrmOrzApkQ",
+  "analysisVideo": "https://youtu.be/fbm876mdWKk"
 }
