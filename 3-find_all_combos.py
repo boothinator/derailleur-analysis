@@ -34,6 +34,19 @@ for shifter in shifters:
     equiv_derailleurs = [s for s in equivalent_derailleurs if s["equivalentPartNumber"] == derailleur["partNumber"]]
 
     for speeds in range(9, 14):
+      shifter_name = shifter["brand"] + " " + shifter["name"]
+
+      if shifter["brand"] == derailleur["brand"]:
+        brand = shifter["brand"]
+        derailleur_name = derailleur["name"]
+      else:
+        brand = "Mixed"
+        derailleur_name = derailleur["brand"] + " " + derailleur["name"]
+
+      if speeds != shifter["speeds"]:
+        shifter_name = shifter_name + f' {shifter["speeds"]}-Speed'
+      if speeds != derailleur["designSpeeds"]:
+        derailleur_name = derailleur_name + f' {derailleur["designSpeeds"]}-Speed'
       
       if shifter["brand"] == derailleur["brand"] \
         and shifter["name"] == derailleur["name"] \
@@ -41,20 +54,6 @@ for shifter in shifters:
         # Same brand and group
         partial_name = f"{shifter["brand"]} {shifter['name']} group"
       else:
-        shifter_name = shifter["brand"] + " " + shifter["name"]
-
-        if shifter["brand"] == derailleur["brand"]:
-          brand = shifter["brand"]
-          derailleur_name = derailleur["name"]
-        else:
-          brand = "Mixed"
-          derailleur_name = derailleur["brand"] + " " + derailleur["name"]
-
-        if speeds != shifter["speeds"]:
-          shifter_name = shifter_name + f' {shifter["speeds"]}-Speed'
-        if speeds != derailleur["designSpeeds"]:
-          derailleur_name = derailleur_name + f' {derailleur["designSpeeds"]}-Speed'
-        
         partial_name = f"{shifter_name} shifter/{derailleur_name} derailleur"
 
       # Build combo info
@@ -62,6 +61,8 @@ for shifter in shifters:
         "brand": brand,
         "name": partial_name + f"/{speeds}-Speed cassette",
         "partialName": partial_name,
+        "shifterPartialName": shifter_name,
+        "derailleurPartialName": derailleur_name,
         "speeds": speeds,
         "shifterPartNumber": shifter["partNumber"],
         "shifterName": shifter["name"],
