@@ -13,6 +13,8 @@
   "chain": "10-speed",
   "maxTooth": 36,
   "chainWrap": 41,
+  "dataVideo": "https://youtu.be/DmpSMv3bTr8",
+  "analysisVideo": "https://youtu.be/4Bh7QUWcSew",
   "pullRatio": 1.4451541692394148,
   "coefficients": [
     10.610392334722084,

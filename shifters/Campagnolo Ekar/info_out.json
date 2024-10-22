@@ -5,6 +5,8 @@
   "type": "drop-bar",
   "speeds": 13,
   "hasMatchingFrontShifters": false,
+  "dataVideo": null,
+  "analysisVideo": null,
   "shiftSpacings": [
     2.866666666666666,
     2.351666666666667,

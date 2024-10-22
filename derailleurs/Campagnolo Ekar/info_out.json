@@ -13,6 +13,8 @@
   "chain": "Campagnolo C13",
   "maxTooth": 44,
   "chainWrap": 35,
+  "dataVideo": null,
+  "analysisVideo": null,
   "pullRatio": 1.2797477439176388,
   "coefficients": [
     10.53397260009244,

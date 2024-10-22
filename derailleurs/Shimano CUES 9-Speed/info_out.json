@@ -13,6 +13,8 @@
   "chain": "11-speed",
   "maxTooth": 36,
   "chainWrap": 41,
+  "dataVideo": null,
+  "analysisVideo": null,
   "pullRatio": 1.11243610114714,
   "coefficients": [
     7.712042433306082,

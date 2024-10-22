@@ -44,6 +44,18 @@
     <th>Pull Ratio 95% Confidence Interval</th>
     <td>{{info["Pull Ratio 95% Confidence Interval"]}}</td>
   </tr>
+  {% if info.dataVideo %}
+  <tr>
+    <th>Data Video</th>
+    <td><a href="{{info.dataVideo}}" target="_blank">{{info.dataVideo}}</a></td>
+  </tr>
+  {% endif %}
+  {% if info.analysisVideo %}
+  <tr>
+    <th>Analysis Video</th>
+    <td><a href="{{info.analysisVideo}}" target="_blank">{{info.analysisVideo}}</a></td>
+  </tr>
+  {% endif %}
 </table>
 <figure>
 <img src="pull_curve.png"/>

@@ -41,6 +41,8 @@
     "chain": "Campagnolo C13",
     "maxTooth": 44,
     "chainWrap": 35,
+    "dataVideo": null,
+    "analysisVideo": null,
     "pullRatio": 1.2797477439176388,
     "coefficients": [
       10.53397260009244,
@@ -71,6 +73,8 @@
     "chain": "10-speed",
     "maxTooth": 32,
     "chainWrap": 37,
+    "dataVideo": "https://youtu.be/k_x4DJSQ8AE",
+    "analysisVideo": "https://www.youtube.com/watch?v=YyO71cNk6sk",
     "pullRatio": 1.4494358404240009,
     "coefficients": [
       9.55396593380121,
@@ -101,6 +105,8 @@
     "chain": "11-speed",
     "maxTooth": 36,
     "chainWrap": 41,
+    "dataVideo": null,
+    "analysisVideo": null,
     "pullRatio": 1.11243610114714,
     "coefficients": [
       7.712042433306082,
@@ -131,6 +137,8 @@
     "chain": "11-speed",
     "maxTooth": 42,
     "chainWrap": 41,
+    "dataVideo": "https://youtu.be/OwyaJB4pWBk",
+    "analysisVideo": "https://youtu.be/FNMAUrJoGMw",
     "pullRatio": 1.0749604316259438,
     "coefficients": [
       7.384951740998498,
@@ -161,6 +169,8 @@
     "chain": "10-speed",
     "maxTooth": 36,
     "chainWrap": 41,
+    "dataVideo": "https://youtu.be/DmpSMv3bTr8",
+    "analysisVideo": "https://youtu.be/4Bh7QUWcSew",
     "pullRatio": 1.4451541692394148,
     "coefficients": [
       10.610392334722084,
@@ -191,6 +201,8 @@
     "chain": "10-speed",
     "maxTooth": 30,
     "chainWrap": 34,
+    "dataVideo": "https://youtu.be/ZcwTvWDTFSI",
+    "analysisVideo": "https://www.youtube.com/watch?v=d0Pdnp2CTek",
     "pullRatio": 1.6746696277984687,
     "coefficients": [
       11.52730937290294,
@@ -221,6 +233,8 @@
     "chain": "9-speed",
     "maxTooth": 28,
     "chainWrap": 33,
+    "dataVideo": null,
+    "analysisVideo": null,
     "pullRatio": 1.635046314783002,
     "coefficients": [
       6.830856626055127,
@@ -251,6 +265,8 @@
     "chain": "11-speed",
     "maxTooth": 34,
     "chainWrap": 39,
+    "dataVideo": "https://youtu.be/jk8TN2DK8EE",
+    "analysisVideo": "https://youtu.be/pIl8qiARYjc",
     "pullRatio": 1.508972393743118,
     "coefficients": [
       10.195779094239485,
@@ -281,6 +297,8 @@
     "chain": "10-speed",
     "maxTooth": 36,
     "chainWrap": 47,
+    "dataVideo": "https://youtu.be/S54ap--bayU",
+    "analysisVideo": "https://youtu.be/B8jEOt5SXKg",
     "pullRatio": 1.3300282959484173,
     "coefficients": [
       12.472023202602097,
@@ -311,6 +329,8 @@
     "chain": "12-speed",
     "maxTooth": 50,
     "chainWrap": 40,
+    "dataVideo": "https://youtu.be/MbIZ-nNYEKI",
+    "analysisVideo": "https://www.youtube.com/watch?v=HCI9IhSgN3Y",
     "pullRatio": 1.0772277290143308,
     "coefficients": [
       15.0246764304295,

@@ -6,6 +6,8 @@
   "speeds": 10,
   "source": "",
   "hasMatchingFrontShifters": true,
+  "dataVideo": null,
+  "analysisVideo": null,
   "shiftSpacings": [
     2.4074999999999998,
     2.0016666666666674,
