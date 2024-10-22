@@ -4,7 +4,11 @@
     "name": "Campagnolo Ekar 13-Speed shifter/Shimano 105 11-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "EP21-EKD13-R4",
+    "shifterName": "Ekar 13-Speed",
+    "shifterBrand": "Campagnolo",
     "derailleurPartNumber": "RD-5800",
+    "derailleurName": "105 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -147,7 +151,11 @@
     "name": "Campagnolo Ekar 13-Speed shifter/Shimano 105 11-Speed derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "EP21-EKD13-R4",
+    "shifterName": "Ekar 13-Speed",
+    "shifterBrand": "Campagnolo",
     "derailleurPartNumber": "RD-5800",
+    "derailleurName": "105 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -232,7 +240,11 @@
     "name": "Campagnolo Ekar 13-Speed shifter/Shimano GRX derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "EP21-EKD13-R4",
+    "shifterName": "Ekar 13-Speed",
+    "shifterBrand": "Campagnolo",
     "derailleurPartNumber": "RD-RX400",
+    "derailleurName": "GRX",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -314,7 +326,11 @@
     "name": "Campagnolo Ekar 13-Speed shifter/Shimano GRX derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "EP21-EKD13-R4",
+    "shifterName": "Ekar 13-Speed",
+    "shifterBrand": "Campagnolo",
     "derailleurPartNumber": "RD-RX400",
+    "derailleurName": "GRX",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -399,7 +415,11 @@
     "name": "Campagnolo Ekar 13-Speed shifter/Shimano Tiagra 4600 10-speed derailleur/9-speed cassette",
     "speeds": 9,
     "shifterPartNumber": "EP21-EKD13-R4",
+    "shifterName": "Ekar 13-Speed",
+    "shifterBrand": "Campagnolo",
     "derailleurPartNumber": "RD-4601-SS",
+    "derailleurName": "Tiagra 4600 10-speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
@@ -475,7 +495,11 @@
     "name": "Campagnolo Ekar 13-Speed shifter/Shimano Ultegra RX 11-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "EP21-EKD13-R4",
+    "shifterName": "Ekar 13-Speed",
+    "shifterBrand": "Campagnolo",
     "derailleurPartNumber": "RD-RX800",
+    "derailleurName": "Ultegra RX 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -618,7 +642,11 @@
     "name": "Campagnolo Ekar 13-Speed shifter/Shimano Ultegra RX 11-Speed derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "EP21-EKD13-R4",
+    "shifterName": "Ekar 13-Speed",
+    "shifterBrand": "Campagnolo",
     "derailleurPartNumber": "RD-RX800",
+    "derailleurName": "Ultegra RX 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -703,7 +731,11 @@
     "name": "Microshift Advent X 10-Speed shifter/Shimano CUES 9-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SB-M100A",
+    "shifterName": "Advent X 10-Speed",
+    "shifterBrand": "Microshift",
     "derailleurPartNumber": "RD-U4020",
+    "derailleurName": "CUES 9-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -849,7 +881,11 @@
     "name": "Microshift Advent X 10-Speed shifter/Shimano Deore 11-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SB-M100A",
+    "shifterName": "Advent X 10-Speed",
+    "shifterBrand": "Microshift",
     "derailleurPartNumber": "RD-M4120",
+    "derailleurName": "Deore 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -995,7 +1031,11 @@
     "name": "Microshift Advent X 10-Speed shifter/Shimano Deore 11-Speed derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "SB-M100A",
+    "shifterName": "Advent X 10-Speed",
+    "shifterBrand": "Microshift",
     "derailleurPartNumber": "RD-M4120",
+    "derailleurName": "Deore 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -1083,7 +1123,11 @@
     "name": "Microshift Advent X 10-Speed shifter/SRAM SX 12-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SB-M100A",
+    "shifterName": "Advent X 10-Speed",
+    "shifterBrand": "Microshift",
     "derailleurPartNumber": "RD-SX-1-B1",
+    "derailleurName": "SX 12-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -1229,7 +1273,11 @@
     "name": "Microshift Advent X 10-Speed shifter/SRAM SX 12-Speed derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "SB-M100A",
+    "shifterName": "Advent X 10-Speed",
+    "shifterBrand": "Microshift",
     "derailleurPartNumber": "RD-SX-1-B1",
+    "derailleurName": "SX 12-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -1317,7 +1365,11 @@
     "name": "Sensah Team Pro 11-speed shifter/Shimano 105 11-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "sensah-team-pro-11",
+    "shifterName": "Team Pro 11-speed",
+    "shifterBrand": "Sensah",
     "derailleurPartNumber": "RD-5800",
+    "derailleurName": "105 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -1460,7 +1512,11 @@
     "name": "Sensah Team Pro 11-speed shifter/Shimano 105 11-Speed derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "sensah-team-pro-11",
+    "shifterName": "Team Pro 11-speed",
+    "shifterBrand": "Sensah",
     "derailleurPartNumber": "RD-5800",
+    "derailleurName": "105 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -1542,7 +1598,11 @@
     "name": "Sensah Team Pro 11-speed shifter/Shimano GRX derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "sensah-team-pro-11",
+    "shifterName": "Team Pro 11-speed",
+    "shifterBrand": "Sensah",
     "derailleurPartNumber": "RD-RX400",
+    "derailleurName": "GRX",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -1685,7 +1745,11 @@
     "name": "Sensah Team Pro 11-speed shifter/Shimano GRX derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "sensah-team-pro-11",
+    "shifterName": "Team Pro 11-speed",
+    "shifterBrand": "Sensah",
     "derailleurPartNumber": "RD-RX400",
+    "derailleurName": "GRX",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -1767,7 +1831,11 @@
     "name": "Sensah Team Pro 11-speed shifter/Shimano Ultegra RX 11-Speed derailleur/9-speed cassette",
     "speeds": 9,
     "shifterPartNumber": "sensah-team-pro-11",
+    "shifterName": "Team Pro 11-speed",
+    "shifterBrand": "Sensah",
     "derailleurPartNumber": "RD-RX800",
+    "derailleurName": "Ultegra RX 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
@@ -1843,7 +1911,11 @@
     "name": "Sensah Team Pro 11-speed shifter/Shimano Ultegra RX 11-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "sensah-team-pro-11",
+    "shifterName": "Team Pro 11-speed",
+    "shifterBrand": "Sensah",
     "derailleurPartNumber": "RD-RX800",
+    "derailleurName": "Ultegra RX 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -2038,7 +2110,11 @@
     "name": "Shimano CUES 9-Speed group with 9-speed cassette",
     "speeds": 9,
     "shifterPartNumber": "SL-U4000",
+    "shifterName": "CUES 9-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-U4020",
+    "derailleurName": "CUES 9-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
@@ -2114,7 +2190,11 @@
     "name": "Shimano CUES 9-Speed group with 10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SL-U4000",
+    "shifterName": "CUES 9-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-U4020",
+    "derailleurName": "CUES 9-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -2300,7 +2380,11 @@
     "name": "Shimano CUES 9-Speed shifter/Deore 11-Speed derailleur/9-speed cassette",
     "speeds": 9,
     "shifterPartNumber": "SL-U4000",
+    "shifterName": "CUES 9-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-M4120",
+    "derailleurName": "Deore 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
@@ -2376,7 +2460,11 @@
     "name": "Shimano CUES 9-Speed shifter/Deore 11-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SL-U4000",
+    "shifterName": "CUES 9-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-M4120",
+    "derailleurName": "Deore 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -2562,7 +2650,11 @@
     "name": "Shimano Deore 10-Speed shifter/CUES 9-Speed derailleur/9-speed cassette",
     "speeds": 9,
     "shifterPartNumber": "SL-M4100",
+    "shifterName": "Deore 10-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-U4020",
+    "derailleurName": "CUES 9-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
@@ -2638,7 +2730,11 @@
     "name": "Shimano Deore 10-Speed shifter/CUES 9-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SL-M4100",
+    "shifterName": "Deore 10-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-U4020",
+    "derailleurName": "CUES 9-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -2833,7 +2929,11 @@
     "name": "Shimano Deore 10-Speed shifter/Deore 11-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SL-M4100",
+    "shifterName": "Deore 10-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-M4120",
+    "derailleurName": "Deore 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -2970,7 +3070,11 @@
     "name": "Shimano Deore 10-Speed shifter/Deore 11-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SL-M4100",
+    "shifterName": "Deore 10-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-M4120",
+    "derailleurName": "Deore 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -3107,7 +3211,11 @@
     "name": "Shimano Deore 10-Speed shifter/SRAM SX 12-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SL-M4100",
+    "shifterName": "Deore 10-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-SX-1-B1",
+    "derailleurName": "SX 12-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -3186,7 +3294,11 @@
     "name": "Shimano Deore 11-Speed shifter/CUES 9-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SL-M5100",
+    "shifterName": "Deore 11-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-U4020",
+    "derailleurName": "CUES 9-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -3323,7 +3435,11 @@
     "name": "Shimano Deore 11-Speed group with 11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SL-M5100",
+    "shifterName": "Deore 11-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-M4120",
+    "derailleurName": "Deore 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -3466,7 +3582,11 @@
     "name": "Shimano Deore 11-Speed group with 12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "SL-M5100",
+    "shifterName": "Deore 11-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-M4120",
+    "derailleurName": "Deore 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -3548,7 +3668,11 @@
     "name": "Shimano SLX 12-Speed shifter/SRAM Apex 1 11-Speed derailleur/9-speed cassette",
     "speeds": 9,
     "shifterPartNumber": "SL-M7100",
+    "shifterName": "SLX 12-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-APX-1-A1",
+    "derailleurName": "Apex 1 11-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
@@ -3639,7 +3763,11 @@
     "name": "Shimano SLX 12-Speed shifter/SRAM Apex 1 11-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SL-M7100",
+    "shifterName": "SLX 12-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-APX-1-A1",
+    "derailleurName": "Apex 1 11-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -3849,7 +3977,11 @@
     "name": "Shimano SLX 12-Speed shifter/CUES 9-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SL-M7100",
+    "shifterName": "SLX 12-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-U4020",
+    "derailleurName": "CUES 9-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -3992,7 +4124,11 @@
     "name": "Shimano SLX 12-Speed shifter/CUES 9-Speed derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "SL-M7100",
+    "shifterName": "SLX 12-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-U4020",
+    "derailleurName": "CUES 9-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -4077,7 +4213,11 @@
     "name": "Shimano SLX 12-Speed shifter/SRAM SX 12-Speed derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "SL-M7100",
+    "shifterName": "SLX 12-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-SX-1-B1",
+    "derailleurName": "SX 12-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -4162,7 +4302,11 @@
     "name": "Shimano Ultegra 11-Speed shifter/105 11-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "ST-R8020",
+    "shifterName": "Ultegra 11-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-5800",
+    "derailleurName": "105 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -4305,7 +4449,11 @@
     "name": "Shimano Ultegra 11-Speed shifter/105 11-Speed derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "ST-R8020",
+    "shifterName": "Ultegra 11-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-5800",
+    "derailleurName": "105 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -4387,7 +4535,11 @@
     "name": "Shimano Ultegra 11-Speed shifter/GRX derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "ST-R8020",
+    "shifterName": "Ultegra 11-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-RX400",
+    "derailleurName": "GRX",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -4530,7 +4682,11 @@
     "name": "Shimano Ultegra 11-Speed shifter/GRX derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "ST-R8020",
+    "shifterName": "Ultegra 11-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-RX400",
+    "derailleurName": "GRX",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -4612,7 +4768,11 @@
     "name": "Shimano Ultegra 11-Speed shifter/Ultegra RX 11-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "ST-R8020",
+    "shifterName": "Ultegra 11-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-RX800",
+    "derailleurName": "Ultegra RX 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -4749,7 +4909,11 @@
     "name": "Shimano Ultegra 11-Speed shifter/Ultegra RX 11-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "ST-R8020",
+    "shifterName": "Ultegra 11-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-RX800",
+    "derailleurName": "Ultegra RX 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -4831,7 +4995,11 @@
     "name": "Shimano Ultegra 10-Speed shifter/Tiagra 4600 10-speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "ST-6600",
+    "shifterName": "Ultegra 10-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-4601-SS",
+    "derailleurName": "Tiagra 4600 10-speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -4968,7 +5136,11 @@
     "name": "Shimano Ultegra 10-Speed shifter/Ultegra derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "ST-6600",
+    "shifterName": "Ultegra 10-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-6500",
+    "derailleurName": "Ultegra",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -5105,7 +5277,11 @@
     "name": "Shimano Ultegra 10-Speed shifter/Tiagra 4600 10-speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "ST-6700",
+    "shifterName": "Ultegra 10-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-4601-SS",
+    "derailleurName": "Tiagra 4600 10-speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -5242,7 +5418,11 @@
     "name": "Shimano Ultegra 10-Speed shifter/Ultegra derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "ST-6700",
+    "shifterName": "Ultegra 10-Speed",
+    "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-6500",
+    "derailleurName": "Ultegra",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -5379,7 +5559,11 @@
     "name": "SRAM Apex 1 11-Speed group with 11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SB-APX-B1",
+    "shifterName": "Apex 1 11-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-APX-1-A1",
+    "derailleurName": "Apex 1 11-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -5493,7 +5677,11 @@
     "name": "SRAM Apex 1 11-Speed group with 12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "SB-APX-B1",
+    "shifterName": "Apex 1 11-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-APX-1-A1",
+    "derailleurName": "Apex 1 11-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -5607,7 +5795,11 @@
     "name": "SRAM Apex 1 11-Speed shifter/Campagnolo Ekar 13-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SB-APX-B1",
+    "shifterName": "Apex 1 11-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD21-EK13",
+    "derailleurName": "Ekar 13-Speed",
+    "derailleurBrand": "Campagnolo",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -5767,7 +5959,11 @@
     "name": "SRAM Apex 1 11-Speed shifter/GX 10-Speed derailleur/9-speed cassette",
     "speeds": 9,
     "shifterPartNumber": "SB-APX-B1",
+    "shifterName": "Apex 1 11-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-GX-T21-A1",
+    "derailleurName": "GX 10-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
@@ -5860,7 +6056,11 @@
     "name": "SRAM Apex 1 11-Speed shifter/GX 10-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SB-APX-B1",
+    "shifterName": "Apex 1 11-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-GX-T21-A1",
+    "derailleurName": "GX 10-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -6083,7 +6283,11 @@
     "name": "SRAM GX 10-Speed shifter/Apex 1 11-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SL-GX-A1",
+    "shifterName": "GX 10-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-APX-1-A1",
+    "derailleurName": "Apex 1 11-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -6235,7 +6439,11 @@
     "name": "SRAM GX 10-Speed shifter/Apex 1 11-Speed derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "SL-GX-A1",
+    "shifterName": "GX 10-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-APX-1-A1",
+    "derailleurName": "Apex 1 11-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -6329,7 +6537,11 @@
     "name": "SRAM GX 10-Speed shifter/Campagnolo Ekar 13-Speed derailleur/9-speed cassette",
     "speeds": 9,
     "shifterPartNumber": "SL-GX-A1",
+    "shifterName": "GX 10-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD21-EK13",
+    "derailleurName": "Ekar 13-Speed",
+    "derailleurBrand": "Campagnolo",
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
@@ -6405,7 +6617,11 @@
     "name": "SRAM GX 10-Speed shifter/Campagnolo Ekar 13-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SL-GX-A1",
+    "shifterName": "GX 10-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD21-EK13",
+    "derailleurName": "Ekar 13-Speed",
+    "derailleurBrand": "Campagnolo",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -6542,7 +6758,11 @@
     "name": "SRAM GX 10-Speed group with 9-speed cassette",
     "speeds": 9,
     "shifterPartNumber": "SL-GX-A1",
+    "shifterName": "GX 10-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-GX-T21-A1",
+    "derailleurName": "GX 10-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
@@ -6618,7 +6838,11 @@
     "name": "SRAM GX 10-Speed group with 10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SL-GX-A1",
+    "shifterName": "GX 10-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-GX-T21-A1",
+    "derailleurName": "GX 10-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -6755,7 +6979,11 @@
     "name": "SRAM SX 12-Speed shifter/Apex 1 11-Speed derailleur/9-speed cassette",
     "speeds": 9,
     "shifterPartNumber": "SL-SX-1-A1",
+    "shifterName": "SX 12-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-APX-1-A1",
+    "derailleurName": "Apex 1 11-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
@@ -6846,7 +7074,11 @@
     "name": "SRAM SX 12-Speed shifter/Apex 1 11-Speed derailleur/10-speed cassette",
     "speeds": 10,
     "shifterPartNumber": "SL-SX-1-A1",
+    "shifterName": "SX 12-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-APX-1-A1",
+    "derailleurName": "Apex 1 11-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
@@ -7056,7 +7288,11 @@
     "name": "SRAM SX 12-Speed shifter/Shimano CUES 9-Speed derailleur/11-speed cassette",
     "speeds": 11,
     "shifterPartNumber": "SL-SX-1-A1",
+    "shifterName": "SX 12-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-U4020",
+    "derailleurName": "CUES 9-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
@@ -7199,7 +7435,11 @@
     "name": "SRAM SX 12-Speed shifter/Shimano CUES 9-Speed derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "SL-SX-1-A1",
+    "shifterName": "SX 12-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-U4020",
+    "derailleurName": "CUES 9-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -7284,7 +7524,11 @@
     "name": "SRAM SX 12-Speed shifter/Shimano Deore 11-Speed derailleur/12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "SL-SX-1-A1",
+    "shifterName": "SX 12-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-M4120",
+    "derailleurName": "Deore 11-Speed",
+    "derailleurBrand": "Shimano",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
@@ -7369,7 +7613,11 @@
     "name": "SRAM SX 12-Speed group with 12-speed cassette",
     "speeds": 12,
     "shifterPartNumber": "SL-SX-1-A1",
+    "shifterName": "SX 12-Speed",
+    "shifterBrand": "SRAM",
     "derailleurPartNumber": "RD-SX-1-B1",
+    "derailleurName": "SX 12-Speed",
+    "derailleurBrand": "SRAM",
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",

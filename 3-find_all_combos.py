@@ -57,7 +57,11 @@ for shifter in shifters:
         "name": name,
         "speeds": speeds,
         "shifterPartNumber": shifter["partNumber"],
+        "shifterName": shifter["name"],
+        "shifterBrand": shifter["brand"],
         "derailleurPartNumber": derailleur["partNumber"],
+        "derailleurName": derailleur["name"],
+        "derailleurBrand": derailleur["brand"],
         "cassettes": [],
         "shifterType": shifter["type"],
         "noMatchingFrontShifter": shifter["hasMatchingFrontShifters"] == False
