@@ -43,10 +43,8 @@ for shifter in shifters:
         brand = "Mixed"
         derailleur_name = derailleur["brand"] + " " + derailleur["name"]
 
-      if speeds != shifter["speeds"]:
-        shifter_name = shifter_name + f' {shifter["speeds"]}-Speed'
-      if speeds != derailleur["designSpeeds"]:
-        derailleur_name = derailleur_name + f' {derailleur["designSpeeds"]}-Speed'
+      shifter_name = shifter_name + f' {shifter["speeds"]}-Speed'
+      derailleur_name = derailleur_name + f' {derailleur["designSpeeds"]}-Speed'
       
       if shifter["brand"] == derailleur["brand"] \
         and shifter["name"] == derailleur["name"] \
