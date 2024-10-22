@@ -51,9 +51,11 @@ for shifter in shifters:
       if shifter["brand"] == derailleur["brand"] \
         and shifter["name"] == derailleur["name"] \
           and speeds == shifter["speeds"] and speeds == derailleur["designSpeeds"]:
-        # Same brand and group
+        # Same group
+        same_group = True
         partial_name = f"{shifter["brand"]} {shifter['name']} group"
       else:
+        same_group = False
         partial_name = f"{shifter_name} shifter/{derailleur_name} derailleur"
 
       # Build combo info
@@ -64,6 +66,7 @@ for shifter in shifters:
         "shifterPartialName": shifter_name,
         "derailleurPartialName": derailleur_name,
         "speeds": speeds,
+        "sameGroup": same_group,
         "shifterPartNumber": shifter["partNumber"],
         "shifterName": shifter["name"],
         "shifterBrand": shifter["brand"],
