@@ -1,10 +1,11 @@
 [
   {
-    "name": "Apex 1 11-Speed",
+    "name": "Apex 1",
     "brand": "SRAM",
     "partNumber": "RD-APX-1-A1",
     "compatibleWith": null,
     "photoUrl": null,
+    "designSpeeds": 11,
     "pullRatio": 1.22,
     "physicalLowLimit": 12.5,
     "physicalHighLimit": 53.0,
@@ -27,7 +28,7 @@
   },
   {
     "brand": "Campagnolo",
-    "name": "Ekar 13-Speed",
+    "name": "Ekar",
     "partNumber": "RD21-EK13",
     "designSpeeds": 13,
     "designCogPitch": 3.15,
@@ -57,7 +58,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "105 11-Speed",
+    "name": "105",
     "partNumber": "RD-5800",
     "designSpeeds": 11,
     "designCogPitch": 3.95,
@@ -87,7 +88,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "CUES 9-Speed",
+    "name": "CUES",
     "partNumber": "RD-U4020",
     "designSpeeds": 9,
     "designCogPitch": 4.05,
@@ -117,7 +118,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Deore 11-Speed",
+    "name": "Deore",
     "partNumber": "RD-M4120",
     "designSpeeds": 11,
     "designCogPitch": 3.75,
@@ -177,7 +178,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Tiagra 4600 10-speed",
+    "name": "Tiagra 4600",
     "partNumber": "RD-4601-SS",
     "designSpeeds": 10,
     "designCogPitch": 3.95,
@@ -237,7 +238,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra RX 11-Speed",
+    "name": "Ultegra RX",
     "partNumber": "RD-RX800",
     "designSpeeds": 11,
     "designCogPitch": 3.75,
@@ -267,7 +268,7 @@
   },
   {
     "brand": "SRAM",
-    "name": "GX 10-Speed",
+    "name": "GX",
     "partNumber": "RD-GX-T21-A1",
     "designSpeeds": 10,
     "designCogPitch": 3.95,
@@ -297,7 +298,7 @@
   },
   {
     "brand": "SRAM",
-    "name": "SX 12-Speed",
+    "name": "SX",
     "partNumber": "RD-SX-1-B1",
     "designSpeeds": 12,
     "designCogPitch": 3.65,

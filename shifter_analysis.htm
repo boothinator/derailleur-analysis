@@ -1,12 +1,12 @@
 {% extends "main_template.htm" %}
 
 {% block title %}
-{{ info.brand }} {{ info.name }}
+{{ info.brand }} {{ info.name }} {{info.speeds}}-Speed
 {% endblock %}
 
 {% block content %}
 <section>
-<h1>{{ info.brand }} {{ info.name }}</h1>
+<h1>{{ info.brand }} {{ info.name }} {{info.speeds}}-Speed</h1>
 <table>
   <tr>
     <th>Part Number</th>

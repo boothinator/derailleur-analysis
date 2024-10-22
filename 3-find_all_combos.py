@@ -35,26 +35,33 @@ for shifter in shifters:
 
     for speeds in range(9, 14):
       
-      # Generate a name for this combo
-      if shifter["brand"] == derailleur["brand"]:
-        brand = shifter["brand"]
-        
-        if shifter["name"] == derailleur["name"]:
-          name = f"{shifter["brand"]} {shifter['name']} group with {speeds}-speed cassette"
-        else:
-          name = f"{shifter["brand"]} {shifter['name']} shifter/" \
-              + f"{derailleur['name']} derailleur/{speeds}-speed cassette"
+      if shifter["brand"] == derailleur["brand"] \
+        and shifter["name"] == derailleur["name"] \
+          and speeds == shifter["speeds"] and speeds == derailleur["designSpeeds"]:
+        # Same brand and group
+        partial_name = f"{shifter["brand"]} {shifter['name']} group"
       else:
-        brand = "Mixed"
+        shifter_name = shifter["brand"] + " " + shifter["name"]
 
-        name = f"{shifter["brand"]} {shifter['name']} shifter/" \
-            + f"{derailleur["brand"]} {derailleur['name']} derailleur/" \
-            + f"{speeds}-speed cassette"
+        if shifter["brand"] == derailleur["brand"]:
+          brand = shifter["brand"]
+          derailleur_name = derailleur["name"]
+        else:
+          brand = "Mixed"
+          derailleur_name = derailleur["brand"] + " " + derailleur["name"]
+
+        if speeds != shifter["speeds"]:
+          shifter_name = shifter_name + f' {shifter["speeds"]}-Speed'
+        if speeds != derailleur["designSpeeds"]:
+          derailleur_name = derailleur_name + f' {derailleur["designSpeeds"]}-Speed'
+        
+        partial_name = f"{shifter_name} shifter/{derailleur_name} derailleur"
 
       # Build combo info
       combo = {
         "brand": brand,
-        "name": name,
+        "name": partial_name + f"/{speeds}-Speed cassette",
+        "partialName": partial_name,
         "speeds": speeds,
         "shifterPartNumber": shifter["partNumber"],
         "shifterName": shifter["name"],

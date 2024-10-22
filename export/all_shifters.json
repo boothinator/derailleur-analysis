@@ -1,7 +1,7 @@
 [
   {
     "brand": "Campagnolo",
-    "name": "Ekar 13-Speed",
+    "name": "Ekar",
     "partNumber": "EP21-EKD13-R4",
     "type": "drop-bar",
     "speeds": 13,
@@ -25,7 +25,7 @@
   },
   {
     "brand": "Microshift",
-    "name": "Advent X 10-Speed",
+    "name": "Advent X",
     "partNumber": "SB-M100A",
     "type": "drop-bar",
     "speeds": 10,
@@ -47,7 +47,7 @@
   },
   {
     "brand": "Sensah",
-    "name": "Team Pro 11-speed",
+    "name": "Team Pro",
     "partNumber": "sensah-team-pro-11",
     "type": "drop-bar",
     "speeds": 11,
@@ -70,7 +70,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "CUES 9-Speed",
+    "name": "CUES",
     "partNumber": "SL-U4000",
     "type": "flat-bar",
     "speeds": 9,
@@ -91,7 +91,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Deore 10-Speed",
+    "name": "Deore",
     "partNumber": "SL-M4100",
     "type": "flat-bar",
     "speeds": 10,
@@ -113,7 +113,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Deore 11-Speed",
+    "name": "Deore",
     "partNumber": "SL-M5100",
     "type": "flat-bar",
     "speeds": 11,
@@ -136,7 +136,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "SLX 12-Speed",
+    "name": "SLX",
     "partNumber": "SL-M7100",
     "type": "flat-bar",
     "speeds": 12,
@@ -160,7 +160,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra 11-Speed",
+    "name": "Ultegra",
     "partNumber": "ST-R8020",
     "type": "drop-bar",
     "speeds": 11,
@@ -183,7 +183,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra 10-Speed",
+    "name": "Ultegra",
     "partNumber": "ST-6600",
     "type": "drop-bar",
     "speeds": 10,
@@ -205,7 +205,7 @@
   },
   {
     "brand": "Shimano",
-    "name": "Ultegra 10-Speed",
+    "name": "Ultegra",
     "partNumber": "ST-6700",
     "type": "drop-bar",
     "speeds": 10,
@@ -227,7 +227,7 @@
   },
   {
     "brand": "SRAM",
-    "name": "Apex 1 11-Speed",
+    "name": "Apex 1",
     "partNumber": "SB-APX-B1",
     "type": "drop-bar",
     "speeds": 11,
@@ -251,7 +251,7 @@
   },
   {
     "brand": "SRAM",
-    "name": "GX 10-Speed",
+    "name": "GX",
     "partNumber": "SL-GX-A1",
     "type": "flat-bar",
     "speeds": 10,
@@ -273,7 +273,7 @@
   },
   {
     "brand": "SRAM",
-    "name": "SX 12-Speed",
+    "name": "SX",
     "partNumber": "SL-SX-1-A1",
     "type": "flat-bar",
     "speeds": 12,
