@@ -128,6 +128,8 @@ for shifter in shifters:
 
           combo["cassettes"].append({
             "cassettePartNumber": cassette["partNumber"],
+            "cassetteName": cassette["name"],
+            "cassetteBrand": cassette["brand"],
             "confidence": confidence,
             "supported": supported,
             "maxToothAvailableAndCompatible": maxToothAvailableAndCompatible,

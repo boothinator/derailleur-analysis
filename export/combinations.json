@@ -12,6 +12,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.13633039812652803,
         "supported": false,
         "maxToothAvailableAndCompatible": 32,
@@ -73,6 +75,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.05479321230052461,
         "supported": false,
         "maxToothAvailableAndCompatible": 32,
@@ -159,6 +163,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.6282966687902312,
         "supported": false,
         "maxToothAvailableAndCompatible": 32,
@@ -248,6 +254,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.0993715059998013,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -334,6 +342,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.5225246629150773,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -423,6 +433,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
+        "cassetteName": "LinkGlide 9-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.11085483338164878,
         "supported": false,
         "maxToothAvailableAndCompatible": 30,
@@ -503,6 +515,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.5361618544357207,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -564,6 +578,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.8377962143494431,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -650,6 +666,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.11309653947472581,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -739,6 +757,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.6319606753642728,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -797,6 +817,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.5407459519472289,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -889,6 +911,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.39402822117257474,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -947,6 +971,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.6597158757025641,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -1039,6 +1065,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.06971822431095842,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -1131,6 +1159,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.33712054449338513,
         "supported": false,
         "maxToothAvailableAndCompatible": 50,
@@ -1189,6 +1219,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.5832058810671417,
         "supported": false,
         "maxToothAvailableAndCompatible": 50,
@@ -1281,6 +1313,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.05495285885443076,
         "supported": false,
         "maxToothAvailableAndCompatible": 50,
@@ -1373,6 +1407,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.60816445246117,
         "supported": false,
         "maxToothAvailableAndCompatible": 32,
@@ -1434,6 +1470,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.9219903816281216,
         "supported": false,
         "maxToothAvailableAndCompatible": 32,
@@ -1520,6 +1558,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.1387429332935133,
         "supported": false,
         "maxToothAvailableAndCompatible": 32,
@@ -1606,6 +1646,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.7186109651751829,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -1667,6 +1709,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.9555955137476078,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -1753,6 +1797,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.18319680116066706,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -1839,6 +1885,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
+        "cassetteName": "LinkGlide 9-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.06569148599303667,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -1919,6 +1967,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.6082938339570936,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -1977,6 +2027,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.5187252279704548,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -2035,6 +2087,8 @@
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
+        "cassetteName": "SRAM 10-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.06569148599303667,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -2118,6 +2172,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
+        "cassetteName": "LinkGlide 9-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.6429685000031997,
         "supported": true,
         "maxToothAvailableAndCompatible": 36,
@@ -2198,6 +2254,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.08279852530260601,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -2253,6 +2311,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.10793113337690621,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -2308,6 +2368,8 @@
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
+        "cassetteName": "SRAM 10-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.6429685000031997,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -2388,6 +2450,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
+        "cassetteName": "LinkGlide 9-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.1831305458193953,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -2468,6 +2532,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.9874406081257623,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -2523,6 +2589,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.8829069670031084,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -2578,6 +2646,8 @@
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
+        "cassetteName": "SRAM 10-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.1831305458193953,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -2658,6 +2728,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
+        "cassetteName": "LinkGlide 9-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.4773411313407956,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -2738,6 +2810,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.5555075191858847,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -2796,6 +2870,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.645863568613374,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -2854,6 +2930,8 @@
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
+        "cassetteName": "SRAM 10-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.4773411313407956,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -2937,6 +3015,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.22982458688241714,
         "supported": true,
         "maxToothAvailableAndCompatible": 42,
@@ -2995,6 +3075,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.18176030576924612,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -3078,6 +3160,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.058265314466537724,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -3136,6 +3220,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.13620713171851495,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -3219,6 +3305,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.22124856920295916,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -3302,6 +3390,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.5059776384369221,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -3360,6 +3450,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.4246955421366984,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -3443,6 +3535,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.5022732359095423,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -3504,6 +3598,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.7968508904731535,
         "supported": true,
         "maxToothAvailableAndCompatible": 42,
@@ -3590,6 +3686,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.10189545581961904,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -3676,6 +3774,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
+        "cassetteName": "LinkGlide 9-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.6440436231682576,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -3771,6 +3871,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.40545198942202476,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -3829,6 +3931,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.48235112364146815,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -3887,6 +3991,8 @@
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
+        "cassetteName": "SRAM 10-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.6440436231682576,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -3985,6 +4091,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.3973860561262739,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -4046,6 +4154,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.20336354135566298,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -4132,6 +4242,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.8830793141872879,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -4221,6 +4333,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.1221344331640895,
         "supported": false,
         "maxToothAvailableAndCompatible": 50,
@@ -4310,6 +4424,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.8200241617902981,
         "supported": false,
         "maxToothAvailableAndCompatible": 32,
@@ -4371,6 +4487,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.8496582918819211,
         "supported": true,
         "maxToothAvailableAndCompatible": 32,
@@ -4457,6 +4575,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.22987793204941825,
         "supported": false,
         "maxToothAvailableAndCompatible": 32,
@@ -4543,6 +4663,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.9407800626556655,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -4604,6 +4726,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.7308353367244051,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -4690,6 +4814,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.29356541675056486,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -4776,6 +4902,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.4217571452634217,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -4834,6 +4962,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.34880272194627654,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -4917,6 +5047,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.06184908214783545,
         "supported": true,
         "maxToothAvailableAndCompatible": 34,
@@ -5003,6 +5135,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.8596722093497711,
         "supported": false,
         "maxToothAvailableAndCompatible": 30,
@@ -5061,6 +5195,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.7575171949037065,
         "supported": false,
         "maxToothAvailableAndCompatible": 30,
@@ -5144,6 +5280,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.09520585976728761,
         "supported": false,
         "maxToothAvailableAndCompatible": 28,
@@ -5202,6 +5340,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.2065508522300053,
         "supported": false,
         "maxToothAvailableAndCompatible": 28,
@@ -5285,6 +5425,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.9316900136200312,
         "supported": false,
         "maxToothAvailableAndCompatible": 30,
@@ -5343,6 +5485,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.827865846866892,
         "supported": false,
         "maxToothAvailableAndCompatible": 30,
@@ -5426,6 +5570,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.07901979535501269,
         "supported": false,
         "maxToothAvailableAndCompatible": 28,
@@ -5484,6 +5630,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.17648302462110022,
         "supported": false,
         "maxToothAvailableAndCompatible": 28,
@@ -5567,6 +5715,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.17935012284413127,
         "supported": true,
         "maxToothAvailableAndCompatible": 42,
@@ -5685,6 +5835,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.7338180511991399,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -5803,6 +5955,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.25218995579943876,
         "supported": false,
         "maxToothAvailableAndCompatible": 44,
@@ -5864,6 +6018,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.4621096389728558,
         "supported": false,
         "maxToothAvailableAndCompatible": 44,
@@ -5967,6 +6123,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
+        "cassetteName": "LinkGlide 9-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.20389124569376144,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -6064,6 +6222,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.9653859026655776,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -6122,6 +6282,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.9298783057544626,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -6180,6 +6342,8 @@
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
+        "cassetteName": "SRAM 10-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.20389124569376144,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -6291,6 +6455,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.4910534858127251,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -6349,6 +6515,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.7830976067996875,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -6447,6 +6615,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.09830712002635059,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -6545,6 +6715,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
+        "cassetteName": "LinkGlide 9-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.2102175811589937,
         "supported": false,
         "maxToothAvailableAndCompatible": 44,
@@ -6625,6 +6797,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.9517273912532325,
         "supported": false,
         "maxToothAvailableAndCompatible": 44,
@@ -6683,6 +6857,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.9435467381758884,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -6766,6 +6942,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
+        "cassetteName": "LinkGlide 9-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.44839302198558245,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -6846,6 +7024,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.05801810902246966,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -6904,6 +7084,8 @@
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
+        "cassetteName": "SRAM 10-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.44839302198558245,
         "supported": true,
         "maxToothAvailableAndCompatible": 36,
@@ -6987,6 +7169,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-LG300-9",
+        "cassetteName": "LinkGlide 9-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.6515556185771669,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -7082,6 +7266,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.08488507323797423,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -7140,6 +7326,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.11051616940502566,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -7198,6 +7386,8 @@
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
+        "cassetteName": "SRAM 10-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.6515556185771669,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -7296,6 +7486,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.9409667087697922,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -7357,6 +7549,8 @@
       },
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.7306575146221357,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -7443,6 +7637,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.29367121041843663,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -7532,6 +7728,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.4689555283310718,
         "supported": false,
         "maxToothAvailableAndCompatible": 42,
@@ -7621,6 +7819,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-PG-1210-A1",
+        "cassetteName": "Eagle 12-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.539660749898327,
         "supported": true,
         "maxToothAvailableAndCompatible": 50,

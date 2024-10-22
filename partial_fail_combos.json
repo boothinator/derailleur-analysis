@@ -2926,6 +2926,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.0993715059998013,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -7335,6 +7337,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.6319606753642728,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -7393,6 +7397,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.5407459519472289,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -22022,6 +22028,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.22982458688241714,
         "supported": true,
         "maxToothAvailableAndCompatible": 42,
@@ -22080,6 +22088,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.18176030576924612,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -23964,6 +23974,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.22124856920295916,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -24103,6 +24115,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.22124856920295916,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -26257,6 +26271,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.5059776384369221,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
@@ -26315,6 +26331,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.4246955421366984,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -38562,6 +38580,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.4217571452634217,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -38620,6 +38640,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.34880272194627654,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -38759,6 +38781,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.06184908214783545,
         "supported": true,
         "maxToothAvailableAndCompatible": 34,
@@ -43538,6 +43562,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.8596722093497711,
         "supported": false,
         "maxToothAvailableAndCompatible": 30,
@@ -43596,6 +43622,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.7575171949037065,
         "supported": false,
         "maxToothAvailableAndCompatible": 30,
@@ -49462,6 +49490,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.9316900136200312,
         "supported": false,
         "maxToothAvailableAndCompatible": 30,
@@ -49520,6 +49550,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.827865846866892,
         "supported": false,
         "maxToothAvailableAndCompatible": 30,
@@ -52284,6 +52316,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.17935012284413127,
         "supported": true,
         "maxToothAvailableAndCompatible": 42,
@@ -57840,6 +57874,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
         "confidence": 0.9517273912532325,
         "supported": false,
         "maxToothAvailableAndCompatible": 44,
@@ -57898,6 +57934,8 @@
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.9435467381758884,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -61936,6 +61974,8 @@
     "cassettes": [
       {
         "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
         "confidence": 0.05801810902246966,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
@@ -61994,6 +62034,8 @@
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
+        "cassetteName": "SRAM 10-Speed",
+        "cassetteBrand": "SRAM",
         "confidence": 0.44839302198558245,
         "supported": true,
         "maxToothAvailableAndCompatible": 36,
