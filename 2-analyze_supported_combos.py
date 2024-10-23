@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import json
+import scipy.stats
 from util import calculate_max_chain_angle
 
 with open(f"all_shifters.json") as f:
@@ -92,6 +93,10 @@ plt.ylim(motion_multiplier_min - motion_multiplier_stdev, motion_multiplier_max 
 plt.savefig(f"motion_multiplier.png")
 
 
+curve = scipy.stats.norm(motion_multiplier_avg, motion_multiplier_stdev)
+x = np.linspace(motion_multiplier_min, motion_multiplier_max)
+
 plt.clf()
 plt.hist(motion_multipliers)
+plt.plot(x, curve.pdf(x)/10)
 plt.savefig(f"motion_multiplier_histogram.png")
