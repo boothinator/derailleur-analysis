@@ -45,6 +45,8 @@ for combo in supported_combos:
 
 
 motion_multiplier_avg = np.mean(motion_multipliers)
+# Perhaps I should use the sample standard deviation (ddof=1), but using 
+# regular standard deviation is more conservative
 motion_multiplier_stdev = np.std(motion_multipliers)
 motion_multiplier_min = motion_multiplier_avg - 2*motion_multiplier_stdev
 motion_multiplier_max = motion_multiplier_avg + 2*motion_multiplier_stdev
@@ -70,7 +72,9 @@ compatibility_ranges = {
   "motionMultiplierMax": motion_multiplier_max,
   "maxChainAngleAvg": max_chain_angle_avg,
   "maxChainAngleStdev": max_chain_angle_stdev,
-  "maxChainAngleMax": max_chain_angle_max
+  "maxChainAngleMax": max_chain_angle_max,
+  "groups": names,
+  "groupMotionMultipliers": motion_multipliers
 }
 
 with open(f"compatibility_ranges.json", "w") as info_file:

@@ -5,5 +5,25 @@
   "motionMultiplierMax": 1.0714489647135466,
   "maxChainAngleAvg": 0.4501451661363201,
   "maxChainAngleStdev": 0.390135375569304,
-  "maxChainAngleMax": 1.230415917274928
+  "maxChainAngleMax": 1.230415917274928,
+  "groups": [
+    "Apex 1 11-speed",
+    "GX 10-speed",
+    "CUES 9-speed",
+    "SX Eagle 12-speed",
+    "Deore 11-speed",
+    "Deore 10-speed",
+    "Ultegra RX 11-speed",
+    "Ultegra/105 11-speed"
+  ],
+  "groupMotionMultipliers": [
+    1.0583946736964447,
+    1.0166669566864959,
+    1.0225172725625526,
+    1.0439065010065354,
+    1.0266114302333376,
+    1.0555752699425085,
+    0.9946341741823058,
+    1.0354894427583183
+  ]
 }
