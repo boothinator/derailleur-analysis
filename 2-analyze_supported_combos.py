@@ -44,6 +44,9 @@ for combo in supported_combos:
   if max_chain_angle_results["most_pull_too_high"]:
     print(f"Warning: most pull too high for {combo['name']}")
 
+  if max_chain_angle_results["derailleur_can_clear_cassette"] == False:
+    print(f"Warning: derailleur can't clear cassette for {combo['name']}")
+
 
 motion_multiplier_avg = np.mean(motion_multipliers)
 # Perhaps I should use the sample standard deviation (ddof=1), but using 

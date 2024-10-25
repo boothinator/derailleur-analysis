@@ -105,8 +105,9 @@ for shifter in shifters:
         least_pull_too_low = max_chain_angle_results["least_pull_too_low"]
         max_chain_angle_too_high = max_chain_angle_results["max_chain_angle"] > max_chain_angle_max
         confidence_too_low = confidence < 0.05
+        not_enough_range_on_derailleur = max_chain_angle_results["derailleur_can_clear_cassette"] == False
 
-        fail_criteria = [confidence_too_low, max_chain_angle_too_high, barrel_adjuster_too_low, least_pull_too_low]
+        fail_criteria = [confidence_too_low, max_chain_angle_too_high, barrel_adjuster_too_low, least_pull_too_low, not_enough_range_on_derailleur]
 
         #Log combos that fail any, but not all criteria
         if any(fail_criteria):
@@ -116,6 +117,7 @@ for shifter in shifters:
               "max_chain_angle_too_high": bool(max_chain_angle_too_high),
               "barrel_adjuster_too_low": bool(barrel_adjuster_too_low),
               "least_pull_too_low": bool(least_pull_too_low),
+              "not_enough_range_on_derailleur": bool(not_enough_range_on_derailleur),
               **combo,
               "cassettePartNumber": cassette["partNumber"],
               "confidence": confidence,

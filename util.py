@@ -65,6 +65,10 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
   most_pull = get_cable_pull_for_jockey_position(derailleur,
                                                  jockey_positions[-2] + cassette_pitches[-1])
   most_pull_too_high = derailleur_curve(most_pull) > derailleur["physicalHighLimit"]
+  most_pull_jockey_position_diff = derailleur["physicalHighLimit"] - derailleur_curve(most_pull)
+  cassette_total_pitch = max(cog_positions) - min(cog_positions)
+  derailleur_range_of_motion = derailleur["physicalHighLimit"] - derailleur["physicalLowLimit"]
+  derailleur_can_clear_cassette = derailleur_range_of_motion * 1.03 > cassette_total_pitch
 
   return {
     "barrel_adjuster": barrel_adjuster,
@@ -74,6 +78,10 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
     "least_pull_too_low": bool(least_pull_too_low),
     "most_pull": most_pull,
     "most_pull_too_high": bool(most_pull_too_high),
+    "most_pull_jockey_position_diff": most_pull_jockey_position_diff,
+    "cassette_total_pitch": cassette_total_pitch,
+    "derailleur_range_of_motion": derailleur_range_of_motion,
+    "derailleur_can_clear_cassette": bool(derailleur_can_clear_cassette),
     "diffs": diffs.tolist(),
     "diffs_minus_free_play": diffs_minus_free_play.tolist(),
     "max_diff_minus_free_play": float(max_diff_minus_free_play),
