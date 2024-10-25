@@ -76,6 +76,7 @@ compatibility_ranges = {
   "maxChainAngleAvg": max_chain_angle_avg,
   "maxChainAngleStdev": max_chain_angle_stdev,
   "maxChainAngleMax": max_chain_angle_max,
+  "maxChainAngleMaxObserved": max(max_chain_angles),
   "groups": names,
   "groupMotionMultipliers": motion_multipliers
 }
