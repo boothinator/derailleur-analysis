@@ -15,6 +15,7 @@
 {% for d in derailleurs %}
   {% if d.analysisUrl -%}
     [{{d.brand}} {{d.name}} {{d.designSpeeds}}-Speed ({{d.partNumber}})]({{d.analysisUrl}})
+
   {% endif %}
 {% endfor %}
 
@@ -23,5 +24,6 @@
 {% for s in shifters %}
   {% if s.analysisUrl -%}
     [{{s.brand}} {{s.name}} {{s.speeds}}-Speed ({{s.partNumber}})]({{s.analysisUrl}})
+    
   {% endif %}
 {% endfor %}
