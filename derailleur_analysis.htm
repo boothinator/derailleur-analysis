@@ -67,15 +67,17 @@
 </figure>
 </section>
 
-<section>
 <h1>Runs</h1>
 {% for r in runs %}
+
+<section>
 <h2>{{r.name}}</h2>
+<a href="{{r.csvFile}}">Raw Measurement Data</a>
 <figure>
 <img src="{{r.chart}}"/>
 <figcaption>Data and best fit line, excluding points taken at limits</figcaption>
 </figure>
-{% endfor %}
 </section>
+{% endfor %}
 
 {% endblock %}

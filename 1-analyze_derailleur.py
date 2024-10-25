@@ -325,7 +325,11 @@ def process_der(dir):
 
   today = datetime.date.today()
 
-  runs = [{'name': r.replace('.csv', ''), 'chart': 'pullratio/'+r.replace('.csv', '.png')} for r in run_files]
+  runs = [{
+    'name': r.replace('.csv', ''),
+    'chart': 'pullratio/'+r.replace('.csv', '.png'),
+    'csvFile': 'pullratio/' + r
+  } for r in run_files]
 
   info_render = {
     **info_out,
