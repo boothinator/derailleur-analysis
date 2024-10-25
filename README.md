@@ -1,4 +1,6 @@
-General process
+# Derailleur and Shifter Data Analysis
+
+## Data Analysis Process
 
 1. analyze each derailleur, produce info_out.json in each folder
 2. analyze each shifter, produce info_out.json in each folder
@@ -7,3 +9,33 @@ General process
 5. use motion multiplier ranges to figure out list of other compatible components
 6. Combine list of supported combos, list of unsupported combos, list of reviewed combinations, list of exact matches (like SRAM shifters) to produce list of combinations and whether they're supported or unsupported, info about how far off the averages are, info about how far off each gear is, including the angle
 7. Provide list of derailleurs, shifters, cassettes, and combos
+
+## Derailleurs
+
+[Campagnolo Ekar 13-Speed (RD21-EK13)](https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo Ekar/default.htm)
+[Shimano 105 11-Speed (RD-5800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano 105 11-speed/default.htm)
+[Shimano CUES 9-Speed (RD-U4020)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 9-Speed/default.htm)
+[Shimano Deore 11-Speed (RD-M4120)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore 11-Speed/default.htm)
+[Shimano GRX 10-Speed (RD-RX400)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano GRX 10-Speed/default.htm)
+[Shimano Tiagra 4600 10-Speed (RD-4601-SS)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Tiagra 4600 10-Speed/default.htm)
+[Shimano Ultegra 9-Speed (RD-6500)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra 6500 9-Speed/default.htm)
+[Shimano Ultegra RX 11-Speed (RD-RX800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra RX 11-Speed/default.htm)
+[SRAM GX 10-Speed (RD-GX-T21-A1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM GX 10-Speed/default.htm)
+[SRAM SX 12-Speed (RD-SX-1-B1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM SX 12-Speed/default.htm)
+
+## Shiftesr
+
+[Campagnolo Ekar 13-Speed (EP21-EKD13-R4)](https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo Ekar/default.htm)
+[Microshift Advent X 10-Speed (SB-M100A)](https://boothinator.github.io/derailleur-analysis/shifters/Microshift Advent X/default.htm)
+[Sensah Team Pro 11-Speed (sensah-team-pro-11)](https://boothinator.github.io/derailleur-analysis/shifters/Sensah Team Pro/default.htm)
+[Shimano CUES 9-Speed (SL-U4000)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano CUES 9-Speed/default.htm)
+[Shimano Deore 10-Speed (SL-M4100)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano Deore 10-Speed/default.htm)
+[Shimano Deore 11-Speed (SL-M5100)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano Deore 11-Speed/default.htm)
+[Shimano SLX 12-Speed (SL-M7100)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano SLX/default.htm)
+[Shimano Ultegra 11-Speed (ST-R8020)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano Ultegra 11-Speed/default.htm)
+[Shimano Ultegra 10-Speed (ST-6600)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano Ultegra 6600/default.htm)
+[Shimano Ultegra 10-Speed (ST-6700)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano Ultegra 6700/default.htm)
+[SRAM Apex 1 11-Speed (SB-APX-B1)](https://boothinator.github.io/derailleur-analysis/shifters/SRAM Apex 1/default.htm)
+[SRAM GX 10-Speed (SL-GX-A1)](https://boothinator.github.io/derailleur-analysis/shifters/SRAM GX 10-Speed/default.htm)
+[SRAM SX 12-Speed (SL-SX-1-A1)](https://boothinator.github.io/derailleur-analysis/shifters/SRAM SX/default.htm)
+
