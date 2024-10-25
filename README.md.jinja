@@ -19,11 +19,11 @@
   {% endif %}
 {% endfor %}
 
-## Shiftesr
+## Shifters
 
 {% for s in shifters %}
   {% if s.analysisUrl -%}
     [{{s.brand}} {{s.name}} {{s.speeds}}-Speed ({{s.partNumber}})]({{s.analysisUrl}})
-    
+
   {% endif %}
 {% endfor %}
