@@ -59,7 +59,10 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
 
   normalized_measurements = df.apply(lambda row: row["Measurement"] - set_average_diffs[row["Set"]], axis=1)
 
+  # Normalized data starts at zero pull at the smallest cog and gets bigger
+  # "Measurement" corresponds to the indicator value, which starts high and gets lower with more pull
   df["NormalizedMeasurement"] = normalized_measurements.max() - normalized_measurements
+
 
   # Plot Averages
 
@@ -68,9 +71,13 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
   relaxing_gear_averages = df[df["Direction"] == 'Relaxing'].groupby(["Gear"], sort=False)["NormalizedMeasurement"].mean().rename("Average Relaxing")
 
   avgs = pd.DataFrame([gear_averages, pulling_gear_averages, relaxing_gear_averages]).T
+  
+  absolute_ticks, absolute_labels = zip(*enumerate(df.groupby(["Gear Label"], sort=False).groups.keys()))
 
   avgs.plot.bar()
   plt.ylim(bottom=-1)
+  plt.xticks(ticks=absolute_ticks, labels=absolute_labels)
+  plt.tight_layout()
   plt.savefig(f"{out_folder}/meas_avgs.png")
   plt.close()
 
@@ -83,6 +90,8 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
   avgs = pd.DataFrame([gear_stdev, pulling_gear_stdev, relaxing_gear_stdev]).T
 
   avgs.plot.bar()
+  plt.xticks(ticks=absolute_ticks, labels=absolute_labels)
+  plt.tight_layout()
   plt.savefig(f"{out_folder}/meas_stdev.png")
   plt.close()
 
@@ -90,6 +99,8 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
   relaxing_pulling_diffs = pulling_gear_averages - relaxing_gear_averages
 
   relaxing_pulling_diffs.plot.bar()
+  plt.xticks(ticks=absolute_ticks, labels=absolute_labels)
+  plt.tight_layout()
   plt.savefig(f"{out_folder}/meas_diffs.png")
   plt.close()
 
@@ -116,7 +127,14 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
 
   shift_avgs_df = pd.DataFrame([shift_averages, pulling_shift_averages, relaxing_shift_averages]).T
 
+  diff_ticks, diff_labels = zip(*enumerate(shifts_df.groupby(["GearStep"], sort=False).groups.keys()))
+  diff_labels = list(diff_labels)
+  diff_labels[0] = diff_labels[0] + " (least pull)"
+  diff_labels[-1] = diff_labels[-1] + " (most pull)"
+
   shift_avgs_df.plot.bar()
+  plt.xticks(diff_ticks, diff_labels)
+  plt.tight_layout()
   plt.savefig(f"{out_folder}/shift_avgs.png")
   plt.close()
 
@@ -126,6 +144,8 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
 
   shift_averages.plot.bar()
   # TODO: plot average line
+  plt.xticks(diff_ticks, diff_labels)
+  plt.tight_layout()
   plt.savefig(f"{out_folder}/cable_pull.png")
   plt.close()
 
@@ -139,6 +159,8 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
 
   plt.clf()
   shift_stdevs_df.plot.bar()
+  plt.xticks(diff_ticks, diff_labels)
+  plt.tight_layout()
   plt.savefig(f"{out_folder}/shift_stdev.png")
   plt.close()
 
@@ -167,6 +189,8 @@ for dir in os.listdir('shifters'):
   
   #FIXME:TESTING
   #if dir != "SRAM SX":
+  #  continue
+  #if dir != "Microshift Advent X":
   #  continue
 
   with open(f"shifters/{dir}/info.json") as info_file:
