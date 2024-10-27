@@ -64,7 +64,7 @@ for shifter in shifters:
         "partialName": partial_name,
         "shifterPartialName": shifter_name,
         "derailleurPartialName": derailleur_name,
-        "speeds": speeds,
+        "speeds": min(shifter["speeds"], speeds),
         "sameGroup": same_group,
         "shifterPartNumber": shifter["partNumber"],
         "shifterName": shifter["name"],
