@@ -44,6 +44,7 @@
     "averagePitch": 4.05,
     "cogWidth": 1.95,
     "chainRollerWidth": 2.2,
+    "minMaxToothAvailable": 36,
     "maxToothAvailable": 46,
     "source": "https://youtu.be/q75AiGAUpp8"
   },
@@ -56,6 +57,7 @@
     "averagePitch": 3.65,
     "cogWidth": 1.65,
     "chainRollerWidth": 2.2,
+    "minMaxToothAvailable": 50,
     "maxToothAvailable": 52,
     "source": "https://docs.google.com/spreadsheets/d/1251cmc6JOUUULPyqbn2MrdiI40J8G2-B4L_jE3tlGA4/edit?usp=sharing"
   },
