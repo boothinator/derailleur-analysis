@@ -123,6 +123,7 @@ for shifter in shifters:
               "barrel_adjuster_too_low": bool(barrel_adjuster_too_low),
               "least_pull_too_low": bool(least_pull_too_low),
               "not_enough_range_on_derailleur": bool(not_enough_range_on_derailleur),
+              "smallest_cassette_to_big": bool(smallest_cassette_to_big),
               **combo,
               "cassettePartNumber": cassette["partNumber"],
               "confidence": confidence,
