@@ -1,6 +1,6 @@
 [
   {
-    "name": "Rival 1 11-Speed",
+    "name": "Rival 1",
     "brand": "SRAM",
     "partNumber": "SB-RIV-B1",
     "type": "drop-bar",
@@ -8,7 +8,7 @@
     "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
   },
   {
-    "name": "Force 1 11-Speed",
+    "name": "Force 1",
     "brand": "SRAM",
     "partNumber": "SB-FOR-B1",
     "type": "drop-bar",
@@ -16,7 +16,7 @@
     "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
   },
   {
-    "name": "Sword 10-speed",
+    "name": "Sword",
     "brand": "Microshift",
     "partNumber": "SB-G7000-R",
     "type": "drop-bar",
