@@ -11,7 +11,8 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
   derailleur_curve = np.polynomial.Polynomial(coef=derailleur["coefficients"])
   shift_spacings = np.array(shifter["shiftSpacings"])
   cassette_pitches = cassette["pitches"]
-  roller_cog_free_play = cassette["chainRollerWidth"] - cassette["cogWidth"]
+  roller_width = min(derailleur["chainMaxRollerWidth"], cassette["chainRollerWidth"]) if "chainMaxRollerWidth" in derailleur else cassette["chainRollerWidth"]
+  roller_cog_free_play = roller_width - cassette["cogWidth"]
   num_positions = min([cassette["speeds"], shifter["speeds"]])
 
   # Calculate barrel adjuster

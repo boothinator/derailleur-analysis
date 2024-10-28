@@ -14,5 +14,6 @@
   "maxTooth": 44,
   "chainWrap": 35,
   "dataVideo": null,
-  "analysisVideo": null
+  "analysisVideo": null,
+  "chainMaxRollerWidth": 1.75
 }

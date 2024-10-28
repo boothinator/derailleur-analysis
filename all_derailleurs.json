@@ -43,6 +43,7 @@
     "chainWrap": 35,
     "dataVideo": null,
     "analysisVideo": null,
+    "chainMaxRollerWidth": 1.75,
     "pullRatio": 1.2797477439176388,
     "coefficients": [
       10.53397260009244,
