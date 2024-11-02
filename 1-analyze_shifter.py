@@ -197,8 +197,8 @@ for dir in os.listdir('shifters'):
     continue
   
   #FIXME:TESTING
-  if dir != "Campagnolo Ekar":
-    continue
+  #if dir != "Campagnolo Ekar":
+  #  continue
   #if dir != "Microshift Advent X":
   #  continue
 
