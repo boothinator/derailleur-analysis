@@ -134,6 +134,8 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
 
   shift_avgs_df.plot.bar()
   plt.xticks(diff_ticks, diff_labels)
+  plt.xlabel("Shift")
+  plt.ylabel("Cable Pull (mm)")
   plt.tight_layout()
   plt.savefig(f"{out_folder}/shift_avgs.png")
   plt.close()
@@ -143,10 +145,16 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
   cable_pull = np.mean(shift_averages[1:-1])
 
   shift_averages.plot.bar()
-  # TODO: plot average line
   plt.xticks(diff_ticks, diff_labels)
+  plt.xlabel("Shift")
+  plt.ylabel("Cable Pull (mm)")
+  plt.plot([None] + [cable_pull] * (len(diff_labels)-2) + [None], color='tab:orange')
+  plt.annotate(f"Average Cable Pull: {round(cable_pull, 2)}",
+               (round(len(diff_labels) / 2), cable_pull),
+               xytext=(-61, 30), textcoords="offset points",
+               arrowprops={"facecolor": "black", "shrink": 0.1, "headwidth": 6, "headlength": 6, "width": 2})
   plt.tight_layout()
-  plt.savefig(f"{out_folder}/cable_pull.png")
+  plt.savefig(f"{out_folder}/cable_pull.png", dpi=300)
   plt.close()
 
   # Plot Shift Std Dev
@@ -188,7 +196,7 @@ for dir in os.listdir('shifters'):
     continue
   
   #FIXME:TESTING
-  #if dir != "SRAM SX":
+  #if dir != "Campagnolo Ekar":
   #  continue
   #if dir != "Microshift Advent X":
   #  continue
