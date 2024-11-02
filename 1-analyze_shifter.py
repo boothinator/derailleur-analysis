@@ -16,7 +16,7 @@ template = environment.get_template("shifter_analysis.htm")
 def convert_to_float(c):
   return float(c) if len(c) > 0 else float('nan')
 
-def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
+def analyze(input_file, out_folder, mostPullIsLowestMeasurement, name):
   data = []
   row_headers = []
 
@@ -114,7 +114,7 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
      for header in row_headers[:first_gear_row_index]
      if header != "Run"]+
     [
-      ("GearStep", [f"{d["Gear"].iloc[i]}-{d["Gear"].iloc[i + 1]}" for i in range(d.shape[0] - 1)]),
+      ("GearStep", [f"{d["Gear"].iloc[i+1]}-{d["Gear"].iloc[i]}" for i in range(d.shape[0] - 1)]),
       ("Shift", d["Measurement"].iloc[:-1].to_numpy()-d["Measurement"].iloc[1:].to_numpy())
     ])), include_groups=False).reset_index()
 
@@ -129,8 +129,8 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
 
   diff_ticks, diff_labels = zip(*enumerate(shifts_df.groupby(["GearStep"], sort=False).groups.keys()))
   diff_labels = list(diff_labels)
-  diff_labels[0] = diff_labels[0] + " (least pull)"
-  diff_labels[-1] = diff_labels[-1] + " (most pull)"
+  diff_labels[0] = diff_labels[0] + "\n(least pull)"
+  diff_labels[-1] = diff_labels[-1] + "\n(most pull)"
 
   shift_avgs_df.plot.bar()
   plt.xticks(diff_ticks, diff_labels)
@@ -145,14 +145,15 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement):
   cable_pull = np.mean(shift_averages[1:-1])
 
   shift_averages.plot.bar()
-  plt.xticks(diff_ticks, diff_labels)
+  plt.xticks(diff_ticks, diff_labels, ha='right')
   plt.xlabel("Shift")
   plt.ylabel("Cable Pull (mm)")
   plt.plot([None] + [cable_pull] * (len(diff_labels)-2) + [None], color='tab:orange')
-  plt.annotate(f"Average Cable Pull: {round(cable_pull, 2)}",
+  plt.annotate(f"Average Cable Pull: {round(cable_pull, 2)} mm",
                (round(len(diff_labels) / 2), cable_pull),
-               xytext=(-61, 30), textcoords="offset points",
+               xytext=(-72, 30), textcoords="offset points",
                arrowprops={"facecolor": "black", "shrink": 0.1, "headwidth": 6, "headlength": 6, "width": 2})
+  plt.title(f"{name} Cable Pull")
   plt.tight_layout()
   plt.savefig(f"{out_folder}/cable_pull.png", dpi=300)
   plt.close()
@@ -196,8 +197,8 @@ for dir in os.listdir('shifters'):
     continue
   
   #FIXME:TESTING
-  #if dir != "Campagnolo Ekar":
-  #  continue
+  if dir != "Campagnolo Ekar":
+    continue
   #if dir != "Microshift Advent X":
   #  continue
 
@@ -205,8 +206,10 @@ for dir in os.listdir('shifters'):
     info = json.load(info_file)
 
   mostPullIsLowestMeasurement = info["mostPullIsLowestMeasurement"] if "mostPullIsLowestMeasurement" in info else False
+
+  name = f"{info['brand']} {info['name']} {info['speeds']}-speed"
   
-  result = analyze(f"shifters/{dir}/measurements.csv", f"shifters/{dir}", mostPullIsLowestMeasurement)
+  result = analyze(f"shifters/{dir}/measurements.csv", f"shifters/{dir}", mostPullIsLowestMeasurement, name)
 
   print(f"{dir}: {result['cablePull']}")
 
