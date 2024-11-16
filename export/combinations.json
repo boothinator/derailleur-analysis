@@ -579,7 +579,7 @@
     "chainWrap": 41,
     "equivalentShifters": [
       {
-        "name": "Sword 10-speed",
+        "name": "Sword",
         "brand": "Microshift",
         "partNumber": "SB-G7000-R",
         "type": "drop-bar",
@@ -746,7 +746,7 @@
     "chainWrap": 41,
     "equivalentShifters": [
       {
-        "name": "Sword 10-speed",
+        "name": "Sword",
         "brand": "Microshift",
         "partNumber": "SB-G7000-R",
         "type": "drop-bar",
@@ -913,7 +913,7 @@
     "chainWrap": 40,
     "equivalentShifters": [
       {
-        "name": "Sword 10-speed",
+        "name": "Sword",
         "brand": "Microshift",
         "partNumber": "SB-G7000-R",
         "type": "drop-bar",
@@ -1016,7 +1016,7 @@
     "chainWrap": 40,
     "equivalentShifters": [
       {
-        "name": "Sword 10-speed",
+        "name": "Sword",
         "brand": "Microshift",
         "partNumber": "SB-G7000-R",
         "type": "drop-bar",
@@ -3320,14 +3320,14 @@
     "equivalentShifters": [],
     "equivalentDerailleurs": [
       {
-        "name": "Rival 1 11-Speed",
+        "name": "Rival 1",
         "brand": "SRAM",
         "partNumber": "RD-RIV-1-A2",
         "equivalentPartNumber": "RD-APX-1-A1",
         "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
       },
       {
-        "name": "Force 1 11-Speed",
+        "name": "Force 1",
         "brand": "SRAM",
         "partNumber": "RD-FOR-1-A2",
         "equivalentPartNumber": "RD-APX-1-A1",
@@ -3557,14 +3557,14 @@
     "equivalentShifters": [],
     "equivalentDerailleurs": [
       {
-        "name": "Rival 1 11-Speed",
+        "name": "Rival 1",
         "brand": "SRAM",
         "partNumber": "RD-RIV-1-A2",
         "equivalentPartNumber": "RD-APX-1-A1",
         "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
       },
       {
-        "name": "Force 1 11-Speed",
+        "name": "Force 1",
         "brand": "SRAM",
         "partNumber": "RD-FOR-1-A2",
         "equivalentPartNumber": "RD-APX-1-A1",
@@ -5147,7 +5147,7 @@
     "chainWrap": 32,
     "equivalentShifters": [
       {
-        "name": "Rival 1 11-Speed",
+        "name": "Rival 1",
         "brand": "SRAM",
         "partNumber": "SB-RIV-B1",
         "type": "drop-bar",
@@ -5155,7 +5155,7 @@
         "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
       },
       {
-        "name": "Force 1 11-Speed",
+        "name": "Force 1",
         "brand": "SRAM",
         "partNumber": "SB-FOR-B1",
         "type": "drop-bar",
@@ -5165,20 +5165,131 @@
     ],
     "equivalentDerailleurs": [
       {
-        "name": "Rival 1 11-Speed",
+        "name": "Rival 1",
         "brand": "SRAM",
         "partNumber": "RD-RIV-1-A2",
         "equivalentPartNumber": "RD-APX-1-A1",
         "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
       },
       {
-        "name": "Force 1 11-Speed",
+        "name": "Force 1",
         "brand": "SRAM",
         "partNumber": "RD-FOR-1-A2",
         "equivalentPartNumber": "RD-APX-1-A1",
         "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
       }
     ],
+    "reviews": [],
+    "reviewsSentiment": "none"
+  },
+  {
+    "brand": "Mixed",
+    "name": "SRAM Apex 1 11-Speed shifter/Campagnolo Ekar 13-Speed derailleur/10-Speed cassette",
+    "partialName": "SRAM Apex 1 11-Speed shifter/Campagnolo Ekar 13-Speed derailleur",
+    "shifterPartialName": "SRAM Apex 1 11-Speed",
+    "derailleurPartialName": "Campagnolo Ekar 13-Speed",
+    "speeds": 10,
+    "accessibleSpeeds": 10,
+    "sameGroup": false,
+    "shifterPartNumber": "SB-APX-B1",
+    "shifterName": "Apex 1",
+    "shifterBrand": "SRAM",
+    "derailleurPartNumber": "RD21-EK13",
+    "derailleurName": "Ekar",
+    "derailleurBrand": "Campagnolo",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
+        "confidence": 0.06615580370205887,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxChainAngle": 1.022916467558752,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 3.730895091035944,
+          "barrel_adjuster_values": [
+            0,
+            3.6802698582035815,
+            3.728876205414453,
+            3.7308138926058487,
+            3.7308919456398555,
+            3.730895091035944
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 3.9964708415208547,
+          "least_pull_too_low": false,
+          "most_pull": 34.36445065038936,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 3.40964574033719,
+          "cassette_total_pitch": 35.550000000000004,
+          "derailleur_range_of_motion": 45.61956615941698,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.4519368365011651,
+            -0.5876202611294303,
+            -0.7734582269753894,
+            -0.8418028292973112,
+            -0.6845699460612735,
+            -0.3803450706816136,
+            0.1123469827964314,
+            0.8418109036328758
+          ],
+          "diffs_minus_free_play": [
+            -0.17693683650116498,
+            -0.3126202611294302,
+            -0.4984582269753892,
+            -0.5668028292973111,
+            -0.4095699460612734,
+            -0.10534507068161347,
+            0.0,
+            0.5668109036328757
+          ],
+          "max_diff_minus_free_play": 0.5668109036328757,
+          "max_chain_angle": 1.022916467558752,
+          "cable_pull_at_max_chain_angle": 27.252162495349733,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.3193003605034653,
+            -0.5641609760667307,
+            -0.8995504250227264,
+            -1.0229018943591515,
+            -0.7391269355702272,
+            -0.1901051658954704,
+            0.0,
+            1.022916467558752
+          ]
+        },
+        "motionMultiplier": 1.0682186982000834
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "moreShiftsThanCogs": true,
+    "maxToothAvailableAndCompatible": 44,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
+    "chainWrap": 35,
+    "equivalentShifters": [
+      {
+        "name": "Rival 1",
+        "brand": "SRAM",
+        "partNumber": "SB-RIV-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      },
+      {
+        "name": "Force 1",
+        "brand": "SRAM",
+        "partNumber": "SB-FOR-B1",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-APX-B1",
+        "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
+      }
+    ],
+    "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
   },
@@ -5202,135 +5313,135 @@
         "cassettePartNumber": "sram-11-speed",
         "cassetteName": "SRAM 11-speed",
         "cassetteBrand": "SRAM",
-        "confidence": 0.25218995579943876,
+        "confidence": 0.19559427172794758,
         "supported": false,
         "maxToothAvailableAndCompatible": 44,
-        "maxChainAngle": 0.7709206616619083,
+        "maxChainAngle": 0.6968048685647715,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 2.79694504977246,
+          "barrel_adjuster": 2.844623449849647,
           "barrel_adjuster_values": [
             0,
-            2.7732186444059983,
-            2.7950961962351997,
-            2.796801319151864,
-            2.7969346254084346,
-            2.79694504977246
+            2.841593297498692,
+            2.8443955435477544,
+            2.844606385171181,
+            2.8446222552680256,
+            2.844623449849647
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 3.21978893800495,
+          "least_pull": 3.256768103050944,
           "least_pull_too_low": false,
-          "most_pull": 33.021854553691746,
+          "most_pull": 33.019301073753766,
           "most_pull_too_high": false,
-          "most_pull_jockey_position_diff": 4.096620900270537,
+          "most_pull_jockey_position_diff": 4.549420952321107,
           "cassette_total_pitch": 37.2,
-          "derailleur_range_of_motion": 45.06046164387233,
+          "derailleur_range_of_motion": 45.61956615941698,
           "derailleur_can_clear_cassette": true,
           "diffs": [
-            0.4526000295293109,
-            0.10408777860873286,
-            -0.3065611398876271,
-            -0.6116648070191317,
-            -0.7021599751930907,
-            -0.6566367435110649,
-            -0.43366180623285544,
-            0.015090538026363731,
-            0.702186656305777
+            0.4971345141396455,
+            0.15673226603127333,
+            -0.25215143857126066,
+            -0.5614031561489874,
+            -0.6611162848800589,
+            -0.6295939315012404,
+            -0.42511842078243234,
+            0.0009396844339235599,
+            0.6611193514105054
           ],
           "diffs_minus_free_play": [
-            0.17760002952931075,
+            0.22213451413964536,
             0.0,
-            -0.03156113988762699,
-            -0.3366648070191316,
-            -0.42715997519309057,
-            -0.3816367435110648,
-            -0.1586618062328553,
             0.0,
-            0.4271866563057769
+            -0.28640315614898726,
+            -0.3861162848800588,
+            -0.3545939315012403,
+            -0.1501184207824322,
+            0.0,
+            0.38611935141050524
           ],
-          "max_diff_minus_free_play": 0.4271866563057769,
-          "max_chain_angle": 0.7709206616619083,
-          "cable_pull_at_max_chain_angle": 29.114520964591996,
+          "max_diff_minus_free_play": 0.38611935141050524,
+          "max_chain_angle": 0.6968048685647715,
+          "cable_pull_at_max_chain_angle": 29.162208594451588,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
-            0.32049717164625924,
+            0.4008653221693371,
             0.0,
-            -0.056954973543149545,
-            -0.6075538281917577,
-            -0.7708725087948032,
-            -0.6887150012060989,
-            -0.2863209355317174,
             0.0,
-            0.7709206616619083
+            -0.5168477051794071,
+            -0.696799334320795,
+            -0.6399104911765259,
+            -0.2709034326051755,
+            0.0,
+            0.6968048685647715
           ]
         },
-        "motionMultiplier": 1.0089812684153194
+        "motionMultiplier": 1.006018622102357
       },
       {
         "cassettePartNumber": "shimano-11-speed",
         "cassetteName": "Shimano 11-speed",
         "cassetteBrand": "Shimano",
-        "confidence": 0.4621096389728558,
+        "confidence": 0.37575763484260655,
         "supported": false,
         "maxToothAvailableAndCompatible": 44,
-        "maxChainAngle": 0.9267527357992387,
+        "maxChainAngle": 0.8513345439320659,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 2.9753103361859106,
+          "barrel_adjuster": 3.021891057584603,
           "barrel_adjuster_values": [
             0,
-            2.8552660639064764,
-            2.96563618442764,
-            2.9745241689081707,
-            2.9752508503551534,
-            2.9753103361859106
+            2.923399803225564,
+            3.0142281982172014,
+            3.0212910377328765,
+            3.0218472171226347,
+            3.021891057584603
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 3.3811310926689035,
+          "least_pull": 3.4172208692372363,
           "least_pull_too_low": false,
-          "most_pull": 33.27056776785304,
+          "most_pull": 33.264643613677315,
           "most_pull_too_high": false,
-          "most_pull_jockey_position_diff": 3.8829645003370388,
+          "most_pull_jockey_position_diff": 4.335044500852,
           "cassette_total_pitch": 37.5,
-          "derailleur_range_of_motion": 45.06046164387233,
+          "derailleur_range_of_motion": 45.61956615941698,
           "derailleur_can_clear_cassette": true,
           "diffs": [
-            0.24553723690660334,
-            -0.07811169215344194,
-            -0.46022563349933776,
-            -0.7332140961798679,
-            -0.7883780026568559,
-            -0.7043662502386212,
-            -0.43979423060247314,
-            0.05359873735301335,
-            0.7885302563722689
+            0.29217842978928843,
+            -0.023708597746306737,
+            -0.40441274353739587,
+            -0.6819026301406517,
+            -0.7466303600287176,
+            -0.6769688230519648,
+            -0.43124952621503354,
+            0.03909227877716148,
+            0.7467428999414238
           ],
           "diffs_minus_free_play": [
+            0.017178429789288296,
             0.0,
+            -0.12941274353739574,
+            -0.40690263014065153,
+            -0.4716303600287175,
+            -0.4019688230519647,
+            -0.1562495262150334,
             0.0,
-            -0.18522563349933763,
-            -0.45821409617986775,
-            -0.5133780026568557,
-            -0.42936625023862107,
-            -0.164794230602473,
-            0.0,
-            0.5135302563722688
+            0.4717428999414237
           ],
-          "max_diff_minus_free_play": 0.5135302563722688,
-          "max_chain_angle": 0.9267527357992387,
-          "cable_pull_at_max_chain_angle": 29.292837189538716,
+          "max_diff_minus_free_play": 0.4717428999414237,
+          "max_chain_angle": 0.8513345439320659,
+          "cable_pull_at_max_chain_angle": 29.339433556306197,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
+            0.0310000495625001,
             0.0,
+            -0.23353778114297097,
+            -0.7343131220462861,
+            -0.8511314329489256,
+            -0.7254088933679903,
+            -0.2819677020293443,
             0.0,
-            -0.33425849627658677,
-            -0.826917961211304,
-            -0.9264779441064789,
-            -0.7748542961913316,
-            -0.2973875998954884,
-            0.0,
-            0.9267527357992387
+            0.8513345439320659
           ]
         },
-        "motionMultiplier": 1.0171182141283461
+        "motionMultiplier": 1.0141316755064083
       }
     ],
     "shifterType": "drop-bar",
@@ -5343,7 +5454,7 @@
     "chainWrap": 35,
     "equivalentShifters": [
       {
-        "name": "Rival 1 11-Speed",
+        "name": "Rival 1",
         "brand": "SRAM",
         "partNumber": "SB-RIV-B1",
         "type": "drop-bar",
@@ -5351,7 +5462,7 @@
         "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
       },
       {
-        "name": "Force 1 11-Speed",
+        "name": "Force 1",
         "brand": "SRAM",
         "partNumber": "SB-FOR-B1",
         "type": "drop-bar",
@@ -5451,7 +5562,7 @@
     "chainWrap": 47,
     "equivalentShifters": [
       {
-        "name": "Rival 1 11-Speed",
+        "name": "Rival 1",
         "brand": "SRAM",
         "partNumber": "SB-RIV-B1",
         "type": "drop-bar",
@@ -5459,7 +5570,7 @@
         "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
       },
       {
-        "name": "Force 1 11-Speed",
+        "name": "Force 1",
         "brand": "SRAM",
         "partNumber": "SB-FOR-B1",
         "type": "drop-bar",
@@ -5690,7 +5801,7 @@
     "chainWrap": 47,
     "equivalentShifters": [
       {
-        "name": "Rival 1 11-Speed",
+        "name": "Rival 1",
         "brand": "SRAM",
         "partNumber": "SB-RIV-B1",
         "type": "drop-bar",
@@ -5698,7 +5809,7 @@
         "note": "SRAM lists as compatible, and shift mechanism appears to be identical for all 11-speed SRAM road shifters"
       },
       {
-        "name": "Force 1 11-Speed",
+        "name": "Force 1",
         "brand": "SRAM",
         "partNumber": "SB-FOR-B1",
         "type": "drop-bar",
@@ -5877,14 +5988,14 @@
     "equivalentShifters": [],
     "equivalentDerailleurs": [
       {
-        "name": "Rival 1 11-Speed",
+        "name": "Rival 1",
         "brand": "SRAM",
         "partNumber": "RD-RIV-1-A2",
         "equivalentPartNumber": "RD-APX-1-A1",
         "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
       },
       {
-        "name": "Force 1 11-Speed",
+        "name": "Force 1",
         "brand": "SRAM",
         "partNumber": "RD-FOR-1-A2",
         "equivalentPartNumber": "RD-APX-1-A1",
@@ -5914,62 +6025,62 @@
         "cassettePartNumber": "CS-LG300-9",
         "cassetteName": "LinkGlide 9-Speed",
         "cassetteBrand": "Shimano",
-        "confidence": 0.2102175811589937,
+        "confidence": 0.2727434821356592,
         "supported": false,
         "maxToothAvailableAndCompatible": 44,
-        "maxChainAngle": 0.5506794127264322,
+        "maxChainAngle": 0.509033368034628,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 3.1765718508408423,
+          "barrel_adjuster": 3.2427425514392105,
           "barrel_adjuster_values": [
             0,
-            3.2013502870601775,
-            3.1768771859921445,
-            3.1765755573045014,
-            3.1765718952922826,
-            3.1765718508408423
+            3.2670074128487796,
+            3.243014487594153,
+            3.242745551706972,
+            3.2427425841781203,
+            3.2427425514392105
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 3.7191852281297457,
+          "least_pull": 3.7756416378679956,
           "least_pull_too_low": false,
-          "most_pull": 31.734945548285324,
+          "most_pull": 31.759031551045975,
           "most_pull_too_high": false,
-          "most_pull_jockey_position_diff": 5.248303465512443,
+          "most_pull_jockey_position_diff": 5.694417944475504,
           "cassette_total_pitch": 32.4,
-          "derailleur_range_of_motion": 45.06046164387233,
+          "derailleur_range_of_motion": 45.61956615941698,
           "derailleur_can_clear_cassette": true,
           "diffs": [
-            -0.1899201724270263,
-            -0.41124992960363826,
-            -0.41451395560710225,
-            -0.43015002748947495,
-            -0.3293135105965277,
-            -0.05834868241792179,
-            0.4301499137162139
+            -0.16749441387975494,
+            -0.38266182202026044,
+            -0.38592386866831774,
+            -0.40707316101484636,
+            -0.3168763842989222,
+            -0.06154032375470564,
+            0.4070730769729849
           ],
           "diffs_minus_free_play": [
-            -0.06492017242702619,
-            -0.28624992960363815,
-            -0.28951395560710214,
-            -0.30515002748947484,
-            -0.20431351059652758,
+            -0.04249441387975483,
+            -0.25766182202026033,
+            -0.2609238686683176,
+            -0.28207316101484625,
+            -0.19187638429892206,
             0.0,
-            0.3051499137162138
+            0.2820730769729848
           ],
-          "max_diff_minus_free_play": 0.30515002748947484,
-          "max_chain_angle": 0.5506794127264322,
-          "cable_pull_at_max_chain_angle": 24.78383380005419,
+          "max_diff_minus_free_play": 0.28207316101484625,
+          "max_chain_angle": 0.509033368034628,
+          "cable_pull_at_max_chain_angle": 24.850004488940026,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
-            -0.11715447172481754,
-            -0.5165711826164187,
-            -0.522461658280049,
-            -0.5506796180501731,
-            -0.3687049653372319,
+            -0.0766850801606517,
+            -0.46497943283961785,
+            -0.47086629074844294,
+            -0.5090335197018409,
+            -0.3462605961736455,
             0.0,
-            0.5506794127264322
+            0.509033368034628
           ]
         },
-        "motionMultiplier": 1.056611216058395
+        "motionMultiplier": 1.0535087151285147
       }
     ],
     "shifterType": "flat-bar",
@@ -6005,129 +6116,129 @@
         "cassettePartNumber": "generic-10-speed",
         "cassetteName": "Generic 10-Speed",
         "cassetteBrand": "Generic",
-        "confidence": 0.9517273912532325,
+        "confidence": 0.8314191826552901,
         "supported": false,
         "maxToothAvailableAndCompatible": 44,
-        "maxChainAngle": 0.4323373910394712,
+        "maxChainAngle": 0.37639098634412704,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 2.9369613159002474,
+          "barrel_adjuster": 2.989863086073625,
           "barrel_adjuster_values": [
             0,
-            2.839380495073235,
-            2.9312670556608107,
-            2.936624958526871,
-            2.936942481032913,
-            2.9369613159002474
+            2.9069977914284486,
+            2.9852315885257528,
+            2.9896015110528054,
+            2.9898490527060275,
+            2.989863086073625
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 3.548514328248319,
+          "least_pull": 3.591065558343301,
           "least_pull_too_low": false,
-          "most_pull": 31.401442899628297,
+          "most_pull": 31.412334066580534,
           "most_pull_too_high": false,
-          "most_pull_jockey_position_diff": 5.559008293243238,
+          "most_pull_jockey_position_diff": 6.021874168810257,
           "cassette_total_pitch": 35.550000000000004,
-          "derailleur_range_of_motion": 45.06046164387233,
+          "derailleur_range_of_motion": 45.61956615941698,
           "derailleur_can_clear_cassette": true,
           "diffs": [
-            0.030194332304819937,
-            -0.23496819688774906,
-            -0.3872612839496874,
-            -0.5067669384163516,
-            -0.514525841520495,
-            -0.4069713900635108,
-            -0.03626686978159199,
-            0.5145740492784512
+            0.06953694625552842,
+            -0.18858919497455062,
+            -0.3403363534415149,
+            -0.4651029678386003,
+            -0.48353654378189503,
+            -0.39193162077847177,
+            -0.04170479919668679,
+            0.48357256789964964
           ],
           "diffs_minus_free_play": [
             0.0,
             0.0,
-            -0.11226128394968726,
-            -0.23176693841635143,
-            -0.23952584152049483,
-            -0.13197139006351066,
+            -0.06533635344151478,
+            -0.19010296783860015,
+            -0.2085365437818949,
+            -0.11693162077847163,
             0.0,
-            0.23957404927845105
+            0.2085725678996495
           ],
-          "max_diff_minus_free_play": 0.23957404927845105,
-          "max_chain_angle": 0.4323373910394712,
-          "cable_pull_at_max_chain_angle": 27.522840749431182,
+          "max_diff_minus_free_play": 0.2085725678996495,
+          "max_chain_angle": 0.37639098634412704,
+          "cable_pull_at_max_chain_angle": 27.575747321104295,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
             0.0,
-            -0.20258617874789447,
-            -0.41824835712049396,
-            -0.43225039325393927,
-            -0.23815513198535543,
+            -0.11790551001810749,
+            -0.34306024603379304,
+            -0.37632597612560914,
+            -0.21101428370680753,
             0.0,
-            0.4323373910394712
+            0.37639098634412704
           ]
         },
-        "motionMultiplier": 1.0305220502297925
+        "motionMultiplier": 1.027496154261144
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
         "cassetteName": "Shimano 10-Speed",
         "cassetteBrand": "Shimano",
-        "confidence": 0.9435467381758884,
+        "confidence": 0.9347127610833139,
         "supported": false,
         "maxToothAvailableAndCompatible": 34,
-        "maxChainAngle": 0.5359910210709986,
+        "maxChainAngle": 0.47967778822658985,
         "maxAngleAnalysis": {
-          "barrel_adjuster": 3.003462650207985,
+          "barrel_adjuster": 3.055982854608728,
           "barrel_adjuster_values": [
             0,
-            2.9548503482477773,
-            3.000539106562044,
-            3.0032860853166112,
-            3.003452556948,
-            3.003462650207985
+            3.0238642281811248,
+            3.0541313845440303,
+            3.055875907422832,
+            3.0559769951980025,
+            3.055982854608728
           ],
           "barrel_adjuster_too_low": false,
-          "least_pull": 3.4543433520228977,
+          "least_pull": 3.4959026003191767,
           "least_pull_too_low": false,
-          "most_pull": 31.52165721397903,
+          "most_pull": 31.531100770040496,
           "most_pull_too_high": false,
-          "most_pull_jockey_position_diff": 5.44644506839952,
+          "most_pull_jockey_position_diff": 5.909108122752386,
           "cassette_total_pitch": 35.690000000000005,
-          "derailleur_range_of_motion": 45.06046164387233,
+          "derailleur_range_of_motion": 45.61956615941698,
           "derailleur_can_clear_cassette": true,
           "diffs": [
-            0.1514131966448531,
-            -0.16550151301775884,
-            -0.3681029980816959,
-            -0.526573383118933,
-            -0.5419849907813941,
-            -0.400747018895089,
-            0.11485848834465173,
-            0.542010824434783
+            0.19148530902470995,
+            -0.11852558415811387,
+            -0.32071077723581354,
+            -0.4845732543306909,
+            -0.5107914805410942,
+            -0.38563762676510294,
+            0.10935626713281721,
+            0.5108065218418005
           ],
           "diffs_minus_free_play": [
             0.0,
             0.0,
-            -0.12310299808169578,
-            -0.2815733831189329,
-            -0.29698499078139395,
-            -0.1557470188950889,
+            -0.07571077723581343,
+            -0.23957325433069077,
+            -0.26579148054109414,
+            -0.14063762676510283,
             0.0,
-            0.2970108244347829
+            0.2658065218418004
           ],
-          "max_diff_minus_free_play": 0.2970108244347829,
-          "max_chain_angle": 0.5359910210709986,
-          "cable_pull_at_max_chain_angle": 27.589350825346266,
+          "max_diff_minus_free_play": 0.2658065218418004,
+          "max_chain_angle": 0.47967778822658985,
+          "cable_pull_at_max_chain_angle": 27.64187526359627,
           "jockey_to_cog_links": 2.5,
           "chain_angles": [
             0.0,
             0.0,
-            -0.22215117819763855,
-            -0.508131589236757,
-            -0.5359443998404005,
-            -0.2810608706548649,
+            -0.13662715308246526,
+            -0.4323359564426744,
+            -0.47965064387226636,
+            -0.25379429307363505,
             0.0,
-            0.5359910210709986
+            0.47967778822658985
           ]
         },
-        "motionMultiplier": 1.0331309668126527
+        "motionMultiplier": 1.030097410347881
       }
     ],
     "shifterType": "flat-bar",
@@ -6481,14 +6592,14 @@
     "equivalentShifters": [],
     "equivalentDerailleurs": [
       {
-        "name": "Rival 1 11-Speed",
+        "name": "Rival 1",
         "brand": "SRAM",
         "partNumber": "RD-RIV-1-A2",
         "equivalentPartNumber": "RD-APX-1-A1",
         "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
       },
       {
-        "name": "Force 1 11-Speed",
+        "name": "Force 1",
         "brand": "SRAM",
         "partNumber": "RD-FOR-1-A2",
         "equivalentPartNumber": "RD-APX-1-A1",
@@ -6718,14 +6829,14 @@
     "equivalentShifters": [],
     "equivalentDerailleurs": [
       {
-        "name": "Rival 1 11-Speed",
+        "name": "Rival 1",
         "brand": "SRAM",
         "partNumber": "RD-RIV-1-A2",
         "equivalentPartNumber": "RD-APX-1-A1",
         "note": "SRAM lists as compatible, and the 11-speed 1x road derailleurs appear to have identical mechanisms"
       },
       {
-        "name": "Force 1 11-Speed",
+        "name": "Force 1",
         "brand": "SRAM",
         "partNumber": "RD-FOR-1-A2",
         "equivalentPartNumber": "RD-APX-1-A1",
