@@ -15,18 +15,18 @@
   "chainWrap": 35,
   "dataVideo": null,
   "analysisVideo": null,
-  "pullRatio": 1.2835165011272383,
+  "pullRatio": 1.2821184130984218,
   "coefficients": [
-    10.468735441493614,
-    1.1976477190891548,
-    0.013828534694342096,
-    -0.00037645015040291453
+    10.456394219909226,
+    1.2081650781511757,
+    0.01309625766524259,
+    -0.00036360308306363463
   ],
-  "physicalLowLimit": 10.468735441493614,
-  "physicalHighLimit": 56.0883016009106,
+  "physicalLowLimit": 10.456394219909226,
+  "physicalHighLimit": 56.13912019370841,
   "Pull Ratio Averaged Across Pulling Runs": "1.278 +/- 0.009",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.289 +/- 0.022",
-  "Pull Ratio Averaged Across All Runs": "1.284 +/- 0.020",
-  "Pull Ratio 95% Confidence Interval": "1.263 to 1.304",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.286 +/- 0.014",
+  "Pull Ratio Averaged Across All Runs": "1.282 +/- 0.015",
+  "Pull Ratio 95% Confidence Interval": "1.268 to 1.297",
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo Ekar/default.htm"
 }
