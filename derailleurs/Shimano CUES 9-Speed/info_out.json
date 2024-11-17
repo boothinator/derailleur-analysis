@@ -15,18 +15,18 @@
   "chainWrap": 41,
   "dataVideo": null,
   "analysisVideo": null,
-  "pullRatio": 1.1126433197213037,
+  "pullRatio": 1.1135894598563885,
   "coefficients": [
-    7.693792909625339,
-    0.9885748741856748,
-    0.005701150486307505,
-    -7.466643137578536e-05
+    7.737001280923079,
+    0.9879665041304803,
+    0.005892473407102435,
+    -7.940135104613653e-05
   ],
-  "physicalLowLimit": 7.693792909625339,
-  "physicalHighLimit": 53.309357498895864,
+  "physicalLowLimit": 7.737001280923079,
+  "physicalHighLimit": 52.973579149442934,
   "Pull Ratio Averaged Across Pulling Runs": "1.109 +/- 0.004",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.119 +/- 0.012",
-  "Pull Ratio Averaged Across All Runs": "1.113 +/- 0.013",
-  "Pull Ratio 95% Confidence Interval": "1.100 to 1.125",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.119 +/- 0.010",
+  "Pull Ratio Averaged Across All Runs": "1.114 +/- 0.012",
+  "Pull Ratio 95% Confidence Interval": "1.101 to 1.126",
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 9-Speed/default.htm"
 }
