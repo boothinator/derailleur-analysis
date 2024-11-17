@@ -320,6 +320,7 @@ def process_der(dir):
   plt.savefig(f"derailleurs/{dir}/pull_curve.png")
   
   pull_ratio_curve = curve.deriv(1)
+  pull_ratio_curve_prime = curve.deriv(1)
   x_new = np.linspace(0, max_pull, 50)
   y_new = pull_ratio_curve(x_new)
 
@@ -333,6 +334,12 @@ def process_der(dir):
   plt.plot(x_new, y_new, x_pr, y_pr, x_cogs, y_cogs, "o")
   plt.xlim([0, max_pull])
   plt.ylim([0, pr_calc.pull_ratio*1.4])
+  plt.xlabel("Cable Pull (mm)")
+  plt.ylabel("Pull Ratio")
+  avg_pull_ratio_annotation_x = np.min([r for r in (pull_ratio_curve_prime - pr_calc.pull_ratio).roots() if r > 0])
+  plt.annotate(f"Avg. Pull Ratio {round(pr_calc.pull_ratio, 2)}",
+                 (avg_pull_ratio_annotation_x, pr_calc.pull_ratio),
+                 xytext=(0, -12), textcoords="offset points")
   plt.savefig(f"derailleurs/{dir}/pull_ratio_curve.png")
 
 
@@ -384,6 +391,8 @@ for dir in os.listdir('derailleurs'):
   # TESTING
   #if dir != "SRAM Apex 11-Speed":
   #  continue
+  if dir != "Campagnolo Ekar":
+    continue
 
   print(dir)
 
