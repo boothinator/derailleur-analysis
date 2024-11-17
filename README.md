@@ -28,6 +28,8 @@
 
 [Shimano Ultegra RX 11-Speed (RD-RX800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Ultegra%20RX%2011-Speed/default.htm)
 
+[SRAM Apex 11-Speed (RD-APX-1-A1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM%20Apex%2011-Speed/default.htm)
+
 [SRAM GX 10-Speed (RD-GX-T21-A1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM%20GX%2010-Speed/default.htm)
 
 [SRAM SX 12-Speed (RD-SX-1-B1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM%20SX%2012-Speed/default.htm)

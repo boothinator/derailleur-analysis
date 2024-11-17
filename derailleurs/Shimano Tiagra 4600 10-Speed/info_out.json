@@ -15,18 +15,18 @@
   "chainWrap": 34,
   "dataVideo": "https://youtu.be/ZcwTvWDTFSI",
   "analysisVideo": "https://www.youtube.com/watch?v=d0Pdnp2CTek",
-  "pullRatio": 1.6746696277984687,
+  "pullRatio": 1.6746721119156496,
   "coefficients": [
-    11.52730937290294,
-    1.658544208739223,
-    0.0182878323346238,
-    -0.000903274839447965
+    11.497380390262911,
+    1.6616081921009573,
+    0.017960944860490095,
+    -0.0008929758822930203
   ],
-  "physicalLowLimit": 11.52730937290294,
-  "physicalHighLimit": 49.803533068723446,
+  "physicalLowLimit": 11.497380390262911,
+  "physicalHighLimit": 49.76178065038752,
   "Pull Ratio Averaged Across Pulling Runs": "1.668 +/- 0.011",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.681 +/- 0.009",
-  "Pull Ratio Averaged Across All Runs": "1.675 +/- 0.017",
-  "Pull Ratio 95% Confidence Interval": "1.658 to 1.691",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.685 +/- 0.001",
+  "Pull Ratio Averaged Across All Runs": "1.675 +/- 0.018",
+  "Pull Ratio 95% Confidence Interval": "1.657 to 1.693",
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Tiagra 4600 10-Speed/default.htm"
 }

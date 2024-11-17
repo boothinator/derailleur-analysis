@@ -1,13 +1,13 @@
 {
-  "motionMultiplierAvg": 1.0317244651335624,
-  "motionMultiplierStdev": 0.019862249789992067,
-  "motionMultiplierMin": 0.9919999655535783,
-  "motionMultiplierMax": 1.0714489647135466,
-  "motionMultiplierMinObserved": 0.9946341741823058,
+  "motionMultiplierAvg": 1.0317013390903997,
+  "motionMultiplierStdev": 0.019871956586662437,
+  "motionMultiplierMin": 0.9919574259170749,
+  "motionMultiplierMax": 1.0714452522637246,
+  "motionMultiplierMinObserved": 0.994640118731133,
   "motionMultiplierMaxObserved": 1.0583946736964447,
-  "maxChainAngleAvg": 0.4501451661363201,
-  "maxChainAngleStdev": 0.390135375569304,
-  "maxChainAngleMax": 1.230415917274928,
+  "maxChainAngleAvg": 0.451043765601587,
+  "maxChainAngleStdev": 0.3892909481800809,
+  "maxChainAngleMax": 1.229625661961749,
   "maxChainAngleMaxObserved": 1.1294966847504906,
   "groups": [
     "Apex 1 11-speed",
@@ -21,12 +21,12 @@
   ],
   "groupMotionMultipliers": [
     1.0583946736964447,
-    1.0166669566864959,
-    1.0225172725625526,
-    1.0439065010065354,
-    1.0266114302333376,
-    1.0555752699425085,
-    0.9946341741823058,
-    1.0354894427583183
+    1.0166669566864963,
+    1.0223268390538778,
+    1.0439060622995777,
+    1.0266113904552208,
+    1.0555752290421296,
+    0.994640118731133,
+    1.0354894427583186
   ]
 }

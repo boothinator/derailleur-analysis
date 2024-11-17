@@ -15,15 +15,15 @@
   "chainWrap": 41,
   "dataVideo": "https://youtu.be/DmpSMv3bTr8",
   "analysisVideo": "https://youtu.be/4Bh7QUWcSew",
-  "pullRatio": 1.4451541692394148,
+  "pullRatio": 1.4451541692394145,
   "coefficients": [
-    10.610392334722084,
-    1.1175846530114248,
-    0.023073926422340865,
-    -0.00046080117536215264
+    10.610392334722109,
+    1.117584653011419,
+    0.02307392642234105,
+    -0.00046080117536215237
   ],
-  "physicalLowLimit": 10.610392334722084,
-  "physicalHighLimit": 56.620199149895974,
+  "physicalLowLimit": 10.610392334722109,
+  "physicalHighLimit": 56.62019914989602,
   "Pull Ratio Averaged Across Pulling Runs": "1.431 +/- 0.030",
   "Pull Ratio Averaged Across Relaxing Runs": "1.460 +/- 0.008",
   "Pull Ratio Averaged Across All Runs": "1.445 +/- 0.036",
