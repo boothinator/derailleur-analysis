@@ -24,6 +24,7 @@
   ],
   "physicalLowLimit": 9.553965933801223,
   "physicalHighLimit": 57.36286707864005,
+  "numberOfMeasurements": 668,
   "Pull Ratio Averaged Across Pulling Runs": "1.455 +/- 0.010",
   "Pull Ratio Averaged Across Relaxing Runs": "1.444 +/- 0.028",
   "Pull Ratio Averaged Across All Runs": "1.449 +/- 0.024",

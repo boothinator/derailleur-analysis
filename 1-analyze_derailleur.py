@@ -155,7 +155,8 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
     "coef": [x for x in result.convert().coef],
     "extrusion_to_carriage_slack": extrusion_to_carriage_slack,
     "extrusion_to_carriage_max_pull": extrusion_to_carriage_max_pull,
-    "max_pull": cable_pull_raw.max()
+    "max_pull": cable_pull_raw.max(),
+    "number_of_measurements": len(data)
   }
 
   plt.plot(cable_pull_raw,jockey_position_raw,'o', x_new, y_new)
@@ -254,6 +255,8 @@ def process_der(dir):
   run_types = []
   run_files = []
 
+  number_of_measurements = 0
+
   for datafile in os.listdir(f"derailleurs/{dir}/pullratio"):
     if datafile.endswith('.csv'):
       print(f"Processing {datafile}")
@@ -261,6 +264,7 @@ def process_der(dir):
       result = analyze(f"derailleurs/{dir}/pullratio/{datafile}", info["jockeyWheelThickness"], info["distanceFromCarriageToJockeyWheel"])
       coefs.append(result["coef"])
       max_pulls.append(result["max_pull"])
+      number_of_measurements = number_of_measurements + result["number_of_measurements"]
 
       if datafile.lower().find("pulling") >= 0:
         run_types.append('pulling')
@@ -337,6 +341,7 @@ def process_der(dir):
               "coefficients": [c for c in avg_coefs],
               "physicalLowLimit": curve(0),
               "physicalHighLimit": curve(max_pull),
+              "numberOfMeasurements": number_of_measurements,
               "Pull Ratio Averaged Across Pulling Runs": f"{round(pulling_pull_ratio_avg, 3):.3f} +/- {round(2*pulling_pull_ratio_stdev, 3):.3f}",
               "Pull Ratio Averaged Across Relaxing Runs": f"{round(relaxing_pull_ratio_avg, 3):.3f} +/- {round(2*relaxing_pull_ratio_stdev, 3):.3f}",
               "Pull Ratio Averaged Across All Runs": f"{round(pull_ratio_avg, 3):.3f} +/- {round(2*pull_ratio_stdev, 3):.3f}",
@@ -377,8 +382,8 @@ for dir in os.listdir('derailleurs'):
     continue
 
   # TESTING
-  if dir != "SRAM Apex 11-Speed":
-    continue
+  #if dir != "SRAM Apex 11-Speed":
+  #  continue
 
   print(dir)
 
