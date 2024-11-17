@@ -29,7 +29,7 @@ else:
 tmp_filename = "der.csv"
 
 cols = [
-  "Puller Meas. (neg) (mm)",
+  "Puller Meas. (mm)",
   "Carriage Meas. (mm)",
   f"Num rollers {directionVerbInPast}",
   f"Measurement after rollers {directionVerbInPast} (mm)",
