@@ -45,7 +45,10 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
 
   # I didn't used to record the exact puller location. If there's no puller data,
   # calculate it as the row number / 3
-  calculate_puller_meas = len([1 for row in data if not np.isnan(row["Puller Meas. (neg) (mm)"])]) == 0
+  calculate_puller_meas = len([1 for row in data
+                               if "Puller Meas. (neg) (mm)" in row
+                                  and not np.isnan(row["Puller Meas. (neg) (mm)"])
+                                  and "Puller Meas. (mm)" not in row]) == 0
 
   prev_row = {
     "Puller Indicator After Move (neg) (mm)": np.nan,
@@ -56,6 +59,10 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
     "Carriage Indicator Offset (mm)": 0
   }
   for i, row in enumerate(data):
+    # Negate values if needed
+    if "Puller Meas. (mm)" in row:
+      row["Puller Meas. (neg) (mm)"] = -row["Puller Meas. (mm)"]
+
     if np.isnan(prev_row["Puller Indicator After Move (neg) (mm)"]):
       row["Puller Indicator Offset (mm)"] = prev_row["Puller Indicator Offset (mm)"]
     else:    
@@ -69,7 +76,12 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
                                               - prev_row["Carriage Indicator After Move (mm)"]
     
     if calculate_puller_meas:
-      row["Cable Pull (mm)"] = i / 3
+      # Pulling
+      if "pulling" in input_file.lower():
+        row["Cable Pull (mm)"] = i / 3
+      else:
+        # Relaxing
+        row["Cable Pull (mm)"] = -i / 3
     else:
       row["Cable Pull (mm)"] = row["Puller Meas. (neg) (mm)"] + row["Puller Indicator Offset (mm)"]
     row["Jockey Position (mm)"] = row["Carriage Meas. (mm)"] + row["Carriage Indicator Offset (mm)"] \
@@ -77,9 +89,20 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
     
     prev_row = row
 
+  data_sorted = sorted(data, key=lambda row: row["Cable Pull (mm)"])
+  
+  cable_pull_meas = [d["Cable Pull (mm)"] for d in data_sorted]
+  jockey_position_meas = [d["Jockey Position (mm)"] for d in data_sorted]
+  
+  plt.plot(cable_pull_meas,jockey_position_meas)
+  plt.xlim([cable_pull_meas[0]-1, cable_pull_meas[-1] + 1 ])
+  graph_file = input_file.replace('.csv', '_meas.png')
+  plt.savefig(graph_file)
+  plt.close()
+
   # Get cable pull and jockey position data
-  cable_pull_raw = cable_pull = np.sort(np.array([d["Cable Pull (mm)"] for d in data]))
-  jockey_position = np.sort(np.array([d["Jockey Position (mm)"] for d in data]))
+  cable_pull_raw = cable_pull = np.array([d["Cable Pull (mm)"] for d in data_sorted])
+  jockey_position = np.array([d["Jockey Position (mm)"] for d in data_sorted])
 
   jockey_position_raw = jockey_position = jockey_position - jockey_position.min() + jockey_wheel_center_at_full_slack
 
@@ -135,13 +158,13 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
     "max_pull": cable_pull_raw.max()
   }
 
-  plt.clf()
   plt.plot(cable_pull_raw,jockey_position_raw,'o', x_new, y_new)
   plt.xlim([cable_pull_raw[0]-1, cable_pull_raw[-1] + 1 ])
 
   graph_file = input_file.replace('.csv', '.png')
 
   plt.savefig(graph_file)
+  plt.close()
 
   with open(input_file.replace('.csv', '.json'), "w") as infofile:
     json.dump(info, infofile, indent=2)
@@ -163,11 +186,12 @@ class PullRatioInfo(BaseModel):
 
 
 def calc_pull_ratio(info, coefficients, max_pull):
-  if info["minDropoutWidth"] != None and info["maxDropoutWidth"] != None:
+  if "minDropoutWidth" in info and info["minDropoutWidth"] != None \
+    and "maxDropoutWidth" in info and info["maxDropoutWidth"] != None:
     dropout_width = (info["minDropoutWidth"] + info["maxDropoutWidth"])/2
   else:
     dropout_width = 8
-  small_cog_offset = info["smallCogOffset"] if info["smallCogOffset"] != None else 3
+  small_cog_offset = info["smallCogOffset"] if "smallCogOffset" in info and info["smallCogOffset"] != None else 3
   small_cog_position = dropout_width + small_cog_offset
   biggest_cog_position = small_cog_position + info["designCogPitch"] * (info["designSpeeds"] - 1)
   second_smallest_cog_position = info["designCogPitch"] + small_cog_position
@@ -353,7 +377,7 @@ for dir in os.listdir('derailleurs'):
     continue
 
   # TESTING
-  #if dir != "Shimano Tiagra 4600 10-Speed":
+  #if dir != "SRAM Apex 11-Speed":
   #  continue
 
   print(dir)
