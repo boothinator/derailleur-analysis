@@ -26,6 +26,8 @@ else:
   print("Invalid input", directionStr)
   exit()
 
+cog_pitch=float(input("Cog Pitch (mm): "))
+
 tmp_filename = "der.csv"
 
 cols = [
@@ -44,6 +46,15 @@ if direction == "Pulling":
 else:
   taut_meas = input(f"{cols[7]}: ")
 
+chain_move_pattern = []
+last_chain_move_carriage_meas = None
+
+def input_ensure_str(*args, **kwargs):
+  str = input(*args, **kwargs)
+  while len(str) == 0:
+    str = input(*args, **kwargs)
+  return str
+
 with open(tmp_filename, "x", newline='') as f:
   writer = csv.DictWriter(f, cols)
   writer.writeheader()
@@ -56,15 +67,27 @@ with open(tmp_filename, "x", newline='') as f:
       if actionStr != None:
         actionStr = input("Continue (enter), pull/relax (c)hain, (m)ove indicators, (r)edo measurements, e(x)it: ")
       if actionStr == "r" or actionStr == None:
-        data_row[cols[0]] = input(f"{cols[0]}: ")
-        data_row[cols[1]] = input(f"{cols[1]}: ")
+        data_row[cols[0]] = input_ensure_str(f"{cols[0]}: ")
+        data_row[cols[1]] = input_ensure_str(f"{cols[1]}: ")
         actionStr = "r"
+
+        try:
+          if last_chain_move_carriage_meas != None and \
+              float(data_row[cols[1]]) - float(last_chain_move_carriage_meas) > cog_pitch:
+            print("Move chain")
+          if float(data_row[cols[1]]) > 22.0:
+            print("Move indicators")
+        except Exception as ex:
+          print(ex)
       elif actionStr == "c":
-        data_row[cols[2]] = input(f"{cols[2]}: ")
-        data_row[cols[3]] = input(f"{cols[3]}: ")
+        print(chain_move_pattern)
+        data_row[cols[2]] = input_ensure_str(f"{cols[2]}: ")
+        data_row[cols[3]] = input_ensure_str(f"{cols[3]}: ")
+        chain_move_pattern.append(data_row[cols[2]])
+        last_chain_move_carriage_meas = data_row[cols[3]]
       elif actionStr == "m":
-        data_row[cols[2]] = input(f"{cols[4]}: ")
-        data_row[cols[3]] = input(f"{cols[5]}: ")
+        data_row[cols[2]] = input_ensure_str(f"{cols[4]}: ")
+        data_row[cols[3]] = input_ensure_str(f"{cols[5]}: ")
     
     writer.writerow(data_row)
     f.flush()
