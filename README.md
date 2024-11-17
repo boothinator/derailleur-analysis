@@ -12,55 +12,55 @@
 
 ## Derailleurs
 
-[Campagnolo Ekar 13-Speed (RD21-EK13)](https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo%20Ekar/default.htm)
+[Campagnolo Ekar 13-Speed (RD21-EK13)](https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo%20Ekar/default.htm) - Pull Ratio: 1.28
 
-[Shimano 105 11-Speed (RD-5800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20105%2011-speed/default.htm)
+[Shimano 105 11-Speed (RD-5800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20105%2011-speed/default.htm) - Pull Ratio: 1.45
 
-[Shimano CUES 9-Speed (RD-U4020)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20CUES%209-Speed/default.htm)
+[Shimano CUES 9-Speed (RD-U4020)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20CUES%209-Speed/default.htm) - Pull Ratio: 1.11
 
-[Shimano Deore 11-Speed (RD-M4120)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Deore%2011-Speed/default.htm)
+[Shimano Deore 11-Speed (RD-M4120)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Deore%2011-Speed/default.htm) - Pull Ratio: 1.07
 
-[Shimano GRX 10-Speed (RD-RX400)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20GRX%2010-Speed/default.htm)
+[Shimano GRX 10-Speed (RD-RX400)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20GRX%2010-Speed/default.htm) - Pull Ratio: 1.45
 
-[Shimano Tiagra 4600 10-Speed (RD-4601-SS)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Tiagra%204600%2010-Speed/default.htm)
+[Shimano Tiagra 4600 10-Speed (RD-4601-SS)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Tiagra%204600%2010-Speed/default.htm) - Pull Ratio: 1.67
 
-[Shimano Ultegra 9-Speed (RD-6500)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Ultegra%206500%209-Speed/default.htm)
+[Shimano Ultegra 9-Speed (RD-6500)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Ultegra%206500%209-Speed/default.htm) - Pull Ratio: 1.64
 
-[Shimano Ultegra RX 11-Speed (RD-RX800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Ultegra%20RX%2011-Speed/default.htm)
+[Shimano Ultegra RX 11-Speed (RD-RX800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Ultegra%20RX%2011-Speed/default.htm) - Pull Ratio: 1.51
 
-[SRAM Apex 1 11-Speed (RD-APX-1-A1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM%20Apex%2011-Speed/default.htm)
+[SRAM Apex 1 11-Speed (RD-APX-1-A1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM%20Apex%2011-Speed/default.htm) - Pull Ratio: 1.23
 
-[SRAM GX 10-Speed (RD-GX-T21-A1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM%20GX%2010-Speed/default.htm)
+[SRAM GX 10-Speed (RD-GX-T21-A1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM%20GX%2010-Speed/default.htm) - Pull Ratio: 1.33
 
-[SRAM SX 12-Speed (RD-SX-1-B1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM%20SX%2012-Speed/default.htm)
+[SRAM SX 12-Speed (RD-SX-1-B1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM%20SX%2012-Speed/default.htm) - Pull Ratio: 1.08
 
 
 ## Shifters
 
-[Campagnolo Ekar 13-Speed (EP21-EKD13-R4)](https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo%20Ekar/default.htm)
+[Campagnolo Ekar 13-Speed (EP21-EKD13-R4)](https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo%20Ekar/default.htm) - Cable Pull: 2.42 mm/shift
 
-[Microshift Advent X 10-Speed (SB-M100A)](https://boothinator.github.io/derailleur-analysis/shifters/Microshift%20Advent%20X/default.htm)
+[Microshift Advent X 10-Speed (SB-M100A)](https://boothinator.github.io/derailleur-analysis/shifters/Microshift%20Advent%20X/default.htm) - Cable Pull: 3.41 mm/shift
 
-[Sensah Team Pro 11-Speed (sensah-team-pro-11)](https://boothinator.github.io/derailleur-analysis/shifters/Sensah%20Team%20Pro/default.htm)
+[Sensah Team Pro 11-Speed (sensah-team-pro-11)](https://boothinator.github.io/derailleur-analysis/shifters/Sensah%20Team%20Pro/default.htm) - Cable Pull: 2.51 mm/shift
 
-[Shimano CUES 9-Speed (SL-U4000)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20CUES%209-Speed/default.htm)
+[Shimano CUES 9-Speed (SL-U4000)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20CUES%209-Speed/default.htm) - Cable Pull: 3.56 mm/shift
 
-[Shimano Deore 10-Speed (SL-M4100)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Deore%2010-Speed/default.htm)
+[Shimano Deore 10-Speed (SL-M4100)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Deore%2010-Speed/default.htm) - Cable Pull: 3.48 mm/shift
 
-[Shimano Deore 11-Speed (SL-M5100)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Deore%2011-Speed/default.htm)
+[Shimano Deore 11-Speed (SL-M5100)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Deore%2011-Speed/default.htm) - Cable Pull: 3.40 mm/shift
 
-[Shimano SLX 12-Speed (SL-M7100)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20SLX/default.htm)
+[Shimano SLX 12-Speed (SL-M7100)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20SLX/default.htm) - Cable Pull: 3.19 mm/shift
 
-[Shimano Ultegra 11-Speed (ST-R8020)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Ultegra%2011-Speed/default.htm)
+[Shimano Ultegra 11-Speed (ST-R8020)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Ultegra%2011-Speed/default.htm) - Cable Pull: 2.50 mm/shift
 
-[Shimano Ultegra 10-Speed (ST-6600)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Ultegra%206600/default.htm)
+[Shimano Ultegra 10-Speed (ST-6600)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Ultegra%206600/default.htm) - Cable Pull: 2.28 mm/shift
 
-[Shimano Ultegra 10-Speed (ST-6700)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Ultegra%206700/default.htm)
+[Shimano Ultegra 10-Speed (ST-6700)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Ultegra%206700/default.htm) - Cable Pull: 2.28 mm/shift
 
-[SRAM Apex 1 11-Speed (SB-APX-B1)](https://boothinator.github.io/derailleur-analysis/shifters/SRAM%20Apex%201/default.htm)
+[SRAM Apex 1 11-Speed (SB-APX-B1)](https://boothinator.github.io/derailleur-analysis/shifters/SRAM%20Apex%201/default.htm) - Cable Pull: 2.88 mm/shift
 
-[SRAM GX 10-Speed (SL-GX-A1)](https://boothinator.github.io/derailleur-analysis/shifters/SRAM%20GX%2010-Speed/default.htm)
+[SRAM GX 10-Speed (SL-GX-A1)](https://boothinator.github.io/derailleur-analysis/shifters/SRAM%20GX%2010-Speed/default.htm) - Cable Pull: 3.00 mm/shift
 
-[SRAM SX 12-Speed (SL-SX-1-A1)](https://boothinator.github.io/derailleur-analysis/shifters/SRAM%20SX/default.htm)
+[SRAM SX 12-Speed (SL-SX-1-A1)](https://boothinator.github.io/derailleur-analysis/shifters/SRAM%20SX/default.htm) - Cable Pull: 3.25 mm/shift
 
 
