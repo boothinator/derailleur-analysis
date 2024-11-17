@@ -336,6 +336,7 @@ def process_der(dir):
   plt.ylim([0, pr_calc.pull_ratio*1.4])
   plt.xlabel("Cable Pull (mm)")
   plt.ylabel("Pull Ratio")
+  plt.title(f"{info['brand']} {info['name']} {info['designSpeeds']}-speed Derailleur Pull Ratio")
   avg_pull_ratio_annotation_x = np.min([r for r in (pull_ratio_curve_prime - pr_calc.pull_ratio).roots() if r > 0])
   plt.annotate(f"Avg. Pull Ratio {round(pr_calc.pull_ratio, 2)}",
                  (avg_pull_ratio_annotation_x, pr_calc.pull_ratio),
