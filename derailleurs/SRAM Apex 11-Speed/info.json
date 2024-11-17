@@ -1,0 +1,15 @@
+{
+  "brand": "SRAM",
+  "name": "Apex",
+  "partNumber": "RD-APX-1-A1",
+  "designSpeeds": 11,
+  "designCogPitch": 3.75,
+  "distanceFromCarriageToJockeyWheel": 99999,
+  "jockeyWheelThickness": 2.2,
+  "supportsMultipleFrontChainrings": false,
+  "chain": "11-speed",
+  "maxTooth": 42,
+  "chainWrap": 31,
+  "dataVideo": null,
+  "analysisVideo": null
+}
