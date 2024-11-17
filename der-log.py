@@ -73,9 +73,9 @@ with open(tmp_filename, "x", newline='') as f:
 
         try:
           if last_chain_move_carriage_meas != None and \
-              float(data_row[cols[1]]) - float(last_chain_move_carriage_meas) > cog_pitch:
+              abs(float(data_row[cols[1]]) - float(last_chain_move_carriage_meas)) > cog_pitch:
             print("Move chain")
-          if float(data_row[cols[1]]) > 22.0:
+          if float(data_row[cols[1]]) > 22.0 or float(data_row[cols[1]]) < 0.4:
             print("Move indicators")
         except Exception as ex:
           print(ex)
