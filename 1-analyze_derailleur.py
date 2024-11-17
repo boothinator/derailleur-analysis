@@ -377,8 +377,8 @@ for dir in os.listdir('derailleurs'):
     continue
 
   # TESTING
-  #if dir != "SRAM Apex 11-Speed":
-  #  continue
+  if dir != "SRAM Apex 11-Speed":
+    continue
 
   print(dir)
 

@@ -38,7 +38,8 @@ cols = [
   "Puller Indicator After Move (neg) (mm)",
   "Carriage Indicator After Move (mm)",
   "Distance from outside of extrusion to carriage when cable is slack (mm)",
-  "Distance from outside of extrusion to carriage at max pull (mm)"
+  "Distance from outside of extrusion to carriage at max pull (mm)",
+  "Exclude Cable Pull Greater Than (mm)"
 ]  
 
 if direction == "Pulling":
