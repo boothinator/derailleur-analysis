@@ -86,8 +86,8 @@ with open(tmp_filename, "x", newline='') as f:
         chain_move_pattern.append(data_row[cols[2]])
         last_chain_move_carriage_meas = data_row[cols[3]]
       elif actionStr == "m":
-        data_row[cols[2]] = input_ensure_str(f"{cols[4]}: ")
-        data_row[cols[3]] = input_ensure_str(f"{cols[5]}: ")
+        data_row[cols[4]] = input_ensure_str(f"{cols[4]}: ")
+        data_row[cols[5]] = input_ensure_str(f"{cols[5]}: ")
     
     writer.writerow(data_row)
     f.flush()
