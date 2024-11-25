@@ -390,8 +390,8 @@ for dir in os.listdir('derailleurs'):
     continue
 
   # TESTING
-  #if dir != "SRAM Apex 11-Speed":
-  #  continue
+  if dir != "Shimano CUES 10-Speed":
+    continue
   #if dir != "Campagnolo Ekar":
   #  continue
 

@@ -1,0 +1,31 @@
+{
+  "brand": "Shimano",
+  "name": "CUES",
+  "partNumber": "RD-U6020",
+  "designSpeeds": 10,
+  "designCogPitch": 4.05,
+  "distanceFromCarriageToJockeyWheel": 34.93,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": null,
+  "maxDropoutWidth": null,
+  "smallCogOffset": null,
+  "supportsMultipleFrontChainrings": true,
+  "chain": "10-speed",
+  "maxTooth": 39,
+  "chainWrap": 44,
+  "pullRatio": 1.0578488865831461,
+  "coefficients": [
+    7.861163728057129,
+    0.9770246683737498,
+    0.004995697543273098,
+    -8.607994536436535e-05
+  ],
+  "physicalLowLimit": 7.861163728057129,
+  "physicalHighLimit": 51.016763023302275,
+  "numberOfMeasurements": 261,
+  "Pull Ratio Averaged Across Pulling Runs": "1.059 +/- 0.000",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.057 +/- 0.000",
+  "Pull Ratio Averaged Across All Runs": "1.058 +/- 0.002",
+  "Pull Ratio 95% Confidence Interval": "1.056 to 1.059",
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 10-Speed/default.htm"
+}
