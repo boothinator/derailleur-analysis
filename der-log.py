@@ -109,7 +109,7 @@ with open(tmp_filename, "x", newline='') as f:
 
 end_time = datetime.datetime.now()
 
-filename=f"{end_time:%Y-%m-%d %H-%m %p} {direction}.csv"
+filename=f"{end_time:%Y-%m-%d %H-%M %p} {direction}.csv"
 
 print("Writing to", filename)
 shutil.move(tmp_filename, f"derailleurs/{dir}/pullratio/{filename}")
