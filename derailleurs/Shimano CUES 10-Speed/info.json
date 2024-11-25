@@ -1,0 +1,16 @@
+{
+  "brand": "Shimano",
+  "name": "CUES",
+  "partNumber": "RD-U6020",
+  "designSpeeds": 10,
+  "designCogPitch": 4.05,
+  "distanceFromCarriageToJockeyWheel": 34.93,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": null,
+  "maxDropoutWidth": null,
+  "smallCogOffset": null,
+  "supportsMultipleFrontChainrings": true,
+  "chain": "10-speed",
+  "maxTooth": 39,
+  "chainWrap": 44
+}
