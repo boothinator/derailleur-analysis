@@ -103,6 +103,7 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   cable_pull_meas = [d["Cable Pull (mm)"] for d in data_sorted]
   jockey_position_meas = [d["Jockey Position (mm)"] for d in data_sorted]
   
+  plt.clf()
   plt.plot(cable_pull_meas,jockey_position_meas)
   plt.xlim([cable_pull_meas[0]-1, cable_pull_meas[-1] + 1 ])
   graph_file = input_file.replace('.csv', '_meas.png')
@@ -168,6 +169,7 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
     "number_of_measurements": len(data)
   }
 
+  plt.clf()
   plt.plot(cable_pull_raw,jockey_position_raw,'o', x_new, y_new)
   plt.xlim([cable_pull_raw[0]-1, cable_pull_raw[-1] + 1 ])
 
@@ -327,6 +329,7 @@ def process_der(dir):
   plt.xlim([0, max_pull])
   plt.ylim([0, curve(max_pull) + 10])
   plt.savefig(f"derailleurs/{dir}/pull_curve.png")
+  plt.close()
   
   pull_ratio_curve = curve.deriv(1)
   pull_ratio_curve_prime = curve.deriv(1)
@@ -351,6 +354,7 @@ def process_der(dir):
                  (avg_pull_ratio_annotation_x, pr_calc.pull_ratio),
                  xytext=(0, -12), textcoords="offset points")
   plt.savefig(f"derailleurs/{dir}/pull_ratio_curve.png")
+  plt.close()
 
 
   info_out = {**info,
@@ -399,8 +403,8 @@ for dir in os.listdir('derailleurs'):
     continue
 
   # TESTING
-  if dir != "Shimano CUES 10-Speed":
-    continue
+  #if dir != "Shimano CUES 10-Speed":
+  #  continue
   #if dir != "Campagnolo Ekar":
   #  continue
 
