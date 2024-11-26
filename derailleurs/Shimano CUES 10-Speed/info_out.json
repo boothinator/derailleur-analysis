@@ -13,19 +13,19 @@
   "chain": "10-speed",
   "maxTooth": 39,
   "chainWrap": 44,
-  "pullRatio": 1.0578488865831461,
+  "pullRatio": 1.0582142182810916,
   "coefficients": [
-    7.861163728057129,
-    0.9770246683737498,
-    0.004995697543273098,
-    -8.607994536436535e-05
+    8.034542372275181,
+    0.9792098840753652,
+    0.005067028992561139,
+    -8.948602873125939e-05
   ],
-  "physicalLowLimit": 7.861163728057129,
-  "physicalHighLimit": 51.016763023302275,
-  "numberOfMeasurements": 261,
-  "Pull Ratio Averaged Across Pulling Runs": "1.059 +/- 0.000",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.057 +/- 0.000",
-  "Pull Ratio Averaged Across All Runs": "1.058 +/- 0.002",
-  "Pull Ratio 95% Confidence Interval": "1.056 to 1.059",
+  "physicalLowLimit": 8.034542372275181,
+  "physicalHighLimit": 50.871216961370294,
+  "numberOfMeasurements": 652,
+  "Pull Ratio Averaged Across Pulling Runs": "1.062 +/- 0.005",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.054 +/- 0.018",
+  "Pull Ratio Averaged Across All Runs": "1.058 +/- 0.015",
+  "Pull Ratio 95% Confidence Interval": "1.043 to 1.074",
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 10-Speed/default.htm"
 }
