@@ -16,6 +16,8 @@
 
 [Shimano 105 11-Speed (RD-5800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20105%2011-speed/default.htm) - Pull Ratio: 1.45
 
+[Shimano CUES 10-Speed (RD-U6020)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20CUES%2010-Speed/default.htm) - Pull Ratio: 1.06
+
 [Shimano CUES 9-Speed (RD-U4020)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20CUES%209-Speed/default.htm) - Pull Ratio: 1.11
 
 [Shimano Deore 11-Speed (RD-M4120)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Deore%2011-Speed/default.htm) - Pull Ratio: 1.07
@@ -28,7 +30,7 @@
 
 [Shimano Ultegra RX 11-Speed (RD-RX800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Ultegra%20RX%2011-Speed/default.htm) - Pull Ratio: 1.51
 
-[SRAM Apex 1 11-Speed (RD-APX-1-A1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM%20Apex%2011-Speed/default.htm) - Pull Ratio: 1.23
+[SRAM Apex 1 11-Speed (RD-APX-1-A1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM%20Apex%2011-Speed/default.htm) - Pull Ratio: 1.22
 
 [SRAM GX 10-Speed (RD-GX-T21-A1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM%20GX%2010-Speed/default.htm) - Pull Ratio: 1.33
 
