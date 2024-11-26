@@ -16,7 +16,7 @@
 
 [Shimano 105 11-Speed (RD-5800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20105%2011-speed/default.htm) - Pull Ratio: 1.45
 
-[Shimano CUES 10-Speed (RD-U6020)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20CUES%2010-Speed/default.htm) - Pull Ratio: 1.06
+[Shimano CUES 10-Speed (RD-U6020-10)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20CUES%2010-Speed/default.htm) - Pull Ratio: 1.06
 
 [Shimano CUES 9-Speed (RD-U4020)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20CUES%209-Speed/default.htm) - Pull Ratio: 1.11
 

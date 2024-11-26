@@ -369,7 +369,7 @@
     "shifterPartNumber": "SB-M100A",
     "shifterName": "Advent X",
     "shifterBrand": "Microshift",
-    "derailleurPartNumber": "RD-U6020",
+    "derailleurPartNumber": "RD-U6020-10",
     "derailleurName": "CUES",
     "derailleurBrand": "Shimano",
     "cassettes": [
@@ -1523,7 +1523,7 @@
     "shifterPartNumber": "SL-U4000",
     "shifterName": "CUES",
     "shifterBrand": "Shimano",
-    "derailleurPartNumber": "RD-U6020",
+    "derailleurPartNumber": "RD-U6020-10",
     "derailleurName": "CUES",
     "derailleurBrand": "Shimano",
     "cassettes": [
@@ -1675,7 +1675,7 @@
     "shifterPartNumber": "SL-U4000",
     "shifterName": "CUES",
     "shifterBrand": "Shimano",
-    "derailleurPartNumber": "RD-U6020",
+    "derailleurPartNumber": "RD-U6020-10",
     "derailleurName": "CUES",
     "derailleurBrand": "Shimano",
     "cassettes": [
@@ -2374,7 +2374,7 @@
     "shifterPartNumber": "SL-M4100",
     "shifterName": "Deore",
     "shifterBrand": "Shimano",
-    "derailleurPartNumber": "RD-U6020",
+    "derailleurPartNumber": "RD-U6020-10",
     "derailleurName": "CUES",
     "derailleurBrand": "Shimano",
     "cassettes": [
@@ -3255,7 +3255,7 @@
     "shifterPartNumber": "SL-M5100",
     "shifterName": "Deore",
     "shifterBrand": "Shimano",
-    "derailleurPartNumber": "RD-U6020",
+    "derailleurPartNumber": "RD-U6020-10",
     "derailleurName": "CUES",
     "derailleurBrand": "Shimano",
     "cassettes": [
