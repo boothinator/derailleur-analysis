@@ -46,9 +46,15 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   # I didn't used to record the exact puller location. If there's no puller data,
   # calculate it as the row number / 3
   calculate_puller_meas = len([1 for row in data
-                               if "Puller Meas. (neg) (mm)" in row
-                                  and not np.isnan(row["Puller Meas. (neg) (mm)"])
-                                  and "Puller Meas. (mm)" not in row]) == 0
+                               if (
+                                    "Puller Meas. (neg) (mm)" in row
+                                    and not np.isnan(row["Puller Meas. (neg) (mm)"])
+                                  )
+                                  or 
+                                  (
+                                    "Puller Meas. (mm)" in row
+                                    and not np.isnan(row["Puller Meas. (mm)"]))
+                                  ]) == 0
 
   prev_row = {
     "Puller Indicator After Move (neg) (mm)": np.nan,
@@ -62,6 +68,9 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
     # Negate values if needed
     if "Puller Meas. (mm)" in row:
       row["Puller Meas. (neg) (mm)"] = -row["Puller Meas. (mm)"]
+    
+    if "Puller Indicator After Move (mm)" in row:
+      row["Puller Indicator After Move (neg) (mm)"] = -row["Puller Indicator After Move (mm)"]
 
     if np.isnan(prev_row["Puller Indicator After Move (neg) (mm)"]):
       row["Puller Indicator Offset (mm)"] = prev_row["Puller Indicator Offset (mm)"]

@@ -35,7 +35,7 @@ cols = [
   "Carriage Meas. (mm)",
   f"Num rollers {directionVerbInPast}",
   f"Measurement after rollers {directionVerbInPast} (mm)",
-  "Puller Indicator After Move (neg) (mm)",
+  "Puller Indicator After Move (mm)",
   "Carriage Indicator After Move (mm)",
   "Distance from outside of extrusion to carriage when cable is slack (mm)",
   "Distance from outside of extrusion to carriage at max pull (mm)",

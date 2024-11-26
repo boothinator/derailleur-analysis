@@ -14,19 +14,19 @@
   "chainWrap": 31,
   "dataVideo": null,
   "analysisVideo": null,
-  "pullRatio": 1.2275089652476239,
+  "pullRatio": 1.2244597430897561,
   "coefficients": [
-    12.168703135850672,
-    1.2426002846550852,
-    0.0033458870531356635,
-    -0.00012885106869982657
+    12.203260747463762,
+    1.250397712023638,
+    0.002621917886666269,
+    -0.00011533212323678307
   ],
-  "physicalLowLimit": 12.168703135850672,
-  "physicalHighLimit": 56.19873986097923,
+  "physicalLowLimit": 12.203260747463762,
+  "physicalHighLimit": 55.80106473400522,
   "numberOfMeasurements": 236,
-  "Pull Ratio Averaged Across Pulling Runs": "1.228 +/- 0.000",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.228 +/- 0.000",
-  "Pull Ratio Averaged Across All Runs": "1.228 +/- 0.000",
-  "Pull Ratio 95% Confidence Interval": "1.228 to 1.228",
+  "Pull Ratio Averaged Across Pulling Runs": "1.226 +/- 0.000",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.224 +/- 0.000",
+  "Pull Ratio Averaged Across All Runs": "1.225 +/- 0.003",
+  "Pull Ratio 95% Confidence Interval": "1.222 to 1.227",
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM Apex 11-Speed/default.htm"
 }
