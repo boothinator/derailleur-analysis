@@ -110,6 +110,14 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   plt.savefig(graph_file)
   plt.close()
 
+  # Double check jockey position range
+  slack_to_taut_range = extrusion_to_carriage_max_pull - extrusion_to_carriage_slack
+  jockey_position_range = max(jockey_position_meas) - min(jockey_position_meas)
+  percent_diff = 100 * abs(slack_to_taut_range - jockey_position_range) / jockey_position_range
+  print("Percent Diff", percent_diff)
+  if percent_diff > 1.4:
+    print(f"Warning: jockey position range mismatch. slack_to_taut_range: {slack_to_taut_range}, jockey_position_range: {jockey_position_range}")
+
   # Get cable pull and jockey position data
   cable_pull_raw = cable_pull = np.array([d["Cable Pull (mm)"] for d in data_sorted])
   jockey_position = np.array([d["Jockey Position (mm)"] for d in data_sorted])
