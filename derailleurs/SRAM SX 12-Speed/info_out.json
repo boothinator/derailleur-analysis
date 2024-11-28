@@ -29,5 +29,14 @@
   "Pull Ratio Averaged Across Relaxing Runs": "1.081 +/- 0.024",
   "Pull Ratio Averaged Across All Runs": "1.077 +/- 0.022",
   "Pull Ratio 95% Confidence Interval": "1.055 to 1.098",
-  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM SX 12-Speed/default.htm"
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM SX 12-Speed/default.htm",
+  "meas_method_percent_diffs": [
+    -0.45271629778673744,
+    -0.4071246819338336,
+    -1.1952191235059861,
+    -0.10062893081759004,
+    -0.5731373037627809,
+    0.07053844345170056
+  ],
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.4430479823925379 +/- 0.8021182126469187"
 }

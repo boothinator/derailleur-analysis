@@ -8,5 +8,6 @@
   "extrusion_to_carriage_slack": 61.59,
   "extrusion_to_carriage_max_pull": NaN,
   "max_pull": 30.666666666666668,
-  "number_of_measurements": 99
+  "number_of_measurements": 99,
+  "meas_method_percent_diff": NaN
 }

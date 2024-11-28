@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import os
 import json
 import datetime
+import math
 from pydantic import BaseModel
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
@@ -111,12 +112,15 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   plt.close()
 
   # Double check jockey position range
-  slack_to_taut_range = extrusion_to_carriage_max_pull - extrusion_to_carriage_slack
-  jockey_position_range = max(jockey_position_meas) - min(jockey_position_meas)
-  percent_diff = 100 * abs(slack_to_taut_range - jockey_position_range) / jockey_position_range
-  print("Percent Diff", percent_diff)
-  if percent_diff > 1.4:
-    print(f"Warning: jockey position range mismatch. slack_to_taut_range: {slack_to_taut_range}, jockey_position_range: {jockey_position_range}")
+  jockey_caliper_meas_range = extrusion_to_carriage_max_pull - extrusion_to_carriage_slack
+  jockey_indicator_meas_range = max(jockey_position_meas) - min(jockey_position_meas)
+  if math.isnan(jockey_caliper_meas_range):
+    meas_method_percent_diff = math.nan
+  else:
+    meas_method_percent_diff = 100 * (jockey_caliper_meas_range - jockey_indicator_meas_range) / jockey_indicator_meas_range
+    print("Measurement Method Percent Diff", meas_method_percent_diff)
+    if meas_method_percent_diff > 1.4 or meas_method_percent_diff < -1.4:
+      print(f"Warning: jockey position range mismatch. slack_to_taut_range: {jockey_caliper_meas_range}, jockey_position_range: {jockey_indicator_meas_range}")
 
   # Get cable pull and jockey position data
   cable_pull_raw = cable_pull = np.array([d["Cable Pull (mm)"] for d in data_sorted])
@@ -174,7 +178,8 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
     "extrusion_to_carriage_slack": extrusion_to_carriage_slack,
     "extrusion_to_carriage_max_pull": extrusion_to_carriage_max_pull,
     "max_pull": cable_pull_raw.max(),
-    "number_of_measurements": len(data)
+    "number_of_measurements": len(data),
+    "meas_method_percent_diff": meas_method_percent_diff
   }
 
   plt.clf()
@@ -275,6 +280,7 @@ def process_der(dir):
   run_files = []
 
   number_of_measurements = 0
+  meas_method_percent_diffs = []
 
   for datafile in os.listdir(f"derailleurs/{dir}/pullratio"):
     if datafile.endswith('.csv'):
@@ -284,6 +290,9 @@ def process_der(dir):
       coefs.append(result["coef"])
       max_pulls.append(result["max_pull"])
       number_of_measurements = number_of_measurements + result["number_of_measurements"]
+      
+      if not math.isnan(result["meas_method_percent_diff"]):
+        meas_method_percent_diffs.append(result["meas_method_percent_diff"])
 
       if datafile.lower().find("pulling") >= 0:
         run_types.append('pulling')
@@ -294,6 +303,8 @@ def process_der(dir):
     
   coefs = np.array(coefs)
   max_pull = np.mean(max_pulls)
+  avg_meas_method_percent_diff = np.mean(meas_method_percent_diffs) if len(meas_method_percent_diffs) else math.nan
+  stdev_meas_method_percent_diff = np.std(meas_method_percent_diffs) if len(meas_method_percent_diffs) else math.nan
 
   run_pr_calcs = []
   for c,file in zip(coefs, run_files):
@@ -375,7 +386,9 @@ def process_der(dir):
               "Pull Ratio Averaged Across Relaxing Runs": f"{round(relaxing_pull_ratio_avg, 3):.3f} +/- {round(2*relaxing_pull_ratio_stdev, 3):.3f}",
               "Pull Ratio Averaged Across All Runs": f"{round(pull_ratio_avg, 3):.3f} +/- {round(2*pull_ratio_stdev, 3):.3f}",
               "Pull Ratio 95% Confidence Interval": f"{round(pull_ratio_avg - 2 * pull_ratio_stdev, 3):.3f} to {round(pull_ratio_avg + 2 * pull_ratio_stdev, 3):.3f}",
-              "analysisUrl": f"https://boothinator.github.io/derailleur-analysis/derailleurs/{dir}/default.htm"
+              "analysisUrl": f"https://boothinator.github.io/derailleur-analysis/derailleurs/{dir}/default.htm",
+              "meas_method_percent_diffs": meas_method_percent_diffs,
+              "Caliper vs Indicator percent difference": f"Caliper vs Indicator percent difference: {avg_meas_method_percent_diff} +/- {stdev_meas_method_percent_diff * 2}"
               }
   
   with open(f"derailleurs/{dir}/info_out.json", "w") as info_file:
@@ -406,6 +419,8 @@ def process_der(dir):
 with open(f"other_derailleurs.json") as f:
   all_info = json.load(f)
 
+meas_method_percent_diffs = []
+
 for dir in os.listdir('derailleurs'):
   if dir == "template":
     continue
@@ -420,6 +435,18 @@ for dir in os.listdir('derailleurs'):
 
   info_out = process_der(dir)
   all_info.append(info_out)
+  meas_method_percent_diffs = meas_method_percent_diffs + info_out["meas_method_percent_diffs"]
+
+
+avg_meas_method_percent_diff = np.mean(meas_method_percent_diffs)
+stdev_meas_method_percent_diff = np.std(meas_method_percent_diffs)
+
+with open("overall_stats.json", "w") as f:
+  json.dump({
+    "avg_meas_method_percent_diff": avg_meas_method_percent_diff,
+    "stdev_meas_method_percent_diff": stdev_meas_method_percent_diff,
+    "Caliper vs Indicator percent difference": f"Caliper vs Indicator percent difference: {avg_meas_method_percent_diff} +/- {stdev_meas_method_percent_diff * 2}"
+  }, f, indent=2)
 
 with open(f"all_derailleurs.json", "w") as info_file:
   json.dump(all_info, info_file, indent=2)

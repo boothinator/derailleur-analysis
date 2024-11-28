@@ -29,5 +29,14 @@
   "Pull Ratio Averaged Across Relaxing Runs": "1.444 +/- 0.028",
   "Pull Ratio Averaged Across All Runs": "1.449 +/- 0.024",
   "Pull Ratio 95% Confidence Interval": "1.426 to 1.473",
-  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano 105 11-speed/default.htm"
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano 105 11-speed/default.htm",
+  "meas_method_percent_diffs": [
+    0.23041474654377764,
+    -0.12647554806072803,
+    0.2785515320334317,
+    -0.58552906733586,
+    -4.317607413647876,
+    -0.5769230769230684
+  ],
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.8495948045650539 +/- 3.1762901093136264"
 }

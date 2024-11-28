@@ -28,5 +28,10 @@
   "Pull Ratio Averaged Across Relaxing Runs": "1.224 +/- 0.000",
   "Pull Ratio Averaged Across All Runs": "1.225 +/- 0.003",
   "Pull Ratio 95% Confidence Interval": "1.222 to 1.227",
-  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM Apex 11-Speed/default.htm"
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM Apex 11-Speed/default.htm",
+  "meas_method_percent_diffs": [
+    -0.02400384061447649,
+    -0.8604206500956009
+  ],
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.44221224535503867 +/- 0.8364168094811244"
 }
