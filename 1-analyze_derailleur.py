@@ -14,6 +14,9 @@ template = environment.get_template("derailleur_analysis.htm")
 
 extrusion_thickness=19.93
 
+with open("overall_stats.json") as f:
+  overall_stats = json.load(f)
+
 def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
 
   data = []
@@ -118,9 +121,9 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
     meas_method_percent_diff = math.nan
   else:
     meas_method_percent_diff = 100 * (jockey_caliper_meas_range - jockey_indicator_meas_range) / jockey_indicator_meas_range
-    print("Measurement Method Percent Diff", meas_method_percent_diff)
-    if meas_method_percent_diff > 1.4 or meas_method_percent_diff < -1.4:
-      print(f"Warning: jockey position range mismatch. slack_to_taut_range: {jockey_caliper_meas_range}, jockey_position_range: {jockey_indicator_meas_range}")
+    if meas_method_percent_diff > overall_stats["avg_meas_method_percent_diff"] + 2 * overall_stats["stdev_meas_method_percent_diff"] \
+        or meas_method_percent_diff < overall_stats["avg_meas_method_percent_diff"] - 2 * overall_stats["stdev_meas_method_percent_diff"]:
+      print(f"Warning: Caliper vs Indicator range mismatch: {meas_method_percent_diff}. caliper range: {jockey_caliper_meas_range}, indicator range: {jockey_indicator_meas_range}")
 
   # Get cable pull and jockey position data
   cable_pull_raw = cable_pull = np.array([d["Cable Pull (mm)"] for d in data_sorted])
