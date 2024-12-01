@@ -45,6 +45,8 @@
 
 [Sensah Team Pro 11-Speed (sensah-team-pro-11)](https://boothinator.github.io/derailleur-analysis/shifters/Sensah%20Team%20Pro/default.htm) - Cable Pull: 2.51 mm/shift
 
+[Shimano CUES 10-Speed (SL-U6000-10R)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20CUES%2010-Speed/default.htm) - Cable Pull: 3.58 mm/shift
+
 [Shimano CUES 9-Speed (SL-U4000)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20CUES%209-Speed/default.htm) - Cable Pull: 3.56 mm/shift
 
 [Shimano Deore 10-Speed (SL-M4100)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Deore%2010-Speed/default.htm) - Cable Pull: 3.48 mm/shift

@@ -77,6 +77,30 @@
   {
     "brand": "Shimano",
     "name": "CUES",
+    "partNumber": "SL-U6000-10R",
+    "type": "flat-bar",
+    "speeds": 10,
+    "source": "",
+    "hasMatchingFrontShifters": true,
+    "dataVideo": "",
+    "analysisVideo": "",
+    "shiftSpacings": [
+      4.821666666666666,
+      3.700833333333333,
+      3.6077777777777778,
+      3.4862500000000005,
+      3.541666666666666,
+      3.575416666666667,
+      3.585,
+      3.5675000000000003,
+      3.6183333333333336
+    ],
+    "cablePull": 3.5806349206349206,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano CUES 10-Speed/default.htm"
+  },
+  {
+    "brand": "Shimano",
+    "name": "CUES",
     "partNumber": "SL-U4000",
     "type": "flat-bar",
     "speeds": 9,
