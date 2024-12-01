@@ -1,9 +1,9 @@
 {
-  "brand": "BRAND",
-  "name": "NAME",
-  "partNumber": "PART-NUMBER",
+  "brand": "Shimano",
+  "name": "CUES",
+  "partNumber": "SL-U6000-10R",
   "type": "flat-bar",
-  "speeds": 13,
+  "speeds": 10,
   "source": "",
   "hasMatchingFrontShifters": true,
   "dataVideo": "",
