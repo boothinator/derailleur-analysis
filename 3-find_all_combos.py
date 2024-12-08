@@ -122,7 +122,7 @@ for shifter in shifters:
 
         fail_criteria = [
           confidence_too_low, max_chain_angle_too_high, barrel_adjuster_too_low,
-          least_pull_too_low, not_enough_range_on_derailleur, smallest_cassette_too_big_official_max_tooth
+          least_pull_too_low, not_enough_range_on_derailleur, smallest_cassette_too_big
         ]
 
         #Log combos that fail any, but not all criteria

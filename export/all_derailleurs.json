@@ -424,6 +424,8 @@
     "supportsMultipleFrontChainrings": true,
     "chain": "10-speed",
     "maxTooth": 36,
+    "maxToothUnofficial": 42,
+    "maxToothWithGoatLink": null,
     "chainWrap": 47,
     "dataVideo": "https://youtu.be/S54ap--bayU",
     "analysisVideo": "https://youtu.be/B8jEOt5SXKg",
