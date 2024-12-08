@@ -185,8 +185,8 @@ for shifter in shifters:
 
           # Update combo max tooth with cassette info
           combo["maxToothAvailableAndCompatible"] = max(combo["maxToothAvailableAndCompatible"], maxToothAvailableAndCompatible)
-          combo["maxToothAvailableAndUnofficiallyCompatible"] = max(combo["maxToothAvailableAndUnofficiallyCompatible"], maxToothAvailableAndCompatible)
-          combo["maxToothAvailableAndCompatibleWithGoatLink"] = max(combo["maxToothAvailableAndCompatibleWithGoatLink"], maxToothAvailableAndCompatible)
+          combo["maxToothAvailableAndUnofficiallyCompatible"] = max(combo["maxToothAvailableAndUnofficiallyCompatible"], maxToothAvailableAndUnofficiallyCompatible)
+          combo["maxToothAvailableAndCompatibleWithGoatLink"] = max(combo["maxToothAvailableAndCompatibleWithGoatLink"], maxToothAvailableAndCompatibleWithGoatLink)
           if supported:
             combo["maxToothAvailableAndSupported"] = max(combo["maxToothAvailableAndSupported"], maxToothAvailableAndCompatible)
           combo["supported"] = combo["supported"] or supported
