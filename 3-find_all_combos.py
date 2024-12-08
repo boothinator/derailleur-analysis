@@ -131,7 +131,8 @@ for shifter in shifters:
               "maxAngleAnalysis": max_chain_angle_results,
               "motionMultiplier": multiplier,
               "equivalentShifters": [],
-              "equivalentDerailleurs": []
+              "equivalentDerailleurs": [],
+              "cassettes": []
             })
         else:
         
