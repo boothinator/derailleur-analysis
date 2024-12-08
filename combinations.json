@@ -2174,7 +2174,7 @@
         "smallest_cassette_too_big_with_goat_link": null
       },
       {
-        "cassettePartNumber": "CS-LG400-10",
+        "cassettePartNumber": "CS-LG300-10",
         "cassetteName": "LinkGlide 10-Speed",
         "cassetteBrand": "Shimano",
         "confidence": 0.2554965651783046,
@@ -3167,7 +3167,7 @@
         "smallest_cassette_too_big_with_goat_link": null
       },
       {
-        "cassettePartNumber": "CS-LG400-10",
+        "cassettePartNumber": "CS-LG300-10",
         "cassetteName": "LinkGlide 10-Speed",
         "cassetteBrand": "Shimano",
         "confidence": 0.14636739771830506,
@@ -5225,7 +5225,7 @@
         "smallest_cassette_too_big_with_goat_link": null
       },
       {
-        "cassettePartNumber": "CS-LG400-10",
+        "cassettePartNumber": "CS-LG300-10",
         "cassetteName": "LinkGlide 10-Speed",
         "cassetteBrand": "Shimano",
         "confidence": 0.7358573816441356,
@@ -7405,7 +7405,7 @@
         "smallest_cassette_too_big_with_goat_link": null
       },
       {
-        "cassettePartNumber": "CS-LG400-10",
+        "cassettePartNumber": "CS-LG300-10",
         "cassetteName": "LinkGlide 10-Speed",
         "cassetteBrand": "Shimano",
         "confidence": 0.16492516530056184,
@@ -7839,7 +7839,7 @@
         "smallest_cassette_too_big_with_goat_link": null
       },
       {
-        "cassettePartNumber": "CS-LG400-10",
+        "cassettePartNumber": "CS-LG300-10",
         "cassetteName": "LinkGlide 10-Speed",
         "cassetteBrand": "Shimano",
         "confidence": 0.2052960818683931,
@@ -8292,7 +8292,7 @@
     "derailleurBrand": "SRAM",
     "cassettes": [
       {
-        "cassettePartNumber": "CS-LG400-10",
+        "cassettePartNumber": "CS-LG300-10",
         "cassetteName": "LinkGlide 10-Speed",
         "cassetteBrand": "Shimano",
         "confidence": 0.4559849057486278,
@@ -8889,7 +8889,7 @@
         "smallest_cassette_too_big_with_goat_link": null
       },
       {
-        "cassettePartNumber": "CS-LG400-10",
+        "cassettePartNumber": "CS-LG300-10",
         "cassetteName": "LinkGlide 10-Speed",
         "cassetteBrand": "Shimano",
         "confidence": 0.5350350597126396,
