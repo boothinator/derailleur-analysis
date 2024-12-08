@@ -178,6 +178,9 @@ for shifter in shifters:
             "maxChainAngle": max_chain_angle_results["max_chain_angle"],
             "maxAngleAnalysis": max_chain_angle_results,
             "motionMultiplier": multiplier,
+            "smallest_cassette_too_big_official_max_tooth": bool(smallest_cassette_too_big_official_max_tooth),
+            "smallest_cassette_too_big_unofficial_max_tooth": smallest_cassette_too_big_unofficial_max_tooth,
+            "smallest_cassette_too_big_with_goat_link": smallest_cassette_too_big_with_goat_link
           })
 
           # Update combo max tooth with cassette info

@@ -82,7 +82,10 @@
             0.9381268168275442
           ]
         },
-        "motionMultiplier": 1.0613112002398872
+        "motionMultiplier": 1.0613112002398872,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -183,7 +186,10 @@
             1.0908317931397462
           ]
         },
-        "motionMultiplier": 1.064455629865923
+        "motionMultiplier": 1.064455629865923,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -284,7 +290,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0194432261958493
+        "motionMultiplier": 1.0194432261958493,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -353,7 +362,10 @@
             0.025847971755894393
           ]
         },
-        "motionMultiplier": 1.0276645425361384
+        "motionMultiplier": 1.0276645425361384,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -451,7 +463,10 @@
             0.14387304953022093
           ]
         },
-        "motionMultiplier": 1.0308542838282246
+        "motionMultiplier": 1.0308542838282246,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -517,7 +532,10 @@
             0.368601213868033
           ]
         },
-        "motionMultiplier": 1.0391676248268393
+        "motionMultiplier": 1.0391676248268393,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -624,7 +642,10 @@
             0.09676357444542702
           ]
         },
-        "motionMultiplier": 1.0401594440015198
+        "motionMultiplier": 1.0401594440015198,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -690,7 +711,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0427927590496249
+        "motionMultiplier": 1.0427927590496249,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -797,7 +821,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.014795136417498
+        "motionMultiplier": 1.014795136417498,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -863,7 +890,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0229789681628005
+        "motionMultiplier": 1.0229789681628005,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -970,7 +1000,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0126588578255273
+        "motionMultiplier": 1.0126588578255273,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -1036,7 +1069,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0208254615176686
+        "motionMultiplier": 1.0208254615176686,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -1146,7 +1182,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.021541182296489
+        "motionMultiplier": 1.021541182296489,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -1215,7 +1254,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0297794176375898
+        "motionMultiplier": 1.0297794176375898,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -1316,7 +1358,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.024567782182651
+        "motionMultiplier": 1.024567782182651,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -1385,7 +1430,10 @@
             0.16488480964697302
           ]
         },
-        "motionMultiplier": 1.03283042558735
+        "motionMultiplier": 1.03283042558735,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -1483,7 +1531,10 @@
             0.037951157297823036
           ]
         },
-        "motionMultiplier": 1.0419103020539333
+        "motionMultiplier": 1.0419103020539333,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -1549,7 +1600,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0445480496540698
+        "motionMultiplier": 1.0445480496540698,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -1647,7 +1701,10 @@
             0.6078927821165431
           ]
         },
-        "motionMultiplier": 1.0424697467921566
+        "motionMultiplier": 1.0424697467921566,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -1713,7 +1770,10 @@
             0.6111795589082678
           ]
         },
-        "motionMultiplier": 1.0451089107080862
+        "motionMultiplier": 1.0451089107080862,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -1808,7 +1868,10 @@
             0.03805330196998308
           ]
         },
-        "motionMultiplier": 1.01571032841073
+        "motionMultiplier": 1.01571032841073,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -1906,7 +1969,10 @@
             0.14734461464928844
           ]
         },
-        "motionMultiplier": 1.01571032841073
+        "motionMultiplier": 1.01571032841073,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -2001,7 +2067,10 @@
             0.6326105646727224
           ]
         },
-        "motionMultiplier": 1.0522101454920503
+        "motionMultiplier": 1.0522101454920503,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -2099,7 +2168,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0262296480724937
+        "motionMultiplier": 1.0262296480724937,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-LG400-10",
@@ -2165,7 +2237,10 @@
             0.9033882348061358
           ]
         },
-        "motionMultiplier": 1.0522101454920503
+        "motionMultiplier": 1.0522101454920503,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -2231,7 +2306,10 @@
             0.013307631268579116
           ]
         },
-        "motionMultiplier": 1.0288276978144493
+        "motionMultiplier": 1.0288276978144493,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
@@ -2297,7 +2375,10 @@
             0.8754060403121097
           ]
         },
-        "motionMultiplier": 1.0522101454920503
+        "motionMultiplier": 1.0522101454920503,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -2392,7 +2473,10 @@
             0.41162373340258646
           ]
         },
-        "motionMultiplier": 1.048369088541279
+        "motionMultiplier": 1.048369088541279,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -2455,7 +2539,10 @@
             0.4904921910938314
           ]
         },
-        "motionMultiplier": 1.0510231874996114
+        "motionMultiplier": 1.0510231874996114,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -2550,7 +2637,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 0.995287109374632
+        "motionMultiplier": 0.995287109374632,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -2645,7 +2735,10 @@
             0.12730816569848213
           ]
         },
-        "motionMultiplier": 1.0214582384712825
+        "motionMultiplier": 1.0214582384712825,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -2740,7 +2833,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 0.9962370473979175
+        "motionMultiplier": 0.9962370473979175,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -2803,7 +2899,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 0.998759166505254
+        "motionMultiplier": 0.998759166505254,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
@@ -2866,7 +2965,10 @@
             0.19965196041045072
           ]
         },
-        "motionMultiplier": 1.0214582384712825
+        "motionMultiplier": 1.0214582384712825,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -2961,7 +3063,10 @@
             0.76004886937457
           ]
         },
-        "motionMultiplier": 1.058164608208357
+        "motionMultiplier": 1.058164608208357,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -3056,7 +3161,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0320370870180273
+        "motionMultiplier": 1.0320370870180273,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-LG400-10",
@@ -3119,7 +3227,10 @@
             0.7150976787279377
           ]
         },
-        "motionMultiplier": 1.058164608208357
+        "motionMultiplier": 1.058164608208357,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -3182,7 +3293,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0346498391370602
+        "motionMultiplier": 1.0346498391370602,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
@@ -3245,7 +3359,10 @@
             0.7331796873043079
           ]
         },
-        "motionMultiplier": 1.058164608208357
+        "motionMultiplier": 1.058164608208357,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -3343,7 +3460,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0098431812219122
+        "motionMultiplier": 1.0098431812219122,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -3409,7 +3529,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0179870778446694
+        "motionMultiplier": 1.0179870778446694,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -3504,7 +3627,10 @@
             0.8402735385785224
           ]
         },
-        "motionMultiplier": 1.0447551038565148
+        "motionMultiplier": 1.0447551038565148,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -3602,7 +3728,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.01895868153907
+        "motionMultiplier": 1.01895868153907,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -3668,7 +3797,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0215383237708147
+        "motionMultiplier": 1.0215383237708147,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
@@ -3734,7 +3866,10 @@
             0.4684204721981948
           ]
         },
-        "motionMultiplier": 1.0447551038565148
+        "motionMultiplier": 1.0447551038565148,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -3832,7 +3967,10 @@
             0.6270090748596454
           ]
         },
-        "motionMultiplier": 1.0555752290421296
+        "motionMultiplier": 1.0555752290421296,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -3898,7 +4036,10 @@
             0.4770666758596991
           ]
         },
-        "motionMultiplier": 1.0582475713941348
+        "motionMultiplier": 1.0582475713941348,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -3996,7 +4137,10 @@
             -0.060148098152327904
           ]
         },
-        "motionMultiplier": 0.9941113549460056
+        "motionMultiplier": 0.9941113549460056,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -4062,7 +4206,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0021283820020217
+        "motionMultiplier": 1.0021283820020217,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -4160,7 +4307,10 @@
             0.2446138880198954
           ]
         },
-        "motionMultiplier": 1.0560198196532709
+        "motionMultiplier": 1.0560198196532709,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -4261,7 +4411,10 @@
             0.6150134408934003
           ]
         },
-        "motionMultiplier": 1.034514670011471
+        "motionMultiplier": 1.034514670011471,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -4330,7 +4483,10 @@
             0.842909712973164
           ]
         },
-        "motionMultiplier": 1.0428575302534988
+        "motionMultiplier": 1.0428575302534988,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -4428,7 +4584,10 @@
             0.3490534144467067
           ]
         },
-        "motionMultiplier": 1.0438528712074069
+        "motionMultiplier": 1.0438528712074069,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -4494,7 +4653,10 @@
             0.3016706000825928
           ]
         },
-        "motionMultiplier": 1.0464955367041344
+        "motionMultiplier": 1.0464955367041344,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -4595,7 +4757,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.018398499331579
+        "motionMultiplier": 1.018398499331579,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -4664,7 +4829,10 @@
             0.1778361551736635
           ]
         },
-        "motionMultiplier": 1.0266113904552208
+        "motionMultiplier": 1.0266113904552208,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -4765,7 +4933,10 @@
             0.8588906822765289
           ]
         },
-        "motionMultiplier": 1.0474478842393193
+        "motionMultiplier": 1.0474478842393193,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -4834,7 +5005,10 @@
             1.0742469689224932
           ]
         },
-        "motionMultiplier": 1.055895044596088
+        "motionMultiplier": 1.055895044596088,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -4929,7 +5103,10 @@
             0.7322736427683562
           ]
         },
-        "motionMultiplier": 1.037110682432498
+        "motionMultiplier": 1.037110682432498,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -5042,7 +5219,10 @@
             0.18266748306781264
           ]
         },
-        "motionMultiplier": 1.0115030112613252
+        "motionMultiplier": 1.0115030112613252,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-LG400-10",
@@ -5108,7 +5288,10 @@
             1.1125628029601347
           ]
         },
-        "motionMultiplier": 1.037110682432498
+        "motionMultiplier": 1.037110682432498,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -5174,7 +5357,10 @@
             0.2715430686489177
           ]
         },
-        "motionMultiplier": 1.0140637783784425
+        "motionMultiplier": 1.0140637783784425,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
@@ -5240,7 +5426,10 @@
             1.0822745511089777
           ]
         },
-        "motionMultiplier": 1.037110682432498
+        "motionMultiplier": 1.037110682432498,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -5359,7 +5548,10 @@
             1.1355096063901888
           ]
         },
-        "motionMultiplier": 1.0624286008567267
+        "motionMultiplier": 1.0624286008567267,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -5460,7 +5652,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.0272055272162521
+        "motionMultiplier": 1.0272055272162521,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -5529,7 +5724,10 @@
             0.13044367018825156
           ]
         },
-        "motionMultiplier": 1.0354894427583186
+        "motionMultiplier": 1.0354894427583186,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -5630,7 +5828,10 @@
             0.08423296820400007
           ]
         },
-        "motionMultiplier": 1.0302489092997318
+        "motionMultiplier": 1.0302489092997318,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -5699,7 +5900,10 @@
             0.3012910167539027
           ]
         },
-        "motionMultiplier": 1.0385573682456974
+        "motionMultiplier": 1.0385573682456974,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -5797,7 +6001,10 @@
             0.07523382693823315
           ]
         },
-        "motionMultiplier": 1.0476875917301267
+        "motionMultiplier": 1.0476875917301267,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -5863,7 +6070,10 @@
             0.01933313669407068
           ]
         },
-        "motionMultiplier": 1.0503399653800765
+        "motionMultiplier": 1.0503399653800765,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -5964,7 +6174,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 0.994640118731133
+        "motionMultiplier": 0.994640118731133,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -6062,7 +6275,10 @@
             1.0823017851398273
           ]
         },
-        "motionMultiplier": 1.0357751551908714
+        "motionMultiplier": 1.0357751551908714,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -6128,7 +6344,10 @@
             1.0870284434076662
           ]
         },
-        "motionMultiplier": 1.038397370773633
+        "motionMultiplier": 1.038397370773633,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -6226,7 +6445,10 @@
             0.6244079224449822
           ]
         },
-        "motionMultiplier": 0.998583234615144
+        "motionMultiplier": 0.998583234615144,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -6292,7 +6514,10 @@
             0.8711109766227759
           ]
         },
-        "motionMultiplier": 1.0066363252168788
+        "motionMultiplier": 1.0066363252168788,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -6390,7 +6615,10 @@
             1.045568430594676
           ]
         },
-        "motionMultiplier": 1.0339653039651833
+        "motionMultiplier": 1.0339653039651833,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -6456,7 +6684,10 @@
             1.0504233418436477
           ]
         },
-        "motionMultiplier": 1.0365829376461078
+        "motionMultiplier": 1.0365829376461078,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -6554,7 +6785,10 @@
             0.5906361815510637
           ]
         },
-        "motionMultiplier": 0.9968383703151438
+        "motionMultiplier": 0.9968383703151438,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -6620,7 +6854,10 @@
             0.8375284923730735
           ]
         },
-        "motionMultiplier": 1.0048773894305885
+        "motionMultiplier": 1.0048773894305885,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -6721,7 +6958,10 @@
             0.7183909884163135
           ]
         },
-        "motionMultiplier": 1.0071134655655156
+        "motionMultiplier": 1.0071134655655156,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -6790,7 +7030,10 @@
             0.8723256392065939
           ]
         },
-        "motionMultiplier": 1.0152353483523342
+        "motionMultiplier": 1.0152353483523342,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -6908,7 +7151,10 @@
             1.145094836831149
           ]
         },
-        "motionMultiplier": 1.054539774947106
+        "motionMultiplier": 1.054539774947106,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -7035,7 +7281,10 @@
             0.8452227283295158
           ]
         },
-        "motionMultiplier": 1.05696030926328
+        "motionMultiplier": 1.05696030926328,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": false,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -7150,7 +7399,10 @@
             0.16969386548357296
           ]
         },
-        "motionMultiplier": 1.0308625238493718
+        "motionMultiplier": 1.0308625238493718,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-LG400-10",
@@ -7216,7 +7468,10 @@
             1.040287736805756
           ]
         },
-        "motionMultiplier": 1.05696030926328
+        "motionMultiplier": 1.05696030926328,
+        "smallest_cassette_too_big_official_max_tooth": true,
+        "smallest_cassette_too_big_unofficial_max_tooth": false,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -7282,7 +7537,10 @@
             0.11343457250864493
           ]
         },
-        "motionMultiplier": 1.0334723023907626
+        "motionMultiplier": 1.0334723023907626,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
@@ -7348,7 +7606,10 @@
             1.015275606213297
           ]
         },
-        "motionMultiplier": 1.05696030926328
+        "motionMultiplier": 1.05696030926328,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "drop-bar",
@@ -7471,7 +7732,10 @@
             0.5326275885145982
           ]
         },
-        "motionMultiplier": 1.0546552417481996
+        "motionMultiplier": 1.0546552417481996,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -7569,7 +7833,10 @@
             0.39605719280773405
           ]
         },
-        "motionMultiplier": 1.0286143715815774
+        "motionMultiplier": 1.0286143715815774,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-LG400-10",
@@ -7635,7 +7902,10 @@
             1.1339868135916515
           ]
         },
-        "motionMultiplier": 1.0546552417481996
+        "motionMultiplier": 1.0546552417481996,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -7701,7 +7971,10 @@
             0.4991945213329248
           ]
         },
-        "motionMultiplier": 1.0312184585982396
+        "motionMultiplier": 1.0312184585982396,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -7799,7 +8072,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 1.014338697777233
+        "motionMultiplier": 1.014338697777233,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -7865,7 +8141,10 @@
             0.09991841215262044
           ]
         },
-        "motionMultiplier": 1.022518848565759
+        "motionMultiplier": 1.022518848565759,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -7975,7 +8254,10 @@
             0.23443834412885145
           ]
         },
-        "motionMultiplier": 1.0166669566864963
+        "motionMultiplier": 1.0166669566864963,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": false,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -8073,7 +8355,10 @@
             0.20238535482389877
           ]
         },
-        "motionMultiplier": 1.0166669566864963
+        "motionMultiplier": 1.0166669566864963,
+        "smallest_cassette_too_big_official_max_tooth": true,
+        "smallest_cassette_too_big_unofficial_max_tooth": false,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -8139,7 +8424,10 @@
             0.0
           ]
         },
-        "motionMultiplier": 0.9940743576490185
+        "motionMultiplier": 0.9940743576490185,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
@@ -8205,7 +8493,10 @@
             0.14261124893874683
           ]
         },
-        "motionMultiplier": 1.0166669566864963
+        "motionMultiplier": 1.0166669566864963,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -8306,7 +8597,10 @@
             0.5215659912338503
           ]
         },
-        "motionMultiplier": 1.0291865217281988
+        "motionMultiplier": 1.0291865217281988,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "shimano-11-speed",
@@ -8375,7 +8669,10 @@
             0.7659614049226081
           ]
         },
-        "motionMultiplier": 1.0374864130324584
+        "motionMultiplier": 1.0374864130324584,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -8470,7 +8767,10 @@
             0.7437596546836222
           ]
         },
-        "motionMultiplier": 1.0190295402381928
+        "motionMultiplier": 1.0190295402381928,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -8583,7 +8883,10 @@
             0.09196192076698684
           ]
         },
-        "motionMultiplier": 0.9938683170224352
+        "motionMultiplier": 0.9938683170224352,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-LG400-10",
@@ -8649,7 +8952,10 @@
             0.9400829441696961
           ]
         },
-        "motionMultiplier": 1.0190295402381928
+        "motionMultiplier": 1.0190295402381928,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-HG-500-10",
@@ -8715,7 +9021,10 @@
             0.14758030204251943
           ]
         },
-        "motionMultiplier": 0.9963844393440109
+        "motionMultiplier": 0.9963844393440109,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       },
       {
         "cassettePartNumber": "CS-PG-1050-A1",
@@ -8781,7 +9090,10 @@
             1.0012397805725552
           ]
         },
-        "motionMultiplier": 1.0190295402381928
+        "motionMultiplier": 1.0190295402381928,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
@@ -8900,7 +9212,10 @@
             0.3514696299422132
           ]
         },
-        "motionMultiplier": 1.0439060622995777
+        "motionMultiplier": 1.0439060622995777,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
       }
     ],
     "shifterType": "flat-bar",
