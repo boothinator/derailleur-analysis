@@ -12,5 +12,7 @@
   "supportsMultipleFrontChainrings": true,
   "chain": "10-speed",
   "maxTooth": 44,
+  "maxToothUnofficial": null,
+  "maxToothWithGoatLink": null,
   "chainWrap": 35
 }
