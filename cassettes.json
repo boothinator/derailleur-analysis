@@ -49,6 +49,19 @@
     "source": "https://youtu.be/q75AiGAUpp8"
   },
   {
+    "name": "LinkGlide 10-Speed",
+    "brand": "Shimano",
+    "partNumber": "CS-LG400-10",
+    "speeds": 10,
+    "pitches": [ 4.05, 4.05, 4.05, 4.05, 4.05, 4.05, 4.05, 4.05, 4.05 ],
+    "averagePitch": 4.05,
+    "cogWidth": 1.95,
+    "chainRollerWidth": 2.2,
+    "minMaxToothAvailable": 39,
+    "maxToothAvailable": 48,
+    "source": ""
+  },
+  {
     "name": "Eagle 12-Speed",
     "brand": "SRAM",
     "partNumber": "CS-PG-1210-A1",

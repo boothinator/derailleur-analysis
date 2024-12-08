@@ -80,6 +80,8 @@ for shifter in shifters:
         "moreCogsThanShifts": shifter["speeds"] < speeds,
         "moreShiftsThanCogs": shifter["speeds"] > speeds,
         "maxToothAvailableAndCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxToothAvailableAndSupported": 0,
         "supported": False,
         "chainWrap": derailleur["chainWrap"],
@@ -107,11 +109,20 @@ for shifter in shifters:
         max_chain_angle_too_high = max_chain_angle_results["max_chain_angle"] > max_chain_angle_max
         confidence_too_low = confidence < 0.05
         not_enough_range_on_derailleur = max_chain_angle_results["derailleur_can_clear_cassette"] == False
-        smallest_cassette_to_big = "minMaxToothAvailable" in cassette and cassette["minMaxToothAvailable"] > derailleur["maxTooth"]
+        smallest_cassette_too_big_official_max_tooth = "minMaxToothAvailable" in cassette and cassette["minMaxToothAvailable"] > derailleur["maxTooth"]
+        smallest_cassette_too_big_unofficial_max_tooth = cassette["minMaxToothAvailable"] > derailleur["maxToothUnofficial"] \
+          if "minMaxToothAvailable" in cassette and "maxToothUnofficial" in derailleur and derailleur["maxToothUnofficial"] != None \
+          else None
+        smallest_cassette_too_big_with_goat_link = cassette["minMaxToothAvailable"] > derailleur["maxToothWithGoatLink"] \
+          if "minMaxToothAvailable" in cassette and "maxToothWithGoatLink" in derailleur and derailleur["maxToothWithGoatLink"] != None \
+          else None
+        smallest_cassette_too_big = smallest_cassette_too_big_official_max_tooth \
+          and (smallest_cassette_too_big_unofficial_max_tooth or smallest_cassette_too_big_unofficial_max_tooth == None) \
+          and (smallest_cassette_too_big_with_goat_link or smallest_cassette_too_big_with_goat_link == None)
 
         fail_criteria = [
           confidence_too_low, max_chain_angle_too_high, barrel_adjuster_too_low,
-          least_pull_too_low, not_enough_range_on_derailleur, smallest_cassette_to_big
+          least_pull_too_low, not_enough_range_on_derailleur, smallest_cassette_too_big_official_max_tooth
         ]
 
         #Log combos that fail any, but not all criteria
@@ -123,7 +134,10 @@ for shifter in shifters:
               "barrel_adjuster_too_low": bool(barrel_adjuster_too_low),
               "least_pull_too_low": bool(least_pull_too_low),
               "not_enough_range_on_derailleur": bool(not_enough_range_on_derailleur),
-              "smallest_cassette_to_big": bool(smallest_cassette_to_big),
+              "smallest_cassette_too_big_official_max_tooth": bool(smallest_cassette_too_big_official_max_tooth),
+              "smallest_cassette_too_big_unofficial_max_tooth": smallest_cassette_too_big_unofficial_max_tooth,
+              "smallest_cassette_too_big_with_goat_link": smallest_cassette_too_big_with_goat_link,
+              "smallest_cassette_too_big": bool(smallest_cassette_too_big),
               **combo,
               "cassettePartNumber": cassette["partNumber"],
               "confidence": confidence,
@@ -140,6 +154,13 @@ for shifter in shifters:
             print(f"Warning: most pull too high for {combo['name']} with cassette {cassette["partNumber"]}")
           
           maxToothAvailableAndCompatible = min(derailleur["maxTooth"], cassette["maxToothAvailable"])
+          maxToothAvailableAndUnofficiallyCompatible = min(derailleur["maxToothUnofficial"], cassette["maxToothAvailable"]) \
+            if "maxToothUnofficial" in derailleur and derailleur["maxToothUnofficial"] != None \
+            else 0
+          maxToothAvailableAndCompatibleWithGoatLink = min(derailleur["maxToothWithGoatLink"], cassette["maxToothAvailable"]) \
+            if "maxToothWithGoatLink" in derailleur and derailleur["maxToothWithGoatLink"] != None \
+            else 0
+
           supported = any([combo for combo in supported_combos
                 if shifter["partNumber"] == combo["shifterPartNumber"]
                 and derailleur["partNumber"] == combo["derailleurPartNumber"]
@@ -152,12 +173,17 @@ for shifter in shifters:
             "confidence": confidence,
             "supported": supported,
             "maxToothAvailableAndCompatible": maxToothAvailableAndCompatible,
+            "maxToothAvailableAndUnofficiallyCompatible": maxToothAvailableAndUnofficiallyCompatible,
+            "maxToothAvailableAndCompatibleWithGoatLink": maxToothAvailableAndCompatibleWithGoatLink,
             "maxChainAngle": max_chain_angle_results["max_chain_angle"],
             "maxAngleAnalysis": max_chain_angle_results,
             "motionMultiplier": multiplier,
           })
 
+          # Update combo max tooth with cassette info
           combo["maxToothAvailableAndCompatible"] = max(combo["maxToothAvailableAndCompatible"], maxToothAvailableAndCompatible)
+          combo["maxToothAvailableAndUnofficiallyCompatible"] = max(combo["maxToothAvailableAndUnofficiallyCompatible"], maxToothAvailableAndCompatible)
+          combo["maxToothAvailableAndCompatibleWithGoatLink"] = max(combo["maxToothAvailableAndCompatibleWithGoatLink"], maxToothAvailableAndCompatible)
           if supported:
             combo["maxToothAvailableAndSupported"] = max(combo["maxToothAvailableAndSupported"], maxToothAvailableAndCompatible)
           combo["supported"] = combo["supported"] or supported
