@@ -21,6 +21,13 @@
     "cassettePartNumber": "CS-LG300-9"
   },
   {
+    "brand": "Shimano",
+    "name": "CUES 10-speed",
+    "shifterPartNumber": "SL-U6000-10R",
+    "derailleurPartNumber": "RD-U6020-10",
+    "cassettePartNumber": "CS-LG300-10"
+  },
+  {
     "brand": "SRAM",
     "name": "SX Eagle 12-speed",
     "shifterPartNumber": "SL-SX-1-A1",
