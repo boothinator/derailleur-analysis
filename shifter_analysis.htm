@@ -34,6 +34,32 @@
   {% endif %}
 </table>
 <figure>
+  <table>
+    <tr>
+      <th>Shift</th>
+      <th>Shift Spacing</th>
+    </tr>
+    {% for s in shift_spacings %}
+    <tr>
+      <td>
+        {{ s[0] }}-{{ s[0]+1 }}
+        {% if s[0] == 1 %}
+          (most cable pull/easiest gear)
+        {% endif %}
+        {% if s[0] == shift_spacings | length %}
+          (least cable pull/hardest gear)
+        {% endif %}
+      </td>
+      <td>
+        {{"%.2f" | format(s[1])}} mm
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <figcaption>Shift Table</figcaption>
+</figure>
+
+<figure>
 <img src="cable_pull.png"/>
 <figcaption>Cable Pull</figcaption>
 </figure>
