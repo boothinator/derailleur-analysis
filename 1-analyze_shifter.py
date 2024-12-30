@@ -225,8 +225,10 @@ for dir in os.listdir('shifters'):
 
   today = datetime.date.today()
 
+  shift_spacings=list(enumerate(reversed(info_out["shiftSpacings"]), start=1))
+
   output = template.render(year=str(today.year), generation_date=str(today),
-                           info=info_out)
+                           info=info_out, shift_spacings=shift_spacings)
   
   with open(f"shifters/{dir}/default.htm", 'w') as f:
     print(output, file = f)
