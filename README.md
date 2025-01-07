@@ -55,6 +55,8 @@
 
 [Shimano SLX 12-Speed (SL-M7100)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20SLX/default.htm) - Cable Pull: 3.19 mm/shift
 
+[Shimano Tiagra 4700 10-Speed (ST-4700)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Tiagra%204700/default.htm) - Cable Pull: 2.65 mm/shift
+
 [Shimano Ultegra 11-Speed (ST-R8020)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Ultegra%2011-Speed/default.htm) - Cable Pull: 2.50 mm/shift
 
 [Shimano Ultegra 10-Speed (ST-6600)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Ultegra%206600/default.htm) - Cable Pull: 2.28 mm/shift
