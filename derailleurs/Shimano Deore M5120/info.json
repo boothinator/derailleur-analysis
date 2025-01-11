@@ -1,0 +1,18 @@
+{
+  "brand": "Shimano",
+  "name": "Deore",
+  "partNumber": "RD-M5120",
+  "designSpeeds": 11,
+  "designCogPitch": 3.75,
+  "distanceFromCarriageToJockeyWheel": 36.52,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": null,
+  "maxDropoutWidth": null,
+  "smallCogOffset": null,
+  "supportsMultipleFrontChainrings": true,
+  "chain": "11-speed",
+  "maxTooth": 46,
+  "maxToothUnofficial": null,
+  "maxToothWithGoatLink": null,
+  "chainWrap": 41
+}

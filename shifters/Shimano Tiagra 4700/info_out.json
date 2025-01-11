@@ -1,0 +1,24 @@
+{
+  "brand": "Shimano",
+  "name": "Tiagra 4700",
+  "partNumber": "ST-4700",
+  "type": "drop-bar",
+  "speeds": 10,
+  "source": "",
+  "hasMatchingFrontShifters": true,
+  "dataVideo": "",
+  "analysisVideo": "",
+  "shiftSpacings": [
+    3.171666666666667,
+    2.7683333333333326,
+    2.6500000000000017,
+    2.6391666666666658,
+    2.6241666666666674,
+    2.638333333333333,
+    2.6283333333333334,
+    2.6191666666666666,
+    2.801666666666667
+  ],
+  "cablePull": 2.6525000000000003,
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano Tiagra 4700/default.htm"
+}
