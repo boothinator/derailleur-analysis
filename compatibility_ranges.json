@@ -1,13 +1,13 @@
 {
-  "motionMultiplierAvg": 1.0353053999269686,
-  "motionMultiplierStdev": 0.02172868805186967,
-  "motionMultiplierMin": 0.9918480238232292,
-  "motionMultiplierMax": 1.078762776030708,
+  "motionMultiplierAvg": 1.0315340986069967,
+  "motionMultiplierStdev": 0.02205693859822215,
+  "motionMultiplierMin": 0.9874202214105524,
+  "motionMultiplierMax": 1.075647975803441,
   "motionMultiplierMinObserved": 0.994640118731133,
   "motionMultiplierMaxObserved": 1.0688613859514517,
-  "maxChainAngleAvg": 0.5733091394474901,
-  "maxChainAngleStdev": 0.5034520927582283,
-  "maxChainAngleMax": 1.5802133249639467,
+  "maxChainAngleAvg": 0.496264827340486,
+  "maxChainAngleStdev": 0.4880144471726756,
+  "maxChainAngleMax": 1.4722937216858372,
   "maxChainAngleMaxObserved": 1.5376648328455154,
   "groups": [
     "Apex 1 11-speed",
@@ -15,8 +15,10 @@
     "CUES 9-speed",
     "CUES 10-speed",
     "SX Eagle 12-speed",
-    "Deore 11-speed",
-    "Deore 10-speed",
+    "Deore 11-speed RD-M4120",
+    "Deore 11-speed RD-M5120",
+    "Deore 10-speed RD-M4120",
+    "Deore 10-speed RD-M5120",
     "Ultegra RX 11-speed",
     "Ultegra/105 11-speed"
   ],
@@ -27,7 +29,9 @@
     1.0688613859514517,
     1.0439060622995777,
     1.0266113904552208,
+    1.0004503645409946,
     1.0555752290421296,
+    1.0286761207932513,
     0.994640118731133,
     1.0354894427583186
   ]

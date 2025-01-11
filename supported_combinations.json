@@ -36,16 +36,31 @@
   },
   {
     "brand": "Shimano",
-    "name": "Deore 11-speed",
+    "name": "Deore 11-speed RD-M4120",
     "shifterPartNumber": "SL-M5100",
     "derailleurPartNumber": "RD-M4120",
     "cassettePartNumber": "shimano-11-speed"
   },
   {
     "brand": "Shimano",
-    "name": "Deore 10-speed",
+    "name": "Deore 11-speed RD-M5120",
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-M5120",
+    "cassettePartNumber": "shimano-11-speed"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Deore 10-speed RD-M4120",
     "shifterPartNumber": "SL-M4100",
     "derailleurPartNumber": "RD-M4120",
+    "cassetteBrand": "Generic",
+    "cassettePartNumber": "generic-10-speed"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Deore 10-speed RD-M5120",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-M5120",
     "cassetteBrand": "Generic",
     "cassettePartNumber": "generic-10-speed"
   },
