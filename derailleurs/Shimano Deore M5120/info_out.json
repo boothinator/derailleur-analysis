@@ -15,23 +15,24 @@
   "maxToothUnofficial": null,
   "maxToothWithGoatLink": null,
   "chainWrap": 41,
-  "pullRatio": 1.1085771948320047,
+  "pullRatio": 1.1030569393879903,
   "coefficients": [
-    6.832148244676922,
-    0.935886689745825,
-    0.009867594901164053,
-    -0.00016032873983712687
+    6.431978784182768,
+    0.9573082220620894,
+    0.008062724949486323,
+    -0.00012776831047350883
   ],
-  "physicalLowLimit": 6.832148244676922,
-  "physicalHighLimit": 51.52971322708541,
-  "numberOfMeasurements": 132,
+  "physicalLowLimit": 6.431978784182768,
+  "physicalHighLimit": 51.32834309702946,
+  "numberOfMeasurements": 264,
   "Pull Ratio Averaged Across Pulling Runs": "1.109 +/- 0.000",
-  "Pull Ratio Averaged Across Relaxing Runs": "nan +/- nan",
-  "Pull Ratio Averaged Across All Runs": "1.109 +/- 0.000",
-  "Pull Ratio 95% Confidence Interval": "1.109 to 1.109",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.098 +/- 0.000",
+  "Pull Ratio Averaged Across All Runs": "1.103 +/- 0.011",
+  "Pull Ratio 95% Confidence Interval": "1.093 to 1.114",
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore M5120/default.htm",
   "meas_method_percent_diffs": [
-    0.0225326723749552
+    0.0225326723749552,
+    0.40513166779201576
   ],
-  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: 0.0225326723749552 +/- 0.0"
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: 0.21383217008348548 +/- 0.38259899541706055"
 }
