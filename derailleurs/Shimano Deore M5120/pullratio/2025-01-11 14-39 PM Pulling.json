@@ -1,0 +1,13 @@
+{
+  "coef": [
+    6.34676348926498,
+    0.932738394692302,
+    0.008679933140933615,
+    -0.00012143051268625813
+  ],
+  "extrusion_to_carriage_slack": 64.1,
+  "extrusion_to_carriage_max_pull": 109.22,
+  "max_pull": 43.29,
+  "number_of_measurements": 70,
+  "meas_method_percent_diff": -0.022158209616642822
+}

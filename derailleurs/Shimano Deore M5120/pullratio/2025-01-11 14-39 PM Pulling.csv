@@ -1,5 +1,5 @@
 Puller Meas. (mm),Carriage Meas. (mm),Num rollers pulled,Measurement after rollers pulled (mm),Puller Indicator After Move (mm),Carriage Indicator After Move (mm),Distance from outside of extrusion to carriage when cable is slack (mm),Distance from outside of extrusion to carriage at max pull (mm),Exclude Cable Pull Greater Than (mm)
-0.00,0.01,,,,,,,
+0.00,0.01,,,,,64.1,109.22,
 -0.25,0.01,,,,,,,
 -0.32,0.03,,,,,,,
 -0.61,0.09,,,,,,,
@@ -69,4 +69,3 @@ Puller Meas. (mm),Carriage Meas. (mm),Num rollers pulled,Measurement after rolle
 -20.87,22.33,,,,,,,
 -21.47,22.48,,,,,,,
 -22.02,22.71,,,,,,,
-,,,,,,64.1,109.22,
