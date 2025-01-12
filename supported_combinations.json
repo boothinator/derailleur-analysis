@@ -21,6 +21,13 @@
     "cassettePartNumber": "CS-LG300-9"
   },
   {
+    "brand": "Shimano",
+    "name": "CUES 10-speed",
+    "shifterPartNumber": "SL-U6000-10R",
+    "derailleurPartNumber": "RD-U6020-10",
+    "cassettePartNumber": "CS-LG300-10"
+  },
+  {
     "brand": "SRAM",
     "name": "SX Eagle 12-speed",
     "shifterPartNumber": "SL-SX-1-A1",
@@ -29,16 +36,31 @@
   },
   {
     "brand": "Shimano",
-    "name": "Deore 11-speed",
+    "name": "Deore 11-speed RD-M4120",
     "shifterPartNumber": "SL-M5100",
     "derailleurPartNumber": "RD-M4120",
     "cassettePartNumber": "shimano-11-speed"
   },
   {
     "brand": "Shimano",
-    "name": "Deore 10-speed",
+    "name": "Deore 11-speed RD-M5120",
+    "shifterPartNumber": "SL-M5100",
+    "derailleurPartNumber": "RD-M5120",
+    "cassettePartNumber": "shimano-11-speed"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Deore 10-speed RD-M4120",
     "shifterPartNumber": "SL-M4100",
     "derailleurPartNumber": "RD-M4120",
+    "cassetteBrand": "Generic",
+    "cassettePartNumber": "generic-10-speed"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Deore 10-speed RD-M5120",
+    "shifterPartNumber": "SL-M4100",
+    "derailleurPartNumber": "RD-M5120",
     "cassetteBrand": "Generic",
     "cassettePartNumber": "generic-10-speed"
   },
@@ -55,5 +77,13 @@
     "shifterPartNumber": "ST-R8020",
     "derailleurPartNumber": "RD-5800",
     "cassettePartNumber": "shimano-11-speed"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Tiagra 4700/GRX",
+    "shifterPartNumber": "ST-4700",
+    "derailleurPartNumber": "RD-RX400",
+    "cassetteBrand": "Shimano",
+    "cassettePartNumber": "CS-HG-500-10"
   }
 ]
