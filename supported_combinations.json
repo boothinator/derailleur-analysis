@@ -77,5 +77,13 @@
     "shifterPartNumber": "ST-R8020",
     "derailleurPartNumber": "RD-5800",
     "cassettePartNumber": "shimano-11-speed"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Tiagra 4700/GRX",
+    "shifterPartNumber": "ST-4700",
+    "derailleurPartNumber": "RD-RX400",
+    "cassetteBrand": "Shimano",
+    "cassettePartNumber": "CS-HG-500-10"
   }
 ]
