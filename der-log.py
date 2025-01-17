@@ -131,11 +131,14 @@ with open(tmp_filename, "x", newline='') as f:
         actionStr = None
       
     try:
-      if last_chain_move_carriage_meas != None and \
-          abs(float(data_row[cols[1]]) - float(last_chain_move_carriage_meas)) > cog_pitch:
-        print(f"Move chain: {abs(float(data_row[cols[1]]) - float(last_chain_move_carriage_meas))}")
-      if float(data_row[cols[1]]) > 22.0 or float(data_row[cols[1]]) < 0.4:
-        print("Move indicators")
+      if cols[4] not in data_row:
+        if last_chain_move_carriage_meas != None and \
+            abs(float(data_row[cols[1]]) - float(last_chain_move_carriage_meas)) > cog_pitch:
+          print(f"Move chain: {abs(float(data_row[cols[1]]) - float(last_chain_move_carriage_meas))}")
+        if direction == "Pulling" and float(data_row[cols[1]]) > 22.0:
+          print("Move indicators")
+        if direction == "Relaxing" and float(data_row[cols[1]]) < 0.4:
+          print("Move indicators")
     except KeyError:
       pass
     except Exception as ex:
