@@ -146,7 +146,6 @@ with open(tmp_filename, "x", newline='') as f:
   else:
     taut_meas = input(f"{cols[7]}: ")
   
-  data_row = {}
   data_row[cols[6]] = slack_meas
   data_row[cols[7]] = taut_meas
   writer.writerow(data_row)
