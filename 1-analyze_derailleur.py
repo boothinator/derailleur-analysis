@@ -39,8 +39,10 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
           pass
     
   # Get run values
-  extrusion_to_carriage_slack = data[0]["Distance from outside of extrusion to carriage when cable is slack (mm)"]
-  extrusion_to_carriage_max_pull = data[0]["Distance from outside of extrusion to carriage at max pull (mm)"]
+  extrusion_to_carriage_slack = [d["Distance from outside of extrusion to carriage when cable is slack (mm)"] for d in data
+                                 if not np.isnan(d["Distance from outside of extrusion to carriage when cable is slack (mm)"])][0]
+  extrusion_to_carriage_max_pull = [d["Distance from outside of extrusion to carriage at max pull (mm)"] for d in data
+                                 if not np.isnan(d["Distance from outside of extrusion to carriage at max pull (mm)"])][0]
 
   jockey_wheel_center_at_full_slack=extrusion_to_carriage_slack - carriage_to_jockey_wheel - extrusion_thickness - jockey_wheel_thickness/2
 
@@ -429,8 +431,8 @@ for dir in os.listdir('derailleurs'):
     continue
 
   # TESTING
-  #if dir != "Shimano Deore M6120":
-  #  continue
+  if dir != "Shimano Deore M6100":
+    continue
   #if dir != "Campagnolo Ekar":
   #  continue
 
