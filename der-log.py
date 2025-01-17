@@ -2,6 +2,7 @@ import os
 import csv
 import datetime
 import shutil
+import json
 
 dirs = sorted([dir for dir in os.listdir("derailleurs") if dir != "template"])
 
@@ -13,6 +14,9 @@ dirIndex = int(dirIndexStr)
 dir = dirs[dirIndex]
 
 print("Selected", dir)
+
+with open(f"derailleurs/{dir}/info.json") as info_file:
+  info = json.load(info_file)
 
 directionStr=input("(P)ulling or (R)elaxing: ").lower()
 
@@ -26,7 +30,7 @@ else:
   print("Invalid input", directionStr)
   exit()
 
-cog_pitch=float(input("Cog Pitch (mm): "))
+cog_pitch=info["designCogPitch"]
 
 tmp_filename = "der.csv"
 
@@ -60,41 +64,82 @@ with open(tmp_filename, "x", newline='') as f:
   writer = csv.DictWriter(f, cols)
   writer.writeheader()
 
+  data_row = None
+  actionStr = None
   while True:
-    data_row = {}
-    
-    actionStr = None
-    while actionStr != "" and actionStr != "x":
-      if actionStr != None:
-        actionStr = input("Continue (enter), pull/relax (c)hain, (m)ove indicators, (r)edo measurements, e(x)it: ")
-      if actionStr == "r" or actionStr == None:
-        data_row[cols[0]] = input_ensure_str(f"{cols[0]}: ")
-        data_row[cols[1]] = input_ensure_str(f"{cols[1]}: ")
-        actionStr = "r"
 
-        try:
-          if last_chain_move_carriage_meas != None and \
-              abs(float(data_row[cols[1]]) - float(last_chain_move_carriage_meas)) > cog_pitch:
-            print("Move chain")
-          if float(data_row[cols[1]]) > 22.0 or float(data_row[cols[1]]) < 0.4:
-            print("Move indicators")
-        except Exception as ex:
-          print(ex)
-      elif actionStr == "c":
+    # Puller Meas.
+    puller_meas = input(f"{cols[0]}: ")
+
+    # User wanted to do an action
+    show_menu = len(puller_meas) == 0
+
+    if not show_menu:
+      try:
+        float(puller_meas)
+      except:
+        show_menu = True
+    
+    # User is done with the previous row of data
+    if data_row and not show_menu and actionStr != "r":
+      writer.writerow(data_row)
+      f.flush()
+      data_row = {}
+    
+    if not data_row or actionStr == 'r':
+      actionStr = None
+      data_row = {}
+
+    if not show_menu:
+      # Save Puller Meas.
+      data_row[cols[0]] = puller_meas
+      
+      # Carriage Meas.
+      data_row[cols[1]] = input_ensure_str(f"{cols[1]}: ")
+      if not last_chain_move_carriage_meas:
+        last_chain_move_carriage_meas = float(data_row[cols[1]])
+    
+    if show_menu:
+      actionStr = input_ensure_str("Pull/relax (c)hain, (m)ove indicators, (r)edo measurements, e(x)it, con(t)inue: ")
+
+      if actionStr == "c":
+        if cols[2] in data_row:
+          print("Clearing previous pull/relax values")
+          chain_move_pattern.pop()
+        
         print(chain_move_pattern)
         data_row[cols[2]] = input_ensure_str(f"{cols[2]}: ")
         data_row[cols[3]] = input_ensure_str(f"{cols[3]}: ")
         chain_move_pattern.append(data_row[cols[2]])
-        last_chain_move_carriage_meas = data_row[cols[3]]
+        last_chain_move_carriage_meas = float(data_row[cols[3]])
+
+        actionStr = None
       elif actionStr == "m":
         data_row[cols[4]] = input_ensure_str(f"{cols[4]}: ")
         data_row[cols[5]] = input_ensure_str(f"{cols[5]}: ")
-    
-    writer.writerow(data_row)
-    f.flush()
-    if actionStr == "x":
-      break
+
+        # Adjust using new indicator value
+        if last_chain_move_carriage_meas != None:
+          last_chain_move_carriage_meas = last_chain_move_carriage_meas - float(data_row[cols[1]]) + float(data_row[cols[5]])
+
+        actionStr = None
+      elif actionStr == "x":
+        break
+      elif actionStr == "r":
+        pass
+      else:
+        actionStr = None
       
+    try:
+      if last_chain_move_carriage_meas != None and \
+          abs(float(data_row[cols[1]]) - float(last_chain_move_carriage_meas)) > cog_pitch:
+        print(f"Move chain: {abs(float(data_row[cols[1]]) - float(last_chain_move_carriage_meas))}")
+      if float(data_row[cols[1]]) > 22.0 or float(data_row[cols[1]]) < 0.4:
+        print("Move indicators")
+    except KeyError:
+      pass
+    except Exception as ex:
+      print(ex)
 
   if direction == "Relaxing":
     slack_meas = input(f"{cols[6]}: ")
