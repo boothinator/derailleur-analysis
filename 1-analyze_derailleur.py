@@ -39,10 +39,10 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
           pass
     
   # Get run values
-  extrusion_to_carriage_slack = [d["Distance from outside of extrusion to carriage when cable is slack (mm)"] for d in data
-                                 if not np.isnan(d["Distance from outside of extrusion to carriage when cable is slack (mm)"])][0]
-  extrusion_to_carriage_max_pull = [d["Distance from outside of extrusion to carriage at max pull (mm)"] for d in data
-                                 if not np.isnan(d["Distance from outside of extrusion to carriage at max pull (mm)"])][0]
+  extrusion_to_carriage_slack = ([d["Distance from outside of extrusion to carriage when cable is slack (mm)"] for d in data
+                                 if not np.isnan(d["Distance from outside of extrusion to carriage when cable is slack (mm)"])] or [np.nan])[0]
+  extrusion_to_carriage_max_pull = ([d["Distance from outside of extrusion to carriage at max pull (mm)"] for d in data
+                                 if not np.isnan(d["Distance from outside of extrusion to carriage at max pull (mm)"])] or [np.nan])[0]
 
   jockey_wheel_center_at_full_slack=extrusion_to_carriage_slack - carriage_to_jockey_wheel - extrusion_thickness - jockey_wheel_thickness/2
 
