@@ -98,7 +98,7 @@ with open(tmp_filename, "x", newline='') as f:
         bad_data = abs(float(prev_data_row[cols[0]]) - float(puller_meas)) > 1
         if bad_data:
           print("\aBad data")
-      except:
+      except ValueError:
         pass
 
     if not show_menu:
@@ -116,7 +116,7 @@ with open(tmp_filename, "x", newline='') as f:
           bad_data = abs(float(prev_data_row[cols[1]]) - float(data_row[cols[1]])) > 1
           if bad_data:
             print("\aBad data")
-        except:
+        except ValueError:
           pass
     
     if show_menu:
