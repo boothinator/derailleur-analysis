@@ -64,6 +64,7 @@ with open(tmp_filename, "x", newline='') as f:
   writer = csv.DictWriter(f, cols)
   writer.writeheader()
 
+  prev_data_row = None
   data_row = None
   actionStr = None
   while True:
@@ -84,11 +85,21 @@ with open(tmp_filename, "x", newline='') as f:
     if data_row and not show_menu and actionStr != "r":
       writer.writerow(data_row)
       f.flush()
+      prev_data_row = data_row
       data_row = {}
     
     if not data_row or actionStr == 'r':
       actionStr = None
       data_row = {}
+    
+    # Validate data
+    if prev_data_row:
+      try:
+        bad_data = abs(float(prev_data_row[cols[0]]) - float(puller_meas)) > 1
+        if bad_data:
+          print("\aBad data")
+      except:
+        pass
 
     if not show_menu:
       # Save Puller Meas.
@@ -98,6 +109,15 @@ with open(tmp_filename, "x", newline='') as f:
       data_row[cols[1]] = input_ensure_str(f"{cols[1]}: ")
       if not last_chain_move_carriage_meas:
         last_chain_move_carriage_meas = float(data_row[cols[1]])
+      
+      # Validate data
+      if prev_data_row and data_row[cols[1]]:
+        try:
+          bad_data = abs(float(prev_data_row[cols[1]]) - float(data_row[cols[1]])) > 1
+          if bad_data:
+            print("\aBad data")
+        except:
+          pass
     
     if show_menu:
       actionStr = input_ensure_str("Pull/relax (c)hain, (m)ove indicators, (r)edo measurements, e(x)it, con(t)inue: ")
