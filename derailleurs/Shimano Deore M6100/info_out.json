@@ -15,14 +15,16 @@
   "maxToothUnofficial": null,
   "maxToothWithGoatLink": null,
   "chainWrap": 41,
-  "pullRatio": 1.0723700362156094,
+  "dataVideo": "https://www.youtube.com/watch?v=43R9U7ykdxc",
+  "analysisVideo": "",
+  "pullRatio": 1.0723700362156097,
   "coefficients": [
-    8.270994114931105,
-    0.978150521258455,
-    0.004268377288036601,
-    -5.521279227958092e-05
+    8.270994114931078,
+    0.9781505212584579,
+    0.004268377288036508,
+    -5.521279227957996e-05
   ],
-  "physicalLowLimit": 8.270994114931105,
+  "physicalLowLimit": 8.270994114931078,
   "physicalHighLimit": 56.4961830998342,
   "numberOfMeasurements": 570,
   "Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.002",
@@ -31,12 +33,12 @@
   "Pull Ratio 95% Confidence Interval": "1.071 to 1.075",
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore M6100/default.htm",
   "meas_method_percent_diffs": [
-    -0.45548654244306186,
-    0.8563074352548263,
-    -0.02065262288311672,
-    -0.3721314864585481,
     -0.3101462117855573,
-    -0.6248653307476972
+    0.8563074352548263,
+    -0.6248653307476972,
+    -0.3721314864585481,
+    -0.45548654244306186,
+    -0.02065262288311672
   ],
-  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.15449579317719248 +/- 0.9740200003640912"
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.1544957931771925 +/- 0.9740200003640912"
 }
