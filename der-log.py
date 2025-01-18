@@ -93,7 +93,7 @@ with open(tmp_filename, "x", newline='') as f:
       data_row = {}
     
     # Validate data
-    if prev_data_row:
+    if prev_data_row and not prev_data_row[cols[4]]:
       try:
         bad_data = abs(float(prev_data_row[cols[0]]) - float(puller_meas)) > 1
         if bad_data:
@@ -111,7 +111,7 @@ with open(tmp_filename, "x", newline='') as f:
         last_chain_move_carriage_meas = float(data_row[cols[1]])
       
       # Validate data
-      if prev_data_row and data_row[cols[1]]:
+      if prev_data_row and data_row[cols[1]] and not prev_data_row[cols[5]]:
         try:
           bad_data = abs(float(prev_data_row[cols[1]]) - float(data_row[cols[1]])) > 1
           if bad_data:
