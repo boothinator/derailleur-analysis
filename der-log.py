@@ -155,7 +155,7 @@ with open(tmp_filename, "x", newline='') as f:
         if last_chain_move_carriage_meas != None and \
             abs(float(data_row[cols[1]]) - float(last_chain_move_carriage_meas)) > cog_pitch:
           print(f"Move chain: {abs(float(data_row[cols[1]]) - float(last_chain_move_carriage_meas))}")
-        if direction == "Pulling" and float(data_row[cols[1]]) > 22.0:
+        if direction == "Pulling" and float(data_row[cols[1]]) > 23.5:
           print("Move indicators")
         if direction == "Relaxing" and float(data_row[cols[1]]) < 0.4:
           print("Move indicators")
