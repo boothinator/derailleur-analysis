@@ -6,8 +6,8 @@
   "designCogPitch": 3.55,
   "distanceFromCarriageToJockeyWheel": 36.59,
   "jockeyWheelThickness": 2.2,
-  "minDropoutWidth": 11,
-  "maxDropoutWidth": 11,
+  "minDropoutWidth": null,
+  "maxDropoutWidth": null,
   "smallCogOffset": null,
   "supportsMultipleFrontChainrings": false,
   "chain": "12-speed",
@@ -15,23 +15,23 @@
   "maxToothUnofficial": null,
   "maxToothWithGoatLink": null,
   "chainWrap": 41,
-  "pullRatio": 1.069514155757549,
+  "pullRatio": 1.0725285421002764,
   "coefficients": [
-    13.77800196666416,
-    1.0467544327618046,
-    0.002778708163425997,
-    -6.403810487272505e-05
+    10.787985197577775,
+    1.049452046715523,
+    0.0013411975099096845,
+    -2.1252657946595446e-05
   ],
-  "physicalLowLimit": 13.77800196666416,
-  "physicalHighLimit": 49.10681743027581,
-  "numberOfMeasurements": 104,
-  "Pull Ratio Averaged Across Pulling Runs": "1.070 +/- 0.000",
+  "physicalLowLimit": 10.787985197577775,
+  "physicalHighLimit": 57.33219751726551,
+  "numberOfMeasurements": 135,
+  "Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.000",
   "Pull Ratio Averaged Across Relaxing Runs": "nan +/- nan",
-  "Pull Ratio Averaged Across All Runs": "1.070 +/- 0.000",
-  "Pull Ratio 95% Confidence Interval": "1.070 to 1.070",
+  "Pull Ratio Averaged Across All Runs": "1.073 +/- 0.000",
+  "Pull Ratio 95% Confidence Interval": "1.073 to 1.073",
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore M6100/default.htm",
   "meas_method_percent_diffs": [
-    -0.061804697156949695
+    -0.3101462117855573
   ],
-  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.061804697156949695 +/- 0.0"
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.3101462117855573 +/- 0.0"
 }
