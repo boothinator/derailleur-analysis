@@ -1,0 +1,26 @@
+{
+  "brand": "Sensah",
+  "name": "Empire Pro",
+  "partNumber": "sensah-empire-pro",
+  "type": "drop-bar",
+  "speeds": 12,
+  "source": "",
+  "hasMatchingFrontShifters": true,
+  "dataVideo": "",
+  "analysisVideo": "",
+  "shiftSpacings": [
+    4.695714285714287,
+    2.4407142857142854,
+    2.5023809523809524,
+    2.5,
+    2.4639285714285712,
+    2.5092857142857143,
+    2.4917857142857143,
+    2.4892857142857143,
+    2.4823809523809524,
+    2.445,
+    3.14
+  ],
+  "cablePull": 2.480529100529101,
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Sensah Empire Pro/default.htm"
+}
