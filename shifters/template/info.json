@@ -3,6 +3,7 @@
   "name": "NAME",
   "partNumber": "PART-NUMBER",
   "type": "flat-bar",
+  "side": "left",
   "speeds": 13,
   "source": "",
   "hasMatchingFrontShifters": true,

@@ -1,0 +1,19 @@
+{
+  "brand": "Sensah",
+  "name": "Empire Pro",
+  "partNumber": "sensah-empire-pro-left",
+  "type": "drop-bar",
+  "side": "left",
+  "speeds": 2,
+  "source": "",
+  "hasMatchingFrontShifters": true,
+  "dataVideo": "",
+  "analysisVideo": "",
+  "shiftSpacings": [
+    4.010000000000001,
+    3.6091666666666664,
+    2.9716666666666662
+  ],
+  "cablePull": 3.6091666666666664,
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Sensah Empire Pro Left/default.htm"
+}
