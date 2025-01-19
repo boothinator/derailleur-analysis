@@ -43,9 +43,9 @@
 
 ## Shifters
 
-[Campagnolo Daytona 14-Speed (campagnolo-daytona-9-speed)](https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo%20Daytona%209-Speed%20Left/default.htm) - Cable Pull: 2.24 mm/shift
+[Campagnolo Daytona 14-Speed (campagnolo-daytona-9-speed-left)](https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo%20Daytona%209-Speed%20Left/default.htm) - Cable Pull: 2.24 mm/shift
 
-[Campagnolo Daytona 9-Speed (campagnolo-daytona-9-speed)](https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo%20Daytona%209-Speed%20Right/default.htm) - Cable Pull: 2.93 mm/shift
+[Campagnolo Daytona 9-Speed (campagnolo-daytona-9-speed-right)](https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo%20Daytona%209-Speed%20Right/default.htm) - Cable Pull: 2.93 mm/shift
 
 [Campagnolo Ekar 13-Speed (EP21-EKD13-R4)](https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo%20Ekar/default.htm) - Cable Pull: 2.42 mm/shift
 

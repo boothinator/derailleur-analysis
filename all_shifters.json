@@ -2,7 +2,7 @@
   {
     "brand": "Campagnolo",
     "name": "Daytona",
-    "partNumber": "campagnolo-daytona-9-speed",
+    "partNumber": "campagnolo-daytona-9-speed-left",
     "type": "drop-bar",
     "side": "left",
     "speeds": 14,
@@ -31,7 +31,7 @@
   {
     "brand": "Campagnolo",
     "name": "Daytona",
-    "partNumber": "campagnolo-daytona-9-speed",
+    "partNumber": "campagnolo-daytona-9-speed-right",
     "type": "drop-bar",
     "side": "right",
     "speeds": 9,
