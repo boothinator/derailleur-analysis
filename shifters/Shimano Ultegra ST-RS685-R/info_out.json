@@ -1,0 +1,26 @@
+{
+  "brand": "Shimano",
+  "name": "Ultegra",
+  "partNumber": "ST-RS685-R",
+  "type": "flat-bar",
+  "side": "right",
+  "speeds": 11,
+  "source": "",
+  "hasMatchingFrontShifters": true,
+  "dataVideo": "",
+  "analysisVideo": "",
+  "shiftSpacings": [
+    3.061666666666666,
+    2.5983333333333336,
+    2.4916666666666663,
+    2.4850000000000003,
+    2.4941666666666666,
+    2.49,
+    2.4683333333333333,
+    2.4683333333333333,
+    2.461666666666667,
+    2.473333333333333
+  ],
+  "cablePull": 2.4946875000000004,
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano Ultegra ST-RS685-R/default.htm"
+}
