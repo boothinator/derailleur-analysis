@@ -1,0 +1,19 @@
+{
+  "brand": "Shimano",
+  "name": "Ultegra",
+  "partNumber": "ST-RS685-L",
+  "type": "drop-bar",
+  "side": "left",
+  "speeds": 2,
+  "source": "",
+  "hasMatchingFrontShifters": true,
+  "dataVideo": "https://youtu.be/FMFEobIFwlE",
+  "analysisVideo": "",
+  "shiftSpacings": [
+    1.6866666666666668,
+    4.965833333333333,
+    1.018333333333335
+  ],
+  "cablePull": 4.965833333333333,
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano Ultegra ST-RS685-L/default.htm"
+}
