@@ -28,6 +28,9 @@ combos = []
 partial_fail_combos = []
 
 for shifter in shifters:
+  if "side" in shifter and shifter["side"] == "left":
+    continue
+
   equiv_shifters = [s for s in equivalent_shifters if s["equivalentPartNumber"] == shifter["partNumber"]]
 
   for derailleur in derailleurs:

@@ -43,9 +43,17 @@
 
 ## Shifters
 
+[Campagnolo Daytona 14-Speed (campagnolo-daytona-9-speed)](https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo%20Daytona%209-Speed%20Left/default.htm) - Cable Pull: 2.24 mm/shift
+
+[Campagnolo Daytona 9-Speed (campagnolo-daytona-9-speed)](https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo%20Daytona%209-Speed%20Right/default.htm) - Cable Pull: 2.93 mm/shift
+
 [Campagnolo Ekar 13-Speed (EP21-EKD13-R4)](https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo%20Ekar/default.htm) - Cable Pull: 2.42 mm/shift
 
 [Microshift Advent X 10-Speed (SB-M100A)](https://boothinator.github.io/derailleur-analysis/shifters/Microshift%20Advent%20X/default.htm) - Cable Pull: 3.41 mm/shift
+
+[Sensah Empire Pro 12-Speed (sensah-empire-pro)](https://boothinator.github.io/derailleur-analysis/shifters/Sensah%20Empire%20Pro/default.htm) - Cable Pull: 2.48 mm/shift
+
+[Sensah Empire Pro 2-Speed (sensah-empire-pro-left)](https://boothinator.github.io/derailleur-analysis/shifters/Sensah%20Empire%20Pro%20Left/default.htm) - Cable Pull: 3.61 mm/shift
 
 [Sensah Team Pro 11-Speed (sensah-team-pro-11)](https://boothinator.github.io/derailleur-analysis/shifters/Sensah%20Team%20Pro/default.htm) - Cable Pull: 2.51 mm/shift
 
@@ -66,6 +74,10 @@
 [Shimano Ultegra 10-Speed (ST-6600)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Ultegra%206600/default.htm) - Cable Pull: 2.28 mm/shift
 
 [Shimano Ultegra 10-Speed (ST-6700)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Ultegra%206700/default.htm) - Cable Pull: 2.28 mm/shift
+
+[Shimano Ultegra 2-Speed (ST-RS685-L)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Ultegra%20ST-RS685-L/default.htm) - Cable Pull: 4.97 mm/shift
+
+[Shimano Ultegra 11-Speed (ST-RS685-R)](https://boothinator.github.io/derailleur-analysis/shifters/Shimano%20Ultegra%20ST-RS685-R/default.htm) - Cable Pull: 2.49 mm/shift
 
 [SRAM Apex 1 11-Speed (SB-APX-B1)](https://boothinator.github.io/derailleur-analysis/shifters/SRAM%20Apex%201/default.htm) - Cable Pull: 2.88 mm/shift
 
