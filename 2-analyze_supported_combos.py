@@ -19,13 +19,9 @@ max_chain_angles = []
 
 for combo in supported_combos:
   shifter = [s for s in shifters
-             if s["partNumber"] == combo["shifterPartNumber"]
-             and s["brand"] == combo["brand"]][0]
-  derailleur = [s for s in derailleurs if s["partNumber"] == combo["derailleurPartNumber"]
-             and s["brand"] == combo["brand"]][0]
-  cassette = [s for s in cassettes if s["partNumber"] == combo["cassettePartNumber"]
-             and (s["brand"] == combo["brand"] or
-                  ("cassetteBrand" in combo and s["brand"] == combo["cassetteBrand"]))][0]
+             if s["partNumber"] == combo["shifterPartNumber"]][0]
+  derailleur = [s for s in derailleurs if s["partNumber"] == combo["derailleurPartNumber"]][0]
+  cassette = [s for s in cassettes if s["partNumber"] == combo["cassettePartNumber"]][0]
 
   motion_multiplier = cassette["averagePitch"] / (shifter["cablePull"] * derailleur["pullRatio"])
 
