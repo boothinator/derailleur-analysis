@@ -1,0 +1,24 @@
+{
+  "brand": "Campagnolo",
+  "name": "Daytona",
+  "partNumber": "campagnolo-daytona-9-speed",
+  "type": "drop-bar",
+  "side": "right",
+  "speeds": 9,
+  "source": "",
+  "hasMatchingFrontShifters": true,
+  "dataVideo": "",
+  "analysisVideo": "",
+  "shiftSpacings": [
+    2.7040000000000006,
+    2.882,
+    2.7449999999999997,
+    2.7600000000000002,
+    2.854,
+    2.997,
+    3.2700000000000005,
+    3.842
+  ],
+  "cablePull": 2.9179999999999997,
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo Daytona 9-Speed Right/default.htm"
+}
