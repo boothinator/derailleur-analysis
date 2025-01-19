@@ -22,6 +22,10 @@
 
 [Shimano Deore 11-Speed (RD-M4120)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Deore%2011-Speed/default.htm) - Pull Ratio: 1.07
 
+[Shimano Deore 11-Speed (RD-M5120)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Deore%20M5120/default.htm) - Pull Ratio: 1.10
+
+[Shimano Deore 12-Speed (RD-M6100)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Deore%20M6100/default.htm) - Pull Ratio: 1.07
+
 [Shimano GRX 10-Speed (RD-RX400)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20GRX%2010-Speed/default.htm) - Pull Ratio: 1.45
 
 [Shimano Tiagra 4600 10-Speed (RD-4601-SS)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Tiagra%204600%2010-Speed/default.htm) - Pull Ratio: 1.67

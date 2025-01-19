@@ -1,0 +1,20 @@
+{
+  "brand": "Shimano",
+  "name": "Deore",
+  "partNumber": "RD-M6100",
+  "designSpeeds": 12,
+  "designCogPitch": 3.55,
+  "distanceFromCarriageToJockeyWheel": 36.59,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": null,
+  "maxDropoutWidth": null,
+  "smallCogOffset": null,
+  "supportsMultipleFrontChainrings": false,
+  "chain": "12-speed",
+  "maxTooth": 51,
+  "maxToothUnofficial": null,
+  "maxToothWithGoatLink": null,
+  "chainWrap": 41,
+  "dataVideo": "https://www.youtube.com/watch?v=43R9U7ykdxc",
+  "analysisVideo": ""
+}
