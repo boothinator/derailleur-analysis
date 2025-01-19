@@ -10,15 +10,15 @@
   "dataVideo": "",
   "analysisVideo": "",
   "shiftSpacings": [
-    2.7040000000000006,
-    2.882,
-    2.7449999999999997,
-    2.7600000000000002,
-    2.854,
-    2.997,
-    3.2700000000000005,
-    3.842
+    2.7107692307692304,
+    2.995,
+    2.766538461538462,
+    2.6153846153846154,
+    2.8726923076923074,
+    3.041923076923077,
+    3.2773076923076925,
+    3.835384615384615
   ],
-  "cablePull": 2.9179999999999997,
+  "cablePull": 2.9281410256410254,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo Daytona 9-Speed Right/default.htm"
 }
