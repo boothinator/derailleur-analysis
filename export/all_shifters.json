@@ -1,6 +1,59 @@
 [
   {
     "brand": "Campagnolo",
+    "name": "Daytona",
+    "partNumber": "campagnolo-daytona-9-speed-left",
+    "type": "drop-bar",
+    "side": "left",
+    "speeds": 14,
+    "source": "",
+    "hasMatchingFrontShifters": true,
+    "dataVideo": "https://youtu.be/VEJab4Xg0ec",
+    "analysisVideo": "",
+    "shiftSpacings": [
+      2.0433333333333343,
+      2.155,
+      2.2177777777777776,
+      2.2662500000000003,
+      2.2687500000000003,
+      2.2787499999999996,
+      2.256666666666667,
+      2.22625,
+      2.2329166666666667,
+      2.2624999999999997,
+      2.247777777777778,
+      2.2216666666666667,
+      1.9166666666666667
+    ],
+    "cablePull": 2.2394823232323233,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo Daytona 9-Speed Left/default.htm"
+  },
+  {
+    "brand": "Campagnolo",
+    "name": "Daytona",
+    "partNumber": "campagnolo-daytona-9-speed-right",
+    "type": "drop-bar",
+    "side": "right",
+    "speeds": 9,
+    "source": "",
+    "hasMatchingFrontShifters": true,
+    "dataVideo": "https://youtu.be/YchxN7quiHs",
+    "analysisVideo": "",
+    "shiftSpacings": [
+      2.7107692307692304,
+      2.995,
+      2.766538461538462,
+      2.6153846153846154,
+      2.8726923076923074,
+      3.041923076923077,
+      3.2773076923076925,
+      3.835384615384615
+    ],
+    "cablePull": 2.9281410256410254,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo Daytona 9-Speed Right/default.htm"
+  },
+  {
+    "brand": "Campagnolo",
     "name": "Ekar",
     "partNumber": "EP21-EKD13-R4",
     "type": "drop-bar",
@@ -48,6 +101,51 @@
     ],
     "cablePull": 3.410138888888889,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Microshift Advent X/default.htm"
+  },
+  {
+    "brand": "Sensah",
+    "name": "Empire Pro",
+    "partNumber": "sensah-empire-pro",
+    "type": "drop-bar",
+    "speeds": 12,
+    "source": "",
+    "hasMatchingFrontShifters": true,
+    "dataVideo": "https://youtu.be/TN4rN6veen8",
+    "analysisVideo": "",
+    "shiftSpacings": [
+      4.695714285714287,
+      2.4407142857142854,
+      2.5023809523809524,
+      2.5,
+      2.4639285714285712,
+      2.5092857142857143,
+      2.4917857142857143,
+      2.4892857142857143,
+      2.4823809523809524,
+      2.445,
+      3.14
+    ],
+    "cablePull": 2.480529100529101,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Sensah Empire Pro/default.htm"
+  },
+  {
+    "brand": "Sensah",
+    "name": "Empire Pro",
+    "partNumber": "sensah-empire-pro-left",
+    "type": "drop-bar",
+    "side": "left",
+    "speeds": 2,
+    "source": "",
+    "hasMatchingFrontShifters": true,
+    "dataVideo": "https://youtu.be/DSztllwC4C4",
+    "analysisVideo": "",
+    "shiftSpacings": [
+      4.010000000000001,
+      3.6091666666666664,
+      2.9716666666666662
+    ],
+    "cablePull": 3.6091666666666664,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Sensah Empire Pro Left/default.htm"
   },
   {
     "brand": "Sensah",
@@ -292,6 +390,51 @@
     ],
     "cablePull": 2.282380952380952,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano Ultegra 6700/default.htm"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Ultegra",
+    "partNumber": "ST-RS685-L",
+    "type": "drop-bar",
+    "side": "left",
+    "speeds": 2,
+    "source": "",
+    "hasMatchingFrontShifters": true,
+    "dataVideo": "https://youtu.be/FMFEobIFwlE",
+    "analysisVideo": "",
+    "shiftSpacings": [
+      1.6866666666666668,
+      4.965833333333333,
+      1.018333333333335
+    ],
+    "cablePull": 4.965833333333333,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano Ultegra ST-RS685-L/default.htm"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Ultegra",
+    "partNumber": "ST-RS685-R",
+    "type": "drop-bar",
+    "side": "right",
+    "speeds": 11,
+    "source": "",
+    "hasMatchingFrontShifters": true,
+    "dataVideo": "https://youtu.be/02Hbh_xIeXc",
+    "analysisVideo": "",
+    "shiftSpacings": [
+      3.061666666666666,
+      2.5983333333333336,
+      2.4916666666666663,
+      2.4850000000000003,
+      2.4941666666666666,
+      2.49,
+      2.4683333333333333,
+      2.4683333333333333,
+      2.461666666666667,
+      2.473333333333333
+    ],
+    "cablePull": 2.4946875000000004,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano Ultegra ST-RS685-R/default.htm"
   },
   {
     "brand": "SRAM",

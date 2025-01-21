@@ -197,7 +197,7 @@ for dir in os.listdir('shifters'):
     continue
   
   #FIXME:TESTING
-  #if dir != "Campagnolo Ekar":
+  #if dir != "Shimano Ultegra ST-RS685-L":
   #  continue
   #if dir != "Microshift Advent X":
   #  continue

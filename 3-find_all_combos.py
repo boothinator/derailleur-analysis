@@ -32,6 +32,9 @@ partial_fail_combos_chain_angle_trimmed = []
 partial_fail_combos_other_trimmed = []
 
 for shifter in shifters:
+  if "side" in shifter and shifter["side"] == "left":
+    continue
+
   equiv_shifters = [s for s in equivalent_shifters if s["equivalentPartNumber"] == shifter["partNumber"]]
 
   for derailleur in derailleurs:
