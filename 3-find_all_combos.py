@@ -1,5 +1,6 @@
 
 import json
+import csv
 from scipy.stats import norm
 from util import calculate_max_chain_angle
 
@@ -30,6 +31,7 @@ partial_fail_combos = []
 partial_fail_combos_confidence_trimmed = []
 partial_fail_combos_chain_angle_trimmed = []
 partial_fail_combos_other_trimmed = []
+all_combos = []
 
 for shifter in shifters:
   if "side" in shifter and shifter["side"] == "left":
@@ -131,6 +133,40 @@ for shifter in shifters:
           confidence_too_low, max_chain_angle_too_high, barrel_adjuster_too_low,
           least_pull_too_low, not_enough_range_on_derailleur, smallest_cassette_too_big
         ]
+
+        all_combos.append({
+          "brand": brand,
+          "name": combo_name,
+          "shifterPartNumber": shifter["partNumber"],
+          "shifterName": shifter["name"],
+          "shifterBrand": shifter["brand"],
+          "shifterSpeeds": shifter["speeds"],
+          "shifterCablePull": round(shifter["cablePull"], 2),
+          "shifterType": shifter["type"],
+          "shifterSide": shifter["side"] if "side" in shifter else "",
+          "derailleurPartNumber": derailleur["partNumber"],
+          "derailleurName": derailleur["name"],
+          "derailleurBrand": derailleur["brand"],
+          "derailleurDesignSpeeds": derailleur["designSpeeds"],
+          "derailleurPullRatio": round(derailleur["pullRatio"], 2),
+          "derailleurSupportsMultipleFrontChainrings": derailleur["supportsMultipleFrontChainrings"],
+          "cassettePartNumber": cassette["partNumber"],
+          "cassetteName": cassette["name"],
+          "cassetteBrand": cassette["brand"],
+          "cassetteSpeeds": cassette["speeds"],
+          "cassettePitch": cassette["averagePitch"],
+          "cassetteMinMaxToothAvailable": cassette["minMaxToothAvailable"] if "minMaxToothAvailable" in cassette else "",
+          "cassetteMaxToothAvailable": cassette["maxToothAvailable"],
+          "confidence_too_low": bool(confidence_too_low),
+          "max_chain_angle_too_high": bool(max_chain_angle_too_high),
+          "barrel_adjuster_too_low": bool(barrel_adjuster_too_low),
+          "least_pull_too_low": bool(least_pull_too_low),
+          "not_enough_range_on_derailleur": bool(not_enough_range_on_derailleur),
+          "smallest_cassette_too_big_official_max_tooth": bool(smallest_cassette_too_big_official_max_tooth),
+          "smallest_cassette_too_big_unofficial_max_tooth": smallest_cassette_too_big_unofficial_max_tooth,
+          "smallest_cassette_too_big_with_goat_link": smallest_cassette_too_big_with_goat_link,
+          "smallest_cassette_too_big": bool(smallest_cassette_too_big),
+        })
 
         #Log combos that fail any, but not all criteria
         if any(fail_criteria):
@@ -295,3 +331,9 @@ with open(f"partial_fail_combos_chain_angle_trimmed.json", "w") as info_file:
 
 with open(f"all_cassettes.json", "w") as info_file:
   json.dump(cassettes, info_file, indent=2)
+
+with open(f"all_combos.csv", "w", newline='', encoding='utf-8') as f:
+  w = csv.DictWriter(f, all_combos[0].keys())
+  w.writeheader()
+  w.writerows(all_combos)
+  
