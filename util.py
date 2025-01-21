@@ -55,12 +55,7 @@ def get_jockey_to_cog_distance_mm(teeth, supports_multiple_front_chainrings):
   # FIXME: Hmm, I think I need to calculate a gap for all cogs based on the b-gap
   b_gap = get_b_gap_mm(teeth, supports_multiple_front_chainrings)
   cog_radius = teeth * (25.4 / 2) / (2 * np.pi)
-  # sec(theta) = (cog_radius+b_gap)/cog_radius
-  # arccos(1/x) = arcsec(x)
-  # tan(theta) = jockey_to_cog_distance/cog_radius
-  # jockey_to_cog_distance = cog_radius * tan(arcsec((cog_radius+b_gap)/cog_radius))
-  # jockey_to_cog_distance = cog_radius * tan(arccos(cog_radius/(cog_radius+b_gap)))
-  jockey_to_cog_distance = cog_radius * np.tan(np.arccos(cog_radius/(cog_radius+b_gap)))
+  jockey_to_cog_distance = np.sqrt(2 * cog_radius * b_gap + b_gap * b_gap)
 
   # FIXME: really should consider horizonal cage vs slant-parallelogram design differently
   # Horizontal cage - model rotation of jockey wheel axle
