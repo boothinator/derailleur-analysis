@@ -103,18 +103,18 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
 
     chain_angles = np.arcsin(diffs_minus_free_play/jockey_to_cog_distances[1:num_positions - 1]) * 180 / np.pi
     
-    center_chain_angle = np.mean([diffs.min(), diffs.max()])
+    center_chain_angle = np.mean([chain_angles.min(), chain_angles.max()])
+
+    if np.abs(center_chain_angle) <= 0.1:
+      break
 
     center_diff = np.sin(center_chain_angle * np.pi / 180) * np.max(jockey_to_cog_distances)
 
     barrel_adjuster = barrel_adjuster + center_diff/derailleur["pullRatio"]
     barrel_adjuster_values.append(barrel_adjuster)
 
-    if np.abs(center_diff) <= 0.1:
-      break
-
   # Review results
-  if np.abs(center_diff) > 0.1:
+  if np.abs(center_chain_angle) > 0.1:
     raise Exception("Failed to converge")
 
   barrel_adjuster_too_low = barrel_adjuster < 0
@@ -183,3 +183,95 @@ def get_cable_pull_for_jockey_position(derailleur, jockey_position):
 
 if __name__ == '__main__':
   print(get_cassette_cog_teeth(11,34, 11))
+  print(get_jockey_to_cog_distance_list(11,39, 11, True))
+
+  angles = calculate_max_chain_angle(  {
+    "brand": "Shimano",
+    "name": "CUES",
+    "partNumber": "SL-U6000-10R",
+    "type": "flat-bar",
+    "speeds": 10,
+    "source": "https://youtu.be/_Q_7C2ZrstI",
+    "hasMatchingFrontShifters": True,
+    "dataVideo": "https://www.youtube.com/watch?v=2-9jvMvxr_M",
+    "analysisVideo": "https://youtu.be/_Q_7C2ZrstI",
+    "shiftSpacings": [
+      4.821666666666666,
+      3.700833333333333,
+      3.6077777777777778,
+      3.4862500000000005,
+      3.541666666666666,
+      3.575416666666667,
+      3.585,
+      3.5675000000000003,
+      3.6183333333333336
+    ],
+    "cablePull": 3.5806349206349206,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano CUES 10-Speed/default.htm"
+  },  {
+    "brand": "Shimano",
+    "name": "CUES",
+    "partNumber": "RD-U6020-10",
+    "designSpeeds": 10,
+    "designCogPitch": 4.05,
+    "distanceFromCarriageToJockeyWheel": 34.93,
+    "jockeyWheelThickness": 2.2,
+    "minDropoutWidth": None,
+    "maxDropoutWidth": None,
+    "smallCogOffset": None,
+    "supportsMultipleFrontChainrings": True,
+    "chain": "10-speed",
+    "maxTooth": 39,
+    "chainWrap": 44,
+    "dataVideo": "https://youtu.be/I-ctFLBjlZ0",
+    "analysisVideo": "https://youtu.be/anIPVxXD7Lg",
+    "pullRatio": 1.0582142182810916,
+    "coefficients": [
+      8.034542372275181,
+      0.9792098840753652,
+      0.005067028992561139,
+      -8.948602873125939e-05
+    ],
+    "physicalLowLimit": 8.034542372275181,
+    "physicalHighLimit": 50.871216961370294,
+    "numberOfMeasurements": 652,
+    "Pull Ratio Averaged Across Pulling Runs": "1.062 +/- 0.005",
+    "Pull Ratio Averaged Across Relaxing Runs": "1.054 +/- 0.018",
+    "Pull Ratio Averaged Across All Runs": "1.058 +/- 0.015",
+    "Pull Ratio 95% Confidence Interval": "1.043 to 1.074",
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 10-Speed/default.htm",
+    "meas_method_percent_diffs": [
+      0.047835446065542034,
+      -0.6227544910179423,
+      -0.14350633819659214,
+      -1.2163129024564703,
+      -0.47732696897371996,
+      1.711738703348832e-14
+    ],
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.4020108757631942 +/- 0.8749427035283623"
+  },  {
+    "name": "LinkGlide 10-Speed",
+    "brand": "Shimano",
+    "partNumber": "CS-LG300-10",
+    "speeds": 10,
+    "pitches": [
+      4.05,
+      4.0,
+      4.1,
+      4.05,
+      4.05,
+      4.1,
+      4.0,
+      4.05,
+      4.15
+    ],
+    "averagePitch": 4.05,
+    "cogWidth": 1.95,
+    "chainRollerWidth": 2.2,
+    "minMaxToothAvailable": 39,
+    "maxToothAvailable": 48,
+    "source": "https://www.youtube.com/watch?v=KNserH4_hL8"
+  })
+
+  import json
+  print(json.dumps(angles, indent=2))
