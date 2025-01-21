@@ -27,6 +27,7 @@ max_chain_angle_max = compatibility_ranges["maxChainAngleMax"]
 combos = []
 combos_trimmed = []
 partial_fail_combos = []
+partial_fail_combos_trimmed = []
 
 for shifter in shifters:
   equiv_shifters = [s for s in equivalent_shifters if s["equivalentPartNumber"] == shifter["partNumber"]]
@@ -149,6 +150,28 @@ for shifter in shifters:
               "equivalentDerailleurs": [],
               "cassettes": []
             })
+            partial_fail_combos_trimmed.append({
+              "brand": brand,
+              "name": combo_name,
+              "shifterPartNumber": shifter["partNumber"],
+              "shifterName": shifter["name"],
+              "shifterBrand": shifter["brand"],
+              "derailleurPartNumber": derailleur["partNumber"],
+              "derailleurName": derailleur["name"],
+              "derailleurBrand": derailleur["brand"],
+              "cassettePartNumber": cassette["partNumber"],
+              "cassetteName": cassette["name"],
+              "cassetteBrand": cassette["brand"],
+              "confidence_too_low": bool(confidence_too_low),
+              "max_chain_angle_too_high": bool(max_chain_angle_too_high),
+              "barrel_adjuster_too_low": bool(barrel_adjuster_too_low),
+              "least_pull_too_low": bool(least_pull_too_low),
+              "not_enough_range_on_derailleur": bool(not_enough_range_on_derailleur),
+              "smallest_cassette_too_big_official_max_tooth": bool(smallest_cassette_too_big_official_max_tooth),
+              "smallest_cassette_too_big_unofficial_max_tooth": smallest_cassette_too_big_unofficial_max_tooth,
+              "smallest_cassette_too_big_with_goat_link": smallest_cassette_too_big_with_goat_link,
+              "smallest_cassette_too_big": bool(smallest_cassette_too_big),
+            })
         else:
         
           if max_chain_angle_results["most_pull_too_high"]:
@@ -247,6 +270,9 @@ with open(f"combinations_trimmed.json", "w") as info_file:
 
 with open(f"partial_fail_combos.json", "w") as info_file:
   json.dump(partial_fail_combos, info_file, indent=2)
+
+with open(f"partial_fail_combos_trimmed.json", "w") as info_file:
+  json.dump(partial_fail_combos_trimmed, info_file, indent=2)
 
 with open(f"all_cassettes.json", "w") as info_file:
   json.dump(cassettes, info_file, indent=2)
