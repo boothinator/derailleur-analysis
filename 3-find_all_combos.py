@@ -25,6 +25,7 @@ motion_multiplier_stdev = compatibility_ranges["motionMultiplierStdev"]
 max_chain_angle_max = compatibility_ranges["maxChainAngleMax"]
 
 combos = []
+combos_trimmed = []
 partial_fail_combos = []
 
 for shifter in shifters:
@@ -193,6 +194,19 @@ for shifter in shifters:
           if supported:
             combo["maxToothAvailableAndSupported"] = max(combo["maxToothAvailableAndSupported"], maxToothAvailableAndCompatible)
           combo["supported"] = combo["supported"] or supported
+          combos_trimmed.append({
+            "brand": brand,
+            "name": combo_name,
+            "shifterPartNumber": shifter["partNumber"],
+            "shifterName": shifter["name"],
+            "shifterBrand": shifter["brand"],
+            "derailleurPartNumber": derailleur["partNumber"],
+            "derailleurName": derailleur["name"],
+            "derailleurBrand": derailleur["brand"],
+            "cassettePartNumber": cassette["partNumber"],
+            "cassetteName": cassette["name"],
+            "cassetteBrand": cassette["brand"],
+          })
       
       # Save combo if compatible cassette was found
       if len(combo["cassettes"]) > 0:
@@ -230,6 +244,9 @@ for shifter in shifters:
 
 with open(f"combinations.json", "w") as info_file:
   json.dump(combos, info_file, indent=2)
+
+with open(f"combinations_trimmed.json", "w") as info_file:
+  json.dump(combos_trimmed, info_file, indent=2)
 
 with open(f"partial_fail_combos.json", "w") as info_file:
   json.dump(partial_fail_combos, info_file, indent=2)
