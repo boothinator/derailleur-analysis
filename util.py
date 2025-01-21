@@ -5,6 +5,8 @@ import numpy as np
 smallest_cog_position = 15 # TODO: put this on the cassette, or figure out from derailleur
 jockey_to_cog_links = 2.5
 jockey_to_cog_distance = jockey_to_cog_links * 25.4 / 2 
+smallest_cog_jockey_to_cog_links = 3
+smallest_cog_jockey_to_cog_distance = smallest_cog_jockey_to_cog_links * 25.4 / 2 
 max_cable_pull = 50 # Assume that no shifter will be able to pull 50 mm of cable
 
 def get_cassette_cog_teeth(min_tooth, max_tooth, cog_count):
@@ -67,8 +69,12 @@ def get_jockey_to_cog_distance_mm(teeth, supports_multiple_front_chainrings):
   return jockey_to_cog_distance
 
 def get_jockey_to_cog_distance_list(min_tooth, max_tooth, cog_count, supports_multiple_front_chainrings):
-  return [ get_jockey_to_cog_distance_mm(teeth, supports_multiple_front_chainrings)
-    for teeth in get_cassette_cog_teeth(min_tooth, max_tooth, cog_count)]
+  # Just use linear interpolation and assume that every derailleur tries to get the jockey to the same distance from the 11-tooth cog
+
+  largest_cog_jockey_to_cog_distance = get_jockey_to_cog_distance_mm(max_tooth, supports_multiple_front_chainrings)
+  slope = (largest_cog_jockey_to_cog_distance - smallest_cog_jockey_to_cog_distance) / cog_count
+
+  return [smallest_cog_jockey_to_cog_distance + slope * i for i in range(cog_count)]
 
 def calculate_max_chain_angle(shifter, derailleur, cassette):
   derailleur_curve = np.polynomial.Polynomial(coef=derailleur["coefficients"])
@@ -105,7 +111,7 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
     
     center_chain_angle = np.mean([chain_angles.min(), chain_angles.max()])
 
-    if np.abs(center_chain_angle) <= 0.1:
+    if np.abs(center_chain_angle) <= 0.01:
       break
 
     center_diff = np.sin(center_chain_angle * np.pi / 180) * np.max(jockey_to_cog_distances)
@@ -114,7 +120,7 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
     barrel_adjuster_values.append(barrel_adjuster)
 
   # Review results
-  if np.abs(center_chain_angle) > 0.1:
+  if np.abs(center_chain_angle) > 0.01:
     raise Exception("Failed to converge")
 
   barrel_adjuster_too_low = barrel_adjuster < 0
@@ -155,7 +161,7 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
     "max_diff_minus_free_play": float(max_diff_minus_free_play),
     "max_chain_angle": float(max_chain_angle),
     "cable_pull_at_max_chain_angle": cable_pull_at_max_chain_angle,
-    "jockey_to_cog_links": jockey_to_cog_links,
+    "jockey_to_cog_links": jockey_to_cog_links, # FIXME: replace with actually used info
     "chain_angles": chain_angles.tolist()
   }
 

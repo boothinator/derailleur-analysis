@@ -77,7 +77,8 @@ compatibility_ranges = {
   "maxChainAngleMax": max_chain_angle_max,
   "maxChainAngleMaxObserved": max(max_chain_angles),
   "groups": names,
-  "groupMotionMultipliers": motion_multipliers
+  "groupMotionMultipliers": motion_multipliers,
+  "groupMaxChainAngles": max_chain_angles
 }
 
 with open(f"compatibility_ranges.json", "w") as info_file:
