@@ -9,6 +9,7 @@
   "minDropoutWidth": 11,
   "maxDropoutWidth": 11,
   "supportsMultipleFrontChainrings": false,
+  "parallelogramStyle": "straight",
   "chain": "11-speed",
   "maxTooth": 42,
   "chainWrap": 31,

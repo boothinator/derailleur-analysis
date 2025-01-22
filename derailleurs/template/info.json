@@ -10,6 +10,7 @@
   "maxDropoutWidth": null,
   "smallCogOffset": null,
   "supportsMultipleFrontChainrings": true,
+  "parallelogramStyle": "slant",
   "chain": "10-speed",
   "maxTooth": 44,
   "maxToothUnofficial": null,
