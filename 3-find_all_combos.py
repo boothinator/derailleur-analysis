@@ -134,6 +134,11 @@ for shifter in shifters:
           least_pull_too_low, not_enough_range_on_derailleur, smallest_cassette_too_big
         ]
 
+        supported = any([combo for combo in supported_combos
+              if shifter["partNumber"] == combo["shifterPartNumber"]
+              and derailleur["partNumber"] == combo["derailleurPartNumber"]
+              and cassette["partNumber"] == combo["cassettePartNumber"]])
+
         all_combos.append({
           "brand": brand,
           "name": combo_name,
@@ -157,6 +162,8 @@ for shifter in shifters:
           "cassettePitch": cassette["averagePitch"],
           "cassetteMinMaxToothAvailable": cassette["minMaxToothAvailable"] if "minMaxToothAvailable" in cassette else "",
           "cassetteMaxToothAvailable": cassette["maxToothAvailable"],
+          "confidence": confidence,
+          "supported": supported,
           "confidence_too_low": bool(confidence_too_low),
           "max_chain_angle_too_high": bool(max_chain_angle_too_high),
           "barrel_adjuster_too_low": bool(barrel_adjuster_too_low),
@@ -166,6 +173,8 @@ for shifter in shifters:
           "smallest_cassette_too_big_unofficial_max_tooth": smallest_cassette_too_big_unofficial_max_tooth,
           "smallest_cassette_too_big_with_goat_link": smallest_cassette_too_big_with_goat_link,
           "smallest_cassette_too_big": bool(smallest_cassette_too_big),
+          "maxChainAngle": max_chain_angle_results["max_chain_angle"],
+          "motionMultiplier": multiplier,
         })
 
         #Log combos that fail any, but not all criteria
@@ -233,11 +242,6 @@ for shifter in shifters:
           maxToothAvailableAndCompatibleWithGoatLink = min(derailleur["maxToothWithGoatLink"], cassette["maxToothAvailable"]) \
             if "maxToothWithGoatLink" in derailleur and derailleur["maxToothWithGoatLink"] != None \
             else 0
-
-          supported = any([combo for combo in supported_combos
-                if shifter["partNumber"] == combo["shifterPartNumber"]
-                and derailleur["partNumber"] == combo["derailleurPartNumber"]
-                and cassette["partNumber"] == combo["cassettePartNumber"]])
 
           combo["cassettes"].append({
             "cassettePartNumber": cassette["partNumber"],
