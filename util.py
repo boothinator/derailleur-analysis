@@ -3,8 +3,6 @@ import numpy as np
 # Could calculate using dropout thickness (7 to 8 mm for shimano?) and then use the distance from 
 # end of cassette to dropout to figure out the first cog position, maybe
 smallest_cog_position = 15 # TODO: put this on the cassette, or figure out from derailleur
-jockey_to_cog_links = 2.5
-jockey_to_cog_distance = jockey_to_cog_links * 25.4 / 2 
 smallest_cog_jockey_to_cog_links = 3
 smallest_cog_jockey_to_cog_distance = smallest_cog_jockey_to_cog_links * 25.4 / 2 
 max_cable_pull = 50 # Assume that no shifter will be able to pull 50 mm of cable
@@ -29,12 +27,12 @@ def get_cassette_cog_teeth(min_tooth, max_tooth, cog_count):
 def get_cassette_cog_radii(min_tooth, max_tooth, cog_count):
   return [teeth * (25.4 / 2) / (2 * np.pi) for teeth in get_cassette_cog_teeth(min_tooth, max_tooth, cog_count)]
 
-def get_1x_b_gap_mm(teeth):
-  if teeth <= 20:
+def get_straight_parallelogram_b_gap_mm(max_teeth):
+  if max_teeth <= 20:
     # Lets assume the distance is closer since the jumps between gears is so small,
     # only 4 mm difference in radius between an 18 and 20 tooth cogs
     return 10
-  elif teeth <= 42:
+  elif max_teeth <= 42:
     # SRAM's guidance for their Road 1x derailleurs is good enough https://www.sram.com/en/service/models/rd-riv-b1
     return 15
   else: # teeth > 42
@@ -42,8 +40,8 @@ def get_1x_b_gap_mm(teeth):
     # SRAM's guidance for their Eagle derailleurs implies about 17 mm https://www.sram.com/en/service/models/rd-xx-1-b2
     return 19
 
-def get_2x_b_gap_mm(teeth):
-  if teeth <= 44:
+def get_slant_parallelogram_b_gap_mm(max_teeth):
+  if max_teeth <= 44:
     # SRAM's guidance for their Road 22 derailleurs is good enough.
     # Shimano says "as close as possible" https://www.sram.com/en/service/models/rd-riv-1-a2
     # Microshift Sword says 4-6 mm
@@ -53,24 +51,27 @@ def get_2x_b_gap_mm(teeth):
     # Shimano's guidance for rd-5120 and similar is 8-9 mm for a 46 tooth cassette, or 6 for 42 tooth and below
     return 9
 
-def get_b_gap_mm(teeth, supports_multiple_front_chainrings):
-  if supports_multiple_front_chainrings:
-    return get_2x_b_gap_mm(teeth)
+def get_b_gap_mm(max_teeth, parallelogram_style):
+  if parallelogram_style == 'slant':
+    return get_slant_parallelogram_b_gap_mm(max_teeth)
+  elif parallelogram_style == 'straight':
+    return get_straight_parallelogram_b_gap_mm(max_teeth)
   else:
-    return get_1x_b_gap_mm(teeth)
+    raise Exception("Unknown paralleogram style " + parallelogram_style)
 
 def get_jockey_to_cog_distance_mm(teeth, b_gap):
+
   cog_radius = teeth * (25.4 / 2) / (2 * np.pi)
   jockey_to_cog_distance = np.sqrt(2 * cog_radius * b_gap + b_gap * b_gap)
-
-  # FIXME: really should consider horizonal cage vs slant-parallelogram design differently
-  # Horizontal cage - model rotation of jockey wheel axle
-  # Slant-parallelogram - completely flat
 
   return jockey_to_cog_distance
 
 def get_jockey_to_cog_distance_list(min_tooth, max_tooth, cog_count, b_gap):
-  # Just use linear interpolation and assume that every derailleur tries to get the jockey to the same distance from the 11-tooth cog
+  # Just use linear interpolation and assume that every derailleur tries to get the
+  # jockey to the same distance from the 11-tooth cog
+  # This is obviously true of slant-parallelogram derailleurs
+  # I've done some modeling of 1x horizontal-parallelogram derailleurs and found that
+  # they also move essentially linearly
 
   #largest_cog_jockey_to_cog_distance = get_jockey_to_cog_distance_mm(max_tooth, b_gap)
   #slope = (largest_cog_jockey_to_cog_distance - smallest_cog_jockey_to_cog_distance) / cog_count
@@ -100,7 +101,7 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
   num_positions = min([cassette["speeds"], shifter["speeds"]])
   
   b_gap = derailleur["bGap"] if "bGap" in derailleur \
-    else get_b_gap_mm(derailleur["maxTooth"], derailleur["supportsMultipleFrontChainrings"])
+    else get_b_gap_mm(derailleur["maxTooth"], derailleur["parallelogramStyle"])
   jockey_to_cog_distances = get_jockey_to_cog_distance_list(11, derailleur["maxTooth"], num_positions, b_gap)
 
   # Calculate barrel adjuster
@@ -245,6 +246,7 @@ if __name__ == '__main__':
     "maxDropoutWidth": None,
     "smallCogOffset": None,
     "supportsMultipleFrontChainrings": True,
+    "parallelogramStyle": "slant",
     "chain": "10-speed",
     "maxTooth": 39,
     "chainWrap": 44,
