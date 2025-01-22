@@ -5,10 +5,11 @@
   "motionMultiplierMax": 1.0739055154802286,
   "motionMultiplierMinObserved": 0.994640118731133,
   "motionMultiplierMaxObserved": 1.0688613859514517,
-  "maxChainAngleAvg": 0.4549094250621122,
-  "maxChainAngleStdev": 0.48695436596819,
-  "maxChainAngleMax": 1.4288181569984921,
-  "maxChainAngleMaxObserved": 1.5376648328455154,
+  "maxChainAngleAvg": 0.30866408752801827,
+  "maxChainAngleStdev": 0.3257212529708124,
+  "maxChainAngleNumStdevs": 2.6,
+  "maxChainAngleMax": 1.1555393452521305,
+  "maxChainAngleMaxObserved": 1.1431820996871922,
   "groups": [
     "Apex 1 11-speed",
     "GX 10-speed",
@@ -36,5 +37,19 @@
     0.994640118731133,
     1.0354894427583186,
     1.0330601597819198
+  ],
+  "groupMaxChainAngles": [
+    0.6682615635976887,
+    0.16731396068646562,
+    0.09772481495720232,
+    1.1431820996871922,
+    0.5534863292099323,
+    0.13784387888933647,
+    0.0,
+    0.47523527309337327,
+    0.19845389171437341,
+    0.14548532667378497,
+    0.1169819118268703,
+    0.0
   ]
 }
