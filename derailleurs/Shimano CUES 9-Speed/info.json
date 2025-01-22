@@ -14,5 +14,6 @@
   "maxTooth": 36,
   "chainWrap": 41,
   "dataVideo": null,
-  "analysisVideo": null
+  "analysisVideo": null,
+  "bGap": 9
 }

@@ -15,6 +15,7 @@
   "chainWrap": 41,
   "dataVideo": null,
   "analysisVideo": null,
+  "bGap": 9,
   "pullRatio": 1.1135894598563885,
   "coefficients": [
     7.737001280923079,

@@ -15,6 +15,7 @@
   "chainWrap": 44,
   "dataVideo": "https://youtu.be/I-ctFLBjlZ0",
   "analysisVideo": "https://youtu.be/anIPVxXD7Lg",
+  "bGap": 9,
   "pullRatio": 1.0582142182810916,
   "coefficients": [
     8.034542372275181,
