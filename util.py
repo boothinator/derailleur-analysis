@@ -26,6 +26,9 @@ def get_cassette_cog_teeth(min_tooth, max_tooth, cog_count):
 
   return teeth_counts
 
+def get_cassette_cog_radii(min_tooth, max_tooth, cog_count):
+  return [teeth * (25.4 / 2) / (2 * np.pi) for teeth in get_cassette_cog_teeth(min_tooth, max_tooth, cog_count)]
+
 def get_1x_b_gap_mm(teeth):
   if teeth <= 20:
     # Lets assume the distance is closer since the jumps between gears is so small,
@@ -39,21 +42,24 @@ def get_1x_b_gap_mm(teeth):
     # SRAM's guidance for their Eagle derailleurs implies about 17 mm https://www.sram.com/en/service/models/rd-xx-1-b2
     return 19
 
-def get_2x_b_gap_mm():
-  # SRAM's guidance for their Road 22 derailleurs is good enough.
-  # Shimano says "as close as possible" https://www.sram.com/en/service/models/rd-riv-1-a2
-  # Microshift Sword says 4-6 mm
-  return 6
+def get_2x_b_gap_mm(teeth):
+  if teeth <= 44:
+    # SRAM's guidance for their Road 22 derailleurs is good enough.
+    # Shimano says "as close as possible" https://www.sram.com/en/service/models/rd-riv-1-a2
+    # Microshift Sword says 4-6 mm
+    return 6
+  else: # > 44 teeth
+    # Shimano's guidance for CUES 10/11 speed is 9 mm https://si.shimano.com/en/cues/technical-assets-tips
+    # Shimano's guidance for rd-5120 and similar is 8-9 mm for a 46 tooth cassette, or 6 for 42 tooth and below
+    return 9
 
 def get_b_gap_mm(teeth, supports_multiple_front_chainrings):
   if supports_multiple_front_chainrings:
-    return get_2x_b_gap_mm()
+    return get_2x_b_gap_mm(teeth)
   else:
     return get_1x_b_gap_mm(teeth)
 
-def get_jockey_to_cog_distance_mm(teeth, supports_multiple_front_chainrings):
-  # FIXME: Hmm, I think I need to calculate a gap for all cogs based on the b-gap
-  b_gap = get_b_gap_mm(teeth, supports_multiple_front_chainrings)
+def get_jockey_to_cog_distance_mm(teeth, b_gap):
   cog_radius = teeth * (25.4 / 2) / (2 * np.pi)
   jockey_to_cog_distance = np.sqrt(2 * cog_radius * b_gap + b_gap * b_gap)
 
@@ -63,13 +69,28 @@ def get_jockey_to_cog_distance_mm(teeth, supports_multiple_front_chainrings):
 
   return jockey_to_cog_distance
 
-def get_jockey_to_cog_distance_list(min_tooth, max_tooth, cog_count, supports_multiple_front_chainrings):
+def get_jockey_to_cog_distance_list(min_tooth, max_tooth, cog_count, b_gap):
   # Just use linear interpolation and assume that every derailleur tries to get the jockey to the same distance from the 11-tooth cog
 
-  largest_cog_jockey_to_cog_distance = get_jockey_to_cog_distance_mm(max_tooth, supports_multiple_front_chainrings)
-  slope = (largest_cog_jockey_to_cog_distance - smallest_cog_jockey_to_cog_distance) / cog_count
+  #largest_cog_jockey_to_cog_distance = get_jockey_to_cog_distance_mm(max_tooth, b_gap)
+  #slope = (largest_cog_jockey_to_cog_distance - smallest_cog_jockey_to_cog_distance) / cog_count
+  #dist_old = [smallest_cog_jockey_to_cog_distance + slope * i for i in range(cog_count)]
 
-  return [smallest_cog_jockey_to_cog_distance + slope * i for i in range(cog_count)]
+  cog_radii = get_cassette_cog_radii(min_tooth, max_tooth, cog_count)
+
+  largest_cog_b_gap = b_gap
+  largets_cog_jockey_edge_radius = largest_cog_b_gap + cog_radii[-1]
+  smallest_cog_jockey_edge_radius =  cog_radii[0] + 20
+
+  slope = (largets_cog_jockey_edge_radius - smallest_cog_jockey_edge_radius) / (cog_count - 1)
+
+  jockey_edge_radii = [smallest_cog_jockey_edge_radius + slope * i for i in range(cog_count)]
+
+  distances = np.sqrt([j * j - c * c for j, c in zip(jockey_edge_radii, cog_radii)])
+  
+  assert(not any(np.isnan(distances)))
+  
+  return distances
 
 def calculate_max_chain_angle(shifter, derailleur, cassette):
   derailleur_curve = np.polynomial.Polynomial(coef=derailleur["coefficients"])
@@ -77,7 +98,10 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
   cassette_pitches = cassette["pitches"]
   roller_cog_free_play = cassette["chainRollerWidth"] - cassette["cogWidth"]
   num_positions = min([cassette["speeds"], shifter["speeds"]])
-  jockey_to_cog_distances = get_jockey_to_cog_distance_list(11, derailleur["maxTooth"], num_positions, derailleur["supportsMultipleFrontChainrings"])
+  
+  b_gap = derailleur["bGap"] if "bGap" in derailleur \
+    else get_b_gap_mm(derailleur["maxTooth"], derailleur["supportsMultipleFrontChainrings"])
+  jockey_to_cog_distances = get_jockey_to_cog_distance_list(11, derailleur["maxTooth"], num_positions, b_gap)
 
   # Calculate barrel adjuster
   barrel_adjuster = 0
@@ -156,7 +180,7 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
     "max_diff_minus_free_play": float(max_diff_minus_free_play),
     "max_chain_angle": float(max_chain_angle),
     "cable_pull_at_max_chain_angle": cable_pull_at_max_chain_angle,
-    "jockey_to_cog_links": jockey_to_cog_links, # FIXME: replace with actually used info
+    "jockey_to_cog_links": [float(d) for d in jockey_to_cog_distances / 25.4 * 2],
     "chain_angles": chain_angles.tolist()
   }
 

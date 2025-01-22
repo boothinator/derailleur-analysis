@@ -53,7 +53,8 @@ motion_multiplier_max = motion_multiplier_avg + 2*motion_multiplier_stdev
 
 max_chain_angle_avg = np.mean(max_chain_angles)
 max_chain_angle_stdev = np.std(max_chain_angles)
-max_chain_angle_max = max_chain_angle_avg + 2*max_chain_angle_stdev
+max_chain_angle_num_stdevs = 2.6
+max_chain_angle_max = max_chain_angle_avg + max_chain_angle_num_stdevs*max_chain_angle_stdev
 
 # Validate that all supported combos are in range
 out_of_range = [supported_combos[i]["name"] for (i, mm) in enumerate(motion_multipliers)
@@ -74,6 +75,7 @@ compatibility_ranges = {
   "motionMultiplierMaxObserved": max(motion_multipliers),
   "maxChainAngleAvg": max_chain_angle_avg,
   "maxChainAngleStdev": max_chain_angle_stdev,
+  "maxChainAngleNumStdevs": max_chain_angle_num_stdevs,
   "maxChainAngleMax": max_chain_angle_max,
   "maxChainAngleMaxObserved": max(max_chain_angles),
   "groups": names,
@@ -103,3 +105,24 @@ plt.clf()
 plt.hist(motion_multipliers)
 plt.plot(x, curve.pdf(x)/10)
 plt.savefig(f"motion_multiplier_histogram.png")
+
+
+plt.clf()
+plt.bar(names, max_chain_angles, color="purple")
+plt.plot(names,[max_chain_angle_avg]*len(names),
+         names,[0]*len(names),
+         names,[max_chain_angle_max]*len(names))
+plt.xticks(wrap=False, rotation="vertical", rotation_mode="anchor",
+           horizontalalignment="center", verticalalignment="top")
+plt.tight_layout()
+plt.ylim(0, max_chain_angle_max + max_chain_angle_stdev)
+plt.savefig(f"max_chain_angle.png")
+
+
+curve = scipy.stats.norm(max_chain_angle_avg, max_chain_angle_stdev)
+x = np.linspace(0, max_chain_angle_max)
+
+plt.clf()
+plt.hist(max_chain_angles)
+plt.plot(x, curve.pdf(x)/10)
+plt.savefig(f"max_chain_angle_histogram.png")
