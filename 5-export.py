@@ -15,6 +15,7 @@ shutil.copy("widest_range_with_drop_bar_shifters_combos.json", "export")
 shutil.copy("compatibility_ranges.json", "export")
 shutil.copy("equivalent_derailleurs.json", "export")
 shutil.copy("equivalent_shifters.json", "export")
+shutil.copy("all_combos.csv", "export")
 
 
 # Template environment
