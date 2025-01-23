@@ -341,3 +341,9 @@ with open(f"all_combos.csv", "w", newline='', encoding='utf-8') as f:
   w.writeheader()
   w.writerows(all_combos)
   
+
+with open(f"all_combos.csv", "w", newline='', encoding='utf-8') as f:
+  w = csv.DictWriter(f, all_combos[0].keys())
+  w.writeheader()
+  w.writerows(all_combos)
+  

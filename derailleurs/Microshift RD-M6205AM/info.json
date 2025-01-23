@@ -1,0 +1,18 @@
+{
+  "brand": "Microshift",
+  "name": "Advent X",
+  "partNumber": "RD-M6205AM",
+  "designSpeeds": 10,
+  "designCogPitch": 3.95,
+  "distanceFromCarriageToJockeyWheel": 35.75,
+  "jockeyWheelThickness": 2.2,
+  "minDropoutWidth": 12,
+  "maxDropoutWidth": 12,
+  "smallCogOffset": null,
+  "supportsMultipleFrontChainrings": false,
+  "parallelogramStyle": "slant",
+  "maxTooth": 44,
+  "maxToothUnofficial": null,
+  "maxToothWithGoatLink": null,
+  "chainWrap": 35
+}
