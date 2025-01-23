@@ -15,23 +15,24 @@
   "maxToothUnofficial": null,
   "maxToothWithGoatLink": null,
   "chainWrap": 35,
-  "pullRatio": 1.029769873273339,
+  "pullRatio": 1.0257287675528532,
   "coefficients": [
-    10.177587234837436,
-    0.8447115404012487,
-    0.008867321189098531,
-    -0.00011956627771028095
+    10.238294310684285,
+    0.8611446750759251,
+    0.007409978354003559,
+    -9.15518219565928e-05
   ],
-  "physicalLowLimit": 10.177587234837436,
-  "physicalHighLimit": 56.456125469143785,
-  "numberOfMeasurements": 146,
+  "physicalLowLimit": 10.238294310684285,
+  "physicalHighLimit": 56.74890836538694,
+  "numberOfMeasurements": 292,
   "Pull Ratio Averaged Across Pulling Runs": "1.030 +/- 0.000",
-  "Pull Ratio Averaged Across Relaxing Runs": "nan +/- nan",
-  "Pull Ratio Averaged Across All Runs": "1.030 +/- 0.000",
-  "Pull Ratio 95% Confidence Interval": "1.030 to 1.030",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.022 +/- 0.000",
+  "Pull Ratio Averaged Across All Runs": "1.026 +/- 0.008",
+  "Pull Ratio 95% Confidence Interval": "1.018 to 1.033",
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm",
   "meas_method_percent_diffs": [
+    0.1503113592441492,
     -0.08646779074792921
   ],
-  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.08646779074792921 +/- 0.0"
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: 0.03192178424811 +/- 0.2367791499920784"
 }
