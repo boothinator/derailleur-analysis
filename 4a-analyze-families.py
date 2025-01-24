@@ -63,3 +63,6 @@ plot("dynasys_12_speed", [c for c in combos if c["shifterSpeeds"] == 12 and c["s
 plot("shimano_10_speed_road", [c for c in combos if c["shifterSpeeds"] == 10 and c["shifterCablePull"] > 2.5 and c["shifterCablePull"] < 2.7
                                and c["derailleurPullRatio"] > 1.4 and c["derailleurPullRatio"] < 1.6 and c["numberOfShiftsMatchesCogs"]
                                and c["cassettePitch"] < 4 and c["cassettePitch"] > 3.9])
+plot("exact_actuation_10_11_speed", [c for c in combos if c["shifterCablePull"] > 2.8 and c["shifterCablePull"] < 3.05
+                               and c["derailleurPullRatio"] < 1.4 and c["derailleurPullRatio"] >= 1.2 and c["numberOfShiftsMatchesCogs"]
+                               and c["cassettePitch"] < 4 and c["cassettePitch"] > 3.7])
