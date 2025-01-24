@@ -130,6 +130,19 @@
     "cassetteBrand": "Shimano"
   },
   {
+    "brand": "Microshift",
+    "name": "Microshift Advent X 10-Speed group",
+    "shifterPartNumber": "SB-M100A",
+    "shifterName": "Advent X",
+    "shifterBrand": "Microshift",
+    "derailleurPartNumber": "RD-M6205AM",
+    "derailleurName": "Advent X",
+    "derailleurBrand": "Microshift",
+    "cassettePartNumber": "generic-10-speed",
+    "cassetteName": "Generic 10-Speed",
+    "cassetteBrand": "Generic"
+  },
+  {
     "brand": "Mixed",
     "name": "Microshift Advent X 10-Speed shifter/Shimano CUES 10-Speed derailleur/10-Speed cassette",
     "shifterPartNumber": "SB-M100A",

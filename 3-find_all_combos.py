@@ -24,6 +24,7 @@ with open(f"compatibility_ranges.json") as f:
 motion_multiplier_avg = compatibility_ranges["motionMultiplierAvg"]
 motion_multiplier_stdev = compatibility_ranges["motionMultiplierStdev"]
 max_chain_angle_max = compatibility_ranges["maxChainAngleMax"]
+motion_multiplier_min_confidence = compatibility_ranges["motionMultiplierMinConfidence"]
 
 combos = []
 combos_trimmed = []
@@ -117,7 +118,8 @@ for shifter in shifters:
         barrel_adjuster_too_low = max_chain_angle_results["barrel_adjuster_too_low"]
         least_pull_too_low = max_chain_angle_results["least_pull_too_low"]
         max_chain_angle_too_high = max_chain_angle_results["max_chain_angle"] > max_chain_angle_max
-        confidence_too_low = confidence < 0.05
+        # confidence_too_low = confidence < motion_multiplier_min_confidence
+        confidence_too_low = confidence < 0.05 # Lets stick with 95% confidence interval when making compatibility assessments
         not_enough_range_on_derailleur = max_chain_angle_results["derailleur_can_clear_cassette"] == False
         smallest_cassette_too_big_official_max_tooth = "minMaxToothAvailable" in cassette and cassette["minMaxToothAvailable"] > derailleur["maxTooth"]
         smallest_cassette_too_big_unofficial_max_tooth = cassette["minMaxToothAvailable"] > derailleur["maxToothUnofficial"] \
@@ -232,8 +234,9 @@ for shifter in shifters:
               partial_fail_combos_confidence_trimmed.append(partial_fail_info)
             elif max_chain_angle_too_high: 
               partial_fail_combos_chain_angle_trimmed.append(partial_fail_info)
-            
-        else:
+        
+        # Explicitly include supported combos even if they fail
+        if supported or not any(fail_criteria):
         
           if max_chain_angle_results["most_pull_too_high"]:
             print(f"Warning: most pull too high for {combo['name']} with cassette {cassette["partNumber"]}")
