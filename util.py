@@ -3,8 +3,7 @@ import numpy as np
 # Could calculate using dropout thickness (7 to 8 mm for shimano?) and then use the distance from 
 # end of cassette to dropout to figure out the first cog position, maybe
 smallest_cog_position = 15 # TODO: put this on the cassette, or figure out from derailleur
-min_jockey_to_cog_links = 3
-min_jockey_to_cog_chain_length = min_jockey_to_cog_links * 25.4 / 2 
+default_links_from_jockey_to_smallest_cog = 3
 max_cable_pull = 50 # Assume that no shifter will be able to pull 50 mm of cable
 
 def get_cassette_cog_teeth(min_tooth, max_tooth, cog_count):
@@ -66,7 +65,7 @@ def get_jockey_to_cog_distance_mm(teeth, b_gap):
 
   return jockey_to_cog_distance
 
-def get_jockey_to_cog_distance_list(min_tooth, max_tooth, cog_count, b_gap):
+def get_jockey_to_cog_distance_list(min_tooth, max_tooth, cog_count, b_gap, links_from_jockey_to_smallest_cog):
   # Just use linear interpolation and assume that every derailleur tries to get the
   # jockey to the same distance from the 11-tooth cog
   # This is obviously true of slant-parallelogram derailleurs
@@ -81,6 +80,8 @@ def get_jockey_to_cog_distance_list(min_tooth, max_tooth, cog_count, b_gap):
 
   largest_cog_b_gap = b_gap
   largest_cog_to_jockey_edge_radius = largest_cog_b_gap + cog_radii[-1]
+
+  min_jockey_to_cog_chain_length = links_from_jockey_to_smallest_cog * 25.4 / 2 
   smallest_cog_to_jockey_edge_radius = np.sqrt(
     np.pow(cog_radii[0], 2) + np.pow(min_jockey_to_cog_chain_length, 2))
 
@@ -103,7 +104,9 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
   
   b_gap = derailleur["bGap"] if "bGap" in derailleur \
     else get_b_gap_mm(derailleur["maxTooth"], derailleur["parallelogramStyle"])
-  jockey_to_cog_distances = get_jockey_to_cog_distance_list(11, derailleur["maxTooth"], num_positions, b_gap)
+  links_from_jockey_to_smallest_cog = derailleur["linksFromJockeyToSmallestCog"] if "linksFromJockeyToSmallestCog" in derailleur\
+    else default_links_from_jockey_to_smallest_cog
+  jockey_to_cog_distances = get_jockey_to_cog_distance_list(11, derailleur["maxTooth"], num_positions, b_gap, links_from_jockey_to_smallest_cog)
 
   # Calculate barrel adjuster
   barrel_adjuster = 0
@@ -210,7 +213,7 @@ def get_cable_pull_for_jockey_position(derailleur, jockey_position):
 
 if __name__ == '__main__':
   print(get_cassette_cog_teeth(11,34, 11))
-  print(get_jockey_to_cog_distance_list(11,39, 11, True))
+  print(get_jockey_to_cog_distance_list(11,39, 11, True, 3))
 
   angles = calculate_max_chain_angle(  {
     "brand": "Shimano",

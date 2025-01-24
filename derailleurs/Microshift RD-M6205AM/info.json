@@ -14,5 +14,6 @@
   "maxTooth": 44,
   "maxToothUnofficial": null,
   "maxToothWithGoatLink": null,
-  "chainWrap": 35
+  "chainWrap": 35,
+  "linksFromJockeyToSmallestCog": 4
 }

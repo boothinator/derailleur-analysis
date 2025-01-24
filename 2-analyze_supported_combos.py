@@ -60,13 +60,18 @@ max_chain_angle_num_stdevs = 2.6
 max_chain_angle_max = max_chain_angle_avg + max_chain_angle_num_stdevs*max_chain_angle_stdev
 
 # Validate that all supported combos are in range
-out_of_range = [supported_combos[i]["name"] for (i, mm) in enumerate(motion_multipliers)
-                if mm < motion_multiplier_min or motion_multiplier_max < mm
-                  or max_chain_angles[i] > max_chain_angle_max]
+motion_multiplier_out_of_range = [supported_combos[i]["name"] for (i, mm) in enumerate(motion_multipliers)
+                if mm < motion_multiplier_min or motion_multiplier_max < mm]
+max_chain_angle_out_of_range = [supported_combos[i]["name"] for (i, mm) in enumerate(max_chain_angles)
+                if max_chain_angles[i] > max_chain_angle_max]
 
-if len(out_of_range) > 0:
-  print("out of range: ", out_of_range)
-else:
+if len(motion_multiplier_out_of_range) > 0:
+  print("Motion multiplier out of range: ", motion_multiplier_out_of_range)
+
+if len(max_chain_angle_out_of_range) > 0:
+  print("Max chain angle out of range: ", max_chain_angle_out_of_range)
+
+if not motion_multiplier_out_of_range and not max_chain_angle_out_of_range:
   print("All supported combos are in range")
 
 compatibility_ranges = {
