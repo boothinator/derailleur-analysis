@@ -118,7 +118,6 @@ def graph_combos(prefix, combos):
 
   max_chain_angle_avg = np.mean(max_chain_angles)
   max_chain_angle_stdev = np.std(max_chain_angles)
-  max_chain_angle_num_stdevs = 2.6
   max_chain_angle_max = max_chain_angle_avg + max_chain_angle_num_stdevs*max_chain_angle_stdev
   max_chain_angle_min = max(max_chain_angle_avg - max_chain_angle_num_stdevs*max_chain_angle_stdev, 0)
 
