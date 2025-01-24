@@ -6,6 +6,7 @@
   "motionMultiplierMax": 1.1138371640975022,
   "motionMultiplierMinObserved": 0.994640118731133,
   "motionMultiplierMaxObserved": 1.1138371640975022,
+  "motionMultiplierMinConfidence": 0.011060817132353407,
   "maxChainAngleAvg": 0.37291270002646193,
   "maxChainAngleStdev": 0.3959735711436972,
   "maxChainAngleNumStdevs": 2.1963640672615528,

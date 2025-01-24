@@ -54,6 +54,9 @@ motion_multiplier_num_stdevs = (max(motion_multipliers) - motion_multiplier_avg)
 motion_multiplier_min = motion_multiplier_avg - motion_multiplier_num_stdevs*motion_multiplier_stdev
 motion_multiplier_max = motion_multiplier_avg + motion_multiplier_num_stdevs*motion_multiplier_stdev
 
+mm_dist = scipy.stats.norm(motion_multiplier_avg, motion_multiplier_stdev)
+motion_multiplier_min_confidence = 1 - (mm_dist.cdf(motion_multiplier_max) - mm_dist.cdf(motion_multiplier_min))
+
 max_chain_angle_avg = np.mean(max_chain_angles)
 max_chain_angle_stdev = np.std(max_chain_angles)
 max_chain_angle_num_stdevs = (max(max_chain_angles) - max_chain_angle_avg) / max_chain_angle_stdev
@@ -82,6 +85,7 @@ compatibility_ranges = {
   "motionMultiplierMax": motion_multiplier_max,
   "motionMultiplierMinObserved": min(motion_multipliers),
   "motionMultiplierMaxObserved": max(motion_multipliers),
+  "motionMultiplierMinConfidence": motion_multiplier_min_confidence,
   "maxChainAngleAvg": max_chain_angle_avg,
   "maxChainAngleStdev": max_chain_angle_stdev,
   "maxChainAngleNumStdevs": max_chain_angle_num_stdevs,
