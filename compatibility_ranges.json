@@ -1,15 +1,15 @@
 {
-  "motionMultiplierAvg": 1.0316612703715737,
-  "motionMultiplierStdev": 0.021122122554327383,
-  "motionMultiplierMin": 0.989417025262919,
-  "motionMultiplierMax": 1.0739055154802286,
+  "motionMultiplierAvg": 1.0379824929658759,
+  "motionMultiplierStdev": 0.029854975268825183,
+  "motionMultiplierMin": 0.9782725424282255,
+  "motionMultiplierMax": 1.0976924435035262,
   "motionMultiplierMinObserved": 0.994640118731133,
-  "motionMultiplierMaxObserved": 1.0688613859514517,
-  "maxChainAngleAvg": 0.30866408752801827,
-  "maxChainAngleStdev": 0.3257212529708124,
+  "motionMultiplierMaxObserved": 1.1138371640975022,
+  "maxChainAngleAvg": 0.39838559800014145,
+  "maxChainAngleStdev": 0.44105852816751273,
   "maxChainAngleNumStdevs": 2.6,
-  "maxChainAngleMax": 1.1555393452521305,
-  "maxChainAngleMaxObserved": 1.1431820996871922,
+  "maxChainAngleMax": 1.5451377712356746,
+  "maxChainAngleMaxObserved": 1.4750437236656193,
   "groups": [
     "Apex 1 11-speed",
     "GX 10-speed",
@@ -22,7 +22,8 @@
     "Deore 10-speed RD-M5120",
     "Ultegra RX 11-speed",
     "Ultegra/105 11-speed",
-    "Tiagra 4700/GRX"
+    "Tiagra 4700/GRX",
+    "Advent X"
   ],
   "groupMotionMultipliers": [
     1.054539774947106,
@@ -36,7 +37,8 @@
     1.0286761207932513,
     0.994640118731133,
     1.0354894427583186,
-    1.0330601597819198
+    1.0330601597819198,
+    1.1138371640975022
   ],
   "groupMaxChainAngles": [
     0.6682615635976887,
@@ -50,6 +52,7 @@
     0.19845389171437341,
     0.14548532667378497,
     0.1169819118268703,
-    0.0
+    0.0,
+    1.4750437236656193
   ]
 }
