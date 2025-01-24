@@ -171,8 +171,9 @@ def graph_combos(prefix, combos):
   plt.savefig(f"combo_analysis/{prefix}max_chain_angle_histogram.png")
 
 graph_combos("all_", supported_combos)
-graph_combos("10_speed_", [c for c in supported_combos if c["shifter"]["speeds"] == 10])
-graph_combos("11_speed_", [c for c in supported_combos if c["shifter"]["speeds"] == 11])
+graph_combos("10_speed_", [c for c in supported_combos if c["shifter"]["speeds"] == 10 and "LinkGlide" not in c["cassette"]["name"]])
+graph_combos("11_speed_", [c for c in supported_combos if c["shifter"]["speeds"] == 11 and "LinkGlide" not in c["cassette"]["name"]])
+graph_combos("linkglide_", [c for c in supported_combos if "LinkGlide" in c["cassette"]["name"]])
 graph_combos("slant_", [c for c in supported_combos if c["derailleur"]["parallelogramStyle"] == "slant"])
 graph_combos("straight_", [c for c in supported_combos if c["derailleur"]["parallelogramStyle"] == "straight"])
 graph_combos("34t_or_less_", [c for c in supported_combos if c["derailleur"]["maxTooth"] <= 34])
