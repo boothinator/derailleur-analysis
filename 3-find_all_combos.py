@@ -179,7 +179,9 @@ for shifter in shifters:
           "maxChainAngle": max_chain_angle_results["max_chain_angle"],
           "motionMultiplier": multiplier,
           "numberOfShiftsMatchesCogs": shifter["speeds"] == cassette["speeds"],
-          "moreCogsThanShifts": cassette["speeds"] > shifter["speeds"]
+          "moreCogsThanShifts": cassette["speeds"] > shifter["speeds"],
+          "failedAnyCriteria": any(fail_criteria), 
+          "failedAnyCriteriaAndNotSupported": not supported and any(fail_criteria)
         })
 
         #Log combos that fail any, but not all criteria
