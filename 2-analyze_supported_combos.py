@@ -94,7 +94,7 @@ max_chain_angle_avgs = []
 motion_multiplier_avgs = []
 max_chain_angle_stdevs = []
 motion_multiplier_stdevs = []
-
+counts = []
 
 def graph_combos(prefix, combos):
 
@@ -120,6 +120,7 @@ def graph_combos(prefix, combos):
   motion_multiplier_avgs.append(motion_multiplier_avg)
   max_chain_angle_stdevs.append(max_chain_angle_stdev)
   motion_multiplier_stdevs.append(motion_multiplier_stdev)
+  counts.append(len(combos))
 
   plt.clf()
   plt.bar(names, motion_multipliers, color="purple")
@@ -202,3 +203,10 @@ plt.xticks(wrap=False, rotation="vertical", rotation_mode="anchor",
           horizontalalignment="center", verticalalignment="top")
 plt.tight_layout()
 plt.savefig(f"combo_analysis/category_max_chain_angle_stdev.png")
+
+plt.clf()
+plt.bar(prefixes, counts, color="purple")
+plt.xticks(wrap=False, rotation="vertical", rotation_mode="anchor",
+          horizontalalignment="center", verticalalignment="top")
+plt.tight_layout()
+plt.savefig(f"combo_analysis/category_counts.png")
