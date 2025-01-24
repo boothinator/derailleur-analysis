@@ -175,6 +175,7 @@ for shifter in shifters:
           "smallest_cassette_too_big": bool(smallest_cassette_too_big),
           "maxChainAngle": max_chain_angle_results["max_chain_angle"],
           "motionMultiplier": multiplier,
+          "numberOfShiftsMatchesCogs": shifter["speeds"] == cassette["speeds"]
         })
 
         #Log combos that fail any, but not all criteria
