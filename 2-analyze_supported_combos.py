@@ -228,4 +228,15 @@ for i,prefix in enumerate(prefixes):
 
 plt.legend()
 
+plt.savefig(f"combo_analysis/motion_multiplier_dists.png")
+
+plt.clf()
+x = np.linspace(0, max_chain_angle_max)
+
+for i,prefix in enumerate(prefixes):
+  curve = scipy.stats.norm(max_chain_angle_avgs[i], max_chain_angle_stdevs[i])
+  plt.plot(x, curve.pdf(x)/10, label=prefix)
+
+plt.legend()
+
 plt.savefig(f"combo_analysis/max_chain_angle_dists.png")
