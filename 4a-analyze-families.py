@@ -31,15 +31,15 @@ def plot(prefix, combos):
   ]
 
   data = [d for d in data if len(d[0]) > 0]
+  colors = [d[2] for d in data]
 
   plt.clf()
-  plt.pie([len(d[0]) for d in data], labels = [d[1] for d in data])
+  plt.pie([len(d[0]) for d in data], labels = [d[1] for d in data], colors=colors)
   plt.savefig(f"group_analysis/{prefix}_criteria.png")
 
   # plt.clf()
   # names = [c["name"] for d in data for c in d[0]]
   # motion_multipliers = [c["motionMultiplier"] for d in data for c in d[0]]
-  # colors = [d[2] for d in data for _ in d[0]]
   # plt.bar(names, motion_multipliers, color=colors)
   # plt.ylim(0.9)
   # plt.plot(names,[compatibility_ranges["motionMultiplierAvg"]]*len(names),
