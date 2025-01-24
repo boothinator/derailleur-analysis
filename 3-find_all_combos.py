@@ -27,6 +27,7 @@ max_chain_angle_max = compatibility_ranges["maxChainAngleMax"]
 
 combos = []
 combos_trimmed = []
+sensible_combos_trimmed = []
 partial_fail_combos = []
 partial_fail_combos_confidence_trimmed = []
 partial_fail_combos_chain_angle_trimmed = []
@@ -166,6 +167,10 @@ for shifter in shifters:
           "smallest_cassette_too_big_unofficial_max_tooth": smallest_cassette_too_big_unofficial_max_tooth,
           "smallest_cassette_too_big_with_goat_link": smallest_cassette_too_big_with_goat_link,
           "smallest_cassette_too_big": bool(smallest_cassette_too_big),
+          "maxChainAngle": max_chain_angle_results["max_chain_angle"],
+          "motionMultiplier": multiplier,
+          "numberOfShiftsMatchesCogs": shifter["speeds"] == cassette["speeds"],
+          "moreCogsThanShifts": cassette["speeds"] > shifter["speeds"]
         })
 
         #Log combos that fail any, but not all criteria
@@ -263,7 +268,7 @@ for shifter in shifters:
           if supported:
             combo["maxToothAvailableAndSupported"] = max(combo["maxToothAvailableAndSupported"], maxToothAvailableAndCompatible)
           combo["supported"] = combo["supported"] or supported
-          combos_trimmed.append({
+          trimmed_combo = {
             "brand": brand,
             "name": combo_name,
             "shifterPartNumber": shifter["partNumber"],
@@ -275,7 +280,10 @@ for shifter in shifters:
             "cassettePartNumber": cassette["partNumber"],
             "cassetteName": cassette["name"],
             "cassetteBrand": cassette["brand"],
-          })
+          }
+          combos_trimmed.append(trimmed_combo)
+          if cassette["speeds"] <= shifter["speeds"]:
+            sensible_combos_trimmed.append(trimmed_combo)
       
       # Save combo if compatible cassette was found
       if len(combo["cassettes"]) > 0:
@@ -316,6 +324,9 @@ with open(f"combinations.json", "w") as info_file:
 
 with open(f"combinations_trimmed.json", "w") as info_file:
   json.dump(combos_trimmed, info_file, indent=2)
+
+with open(f"sensible_combinations_trimmed.json", "w") as info_file:
+  json.dump(sensible_combos_trimmed, info_file, indent=2)
 
 with open(f"partial_fail_combos.json", "w") as info_file:
   json.dump(partial_fail_combos, info_file, indent=2)
