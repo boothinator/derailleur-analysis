@@ -218,3 +218,14 @@ plt.xticks(wrap=False, rotation="vertical", rotation_mode="anchor",
           horizontalalignment="center", verticalalignment="top")
 plt.tight_layout()
 plt.savefig(f"combo_analysis/category_counts.png")
+
+plt.clf()
+x = np.linspace(motion_multiplier_min, motion_multiplier_max)
+
+for i,prefix in enumerate(prefixes):
+  curve = scipy.stats.norm(motion_multiplier_avgs[i], motion_multiplier_stdevs[i])
+  plt.plot(x, curve.pdf(x)/10, label=prefix)
+
+plt.legend()
+
+plt.savefig(f"combo_analysis/max_chain_angle_dists.png")
