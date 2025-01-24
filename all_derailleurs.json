@@ -43,6 +43,44 @@
     "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.6255715634784024 +/- 1.0412779314080989"
   },
   {
+    "brand": "Microshift",
+    "name": "Advent X",
+    "partNumber": "RD-M6205AM",
+    "designSpeeds": 10,
+    "designCogPitch": 3.95,
+    "distanceFromCarriageToJockeyWheel": 35.75,
+    "jockeyWheelThickness": 2.2,
+    "minDropoutWidth": 12,
+    "maxDropoutWidth": 12,
+    "smallCogOffset": null,
+    "supportsMultipleFrontChainrings": false,
+    "parallelogramStyle": "slant",
+    "maxTooth": 44,
+    "maxToothUnofficial": null,
+    "maxToothWithGoatLink": null,
+    "chainWrap": 35,
+    "pullRatio": 1.0399281248158987,
+    "coefficients": [
+      10.238294310684283,
+      0.8611446750759248,
+      0.007409978354003529,
+      -9.155182195659187e-05
+    ],
+    "physicalLowLimit": 10.238294310684283,
+    "physicalHighLimit": 56.74890836538695,
+    "numberOfMeasurements": 292,
+    "Pull Ratio Averaged Across Pulling Runs": "1.041 +/- 0.000",
+    "Pull Ratio Averaged Across Relaxing Runs": "1.038 +/- 0.000",
+    "Pull Ratio Averaged Across All Runs": "1.040 +/- 0.003",
+    "Pull Ratio 95% Confidence Interval": "1.037 to 1.043",
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm",
+    "meas_method_percent_diffs": [
+      -0.08646779074792921,
+      0.1503113592441492
+    ],
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: 0.03192178424811 +/- 0.2367791499920784"
+  },
+  {
     "brand": "Shimano",
     "name": "105",
     "partNumber": "RD-5800",
