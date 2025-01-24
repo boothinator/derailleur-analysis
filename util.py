@@ -3,8 +3,8 @@ import numpy as np
 # Could calculate using dropout thickness (7 to 8 mm for shimano?) and then use the distance from 
 # end of cassette to dropout to figure out the first cog position, maybe
 smallest_cog_position = 15 # TODO: put this on the cassette, or figure out from derailleur
-smallest_cog_jockey_to_cog_links = 3
-smallest_cog_jockey_to_cog_distance = smallest_cog_jockey_to_cog_links * 25.4 / 2 
+min_jockey_to_cog_links = 3
+min_jockey_to_cog_chain_length = min_jockey_to_cog_links * 25.4 / 2 
 max_cable_pull = 50 # Assume that no shifter will be able to pull 50 mm of cable
 
 def get_cassette_cog_teeth(min_tooth, max_tooth, cog_count):
@@ -80,12 +80,13 @@ def get_jockey_to_cog_distance_list(min_tooth, max_tooth, cog_count, b_gap):
   cog_radii = get_cassette_cog_radii(min_tooth, max_tooth, cog_count)
 
   largest_cog_b_gap = b_gap
-  largets_cog_jockey_edge_radius = largest_cog_b_gap + cog_radii[-1]
-  smallest_cog_jockey_edge_radius =  cog_radii[0] + 20
+  largest_cog_to_jockey_edge_radius = largest_cog_b_gap + cog_radii[-1]
+  smallest_cog_to_jockey_edge_radius = np.sqrt(
+    np.pow(cog_radii[0], 2) + np.pow(min_jockey_to_cog_chain_length, 2))
 
-  slope = (largets_cog_jockey_edge_radius - smallest_cog_jockey_edge_radius) / (cog_count - 1)
+  slope = (largest_cog_to_jockey_edge_radius - smallest_cog_to_jockey_edge_radius) / (cog_count - 1)
 
-  jockey_edge_radii = [smallest_cog_jockey_edge_radius + slope * i for i in range(cog_count)]
+  jockey_edge_radii = [smallest_cog_to_jockey_edge_radius + slope * i for i in range(cog_count)]
 
   distances = np.sqrt([j * j - c * c for j, c in zip(jockey_edge_radii, cog_radii)])
   
