@@ -1,0 +1,74 @@
+{
+  "dynasys": {
+    "averageCoefficients": [
+      7.346761822158265,
+      0.930595827828537,
+      0.007365130490872406,
+      -0.00010358582433322902
+    ],
+    "averagePullRatio": 1.0844803047044687,
+    "pullRatioStdev": 0.014674527296688234,
+    "Pull Ratio 95% Confidence Interval": "1.055 to 1.114",
+    "derailleurs": [
+      {
+        "brand": "Shimano",
+        "name": "Deore",
+        "partNumber": "RD-M4120"
+      },
+      {
+        "brand": "Shimano",
+        "name": "Deore",
+        "partNumber": "RD-M5120"
+      },
+      {
+        "brand": "Shimano",
+        "name": "Deore",
+        "partNumber": "RD-M6100"
+      }
+    ],
+    "perSpeedPullRatios": {
+      "10-speed": {
+        "avg": 1.0851764235461554,
+        "stdev": 0.014447006255818776,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.056 to 1.114"
+        ]
+      },
+      "11-speed": {
+        "avg": 1.0850525440620116,
+        "stdev": 0.015008071012982262,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.055 to 1.115"
+        ]
+      },
+      "12-speed": {
+        "avg": 1.0846145281559787,
+        "stdev": 0.015413807758664938,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.054 to 1.115"
+        ]
+      },
+      "LinkGlide 9-speed": {
+        "avg": 1.0856619511972754,
+        "stdev": 0.015443101056484073,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.055 to 1.117"
+        ]
+      },
+      "LinkGlide 10-speed": {
+        "avg": 1.085037273733077,
+        "stdev": 0.01416120842224777,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.057 to 1.113"
+        ]
+      },
+      "LinkGlide 11-speed": {
+        "avg": 1.0813391075323144,
+        "stdev": 0.013002845123078042,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.055 to 1.107"
+        ]
+      }
+    }
+  }
+}
