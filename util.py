@@ -228,7 +228,10 @@ class PullRatioInfo(BaseModel):
 
 
 
-def calc_pull_ratio(info, coefficients, max_pull):
+def calc_pull_ratio(info, coefficients, max_pull = 100, design_cog_pitch = None, design_speeds = None):
+  design_cog_pitch = design_cog_pitch or info["designCogPitch"]
+  design_speeds = design_speeds or info["designSpeeds"]
+
   if "minDropoutWidth" in info and info["minDropoutWidth"] != None \
     and "maxDropoutWidth" in info and info["maxDropoutWidth"] != None:
     dropout_width = (info["minDropoutWidth"] + info["maxDropoutWidth"])/2
@@ -236,10 +239,10 @@ def calc_pull_ratio(info, coefficients, max_pull):
     dropout_width = 8
   small_cog_offset = info["smallCogOffset"] if "smallCogOffset" in info and info["smallCogOffset"] != None else 3
   small_cog_position = dropout_width + small_cog_offset
-  biggest_cog_position = small_cog_position + info["designCogPitch"] * (info["designSpeeds"] - 1)
-  second_smallest_cog_position = info["designCogPitch"] + small_cog_position
+  biggest_cog_position = small_cog_position + design_cog_pitch * (design_speeds - 1)
+  second_smallest_cog_position = design_cog_pitch + small_cog_position
 
-  total_pitch_inner_cogs = info["designCogPitch"] * (info["designSpeeds"] - 3)
+  total_pitch_inner_cogs = design_cog_pitch * (design_speeds - 3)
 
   second_biggest_cog_position = second_smallest_cog_position + total_pitch_inner_cogs
 
