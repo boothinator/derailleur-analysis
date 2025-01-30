@@ -16,15 +16,15 @@
   "maxToothWithGoatLink": null,
   "chainWrap": 35,
   "linksFromJockeyToSmallestCog": 4,
-  "pullRatio": 1.0399281248158991,
+  "pullRatio": 1.0399281248158987,
   "coefficients": [
-    10.238294310684285,
-    0.8611446750759251,
-    0.007409978354003559,
-    -9.15518219565928e-05
+    10.238294310684283,
+    0.8611446750759248,
+    0.007409978354003529,
+    -9.155182195659187e-05
   ],
-  "physicalLowLimit": 10.238294310684285,
-  "physicalHighLimit": 56.74890836538694,
+  "physicalLowLimit": 10.238294310684283,
+  "physicalHighLimit": 56.74890836538695,
   "numberOfMeasurements": 292,
   "Pull Ratio Averaged Across Pulling Runs": "1.041 +/- 0.000",
   "Pull Ratio Averaged Across Relaxing Runs": "1.038 +/- 0.000",
@@ -32,8 +32,8 @@
   "Pull Ratio 95% Confidence Interval": "1.037 to 1.043",
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm",
   "meas_method_percent_diffs": [
-    0.1503113592441492,
-    -0.08646779074792921
+    -0.08646779074792921,
+    0.1503113592441492
   ],
   "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: 0.03192178424811 +/- 0.2367791499920784"
 }
