@@ -29,6 +29,8 @@ cassette_types = [{
   'design_cog_pitch': 4.05
 }]
 
+# TODO: analyze each derailleur according to the cassette type they support
+
 def generate_family_info(derailleurs):
   avg_coefficients = np.average([d["coefficients"] for d in derailleurs], axis=0)
 
@@ -77,7 +79,11 @@ families_info = {
   "dynasys": generate_family_info([d for d in derailleurs
                                    if d["brand"] == 'Shimano'
                                    and d["pullRatio"] < 1.2
-                                   and d['partNumber'].startswith('RD-M')])
+                                   and d['partNumber'].startswith('RD-M')]),
+  "CUES": generate_family_info([d for d in derailleurs
+                                   if d["brand"] == 'Shimano'
+                                   and d["pullRatio"] < 1.2
+                                   and d['partNumber'].startswith('RD-U')])
 }
 
 

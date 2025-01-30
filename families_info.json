@@ -70,5 +70,72 @@
         ]
       }
     }
+  },
+  "CUES": {
+    "averageCoefficients": [
+      7.885771826599131,
+      0.9835881941029228,
+      0.005479751199831786,
+      -8.444368988869796e-05
+    ],
+    "averagePullRatio": 1.0865987674585391,
+    "pullRatioStdev": 0.027726683608100884,
+    "Pull Ratio 95% Confidence Interval": "1.031 to 1.142",
+    "derailleurs": [
+      {
+        "brand": "Shimano",
+        "name": "CUES",
+        "partNumber": "RD-U6020-10"
+      },
+      {
+        "brand": "Shimano",
+        "name": "CUES",
+        "partNumber": "RD-U4020"
+      }
+    ],
+    "perSpeedPullRatios": {
+      "10-speed": {
+        "avg": 1.0870728054063037,
+        "stdev": 0.02774858171710548,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.032 to 1.143"
+        ]
+      },
+      "11-speed": {
+        "avg": 1.0874836149487257,
+        "stdev": 0.026331650378441873,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.035 to 1.140"
+        ]
+      },
+      "12-speed": {
+        "avg": 1.0875039468142087,
+        "stdev": 0.025315591082035627,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.037 to 1.138"
+        ]
+      },
+      "LinkGlide 9-speed": {
+        "avg": 1.088340713639593,
+        "stdev": 0.025248746216795404,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.038 to 1.139"
+        ]
+      },
+      "LinkGlide 10-speed": {
+        "avg": 1.0866999803623156,
+        "stdev": 0.02848576208122411,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.030 to 1.144"
+        ]
+      },
+      "LinkGlide 11-speed": {
+        "avg": 1.0824915435800873,
+        "stdev": 0.032213605828871006,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.018 to 1.147"
+        ]
+      }
+    }
   }
 }
