@@ -30,13 +30,14 @@ cassette_types = [{
 }]
 
 # TODO: analyze each derailleur according to the cassette type they support
+# This is especially important for classic Shimano cable pull
 
 def generate_family_info(derailleurs):
   avg_coefficients = np.average([d["coefficients"] for d in derailleurs], axis=0)
 
   per_der_pull_ratios = {
     ct['name']: {
-      "pull_ratios": [calc_pull_ratio({}, d["coefficients"],
+      "pull_ratios": [calc_pull_ratio(d, d["coefficients"],
                                       design_cog_pitch=ct['design_cog_pitch'],
                                       design_speeds=ct['speeds']
                                       ).pull_ratio
@@ -83,7 +84,15 @@ families_info = {
   "CUES": generate_family_info([d for d in derailleurs
                                    if d["brand"] == 'Shimano'
                                    and d["pullRatio"] < 1.2
-                                   and d['partNumber'].startswith('RD-U')])
+                                   and d['partNumber'].startswith('RD-U')]),
+  "Shimano New Road": generate_family_info([d for d in derailleurs
+                                   if d["brand"] == 'Shimano'
+                                   and d["pullRatio"] > 1.4
+                                   and d["pullRatio"] < 1.6]),
+  "Classic Shimano": generate_family_info([d for d in derailleurs
+                                   if d["pullRatio"] > 1.6]),
+  "dynasys-like": generate_family_info([d for d in derailleurs
+                                   if d["pullRatio"] < 1.2]),
 }
 
 

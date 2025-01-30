@@ -137,5 +137,236 @@
         ]
       }
     }
+  },
+  "Shimano New Road": {
+    "averageCoefficients": [
+      10.119946874927328,
+      1.0838564193172442,
+      0.025388137348163822,
+      -0.00047893925005790147
+    ],
+    "averagePullRatio": 1.4654240595011896,
+    "pullRatioStdev": 0.028942079946064517,
+    "Pull Ratio 95% Confidence Interval": "1.408 to 1.523",
+    "derailleurs": [
+      {
+        "brand": "Shimano",
+        "name": "105",
+        "partNumber": "RD-5800"
+      },
+      {
+        "brand": "Shimano",
+        "name": "GRX",
+        "partNumber": "RD-RX400"
+      },
+      {
+        "brand": "Shimano",
+        "name": "Ultegra RX",
+        "partNumber": "RD-RX800"
+      }
+    ],
+    "perSpeedPullRatios": {
+      "10-speed": {
+        "avg": 1.4677195048734457,
+        "stdev": 0.029099436703156796,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.410 to 1.526"
+        ]
+      },
+      "11-speed": {
+        "avg": 1.464197899848134,
+        "stdev": 0.02799903035694591,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.408 to 1.520"
+        ]
+      },
+      "12-speed": {
+        "avg": 1.4607357291230108,
+        "stdev": 0.027111364061209727,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.407 to 1.515"
+        ]
+      },
+      "LinkGlide 9-speed": {
+        "avg": 1.46378735555602,
+        "stdev": 0.02753660501416447,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.409 to 1.519"
+        ]
+      },
+      "LinkGlide 10-speed": {
+        "avg": 1.4690032077635047,
+        "stdev": 0.029615102985306875,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.410 to 1.528"
+        ]
+      },
+      "LinkGlide 11-speed": {
+        "avg": 1.4671006598430223,
+        "stdev": 0.03126888167139161,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.405 to 1.530"
+        ]
+      }
+    }
+  },
+  "Classic Shimano": {
+    "averageCoefficients": [
+      9.146418033762107,
+      1.6038932021676957,
+      0.021880160198398307,
+      -0.0009550403385341488
+    ],
+    "averagePullRatio": 1.6406868813473647,
+    "pullRatioStdev": 0.06420253331146358,
+    "Pull Ratio 95% Confidence Interval": "1.512 to 1.769",
+    "derailleurs": [
+      {
+        "brand": "Shimano",
+        "name": "Tiagra 4600",
+        "partNumber": "RD-4601-SS"
+      },
+      {
+        "brand": "Shimano",
+        "name": "Ultegra",
+        "partNumber": "RD-6500"
+      }
+    ],
+    "perSpeedPullRatios": {
+      "10-speed": {
+        "avg": 1.6439835389719084,
+        "stdev": 0.029814272509951167,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.584 to 1.704"
+        ]
+      },
+      "11-speed": {
+        "avg": 1.6689015199376427,
+        "stdev": 0.025730521298572895,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.617 to 1.720"
+        ]
+      },
+      "12-speed": {
+        "avg": 1.684734813056161,
+        "stdev": 0.023252694883525882,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.638 to 1.731"
+        ]
+      },
+      "LinkGlide 9-speed": {
+        "avg": 1.6893104197247846,
+        "stdev": 0.022707136935547267,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.644 to 1.735"
+        ]
+      },
+      "LinkGlide 10-speed": {
+        "avg": 1.6295851144493558,
+        "stdev": 0.032312365866496884,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.565 to 1.694"
+        ]
+      },
+      "LinkGlide 11-speed": {
+        "avg": 1.527605881944337,
+        "stdev": 0.05530358077317643,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.417 to 1.638"
+        ]
+      }
+    }
+  },
+  "dynasys-like": {
+    "averageCoefficients": [
+      9.01065743104609,
+      0.9406926966691858,
+      0.006886490611319207,
+      -0.00010128792885752152
+    ],
+    "averagePullRatio": 1.0788244258221074,
+    "pullRatioStdev": 0.024018603668287956,
+    "Pull Ratio 95% Confidence Interval": "1.031 to 1.127",
+    "derailleurs": [
+      {
+        "brand": "Microshift",
+        "name": "Advent X",
+        "partNumber": "RD-M6205AM"
+      },
+      {
+        "brand": "Shimano",
+        "name": "CUES",
+        "partNumber": "RD-U6020-10"
+      },
+      {
+        "brand": "Shimano",
+        "name": "CUES",
+        "partNumber": "RD-U4020"
+      },
+      {
+        "brand": "Shimano",
+        "name": "Deore",
+        "partNumber": "RD-M4120"
+      },
+      {
+        "brand": "Shimano",
+        "name": "Deore",
+        "partNumber": "RD-M5120"
+      },
+      {
+        "brand": "Shimano",
+        "name": "Deore",
+        "partNumber": "RD-M6100"
+      },
+      {
+        "brand": "SRAM",
+        "name": "SX",
+        "partNumber": "RD-SX-1-B1"
+      }
+    ],
+    "perSpeedPullRatios": {
+      "10-speed": {
+        "avg": 1.079470005566565,
+        "stdev": 0.023889794913603837,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.032 to 1.127"
+        ]
+      },
+      "11-speed": {
+        "avg": 1.0795903606410873,
+        "stdev": 0.023810938559861352,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.032 to 1.127"
+        ]
+      },
+      "12-speed": {
+        "avg": 1.0793361804245392,
+        "stdev": 0.023781838625266085,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.032 to 1.127"
+        ]
+      },
+      "LinkGlide 9-speed": {
+        "avg": 1.0803649830574846,
+        "stdev": 0.02377222253863398,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.033 to 1.128"
+        ]
+      },
+      "LinkGlide 10-speed": {
+        "avg": 1.0792090219981012,
+        "stdev": 0.02394939684315471,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.031 to 1.127"
+        ]
+      },
+      "LinkGlide 11-speed": {
+        "avg": 1.074976003244868,
+        "stdev": 0.024511464780408932,
+        "Pull Ratio 95% Confidence Interval": [
+          "1.026 to 1.124"
+        ]
+      }
+    }
   }
 }
