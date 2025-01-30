@@ -5,7 +5,7 @@ import os
 import json
 import datetime
 import math
-from pydantic import BaseModel
+from util import calc_pull_ratio
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 # Template environment
@@ -200,78 +200,6 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
     json.dump(info, infofile, indent=2)
   
   return info
-
-class PullRatioInfo(BaseModel):
-  dropout_width: float
-  small_cog_offset: float
-  small_cog_position: float
-  smallest_cog_pull: float
-  second_smallest_cog_pull: float
-  second_biggest_cog_pull: float
-  biggest_cog_pull: float
-  biggest_cog_position: float
-  total_pitch_inner_cogs: float
-  pull_ratio: float
-  coefficients: list[float]
-
-
-def calc_pull_ratio(info, coefficients, max_pull):
-  if "minDropoutWidth" in info and info["minDropoutWidth"] != None \
-    and "maxDropoutWidth" in info and info["maxDropoutWidth"] != None:
-    dropout_width = (info["minDropoutWidth"] + info["maxDropoutWidth"])/2
-  else:
-    dropout_width = 8
-  small_cog_offset = info["smallCogOffset"] if "smallCogOffset" in info and info["smallCogOffset"] != None else 3
-  small_cog_position = dropout_width + small_cog_offset
-  biggest_cog_position = small_cog_position + info["designCogPitch"] * (info["designSpeeds"] - 1)
-  second_smallest_cog_position = info["designCogPitch"] + small_cog_position
-
-  total_pitch_inner_cogs = info["designCogPitch"] * (info["designSpeeds"] - 3)
-
-  second_biggest_cog_position = second_smallest_cog_position + total_pitch_inner_cogs
-
-  curve = np.polynomial.polynomial.Polynomial(coefficients)
-
-  smallest_cog_pull = [r for r in (curve - small_cog_position).roots() if r >= 0][0]
-  if smallest_cog_pull > max_pull:
-    print(f"Warning: smallest_cog_pull {smallest_cog_pull} > max_pull {max_pull}", (curve - small_cog_position).roots())
-    print("dropout_width", dropout_width)
-    print("small_cog_offset", small_cog_offset)
-
-  second_smallest_cog_pull = [r for r in (curve - second_smallest_cog_position).roots() if r >= 0][0]
-  if second_smallest_cog_pull > max_pull:
-    print(f"Warning: second_smallest_cog_pull {second_smallest_cog_pull} > max_pull {max_pull}", (curve - second_smallest_cog_position).roots())
-    print("dropout_width", dropout_width)
-    print("small_cog_offset", small_cog_offset)
-  
-  second_biggest_cog_pull = [r for r in (curve - second_biggest_cog_position).roots() if r >= 0][0]
-  if second_biggest_cog_pull > max_pull:
-    print(f"Warning: second_biggest_cog_pull {second_biggest_cog_pull} > max_pull {max_pull}",(curve - second_biggest_cog_position).roots())
-    print("dropout_width", dropout_width)
-    print("small_cog_offset", small_cog_offset)
-
-  biggest_cog_pull = [r for r in (curve - biggest_cog_position).roots() if r >= 0][0]
-  if biggest_cog_pull > max_pull:
-    print(f"Warning: biggest_cog_pull {biggest_cog_pull} > max_pull {max_pull}",(curve - biggest_cog_position).roots())
-    print("dropout_width", dropout_width)
-    print("small_cog_offset", small_cog_offset)
-  
-
-  pull_ratio = total_pitch_inner_cogs/(second_biggest_cog_pull - second_smallest_cog_pull)
-
-  return PullRatioInfo(
-    dropout_width=dropout_width,
-    small_cog_offset=small_cog_offset,
-    small_cog_position=small_cog_position,
-    smallest_cog_pull=smallest_cog_pull,
-    second_smallest_cog_pull=second_smallest_cog_pull,
-    second_biggest_cog_pull=second_biggest_cog_pull,
-    biggest_cog_pull=biggest_cog_pull,
-    biggest_cog_position=biggest_cog_position,
-    total_pitch_inner_cogs=total_pitch_inner_cogs,
-    pull_ratio=pull_ratio,
-    coefficients=curve.convert().coef
-    )
 
 def process_der(dir):
   
