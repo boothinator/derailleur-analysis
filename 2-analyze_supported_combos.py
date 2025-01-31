@@ -50,7 +50,7 @@ motion_multiplier_avg = np.mean(motion_multipliers)
 # Perhaps I should use the sample standard deviation (ddof=1), but using 
 # regular standard deviation is more conservative
 motion_multiplier_stdev = np.std(motion_multipliers)
-motion_multiplier_num_stdevs = (max(motion_multipliers) - motion_multiplier_avg) / motion_multiplier_stdev
+motion_multiplier_num_stdevs = (max(motion_multipliers) - motion_multiplier_avg) / motion_multiplier_stdev + 0.00001
 motion_multiplier_min = motion_multiplier_avg - motion_multiplier_num_stdevs*motion_multiplier_stdev
 motion_multiplier_max = motion_multiplier_avg + motion_multiplier_num_stdevs*motion_multiplier_stdev
 
@@ -59,7 +59,7 @@ motion_multiplier_min_confidence = 1 - (mm_dist.cdf(motion_multiplier_max) - mm_
 
 max_chain_angle_avg = np.mean(max_chain_angles)
 max_chain_angle_stdev = np.std(max_chain_angles)
-max_chain_angle_num_stdevs = (max(max_chain_angles) - max_chain_angle_avg) / max_chain_angle_stdev
+max_chain_angle_num_stdevs = (max(max_chain_angles) - max_chain_angle_avg) / max_chain_angle_stdev + 0.00001
 max_chain_angle_max = max_chain_angle_avg + max_chain_angle_num_stdevs*max_chain_angle_stdev
 
 # Validate that all supported combos are in range
