@@ -144,7 +144,8 @@ with open(tmp_filename, "x", newline='') as f:
 
         actionStr = None
       elif actionStr == "x":
-        break
+        if input("Are you sure? (y/N)").lower() == 'y':
+          break
       elif actionStr == "r":
         pass
       else:
