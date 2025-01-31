@@ -276,6 +276,47 @@ def calc_pull_ratio(info, coefficients, max_pull):
     coefficients=curve.convert().coef
     )
 
+def analyze_yaw(input_file):
+
+  with open(input_file, newline='') as csvfile: 
+    reader = csv.DictReader(csvfile)
+    data = [*reader]
+
+  convert_to_floats(data)
+
+  for row in data:
+    if math.isnan(row["Cable Pull (mm)"]):
+      row["Cable Pull (mm)"] = row["180 Deg. Turns"]
+  
+  # TODO: handle outliers
+
+  cable_pull = [row["Cable Pull (mm)"] for row in data]
+  yaw_angle = [row["Measurement (deg)"] for row in data]
+
+  result = np.polynomial.Polynomial.fit(cable_pull, yaw_angle, 2)
+  x_new = np.linspace(cable_pull[0], cable_pull[-1], 50)
+  y_new = result(x_new)
+
+  info = {
+    "coef": [x for x in result.convert().coef],
+    "number_of_measurements": len(data)
+  }
+
+  plt.clf()
+  plt.plot(cable_pull,yaw_angle,'o', x_new, y_new)
+  plt.xlim([cable_pull[0]-1, cable_pull[-1] + 1 ])
+
+  graph_file = input_file.replace('.csv', '.png')
+
+  plt.savefig(graph_file)
+  plt.close()
+
+  with open(input_file.replace('.csv', '.json'), "w") as infofile:
+    json.dump(info, infofile, indent=2)
+  
+  return info
+
+
 def process_der(dir):
   
   with open(f"derailleurs/{dir}/info.json") as info_file:
@@ -383,7 +424,15 @@ def process_der(dir):
   plt.savefig(f"derailleurs/{dir}/pull_ratio_curve.png")
   plt.close()
 
+  # Yaw
+  if os.path.exists(f"derailleurs/{dir}/yaw"):
+    for datafile in os.listdir(f"derailleurs/{dir}/yaw"):
+      if datafile.endswith('.csv'):
+        print(f"Processing {datafile}")
 
+        analyze_yaw(f"derailleurs/{dir}/yaw/{datafile}")
+
+  # Info Output
   info_out = {**info,
               "pullRatio": pr_calc.pull_ratio,
               "coefficients": [c for c in avg_coefs],
