@@ -284,13 +284,14 @@ def analyze_yaw(input_file):
 
   convert_to_floats(data)
 
+  # Remove outliers
+  data = [row for row in data if not isinstance(row["Is Outlier"], str)]
+
   for row in data:
     if math.isnan(row["Cable Pull (mm)"]):
       row["Cable Pull (mm)"] = row["180 Deg. Turns"]
-  
-  # TODO: handle outliers
 
-  cable_pull = [row["Cable Pull (mm)"] for row in data]
+  cable_pull = [row["Cable Pull (mm)"] - data[0]["Cable Pull (mm)"] for row in data]
   yaw_angle = [row["Measurement (deg)"] for row in data]
 
   result = np.polynomial.Polynomial.fit(cable_pull, yaw_angle, 2)
