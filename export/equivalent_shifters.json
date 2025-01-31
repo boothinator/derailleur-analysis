@@ -22,5 +22,29 @@
     "type": "drop-bar",
     "equivalentPartNumber": "SB-M100A",
     "note": "Presumably Sword uses the same shift points as Advent X"
+  },
+  {
+    "name": "CUES",
+    "brand": "Shimano",
+    "partNumber": "ST-U6030-R",
+    "type": "drop-bar",
+    "equivalentPartNumber": "SL-U6000-10R",
+    "note": "Presumably this 10/11-speed drop-bar shifter has the same shift points as the flat-bar version"
+  },
+  {
+    "name": "CUES",
+    "brand": "Shimano",
+    "partNumber": "ST-U3030-10R",
+    "type": "drop-bar",
+    "equivalentPartNumber": "SL-U6000-10R",
+    "note": "Presumably this 10-speed drop-bar shifter has the same shift points as the flat-bar version"
+  },
+  {
+    "name": "CUES",
+    "brand": "Shimano",
+    "partNumber": "ST-U3030-9R",
+    "type": "drop-bar",
+    "equivalentPartNumber": "SL-U4000",
+    "note": "Presumably this 9-speed drop-bar shifter has the same shift points as the flat-bar version"
   }
 ]

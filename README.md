@@ -14,6 +14,8 @@
 
 [Campagnolo Ekar 13-Speed (RD21-EK13)](https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo%20Ekar/default.htm) - Pull Ratio: 1.28
 
+[Microshift Advent X 10-Speed (RD-M6205AM)](https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift%20RD-M6205AM/default.htm) - Pull Ratio: 1.05
+
 [Shimano 105 11-Speed (RD-5800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20105%2011-speed/default.htm) - Pull Ratio: 1.45
 
 [Shimano CUES 10-Speed (RD-U6020-10)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20CUES%2010-Speed/default.htm) - Pull Ratio: 1.06
