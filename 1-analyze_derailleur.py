@@ -17,15 +17,7 @@ extrusion_thickness=19.93
 with open("overall_stats.json") as f:
   overall_stats = json.load(f)
 
-def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
-
-  data = []
-
-  with open(input_file, newline='') as csvfile: 
-    reader = csv.DictReader(csvfile)
-    for row in reader:
-      data.append(row)
-
+def convert_to_floats(data):
   # Convert to numbers
   for row in data:
     for key in row.keys():
@@ -37,6 +29,17 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
         except:
           # Ignore failed conversion attempts
           pass
+
+def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
+
+  data = []
+
+  with open(input_file, newline='') as csvfile: 
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+      data.append(row)
+
+  convert_to_floats(data)
     
   # Get run values
   extrusion_to_carriage_slack = ([d["Distance from outside of extrusion to carriage when cable is slack (mm)"] for d in data
