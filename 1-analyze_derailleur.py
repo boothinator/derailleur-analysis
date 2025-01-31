@@ -8,6 +8,8 @@ import math
 from util import calc_pull_ratio
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+# TODO: reanalyze using yaw data to figure out effective pull ratio
+
 # Template environment
 environment = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
 template = environment.get_template("derailleur_analysis.htm")
