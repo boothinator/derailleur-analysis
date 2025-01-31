@@ -12,7 +12,9 @@ lowest_gearing_with_drop_bar_shifters_combos = []
 widest_range_with_drop_bar_shifters_combos = []
 
 for combo in combos:
-  if combo["shifterType"] == "drop-bar" and combo["moreCogsThanShifts"] == False:
+  if (combo["shifterType"] == "drop-bar"
+      or any([s for s in combo["equivalentShifters"] if s["type"] == "drop-bar"]))\
+    and combo["moreCogsThanShifts"] == False:
     if combo["maxToothAvailableAndCompatible"] >= lowest_max_tooth:
       lowest_gearing_with_drop_bar_shifters_combos.append(combo)
     if combo["chainWrap"] >= lowest_chain_wrap:

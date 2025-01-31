@@ -299,6 +299,32 @@
     "cassetteBrand": "Shimano"
   },
   {
+    "brand": "Mixed",
+    "name": "Shimano CUES 10-Speed shifter/Microshift Advent X 10-Speed derailleur/10-Speed cassette",
+    "shifterPartNumber": "SL-U6000-10R",
+    "shifterName": "CUES",
+    "shifterBrand": "Shimano",
+    "derailleurPartNumber": "RD-M6205AM",
+    "derailleurName": "Advent X",
+    "derailleurBrand": "Microshift",
+    "cassettePartNumber": "generic-10-speed",
+    "cassetteName": "Generic 10-Speed",
+    "cassetteBrand": "Generic"
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano CUES 10-Speed shifter/Microshift Advent X 10-Speed derailleur/10-Speed cassette",
+    "shifterPartNumber": "SL-U6000-10R",
+    "shifterName": "CUES",
+    "shifterBrand": "Shimano",
+    "derailleurPartNumber": "RD-M6205AM",
+    "derailleurName": "Advent X",
+    "derailleurBrand": "Microshift",
+    "cassettePartNumber": "CS-HG-500-10",
+    "cassetteName": "Shimano 10-Speed",
+    "cassetteBrand": "Shimano"
+  },
+  {
     "brand": "Shimano",
     "name": "Shimano CUES 10-Speed group",
     "shifterPartNumber": "SL-U6000-10R",
@@ -780,6 +806,32 @@
     "cassetteBrand": "Shimano"
   },
   {
+    "brand": "Mixed",
+    "name": "Shimano Deore 11-Speed shifter/Microshift Advent X 10-Speed derailleur/11-Speed cassette",
+    "shifterPartNumber": "SL-M5100",
+    "shifterName": "Deore",
+    "shifterBrand": "Shimano",
+    "derailleurPartNumber": "RD-M6205AM",
+    "derailleurName": "Advent X",
+    "derailleurBrand": "Microshift",
+    "cassettePartNumber": "sram-11-speed",
+    "cassetteName": "SRAM 11-speed",
+    "cassetteBrand": "SRAM"
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano Deore 11-Speed shifter/Microshift Advent X 10-Speed derailleur/11-Speed cassette",
+    "shifterPartNumber": "SL-M5100",
+    "shifterName": "Deore",
+    "shifterBrand": "Shimano",
+    "derailleurPartNumber": "RD-M6205AM",
+    "derailleurName": "Advent X",
+    "derailleurBrand": "Microshift",
+    "cassettePartNumber": "shimano-11-speed",
+    "cassetteName": "Shimano 11-speed",
+    "cassetteBrand": "Shimano"
+  },
+  {
     "brand": "Shimano",
     "name": "Shimano Deore 11-Speed shifter/CUES 10-Speed derailleur/11-Speed cassette",
     "shifterPartNumber": "SL-M5100",
@@ -1090,6 +1142,19 @@
     "cassettePartNumber": "generic-10-speed",
     "cassetteName": "Generic 10-Speed",
     "cassetteBrand": "Generic"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Tiagra 4700 10-Speed shifter/GRX 10-Speed derailleur/10-Speed cassette",
+    "shifterPartNumber": "ST-4700",
+    "shifterName": "Tiagra 4700",
+    "shifterBrand": "Shimano",
+    "derailleurPartNumber": "RD-RX400",
+    "derailleurName": "GRX",
+    "derailleurBrand": "Shimano",
+    "cassettePartNumber": "CS-LG300-10",
+    "cassetteName": "LinkGlide 10-Speed",
+    "cassetteBrand": "Shimano"
   },
   {
     "brand": "Shimano",

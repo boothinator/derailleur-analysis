@@ -961,7 +961,7 @@
         "confidence": 0.0741491426199328,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 42,
         "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxChainAngle": 1.0908317931397462,
         "maxAngleAnalysis": {
@@ -1032,7 +1032,7 @@
     "moreCogsThanShifts": false,
     "moreShiftsThanCogs": true,
     "maxToothAvailableAndCompatible": 36,
-    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndUnofficiallyCompatible": 42,
     "maxToothAvailableAndCompatibleWithGoatLink": 0,
     "maxToothAvailableAndSupported": 0,
     "supported": false,
@@ -1214,6 +1214,185 @@
     "supported": false,
     "chainWrap": 39,
     "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": [],
+    "reviewsSentiment": "none"
+  },
+  {
+    "brand": "Microshift",
+    "name": "Microshift Advent X 10-Speed shifter/Advent X 10-Speed derailleur/11-Speed cassette",
+    "partialName": "Microshift Advent X 10-Speed shifter/Advent X 10-Speed derailleur",
+    "shifterPartialName": "Microshift Advent X 10-Speed",
+    "derailleurPartialName": "Advent X 10-Speed",
+    "speeds": 11,
+    "accessibleSpeeds": 10,
+    "sameGroup": false,
+    "shifterPartNumber": "SB-M100A",
+    "shifterName": "Advent X",
+    "shifterBrand": "Microshift",
+    "derailleurPartNumber": "RD-M6205AM",
+    "derailleurName": "Advent X",
+    "derailleurBrand": "Microshift",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
+        "confidence": 0.5939169117119674,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.6577746498733049,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 5.774410415148459,
+          "barrel_adjuster_values": [
+            0,
+            5.54937924502649,
+            5.76964187084239,
+            5.7743121655403815,
+            5.774408432048709,
+            5.774410415148459
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 5.59113998340978,
+          "least_pull_too_low": false,
+          "most_pull": 36.89151516745655,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 7.95768542290778,
+          "cassette_total_pitch": 37.2,
+          "derailleur_range_of_motion": 45.44077320996436,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.6394884210595535,
+            -0.3289711913990665,
+            0.14527660846801993,
+            0.40370057277220894,
+            0.4736017259479084,
+            0.6394925780101488,
+            0.5913675352217922,
+            0.36081693901240897
+          ],
+          "diffs_minus_free_play": [
+            -0.36448842105955337,
+            -0.053971191399066365,
+            0.0,
+            0.1287005727722088,
+            0.19860172594790826,
+            0.36449257801014867,
+            0.31636753522179206,
+            0.08581693901240883
+          ],
+          "max_diff_minus_free_play": 0.36449257801014867,
+          "max_chain_angle": 0.6577746498733049,
+          "cable_pull_at_max_chain_angle": 26.109547320937597,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.6577671477813053,
+            -0.09739599910926601,
+            0.0,
+            0.2322525932300208,
+            0.35839731990875023,
+            0.6577746498733049,
+            0.5709236067407816,
+            0.1548647056086857
+          ]
+        },
+        "motionMultiplier": 1.0408078638518088,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
+        "confidence": 0.32820138712627284,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.7847998278170562,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 5.8766717033678955,
+          "barrel_adjuster_values": [
+            0,
+            5.649945269657045,
+            5.871987805808143,
+            5.876577675858341,
+            5.876669853297461,
+            5.8766717033678955
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 5.666387896268109,
+          "least_pull_too_low": false,
+          "most_pull": 37.024625682068866,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 7.8196127313816035,
+          "cassette_total_pitch": 37.5,
+          "derailleur_range_of_motion": 45.44077320996436,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.7098730988324107,
+            -0.37270432218215177,
+            0.12911297979480452,
+            0.41568467726799696,
+            0.5144053055503974,
+            0.7098769769285056,
+            0.6920820065653572,
+            0.4927442474862289
+          ],
+          "diffs_minus_free_play": [
+            -0.43487309883241054,
+            -0.09770432218215164,
+            0.0,
+            0.14068467726799683,
+            0.2394053055503973,
+            0.43487697692850547,
+            0.4170820065653571,
+            0.21774424748622878
+          ],
+          "max_diff_minus_free_play": 0.43487697692850547,
+          "max_chain_angle": 0.7847998278170562,
+          "cable_pull_at_max_chain_angle": 26.21180874218635,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.7847928287813283,
+            -0.1763166657209999,
+            0.0,
+            0.25387920084358134,
+            0.4320328688821415,
+            0.7847998278170562,
+            0.7526842848344315,
+            0.3929424942657131
+          ]
+        },
+        "motionMultiplier": 1.0492014756570651,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
+      }
+    ],
+    "shifterType": "drop-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "moreShiftsThanCogs": false,
+    "maxToothAvailableAndCompatible": 44,
+    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndCompatibleWithGoatLink": 0,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
+    "chainWrap": 35,
+    "equivalentShifters": [
+      {
+        "name": "Sword",
+        "brand": "Microshift",
+        "partNumber": "SB-G7000-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SB-M100A",
+        "note": "Presumably Sword uses the same shift points as Advent X"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -2711,7 +2890,7 @@
         "confidence": 0.7112672208770097,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 42,
         "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxChainAngle": 0.21794630752468208,
         "maxAngleAnalysis": {
@@ -2783,7 +2962,7 @@
         "confidence": 0.4159803581974116,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 42,
         "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxChainAngle": 0.4350027183441007,
         "maxAngleAnalysis": {
@@ -2854,7 +3033,7 @@
     "moreCogsThanShifts": false,
     "moreShiftsThanCogs": true,
     "maxToothAvailableAndCompatible": 36,
-    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndUnofficiallyCompatible": 42,
     "maxToothAvailableAndCompatibleWithGoatLink": 0,
     "maxToothAvailableAndSupported": 0,
     "supported": false,
@@ -3409,7 +3588,7 @@
         "confidence": 0.7436672938096791,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 42,
         "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxChainAngle": 0.0,
         "maxAngleAnalysis": {
@@ -3481,7 +3660,7 @@
         "confidence": 0.9119042489193039,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 42,
         "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxChainAngle": 0.16488480964697302,
         "maxAngleAnalysis": {
@@ -3552,7 +3731,7 @@
     "moreCogsThanShifts": false,
     "moreShiftsThanCogs": false,
     "maxToothAvailableAndCompatible": 36,
-    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndUnofficiallyCompatible": 42,
     "maxToothAvailableAndCompatibleWithGoatLink": 0,
     "maxToothAvailableAndSupported": 0,
     "supported": false,
@@ -3733,6 +3912,311 @@
     "reviewsSentiment": "none"
   },
   {
+    "brand": "Mixed",
+    "name": "Shimano CUES 10-Speed shifter/Microshift Advent X 10-Speed derailleur/10-Speed cassette",
+    "partialName": "Shimano CUES 10-Speed shifter/Microshift Advent X 10-Speed derailleur",
+    "shifterPartialName": "Shimano CUES 10-Speed",
+    "derailleurPartialName": "Microshift Advent X 10-Speed",
+    "speeds": 10,
+    "accessibleSpeeds": 10,
+    "sameGroup": false,
+    "shifterPartNumber": "SL-U6000-10R",
+    "shifterName": "CUES",
+    "shifterBrand": "Shimano",
+    "derailleurPartNumber": "RD-M6205AM",
+    "derailleurName": "Advent X",
+    "derailleurBrand": "Microshift",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
+        "confidence": 0.24836428220330603,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.7075276976881782,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 4.911564215857689,
+          "barrel_adjuster_values": [
+            0,
+            4.7235161876433045,
+            4.90593705557634,
+            4.9113972802085675,
+            4.9115594033039685,
+            4.911564215857689
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 5.620616230814026,
+          "least_pull_too_low": false,
+          "most_pull": 38.60091078118434,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 6.193929359475305,
+          "cassette_total_pitch": 35.550000000000004,
+          "derailleur_range_of_motion": 45.44077320996436,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.667050787560914,
+            -0.42501979330429407,
+            -0.19810557657756078,
+            0.08059519928965742,
+            0.25460610870678124,
+            0.37356825217491263,
+            0.49184395170010475,
+            0.6670608755799634
+          ],
+          "diffs_minus_free_play": [
+            -0.3920507875609138,
+            -0.15001979330429394,
+            0.0,
+            0.0,
+            0.0,
+            0.0985682521749125,
+            0.21684395170010462,
+            0.3920608755799633
+          ],
+          "max_diff_minus_free_play": 0.3920608755799633,
+          "max_chain_angle": 0.7075276976881782,
+          "cable_pull_at_max_chain_angle": 34.79767051441508,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.7075094915468696,
+            -0.27072544831021106,
+            0.0,
+            0.0,
+            0.0,
+            0.17787571387328896,
+            0.3913177901096106,
+            0.7075276976881782
+          ]
+        },
+        "motionMultiplier": 1.0525354817943215,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
+        "confidence": 0.1951592719782631,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.6534724971344309,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 5.063946149981752,
+          "barrel_adjuster_values": [
+            0,
+            4.871403661492573,
+            5.058257654020402,
+            5.0637795350508705,
+            5.0639414059435754,
+            5.063946149981752
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 5.556485660540341,
+          "least_pull_too_low": false,
+          "most_pull": 38.79601861293251,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 5.993977214297658,
+          "cassette_total_pitch": 35.690000000000005,
+          "derailleur_range_of_motion": 45.44077320996436,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.6070987860047232,
+            -0.42032119621566366,
+            -0.2472639677923354,
+            -0.011104394928185712,
+            0.15151840313875198,
+            0.3002993532992022,
+            0.5596242391277428,
+            0.6071087304022882
+          ],
+          "diffs_minus_free_play": [
+            -0.3620987860047231,
+            -0.17532119621566356,
+            -0.0022639677923352863,
+            0.0,
+            0.0,
+            0.0552993532992021,
+            0.31462423912774273,
+            0.3621087304022881
+          ],
+          "max_diff_minus_free_play": 0.3621087304022881,
+          "max_chain_angle": 0.6534724971344309,
+          "cable_pull_at_max_chain_angle": 34.95005251705469,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.653454550392096,
+            -0.3163847449460843,
+            -0.004085536994150767,
+            0.0,
+            0.0,
+            0.0997927923080732,
+            0.5677775141318137,
+            0.6534724971344309
+          ]
+        },
+        "motionMultiplier": 1.055200128583674,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "moreShiftsThanCogs": false,
+    "maxToothAvailableAndCompatible": 44,
+    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndCompatibleWithGoatLink": 0,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
+    "chainWrap": 35,
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U6030-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10/11-speed drop-bar shifter has the same shift points as the flat-bar version"
+      },
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-10R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": [],
+    "reviewsSentiment": "none"
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano CUES 10-Speed shifter/Microshift Advent X 10-Speed derailleur/11-Speed cassette",
+    "partialName": "Shimano CUES 10-Speed shifter/Microshift Advent X 10-Speed derailleur",
+    "shifterPartialName": "Shimano CUES 10-Speed",
+    "derailleurPartialName": "Microshift Advent X 10-Speed",
+    "speeds": 11,
+    "accessibleSpeeds": 10,
+    "sameGroup": false,
+    "shifterPartNumber": "SL-U6000-10R",
+    "shifterName": "CUES",
+    "shifterBrand": "Shimano",
+    "derailleurPartNumber": "RD-M6205AM",
+    "derailleurName": "Advent X",
+    "derailleurBrand": "Microshift",
+    "cassettes": [
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
+        "confidence": 0.09524174069316291,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.0,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 4.128980203989931,
+          "barrel_adjuster_values": [
+            0,
+            3.9624443971444956,
+            4.128289134315161,
+            4.128985331599575,
+            4.128980165657927,
+            4.128980203989931
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 5.0120767711669165,
+          "least_pull_too_low": false,
+          "most_pull": 37.60668624403805,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 7.217256905524771,
+          "cassette_total_pitch": 37.5,
+          "derailleur_range_of_motion": 45.44077320996436,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.10035809403679963,
+            -0.03049543988825576,
+            0.0170575201889811,
+            0.10961165872170398,
+            0.09156682506278457,
+            0.012282698283200943,
+            -0.07400445381284015,
+            -0.10961157837060398
+          ],
+          "diffs_minus_free_play": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_diff_minus_free_play": 0.0,
+          "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 8.950646832324594,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "motionMultiplier": 0.9992425460072673,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "moreShiftsThanCogs": false,
+    "maxToothAvailableAndCompatible": 44,
+    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndCompatibleWithGoatLink": 0,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
+    "chainWrap": 35,
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U6030-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10/11-speed drop-bar shifter has the same shift points as the flat-bar version"
+      },
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-10R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": [],
+    "reviewsSentiment": "none"
+  },
+  {
     "brand": "Shimano",
     "name": "Shimano CUES 10-Speed group",
     "partialName": "Shimano CUES 10-Speed group",
@@ -3897,7 +4381,24 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 44,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U6030-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10/11-speed drop-bar shifter has the same shift points as the flat-bar version"
+      },
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-10R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -3995,7 +4496,24 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U6030-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10/11-speed drop-bar shifter has the same shift points as the flat-bar version"
+      },
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-10R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -4096,7 +4614,24 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U6030-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10/11-speed drop-bar shifter has the same shift points as the flat-bar version"
+      },
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-10R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -4194,7 +4729,24 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U6030-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10/11-speed drop-bar shifter has the same shift points as the flat-bar version"
+      },
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-10R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -4502,7 +5054,24 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U6030-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10/11-speed drop-bar shifter has the same shift points as the flat-bar version"
+      },
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-10R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -4600,7 +5169,24 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U6030-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10/11-speed drop-bar shifter has the same shift points as the flat-bar version"
+      },
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-10R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -4908,7 +5494,24 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U6030-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10/11-speed drop-bar shifter has the same shift points as the flat-bar version"
+      },
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-10R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -5006,7 +5609,24 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U6030-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10/11-speed drop-bar shifter has the same shift points as the flat-bar version"
+      },
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-10R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -5314,7 +5934,370 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U6030-R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10/11-speed drop-bar shifter has the same shift points as the flat-bar version"
+      },
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-10R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U6000-10R",
+        "note": "Presumably this 10-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": [],
+    "reviewsSentiment": "none"
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano CUES 9-Speed shifter/Microshift Advent X 10-Speed derailleur/10-Speed cassette",
+    "partialName": "Shimano CUES 9-Speed shifter/Microshift Advent X 10-Speed derailleur",
+    "shifterPartialName": "Shimano CUES 9-Speed",
+    "derailleurPartialName": "Microshift Advent X 10-Speed",
+    "speeds": 10,
+    "accessibleSpeeds": 9,
+    "sameGroup": false,
+    "shifterPartNumber": "SL-U4000",
+    "shifterName": "CUES",
+    "shifterBrand": "Shimano",
+    "derailleurPartNumber": "RD-M6205AM",
+    "derailleurName": "Advent X",
+    "derailleurBrand": "Microshift",
+    "cassettes": [
+      {
+        "cassettePartNumber": "generic-10-speed",
+        "cassetteName": "Generic 10-Speed",
+        "cassetteBrand": "Generic",
+        "confidence": 0.14161266247627283,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.67937879315113,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 4.877380024814596,
+          "barrel_adjuster_values": [
+            0,
+            4.712550647583689,
+            4.873615660690205,
+            4.877295209561503,
+            4.877378155577103,
+            4.877380024814596
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 5.603943926850434,
+          "least_pull_too_low": false,
+          "most_pull": 34.81252454012413,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 10.128332010766314,
+          "cassette_total_pitch": 35.550000000000004,
+          "derailleur_range_of_motion": 45.44077320996436,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.651459608597083,
+            -0.3627764052702105,
+            -0.12487854170422708,
+            0.12672525129235268,
+            0.31719278005770946,
+            0.4924954900152727,
+            0.6514635268709412
+          ],
+          "diffs_minus_free_play": [
+            -0.37645960859708283,
+            -0.08777640527021036,
+            0.0,
+            0.0,
+            0.04219278005770932,
+            0.21749549001527257,
+            0.3764635268709411
+          ],
+          "max_diff_minus_free_play": 0.3764635268709411,
+          "max_chain_angle": 0.67937879315113,
+          "cable_pull_at_max_chain_angle": 31.080294822243772,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.6793717217704068,
+            -0.15840075493804176,
+            0.0,
+            0.0,
+            0.07614075385100674,
+            0.39249357810777497,
+            0.67937879315113
+          ]
+        },
+        "motionMultiplier": 1.058491785590464,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
+      },
+      {
+        "cassettePartNumber": "CS-HG-500-10",
+        "cassetteName": "Shimano 10-Speed",
+        "cassetteBrand": "Shimano",
+        "confidence": 0.10701723210618908,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 34,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.7360573429127727,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 5.092039382907564,
+          "barrel_adjuster_values": [
+            0,
+            4.9224554491762005,
+            5.088296973334734,
+            5.091957932223762,
+            5.0920376476695495,
+            5.092039382907564
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 5.605447422195206,
+          "least_pull_too_low": false,
+          "most_pull": 35.0684937027073,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 9.859737580573452,
+          "cassette_total_pitch": 35.690000000000005,
+          "derailleur_range_of_motion": 45.44077320996436,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.652865459292368,
+            -0.4214957794039762,
+            -0.23903440623136873,
+            -0.031049958231481156,
+            0.1474609731978731,
+            0.35248667703710623,
+            0.6528690966780815
+          ],
+          "diffs_minus_free_play": [
+            -0.40786545929236784,
+            -0.1764957794039761,
+            0.0,
+            0.0,
+            0.0,
+            0.10748667703710613,
+            0.40786909667808136
+          ],
+          "max_diff_minus_free_play": 0.40786909667808136,
+          "max_chain_angle": 0.7360573429127727,
+          "cable_pull_at_max_chain_angle": 31.294954314336216,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.7360507783758227,
+            -0.3185044202945916,
+            0.0,
+            0.0,
+            0.0,
+            0.19396991218828458,
+            0.7360573429127727
+          ]
+        },
+        "motionMultiplier": 1.0611715116299336,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "moreShiftsThanCogs": false,
+    "maxToothAvailableAndCompatible": 44,
+    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndCompatibleWithGoatLink": 0,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
+    "chainWrap": 35,
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-9R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U4000",
+        "note": "Presumably this 9-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": [],
+    "reviewsSentiment": "none"
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano CUES 9-Speed shifter/Microshift Advent X 10-Speed derailleur/11-Speed cassette",
+    "partialName": "Shimano CUES 9-Speed shifter/Microshift Advent X 10-Speed derailleur",
+    "shifterPartialName": "Shimano CUES 9-Speed",
+    "derailleurPartialName": "Microshift Advent X 10-Speed",
+    "speeds": 11,
+    "accessibleSpeeds": 9,
+    "sameGroup": false,
+    "shifterPartNumber": "SL-U4000",
+    "shifterName": "CUES",
+    "shifterBrand": "Shimano",
+    "derailleurPartNumber": "RD-M6205AM",
+    "derailleurName": "Advent X",
+    "derailleurBrand": "Microshift",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
+        "confidence": 0.07270666376377943,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.0,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 4.0531668342593985,
+          "barrel_adjuster_values": [
+            0,
+            3.8807207526581107,
+            4.05033330981871,
+            4.05320550163173,
+            4.05316629913502,
+            4.0531668342593985
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 4.9839732719166845,
+          "least_pull_too_low": false,
+          "most_pull": 33.7590864161961,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 11.237238344770383,
+          "cassette_total_pitch": 37.2,
+          "derailleur_range_of_motion": 45.44077320996436,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.0743068309390722,
+            0.013442482098550812,
+            0.04318404794388542,
+            0.07963126084648309,
+            0.04856158747108452,
+            -0.004122914763009078,
+            -0.07963013912499406
+          ],
+          "diffs_minus_free_play": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_diff_minus_free_play": 0.0,
+          "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 8.893166299135022,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "motionMultiplier": 0.9968580866826648,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
+        "confidence": 0.1710411747234062,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.0,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 4.129575691802701,
+          "barrel_adjuster_values": [
+            0,
+            3.970945559729689,
+            4.124730309204357,
+            4.12943053262581,
+            4.129571468340582,
+            4.129575691802701
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 5.031986234176997,
+          "least_pull_too_low": false,
+          "most_pull": 33.86482551176824,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 11.12568934034028,
+          "cassette_total_pitch": 37.5,
+          "derailleur_range_of_motion": 45.44077320996436,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.11882013684577686,
+            -0.003831000545019947,
+            0.05382093342772265,
+            0.1188289900178745,
+            0.11691140243699749,
+            0.09397697506339142,
+            0.0488208564448982
+          ],
+          "diffs_minus_free_play": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_diff_minus_free_play": 0.0,
+          "max_chain_angle": 0.0,
+          "cable_pull_at_max_chain_angle": 8.969571468340582,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "motionMultiplier": 1.0048972648010734,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "moreShiftsThanCogs": false,
+    "maxToothAvailableAndCompatible": 44,
+    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndCompatibleWithGoatLink": 0,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
+    "chainWrap": 35,
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-9R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U4000",
+        "note": "Presumably this 9-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -5478,7 +6461,16 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 44,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-9R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U4000",
+        "note": "Presumably this 9-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -5576,7 +6568,16 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 44,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-9R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U4000",
+        "note": "Presumably this 9-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -5674,7 +6675,16 @@
     "maxToothAvailableAndSupported": 36,
     "supported": true,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-9R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U4000",
+        "note": "Presumably this 9-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -5904,7 +6914,16 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-9R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U4000",
+        "note": "Presumably this 9-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -6002,7 +7021,16 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-9R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U4000",
+        "note": "Presumably this 9-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -6298,7 +7326,16 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-9R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U4000",
+        "note": "Presumably this 9-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -6396,7 +7433,16 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-9R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U4000",
+        "note": "Presumably this 9-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -6692,7 +7738,16 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-9R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U4000",
+        "note": "Presumably this 9-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -6790,7 +7845,16 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
-    "equivalentShifters": [],
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-9R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U4000",
+        "note": "Presumably this 9-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
     "equivalentDerailleurs": [],
     "reviews": [],
     "reviewsSentiment": "none"
@@ -7086,6 +8150,185 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 41,
+    "equivalentShifters": [
+      {
+        "name": "CUES",
+        "brand": "Shimano",
+        "partNumber": "ST-U3030-9R",
+        "type": "drop-bar",
+        "equivalentPartNumber": "SL-U4000",
+        "note": "Presumably this 9-speed drop-bar shifter has the same shift points as the flat-bar version"
+      }
+    ],
+    "equivalentDerailleurs": [],
+    "reviews": [],
+    "reviewsSentiment": "none"
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano Deore 10-Speed shifter/Microshift Advent X 10-Speed derailleur/11-Speed cassette",
+    "partialName": "Shimano Deore 10-Speed shifter/Microshift Advent X 10-Speed derailleur",
+    "shifterPartialName": "Shimano Deore 10-Speed",
+    "derailleurPartialName": "Microshift Advent X 10-Speed",
+    "speeds": 11,
+    "accessibleSpeeds": 10,
+    "sameGroup": false,
+    "shifterPartNumber": "SL-M4100",
+    "shifterName": "Deore",
+    "shifterBrand": "Shimano",
+    "derailleurPartNumber": "RD-M6205AM",
+    "derailleurName": "Advent X",
+    "derailleurBrand": "Microshift",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
+        "confidence": 0.5548907782253503,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.3851833483680074,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 4.68699030341769,
+          "barrel_adjuster_values": [
+            0,
+            4.519253317594723,
+            4.683330763413939,
+            4.686912071742983,
+            4.686988666008594,
+            4.68699030341769
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 5.429386657945063,
+          "least_pull_too_low": false,
+          "most_pull": 37.24061851787855,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 7.595819252197806,
+          "cassette_total_pitch": 37.2,
+          "derailleur_range_of_motion": 45.44077320996436,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.4884412453828908,
+            -0.23276530969696196,
+            0.01887623403113281,
+            0.3428858843861491,
+            0.46328383422375197,
+            0.4884446777007625,
+            0.30545359810109574,
+            -0.0010492316975643234
+          ],
+          "diffs_minus_free_play": [
+            -0.21344124538289067,
+            0.0,
+            0.0,
+            0.06788588438614895,
+            0.18828383422375183,
+            0.21344467770076236,
+            0.030453598101095603,
+            0.0
+          ],
+          "max_diff_minus_free_play": 0.21344467770076236,
+          "max_chain_angle": 0.3851833483680074,
+          "cable_pull_at_max_chain_angle": 26.25046088823082,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.38517715429644944,
+            0.0,
+            0.0,
+            0.12250638196738384,
+            0.33977739472565344,
+            0.3851833483680074,
+            0.054956312117395455,
+            0.0
+          ]
+        },
+        "motionMultiplier": 1.0195938851509245,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
+        "confidence": 0.8768732033668425,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.5120415737969589,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 4.789332786399621,
+          "barrel_adjuster_values": [
+            0,
+            4.619435154718421,
+            4.785716094549499,
+            4.7892573864394095,
+            4.789331246597717,
+            4.789332786399621
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 5.504710647156256,
+          "least_pull_too_low": false,
+          "most_pull": 37.37396209290094,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 7.457817519895727,
+          "cassette_total_pitch": 37.5,
+          "derailleur_range_of_motion": 45.44077320996436,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.5587367563515642,
+            -0.27649783341083634,
+            0.0025475483191819137,
+            0.35475817855591885,
+            0.5039984899123269,
+            0.5587399840663778,
+            0.4061390910586624,
+            0.13094903600035934
+          ],
+          "diffs_minus_free_play": [
+            -0.28373675635156403,
+            -0.0014978334108362024,
+            0.0,
+            0.07975817855591871,
+            0.22899848991232674,
+            0.2837399840663777,
+            0.13113909105866228,
+            0.0
+          ],
+          "max_diff_minus_free_play": 0.2837399840663777,
+          "max_chain_angle": 0.5120415737969589,
+          "cable_pull_at_max_chain_angle": 26.352803468819943,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.5120357488576992,
+            -0.002702977413745886,
+            0.0,
+            0.14393108091982867,
+            0.4132523070067426,
+            0.5120415737969589,
+            0.23665315939848605,
+            0.0
+          ]
+        },
+        "motionMultiplier": 1.0278164164827868,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": true,
+    "moreShiftsThanCogs": false,
+    "maxToothAvailableAndCompatible": 44,
+    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndCompatibleWithGoatLink": 0,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
+    "chainWrap": 35,
     "equivalentShifters": [],
     "equivalentDerailleurs": [],
     "reviews": [],
@@ -8780,6 +10023,182 @@
     "maxToothAvailableAndSupported": 0,
     "supported": false,
     "chainWrap": 40,
+    "equivalentShifters": [],
+    "equivalentDerailleurs": [],
+    "reviews": [],
+    "reviewsSentiment": "none"
+  },
+  {
+    "brand": "Mixed",
+    "name": "Shimano Deore 11-Speed shifter/Microshift Advent X 10-Speed derailleur/11-Speed cassette",
+    "partialName": "Shimano Deore 11-Speed shifter/Microshift Advent X 10-Speed derailleur",
+    "shifterPartialName": "Shimano Deore 11-Speed",
+    "derailleurPartialName": "Microshift Advent X 10-Speed",
+    "speeds": 11,
+    "accessibleSpeeds": 11,
+    "sameGroup": false,
+    "shifterPartNumber": "SL-M5100",
+    "shifterName": "Deore",
+    "shifterBrand": "Shimano",
+    "derailleurPartNumber": "RD-M6205AM",
+    "derailleurName": "Advent X",
+    "derailleurBrand": "Microshift",
+    "cassettes": [
+      {
+        "cassettePartNumber": "sram-11-speed",
+        "cassetteName": "SRAM 11-speed",
+        "cassetteBrand": "SRAM",
+        "confidence": 0.46605309713985527,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.6282232320831377,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 5.279375467924239,
+          "barrel_adjuster_values": [
+            0,
+            5.044886094123237,
+            5.270826525641516,
+            5.279066197926338,
+            5.2793646595126615,
+            5.279375467924239
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 5.573602732029423,
+          "least_pull_too_low": false,
+          "most_pull": 40.263369724246175,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 4.499986410414884,
+          "cassette_total_pitch": 37.2,
+          "derailleur_range_of_motion": 45.44077320996436,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.6230952700530814,
+            -0.34329203510636574,
+            -0.12502083904938743,
+            0.0019858045159821813,
+            0.1312762494438715,
+            0.23964930198320644,
+            0.33644709767024494,
+            0.4407415417917022,
+            0.6231179265195266
+          ],
+          "diffs_minus_free_play": [
+            -0.3480952700530813,
+            -0.06829203510636561,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.06144709767024481,
+            0.16574154179170209,
+            0.34811792651952644
+          ],
+          "max_diff_minus_free_play": 0.34811792651952644,
+          "max_chain_angle": 0.6282232320831377,
+          "cable_pull_at_max_chain_angle": 36.63894799284599,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.6281823439591727,
+            -0.1232393197823852,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.11088697819326825,
+            0.29909713275730293,
+            0.6282232320831377
+          ]
+        },
+        "motionMultiplier": 1.0445035934850109,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
+      },
+      {
+        "cassettePartNumber": "shimano-11-speed",
+        "cassetteName": "Shimano 11-speed",
+        "cassetteBrand": "Shimano",
+        "confidence": 0.23996707064903688,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 44,
+        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.8371336858208513,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 5.427846758520249,
+          "barrel_adjuster_values": [
+            0,
+            5.188003004299947,
+            5.419175223099814,
+            5.427535629176746,
+            5.427835971467435,
+            5.427846758520249
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 5.697345918570595,
+          "least_pull_too_low": false,
+          "most_pull": 40.44557005610725,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 4.3157429456457805,
+          "cassette_total_pitch": 37.5,
+          "derailleur_range_of_motion": 45.44077320996436,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.7388518500559655,
+            -0.43394702604580004,
+            -0.18942821697989842,
+            -0.03509854886999619,
+            0.12262542678183763,
+            0.2604968227766449,
+            0.3878595223245398,
+            0.5237991400165072,
+            0.7388744617504202
+          ],
+          "diffs_minus_free_play": [
+            -0.4638518500559654,
+            -0.1589470260457999,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.11285952232453966,
+            0.24879914001650705,
+            0.46387446175042
+          ],
+          "max_diff_minus_free_play": 0.46387446175042,
+          "max_chain_angle": 0.8371336858208513,
+          "cable_pull_at_max_chain_angle": 36.78741930480077,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.8370928765941155,
+            -0.2868356472146414,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.20366576140700748,
+            0.4489854036267462,
+            0.8371336858208513
+          ]
+        },
+        "motionMultiplier": 1.0529270095615026,
+        "smallest_cassette_too_big_official_max_tooth": false,
+        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_with_goat_link": null
+      }
+    ],
+    "shifterType": "flat-bar",
+    "noMatchingFrontShifter": false,
+    "moreCogsThanShifts": false,
+    "moreShiftsThanCogs": false,
+    "maxToothAvailableAndCompatible": 44,
+    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndCompatibleWithGoatLink": 0,
+    "maxToothAvailableAndSupported": 0,
+    "supported": false,
+    "chainWrap": 35,
     "equivalentShifters": [],
     "equivalentDerailleurs": [],
     "reviews": [],
@@ -10842,7 +12261,7 @@
         "confidence": 0.17182268667535233,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 42,
         "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxChainAngle": 0.5965471303740096,
         "maxAngleAnalysis": {
@@ -10898,7 +12317,7 @@
         },
         "motionMultiplier": 1.0565387997769635,
         "smallest_cassette_too_big_official_max_tooth": false,
-        "smallest_cassette_too_big_unofficial_max_tooth": null,
+        "smallest_cassette_too_big_unofficial_max_tooth": false,
         "smallest_cassette_too_big_with_goat_link": null
       }
     ],
@@ -10907,7 +12326,7 @@
     "moreCogsThanShifts": false,
     "moreShiftsThanCogs": true,
     "maxToothAvailableAndCompatible": 36,
-    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndUnofficiallyCompatible": 42,
     "maxToothAvailableAndCompatibleWithGoatLink": 0,
     "maxToothAvailableAndSupported": 0,
     "supported": false,
@@ -10940,7 +12359,7 @@
         "confidence": 0.9877378406923041,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 42,
         "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxChainAngle": 0.0,
         "maxAngleAnalysis": {
@@ -11003,13 +12422,82 @@
         "smallest_cassette_too_big_with_goat_link": null
       },
       {
+        "cassettePartNumber": "CS-LG300-10",
+        "cassetteName": "LinkGlide 10-Speed",
+        "cassetteBrand": "Shimano",
+        "confidence": 0.17182268667535233,
+        "supported": false,
+        "maxToothAvailableAndCompatible": 36,
+        "maxToothAvailableAndUnofficiallyCompatible": 42,
+        "maxToothAvailableAndCompatibleWithGoatLink": 0,
+        "maxChainAngle": 0.8456678852580707,
+        "maxAngleAnalysis": {
+          "barrel_adjuster": 4.0010585835025445,
+          "barrel_adjuster_values": [
+            0,
+            3.806325737892702,
+            3.9927395132179804,
+            4.000704230111972,
+            4.001044082713217,
+            4.0010585835025445
+          ],
+          "barrel_adjuster_too_low": false,
+          "least_pull": 4.135009586159903,
+          "least_pull_too_low": false,
+          "most_pull": 28.82207398907357,
+          "most_pull_too_high": false,
+          "most_pull_jockey_position_diff": 5.66380226038131,
+          "cassette_total_pitch": 36.55,
+          "derailleur_range_of_motion": 46.00980681517391,
+          "derailleur_can_clear_cassette": true,
+          "diffs": [
+            -0.5935611987329814,
+            -0.49791754538598454,
+            -0.27014939231450796,
+            -0.15574092945766083,
+            -0.04695440426443298,
+            0.11297218939914444,
+            0.2605153004178149,
+            0.5936031104852901
+          ],
+          "diffs_minus_free_play": [
+            -0.4685611987329813,
+            -0.37291754538598443,
+            -0.14514939231450785,
+            -0.030740929457660715,
+            0.0,
+            0.0,
+            0.1355153004178148,
+            0.46860311048529
+          ],
+          "max_diff_minus_free_play": 0.46860311048529,
+          "max_chain_angle": 0.8456678852580707,
+          "cable_pull_at_max_chain_angle": 25.740210749379887,
+          "jockey_to_cog_links": 2.5,
+          "chain_angles": [
+            -0.8455922434285722,
+            -0.6729792995245548,
+            -0.26193626921326696,
+            -0.055474828076374556,
+            0.0,
+            0.0,
+            0.24455049916316457,
+            0.8456678852580707
+          ]
+        },
+        "motionMultiplier": 1.0565387997769635,
+        "smallest_cassette_too_big_official_max_tooth": true,
+        "smallest_cassette_too_big_unofficial_max_tooth": false,
+        "smallest_cassette_too_big_with_goat_link": null
+      },
+      {
         "cassettePartNumber": "CS-HG-500-10",
         "cassetteName": "Shimano 10-Speed",
         "cassetteBrand": "Shimano",
         "confidence": 0.9022615093501374,
         "supported": true,
         "maxToothAvailableAndCompatible": 34,
-        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 34,
         "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxChainAngle": 0.0,
         "maxAngleAnalysis": {
@@ -11078,7 +12566,7 @@
         "confidence": 0.17182268667535233,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 36,
         "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxChainAngle": 0.8188426641102685,
         "maxAngleAnalysis": {
@@ -11146,7 +12634,7 @@
     "moreCogsThanShifts": false,
     "moreShiftsThanCogs": false,
     "maxToothAvailableAndCompatible": 36,
-    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndUnofficiallyCompatible": 42,
     "maxToothAvailableAndCompatibleWithGoatLink": 0,
     "maxToothAvailableAndSupported": 34,
     "supported": true,
@@ -11626,7 +13114,7 @@
         "confidence": 0.9791814094402334,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 42,
         "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxChainAngle": 0.08423296820400007,
         "maxAngleAnalysis": {
@@ -11698,7 +13186,7 @@
         "confidence": 0.6788966705920623,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 42,
         "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxChainAngle": 0.3012910167539027,
         "maxAngleAnalysis": {
@@ -11769,7 +13257,7 @@
     "moreCogsThanShifts": false,
     "moreShiftsThanCogs": false,
     "maxToothAvailableAndCompatible": 36,
-    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndUnofficiallyCompatible": 42,
     "maxToothAvailableAndCompatibleWithGoatLink": 0,
     "maxToothAvailableAndSupported": 0,
     "supported": false,
@@ -12932,7 +14420,7 @@
         "confidence": 0.9535816786257079,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 42,
         "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxChainAngle": 0.12220425283268821,
         "maxAngleAnalysis": {
@@ -13004,7 +14492,7 @@
         "confidence": 0.6178118913146269,
         "supported": false,
         "maxToothAvailableAndCompatible": 36,
-        "maxToothAvailableAndUnofficiallyCompatible": 0,
+        "maxToothAvailableAndUnofficiallyCompatible": 42,
         "maxToothAvailableAndCompatibleWithGoatLink": 0,
         "maxChainAngle": 0.3392616886164257,
         "maxAngleAnalysis": {
@@ -13075,7 +14563,7 @@
     "moreCogsThanShifts": false,
     "moreShiftsThanCogs": false,
     "maxToothAvailableAndCompatible": 36,
-    "maxToothAvailableAndUnofficiallyCompatible": 0,
+    "maxToothAvailableAndUnofficiallyCompatible": 42,
     "maxToothAvailableAndCompatibleWithGoatLink": 0,
     "maxToothAvailableAndSupported": 0,
     "supported": false,
