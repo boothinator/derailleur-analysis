@@ -317,6 +317,76 @@ def analyze_yaw(input_file):
   
   return info
 
+def get_yaw_offset_curve(yo_curve):
+  chain_max_free_yaw = 1.3
+  link_length = 12.7
+
+  def calc_yaw_offset_curve(x):
+    y = yo_curve(x)
+
+    if y < -chain_max_free_yaw:
+      return math.sin((y + chain_max_free_yaw)/180*math.pi) * link_length
+    elif y > chain_max_free_yaw:
+      return math.sin((y - chain_max_free_yaw)/180*math.pi) * link_length
+    else:
+      return 0
+  
+  def yaw_offset_curve(x):
+    if isinstance(x, Iterable):
+      return [calc_yaw_offset_curve(_x) for _x in x]
+    else:
+      return calc_yaw_offset_curve(x)
+
+  return yaw_offset_curve
+
+def process_der_yaw(dir):
+  
+  coefs = []
+  number_of_measurements = 0
+  max_pull = 40 # FIXME: use real value
+
+  if os.path.exists(f"derailleurs/{dir}/yaw"):
+    for datafile in os.listdir(f"derailleurs/{dir}/yaw"):
+      if datafile.endswith('.csv'):
+        print(f"Processing {datafile}")
+
+        result = analyze_yaw(f"derailleurs/{dir}/yaw/{datafile}")
+        
+        coefs.append(result["coef"])
+        number_of_measurements = number_of_measurements + result["number_of_measurements"]
+
+  coefs = np.array(coefs)
+  
+  avg_coefs = np.mean(coefs.T, 1)
+
+  curve = np.polynomial.polynomial.Polynomial(avg_coefs)
+
+  x_new = np.linspace(0, max_pull, 50)
+  y_new = curve(x_new)
+  
+  plt.clf()
+  plt.plot(x_new, y_new)
+  plt.xlim([0, max_pull])
+  plt.ylim([curve(0) - 1, curve(max_pull) + 1])
+  plt.savefig(f"derailleurs/{dir}/yaw_curve.png")
+  plt.close()
+  
+  pr_curve = get_yaw_offset_curve(curve)
+  
+  plt.clf()
+  plt.plot(x_new, [pr_curve(x) for x in x_new])
+  plt.xlim([0, max_pull])
+  plt.ylim([pr_curve(0) - 0.2, pr_curve(max_pull) + 0.2])
+  plt.savefig(f"derailleurs/{dir}/effective_jockey_offset_from_yaw_curve.png")
+  plt.close()
+
+  # TODO: how do I adjust pull ratio by the amount of yaw? I guess I need to figure out the lateral
+  # motion of the chain from the yaw,
+
+  return {
+    "yawCoefficients": [*avg_coefs],
+    "yawNumberOfMeasurements": number_of_measurements
+  }
 
 def process_der(dir):
   
@@ -426,19 +496,11 @@ def process_der(dir):
   plt.close()
 
   # Yaw
-  if os.path.exists(f"derailleurs/{dir}/yaw"):
-    for datafile in os.listdir(f"derailleurs/{dir}/yaw"):
-      if datafile.endswith('.csv'):
-        print(f"Processing {datafile}")
-
-        analyze_yaw(f"derailleurs/{dir}/yaw/{datafile}")
+  yaw_info = process_der_yaw(dir)
 
   # Info Output
   info_out = {**info,
-              "pullRatio": pr_calc.pull_ratio,
-              "coefficients": [c for c in avg_coefs],
-              "physicalLowLimit": curve(0),
-              "physicalHighLimit": curve(max_pull),
+              **yaw_info,
               "numberOfMeasurements": number_of_measurements,
               "Pull Ratio Averaged Across Pulling Runs": f"{round(pulling_pull_ratio_avg, 3):.3f} +/- {round(2*pulling_pull_ratio_stdev, 3):.3f}",
               "Pull Ratio Averaged Across Relaxing Runs": f"{round(relaxing_pull_ratio_avg, 3):.3f} +/- {round(2*relaxing_pull_ratio_stdev, 3):.3f}",
