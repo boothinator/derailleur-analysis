@@ -113,20 +113,20 @@
   },
   "dynasys-like": {
     "averageCoefficients": [
-      9.01065743104609,
-      0.9406926966691858,
-      0.006886490611319207,
-      -0.00010128792885752152
+      9.067486140081337,
+      0.9393294524128144,
+      0.007017453031604037,
+      -0.00010319317744834066
     ],
-    "averagePullRatio": 1.0770514823951027,
-    "pullRatioStdev": 0.023211101479560764,
-    "Pull Ratio 95% Confidence Interval": "1.031 to 1.123",
+    "averagePullRatio": 1.0782180610924417,
+    "pullRatioStdev": 0.02145474378280447,
+    "Pull Ratio 95% Confidence Interval": "1.035 to 1.121",
     "derailleurs": [
       {
         "brand": "Microshift",
         "name": "Advent X",
         "partNumber": "RD-M6205AM",
-        "pullRatio": 1.0399281248158987
+        "pullRatio": 1.0480941756972713
       },
       {
         "brand": "Shimano",
