@@ -59,27 +59,30 @@
     "maxToothUnofficial": null,
     "maxToothWithGoatLink": null,
     "chainWrap": 35,
-    "linksFromJockeyToSmallestCog": 4,
-    "pullRatio": 1.0399281248158987,
+    "pullRatio": 1.0480941756972713,
     "coefficients": [
-      10.238294310684283,
-      0.8611446750759248,
-      0.007409978354003529,
-      -9.155182195659187e-05
+      10.63609527393101,
+      0.8516019652813257,
+      0.008326715295997324,
+      -0.00010488856209232585
     ],
-    "physicalLowLimit": 10.238294310684283,
-    "physicalHighLimit": 56.74890836538695,
-    "numberOfMeasurements": 292,
-    "Pull Ratio Averaged Across Pulling Runs": "1.041 +/- 0.000",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.038 +/- 0.000",
-    "Pull Ratio Averaged Across All Runs": "1.040 +/- 0.003",
-    "Pull Ratio 95% Confidence Interval": "1.037 to 1.043",
+    "physicalLowLimit": 10.63609527393101,
+    "physicalHighLimit": 56.076868483895375,
+    "numberOfMeasurements": 577,
+    "Pull Ratio Averaged Across Pulling Runs": "1.048 +/- 0.011",
+    "Pull Ratio Averaged Across Relaxing Runs": "1.047 +/- 0.014",
+    "Pull Ratio Averaged Across All Runs": "1.048 +/- 0.013",
+    "Pull Ratio 95% Confidence Interval": "1.035 to 1.061",
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm",
     "meas_method_percent_diffs": [
       -0.08646779074792921,
-      0.1503113592441492
+      0.1503113592441492,
+      -0.464396284829739,
+      -0.17714791851195372,
+      0.3050773589017227,
+      -0.1530723813689206
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: 0.03192178424811 +/- 0.2367791499920784"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.07094927621877843 +/- 0.4922167734024139"
   },
   {
     "brand": "Shimano",
@@ -358,6 +361,7 @@
     "parallelogramStyle": "slant",
     "chain": "10-speed",
     "maxTooth": 36,
+    "maxToothUnofficial": 42,
     "chainWrap": 41,
     "dataVideo": "https://youtu.be/DmpSMv3bTr8",
     "analysisVideo": "https://youtu.be/4Bh7QUWcSew",
