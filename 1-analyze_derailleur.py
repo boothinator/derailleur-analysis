@@ -317,12 +317,12 @@ def analyze_yaw(input_file):
   
   return info
 
-def get_yaw_offset_curve(yo_curve):
+def get_jockey_offset_curve(yaw_angle_curve):
   chain_max_free_yaw = 1.3
   link_length = 12.7
 
   def calc_yaw_offset_curve(x):
-    y = yo_curve(x)
+    y = yaw_angle_curve(x)
 
     if y < -chain_max_free_yaw:
       return math.sin((y + chain_max_free_yaw)/180*math.pi) * link_length
@@ -338,6 +338,8 @@ def get_yaw_offset_curve(yo_curve):
       return calc_yaw_offset_curve(x)
 
   return yaw_offset_curve
+
+# TODO: create get_jockey_offset_speed_curve(), differentiating using chain rule
 
 def process_der_yaw(dir):
   
@@ -371,12 +373,12 @@ def process_der_yaw(dir):
   plt.savefig(f"derailleurs/{dir}/yaw_curve.png")
   plt.close()
   
-  pr_curve = get_yaw_offset_curve(curve)
+  jockey_offset_curve = get_jockey_offset_curve(curve)
   
   plt.clf()
-  plt.plot(x_new, [pr_curve(x) for x in x_new])
+  plt.plot(x_new, [jockey_offset_curve(x) for x in x_new])
   plt.xlim([0, max_pull])
-  plt.ylim([pr_curve(0) - 0.2, pr_curve(max_pull) + 0.2])
+  plt.ylim([jockey_offset_curve(0) - 0.2, jockey_offset_curve(max_pull) + 0.2])
   plt.savefig(f"derailleurs/{dir}/effective_jockey_offset_from_yaw_curve.png")
   plt.close()
 
