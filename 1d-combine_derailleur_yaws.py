@@ -1,58 +1,12 @@
-from typing import Iterable
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os
 import json
-import math
+
+from util import get_jockey_offset_curve, get_jockey_offset_rate_curve
 # TODO:
 # Calculate yaw stats, combined yaw curve, pull ratio from yaw, and pull and pull ratio curve for yaw and put in yaw folder
-
-chain_max_free_yaw = 1.3
-link_length = 12.7
-
-def get_jockey_offset_curve(yaw_angle_curve):
-
-  def calc_yaw_offset_curve(x):
-    y = yaw_angle_curve(x)
-
-    if y < -chain_max_free_yaw:
-      return math.sin((y + chain_max_free_yaw)/180*math.pi) * link_length
-    elif y > chain_max_free_yaw:
-      return math.sin((y - chain_max_free_yaw)/180*math.pi) * link_length
-    else:
-      return 0
-  
-  def yaw_offset_curve(x):
-    if isinstance(x, Iterable):
-      return [calc_yaw_offset_curve(_x) for _x in x]
-    else:
-      return calc_yaw_offset_curve(x)
-
-  return yaw_offset_curve
-
-# TODO: create get_jockey_offset_speed_curve(), differentiating using chain rule
-
-def get_jockey_offset_rate_curve(yaw_angle_curve):
-  
-  deriv = yaw_angle_curve.deriv()
-  
-  def calc_yaw_offset_rate_curve(x):
-    y = yaw_angle_curve(x)
-
-    if y < -chain_max_free_yaw:
-      return math.cos((y + chain_max_free_yaw)/180*math.pi) * link_length * deriv(x) / 180 * math.pi
-    elif y > chain_max_free_yaw:
-      return math.cos((y - chain_max_free_yaw)/180*math.pi) * link_length * deriv(x) / 180 * math.pi
-    else:
-      return 0
-  
-  def yaw_offset_rate_curve(x):
-    if isinstance(x, Iterable):
-      return [calc_yaw_offset_rate_curve(_x) for _x in x]
-    else:
-      return calc_yaw_offset_rate_curve(x)
-
-  return yaw_offset_rate_curve
 
 def process_der_yaw(dir):
   

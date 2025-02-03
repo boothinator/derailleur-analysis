@@ -1,5 +1,7 @@
 import numpy as np
 from pydantic import BaseModel
+from typing import Iterable
+import math
 
 # Could calculate using dropout thickness (7 to 8 mm for shimano?) and then use the distance from 
 # end of cassette to dropout to figure out the first cog position, maybe
@@ -7,6 +9,8 @@ smallest_cog_position = 15 # TODO: put this on the cassette, or figure out from 
 jockey_to_cog_links = 2.5
 jockey_to_cog_distance = jockey_to_cog_links * 25.4 / 2 
 max_cable_pull = 50 # Assume that no shifter will be able to pull 50 mm of cable
+chain_max_free_yaw = 1.3
+link_length = 12.7
 
 def calculate_max_chain_angle(shifter, derailleur, cassette):
   derailleur_curve = np.polynomial.Polynomial(coef=derailleur["coefficients"])
@@ -200,3 +204,46 @@ def calc_pull_ratio(info, coefficients, max_pull):
     pull_ratio=float(pull_ratio),
     coefficients=[float(c) for c in curve.convert().coef]
     )
+
+def get_jockey_offset_curve(yaw_angle_curve):
+
+  def calc_yaw_offset_curve(x):
+    y = yaw_angle_curve(x)
+
+    if y < -chain_max_free_yaw:
+      return math.sin((y + chain_max_free_yaw)/180*math.pi) * link_length
+    elif y > chain_max_free_yaw:
+      return math.sin((y - chain_max_free_yaw)/180*math.pi) * link_length
+    else:
+      return 0
+  
+  def yaw_offset_curve(x):
+    if isinstance(x, Iterable):
+      return [calc_yaw_offset_curve(_x) for _x in x]
+    else:
+      return calc_yaw_offset_curve(x)
+
+  return yaw_offset_curve
+
+# Differentiate get_jockey_offset_curve() using chain rule
+def get_jockey_offset_rate_curve(yaw_angle_curve):
+  
+  deriv = yaw_angle_curve.deriv()
+  
+  def calc_yaw_offset_rate_curve(x):
+    y = yaw_angle_curve(x)
+
+    if y < -chain_max_free_yaw:
+      return math.cos((y + chain_max_free_yaw)/180*math.pi) * link_length * deriv(x) / 180 * math.pi
+    elif y > chain_max_free_yaw:
+      return math.cos((y - chain_max_free_yaw)/180*math.pi) * link_length * deriv(x) / 180 * math.pi
+    else:
+      return 0
+  
+  def yaw_offset_rate_curve(x):
+    if isinstance(x, Iterable):
+      return [calc_yaw_offset_rate_curve(_x) for _x in x]
+    else:
+      return calc_yaw_offset_rate_curve(x)
+
+  return yaw_offset_rate_curve
