@@ -126,7 +126,8 @@ def process_der(dir):
     "Base Pull Ratio Averaged Across All Runs": f"{round(pull_ratio_avg, 3):.3f} +/- {round(2*pull_ratio_stdev, 3):.3f}",
     "Base Pull Ratio 95% Confidence Interval": f"{round(pull_ratio_avg - 2 * pull_ratio_stdev, 3):.3f} to {round(pull_ratio_avg + 2 * pull_ratio_stdev, 3):.3f}",
     "meas_method_percent_diffs": meas_method_percent_diffs,
-    "Caliper vs Indicator percent difference": f"Caliper vs Indicator percent difference: {avg_meas_method_percent_diff} +/- {stdev_meas_method_percent_diff * 2}"
+    "Caliper vs Indicator percent difference": f"Caliper vs Indicator percent difference: {avg_meas_method_percent_diff} +/- {stdev_meas_method_percent_diff * 2}",
+    "pullRatioCalc": pr_calc.model_dump()
   }
   
   with open(f"derailleurs/{dir}/pullratio/base_pull_ratio_info.json", "w") as info_file:
