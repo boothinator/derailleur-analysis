@@ -5,6 +5,8 @@ import json
 import datetime
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+from util import get_jockey_offset_curve, get_jockey_offset_rate_curve
+
 # TODO:
 # Combine yaw pull ratio with regular pull ratio, and yaw pull ratio curve with base pull ratio curve to get overall pull ratio curve
 # Can I combine both curves into a single curve using just a 3rd order polynomial? Or would that kink from the yaw curve be too much to model well
@@ -12,8 +14,6 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 # Template environment
 environment = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
 template = environment.get_template("derailleur_analysis.htm")
-
-extrusion_thickness=19.93
 
 with open("overall_stats.json") as f:
   overall_stats = json.load(f)
@@ -28,11 +28,24 @@ def process_der(dir):
   
   with open(f"derailleurs/{dir}/yaw/yaw_info.json") as info_file:
     yaw_info = json.load(info_file)
+
+  # Get curves
+  pull_curve = np.polynomial.polynomial.Polynomial(base_pull_ratio_info["coefficients"])
+  yaw_angle_curve = np.polynomial.polynomial.Polynomial(yaw_info["yawCoefficients"])
+  jockey_offset_curve = get_jockey_offset_curve(yaw_angle_curve)
+
+  # Calc combined pull ratio
+  # FIXME: doesn't take into account how pull ratio affects position of cogs affected by yaw
+  total_pitch_inner_cogs = base_pull_ratio_info["pullRatioCalc"]["total_pitch_inner_cogs"]
+  second_biggest_cog_pull = base_pull_ratio_info["pullRatioCalc"]["second_biggest_cog_pull"]
+  second_smallest_cog_pull = base_pull_ratio_info["pullRatioCalc"]["second_smallest_cog_pull"]
+  jockey_adjustment_from_yaw = jockey_offset_curve(second_biggest_cog_pull) - jockey_offset_curve(second_smallest_cog_pull)
+  pull_ratio = (total_pitch_inner_cogs + jockey_adjustment_from_yaw)/(second_biggest_cog_pull - second_smallest_cog_pull)
   
   # Info Output
   info_out = {
     **info,
-    'pullRatio': base_pull_ratio_info['basePullRatio'], # For now
+    'pullRatio': pull_ratio,
     "Pull Ratio Averaged Across Pulling Runs": base_pull_ratio_info["Base Pull Ratio Averaged Across Pulling Runs"],
     "Pull Ratio Averaged Across Relaxing Runs": base_pull_ratio_info["Base Pull Ratio Averaged Across Relaxing Runs"],
     "Pull Ratio Averaged Across All Runs": base_pull_ratio_info["Base Pull Ratio Averaged Across All Runs"],
@@ -44,7 +57,40 @@ def process_der(dir):
   
   with open(f"derailleurs/{dir}/info_out.json", "w") as info_file:
     json.dump(info_out, info_file, indent=2)
+  
+  max_pull = info_out["maxPull"]
+  x_new = np.linspace(0, max_pull, 100)
 
+  # Combined pull curve
+
+  y_new = pull_curve(x_new) + jockey_offset_curve(x_new)
+  
+  plt.clf()
+  plt.plot(x_new, y_new)
+  plt.plot(x_new, [pull_curve(x) for x in x_new])
+  plt.plot(x_new, [yaw_angle_curve(x) for x in x_new])
+  plt.xlim([0, max_pull])
+  plt.ylim([y_new.min() - 0.2, y_new.max() + 0.2])
+  plt.savefig(f"derailleurs/{dir}/effective_pull_curve.png")
+  plt.close()
+
+  # Combined pull ratio curve
+
+  pull_ratio_curve = pull_curve.deriv()
+  jockey_offset_rate_curve = get_jockey_offset_rate_curve(yaw_angle_curve)
+
+  y_new = pull_ratio_curve(x_new) + jockey_offset_rate_curve(x_new)
+  
+  plt.clf()
+  plt.plot(x_new, y_new)
+  plt.plot(x_new, [jockey_offset_rate_curve(x) for x in x_new])
+  plt.plot(x_new, [pull_ratio_curve(x) for x in x_new])
+  plt.xlim([0, max_pull])
+  plt.ylim([y_new.min() - 0.2, y_new.max() + 0.2])
+  plt.savefig(f"derailleurs/{dir}/effective_pull_ratio_curve.png")
+  plt.close()
+
+  # Render info page
   today = datetime.date.today()
 
   run_files = [datafile for datafile in os.listdir(f"derailleurs/{dir}/pullratio") if datafile.endswith('.csv')]
