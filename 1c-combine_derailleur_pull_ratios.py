@@ -115,14 +115,10 @@ def process_der(dir):
 
   # Info Output
   info_out = {
-    "coefficients": [
-      10.456472725810904,
-      1.2081333196632447,
-      0.013098737586278185,
-      -0.00036365232737222824
-    ],
-    "physicalLowLimit": 10.456472725810904,
-    "physicalHighLimit": 56.13878641947217,
+    "basePullRatio": pr_calc.pull_ratio,
+    "coefficients": [c for c in avg_coefs],
+    "physicalLowLimit": curve(0),
+    "physicalHighLimit": curve(max_pull),
     "numberOfMeasurements": number_of_measurements,
     "Base Pull Ratio Averaged Across Pulling Runs": f"{round(pulling_pull_ratio_avg, 3):.3f} +/- {round(2*pulling_pull_ratio_stdev, 3):.3f}",
     "Base Pull Ratio Averaged Across Relaxing Runs": f"{round(relaxing_pull_ratio_avg, 3):.3f} +/- {round(2*relaxing_pull_ratio_stdev, 3):.3f}",
