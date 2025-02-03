@@ -116,6 +116,7 @@ def process_der(dir):
   # Info Output
   info_out = {
     "basePullRatio": pr_calc.pull_ratio,
+    "maxPull": max_pull,
     "coefficients": [c for c in avg_coefs],
     "physicalLowLimit": curve(0),
     "physicalHighLimit": curve(max_pull),
