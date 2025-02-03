@@ -66,11 +66,12 @@ def process_der(dir):
   y_new = pull_curve(x_new) + jockey_offset_curve(x_new)
   
   plt.clf()
-  plt.plot(x_new, y_new)
-  plt.plot(x_new, [pull_curve(x) for x in x_new])
-  plt.plot(x_new, [yaw_angle_curve(x) for x in x_new])
+  plt.plot(x_new, [jockey_offset_curve(x) for x in x_new], label="Motion from Yaw")
+  plt.plot(x_new, [pull_curve(x) for x in x_new], label="Jockey Motion")
+  plt.plot(x_new, y_new, label="Effective Jockey Motion")
   plt.xlim([0, max_pull])
-  plt.ylim([y_new.min() - 0.2, y_new.max() + 0.2])
+  plt.ylim([ -2, y_new.max() + 0.2])
+  plt.legend()
   plt.savefig(f"derailleurs/{dir}/effective_pull_curve.png")
   plt.close()
 
@@ -82,11 +83,12 @@ def process_der(dir):
   y_new = pull_ratio_curve(x_new) + jockey_offset_rate_curve(x_new)
   
   plt.clf()
-  plt.plot(x_new, y_new)
-  plt.plot(x_new, [jockey_offset_rate_curve(x) for x in x_new])
-  plt.plot(x_new, [pull_ratio_curve(x) for x in x_new])
+  plt.plot(x_new, [jockey_offset_rate_curve(x) for x in x_new], label="Pull Ratio from Yaw")
+  plt.plot(x_new, [pull_ratio_curve(x) for x in x_new], label="Base Pull Ratio")
+  plt.plot(x_new, y_new, label="Effective Pull Ratio")
   plt.xlim([0, max_pull])
-  plt.ylim([y_new.min() - 0.2, y_new.max() + 0.2])
+  plt.ylim([-0.2, y_new.max() + 0.2])
+  plt.legend()
   plt.savefig(f"derailleurs/{dir}/effective_pull_ratio_curve.png")
   plt.close()
 
