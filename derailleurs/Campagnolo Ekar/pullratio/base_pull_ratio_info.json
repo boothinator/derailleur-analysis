@@ -1,0 +1,24 @@
+{
+  "coefficients": [
+    10.456472725810904,
+    1.2081333196632447,
+    0.013098737586278185,
+    -0.00036365232737222824
+  ],
+  "physicalLowLimit": 10.456472725810904,
+  "physicalHighLimit": 56.13878641947217,
+  "numberOfMeasurements": 760,
+  "Base Pull Ratio Averaged Across Pulling Runs": "1.278 +/- 0.009",
+  "Base Pull Ratio Averaged Across Relaxing Runs": "1.286 +/- 0.014",
+  "Base Pull Ratio Averaged Across All Runs": "1.282 +/- 0.015",
+  "Base Pull Ratio 95% Confidence Interval": "1.268 to 1.297",
+  "meas_method_percent_diffs": [
+    -0.7822977201609329,
+    -0.4038590980480297,
+    0.2444444444444432,
+    -1.0195035460993083,
+    -0.3990246065174327,
+    -1.393188854489154
+  ],
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.6255715634784024 +/- 1.0412779314080989"
+}
