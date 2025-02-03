@@ -5,8 +5,6 @@ import os
 import json
 
 from util import get_jockey_offset_curve, get_jockey_offset_rate_curve
-# TODO:
-# Calculate yaw stats, combined yaw curve, pull ratio from yaw, and pull and pull ratio curve for yaw and put in yaw folder
 
 def process_der_yaw(dir):
   
