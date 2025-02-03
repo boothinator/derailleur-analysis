@@ -4,13 +4,7 @@ import matplotlib.pyplot as plt
 import os
 import json
 import math
-from pydantic import BaseModel
-from jinja2 import Environment, FileSystemLoader, select_autoescape
 from util import convert_to_floats, calc_pull_ratio
-
-# Template environment
-environment = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
-template = environment.get_template("derailleur_analysis.htm")
 
 extrusion_thickness=19.93
 
