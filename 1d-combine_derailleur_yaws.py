@@ -7,9 +7,10 @@ import math
 # TODO:
 # Calculate yaw stats, combined yaw curve, pull ratio from yaw, and pull and pull ratio curve for yaw and put in yaw folder
 
+chain_max_free_yaw = 1.3
+link_length = 12.7
+
 def get_jockey_offset_curve(yaw_angle_curve):
-  chain_max_free_yaw = 1.3
-  link_length = 12.7
 
   def calc_yaw_offset_curve(x):
     y = yaw_angle_curve(x)
@@ -30,6 +31,28 @@ def get_jockey_offset_curve(yaw_angle_curve):
   return yaw_offset_curve
 
 # TODO: create get_jockey_offset_speed_curve(), differentiating using chain rule
+
+def get_jockey_offset_rate_curve(yaw_angle_curve):
+  
+  deriv = yaw_angle_curve.deriv()
+  
+  def calc_yaw_offset_rate_curve(x):
+    y = yaw_angle_curve(x)
+
+    if y < -chain_max_free_yaw:
+      return math.cos((y + chain_max_free_yaw)/180*math.pi) * link_length * deriv(x) / 180 * math.pi
+    elif y > chain_max_free_yaw:
+      return math.cos((y - chain_max_free_yaw)/180*math.pi) * link_length * deriv(x) / 180 * math.pi
+    else:
+      return 0
+  
+  def yaw_offset_rate_curve(x):
+    if isinstance(x, Iterable):
+      return [calc_yaw_offset_rate_curve(_x) for _x in x]
+    else:
+      return calc_yaw_offset_rate_curve(x)
+
+  return yaw_offset_rate_curve
 
 def process_der_yaw(dir):
   
@@ -77,6 +100,15 @@ def process_der_yaw(dir):
   plt.xlim([0, max_pull])
   plt.ylim([jockey_offset_curve(0) - 0.2, jockey_offset_curve(max_pull) + 0.2])
   plt.savefig(f"derailleurs/{dir}/effective_jockey_offset_from_yaw_curve.png")
+  plt.close()
+  
+  jockey_offset_rate_curve = get_jockey_offset_rate_curve(curve)
+  
+  plt.clf()
+  plt.plot(x_new, [jockey_offset_rate_curve(x) for x in x_new])
+  plt.xlim([0, max_pull])
+  plt.ylim([jockey_offset_rate_curve(max_pull) - 0.2, jockey_offset_rate_curve(0) + 0.2])
+  plt.savefig(f"derailleurs/{dir}/effective_jockey_offset_rate_from_yaw_curve.png")
   plt.close()
 
   info_out = {
