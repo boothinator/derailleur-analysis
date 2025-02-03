@@ -219,7 +219,7 @@ def get_jockey_offset_curve(yaw_angle_curve):
   
   def yaw_offset_curve(x):
     if isinstance(x, Iterable):
-      return [calc_yaw_offset_curve(_x) for _x in x]
+      return np.array([calc_yaw_offset_curve(_x) for _x in x])
     else:
       return calc_yaw_offset_curve(x)
 
@@ -242,7 +242,7 @@ def get_jockey_offset_rate_curve(yaw_angle_curve):
   
   def yaw_offset_rate_curve(x):
     if isinstance(x, Iterable):
-      return [calc_yaw_offset_rate_curve(_x) for _x in x]
+      return np.array([calc_yaw_offset_rate_curve(_x) for _x in x])
     else:
       return calc_yaw_offset_rate_curve(x)
 
