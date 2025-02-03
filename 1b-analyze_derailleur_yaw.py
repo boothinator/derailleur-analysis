@@ -7,6 +7,7 @@ import datetime
 import math
 from pydantic import BaseModel
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from util import convert_to_floats
 
 # Template environment
 environment = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
@@ -16,19 +17,6 @@ extrusion_thickness=19.93
 
 with open("overall_stats.json") as f:
   overall_stats = json.load(f)
-
-def convert_to_floats(data):
-  # Convert to numbers
-  for row in data:
-    for key in row.keys():
-      if len(row[key]) == 0:
-        row[key] = np.nan
-      else:
-        try:
-          row[key] = float(row[key])
-        except:
-          # Ignore failed conversion attempts
-          pass
 
 def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
 
