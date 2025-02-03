@@ -191,12 +191,12 @@ def calc_pull_ratio(info, coefficients, max_pull):
     dropout_width=dropout_width,
     small_cog_offset=small_cog_offset,
     small_cog_position=small_cog_position,
-    smallest_cog_pull=smallest_cog_pull,
-    second_smallest_cog_pull=second_smallest_cog_pull,
-    second_biggest_cog_pull=second_biggest_cog_pull,
-    biggest_cog_pull=biggest_cog_pull,
+    smallest_cog_pull=float(smallest_cog_pull),
+    second_smallest_cog_pull=float(second_smallest_cog_pull),
+    second_biggest_cog_pull=float(second_biggest_cog_pull),
+    biggest_cog_pull=float(biggest_cog_pull),
     biggest_cog_position=biggest_cog_position,
     total_pitch_inner_cogs=total_pitch_inner_cogs,
-    pull_ratio=pull_ratio,
-    coefficients=curve.convert().coef
+    pull_ratio=float(pull_ratio),
+    coefficients=[float(c) for c in curve.convert().coef]
     )

@@ -3,10 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import json
-import datetime
 import math
 from pydantic import BaseModel
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from util import convert_to_floats, calc_pull_ratio
 
 # Template environment
 environment = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
@@ -17,20 +17,11 @@ extrusion_thickness=19.93
 with open("overall_stats.json") as f:
   overall_stats = json.load(f)
 
-def convert_to_floats(data):
-  # Convert to numbers
-  for row in data:
-    for key in row.keys():
-      if len(row[key]) == 0:
-        row[key] = np.nan
-      else:
-        try:
-          row[key] = float(row[key])
-        except:
-          # Ignore failed conversion attempts
-          pass
-
-def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
+def analyze(info, input_file):
+  
+  jockey_wheel_thickness=info["jockeyWheelThickness"]
+  carriage_to_jockey_wheel=info["distanceFromCarriageToJockeyWheel"]
+  direction = "pulling" if "pulling" in input_file.lower() else "relaxing"
 
   data = []
 
@@ -95,7 +86,7 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
     
     if calculate_puller_meas:
       # Pulling
-      if "pulling" in input_file.lower():
+      if direction == "pulling":
         row["Cable Pull (mm)"] = i / 3
       else:
         # Relaxing
@@ -181,13 +172,22 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   x_new = np.linspace(cable_pull[0], cable_pull[-1], 50)
   y_new = result(x_new)
 
-  info = {
-    "coef": [x for x in result.convert().coef],
+  coef = [x for x in result.convert().coef]
+  max_pull = cable_pull_raw.max()
+
+  pull_ratio_calc = calc_pull_ratio(info, coef, max_pull)
+
+  result_info = {
+    "coef": coef,
     "extrusion_to_carriage_slack": extrusion_to_carriage_slack,
     "extrusion_to_carriage_max_pull": extrusion_to_carriage_max_pull,
-    "max_pull": cable_pull_raw.max(),
+    "max_pull": max_pull,
+    "direction": direction,
+    "pull_ratio": pull_ratio_calc.pull_ratio,
+    "pull_ratio_calc": pull_ratio_calc.model_dump(),
     "number_of_measurements": len(data),
-    "meas_method_percent_diff": meas_method_percent_diff
+    "meas_method_percent_diff": meas_method_percent_diff,
+    
   }
 
   plt.clf()
@@ -200,348 +200,9 @@ def analyze(input_file, jockey_wheel_thickness, carriage_to_jockey_wheel):
   plt.close()
 
   with open(input_file.replace('.csv', '.json'), "w") as infofile:
-    json.dump(info, infofile, indent=2)
-  
-  return info
-
-class PullRatioInfo(BaseModel):
-  dropout_width: float
-  small_cog_offset: float
-  small_cog_position: float
-  smallest_cog_pull: float
-  second_smallest_cog_pull: float
-  second_biggest_cog_pull: float
-  biggest_cog_pull: float
-  biggest_cog_position: float
-  total_pitch_inner_cogs: float
-  pull_ratio: float
-  coefficients: list[float]
+    json.dump(result_info, infofile, indent=2)
 
 
-def calc_pull_ratio(info, coefficients, max_pull):
-  if "minDropoutWidth" in info and info["minDropoutWidth"] != None \
-    and "maxDropoutWidth" in info and info["maxDropoutWidth"] != None:
-    dropout_width = (info["minDropoutWidth"] + info["maxDropoutWidth"])/2
-  else:
-    dropout_width = 8
-  small_cog_offset = info["smallCogOffset"] if "smallCogOffset" in info and info["smallCogOffset"] != None else 3
-  small_cog_position = dropout_width + small_cog_offset
-  biggest_cog_position = small_cog_position + info["designCogPitch"] * (info["designSpeeds"] - 1)
-  second_smallest_cog_position = info["designCogPitch"] + small_cog_position
-
-  total_pitch_inner_cogs = info["designCogPitch"] * (info["designSpeeds"] - 3)
-
-  second_biggest_cog_position = second_smallest_cog_position + total_pitch_inner_cogs
-
-  curve = np.polynomial.polynomial.Polynomial(coefficients)
-
-  smallest_cog_pull = [r for r in (curve - small_cog_position).roots() if r >= 0][0]
-  if smallest_cog_pull > max_pull:
-    print(f"Warning: smallest_cog_pull {smallest_cog_pull} > max_pull {max_pull}", (curve - small_cog_position).roots())
-    print("dropout_width", dropout_width)
-    print("small_cog_offset", small_cog_offset)
-
-  second_smallest_cog_pull = [r for r in (curve - second_smallest_cog_position).roots() if r >= 0][0]
-  if second_smallest_cog_pull > max_pull:
-    print(f"Warning: second_smallest_cog_pull {second_smallest_cog_pull} > max_pull {max_pull}", (curve - second_smallest_cog_position).roots())
-    print("dropout_width", dropout_width)
-    print("small_cog_offset", small_cog_offset)
-  
-  second_biggest_cog_pull = [r for r in (curve - second_biggest_cog_position).roots() if r >= 0][0]
-  if second_biggest_cog_pull > max_pull:
-    print(f"Warning: second_biggest_cog_pull {second_biggest_cog_pull} > max_pull {max_pull}",(curve - second_biggest_cog_position).roots())
-    print("dropout_width", dropout_width)
-    print("small_cog_offset", small_cog_offset)
-
-  biggest_cog_pull = [r for r in (curve - biggest_cog_position).roots() if r >= 0][0]
-  if biggest_cog_pull > max_pull:
-    print(f"Warning: biggest_cog_pull {biggest_cog_pull} > max_pull {max_pull}",(curve - biggest_cog_position).roots())
-    print("dropout_width", dropout_width)
-    print("small_cog_offset", small_cog_offset)
-  
-
-  pull_ratio = total_pitch_inner_cogs/(second_biggest_cog_pull - second_smallest_cog_pull)
-
-  return PullRatioInfo(
-    dropout_width=dropout_width,
-    small_cog_offset=small_cog_offset,
-    small_cog_position=small_cog_position,
-    smallest_cog_pull=smallest_cog_pull,
-    second_smallest_cog_pull=second_smallest_cog_pull,
-    second_biggest_cog_pull=second_biggest_cog_pull,
-    biggest_cog_pull=biggest_cog_pull,
-    biggest_cog_position=biggest_cog_position,
-    total_pitch_inner_cogs=total_pitch_inner_cogs,
-    pull_ratio=pull_ratio,
-    coefficients=curve.convert().coef
-    )
-
-def analyze_yaw(input_file):
-
-  with open(input_file, newline='') as csvfile: 
-    reader = csv.DictReader(csvfile)
-    data = [*reader]
-
-  convert_to_floats(data)
-
-  # Remove outliers
-  data = [row for row in data if not isinstance(row["Is Outlier"], str)]
-
-  for row in data:
-    if math.isnan(row["Cable Pull (mm)"]):
-      row["Cable Pull (mm)"] = row["180 Deg. Turns"]
-
-  cable_pull = [row["Cable Pull (mm)"] - data[0]["Cable Pull (mm)"] for row in data]
-  yaw_angle = [row["Measurement (deg)"] for row in data]
-
-  result = np.polynomial.Polynomial.fit(cable_pull, yaw_angle, 2)
-  x_new = np.linspace(cable_pull[0], cable_pull[-1], 50)
-  y_new = result(x_new)
-
-  info = {
-    "coef": [x for x in result.convert().coef],
-    "number_of_measurements": len(data)
-  }
-
-  plt.clf()
-  plt.plot(cable_pull,yaw_angle,'o', x_new, y_new)
-  plt.xlim([cable_pull[0]-1, cable_pull[-1] + 1 ])
-
-  graph_file = input_file.replace('.csv', '.png')
-
-  plt.savefig(graph_file)
-  plt.close()
-
-  with open(input_file.replace('.csv', '.json'), "w") as infofile:
-    json.dump(info, infofile, indent=2)
-  
-  return info
-
-def get_jockey_offset_curve(yaw_angle_curve):
-  chain_max_free_yaw = 1.3
-  link_length = 12.7
-
-  def calc_yaw_offset_curve(x):
-    y = yaw_angle_curve(x)
-
-    if y < -chain_max_free_yaw:
-      return math.sin((y + chain_max_free_yaw)/180*math.pi) * link_length
-    elif y > chain_max_free_yaw:
-      return math.sin((y - chain_max_free_yaw)/180*math.pi) * link_length
-    else:
-      return 0
-  
-  def yaw_offset_curve(x):
-    if isinstance(x, Iterable):
-      return [calc_yaw_offset_curve(_x) for _x in x]
-    else:
-      return calc_yaw_offset_curve(x)
-
-  return yaw_offset_curve
-
-# TODO: create get_jockey_offset_speed_curve(), differentiating using chain rule
-
-def process_der_yaw(dir):
-  
-  coefs = []
-  number_of_measurements = 0
-  max_pull = 40 # FIXME: use real value
-
-  if os.path.exists(f"derailleurs/{dir}/yaw"):
-    for datafile in os.listdir(f"derailleurs/{dir}/yaw"):
-      if datafile.endswith('.csv'):
-        print(f"Processing {datafile}")
-
-        result = analyze_yaw(f"derailleurs/{dir}/yaw/{datafile}")
-        
-        coefs.append(result["coef"])
-        number_of_measurements = number_of_measurements + result["number_of_measurements"]
-
-  coefs = np.array(coefs)
-  
-  avg_coefs = np.mean(coefs.T, 1)
-
-  curve = np.polynomial.polynomial.Polynomial(avg_coefs)
-
-  x_new = np.linspace(0, max_pull, 50)
-  y_new = curve(x_new)
-  
-  plt.clf()
-  plt.plot(x_new, y_new)
-  plt.xlim([0, max_pull])
-  plt.ylim([curve(0) - 1, curve(max_pull) + 1])
-  plt.savefig(f"derailleurs/{dir}/yaw_curve.png")
-  plt.close()
-  
-  jockey_offset_curve = get_jockey_offset_curve(curve)
-  
-  plt.clf()
-  plt.plot(x_new, [jockey_offset_curve(x) for x in x_new])
-  plt.xlim([0, max_pull])
-  plt.ylim([jockey_offset_curve(0) - 0.2, jockey_offset_curve(max_pull) + 0.2])
-  plt.savefig(f"derailleurs/{dir}/effective_jockey_offset_from_yaw_curve.png")
-  plt.close()
-
-  # TODO: how do I adjust pull ratio by the amount of yaw? I guess I need to figure out the lateral
-  # motion of the chain from the yaw,
-
-  return {
-    "yawCoefficients": [*avg_coefs],
-    "yawNumberOfMeasurements": number_of_measurements
-  }
-
-def process_der(dir):
-  
-  with open(f"derailleurs/{dir}/info.json") as info_file:
-    info = json.load(info_file)
-  
-  coefs = []
-  max_pulls = []
-
-  run_types = []
-  run_files = []
-
-  number_of_measurements = 0
-  meas_method_percent_diffs = []
-
-  for datafile in os.listdir(f"derailleurs/{dir}/pullratio"):
-    if datafile.endswith('.csv'):
-      print(f"Processing {datafile}")
-      run_files.append(datafile)
-      result = analyze(f"derailleurs/{dir}/pullratio/{datafile}", info["jockeyWheelThickness"], info["distanceFromCarriageToJockeyWheel"])
-      coefs.append(result["coef"])
-      max_pulls.append(result["max_pull"])
-      number_of_measurements = number_of_measurements + result["number_of_measurements"]
-      
-      if not math.isnan(result["meas_method_percent_diff"]):
-        meas_method_percent_diffs.append(result["meas_method_percent_diff"])
-
-      if datafile.lower().find("pulling") >= 0:
-        run_types.append('pulling')
-      elif datafile.lower().find("relaxing") >= 0:
-        run_types.append('relaxing')
-      else:
-        raise Exception(f"File {datafile} not pulling or relaxing!")
-    
-  coefs = np.array(coefs)
-  max_pull = np.mean(max_pulls)
-  avg_meas_method_percent_diff = np.mean(meas_method_percent_diffs) if len(meas_method_percent_diffs) else math.nan
-  stdev_meas_method_percent_diff = np.std(meas_method_percent_diffs) if len(meas_method_percent_diffs) else math.nan
-
-  run_pr_calcs = []
-  for c,file in zip(coefs, run_files):
-    try:
-      run_pr_calcs.append(calc_pull_ratio(info, c, max_pull))
-    except Exception as ex:
-      raise Exception(f"Error calculating pull ratio for {file}: {ex}")
-
-  pulling_pr_calcs = [c for t, c in zip(run_types, run_pr_calcs) if t == 'pulling']
-  relaxing_pr_calcs = [c for t, c in zip(run_types, run_pr_calcs) if t == 'relaxing']
-
-  pulling_pull_ratio_avg = np.mean([c.pull_ratio for c in pulling_pr_calcs])
-  pulling_pull_ratio_stdev = np.std([c.pull_ratio for c in pulling_pr_calcs])
-
-  relaxing_pull_ratio_avg = np.mean([c.pull_ratio for c in relaxing_pr_calcs])
-  relaxing_pull_ratio_stdev = np.std([c.pull_ratio for c in relaxing_pr_calcs])
-
-  pull_ratio_avg = np.mean([c.pull_ratio for c in run_pr_calcs])
-  pull_ratio_stdev = np.std([c.pull_ratio for c in run_pr_calcs])
-
-  avg_coefs = np.mean(coefs.T, 1)
-
-  # Calculate pull ratio
-  pr_calc = calc_pull_ratio(info, avg_coefs, max_pull)
-
-  curve = np.polynomial.polynomial.Polynomial(pr_calc.coefficients)
-  
-  coefficients_str = f"{pr_calc.coefficients[0]:.2f}, {pr_calc.coefficients[1]:.3f}, {pr_calc.coefficients[2]:.5f}, {pr_calc.coefficients[3]:.6f}"
-  print(f"Best Fit Curve Coefficients: {coefficients_str}")
-
-  print(f"Pull Ratio of Best Fit Curve: {round(pr_calc.pull_ratio, 3):.3f}")
-
-  if round(pr_calc.pull_ratio/2, 2) != round(pull_ratio_avg/2, 2):
-    raise Exception("Pull ratio of best fit curve not the same as the average over all runs!")
-  
-  x_new = np.linspace(0, max_pull, 50)
-  y_new = curve(x_new)
-  
-  plt.clf()
-  plt.plot(x_new, y_new)
-  plt.xlim([0, max_pull])
-  plt.ylim([0, curve(max_pull) + 10])
-  plt.savefig(f"derailleurs/{dir}/pull_curve.png")
-  plt.close()
-  
-  pull_ratio_curve = curve.deriv(1)
-  pull_ratio_curve_prime = curve.deriv(1)
-  x_new = np.linspace(0, max_pull, 50)
-  y_new = pull_ratio_curve(x_new)
-
-  x_pr = [pr_calc.smallest_cog_pull, pr_calc.biggest_cog_pull]
-  y_pr = [pr_calc.pull_ratio, pr_calc.pull_ratio]
-
-  x_cogs = [pr_calc.second_smallest_cog_pull, pr_calc.second_biggest_cog_pull]
-  y_cogs = [pr_calc.pull_ratio, pr_calc.pull_ratio]
-  
-  plt.clf()
-  plt.plot(x_new, y_new, x_pr, y_pr, x_cogs, y_cogs, "o")
-  plt.xlim([0, max_pull])
-  plt.ylim([0, pr_calc.pull_ratio*1.4])
-  plt.xlabel("Cable Pull (mm)")
-  plt.ylabel("Pull Ratio")
-  plt.title(f"{info['brand']} {info['name']} {info['designSpeeds']}-speed Derailleur Pull Ratio")
-  avg_pull_ratio_annotation_x = np.min([r for r in (pull_ratio_curve_prime - pr_calc.pull_ratio).roots() if r > 0])
-  plt.annotate(f"Avg. Pull Ratio {round(pr_calc.pull_ratio, 2)}",
-                 (avg_pull_ratio_annotation_x, pr_calc.pull_ratio),
-                 xytext=(0, -12), textcoords="offset points")
-  plt.savefig(f"derailleurs/{dir}/pull_ratio_curve.png")
-  plt.close()
-
-  # Yaw
-  yaw_info = process_der_yaw(dir)
-
-  # Info Output
-  info_out = {**info,
-              **yaw_info,
-              "numberOfMeasurements": number_of_measurements,
-              "Pull Ratio Averaged Across Pulling Runs": f"{round(pulling_pull_ratio_avg, 3):.3f} +/- {round(2*pulling_pull_ratio_stdev, 3):.3f}",
-              "Pull Ratio Averaged Across Relaxing Runs": f"{round(relaxing_pull_ratio_avg, 3):.3f} +/- {round(2*relaxing_pull_ratio_stdev, 3):.3f}",
-              "Pull Ratio Averaged Across All Runs": f"{round(pull_ratio_avg, 3):.3f} +/- {round(2*pull_ratio_stdev, 3):.3f}",
-              "Pull Ratio 95% Confidence Interval": f"{round(pull_ratio_avg - 2 * pull_ratio_stdev, 3):.3f} to {round(pull_ratio_avg + 2 * pull_ratio_stdev, 3):.3f}",
-              "analysisUrl": f"https://boothinator.github.io/derailleur-analysis/derailleurs/{dir}/default.htm",
-              "meas_method_percent_diffs": meas_method_percent_diffs,
-              "Caliper vs Indicator percent difference": f"Caliper vs Indicator percent difference: {avg_meas_method_percent_diff} +/- {stdev_meas_method_percent_diff * 2}"
-              }
-  
-  with open(f"derailleurs/{dir}/info_out.json", "w") as info_file:
-    json.dump(info_out, info_file, indent=2)
-
-  today = datetime.date.today()
-
-  runs = [{
-    'name': r.replace('.csv', ''),
-    'chart': 'pullratio/'+r.replace('.csv', '.png'),
-    'csvFile': 'pullratio/' + r
-  } for r in run_files]
-
-  info_render = {
-    **info_out,
-    "coefficients": coefficients_str
-  }
-
-  output = template.render(year=str(today.year), generation_date=str(today),
-                           info=info_render, runs=runs)
-  
-  with open(f"derailleurs/{dir}/default.htm", 'w') as f:
-    print(output, file = f)
-
-  return info_out
-
-
-with open(f"other_derailleurs.json") as f:
-  all_info = json.load(f)
-
-meas_method_percent_diffs = []
 
 for dir in os.listdir('derailleurs'):
   if dir == "template":
@@ -550,25 +211,15 @@ for dir in os.listdir('derailleurs'):
   # TESTING
   #if dir != "Shimano Deore M6100":
   #  continue
-  #if dir != "Campagnolo Ekar":
-  #  continue
+  if dir != "Campagnolo Ekar":
+    continue
 
   print(dir)
 
-  info_out = process_der(dir)
-  all_info.append(info_out)
-  meas_method_percent_diffs = meas_method_percent_diffs + info_out["meas_method_percent_diffs"]
+  with open(f"derailleurs/{dir}/info.json") as info_file:
+    info = json.load(info_file)
 
-
-avg_meas_method_percent_diff = np.mean(meas_method_percent_diffs)
-stdev_meas_method_percent_diff = np.std(meas_method_percent_diffs)
-
-with open("overall_stats.json", "w") as f:
-  json.dump({
-    "avg_meas_method_percent_diff": avg_meas_method_percent_diff,
-    "stdev_meas_method_percent_diff": stdev_meas_method_percent_diff,
-    "Caliper vs Indicator percent difference": f"Caliper vs Indicator percent difference: {avg_meas_method_percent_diff} +/- {stdev_meas_method_percent_diff * 2}"
-  }, f, indent=2)
-
-with open(f"all_derailleurs.json", "w") as info_file:
-  json.dump(all_info, info_file, indent=2)
+  for datafile in os.listdir(f"derailleurs/{dir}/pullratio"):
+    if datafile.endswith('.csv'):
+      print(f"Processing {datafile}")
+      analyze(info, f"derailleurs/{dir}/pullratio/{datafile}")
