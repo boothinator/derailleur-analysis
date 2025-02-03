@@ -8,6 +8,12 @@ import math
 from pydantic import BaseModel
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+# TODO:
+# Calculate pull ratio stats and combined curve without considering yaw and put in pullratio folder
+# Calculate yaw stats, combined yaw curve, pull ratio from yaw, and pull and pull ratio curve for yaw and put in yaw folder
+# Combine yaw pull ratio with regular pull ratio, and yaw pull ratio curve with base pull ratio curve to get overall pull ratio curve
+# Can I combine both curves into a single curve using just a 3rd order polynomial? Or would that kink from the yaw curve be too much to model well
+
 # Template environment
 environment = Environment(loader=FileSystemLoader("."), autoescape=select_autoescape())
 template = environment.get_template("derailleur_analysis.htm")
