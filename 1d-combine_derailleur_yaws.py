@@ -16,18 +16,20 @@ def process_der_yaw(dir):
 
   max_pull = base_pull_ratio_info["maxPull"]
 
-  if os.path.exists(f"derailleurs/{dir}/yaw"):
-    for datafile in os.listdir(f"derailleurs/{dir}/yaw"):
-      if datafile.endswith('.csv'):
-        print(f"Processing {datafile}")
+  if not os.path.exists(f"derailleurs/{dir}/yaw"):
+    return
+  
+  for datafile in os.listdir(f"derailleurs/{dir}/yaw"):
+    if datafile.endswith('.csv'):
+      print(f"Processing {datafile}")
 
-        datafile_json = datafile.replace(".csv", ".json")
+      datafile_json = datafile.replace(".csv", ".json")
 
-        with open(f"derailleurs/{dir}/yaw/{datafile_json}") as f:
-          result = json.load(f)
-        
-        coefs.append(result["coef"])
-        number_of_measurements = number_of_measurements + result["number_of_measurements"]
+      with open(f"derailleurs/{dir}/yaw/{datafile_json}") as f:
+        result = json.load(f)
+      
+      coefs.append(result["coef"])
+      number_of_measurements = number_of_measurements + result["number_of_measurements"]
 
   coefs = np.array(coefs)
   
