@@ -8,6 +8,26 @@
   "extrusion_to_carriage_slack": 64.15,
   "extrusion_to_carriage_max_pull": 106.21,
   "max_pull": 28.0,
+  "direction": "pulling",
+  "pull_ratio": 1.6692334274052592,
+  "pull_ratio_calc": {
+    "dropout_width": 8.0,
+    "small_cog_offset": 3.0,
+    "small_cog_position": 11.0,
+    "smallest_cog_pull": 2.382944768692634,
+    "second_smallest_cog_pull": 4.883120733386272,
+    "second_biggest_cog_pull": 20.48309589113152,
+    "biggest_cog_pull": 23.931659866726932,
+    "biggest_cog_position": 45.72,
+    "total_pitch_inner_cogs": 26.04,
+    "pull_ratio": 1.6692334274052592,
+    "coefficients": [
+      7.0184297950609675,
+      1.62947796244961,
+      0.01934379804998397,
+      -0.000829782837449185
+    ]
+  },
   "number_of_measurements": 91,
   "meas_method_percent_diff": -0.09501187648457543
 }
