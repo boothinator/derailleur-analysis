@@ -294,11 +294,12 @@ def calc_pull_ratio(info, coefficients, max_pull = 100, design_cog_pitch = None,
     )
 
 if __name__ == '__main__':
-  print(get_cassette_cog_teeth(11,34, 10))
-  print(get_cassette_cog_teeth(11,34, 11))
-  print(get_cassette_cog_teeth(12,30, 10))
-  print(get_cassette_cog_teeth(11,36, 10))
-  print(get_cassette_cog_teeth(10,52, 12))
+  print()
+  print("Gen:", get_cassette_cog_teeth(11,34, 10), "\nAct:", [11, 13, 15, 17, 19, 21, 23, 26, 30, 34], "\n")
+  print("Gen:", get_cassette_cog_teeth(11,34, 11), "\nAct:", [11, 13, 15, 17, 19, 21, 23, 25, 27, 30, 34], "\n")
+  print("Gen:", get_cassette_cog_teeth(12,30, 10), "\nAct:", [12, 13, 14, 15, 17, 19, 21, 24, 27, 30], "\n")
+  print("Gen:", get_cassette_cog_teeth(11,36, 10), "\nAct:", [11, 13, 15, 17, 19, 21, 24, 28, 32, 36], "\n")
+  print("Gen:", get_cassette_cog_teeth(10,52, 12), "\nAct:", [10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 52], "\n")
   print(get_jockey_to_cog_distance_list(11,39, 11, True, 3))
 
   angles = calculate_max_chain_angle(  {
