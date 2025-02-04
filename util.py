@@ -13,14 +13,18 @@ def get_cassette_cog_teeth(min_tooth, max_tooth, cog_count):
 
   a = (max_tooth_x - min_tooth_x) / (cog_count - 1)
 
-  #teeth_diffs = [round(min_tooth * a * np.power(np.e, a * i))
-  #                for i in range(cog_count - 1)]
-  #teeth_counts = [min_tooth + sum(teeth_diffs[0:i]) for i in range(cog_count)]
-
-  teeth_counts = [round(min_tooth * np.power(np.e, a * i))
-                  for i in range(cog_count)]
-
-  # FIXME: this gives weird teeth amounts
+  cur_teeth = min_tooth
+  teeth_counts = [cur_teeth]
+  prev_step = 0
+  for i in range(1, cog_count - 1):
+    teeth_frac = min_tooth * np.power(np.e, a * (i-1))
+    cur_step = min_tooth * a * np.power(np.e, a * i)
+    cur_step = max(round(cur_step + teeth_frac - cur_teeth), prev_step)
+    cur_teeth = cur_teeth + cur_step
+    prev_step = cur_step
+    teeth_counts.append(cur_teeth)
+  
+  teeth_counts.append(max_tooth)
 
   return teeth_counts
 
@@ -290,7 +294,11 @@ def calc_pull_ratio(info, coefficients, max_pull = 100, design_cog_pitch = None,
     )
 
 if __name__ == '__main__':
+  print(get_cassette_cog_teeth(11,34, 10))
   print(get_cassette_cog_teeth(11,34, 11))
+  print(get_cassette_cog_teeth(12,30, 10))
+  print(get_cassette_cog_teeth(11,36, 10))
+  print(get_cassette_cog_teeth(10,52, 12))
   print(get_jockey_to_cog_distance_list(11,39, 11, True, 3))
 
   angles = calculate_max_chain_angle(  {
