@@ -134,6 +134,7 @@ def process_der(dir):
   plt.close()
 
   # Render info page
+  # TODO: update pages to show yaw info
   today = datetime.date.today()
 
   run_files = [datafile for datafile in os.listdir(f"derailleurs/{dir}/pullratio") if datafile.endswith('.csv')]
