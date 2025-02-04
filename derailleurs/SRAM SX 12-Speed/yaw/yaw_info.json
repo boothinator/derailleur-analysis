@@ -4,5 +4,6 @@
     0.10294331637354888,
     -0.00014384446460453165
   ],
-  "yawNumberOfMeasurements": 126
+  "yawNumberOfMeasurements": 126,
+  "yawAffectsPullRatio": true
 }

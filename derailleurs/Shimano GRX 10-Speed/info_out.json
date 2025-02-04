@@ -69,5 +69,6 @@
     -0.0015108923003659827
   ],
   "yawNumberOfMeasurements": 106,
+  "yawAffectsPullRatio": true,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano GRX 10-Speed/default.htm"
 }

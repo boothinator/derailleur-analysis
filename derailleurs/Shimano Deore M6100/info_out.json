@@ -64,11 +64,5 @@
       -5.521279227957996e-05
     ]
   },
-  "yawCoefficients": [
-    0,
-    0,
-    0
-  ],
-  "yawNumberOfMeasurements": 0,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore M6100/default.htm"
 }

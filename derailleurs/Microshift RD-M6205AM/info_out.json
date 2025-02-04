@@ -62,11 +62,5 @@
       -0.00010488856209232585
     ]
   },
-  "yawCoefficients": [
-    0,
-    0,
-    0
-  ],
-  "yawNumberOfMeasurements": 0,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm"
 }

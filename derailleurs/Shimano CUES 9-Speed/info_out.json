@@ -64,11 +64,5 @@
       -7.940135104613653e-05
     ]
   },
-  "yawCoefficients": [
-    0,
-    0,
-    0
-  ],
-  "yawNumberOfMeasurements": 0,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 9-Speed/default.htm"
 }

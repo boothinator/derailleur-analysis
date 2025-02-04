@@ -64,11 +64,5 @@
       -8.948602873125939e-05
     ]
   },
-  "yawCoefficients": [
-    0,
-    0,
-    0
-  ],
-  "yawNumberOfMeasurements": 0,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 10-Speed/default.htm"
 }

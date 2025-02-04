@@ -68,5 +68,6 @@
     -0.00033257551680799667
   ],
   "yawNumberOfMeasurements": 92,
+  "yawAffectsPullRatio": false,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano 105 11-speed/default.htm"
 }

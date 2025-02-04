@@ -5,7 +5,7 @@ import json
 import datetime
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from util import get_jockey_offset_curve, get_jockey_offset_rate_curve
+from util import get_jockey_offset_curve, get_jockey_offset_rate_curve, PullRatioInfo
 
 # TODO:
 # Combine yaw pull ratio with regular pull ratio, and yaw pull ratio curve with base pull ratio curve to get overall pull ratio curve
@@ -26,21 +26,28 @@ def process_der(dir):
   with open(f"derailleurs/{dir}/pullratio/base_pull_ratio_info.json") as info_file:
     base_pull_ratio_info = json.load(info_file)
   
-  with open(f"derailleurs/{dir}/yaw/yaw_info.json") as info_file:
-    yaw_info = json.load(info_file)
+  if os.path.exists(f"derailleurs/{dir}/yaw/yaw_info.json"):
+    with open(f"derailleurs/{dir}/yaw/yaw_info.json") as info_file:
+      yaw_info = json.load(info_file)
+  else:
+    yaw_info = {}
 
   # Get curves
   pull_curve = np.polynomial.polynomial.Polynomial(base_pull_ratio_info["coefficients"])
-  yaw_angle_curve = np.polynomial.polynomial.Polynomial(yaw_info["yawCoefficients"])
-  jockey_offset_curve = get_jockey_offset_curve(yaw_angle_curve)
 
-  # Calc combined pull ratio
-  # FIXME: doesn't take into account how pull ratio affects position of cogs affected by yaw
-  total_pitch_inner_cogs = base_pull_ratio_info["pullRatioCalc"]["total_pitch_inner_cogs"]
-  second_biggest_cog_pull = base_pull_ratio_info["pullRatioCalc"]["second_biggest_cog_pull"]
-  second_smallest_cog_pull = base_pull_ratio_info["pullRatioCalc"]["second_smallest_cog_pull"]
-  jockey_adjustment_from_yaw = jockey_offset_curve(second_biggest_cog_pull) - jockey_offset_curve(second_smallest_cog_pull)
-  pull_ratio = (total_pitch_inner_cogs + jockey_adjustment_from_yaw)/(second_biggest_cog_pull - second_smallest_cog_pull)
+  if "yawCoefficients" in yaw_info:
+    yaw_angle_curve = np.polynomial.polynomial.Polynomial(yaw_info["yawCoefficients"])
+    jockey_offset_curve = get_jockey_offset_curve(yaw_angle_curve)
+
+    # Calc combined pull ratio
+    # FIXME: doesn't take into account how pull ratio affects position of cogs affected by yaw
+    total_pitch_inner_cogs = base_pull_ratio_info["pullRatioCalc"]["total_pitch_inner_cogs"]
+    second_biggest_cog_pull = base_pull_ratio_info["pullRatioCalc"]["second_biggest_cog_pull"]
+    second_smallest_cog_pull = base_pull_ratio_info["pullRatioCalc"]["second_smallest_cog_pull"]
+    jockey_adjustment_from_yaw = jockey_offset_curve(second_biggest_cog_pull) - jockey_offset_curve(second_smallest_cog_pull)
+    pull_ratio = (total_pitch_inner_cogs + jockey_adjustment_from_yaw)/(second_biggest_cog_pull - second_smallest_cog_pull)
+  else:
+    pull_ratio = base_pull_ratio_info["basePullRatio"]
   
   # Info Output
   info_out = {
@@ -62,34 +69,68 @@ def process_der(dir):
   x_new = np.linspace(0, max_pull, 100)
 
   # Combined pull curve
-
-  y_new = pull_curve(x_new) + jockey_offset_curve(x_new)
+  if "yawCoefficients" in yaw_info:
+    y_new = pull_curve(x_new) + jockey_offset_curve(x_new)
+  else:
+    y_new = pull_curve(x_new)
   
   plt.clf()
-  plt.plot(x_new, [jockey_offset_curve(x) for x in x_new], label="Motion from Yaw")
-  plt.plot(x_new, [pull_curve(x) for x in x_new], label="Jockey Motion")
-  plt.plot(x_new, y_new, label="Effective Jockey Motion")
+  if "yawCoefficients" in yaw_info:
+    plt.plot(x_new, [jockey_offset_curve(x) for x in x_new], label="Motion from Yaw")
+    plt.plot(x_new, [pull_curve(x) for x in x_new], label="Jockey Motion")
+    plt.plot(x_new, y_new, label="Effective Jockey Motion")
+    plt.legend()
+  else:
+    plt.plot(x_new, y_new)
   plt.xlim([0, max_pull])
   plt.ylim([ -2, y_new.max() + 0.2])
-  plt.legend()
-  plt.savefig(f"derailleurs/{dir}/effective_pull_curve.png")
+  plt.savefig(f"derailleurs/{dir}/pull_curve.png")
   plt.close()
 
-  # Combined pull ratio curve
+  # Pull ratio component curves
 
   pull_ratio_curve = pull_curve.deriv()
-  jockey_offset_rate_curve = get_jockey_offset_rate_curve(yaw_angle_curve)
+  if "yawCoefficients" in yaw_info:
+    jockey_offset_rate_curve = get_jockey_offset_rate_curve(yaw_angle_curve)
 
-  y_new = pull_ratio_curve(x_new) + jockey_offset_rate_curve(x_new)
+    y_new = pull_ratio_curve(x_new) + jockey_offset_rate_curve(x_new)
+  else:
+    y_new = pull_ratio_curve(x_new)
+  
+  if "yawCoefficients" in yaw_info and yaw_info["yawAffectsPullRatio"]:
+    plt.clf()
+    plt.plot(x_new, [jockey_offset_rate_curve(x) for x in x_new], label="Pull Ratio from Yaw")
+    plt.plot(x_new, [pull_ratio_curve(x) for x in x_new], label="Base Pull Ratio")
+    plt.plot(x_new, y_new, label="Effective Pull Ratio")
+    plt.legend()
+    plt.xlim([0, max_pull])
+    plt.ylim([-0.2, y_new.max() + 0.2])
+    plt.savefig(f"derailleurs/{dir}/pull_ratio_component_curves.png")
+    plt.close()
+
+  # Overall Pull Ratio Curve
+  pr_calc = PullRatioInfo.model_validate(info_out["pullRatioCalc"])
+
+  x_pr = [pr_calc.smallest_cog_pull, pr_calc.biggest_cog_pull]
+  y_pr = [pull_ratio, pull_ratio]
+
+  x_cogs = [pr_calc.second_smallest_cog_pull, pr_calc.second_biggest_cog_pull]
+  y_cogs = [pull_ratio, pull_ratio]
+
+  pull_ratio_curve_prime = pull_ratio_curve.deriv(1)
   
   plt.clf()
-  plt.plot(x_new, [jockey_offset_rate_curve(x) for x in x_new], label="Pull Ratio from Yaw")
-  plt.plot(x_new, [pull_ratio_curve(x) for x in x_new], label="Base Pull Ratio")
-  plt.plot(x_new, y_new, label="Effective Pull Ratio")
+  plt.plot(x_new, y_new, x_pr, y_pr, x_cogs, y_cogs, "o")
   plt.xlim([0, max_pull])
-  plt.ylim([-0.2, y_new.max() + 0.2])
-  plt.legend()
-  plt.savefig(f"derailleurs/{dir}/effective_pull_ratio_curve.png")
+  plt.ylim([0, pull_ratio*1.4])
+  plt.xlabel("Cable Pull (mm)")
+  plt.ylabel("Pull Ratio")
+  plt.title(f"{info['brand']} {info['name']} {info['designSpeeds']}-speed Derailleur Pull Ratio")
+  avg_pull_ratio_annotation_x = np.max([pr_calc.second_smallest_cog_pull, *[r for r in pull_ratio_curve_prime.roots() if r > 0]])
+  plt.annotate(f"Avg. Pull Ratio {round(pull_ratio, 2)}",
+                 (avg_pull_ratio_annotation_x, pull_ratio),
+                 xytext=(-35, -12), textcoords="offset points")
+  plt.savefig(f"derailleurs/{dir}/pull_ratio_curve.png")
   plt.close()
 
   # Render info page

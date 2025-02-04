@@ -57,11 +57,5 @@
       -0.0001355020422310971
     ]
   },
-  "yawCoefficients": [
-    0,
-    0,
-    0
-  ],
-  "yawNumberOfMeasurements": 0,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM GX 10-Speed/default.htm"
 }
