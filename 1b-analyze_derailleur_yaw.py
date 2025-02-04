@@ -75,8 +75,8 @@ for dir in os.listdir('derailleurs'):
   # TESTING
   #if dir != "Shimano Deore M6100":
   #  continue
-  if dir != "Campagnolo Ekar":
-    continue
+  #if dir != "Campagnolo Ekar":
+  #  continue
 
   print(dir)
 
