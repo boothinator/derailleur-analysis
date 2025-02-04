@@ -13,7 +13,7 @@ chain_max_free_yaw = 1.3
 link_length = 12.7
 
 def calculate_max_chain_angle(shifter, derailleur, cassette):
-  derailleur_curve = np.polynomial.Polynomial(coef=derailleur["coefficients"])
+  derailleur_curve = get_combined_pull_curve(derailleur)
   shift_spacings = np.array(shifter["shiftSpacings"])
   cassette_pitches = cassette["pitches"]
   roller_cog_free_play = cassette["chainRollerWidth"] - cassette["cogWidth"]
@@ -247,3 +247,37 @@ def get_jockey_offset_rate_curve(yaw_angle_curve):
       return calc_yaw_offset_rate_curve(x)
 
   return yaw_offset_rate_curve
+
+def get_combined_pull_curve(info):
+  pull_curve = np.polynomial.polynomial.Polynomial(info["coefficients"])
+
+  if "yawCoefficients" not in info:
+    return pull_curve
+
+  yaw_angle_curve = np.polynomial.polynomial.Polynomial(info["yawCoefficients"])
+  jockey_offset_curve = get_jockey_offset_curve(yaw_angle_curve)
+
+  def combined_pull_curve(x):
+    if isinstance(x, Iterable):
+      return np.array([pull_curve(_x) + jockey_offset_curve(_x) for _x in x])
+    else:
+      return pull_curve(x) + jockey_offset_curve(x)
+  
+  return combined_pull_curve
+
+def get_combined_pull_ratio_curve(info):
+  pull_curve = np.polynomial.polynomial.Polynomial(info["coefficients"])
+
+  if "yawCoefficients" not in info:
+    return pull_curve.deriv()
+
+  yaw_angle_curve = np.polynomial.polynomial.Polynomial(info["yawCoefficients"])
+  jockey_offset_rate_curve = get_jockey_offset_rate_curve(yaw_angle_curve)
+
+  def combined_pull_ratio_curve(x):
+    if isinstance(x, Iterable):
+      return np.array([pull_curve(_x) + jockey_offset_rate_curve(_x) for _x in x])
+    else:
+      return pull_curve(x) + jockey_offset_rate_curve(x)
+  
+  return combined_pull_ratio_curve
