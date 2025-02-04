@@ -9,7 +9,7 @@ smallest_cog_position = 15 # TODO: put this on the cassette, or figure out from 
 jockey_to_cog_links = 2.5
 jockey_to_cog_distance = jockey_to_cog_links * 25.4 / 2 
 max_cable_pull = 50 # Assume that no shifter will be able to pull 50 mm of cable
-chain_max_free_yaw = 1.3
+chain_max_free_yaw = 1.5
 link_length = 12.7
 
 def calculate_max_chain_angle(shifter, derailleur, cassette):
