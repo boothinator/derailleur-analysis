@@ -15,6 +15,12 @@
   "dataVideo": null,
   "analysisVideo": null,
   "pullRatio": 1.2244597430897561,
+  "Pull Ratio Averaged Across Pulling Runs": "1.226 +/- 0.000",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.224 +/- 0.000",
+  "Pull Ratio Averaged Across All Runs": "1.225 +/- 0.003",
+  "Pull Ratio 95% Confidence Interval": "1.222 to 1.227",
+  "basePullRatio": 1.2244597430897561,
+  "maxPull": 36.575,
   "coefficients": [
     12.203260747463762,
     1.250397712023638,
@@ -24,14 +30,38 @@
   "physicalLowLimit": 12.203260747463762,
   "physicalHighLimit": 55.80106473400522,
   "numberOfMeasurements": 236,
-  "Pull Ratio Averaged Across Pulling Runs": "1.226 +/- 0.000",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.224 +/- 0.000",
-  "Pull Ratio Averaged Across All Runs": "1.225 +/- 0.003",
-  "Pull Ratio 95% Confidence Interval": "1.222 to 1.227",
-  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM Apex 11-Speed/default.htm",
+  "Base Pull Ratio Averaged Across Pulling Runs": "1.226 +/- 0.000",
+  "Base Pull Ratio Averaged Across Relaxing Runs": "1.224 +/- 0.000",
+  "Base Pull Ratio Averaged Across All Runs": "1.225 +/- 0.003",
+  "Base Pull Ratio 95% Confidence Interval": "1.222 to 1.227",
   "meas_method_percent_diffs": [
     -0.02400384061447649,
     -0.8604206500956009
   ],
-  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.44221224535503867 +/- 0.8364168094811244"
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.44221224535503867 +/- 0.8364168094811244",
+  "pullRatioCalc": {
+    "dropout_width": 11.0,
+    "small_cog_offset": 3.0,
+    "small_cog_position": 14.0,
+    "smallest_cog_pull": 1.4329002814592722,
+    "second_smallest_cog_pull": 4.403199809720309,
+    "second_biggest_cog_pull": 28.9038011314911,
+    "biggest_cog_pull": 32.35666099435299,
+    "biggest_cog_position": 51.5,
+    "total_pitch_inner_cogs": 30.0,
+    "pull_ratio": 1.2244597430897561,
+    "coefficients": [
+      12.203260747463762,
+      1.250397712023638,
+      0.002621917886666269,
+      -0.00011533212323678307
+    ]
+  },
+  "yawCoefficients": [
+    0,
+    0,
+    0
+  ],
+  "yawNumberOfMeasurements": 0,
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM Apex 11-Speed/default.htm"
 }

@@ -16,7 +16,13 @@
   "chainWrap": 41,
   "dataVideo": "https://youtu.be/DmpSMv3bTr8",
   "analysisVideo": "https://youtu.be/4Bh7QUWcSew",
-  "pullRatio": 1.4451541692394145,
+  "pullRatio": 1.4466549527908246,
+  "Pull Ratio Averaged Across Pulling Runs": "1.431 +/- 0.030",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.460 +/- 0.008",
+  "Pull Ratio Averaged Across All Runs": "1.445 +/- 0.036",
+  "Pull Ratio 95% Confidence Interval": "1.409 to 1.481",
+  "basePullRatio": 1.4451541692394145,
+  "maxPull": 33.50000000000001,
   "coefficients": [
     10.610392334722109,
     1.117584653011419,
@@ -26,11 +32,10 @@
   "physicalLowLimit": 10.610392334722109,
   "physicalHighLimit": 56.62019914989602,
   "numberOfMeasurements": 657,
-  "Pull Ratio Averaged Across Pulling Runs": "1.431 +/- 0.030",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.460 +/- 0.008",
-  "Pull Ratio Averaged Across All Runs": "1.445 +/- 0.036",
-  "Pull Ratio 95% Confidence Interval": "1.409 to 1.481",
-  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano GRX 10-Speed/default.htm",
+  "Base Pull Ratio Averaged Across Pulling Runs": "1.431 +/- 0.030",
+  "Base Pull Ratio Averaged Across Relaxing Runs": "1.460 +/- 0.008",
+  "Base Pull Ratio Averaged Across All Runs": "1.445 +/- 0.036",
+  "Base Pull Ratio 95% Confidence Interval": "1.409 to 1.481",
   "meas_method_percent_diffs": [
     -0.4875886524822356,
     -0.3734622144112359,
@@ -39,5 +44,30 @@
     -0.41639272408504235,
     -0.5626828719333944
   ],
-  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.2917880590098528 +/- 0.7054179473796373"
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.2917880590098528 +/- 0.7054179473796373",
+  "pullRatioCalc": {
+    "dropout_width": 8.0,
+    "small_cog_offset": 3.2,
+    "small_cog_position": 11.2,
+    "smallest_cog_pull": 0.5220059085860909,
+    "second_smallest_cog_pull": 3.788123229222928,
+    "second_biggest_cog_pull": 22.921030007295066,
+    "biggest_cog_pull": 25.699638140979282,
+    "biggest_cog_position": 46.75,
+    "total_pitch_inner_cogs": 27.650000000000002,
+    "pull_ratio": 1.4451541692394145,
+    "coefficients": [
+      10.610392334722109,
+      1.117584653011419,
+      0.02307392642234105,
+      -0.00046080117536215237
+    ]
+  },
+  "yawCoefficients": [
+    -0.12242215900110616,
+    0.11106609987414935,
+    -0.0015108923003659827
+  ],
+  "yawNumberOfMeasurements": 106,
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano GRX 10-Speed/default.htm"
 }

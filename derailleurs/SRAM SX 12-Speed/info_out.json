@@ -15,7 +15,13 @@
   "chainWrap": 40,
   "dataVideo": "https://youtu.be/MbIZ-nNYEKI",
   "analysisVideo": "https://www.youtube.com/watch?v=HCI9IhSgN3Y",
-  "pullRatio": 1.0772281817248925,
+  "pullRatio": 1.0818246608429336,
+  "Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.015",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.081 +/- 0.024",
+  "Pull Ratio Averaged Across All Runs": "1.077 +/- 0.022",
+  "Pull Ratio 95% Confidence Interval": "1.055 to 1.098",
+  "basePullRatio": 1.0772281817248925,
+  "maxPull": 39.55555555555556,
   "coefficients": [
     15.024478586965287,
     0.9647403299169183,
@@ -25,11 +31,10 @@
   "physicalLowLimit": 15.024478586965287,
   "physicalHighLimit": 56.76688043983986,
   "numberOfMeasurements": 753,
-  "Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.015",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.081 +/- 0.024",
-  "Pull Ratio Averaged Across All Runs": "1.077 +/- 0.022",
-  "Pull Ratio 95% Confidence Interval": "1.055 to 1.098",
-  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM SX 12-Speed/default.htm",
+  "Base Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.015",
+  "Base Pull Ratio Averaged Across Relaxing Runs": "1.081 +/- 0.024",
+  "Base Pull Ratio Averaged Across All Runs": "1.077 +/- 0.022",
+  "Base Pull Ratio 95% Confidence Interval": "1.055 to 1.098",
   "meas_method_percent_diffs": [
     -0.45271629778673744,
     -0.4071246819338336,
@@ -38,5 +43,30 @@
     -0.5731373037627809,
     0.07053844345170056
   ],
-  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.4430479823925379 +/- 0.8021182126469187"
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.4430479823925379 +/- 0.8021182126469187",
+  "pullRatioCalc": {
+    "dropout_width": 13.8,
+    "small_cog_offset": 2.0,
+    "small_cog_position": 15.8,
+    "smallest_cog_pull": 0.7988184008049765,
+    "second_smallest_cog_pull": 4.441504936256687,
+    "second_biggest_cog_pull": 34.936436796839395,
+    "biggest_cog_pull": 38.68430352105634,
+    "biggest_cog_position": 55.95,
+    "total_pitch_inner_cogs": 32.85,
+    "pull_ratio": 1.0772281817248925,
+    "coefficients": [
+      15.024478586965287,
+      0.9647403299169183,
+      0.007740562052950136,
+      -0.00013781882726897584
+    ]
+  },
+  "yawCoefficients": [
+    -2.586769362861251,
+    0.10294331637354888,
+    -0.00014384446460453165
+  ],
+  "yawNumberOfMeasurements": 126,
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM SX 12-Speed/default.htm"
 }

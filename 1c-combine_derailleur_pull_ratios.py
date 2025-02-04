@@ -85,7 +85,7 @@ def process_der(dir):
   plt.plot(x_new, y_new)
   plt.xlim([0, max_pull])
   plt.ylim([0, curve(max_pull) + 10])
-  plt.savefig(f"derailleurs/{dir}/pull_curve.png")
+  plt.savefig(f"derailleurs/{dir}/base_pull_curve.png")
   plt.close()
   
   pull_ratio_curve = curve.deriv(1)
@@ -110,7 +110,7 @@ def process_der(dir):
   plt.annotate(f"Avg. Pull Ratio {round(pr_calc.pull_ratio, 2)}",
                  (avg_pull_ratio_annotation_x, pr_calc.pull_ratio),
                  xytext=(0, -12), textcoords="offset points")
-  plt.savefig(f"derailleurs/{dir}/pull_ratio_curve.png")
+  plt.savefig(f"derailleurs/{dir}/base_pull_ratio_curve.png")
   plt.close()
 
   # Info Output

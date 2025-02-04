@@ -15,7 +15,15 @@
   "chainWrap": 44,
   "dataVideo": "https://youtu.be/I-ctFLBjlZ0",
   "analysisVideo": "https://youtu.be/anIPVxXD7Lg",
+  "measurementNotes": "No observable yaw",
+  "generalNotes": "",
   "pullRatio": 1.0582142182810916,
+  "Pull Ratio Averaged Across Pulling Runs": "1.062 +/- 0.005",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.054 +/- 0.018",
+  "Pull Ratio Averaged Across All Runs": "1.058 +/- 0.015",
+  "Pull Ratio 95% Confidence Interval": "1.043 to 1.074",
+  "basePullRatio": 1.0582142182810916,
+  "maxPull": 41.36000000000001,
   "coefficients": [
     8.034542372275181,
     0.9792098840753652,
@@ -25,11 +33,10 @@
   "physicalLowLimit": 8.034542372275181,
   "physicalHighLimit": 50.871216961370294,
   "numberOfMeasurements": 652,
-  "Pull Ratio Averaged Across Pulling Runs": "1.062 +/- 0.005",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.054 +/- 0.018",
-  "Pull Ratio Averaged Across All Runs": "1.058 +/- 0.015",
-  "Pull Ratio 95% Confidence Interval": "1.043 to 1.074",
-  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 10-Speed/default.htm",
+  "Base Pull Ratio Averaged Across Pulling Runs": "1.062 +/- 0.005",
+  "Base Pull Ratio Averaged Across Relaxing Runs": "1.054 +/- 0.018",
+  "Base Pull Ratio Averaged Across All Runs": "1.058 +/- 0.015",
+  "Base Pull Ratio 95% Confidence Interval": "1.043 to 1.074",
   "meas_method_percent_diffs": [
     0.047835446065542034,
     -0.6227544910179423,
@@ -38,5 +45,30 @@
     -0.47732696897371996,
     1.711738703348832e-14
   ],
-  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.4020108757631942 +/- 0.8749427035283623"
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.4020108757631942 +/- 0.8749427035283623",
+  "pullRatioCalc": {
+    "dropout_width": 8.0,
+    "small_cog_offset": 3.0,
+    "small_cog_position": 11.0,
+    "smallest_cog_pull": 2.984749586854845,
+    "second_smallest_cog_pull": 6.945407786958106,
+    "second_biggest_cog_pull": 33.73582461395016,
+    "biggest_cog_pull": 37.79438483904459,
+    "biggest_cog_position": 47.449999999999996,
+    "total_pitch_inner_cogs": 28.349999999999998,
+    "pull_ratio": 1.0582142182810916,
+    "coefficients": [
+      8.034542372275181,
+      0.9792098840753652,
+      0.005067028992561139,
+      -8.948602873125939e-05
+    ]
+  },
+  "yawCoefficients": [
+    0,
+    0,
+    0
+  ],
+  "yawNumberOfMeasurements": 0,
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 10-Speed/default.htm"
 }

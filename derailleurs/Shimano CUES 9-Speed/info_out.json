@@ -15,7 +15,15 @@
   "chainWrap": 41,
   "dataVideo": null,
   "analysisVideo": null,
+  "measurementNotes": "No observable yaw",
+  "generalNotes": "",
   "pullRatio": 1.1135894598563885,
+  "Pull Ratio Averaged Across Pulling Runs": "1.109 +/- 0.004",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.119 +/- 0.010",
+  "Pull Ratio Averaged Across All Runs": "1.114 +/- 0.012",
+  "Pull Ratio 95% Confidence Interval": "1.101 to 1.126",
+  "basePullRatio": 1.1135894598563885,
+  "maxPull": 41.27777777777777,
   "coefficients": [
     7.737001280923079,
     0.9879665041304803,
@@ -25,11 +33,10 @@
   "physicalLowLimit": 7.737001280923079,
   "physicalHighLimit": 52.973579149442934,
   "numberOfMeasurements": 797,
-  "Pull Ratio Averaged Across Pulling Runs": "1.109 +/- 0.004",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.119 +/- 0.010",
-  "Pull Ratio Averaged Across All Runs": "1.114 +/- 0.012",
-  "Pull Ratio 95% Confidence Interval": "1.101 to 1.126",
-  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 9-Speed/default.htm",
+  "Base Pull Ratio Averaged Across Pulling Runs": "1.109 +/- 0.004",
+  "Base Pull Ratio Averaged Across Relaxing Runs": "1.119 +/- 0.010",
+  "Base Pull Ratio Averaged Across All Runs": "1.114 +/- 0.012",
+  "Base Pull Ratio 95% Confidence Interval": "1.101 to 1.126",
   "meas_method_percent_diffs": [
     -0.6928922664282255,
     -0.648479427549209,
@@ -38,5 +45,30 @@
     -12.989117851354496,
     -1.2569832402234618
   ],
-  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -2.8765220583430793 +/- 9.06333089912196"
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -2.8765220583430793 +/- 9.06333089912196",
+  "pullRatioCalc": {
+    "dropout_width": 8.0,
+    "small_cog_offset": 3.0,
+    "small_cog_position": 11.0,
+    "smallest_cog_pull": 3.2427655903385557,
+    "second_smallest_cog_pull": 7.128134536593364,
+    "second_biggest_cog_pull": 28.949461763535503,
+    "biggest_cog_pull": 32.54990861512568,
+    "biggest_cog_position": 43.4,
+    "total_pitch_inner_cogs": 24.299999999999997,
+    "pull_ratio": 1.1135894598563885,
+    "coefficients": [
+      7.737001280923079,
+      0.9879665041304803,
+      0.005892473407102435,
+      -7.940135104613653e-05
+    ]
+  },
+  "yawCoefficients": [
+    0,
+    0,
+    0
+  ],
+  "yawNumberOfMeasurements": 0,
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 9-Speed/default.htm"
 }
