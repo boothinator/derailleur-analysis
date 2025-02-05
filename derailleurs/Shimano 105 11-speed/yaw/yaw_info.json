@@ -1,9 +1,9 @@
 {
   "yawCoefficients": [
-    -0.4553384652981427,
-    0.06611560042664046,
-    -0.00033257551680799667
+    -0.5289779675310986,
+    0.09868974764069717,
+    -0.0031295177722853386,
+    6.300172779630718e-05
   ],
-  "yawNumberOfMeasurements": 92,
-  "yawAffectsPullRatio": false
+  "yawNumberOfMeasurements": 92
 }

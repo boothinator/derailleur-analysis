@@ -49,8 +49,6 @@ def process_der_yaw(dir):
   
   jockey_offset_curve = get_jockey_offset_curve(curve)
   y_new = jockey_offset_curve(x_new)
-
-  yaw_affects_pull_ratio = y_new.min() != 0 or y_new.max() != 0
   
   plt.clf()
   plt.plot(x_new, y_new)
@@ -72,8 +70,7 @@ def process_der_yaw(dir):
 
   info_out = {
     "yawCoefficients": [*avg_coefs],
-    "yawNumberOfMeasurements": number_of_measurements,
-    "yawAffectsPullRatio": bool(yaw_affects_pull_ratio)
+    "yawNumberOfMeasurements": number_of_measurements
   }
 
   with open(f"derailleurs/{dir}/yaw/yaw_info.json", "w") as info_file:

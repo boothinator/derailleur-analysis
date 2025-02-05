@@ -25,7 +25,7 @@ def analyze_yaw(input_file):
   cable_pull = [row["Cable Pull (mm)"] - data[0]["Cable Pull (mm)"] for row in data]
   yaw_angle = [row["Measurement (deg)"] for row in data]
 
-  result = np.polynomial.Polynomial.fit(cable_pull, yaw_angle, 2)
+  result = np.polynomial.Polynomial.fit(cable_pull, yaw_angle, 3)
   x_new = np.linspace(cable_pull[0], cable_pull[-1], 50)
   y_new = result(x_new)
 

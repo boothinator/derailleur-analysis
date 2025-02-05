@@ -16,7 +16,7 @@
   "maxToothWithGoatLink": null,
   "chainWrap": 35,
   "linksFromJockeyToSmallestCog": 4,
-  "pullRatio": 1.0577847493578643,
+  "pullRatio": 1.0547866001173967,
   "basePullRatio": 1.0480941756972713,
   "maxPull": 44.80833333333334,
   "coefficients": [
@@ -60,9 +60,10 @@
     ]
   },
   "yawCoefficients": [
-    -3.7246815747575632,
-    0.18796350485923638,
-    -0.0006861980068006238
+    -4.121358373136494,
+    0.2973675581670828,
+    -0.006696452527693453,
+    8.710513798395399e-05
   ],
   "yawNumberOfMeasurements": 141,
   "yawAffectsPullRatio": true,

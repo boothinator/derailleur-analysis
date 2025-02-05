@@ -45,9 +45,12 @@ def process_der(dir):
     second_biggest_cog_pull = base_pull_ratio_info["pullRatioCalc"]["second_biggest_cog_pull"]
     second_smallest_cog_pull = base_pull_ratio_info["pullRatioCalc"]["second_smallest_cog_pull"]
     jockey_adjustment_from_yaw = jockey_offset_curve(second_biggest_cog_pull) - jockey_offset_curve(second_smallest_cog_pull)
+    yaw_affects_pull_ratio = jockey_adjustment_from_yaw != 0
+    yaw_info["yawAffectsPullRatio"] = bool(yaw_affects_pull_ratio)
     pull_ratio = (total_pitch_inner_cogs + jockey_adjustment_from_yaw)/(second_biggest_cog_pull - second_smallest_cog_pull)
   else:
     pull_ratio = base_pull_ratio_info["basePullRatio"]
+    yaw_affects_pull_ratio = False
   
   # Info Output
   info_out = {
@@ -93,7 +96,7 @@ def process_der(dir):
   else:
     y_new = pull_ratio_curve(x_new)
   
-  if "yawCoefficients" in yaw_info and yaw_info["yawAffectsPullRatio"]:
+  if "yawCoefficients" in yaw_info and yaw_affects_pull_ratio:
     plt.clf()
     plt.plot(x_new, [jockey_offset_rate_curve(x) for x in x_new], label="Pull Ratio from Yaw")
     plt.plot(x_new, [pull_ratio_curve(x) for x in x_new], label="Base Pull Ratio")

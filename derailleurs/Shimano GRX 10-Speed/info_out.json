@@ -17,7 +17,7 @@
   "chainWrap": 41,
   "dataVideo": "https://youtu.be/DmpSMv3bTr8",
   "analysisVideo": "https://youtu.be/4Bh7QUWcSew",
-  "pullRatio": 1.4466549527908246,
+  "pullRatio": 1.445560036846897,
   "basePullRatio": 1.4451541692394145,
   "maxPull": 33.50000000000001,
   "coefficients": [
@@ -61,9 +61,10 @@
     ]
   },
   "yawCoefficients": [
-    -0.12242215900110616,
-    0.11106609987414935,
-    -0.0015108923003659827
+    -0.3208679124468601,
+    0.1857603916169448,
+    -0.007024013564261247,
+    0.00010698407241234904
   ],
   "yawNumberOfMeasurements": 106,
   "yawAffectsPullRatio": true,

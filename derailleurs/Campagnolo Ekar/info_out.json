@@ -16,7 +16,7 @@
   "chainWrap": 35,
   "dataVideo": null,
   "analysisVideo": null,
-  "pullRatio": 1.287474716634338,
+  "pullRatio": 1.2873767364137014,
   "basePullRatio": 1.2821211770657868,
   "maxPull": 39.38166666666666,
   "coefficients": [
@@ -60,9 +60,10 @@
     ]
   },
   "yawCoefficients": [
-    -2.586769362861251,
-    0.10294331637354888,
-    -0.00014384446460453165
+    -2.7029088210202423,
+    0.1392689321423693,
+    -0.002394760806805497,
+    3.6762177012244894e-05
   ],
   "yawNumberOfMeasurements": 126,
   "yawAffectsPullRatio": true,

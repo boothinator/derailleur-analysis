@@ -60,11 +60,12 @@
     ]
   },
   "yawCoefficients": [
-    -1.526788554440728,
-    0.09484162214596993,
-    -0.0010304671174236376
+    -1.5542269292704074,
+    0.11166987869886423,
+    -0.0029815273293534155,
+    5.898824739404444e-05
   ],
   "yawNumberOfMeasurements": 72,
-  "yawAffectsPullRatio": true,
+  "yawAffectsPullRatio": false,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Tiagra 4600 10-Speed/default.htm"
 }
