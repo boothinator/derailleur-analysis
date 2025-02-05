@@ -15,6 +15,7 @@
   "maxToothUnofficial": null,
   "maxToothWithGoatLink": null,
   "chainWrap": 35,
+  "linksFromJockeyToSmallestCog": 4,
   "pullRatio": 1.0577847493578643,
   "basePullRatio": 1.0480941756972713,
   "maxPull": 44.80833333333334,
