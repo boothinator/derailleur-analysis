@@ -16,10 +16,6 @@
   "dataVideo": null,
   "analysisVideo": null,
   "pullRatio": 1.287474716634338,
-  "Pull Ratio Averaged Across Pulling Runs": "1.278 +/- 0.009",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.286 +/- 0.014",
-  "Pull Ratio Averaged Across All Runs": "1.282 +/- 0.015",
-  "Pull Ratio 95% Confidence Interval": "1.268 to 1.297",
   "basePullRatio": 1.2821211770657868,
   "maxPull": 39.38166666666666,
   "coefficients": [

@@ -53,10 +53,6 @@ def process_der(dir):
   info_out = {
     **info,
     'pullRatio': pull_ratio,
-    "Pull Ratio Averaged Across Pulling Runs": base_pull_ratio_info["Base Pull Ratio Averaged Across Pulling Runs"],
-    "Pull Ratio Averaged Across Relaxing Runs": base_pull_ratio_info["Base Pull Ratio Averaged Across Relaxing Runs"],
-    "Pull Ratio Averaged Across All Runs": base_pull_ratio_info["Base Pull Ratio Averaged Across All Runs"],
-    "Pull Ratio 95% Confidence Interval": base_pull_ratio_info["Base Pull Ratio 95% Confidence Interval"],
     **base_pull_ratio_info,
     **yaw_info,
     "analysisUrl": f"https://boothinator.github.io/derailleur-analysis/derailleurs/{dir}/default.htm"

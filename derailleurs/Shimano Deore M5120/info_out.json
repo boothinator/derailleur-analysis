@@ -16,10 +16,6 @@
   "maxToothWithGoatLink": null,
   "chainWrap": 41,
   "pullRatio": 1.1030698825943965,
-  "Pull Ratio Averaged Across Pulling Runs": "1.112 +/- 0.006",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.094 +/- 0.009",
-  "Pull Ratio Averaged Across All Runs": "1.103 +/- 0.020",
-  "Pull Ratio 95% Confidence Interval": "1.083 to 1.123",
   "basePullRatio": 1.1030698825943965,
   "maxPull": 42.63999999999999,
   "coefficients": [

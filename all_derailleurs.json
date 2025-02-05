@@ -17,10 +17,6 @@
     "dataVideo": null,
     "analysisVideo": null,
     "pullRatio": 1.287474716634338,
-    "Pull Ratio Averaged Across Pulling Runs": "1.278 +/- 0.009",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.286 +/- 0.014",
-    "Pull Ratio Averaged Across All Runs": "1.282 +/- 0.015",
-    "Pull Ratio 95% Confidence Interval": "1.268 to 1.297",
     "basePullRatio": 1.2821211770657868,
     "maxPull": 39.38166666666666,
     "coefficients": [
@@ -89,11 +85,7 @@
     "maxToothUnofficial": null,
     "maxToothWithGoatLink": null,
     "chainWrap": 35,
-    "pullRatio": 1.0480941756972713,
-    "Pull Ratio Averaged Across Pulling Runs": "1.048 +/- 0.011",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.047 +/- 0.014",
-    "Pull Ratio Averaged Across All Runs": "1.048 +/- 0.013",
-    "Pull Ratio 95% Confidence Interval": "1.035 to 1.061",
+    "pullRatio": 1.0577847493578643,
     "basePullRatio": 1.0480941756972713,
     "maxPull": 44.80833333333334,
     "coefficients": [
@@ -136,6 +128,13 @@
         -0.00010488856209232585
       ]
     },
+    "yawCoefficients": [
+      -3.7246815747575632,
+      0.18796350485923638,
+      -0.0006861980068006238
+    ],
+    "yawNumberOfMeasurements": 141,
+    "yawAffectsPullRatio": true,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm"
   },
   {
@@ -156,10 +155,6 @@
     "dataVideo": "https://youtu.be/k_x4DJSQ8AE",
     "analysisVideo": "https://www.youtube.com/watch?v=YyO71cNk6sk",
     "pullRatio": 1.4494358404240004,
-    "Pull Ratio Averaged Across Pulling Runs": "1.455 +/- 0.010",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.444 +/- 0.028",
-    "Pull Ratio Averaged Across All Runs": "1.449 +/- 0.024",
-    "Pull Ratio 95% Confidence Interval": "1.426 to 1.473",
     "basePullRatio": 1.4494358404240004,
     "maxPull": 34.50000000000001,
     "coefficients": [
@@ -231,10 +226,6 @@
     "measurementNotes": "No observable yaw",
     "generalNotes": "",
     "pullRatio": 1.0582142182810916,
-    "Pull Ratio Averaged Across Pulling Runs": "1.062 +/- 0.005",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.054 +/- 0.018",
-    "Pull Ratio Averaged Across All Runs": "1.058 +/- 0.015",
-    "Pull Ratio 95% Confidence Interval": "1.043 to 1.074",
     "basePullRatio": 1.0582142182810916,
     "maxPull": 41.36000000000001,
     "coefficients": [
@@ -299,10 +290,6 @@
     "measurementNotes": "No observable yaw",
     "generalNotes": "",
     "pullRatio": 1.1135894598563885,
-    "Pull Ratio Averaged Across Pulling Runs": "1.109 +/- 0.004",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.119 +/- 0.010",
-    "Pull Ratio Averaged Across All Runs": "1.114 +/- 0.012",
-    "Pull Ratio 95% Confidence Interval": "1.101 to 1.126",
     "basePullRatio": 1.1135894598563885,
     "maxPull": 41.27777777777777,
     "coefficients": [
@@ -365,10 +352,6 @@
     "dataVideo": "https://youtu.be/OwyaJB4pWBk",
     "analysisVideo": "https://youtu.be/FNMAUrJoGMw",
     "pullRatio": 1.0749604732774412,
-    "Pull Ratio Averaged Across Pulling Runs": "1.081 +/- 0.001",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.069 +/- 0.003",
-    "Pull Ratio Averaged Across All Runs": "1.075 +/- 0.012",
-    "Pull Ratio 95% Confidence Interval": "1.063 to 1.087",
     "basePullRatio": 1.0749604732774412,
     "maxPull": 46.0,
     "coefficients": [
@@ -431,10 +414,6 @@
     "maxToothWithGoatLink": null,
     "chainWrap": 41,
     "pullRatio": 1.1030698825943965,
-    "Pull Ratio Averaged Across Pulling Runs": "1.112 +/- 0.006",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.094 +/- 0.009",
-    "Pull Ratio Averaged Across All Runs": "1.103 +/- 0.020",
-    "Pull Ratio 95% Confidence Interval": "1.083 to 1.123",
     "basePullRatio": 1.1030698825943965,
     "maxPull": 42.63999999999999,
     "coefficients": [
@@ -499,10 +478,6 @@
     "dataVideo": "https://www.youtube.com/watch?v=43R9U7ykdxc",
     "analysisVideo": "",
     "pullRatio": 1.0723700362156097,
-    "Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.002",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.074 +/- 0.001",
-    "Pull Ratio Averaged Across All Runs": "1.073 +/- 0.002",
-    "Pull Ratio 95% Confidence Interval": "1.071 to 1.075",
     "basePullRatio": 1.0723700362156097,
     "maxPull": 45.58166666666667,
     "coefficients": [
@@ -566,10 +541,6 @@
     "dataVideo": "https://youtu.be/DmpSMv3bTr8",
     "analysisVideo": "https://youtu.be/4Bh7QUWcSew",
     "pullRatio": 1.4466549527908246,
-    "Pull Ratio Averaged Across Pulling Runs": "1.431 +/- 0.030",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.460 +/- 0.008",
-    "Pull Ratio Averaged Across All Runs": "1.445 +/- 0.036",
-    "Pull Ratio 95% Confidence Interval": "1.409 to 1.481",
     "basePullRatio": 1.4451541692394145,
     "maxPull": 33.50000000000001,
     "coefficients": [
@@ -639,10 +610,6 @@
     "dataVideo": "https://youtu.be/ZcwTvWDTFSI",
     "analysisVideo": "https://www.youtube.com/watch?v=d0Pdnp2CTek",
     "pullRatio": 1.6737978114818595,
-    "Pull Ratio Averaged Across Pulling Runs": "1.668 +/- 0.011",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.679 +/- 0.015",
-    "Pull Ratio Averaged Across All Runs": "1.674 +/- 0.017",
-    "Pull Ratio 95% Confidence Interval": "1.657 to 1.691",
     "basePullRatio": 1.6737978114818595,
     "maxPull": 24.444444444444443,
     "coefficients": [
@@ -714,10 +681,6 @@
     "measurementNotes": "This derailleur had a bent parallelogram",
     "generalNotes": "",
     "pullRatio": 1.635046314783001,
-    "Pull Ratio Averaged Across Pulling Runs": "1.669 +/- 0.000",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.596 +/- 0.000",
-    "Pull Ratio Averaged Across All Runs": "1.632 +/- 0.074",
-    "Pull Ratio 95% Confidence Interval": "1.559 to 1.706",
     "basePullRatio": 1.635046314783001,
     "maxPull": 27.333333333333336,
     "coefficients": [
@@ -776,10 +739,6 @@
     "dataVideo": "https://youtu.be/jk8TN2DK8EE",
     "analysisVideo": "https://youtu.be/pIl8qiARYjc",
     "pullRatio": 1.5184004140199956,
-    "Pull Ratio Averaged Across Pulling Runs": "1.509 +/- 0.010",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.510 +/- 0.006",
-    "Pull Ratio Averaged Across All Runs": "1.509 +/- 0.008",
-    "Pull Ratio 95% Confidence Interval": "1.501 to 1.517",
     "basePullRatio": 1.5089633752449654,
     "maxPull": 32.22222222222222,
     "coefficients": [
@@ -848,10 +807,6 @@
     "dataVideo": null,
     "analysisVideo": null,
     "pullRatio": 1.2244597430897561,
-    "Pull Ratio Averaged Across Pulling Runs": "1.226 +/- 0.000",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.224 +/- 0.000",
-    "Pull Ratio Averaged Across All Runs": "1.225 +/- 0.003",
-    "Pull Ratio 95% Confidence Interval": "1.222 to 1.227",
     "basePullRatio": 1.2244597430897561,
     "maxPull": 36.575,
     "coefficients": [
@@ -912,10 +867,6 @@
     "dataVideo": "https://youtu.be/S54ap--bayU",
     "analysisVideo": "https://youtu.be/B8jEOt5SXKg",
     "pullRatio": 1.3300282959484169,
-    "Pull Ratio Averaged Across Pulling Runs": "1.326 +/- 0.003",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.336 +/- 0.003",
-    "Pull Ratio Averaged Across All Runs": "1.331 +/- 0.010",
-    "Pull Ratio 95% Confidence Interval": "1.321 to 1.341",
     "basePullRatio": 1.3300282959484169,
     "maxPull": 30.777777777777782,
     "coefficients": [
@@ -971,10 +922,6 @@
     "dataVideo": "https://youtu.be/MbIZ-nNYEKI",
     "analysisVideo": "https://www.youtube.com/watch?v=HCI9IhSgN3Y",
     "pullRatio": 1.0818246608429336,
-    "Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.015",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.081 +/- 0.024",
-    "Pull Ratio Averaged Across All Runs": "1.077 +/- 0.022",
-    "Pull Ratio 95% Confidence Interval": "1.055 to 1.098",
     "basePullRatio": 1.0772281817248925,
     "maxPull": 39.55555555555556,
     "coefficients": [
