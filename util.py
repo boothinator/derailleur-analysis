@@ -32,8 +32,12 @@ def get_cassette_cog_teeth(min_tooth, max_tooth, cog_count):
 
   return teeth_counts
 
+def get_cog_radius(teeth):
+  half_angle_between_adjacent_teeth = np.pi / teeth
+  return (link_length / 2) / math.sin(half_angle_between_adjacent_teeth)
+
 def get_cassette_cog_radii(min_tooth, max_tooth, cog_count):
-  return [teeth * (25.4 / 2) / (2 * np.pi) for teeth in get_cassette_cog_teeth(min_tooth, max_tooth, cog_count)]
+  return [get_cog_radius(teeth) for teeth in get_cassette_cog_teeth(min_tooth, max_tooth, cog_count)]
 
 def get_straight_parallelogram_b_gap_mm(max_teeth):
   if max_teeth <= 20:
@@ -69,7 +73,7 @@ def get_b_gap_mm(max_teeth, parallelogram_style):
 
 def get_jockey_to_cog_distance_mm(teeth, b_gap):
 
-  cog_radius = teeth * (25.4 / 2) / (2 * np.pi)
+  cog_radius = get_cog_radius(teeth)
   jockey_to_cog_distance = np.sqrt(2 * cog_radius * b_gap + b_gap * b_gap)
 
   return jockey_to_cog_distance
@@ -396,6 +400,10 @@ if __name__ == '__main__':
   print("Gen:", get_cassette_cog_teeth(11,36, 10), "\nAct:", [11, 13, 15, 17, 19, 21, 24, 28, 32, 36], "\n")
   print("Gen:", get_cassette_cog_teeth(10,52, 12), "\nAct:", [10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 52], "\n")
   print(get_jockey_to_cog_distance_list(11,39, 11, True, 3))
+
+  print(get_cog_radius(11), 11 * (25.4 / 2) / (2 * np.pi))
+  print(get_cog_radius(32), 32 * (25.4 / 2) / (2 * np.pi))
+  print(get_cog_radius(52), 52 * (25.4 / 2) / (2 * np.pi))
 
   angles = calculate_max_chain_angle(  {
     "brand": "Shimano",
