@@ -17,7 +17,9 @@
     "chainWrap": 35,
     "dataVideo": null,
     "analysisVideo": null,
-    "pullRatio": 1.2821211770657868,
+    "pullRatio": 1.287474716634338,
+    "basePullRatio": 1.2821211770657868,
+    "maxPull": 39.38166666666666,
     "coefficients": [
       10.456472725810904,
       1.2081333196632447,
@@ -27,11 +29,10 @@
     "physicalLowLimit": 10.456472725810904,
     "physicalHighLimit": 56.13878641947217,
     "numberOfMeasurements": 760,
-    "Pull Ratio Averaged Across Pulling Runs": "1.278 +/- 0.009",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.286 +/- 0.014",
-    "Pull Ratio Averaged Across All Runs": "1.282 +/- 0.015",
-    "Pull Ratio 95% Confidence Interval": "1.268 to 1.297",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo Ekar/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.278 +/- 0.009",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.286 +/- 0.014",
+    "Base Pull Ratio Averaged Across All Runs": "1.282 +/- 0.015",
+    "Base Pull Ratio 95% Confidence Interval": "1.268 to 1.297",
     "meas_method_percent_diffs": [
       -0.7822977201609329,
       -0.4038590980480297,
@@ -40,7 +41,33 @@
       -0.3990246065174327,
       -1.393188854489154
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.6255715634784024 +/- 1.0412779314080989"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.6255715634784024 +/- 1.0412779314080989",
+    "pullRatioCalc": {
+      "dropout_width": 11.2,
+      "small_cog_offset": 2.2,
+      "small_cog_position": 13.399999999999999,
+      "smallest_cog_pull": 2.3791109508251798,
+      "second_smallest_cog_pull": 4.825142014747954,
+      "second_biggest_cog_pull": 29.39380257777655,
+      "biggest_cog_pull": 32.64064671848848,
+      "biggest_cog_position": 51.199999999999996,
+      "total_pitch_inner_cogs": 31.5,
+      "pull_ratio": 1.2821211770657868,
+      "coefficients": [
+        10.456472725810904,
+        1.2081333196632447,
+        0.013098737586278185,
+        -0.00036365232737222824
+      ]
+    },
+    "yawCoefficients": [
+      -2.586769362861251,
+      0.10294331637354888,
+      -0.00014384446460453165
+    ],
+    "yawNumberOfMeasurements": 126,
+    "yawAffectsPullRatio": true,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo Ekar/default.htm"
   },
   {
     "brand": "Microshift",
@@ -59,8 +86,9 @@
     "maxToothUnofficial": null,
     "maxToothWithGoatLink": null,
     "chainWrap": 35,
-    "linksFromJockeyToSmallestCog": 4,
-    "pullRatio": 1.0480941756972713,
+    "pullRatio": 1.0577847493578643,
+    "basePullRatio": 1.0480941756972713,
+    "maxPull": 44.80833333333334,
     "coefficients": [
       10.63609527393101,
       0.8516019652813257,
@@ -70,11 +98,10 @@
     "physicalLowLimit": 10.63609527393101,
     "physicalHighLimit": 56.076868483895375,
     "numberOfMeasurements": 577,
-    "Pull Ratio Averaged Across Pulling Runs": "1.048 +/- 0.011",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.047 +/- 0.014",
-    "Pull Ratio Averaged Across All Runs": "1.048 +/- 0.013",
-    "Pull Ratio 95% Confidence Interval": "1.035 to 1.061",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.048 +/- 0.011",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.047 +/- 0.014",
+    "Base Pull Ratio Averaged Across All Runs": "1.048 +/- 0.013",
+    "Base Pull Ratio 95% Confidence Interval": "1.035 to 1.061",
     "meas_method_percent_diffs": [
       -0.08646779074792921,
       0.1503113592441492,
@@ -83,7 +110,33 @@
       0.3050773589017227,
       -0.1530723813689206
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.07094927621877843 +/- 0.4922167734024139"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.07094927621877843 +/- 0.4922167734024139",
+    "pullRatioCalc": {
+      "dropout_width": 12.0,
+      "small_cog_offset": 3.0,
+      "small_cog_position": 15.0,
+      "smallest_cog_pull": 4.903749371851818,
+      "second_smallest_cog_pull": 9.052737563946664,
+      "second_biggest_cog_pull": 35.433954673187,
+      "biggest_cog_pull": 39.252946798054474,
+      "biggest_cog_position": 50.550000000000004,
+      "total_pitch_inner_cogs": 27.650000000000002,
+      "pull_ratio": 1.0480941756972713,
+      "coefficients": [
+        10.63609527393101,
+        0.8516019652813257,
+        0.008326715295997324,
+        -0.00010488856209232585
+      ]
+    },
+    "yawCoefficients": [
+      -3.7246815747575632,
+      0.18796350485923638,
+      -0.0006861980068006238
+    ],
+    "yawNumberOfMeasurements": 141,
+    "yawAffectsPullRatio": true,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm"
   },
   {
     "brand": "Shimano",
@@ -104,6 +157,8 @@
     "dataVideo": "https://youtu.be/k_x4DJSQ8AE",
     "analysisVideo": "https://www.youtube.com/watch?v=YyO71cNk6sk",
     "pullRatio": 1.4494358404240004,
+    "basePullRatio": 1.4494358404240004,
+    "maxPull": 34.50000000000001,
     "coefficients": [
       9.553965933801223,
       1.1060093930248278,
@@ -113,11 +168,10 @@
     "physicalLowLimit": 9.553965933801223,
     "physicalHighLimit": 57.36286707864005,
     "numberOfMeasurements": 668,
-    "Pull Ratio Averaged Across Pulling Runs": "1.455 +/- 0.010",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.444 +/- 0.028",
-    "Pull Ratio Averaged Across All Runs": "1.449 +/- 0.024",
-    "Pull Ratio 95% Confidence Interval": "1.426 to 1.473",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano 105 11-speed/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.455 +/- 0.010",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.444 +/- 0.028",
+    "Base Pull Ratio Averaged Across All Runs": "1.449 +/- 0.024",
+    "Base Pull Ratio 95% Confidence Interval": "1.426 to 1.473",
     "meas_method_percent_diffs": [
       0.23041474654377764,
       -0.12647554806072803,
@@ -126,7 +180,33 @@
       -4.317607413647876,
       -0.5769230769230684
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.8495948045650539 +/- 3.1762901093136264"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.8495948045650539 +/- 3.1762901093136264",
+    "pullRatioCalc": {
+      "dropout_width": 8.0,
+      "small_cog_offset": 3.0,
+      "small_cog_position": 11.0,
+      "smallest_cog_pull": 1.2757957491487741,
+      "second_smallest_cog_pull": 4.50778371963452,
+      "second_biggest_cog_pull": 26.30936963236876,
+      "biggest_cog_pull": 29.137890765086418,
+      "biggest_cog_position": 50.5,
+      "total_pitch_inner_cogs": 31.6,
+      "pull_ratio": 1.4494358404240004,
+      "coefficients": [
+        9.553965933801223,
+        1.1060093930248278,
+        0.022012559144818793,
+        -0.00040300561474147274
+      ]
+    },
+    "yawCoefficients": [
+      -0.4553384652981427,
+      0.06611560042664046,
+      -0.00033257551680799667
+    ],
+    "yawNumberOfMeasurements": 92,
+    "yawAffectsPullRatio": false,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano 105 11-speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -146,8 +226,11 @@
     "chainWrap": 44,
     "dataVideo": "https://youtu.be/I-ctFLBjlZ0",
     "analysisVideo": "https://youtu.be/anIPVxXD7Lg",
-    "bGap": 9,
+    "measurementNotes": "No observable yaw",
+    "generalNotes": "",
     "pullRatio": 1.0582142182810916,
+    "basePullRatio": 1.0582142182810916,
+    "maxPull": 41.36000000000001,
     "coefficients": [
       8.034542372275181,
       0.9792098840753652,
@@ -157,11 +240,10 @@
     "physicalLowLimit": 8.034542372275181,
     "physicalHighLimit": 50.871216961370294,
     "numberOfMeasurements": 652,
-    "Pull Ratio Averaged Across Pulling Runs": "1.062 +/- 0.005",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.054 +/- 0.018",
-    "Pull Ratio Averaged Across All Runs": "1.058 +/- 0.015",
-    "Pull Ratio 95% Confidence Interval": "1.043 to 1.074",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 10-Speed/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.062 +/- 0.005",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.054 +/- 0.018",
+    "Base Pull Ratio Averaged Across All Runs": "1.058 +/- 0.015",
+    "Base Pull Ratio 95% Confidence Interval": "1.043 to 1.074",
     "meas_method_percent_diffs": [
       0.047835446065542034,
       -0.6227544910179423,
@@ -170,7 +252,26 @@
       -0.47732696897371996,
       1.711738703348832e-14
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.4020108757631942 +/- 0.8749427035283623"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.4020108757631942 +/- 0.8749427035283623",
+    "pullRatioCalc": {
+      "dropout_width": 8.0,
+      "small_cog_offset": 3.0,
+      "small_cog_position": 11.0,
+      "smallest_cog_pull": 2.984749586854845,
+      "second_smallest_cog_pull": 6.945407786958106,
+      "second_biggest_cog_pull": 33.73582461395016,
+      "biggest_cog_pull": 37.79438483904459,
+      "biggest_cog_position": 47.449999999999996,
+      "total_pitch_inner_cogs": 28.349999999999998,
+      "pull_ratio": 1.0582142182810916,
+      "coefficients": [
+        8.034542372275181,
+        0.9792098840753652,
+        0.005067028992561139,
+        -8.948602873125939e-05
+      ]
+    },
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 10-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -190,8 +291,11 @@
     "chainWrap": 41,
     "dataVideo": null,
     "analysisVideo": null,
-    "bGap": 9,
+    "measurementNotes": "No observable yaw",
+    "generalNotes": "",
     "pullRatio": 1.1135894598563885,
+    "basePullRatio": 1.1135894598563885,
+    "maxPull": 41.27777777777777,
     "coefficients": [
       7.737001280923079,
       0.9879665041304803,
@@ -201,11 +305,10 @@
     "physicalLowLimit": 7.737001280923079,
     "physicalHighLimit": 52.973579149442934,
     "numberOfMeasurements": 797,
-    "Pull Ratio Averaged Across Pulling Runs": "1.109 +/- 0.004",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.119 +/- 0.010",
-    "Pull Ratio Averaged Across All Runs": "1.114 +/- 0.012",
-    "Pull Ratio 95% Confidence Interval": "1.101 to 1.126",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 9-Speed/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.109 +/- 0.004",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.119 +/- 0.010",
+    "Base Pull Ratio Averaged Across All Runs": "1.114 +/- 0.012",
+    "Base Pull Ratio 95% Confidence Interval": "1.101 to 1.126",
     "meas_method_percent_diffs": [
       -0.6928922664282255,
       -0.648479427549209,
@@ -214,7 +317,26 @@
       -12.989117851354496,
       -1.2569832402234618
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -2.8765220583430793 +/- 9.06333089912196"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -2.8765220583430793 +/- 9.06333089912196",
+    "pullRatioCalc": {
+      "dropout_width": 8.0,
+      "small_cog_offset": 3.0,
+      "small_cog_position": 11.0,
+      "smallest_cog_pull": 3.2427655903385557,
+      "second_smallest_cog_pull": 7.128134536593364,
+      "second_biggest_cog_pull": 28.949461763535503,
+      "biggest_cog_pull": 32.54990861512568,
+      "biggest_cog_position": 43.4,
+      "total_pitch_inner_cogs": 24.299999999999997,
+      "pull_ratio": 1.1135894598563885,
+      "coefficients": [
+        7.737001280923079,
+        0.9879665041304803,
+        0.005892473407102435,
+        -7.940135104613653e-05
+      ]
+    },
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 9-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -235,6 +357,8 @@
     "dataVideo": "https://youtu.be/OwyaJB4pWBk",
     "analysisVideo": "https://youtu.be/FNMAUrJoGMw",
     "pullRatio": 1.0749604732774412,
+    "basePullRatio": 1.0749604732774412,
+    "maxPull": 46.0,
     "coefficients": [
       7.384952692316141,
       0.8488622484275746,
@@ -244,11 +368,10 @@
     "physicalLowLimit": 7.384952692316141,
     "physicalHighLimit": 54.55895992151853,
     "numberOfMeasurements": 874,
-    "Pull Ratio Averaged Across Pulling Runs": "1.081 +/- 0.001",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.069 +/- 0.003",
-    "Pull Ratio Averaged Across All Runs": "1.075 +/- 0.012",
-    "Pull Ratio 95% Confidence Interval": "1.063 to 1.087",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore 11-Speed/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.081 +/- 0.001",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.069 +/- 0.003",
+    "Base Pull Ratio Averaged Across All Runs": "1.075 +/- 0.012",
+    "Base Pull Ratio 95% Confidence Interval": "1.063 to 1.087",
     "meas_method_percent_diffs": [
       -1.1640439749946243,
       -1.3157894736842244,
@@ -257,7 +380,26 @@
       -0.6064544076240007,
       -0.6709956709956605
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.7960238785832772 +/- 0.855273830804186"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.7960238785832772 +/- 0.855273830804186",
+    "pullRatioCalc": {
+      "dropout_width": 8.0,
+      "small_cog_offset": 3.0,
+      "small_cog_position": 11.0,
+      "smallest_cog_pull": 4.060469438911287,
+      "second_smallest_cog_pull": 7.958937451460835,
+      "second_biggest_cog_pull": 35.86694034623999,
+      "biggest_cog_pull": 39.55408294942154,
+      "biggest_cog_position": 48.5,
+      "total_pitch_inner_cogs": 30.0,
+      "pull_ratio": 1.0749604732774412,
+      "coefficients": [
+        7.384952692316141,
+        0.8488622484275746,
+        0.01082213502383337,
+        -0.00015177625861857337
+      ]
+    },
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore 11-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -278,6 +420,8 @@
     "maxToothWithGoatLink": null,
     "chainWrap": 41,
     "pullRatio": 1.1030698825943965,
+    "basePullRatio": 1.1030698825943965,
+    "maxPull": 42.63999999999999,
     "coefficients": [
       6.384338659227578,
       0.9647747137995784,
@@ -287,11 +431,10 @@
     "physicalLowLimit": 6.384338659227578,
     "physicalHighLimit": 52.213562098253725,
     "numberOfMeasurements": 538,
-    "Pull Ratio Averaged Across Pulling Runs": "1.112 +/- 0.006",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.094 +/- 0.009",
-    "Pull Ratio Averaged Across All Runs": "1.103 +/- 0.020",
-    "Pull Ratio 95% Confidence Interval": "1.083 to 1.123",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore M5120/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.112 +/- 0.006",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.094 +/- 0.009",
+    "Base Pull Ratio Averaged Across All Runs": "1.103 +/- 0.020",
+    "Base Pull Ratio 95% Confidence Interval": "1.083 to 1.123",
     "meas_method_percent_diffs": [
       0.0225326723749552,
       0.40513166779201576,
@@ -300,7 +443,26 @@
       -0.534640231677454,
       -0.2005347593583122
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.13617357983427106 +/- 0.6415903932565656"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.13617357983427106 +/- 0.6415903932565656",
+    "pullRatioCalc": {
+      "dropout_width": 8.0,
+      "small_cog_offset": 3.0,
+      "small_cog_position": 11.0,
+      "smallest_cog_pull": 4.638690815576001,
+      "second_smallest_cog_pull": 8.238450699990517,
+      "second_biggest_cog_pull": 35.435277005718895,
+      "biggest_cog_pull": 38.99081179100354,
+      "biggest_cog_position": 48.5,
+      "total_pitch_inner_cogs": 30.0,
+      "pull_ratio": 1.1030698825943965,
+      "coefficients": [
+        6.384338659227578,
+        0.9647747137995784,
+        0.007004879160747341,
+        -0.00010376842210153371
+      ]
+    },
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore M5120/default.htm"
   },
   {
     "brand": "Shimano",
@@ -323,6 +485,8 @@
     "dataVideo": "https://www.youtube.com/watch?v=43R9U7ykdxc",
     "analysisVideo": "",
     "pullRatio": 1.0723700362156097,
+    "basePullRatio": 1.0723700362156097,
+    "maxPull": 45.58166666666667,
     "coefficients": [
       8.270994114931078,
       0.9781505212584579,
@@ -332,11 +496,10 @@
     "physicalLowLimit": 8.270994114931078,
     "physicalHighLimit": 56.4961830998342,
     "numberOfMeasurements": 570,
-    "Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.002",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.074 +/- 0.001",
-    "Pull Ratio Averaged Across All Runs": "1.073 +/- 0.002",
-    "Pull Ratio 95% Confidence Interval": "1.071 to 1.075",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore M6100/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.002",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.074 +/- 0.001",
+    "Base Pull Ratio Averaged Across All Runs": "1.073 +/- 0.002",
+    "Base Pull Ratio 95% Confidence Interval": "1.071 to 1.075",
     "meas_method_percent_diffs": [
       -0.3101462117855573,
       0.8563074352548263,
@@ -345,7 +508,26 @@
       -0.45548654244306186,
       -0.02065262288311672
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.1544957931771925 +/- 0.9740200003640912"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.1544957931771925 +/- 0.9740200003640912",
+    "pullRatioCalc": {
+      "dropout_width": 8.0,
+      "small_cog_offset": 3.0,
+      "small_cog_position": 11.0,
+      "smallest_cog_pull": 2.7579573847909855,
+      "second_smallest_cog_pull": 6.262010183924473,
+      "second_biggest_cog_pull": 36.055830340212545,
+      "biggest_cog_pull": 39.39129582577682,
+      "biggest_cog_position": 50.05,
+      "total_pitch_inner_cogs": 31.95,
+      "pull_ratio": 1.0723700362156097,
+      "coefficients": [
+        8.270994114931078,
+        0.9781505212584579,
+        0.004268377288036508,
+        -5.521279227957996e-05
+      ]
+    },
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore M6100/default.htm"
   },
   {
     "brand": "Shimano",
@@ -366,7 +548,9 @@
     "chainWrap": 41,
     "dataVideo": "https://youtu.be/DmpSMv3bTr8",
     "analysisVideo": "https://youtu.be/4Bh7QUWcSew",
-    "pullRatio": 1.4451541692394145,
+    "pullRatio": 1.4466549527908246,
+    "basePullRatio": 1.4451541692394145,
+    "maxPull": 33.50000000000001,
     "coefficients": [
       10.610392334722109,
       1.117584653011419,
@@ -376,11 +560,10 @@
     "physicalLowLimit": 10.610392334722109,
     "physicalHighLimit": 56.62019914989602,
     "numberOfMeasurements": 657,
-    "Pull Ratio Averaged Across Pulling Runs": "1.431 +/- 0.030",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.460 +/- 0.008",
-    "Pull Ratio Averaged Across All Runs": "1.445 +/- 0.036",
-    "Pull Ratio 95% Confidence Interval": "1.409 to 1.481",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano GRX 10-Speed/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.431 +/- 0.030",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.460 +/- 0.008",
+    "Base Pull Ratio Averaged Across All Runs": "1.445 +/- 0.036",
+    "Base Pull Ratio 95% Confidence Interval": "1.409 to 1.481",
     "meas_method_percent_diffs": [
       -0.4875886524822356,
       -0.3734622144112359,
@@ -389,7 +572,33 @@
       -0.41639272408504235,
       -0.5626828719333944
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.2917880590098528 +/- 0.7054179473796373"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.2917880590098528 +/- 0.7054179473796373",
+    "pullRatioCalc": {
+      "dropout_width": 8.0,
+      "small_cog_offset": 3.2,
+      "small_cog_position": 11.2,
+      "smallest_cog_pull": 0.5220059085860909,
+      "second_smallest_cog_pull": 3.788123229222928,
+      "second_biggest_cog_pull": 22.921030007295066,
+      "biggest_cog_pull": 25.699638140979282,
+      "biggest_cog_position": 46.75,
+      "total_pitch_inner_cogs": 27.650000000000002,
+      "pull_ratio": 1.4451541692394145,
+      "coefficients": [
+        10.610392334722109,
+        1.117584653011419,
+        0.02307392642234105,
+        -0.00046080117536215237
+      ]
+    },
+    "yawCoefficients": [
+      -0.12242215900110616,
+      0.11106609987414935,
+      -0.0015108923003659827
+    ],
+    "yawNumberOfMeasurements": 106,
+    "yawAffectsPullRatio": true,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano GRX 10-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -410,6 +619,8 @@
     "dataVideo": "https://youtu.be/ZcwTvWDTFSI",
     "analysisVideo": "https://www.youtube.com/watch?v=d0Pdnp2CTek",
     "pullRatio": 1.6737978114818595,
+    "basePullRatio": 1.6737978114818595,
+    "maxPull": 24.444444444444443,
     "coefficients": [
       11.461979441469097,
       1.6640468907167323,
@@ -419,11 +630,10 @@
     "physicalLowLimit": 11.461979441469097,
     "physicalHighLimit": 49.71929833902126,
     "numberOfMeasurements": 493,
-    "Pull Ratio Averaged Across Pulling Runs": "1.668 +/- 0.011",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.679 +/- 0.015",
-    "Pull Ratio Averaged Across All Runs": "1.674 +/- 0.017",
-    "Pull Ratio 95% Confidence Interval": "1.657 to 1.691",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Tiagra 4600 10-Speed/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.668 +/- 0.011",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.679 +/- 0.015",
+    "Base Pull Ratio Averaged Across All Runs": "1.674 +/- 0.017",
+    "Base Pull Ratio 95% Confidence Interval": "1.657 to 1.691",
     "meas_method_percent_diffs": [
       -0.5143475906876145,
       -0.8134490238611829,
@@ -432,7 +642,33 @@
       -0.3807451726951141,
       -0.9264305177111617
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.5384172689512848 +/- 0.5037143288702502"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.5384172689512848 +/- 0.5037143288702502",
+    "pullRatioCalc": {
+      "dropout_width": 8.0,
+      "small_cog_offset": 4.0,
+      "small_cog_position": 12.0,
+      "smallest_cog_pull": 0.32221296664869675,
+      "second_smallest_cog_pull": 2.6318461471033063,
+      "second_biggest_cog_pull": 19.151165153453718,
+      "biggest_cog_pull": 22.326335282404457,
+      "biggest_cog_position": 47.550000000000004,
+      "total_pitch_inner_cogs": 27.650000000000002,
+      "pull_ratio": 1.6737978114818595,
+      "coefficients": [
+        11.461979441469097,
+        1.6640468907167323,
+        0.018043590844462516,
+        -0.000903786465824992
+      ]
+    },
+    "yawCoefficients": [
+      -1.526788554440728,
+      0.09484162214596993,
+      -0.0010304671174236376
+    ],
+    "yawNumberOfMeasurements": 72,
+    "yawAffectsPullRatio": true,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Tiagra 4600 10-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -452,7 +688,11 @@
     "chainWrap": 33,
     "dataVideo": null,
     "analysisVideo": null,
+    "measurementNotes": "This derailleur had a bent parallelogram",
+    "generalNotes": "",
     "pullRatio": 1.635046314783001,
+    "basePullRatio": 1.635046314783001,
+    "maxPull": 27.333333333333336,
     "coefficients": [
       6.830856626055114,
       1.5437395136186591,
@@ -462,16 +702,34 @@
     "physicalLowLimit": 6.830856626055114,
     "physicalHighLimit": 47.69008636366456,
     "numberOfMeasurements": 172,
-    "Pull Ratio Averaged Across Pulling Runs": "1.669 +/- 0.000",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.596 +/- 0.000",
-    "Pull Ratio Averaged Across All Runs": "1.632 +/- 0.074",
-    "Pull Ratio 95% Confidence Interval": "1.559 to 1.706",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra 6500 9-Speed/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.669 +/- 0.000",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.596 +/- 0.000",
+    "Base Pull Ratio Averaged Across All Runs": "1.632 +/- 0.074",
+    "Base Pull Ratio 95% Confidence Interval": "1.559 to 1.706",
     "meas_method_percent_diffs": [
       -0.09501187648457543,
       8.526124252664397
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: 4.215556188089911 +/- 8.621136129148972"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: 4.215556188089911 +/- 8.621136129148972",
+    "pullRatioCalc": {
+      "dropout_width": 8.0,
+      "small_cog_offset": 3.0,
+      "small_cog_position": 11.0,
+      "smallest_cog_pull": 2.5995547353563384,
+      "second_smallest_cog_pull": 5.158251311951081,
+      "second_biggest_cog_pull": 21.084405675019358,
+      "biggest_cog_pull": 24.942943296695802,
+      "biggest_cog_position": 45.72,
+      "total_pitch_inner_cogs": 26.04,
+      "pull_ratio": 1.635046314783001,
+      "coefficients": [
+        6.830856626055114,
+        1.5437395136186591,
+        0.025716729552334103,
+        -0.0010062942112433056
+      ]
+    },
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra 6500 9-Speed/default.htm"
   },
   {
     "brand": "Shimano",
@@ -491,7 +749,9 @@
     "chainWrap": 39,
     "dataVideo": "https://youtu.be/jk8TN2DK8EE",
     "analysisVideo": "https://youtu.be/pIl8qiARYjc",
-    "pullRatio": 1.5089633752449654,
+    "pullRatio": 1.5184004140199956,
+    "basePullRatio": 1.5089633752449654,
+    "maxPull": 32.22222222222222,
     "coefficients": [
       10.19548235625865,
       1.0279752119154855,
@@ -501,11 +761,10 @@
     "physicalLowLimit": 10.19548235625865,
     "physicalHighLimit": 56.41613526906784,
     "numberOfMeasurements": 635,
-    "Pull Ratio Averaged Across Pulling Runs": "1.509 +/- 0.010",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.510 +/- 0.006",
-    "Pull Ratio Averaged Across All Runs": "1.509 +/- 0.008",
-    "Pull Ratio 95% Confidence Interval": "1.501 to 1.517",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra RX 11-Speed/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.509 +/- 0.010",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.510 +/- 0.006",
+    "Base Pull Ratio Averaged Across All Runs": "1.509 +/- 0.008",
+    "Base Pull Ratio 95% Confidence Interval": "1.501 to 1.517",
     "meas_method_percent_diffs": [
       0.17097670442401855,
       -0.40459965928447744,
@@ -514,7 +773,33 @@
       -0.1502790897380704,
       -0.6640959725792527
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.48405866487527266 +/- 0.9129881298085429"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.48405866487527266 +/- 0.9129881298085429",
+    "pullRatioCalc": {
+      "dropout_width": 8.0,
+      "small_cog_offset": 3.5,
+      "small_cog_position": 11.5,
+      "smallest_cog_pull": 1.224695915113966,
+      "second_smallest_cog_pull": 4.383096016945995,
+      "second_biggest_cog_pull": 24.264294256850125,
+      "biggest_cog_pull": 26.77476022101423,
+      "biggest_cog_position": 49.0,
+      "total_pitch_inner_cogs": 30.0,
+      "pull_ratio": 1.5089633752449654,
+      "coefficients": [
+        10.19548235625865,
+        1.0279752119154855,
+        0.031077926477331628,
+        -0.0005730109600700794
+      ]
+    },
+    "yawCoefficients": [
+      0.19402193691714698,
+      0.16112859073248073,
+      -0.0029846332809592654
+    ],
+    "yawNumberOfMeasurements": 94,
+    "yawAffectsPullRatio": true,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra RX 11-Speed/default.htm"
   },
   {
     "brand": "SRAM",
@@ -534,6 +819,8 @@
     "dataVideo": null,
     "analysisVideo": null,
     "pullRatio": 1.2244597430897561,
+    "basePullRatio": 1.2244597430897561,
+    "maxPull": 36.575,
     "coefficients": [
       12.203260747463762,
       1.250397712023638,
@@ -543,16 +830,34 @@
     "physicalLowLimit": 12.203260747463762,
     "physicalHighLimit": 55.80106473400522,
     "numberOfMeasurements": 236,
-    "Pull Ratio Averaged Across Pulling Runs": "1.226 +/- 0.000",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.224 +/- 0.000",
-    "Pull Ratio Averaged Across All Runs": "1.225 +/- 0.003",
-    "Pull Ratio 95% Confidence Interval": "1.222 to 1.227",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM Apex 11-Speed/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.226 +/- 0.000",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.224 +/- 0.000",
+    "Base Pull Ratio Averaged Across All Runs": "1.225 +/- 0.003",
+    "Base Pull Ratio 95% Confidence Interval": "1.222 to 1.227",
     "meas_method_percent_diffs": [
       -0.02400384061447649,
       -0.8604206500956009
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.44221224535503867 +/- 0.8364168094811244"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.44221224535503867 +/- 0.8364168094811244",
+    "pullRatioCalc": {
+      "dropout_width": 11.0,
+      "small_cog_offset": 3.0,
+      "small_cog_position": 14.0,
+      "smallest_cog_pull": 1.4329002814592722,
+      "second_smallest_cog_pull": 4.403199809720309,
+      "second_biggest_cog_pull": 28.9038011314911,
+      "biggest_cog_pull": 32.35666099435299,
+      "biggest_cog_position": 51.5,
+      "total_pitch_inner_cogs": 30.0,
+      "pull_ratio": 1.2244597430897561,
+      "coefficients": [
+        12.203260747463762,
+        1.250397712023638,
+        0.002621917886666269,
+        -0.00011533212323678307
+      ]
+    },
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM Apex 11-Speed/default.htm"
   },
   {
     "brand": "SRAM",
@@ -575,6 +880,8 @@
     "dataVideo": "https://youtu.be/S54ap--bayU",
     "analysisVideo": "https://youtu.be/B8jEOt5SXKg",
     "pullRatio": 1.3300282959484169,
+    "basePullRatio": 1.3300282959484169,
+    "maxPull": 30.777777777777782,
     "coefficients": [
       12.472023202602115,
       1.1596164173647463,
@@ -584,13 +891,31 @@
     "physicalLowLimit": 12.472023202602115,
     "physicalHighLimit": 52.74485099753495,
     "numberOfMeasurements": 612,
-    "Pull Ratio Averaged Across Pulling Runs": "1.326 +/- 0.003",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.336 +/- 0.003",
-    "Pull Ratio Averaged Across All Runs": "1.331 +/- 0.010",
-    "Pull Ratio 95% Confidence Interval": "1.321 to 1.341",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM GX 10-Speed/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.326 +/- 0.003",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.336 +/- 0.003",
+    "Base Pull Ratio Averaged Across All Runs": "1.331 +/- 0.010",
+    "Base Pull Ratio 95% Confidence Interval": "1.321 to 1.341",
     "meas_method_percent_diffs": [],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: nan +/- nan"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: nan +/- nan",
+    "pullRatioCalc": {
+      "dropout_width": 12.5,
+      "small_cog_offset": 3.0,
+      "small_cog_position": 15.5,
+      "smallest_cog_pull": 2.562159195731393,
+      "second_smallest_cog_pull": 5.780494890786051,
+      "second_biggest_cog_pull": 26.569526285252238,
+      "biggest_cog_pull": 29.506577041009734,
+      "biggest_cog_position": 51.050000000000004,
+      "total_pitch_inner_cogs": 27.650000000000002,
+      "pull_ratio": 1.3300282959484169,
+      "coefficients": [
+        12.472023202602115,
+        1.1596164173647463,
+        0.009007935914475509,
+        -0.0001355020422310971
+      ]
+    },
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM GX 10-Speed/default.htm"
   },
   {
     "brand": "SRAM",
@@ -610,7 +935,9 @@
     "chainWrap": 40,
     "dataVideo": "https://youtu.be/MbIZ-nNYEKI",
     "analysisVideo": "https://www.youtube.com/watch?v=HCI9IhSgN3Y",
-    "pullRatio": 1.0772281817248925,
+    "pullRatio": 1.0818246608429336,
+    "basePullRatio": 1.0772281817248925,
+    "maxPull": 39.55555555555556,
     "coefficients": [
       15.024478586965287,
       0.9647403299169183,
@@ -620,11 +947,10 @@
     "physicalLowLimit": 15.024478586965287,
     "physicalHighLimit": 56.76688043983986,
     "numberOfMeasurements": 753,
-    "Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.015",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.081 +/- 0.024",
-    "Pull Ratio Averaged Across All Runs": "1.077 +/- 0.022",
-    "Pull Ratio 95% Confidence Interval": "1.055 to 1.098",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM SX 12-Speed/default.htm",
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.015",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.081 +/- 0.024",
+    "Base Pull Ratio Averaged Across All Runs": "1.077 +/- 0.022",
+    "Base Pull Ratio 95% Confidence Interval": "1.055 to 1.098",
     "meas_method_percent_diffs": [
       -0.45271629778673744,
       -0.4071246819338336,
@@ -633,6 +959,32 @@
       -0.5731373037627809,
       0.07053844345170056
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.4430479823925379 +/- 0.8021182126469187"
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.4430479823925379 +/- 0.8021182126469187",
+    "pullRatioCalc": {
+      "dropout_width": 13.8,
+      "small_cog_offset": 2.0,
+      "small_cog_position": 15.8,
+      "smallest_cog_pull": 0.7988184008049765,
+      "second_smallest_cog_pull": 4.441504936256687,
+      "second_biggest_cog_pull": 34.936436796839395,
+      "biggest_cog_pull": 38.68430352105634,
+      "biggest_cog_position": 55.95,
+      "total_pitch_inner_cogs": 32.85,
+      "pull_ratio": 1.0772281817248925,
+      "coefficients": [
+        15.024478586965287,
+        0.9647403299169183,
+        0.007740562052950136,
+        -0.00013781882726897584
+      ]
+    },
+    "yawCoefficients": [
+      -2.586769362861251,
+      0.10294331637354888,
+      -0.00014384446460453165
+    ],
+    "yawNumberOfMeasurements": 126,
+    "yawAffectsPullRatio": true,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM SX 12-Speed/default.htm"
   }
 ]

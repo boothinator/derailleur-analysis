@@ -16,5 +16,7 @@
   "chainWrap": 41,
   "dataVideo": null,
   "analysisVideo": null,
-  "bGap": 9
+  "bGap": 9,
+  "measurementNotes": "No observable yaw",
+  "generalNotes": ""
 }

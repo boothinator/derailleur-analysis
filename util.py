@@ -1,11 +1,121 @@
 import numpy as np
 from pydantic import BaseModel
+from typing import Iterable
+import math
 
 # Could calculate using dropout thickness (7 to 8 mm for shimano?) and then use the distance from 
 # end of cassette to dropout to figure out the first cog position, maybe
 smallest_cog_position = 15 # TODO: put this on the cassette, or figure out from derailleur
 default_links_from_jockey_to_smallest_cog = 3
 max_cable_pull = 50 # Assume that no shifter will be able to pull 50 mm of cable
+chain_max_free_yaw = 1.5
+link_length = 12.7
+
+def get_cassette_cog_teeth(min_tooth, max_tooth, cog_count):
+  min_tooth_x = np.log(min_tooth)
+  max_tooth_x = np.log(max_tooth)
+
+  a = (max_tooth_x - min_tooth_x) / (cog_count - 1)
+
+  cur_teeth = min_tooth
+  teeth_counts = [cur_teeth]
+  prev_step = 0
+  for i in range(1, cog_count - 1):
+    teeth_frac = min_tooth * np.power(np.e, a * (i-1))
+    cur_step = min_tooth * a * np.power(np.e, a * i)
+    cur_step = max(round(cur_step + teeth_frac - cur_teeth), prev_step)
+    cur_teeth = cur_teeth + cur_step
+    prev_step = cur_step
+    teeth_counts.append(cur_teeth)
+  
+  teeth_counts.append(max_tooth)
+
+  return teeth_counts
+
+def get_cassette_cog_radii(min_tooth, max_tooth, cog_count):
+  return [teeth * (25.4 / 2) / (2 * np.pi) for teeth in get_cassette_cog_teeth(min_tooth, max_tooth, cog_count)]
+
+def get_straight_parallelogram_b_gap_mm(max_teeth):
+  if max_teeth <= 20:
+    # Lets assume the distance is closer since the jumps between gears is so small,
+    # only 4 mm difference in radius between an 18 and 20 tooth cogs
+    return 10
+  elif max_teeth <= 42:
+    # SRAM's guidance for their Road 1x derailleurs is good enough https://www.sram.com/en/service/models/rd-riv-b1
+    return 15
+  else: # teeth > 42
+    # Using Shimano's guidance for CUES 10/11 speed https://si.shimano.com/en/cues/technical-assets-tips
+    # SRAM's guidance for their Eagle derailleurs implies about 17 mm https://www.sram.com/en/service/models/rd-xx-1-b2
+    return 19
+
+def get_slant_parallelogram_b_gap_mm(max_teeth):
+  if max_teeth <= 44:
+    # SRAM's guidance for their Road 22 derailleurs is good enough.
+    # Shimano says "as close as possible" https://www.sram.com/en/service/models/rd-riv-1-a2
+    # Microshift Sword says 4-6 mm
+    return 6
+  else: # > 44 teeth
+    # Shimano's guidance for CUES 10/11 speed is 9 mm https://si.shimano.com/en/cues/technical-assets-tips
+    # Shimano's guidance for rd-5120 and similar is 8-9 mm for a 46 tooth cassette, or 6 for 42 tooth and below
+    return 9
+
+def get_b_gap_mm(max_teeth, parallelogram_style):
+  if parallelogram_style == 'slant':
+    return get_slant_parallelogram_b_gap_mm(max_teeth)
+  elif parallelogram_style == 'straight':
+    return get_straight_parallelogram_b_gap_mm(max_teeth)
+  else:
+    raise Exception("Unknown paralleogram style " + parallelogram_style)
+
+def get_jockey_to_cog_distance_mm(teeth, b_gap):
+
+  cog_radius = teeth * (25.4 / 2) / (2 * np.pi)
+  jockey_to_cog_distance = np.sqrt(2 * cog_radius * b_gap + b_gap * b_gap)
+
+  return jockey_to_cog_distance
+
+def get_jockey_to_cog_distance_list(min_tooth, max_tooth, cog_count, b_gap, links_from_jockey_to_smallest_cog):
+  # Just use linear interpolation and assume that every derailleur tries to get the
+  # jockey to the same distance from the 11-tooth cog
+  # This is obviously true of slant-parallelogram derailleurs
+  # I've done some modeling of 1x horizontal-parallelogram derailleurs and found that
+  # they also move essentially linearly
+
+  #largest_cog_jockey_to_cog_distance = get_jockey_to_cog_distance_mm(max_tooth, b_gap)
+  #slope = (largest_cog_jockey_to_cog_distance - smallest_cog_jockey_to_cog_distance) / cog_count
+  #dist_old = [smallest_cog_jockey_to_cog_distance + slope * i for i in range(cog_count)]
+
+  cog_radii = get_cassette_cog_radii(min_tooth, max_tooth, cog_count)
+
+  largest_cog_b_gap = b_gap
+  largest_cog_to_jockey_edge_radius = largest_cog_b_gap + cog_radii[-1]
+
+  min_jockey_to_cog_chain_length = links_from_jockey_to_smallest_cog * 25.4 / 2 
+  smallest_cog_to_jockey_edge_radius = np.sqrt(
+    np.pow(cog_radii[0], 2) + np.pow(min_jockey_to_cog_chain_length, 2))
+
+  slope = (largest_cog_to_jockey_edge_radius - smallest_cog_to_jockey_edge_radius) / (cog_count - 1)
+
+  jockey_edge_radii = [smallest_cog_to_jockey_edge_radius + slope * i for i in range(cog_count)]
+
+  distances = np.sqrt([j * j - c * c for j, c in zip(jockey_edge_radii, cog_radii)])
+  
+  assert(not any(np.isnan(distances)))
+  
+  return distances
+
+def convert_to_floats(data):
+  # Convert to numbers
+  for row in data:
+    for key in row.keys():
+      if len(row[key]) == 0:
+        row[key] = np.nan
+      else:
+        try:
+          row[key] = float(row[key])
+        except:
+          # Ignore failed conversion attempts
+          pass
 
 def get_cassette_cog_teeth(min_tooth, max_tooth, cog_count):
   min_tooth_x = np.log(min_tooth)
@@ -101,7 +211,8 @@ def get_jockey_to_cog_distance_list(min_tooth, max_tooth, cog_count, b_gap, link
   return distances
 
 def calculate_max_chain_angle(shifter, derailleur, cassette):
-  derailleur_curve = np.polynomial.Polynomial(coef=derailleur["coefficients"])
+  # TODO: consider yaw in the newton's method part
+  derailleur_curve = get_combined_pull_curve(derailleur)
   shift_spacings = np.array(shifter["shiftSpacings"])
   cassette_pitches = cassette["pitches"]
   roller_cog_free_play = cassette["chainRollerWidth"] - cassette["cogWidth"]
@@ -283,15 +394,92 @@ def calc_pull_ratio(info, coefficients, max_pull = 100, design_cog_pitch = None,
     dropout_width=dropout_width,
     small_cog_offset=small_cog_offset,
     small_cog_position=small_cog_position,
-    smallest_cog_pull=smallest_cog_pull,
-    second_smallest_cog_pull=second_smallest_cog_pull,
-    second_biggest_cog_pull=second_biggest_cog_pull,
-    biggest_cog_pull=biggest_cog_pull,
+    smallest_cog_pull=float(smallest_cog_pull),
+    second_smallest_cog_pull=float(second_smallest_cog_pull),
+    second_biggest_cog_pull=float(second_biggest_cog_pull),
+    biggest_cog_pull=float(biggest_cog_pull),
     biggest_cog_position=biggest_cog_position,
     total_pitch_inner_cogs=total_pitch_inner_cogs,
-    pull_ratio=pull_ratio,
-    coefficients=curve.convert().coef
+    pull_ratio=float(pull_ratio),
+    coefficients=[float(c) for c in curve.convert().coef]
     )
+
+def get_jockey_offset_curve(yaw_angle_curve):
+
+  def calc_yaw_offset_curve(x):
+    y = yaw_angle_curve(x)
+
+    if y < -chain_max_free_yaw:
+      return math.sin((y + chain_max_free_yaw)/180*math.pi) * link_length
+    elif y > chain_max_free_yaw:
+      return math.sin((y - chain_max_free_yaw)/180*math.pi) * link_length
+    else:
+      return 0
+  
+  def yaw_offset_curve(x):
+    if isinstance(x, Iterable):
+      return np.array([calc_yaw_offset_curve(_x) for _x in x])
+    else:
+      return calc_yaw_offset_curve(x)
+
+  return yaw_offset_curve
+
+# Differentiate get_jockey_offset_curve() using chain rule
+def get_jockey_offset_rate_curve(yaw_angle_curve):
+  
+  deriv = yaw_angle_curve.deriv()
+  
+  def calc_yaw_offset_rate_curve(x):
+    y = yaw_angle_curve(x)
+
+    if y < -chain_max_free_yaw:
+      return math.cos((y + chain_max_free_yaw)/180*math.pi) * link_length * deriv(x) / 180 * math.pi
+    elif y > chain_max_free_yaw:
+      return math.cos((y - chain_max_free_yaw)/180*math.pi) * link_length * deriv(x) / 180 * math.pi
+    else:
+      return 0
+  
+  def yaw_offset_rate_curve(x):
+    if isinstance(x, Iterable):
+      return np.array([calc_yaw_offset_rate_curve(_x) for _x in x])
+    else:
+      return calc_yaw_offset_rate_curve(x)
+
+  return yaw_offset_rate_curve
+
+def get_combined_pull_curve(info):
+  pull_curve = np.polynomial.polynomial.Polynomial(info["coefficients"])
+
+  if "yawCoefficients" not in info:
+    return pull_curve
+
+  yaw_angle_curve = np.polynomial.polynomial.Polynomial(info["yawCoefficients"])
+  jockey_offset_curve = get_jockey_offset_curve(yaw_angle_curve)
+
+  def combined_pull_curve(x):
+    if isinstance(x, Iterable):
+      return np.array([pull_curve(_x) + jockey_offset_curve(_x) for _x in x])
+    else:
+      return pull_curve(x) + jockey_offset_curve(x)
+  
+  return combined_pull_curve
+
+def get_combined_pull_ratio_curve(info):
+  pull_curve = np.polynomial.polynomial.Polynomial(info["coefficients"])
+
+  if "yawCoefficients" not in info:
+    return pull_curve.deriv()
+
+  yaw_angle_curve = np.polynomial.polynomial.Polynomial(info["yawCoefficients"])
+  jockey_offset_rate_curve = get_jockey_offset_rate_curve(yaw_angle_curve)
+
+  def combined_pull_ratio_curve(x):
+    if isinstance(x, Iterable):
+      return np.array([pull_curve(_x) + jockey_offset_rate_curve(_x) for _x in x])
+    else:
+      return pull_curve(x) + jockey_offset_rate_curve(x)
+  
+  return combined_pull_ratio_curve
 
 if __name__ == '__main__':
   print()

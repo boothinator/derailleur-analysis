@@ -19,6 +19,8 @@
   "dataVideo": "https://www.youtube.com/watch?v=43R9U7ykdxc",
   "analysisVideo": "",
   "pullRatio": 1.0723700362156097,
+  "basePullRatio": 1.0723700362156097,
+  "maxPull": 45.58166666666667,
   "coefficients": [
     8.270994114931078,
     0.9781505212584579,
@@ -28,11 +30,10 @@
   "physicalLowLimit": 8.270994114931078,
   "physicalHighLimit": 56.4961830998342,
   "numberOfMeasurements": 570,
-  "Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.002",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.074 +/- 0.001",
-  "Pull Ratio Averaged Across All Runs": "1.073 +/- 0.002",
-  "Pull Ratio 95% Confidence Interval": "1.071 to 1.075",
-  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore M6100/default.htm",
+  "Base Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.002",
+  "Base Pull Ratio Averaged Across Relaxing Runs": "1.074 +/- 0.001",
+  "Base Pull Ratio Averaged Across All Runs": "1.073 +/- 0.002",
+  "Base Pull Ratio 95% Confidence Interval": "1.071 to 1.075",
   "meas_method_percent_diffs": [
     -0.3101462117855573,
     0.8563074352548263,
@@ -41,5 +42,24 @@
     -0.45548654244306186,
     -0.02065262288311672
   ],
-  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.1544957931771925 +/- 0.9740200003640912"
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.1544957931771925 +/- 0.9740200003640912",
+  "pullRatioCalc": {
+    "dropout_width": 8.0,
+    "small_cog_offset": 3.0,
+    "small_cog_position": 11.0,
+    "smallest_cog_pull": 2.7579573847909855,
+    "second_smallest_cog_pull": 6.262010183924473,
+    "second_biggest_cog_pull": 36.055830340212545,
+    "biggest_cog_pull": 39.39129582577682,
+    "biggest_cog_position": 50.05,
+    "total_pitch_inner_cogs": 31.95,
+    "pull_ratio": 1.0723700362156097,
+    "coefficients": [
+      8.270994114931078,
+      0.9781505212584579,
+      0.004268377288036508,
+      -5.521279227957996e-05
+    ]
+  },
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Deore M6100/default.htm"
 }

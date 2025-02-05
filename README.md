@@ -12,7 +12,9 @@
 
 ## Derailleurs
 
-[Campagnolo Ekar 13-Speed (RD21-EK13)](https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo%20Ekar/default.htm) - Pull Ratio: 1.28
+[Campagnolo Ekar 13-Speed (RD21-EK13)](https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo%20Ekar/default.htm) - Pull Ratio: 1.29
+
+[Microshift Advent X 10-Speed (RD-M6205AM)](https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift%20RD-M6205AM/default.htm) - Pull Ratio: 1.06
 
 [Shimano 105 11-Speed (RD-5800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20105%2011-speed/default.htm) - Pull Ratio: 1.45
 
@@ -32,7 +34,7 @@
 
 [Shimano Ultegra 9-Speed (RD-6500)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Ultegra%206500%209-Speed/default.htm) - Pull Ratio: 1.64
 
-[Shimano Ultegra RX 11-Speed (RD-RX800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Ultegra%20RX%2011-Speed/default.htm) - Pull Ratio: 1.51
+[Shimano Ultegra RX 11-Speed (RD-RX800)](https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano%20Ultegra%20RX%2011-Speed/default.htm) - Pull Ratio: 1.52
 
 [SRAM Apex 1 11-Speed (RD-APX-1-A1)](https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM%20Apex%2011-Speed/default.htm) - Pull Ratio: 1.22
 

@@ -16,7 +16,11 @@
   "chainWrap": 33,
   "dataVideo": null,
   "analysisVideo": null,
+  "measurementNotes": "This derailleur had a bent parallelogram",
+  "generalNotes": "",
   "pullRatio": 1.635046314783001,
+  "basePullRatio": 1.635046314783001,
+  "maxPull": 27.333333333333336,
   "coefficients": [
     6.830856626055114,
     1.5437395136186591,
@@ -26,14 +30,32 @@
   "physicalLowLimit": 6.830856626055114,
   "physicalHighLimit": 47.69008636366456,
   "numberOfMeasurements": 172,
-  "Pull Ratio Averaged Across Pulling Runs": "1.669 +/- 0.000",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.596 +/- 0.000",
-  "Pull Ratio Averaged Across All Runs": "1.632 +/- 0.074",
-  "Pull Ratio 95% Confidence Interval": "1.559 to 1.706",
-  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra 6500 9-Speed/default.htm",
+  "Base Pull Ratio Averaged Across Pulling Runs": "1.669 +/- 0.000",
+  "Base Pull Ratio Averaged Across Relaxing Runs": "1.596 +/- 0.000",
+  "Base Pull Ratio Averaged Across All Runs": "1.632 +/- 0.074",
+  "Base Pull Ratio 95% Confidence Interval": "1.559 to 1.706",
   "meas_method_percent_diffs": [
     -0.09501187648457543,
     8.526124252664397
   ],
-  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: 4.215556188089911 +/- 8.621136129148972"
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: 4.215556188089911 +/- 8.621136129148972",
+  "pullRatioCalc": {
+    "dropout_width": 8.0,
+    "small_cog_offset": 3.0,
+    "small_cog_position": 11.0,
+    "smallest_cog_pull": 2.5995547353563384,
+    "second_smallest_cog_pull": 5.158251311951081,
+    "second_biggest_cog_pull": 21.084405675019358,
+    "biggest_cog_pull": 24.942943296695802,
+    "biggest_cog_position": 45.72,
+    "total_pitch_inner_cogs": 26.04,
+    "pull_ratio": 1.635046314783001,
+    "coefficients": [
+      6.830856626055114,
+      1.5437395136186591,
+      0.025716729552334103,
+      -0.0010062942112433056
+    ]
+  },
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra 6500 9-Speed/default.htm"
 }

@@ -17,6 +17,8 @@
   "dataVideo": "https://youtu.be/ZcwTvWDTFSI",
   "analysisVideo": "https://www.youtube.com/watch?v=d0Pdnp2CTek",
   "pullRatio": 1.6737978114818595,
+  "basePullRatio": 1.6737978114818595,
+  "maxPull": 24.444444444444443,
   "coefficients": [
     11.461979441469097,
     1.6640468907167323,
@@ -26,11 +28,10 @@
   "physicalLowLimit": 11.461979441469097,
   "physicalHighLimit": 49.71929833902126,
   "numberOfMeasurements": 493,
-  "Pull Ratio Averaged Across Pulling Runs": "1.668 +/- 0.011",
-  "Pull Ratio Averaged Across Relaxing Runs": "1.679 +/- 0.015",
-  "Pull Ratio Averaged Across All Runs": "1.674 +/- 0.017",
-  "Pull Ratio 95% Confidence Interval": "1.657 to 1.691",
-  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Tiagra 4600 10-Speed/default.htm",
+  "Base Pull Ratio Averaged Across Pulling Runs": "1.668 +/- 0.011",
+  "Base Pull Ratio Averaged Across Relaxing Runs": "1.679 +/- 0.015",
+  "Base Pull Ratio Averaged Across All Runs": "1.674 +/- 0.017",
+  "Base Pull Ratio 95% Confidence Interval": "1.657 to 1.691",
   "meas_method_percent_diffs": [
     -0.5143475906876145,
     -0.8134490238611829,
@@ -39,5 +40,31 @@
     -0.3807451726951141,
     -0.9264305177111617
   ],
-  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.5384172689512848 +/- 0.5037143288702502"
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.5384172689512848 +/- 0.5037143288702502",
+  "pullRatioCalc": {
+    "dropout_width": 8.0,
+    "small_cog_offset": 4.0,
+    "small_cog_position": 12.0,
+    "smallest_cog_pull": 0.32221296664869675,
+    "second_smallest_cog_pull": 2.6318461471033063,
+    "second_biggest_cog_pull": 19.151165153453718,
+    "biggest_cog_pull": 22.326335282404457,
+    "biggest_cog_position": 47.550000000000004,
+    "total_pitch_inner_cogs": 27.650000000000002,
+    "pull_ratio": 1.6737978114818595,
+    "coefficients": [
+      11.461979441469097,
+      1.6640468907167323,
+      0.018043590844462516,
+      -0.000903786465824992
+    ]
+  },
+  "yawCoefficients": [
+    -1.526788554440728,
+    0.09484162214596993,
+    -0.0010304671174236376
+  ],
+  "yawNumberOfMeasurements": 72,
+  "yawAffectsPullRatio": true,
+  "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Tiagra 4600 10-Speed/default.htm"
 }
