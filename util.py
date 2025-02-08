@@ -2,6 +2,7 @@ import numpy as np
 from pydantic import BaseModel
 from typing import Iterable
 import math
+import drawsvg as draw
 
 # Could calculate using dropout thickness (7 to 8 mm for shimano?) and then use the distance from 
 # end of cassette to dropout to figure out the first cog position, maybe
@@ -157,7 +158,43 @@ def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_p
               roller_lateral_position=next_roller_lateral_position,
               can_calculate_next=can_calculate_next)
 
+def render_rollers(rollers: list[RollerPositionInfo]):
+  g = draw.Group()
+
+  link_pixels = 10 * link_length
+
+  angle_scale = 10
+
+  prev_roller_x = 50
+  prev_roller_y = 0
+  offset_y = 50
+
+  min_roller_y = prev_roller_y
+
+  roller_coords = [(prev_roller_x, prev_roller_y, prev_roller_x, prev_roller_y)]
+  for r in rollers:
+    cur_roller_x = prev_roller_x + link_pixels * math.cos(angle_scale * r.prev_link_angle_rad)
+    cur_roller_y = prev_roller_y + link_pixels * math.sin(angle_scale * r.prev_link_angle_rad)
+
+    roller_coords.append((prev_roller_x, prev_roller_y, cur_roller_x, cur_roller_y))
+
+    prev_roller_x = cur_roller_x
+    prev_roller_y = cur_roller_y
+
+    min_roller_y = min(cur_roller_y, min_roller_y)
+
+  offset_y = offset_y - min_roller_y
+
+  roller_coords = [(px, py + offset_y, x, y + offset_y) for px, py, x, y in roller_coords]
   
+  for prev_roller_x, prev_roller_y, cur_roller_x, cur_roller_y in roller_coords:
+    g.append(draw.Line(prev_roller_x, prev_roller_y, cur_roller_x, cur_roller_y, stroke="black",
+                       stroke_width="2px"))
+
+  for _, _, cur_roller_x, cur_roller_y in roller_coords:
+    g.append(draw.Circle(cur_roller_x, cur_roller_y, 5, fill="red"))
+  
+  return g
 
 def calculate_max_chain_angle(shifter, derailleur, cassette):
   derailleur_curve = np.polynomial.Polynomial(coef=derailleur["coefficients"])
@@ -466,10 +503,11 @@ def get_combined_pull_ratio_curve(info):
 if __name__ == '__main__':
   print()
 
-  link_angle_rad = math.radians(-1.6)
-  roller_lateral_position = 15.5
+  link_angle_rad = math.radians(-3)
+  roller_lateral_position = 15
   roller_to_cog_distance = link_length * 3
   cog_lateral_position = 15
+  positions = []
 
   print(math.degrees(math.asin((cog_lateral_position - roller_lateral_position)/roller_to_cog_distance)), "deg")
 
@@ -480,8 +518,13 @@ if __name__ == '__main__':
   while roller_pos.can_calculate_next:
     roller_pos = calculate_next_roller_position(roller_pos, cog_lateral_position)
     print(roller_pos)
+    positions.append(roller_pos)
   
   print("Chain at cog angle", math.degrees(roller_pos.prev_link_angle_rad), "deg")
+
+  d = draw.Drawing(600, 300)
+  d.append(render_rollers(positions))
+  d.save_svg("test.svg")
 
   print("Gen:", get_cassette_cog_teeth(11,34, 10), "\nAct:", [11, 13, 15, 17, 19, 21, 23, 26, 30, 34], "\n")
   print("Gen:", get_cassette_cog_teeth(11,34, 11), "\nAct:", [11, 13, 15, 17, 19, 21, 23, 25, 27, 30, 34], "\n")
@@ -493,6 +536,8 @@ if __name__ == '__main__':
   print(get_cog_radius(11), 11 * (25.4 / 2) / (2 * np.pi))
   print(get_cog_radius(32), 32 * (25.4 / 2) / (2 * np.pi))
   print(get_cog_radius(52), 52 * (25.4 / 2) / (2 * np.pi))
+
+  exit()
 
   angles = calculate_max_chain_angle(
   {
