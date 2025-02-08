@@ -128,6 +128,8 @@ class RollerPositionInfo(BaseModel):
   roller_lateral_position: float
   can_calculate_next: bool = True
 
+close_enough_roller_to_cog_distance = link_length * 0.1
+
 def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_position):
   
   roller_to_cog_angle_rad = math.asin((cog_lateral_position - roller_pos.roller_lateral_position)/roller_pos.roller_to_cog_distance)
@@ -144,22 +146,16 @@ def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_p
   next_roller_lateral_position = roller_pos.roller_lateral_position \
     + link_length * math.sin(next_link_angle_rad)
   
-  close_enough = next_roller_to_cog_distance <= link_length * 0.1
+  close_enough = next_roller_to_cog_distance <= close_enough_roller_to_cog_distance
   
   can_calculate_next = not close_enough \
                        and abs(cog_lateral_position - next_roller_lateral_position) \
                            <= roller_pos.roller_to_cog_distance
-  
-  if close_enough:
-    return RollerPositionInfo(prev_link_angle_rad=next_link_angle_rad,
-                roller_to_cog_distance=0,
-                roller_lateral_position=cog_lateral_position,
-                can_calculate_next=False)
-  else:
-    return RollerPositionInfo(prev_link_angle_rad=next_link_angle_rad,
-                roller_to_cog_distance=next_roller_to_cog_distance,
-                roller_lateral_position=next_roller_lateral_position,
-                can_calculate_next=can_calculate_next)
+
+  return RollerPositionInfo(prev_link_angle_rad=next_link_angle_rad,
+              roller_to_cog_distance=next_roller_to_cog_distance,
+              roller_lateral_position=next_roller_lateral_position,
+              can_calculate_next=can_calculate_next)
 
   
 

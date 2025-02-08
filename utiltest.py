@@ -1,6 +1,6 @@
 import unittest
 import math
-from util import link_length, RollerPositionInfo, calculate_next_roller_position
+from util import link_length, RollerPositionInfo, calculate_next_roller_position, close_enough_roller_to_cog_distance
 
 class TestUtil(unittest.TestCase):
   def test_calculate_next_roller_position(self):
@@ -19,8 +19,9 @@ class TestUtil(unittest.TestCase):
     while roller_pos.can_calculate_next:
       roller_pos = calculate_next_roller_position(roller_pos, cog_lateral_position)
 
-    self.assertEqual(0, roller_pos.roller_to_cog_distance)
-    self.assertEqual(cog_lateral_position, roller_pos.roller_lateral_position)
+    self.assertGreater(0.1, roller_pos.roller_to_cog_distance)
+    self.assertAlmostEqual(cog_lateral_position, roller_pos.roller_lateral_position,
+                           delta=close_enough_roller_to_cog_distance)
     self.assertEqual(0, roller_pos.prev_link_angle_rad)
     self.assertEqual(False, roller_pos.can_calculate_next)
 
@@ -40,8 +41,9 @@ class TestUtil(unittest.TestCase):
     while roller_pos.can_calculate_next:
       roller_pos = calculate_next_roller_position(roller_pos, cog_lateral_position)
 
-    self.assertEqual(0, roller_pos.roller_to_cog_distance)
-    self.assertEqual(cog_lateral_position, roller_pos.roller_lateral_position)
+    self.assertLess(0, roller_pos.roller_to_cog_distance)
+    self.assertAlmostEqual(cog_lateral_position, roller_pos.roller_lateral_position,
+                           delta=close_enough_roller_to_cog_distance)
     self.assertAlmostEqual(0.0026, roller_pos.prev_link_angle_rad, places=4)
     self.assertEqual(False, roller_pos.can_calculate_next)
 
@@ -61,8 +63,9 @@ class TestUtil(unittest.TestCase):
     while roller_pos.can_calculate_next:
       roller_pos = calculate_next_roller_position(roller_pos, cog_lateral_position)
 
-    self.assertEqual(0, roller_pos.roller_to_cog_distance)
-    self.assertEqual(cog_lateral_position, roller_pos.roller_lateral_position)
+    self.assertLess(0, roller_pos.roller_to_cog_distance)
+    self.assertAlmostEqual(cog_lateral_position, roller_pos.roller_lateral_position,
+                           delta=close_enough_roller_to_cog_distance)
     # TODO: is this right?
     self.assertAlmostEqual(-0.0066, roller_pos.prev_link_angle_rad, places=4)
     self.assertEqual(False, roller_pos.can_calculate_next)
