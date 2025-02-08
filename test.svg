@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="600" height="300" viewBox="0 0 600 300">
+<defs>
+</defs>
+<g>
+<path d="M50,50 L50,50" stroke="black" stroke-width="2px" />
+<path d="M50,50 L134.54892429863912,77.47161079993282" stroke="black" stroke-width="2px" />
+<path d="M134.54892429863912,77.47161079993282 L220.40365023956565,100.54055168607668" stroke="black" stroke-width="2px" />
+<path d="M220.40365023956565,100.54055168607668 L306.2583761804922,123.60949257222052" stroke="black" stroke-width="2px" />
+<path d="M306.2583761804922,123.60949257222052 L392.1131021214187,146.6784334583643" stroke="black" stroke-width="2px" />
+<circle cx="50" cy="50" r="7" fill="red" />
+<circle cx="134.54892429863912" cy="77.47161079993282" r="7" fill="red" />
+<circle cx="220.40365023956565" cy="100.54055168607668" r="7" fill="red" />
+<circle cx="306.2583761804922" cy="123.60949257222052" r="7" fill="red" />
+<circle cx="392.1131021214187" cy="146.6784334583643" r="7" fill="red" />
+<circle cx="392.1131021214187" cy="146.6784334583643" r="5" fill="blue" />
+<circle cx="50" cy="50" r="5" fill="green" />
+<circle cx="134.54892429863912" cy="77.47161079993282" r="5" fill="green" />
+</g>
+</svg>

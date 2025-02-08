@@ -161,7 +161,9 @@ def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_p
 def render_rollers(rollers: list[RollerPositionInfo]):
   g = draw.Group()
 
-  link_pixels = 10 * link_length
+  link_scale = 7
+
+  link_pixels = link_scale * link_length
 
   angle_scale = 10
 
@@ -192,7 +194,14 @@ def render_rollers(rollers: list[RollerPositionInfo]):
                        stroke_width="2px"))
 
   for _, _, cur_roller_x, cur_roller_y in roller_coords:
-    g.append(draw.Circle(cur_roller_x, cur_roller_y, 5, fill="red"))
+    g.append(draw.Circle(cur_roller_x, cur_roller_y, 7, fill="red"))
+
+  cog_land_x = roller_coords[-1][2] + link_scale * rollers[-1].roller_to_cog_distance * math.cos(angle_scale * r.prev_link_angle_rad)
+  cog_land_y = roller_coords[-1][3] + link_scale * rollers[-1].roller_to_cog_distance * math.sin(angle_scale * r.prev_link_angle_rad)
+  
+  g.append(draw.Circle(cog_land_x, cog_land_y, 5, fill="blue"))
+  g.append(draw.Circle(roller_coords[0][2], roller_coords[0][3], 5, fill="green"))
+  g.append(draw.Circle(roller_coords[1][2], roller_coords[1][3], 5, fill="green"))
   
   return g
 
@@ -503,8 +512,8 @@ def get_combined_pull_ratio_curve(info):
 if __name__ == '__main__':
   print()
 
-  link_angle_rad = math.radians(-3)
-  roller_lateral_position = 15
+  link_angle_rad = math.radians(1.8)
+  roller_lateral_position = 14
   roller_to_cog_distance = link_length * 3
   cog_lateral_position = 15
   positions = []
@@ -515,6 +524,8 @@ if __name__ == '__main__':
                                     roller_lateral_position=roller_lateral_position,
                                     roller_to_cog_distance=roller_to_cog_distance)
 
+  positions.append(roller_pos)
+  
   while roller_pos.can_calculate_next:
     roller_pos = calculate_next_roller_position(roller_pos, cog_lateral_position)
     print(roller_pos)
