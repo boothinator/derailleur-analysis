@@ -121,6 +121,47 @@ def convert_to_floats(data):
           # Ignore failed conversion attempts
           pass
 
+class RollerPositionInfo(BaseModel):
+  prev_link_angle_rad: float
+  roller_to_cog_distance: float
+  roller_lateral_position: float
+  can_calculate_next: bool = True
+
+def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_position):
+  
+  roller_to_cog_angle_rad = math.asin((cog_lateral_position - roller_pos.roller_lateral_position)/roller_pos.roller_to_cog_distance)
+
+  next_link_min_angle_rad = roller_pos.prev_link_angle_rad - chain_max_free_yaw_rad
+  next_link_max_angle_rad = roller_pos.prev_link_angle_rad + chain_max_free_yaw_rad
+
+  next_link_angle_rad = min(next_link_max_angle_rad,
+                            max(next_link_min_angle_rad, roller_to_cog_angle_rad))
+  
+  next_roller_to_cog_distance = roller_pos.roller_to_cog_distance \
+    - link_length * math.cos(roller_to_cog_angle_rad - next_link_angle_rad)
+
+  next_roller_lateral_position = roller_pos.roller_lateral_position \
+    + link_length * math.sin(next_link_angle_rad)
+  
+  close_enough = next_roller_to_cog_distance <= link_length * 0.1
+  
+  can_calculate_next = not close_enough \
+                       and abs(cog_lateral_position - next_roller_lateral_position) \
+                           <= roller_pos.roller_to_cog_distance
+  
+  if close_enough:
+    return RollerPositionInfo(prev_link_angle_rad=next_link_angle_rad,
+                roller_to_cog_distance=0,
+                roller_lateral_position=cog_lateral_position,
+                can_calculate_next=False)
+  else:
+    return RollerPositionInfo(prev_link_angle_rad=next_link_angle_rad,
+                roller_to_cog_distance=next_roller_to_cog_distance,
+                roller_lateral_position=next_roller_lateral_position,
+                can_calculate_next=can_calculate_next)
+
+  
+
 def calculate_max_chain_angle(shifter, derailleur, cassette):
   # TODO: consider yaw in the newton's method part
   derailleur_curve = get_combined_pull_curve(derailleur)
@@ -394,6 +435,24 @@ def get_combined_pull_ratio_curve(info):
 
 if __name__ == '__main__':
   print()
+
+  link_angle_rad = math.radians(-1.6)
+  roller_lateral_position = 15.5
+  roller_to_cog_distance = link_length * 3
+  cog_lateral_position = 15
+
+  print(math.degrees(math.asin((cog_lateral_position - roller_lateral_position)/roller_to_cog_distance)), "deg")
+
+  roller_pos = RollerPositionInfo(prev_link_angle_rad=link_angle_rad,
+                                    roller_lateral_position=roller_lateral_position,
+                                    roller_to_cog_distance=roller_to_cog_distance)
+
+  while roller_pos.can_calculate_next:
+    roller_pos = calculate_next_roller_position(roller_pos, cog_lateral_position)
+    print(roller_pos)
+  
+  print("Chain at cog angle", math.degrees(roller_pos.prev_link_angle_rad), "deg")
+
   print("Gen:", get_cassette_cog_teeth(11,34, 10), "\nAct:", [11, 13, 15, 17, 19, 21, 23, 26, 30, 34], "\n")
   print("Gen:", get_cassette_cog_teeth(11,34, 11), "\nAct:", [11, 13, 15, 17, 19, 21, 23, 25, 27, 30, 34], "\n")
   print("Gen:", get_cassette_cog_teeth(12,30, 10), "\nAct:", [12, 13, 14, 15, 17, 19, 21, 24, 27, 30], "\n")
