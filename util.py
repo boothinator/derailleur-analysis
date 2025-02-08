@@ -9,6 +9,7 @@ smallest_cog_position = 15 # TODO: put this on the cassette, or figure out from 
 default_links_from_jockey_to_smallest_cog = 3
 max_cable_pull = 50 # Assume that no shifter will be able to pull 50 mm of cable
 chain_max_free_yaw = 1.5
+chain_max_free_yaw_rad = math.pi * chain_max_free_yaw / 180
 link_length = 12.7
 
 def get_cassette_cog_teeth(min_tooth, max_tooth, cog_count):
@@ -163,8 +164,13 @@ def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_p
   
 
 def calculate_max_chain_angle(shifter, derailleur, cassette):
-  # TODO: consider yaw in the newton's method part
-  derailleur_curve = get_combined_pull_curve(derailleur)
+  derailleur_curve = np.polynomial.Polynomial(coef=derailleur["coefficients"])
+
+  if "yawCoefficients" in derailleur:
+    yaw_curve = np.polynomial.Polynomial(coef=derailleur["yawCoefficients"])
+  else:
+    yaw_curve = np.polynomial.Polynomial(coef=[0])
+  
   shift_spacings = np.array(shifter["shiftSpacings"])
   cassette_pitches = cassette["pitches"]
   roller_cog_free_play = cassette["chainRollerWidth"] - cassette["cogWidth"]
@@ -176,31 +182,59 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
     else default_links_from_jockey_to_smallest_cog
   jockey_to_cog_distances = get_jockey_to_cog_distance_list(11, derailleur["maxTooth"], num_positions, b_gap, links_from_jockey_to_smallest_cog)
 
+  cog_positions = [smallest_cog_position + np.sum([cassette_pitches[0:i]])
+                  for i in range(0, len(cassette_pitches) + 1) ]
+  
   # Calculate barrel adjuster
   barrel_adjuster = 0
   barrel_adjuster_values = [barrel_adjuster]
 
   # Use Newton's method to find the barrel adjuster amount that will minimize chain angles
   for i in range(0, 12):
+    cur_jockey_to_cog_distances = jockey_to_cog_distances[1:num_positions - 1]
     shift_positions = [barrel_adjuster + np.sum([shift_spacings[0:i]])
                       for i in range(0, len(shift_spacings) + 1) ]
     jockey_positions = derailleur_curve(shift_positions)
-    cog_positions = [smallest_cog_position + np.sum([cassette_pitches[0:i]])
-                    for i in range(0, len(cassette_pitches) + 1) ]
-    
-    diffs = cog_positions[1:num_positions - 1] - jockey_positions[1:num_positions - 1]
+    cur_chain_roller_positions = jockey_positions[1:num_positions - 1]
 
-    diffs_minus_free_play = np.array([(
-        0 if abs(d) < roller_cog_free_play/2
-        else (
-          d - roller_cog_free_play/2 if d > 0
-          else d + roller_cog_free_play/2
+    chain_roller_positions = []
+
+    chain_at_cog_angles = [None] * (num_positions - 2)
+    while any([d for d in cur_jockey_to_cog_distances if d > 0]):
+      chain_roller_positions.append(cur_chain_roller_positions)
+      diffs = cog_positions[1:num_positions - 1] - cur_chain_roller_positions
+
+      diffs_minus_free_play = np.array([(
+          0 if abs(d) < roller_cog_free_play/2
+          else (
+            d - roller_cog_free_play/2 if d > 0
+            else d + roller_cog_free_play/2
+          )
         )
-      )
-      for d in diffs])
+        for d in diffs])
 
-    chain_angles = np.arcsin(diffs_minus_free_play/jockey_to_cog_distances[1:num_positions - 1]) * 180 / np.pi
-    
+      chain_angles = np.arcsin(diffs_minus_free_play/cur_jockey_to_cog_distances) * 180 / np.pi
+      
+      jockey_angles = yaw_curve(shift_positions)[1:num_positions - 1]
+      jockey_max_angles = jockey_angles + chain_max_free_yaw
+      jockey_min_angles = jockey_angles - chain_max_free_yaw
+      
+      next_link_angles = np.min(
+        [np.max(
+          [chain_angles, jockey_min_angles],
+          axis=0),
+          jockey_max_angles], axis=0)
+      next_link_angles_diff = chain_angles - next_link_angles
+
+      next_roller_position_diffs = np.sin(np.pi * next_link_angles/180) * np.min([[link_length]*8, cur_jockey_to_cog_distances], axis=0)
+
+      cur_chain_roller_positions = cur_chain_roller_positions + next_roller_position_diffs
+
+      chain_at_cog_angles = [p if jcd < link_length else cca for p,jcd,cca
+                             in zip(cur_chain_roller_positions, cur_jockey_to_cog_distances, chain_at_cog_angles)]
+
+      cur_jockey_to_cog_distances = cur_jockey_to_cog_distances - link_length
+
     center_chain_angle = np.mean([chain_angles.min(), chain_angles.max()])
 
     if np.abs(center_chain_angle) <= 0.01:
@@ -464,93 +498,112 @@ if __name__ == '__main__':
   print(get_cog_radius(32), 32 * (25.4 / 2) / (2 * np.pi))
   print(get_cog_radius(52), 52 * (25.4 / 2) / (2 * np.pi))
 
-  angles = calculate_max_chain_angle(  {
-    "brand": "Shimano",
-    "name": "CUES",
-    "partNumber": "SL-U6000-10R",
-    "type": "flat-bar",
+  angles = calculate_max_chain_angle(
+  {
+    "brand": "Microshift",
+    "name": "Advent X",
+    "partNumber": "SB-M100A",
+    "type": "drop-bar",
     "speeds": 10,
-    "source": "https://youtu.be/_Q_7C2ZrstI",
-    "hasMatchingFrontShifters": True,
-    "dataVideo": "https://www.youtube.com/watch?v=2-9jvMvxr_M",
-    "analysisVideo": "https://youtu.be/_Q_7C2ZrstI",
+    "source": "https://youtu.be/FzP2hvDBTLs",
+    "hasMatchingFrontShifters": False,
+    "dataVideo": "https://youtu.be/JO-I4XVTsu4",
+    "analysisVideo": "https://youtu.be/FzP2hvDBTLs",
     "shiftSpacings": [
-      4.821666666666666,
-      3.700833333333333,
-      3.6077777777777778,
-      3.4862500000000005,
-      3.541666666666666,
-      3.575416666666667,
-      3.585,
-      3.5675000000000003,
-      3.6183333333333336
+      3.6966666666666668,
+      3.4158333333333335,
+      3.1622222222222223,
+      3.3045833333333334,
+      3.4354166666666663,
+      3.3204166666666666,
+      3.518333333333333,
+      3.714166666666667,
+      4.45
     ],
-    "cablePull": 3.5806349206349206,
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano CUES 10-Speed/default.htm"
-  },  {
-    "brand": "Shimano",
-    "name": "CUES",
-    "partNumber": "RD-U6020-10",
+    "cablePull": 3.410138888888889,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Microshift Advent X/default.htm"
+  },{
+    "brand": "Microshift",
+    "name": "Advent X",
+    "partNumber": "RD-M6205AM",
     "designSpeeds": 10,
-    "designCogPitch": 4.05,
-    "distanceFromCarriageToJockeyWheel": 34.93,
+    "designCogPitch": 3.95,
+    "distanceFromCarriageToJockeyWheel": 35.75,
     "jockeyWheelThickness": 2.2,
-    "minDropoutWidth": None,
-    "maxDropoutWidth": None,
+    "minDropoutWidth": 12,
+    "maxDropoutWidth": 12,
     "smallCogOffset": None,
     "supportsMultipleFrontChainrings": True,
     "parallelogramStyle": "slant",
-    "chain": "10-speed",
-    "maxTooth": 39,
-    "chainWrap": 44,
-    "dataVideo": "https://youtu.be/I-ctFLBjlZ0",
-    "analysisVideo": "https://youtu.be/anIPVxXD7Lg",
-    "pullRatio": 1.0582142182810916,
+    "maxTooth": 44,
+    "maxToothUnofficial": None,
+    "maxToothWithGoatLink": None,
+    "chainWrap": 35,
+    #"linksFromJockeyToSmallestCog": 4,
+    "pullRatio": 1.0547866001173967,
+    "basePullRatio": 1.0480941756972713,
+    "maxPull": 44.80833333333334,
     "coefficients": [
-      8.034542372275181,
-      0.9792098840753652,
-      0.005067028992561139,
-      -8.948602873125939e-05
+      10.63609527393101,
+      0.8516019652813257,
+      0.008326715295997324,
+      -0.00010488856209232585
     ],
-    "physicalLowLimit": 8.034542372275181,
-    "physicalHighLimit": 50.871216961370294,
-    "numberOfMeasurements": 652,
-    "Pull Ratio Averaged Across Pulling Runs": "1.062 +/- 0.005",
-    "Pull Ratio Averaged Across Relaxing Runs": "1.054 +/- 0.018",
-    "Pull Ratio Averaged Across All Runs": "1.058 +/- 0.015",
-    "Pull Ratio 95% Confidence Interval": "1.043 to 1.074",
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano CUES 10-Speed/default.htm",
+    "physicalLowLimit": 10.63609527393101,
+    "physicalHighLimit": 56.076868483895375,
+    "numberOfMeasurements": 577,
+    "Base Pull Ratio Averaged Across Pulling Runs": "1.048 +/- 0.011",
+    "Base Pull Ratio Averaged Across Relaxing Runs": "1.047 +/- 0.014",
+    "Base Pull Ratio Averaged Across All Runs": "1.048 +/- 0.013",
+    "Base Pull Ratio 95% Confidence Interval": "1.035 to 1.061",
     "meas_method_percent_diffs": [
-      0.047835446065542034,
-      -0.6227544910179423,
-      -0.14350633819659214,
-      -1.2163129024564703,
-      -0.47732696897371996,
-      1.711738703348832e-14
+      -0.08646779074792921,
+      0.1503113592441492,
+      -0.464396284829739,
+      -0.17714791851195372,
+      0.3050773589017227,
+      -0.1530723813689206
     ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.4020108757631942 +/- 0.8749427035283623"
-  },  {
-    "name": "LinkGlide 10-Speed",
-    "brand": "Shimano",
-    "partNumber": "CS-LG300-10",
+    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.07094927621877843 +/- 0.4922167734024139",
+    "pullRatioCalc": {
+      "dropout_width": 12.0,
+      "small_cog_offset": 3.0,
+      "small_cog_position": 15.0,
+      "smallest_cog_pull": 4.903749371851818,
+      "second_smallest_cog_pull": 9.052737563946664,
+      "second_biggest_cog_pull": 35.433954673187,
+      "biggest_cog_pull": 39.252946798054474,
+      "biggest_cog_position": 50.550000000000004,
+      "total_pitch_inner_cogs": 27.650000000000002,
+      "pull_ratio": 1.0480941756972713,
+      "coefficients": [
+        10.63609527393101,
+        0.8516019652813257,
+        0.008326715295997324,
+        -0.00010488856209232585
+      ]
+    },
+    "yawCoefficients": [
+      -4.121358373136494,
+      0.2973675581670828,
+      -0.006696452527693453,
+      8.710513798395399e-05
+    ],
+    "yawNumberOfMeasurements": 141,
+    "yawAffectsPullRatio": True,
+    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm"
+  },
+  {
+    "name": "Generic 10-Speed",
+    "brand": "Generic",
+    "partNumber": "generic-10-speed",
     "speeds": 10,
-    "pitches": [
-      4.05,
-      4.0,
-      4.1,
-      4.05,
-      4.05,
-      4.1,
-      4.0,
-      4.05,
-      4.15
-    ],
-    "averagePitch": 4.05,
-    "cogWidth": 1.95,
+    "pitches": [ 3.95, 3.95, 3.95, 3.95, 3.95, 3.95, 3.95, 3.95, 3.95 ],
+    "averagePitch": 3.95,
+    "cogWidth": 1.65,
     "chainRollerWidth": 2.2,
-    "minMaxToothAvailable": 39,
     "maxToothAvailable": 48,
-    "source": "https://www.youtube.com/watch?v=KNserH4_hL8"
+    "source": "https://en.wikibooks.org/wiki/Bicycles/Maintenance_and_Repair/Gear-changing_Dimensions#Cog-set_Stack_Width"
   })
 
   import json
