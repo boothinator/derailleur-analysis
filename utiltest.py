@@ -1,6 +1,6 @@
 import unittest
 import math
-from util import link_length, RollerPositionInfo, calculate_next_roller_position, close_enough_roller_to_cog_distance
+from util import link_length, RollerPositionResult, calculate_next_roller_position, close_enough_roller_to_cog_distance
 
 class TestUtil(unittest.TestCase):
   def test_calculate_next_roller_position(self):
@@ -12,7 +12,7 @@ class TestUtil(unittest.TestCase):
 
     print(math.degrees(math.asin((cog_lateral_position - roller_lateral_position)/roller_to_cog_distance)), "deg")
 
-    roller_pos = RollerPositionInfo(prev_link_angle_rad=link_angle_rad,
+    roller_pos = RollerPositionResult(prev_link_angle_rad=link_angle_rad,
                                       roller_lateral_position=roller_lateral_position,
                                       roller_to_cog_distance=roller_to_cog_distance)
 
@@ -34,7 +34,7 @@ class TestUtil(unittest.TestCase):
 
     print(math.degrees(math.asin((cog_lateral_position - roller_lateral_position)/roller_to_cog_distance)), "deg")
 
-    roller_pos = RollerPositionInfo(prev_link_angle_rad=link_angle_rad,
+    roller_pos = RollerPositionResult(prev_link_angle_rad=link_angle_rad,
                                       roller_lateral_position=roller_lateral_position,
                                       roller_to_cog_distance=roller_to_cog_distance)
 
@@ -56,7 +56,7 @@ class TestUtil(unittest.TestCase):
 
     print(math.degrees(math.asin((cog_lateral_position - roller_lateral_position)/roller_to_cog_distance)), "deg")
 
-    roller_pos = RollerPositionInfo(prev_link_angle_rad=link_angle_rad,
+    roller_pos = RollerPositionResult(prev_link_angle_rad=link_angle_rad,
                                       roller_lateral_position=roller_lateral_position,
                                       roller_to_cog_distance=roller_to_cog_distance)
 
