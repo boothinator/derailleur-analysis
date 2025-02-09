@@ -259,9 +259,15 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
   cog_positions = [smallest_cog_position + np.sum([cassette_pitches[0:i]])
                   for i in range(0, len(cassette_pitches) + 1) ]
   
-  # Calculate barrel adjuster
-  barrel_adjuster = np.min([r for r in (derailleur_curve - cog_positions[0]).roots()
-                            if r >= 0 and r < max_cable_pull])
+  # Calculate initial barrel adjuster
+  candidate_barrel_adjuster_values = (derailleur_curve - cog_positions[0]).roots()
+  valid_initial_barrel_adjuster_values = [r for r in candidate_barrel_adjuster_values
+                                          if r >= 0 and r < max_cable_pull]
+  if valid_initial_barrel_adjuster_values:
+    barrel_adjuster = np.min(valid_initial_barrel_adjuster_values)
+  else:
+    barrel_adjuster = 0
+  
   barrel_adjuster_values = [barrel_adjuster]
 
   # Use Newton's method to find the barrel adjuster amount that will minimize chain angles
