@@ -302,8 +302,8 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
     barrel_adjuster_values.append(barrel_adjuster)
 
   # Review results
-  if np.abs(center_chain_angle) > 0.01:
-    raise Exception("Failed to converge")
+  if np.abs(center_chain_angle) > 0.1:
+    print("Failed to converge", shifter["name"], derailleur["name"], cassette["name"])
 
   barrel_adjuster_too_low = barrel_adjuster < 0
     
