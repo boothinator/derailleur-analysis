@@ -130,7 +130,7 @@ class RollerPositionInfo(BaseModel):
 
 class RollerPositionResult(RollerPositionInfo):
   can_calculate_next: bool = True
-  chain_can_reach_cog_laterally: bool = False
+  chain_can_reach_cog_laterally: bool | None = None
 
 close_enough_roller_to_cog_distance = link_length * 0.1
 
@@ -163,6 +163,31 @@ def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_p
               roller_lateral_position=next_roller_lateral_position,
               can_calculate_next=can_calculate_next,
               chain_can_reach_cog_laterally=chain_can_reach_cog_laterally)
+
+class ChainAngleAtCogResult(BaseModel):
+  roller_pos_list: list[RollerPositionResult]
+  angle_deg: float
+  chain_can_reach_cog_laterally: bool
+
+def calculate_chain_angle_at_cog(link_angle_rad: float, roller_to_cog_distance: float,
+                                 roller_lateral_position: float, cog_lateral_position: float,
+                                 free_play_between_cog_and_chain: float) -> ChainAngleAtCogResult:
+
+  roller_pos_list = [RollerPositionResult(prev_link_angle_rad=link_angle_rad,
+                                    roller_lateral_position=roller_lateral_position,
+                                    roller_to_cog_distance=roller_to_cog_distance)]
+
+  while roller_pos_list[-1].can_calculate_next:
+    roller_pos_list.append(
+      calculate_next_roller_position(roller_pos_list[-1],
+                                     cog_lateral_position,
+                                     free_play_between_cog_and_chain))
+
+  last_pos = roller_pos_list[-1]
+  
+  return ChainAngleAtCogResult(roller_pos_list=roller_pos_list,
+                               angle_deg=math.degrees(last_pos.prev_link_angle_rad),
+                               chain_can_reach_cog_laterally=last_pos.chain_can_reach_cog_laterally)
 
 
 def render_rollers(rollers: list[RollerPositionInfo]):
