@@ -136,7 +136,7 @@ close_enough_roller_to_cog_distance = link_length * 0.1
 
 def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_position: float,
                                    free_play_between_cog_and_chain: float = 0) -> RollerPositionResult:
-  
+  # TODO: consider free_play_between_cog_and_chain
   roller_to_cog_angle_rad = math.asin((cog_lateral_position - roller_pos.roller_lateral_position)/roller_pos.roller_to_cog_distance)
 
   next_link_min_angle_rad = roller_pos.prev_link_angle_rad - chain_max_free_yaw_rad
@@ -154,7 +154,7 @@ def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_p
   close_enough = next_roller_to_cog_distance <= close_enough_roller_to_cog_distance
 
   chain_can_reach_cog_laterally = abs(cog_lateral_position - next_roller_lateral_position) \
-                           <= (roller_pos.roller_to_cog_distance + free_play_between_cog_and_chain)
+                           <= next_roller_to_cog_distance
   
   can_calculate_next = not close_enough and chain_can_reach_cog_laterally
 
