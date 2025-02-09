@@ -41,6 +41,9 @@ for combo in supported_combos:
 
   if max_chain_angle_results["derailleur_can_clear_cassette"] == False:
     print(f"Warning: derailleur can't clear cassette for {combo['name']}")
+  
+  if max_chain_angle_results["failed_to_converge"]:
+    raise Exception("Failed to converge")
 
 names = [c["name"] for c in supported_combos]
 motion_multipliers = [c["motion_multiplier"] for c in supported_combos]

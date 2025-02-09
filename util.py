@@ -295,15 +295,26 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
 
     if np.abs(center_chain_angle) <= 0.01:
       break
+    
+    if i > 15:
+      mult = 0.001
+    elif i > 10:
+      mult = 0.01
+    elif i > 5:
+      mult = 0.1
+    else:
+      mult = 1
 
     center_diff = np.sin(center_chain_angle * np.pi / 180) * np.max(jockey_to_cog_distances)
 
-    barrel_adjuster = barrel_adjuster + center_diff/derailleur["pullRatio"]
+    barrel_adjuster = barrel_adjuster + mult * center_diff/derailleur["pullRatio"]
     barrel_adjuster_values.append(barrel_adjuster)
 
   # Review results
-  if np.abs(center_chain_angle) > 0.1:
+  failed_to_converge = np.abs(center_chain_angle) > 0.1
+  if failed_to_converge:
     print("Failed to converge", shifter["name"], derailleur["name"], cassette["name"])
+
 
   barrel_adjuster_too_low = barrel_adjuster < 0
     
@@ -345,6 +356,7 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
     "least_pull_too_low": bool(least_pull_too_low),
     "most_pull": most_pull,
     "most_pull_too_high": bool(most_pull_too_high),
+    "failed_to_converge": bool(failed_to_converge),
     "most_pull_jockey_position_diff": most_pull_jockey_position_diff,
     "cassette_total_pitch": cassette_total_pitch,
     "derailleur_range_of_motion": derailleur_range_of_motion,
