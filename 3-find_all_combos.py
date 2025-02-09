@@ -27,6 +27,7 @@ max_chain_angle_max = compatibility_ranges["maxChainAngleMax"]
 
 combos = []
 combos_trimmed = []
+sensible_combos = []
 sensible_combos_trimmed = []
 partial_fail_combos = []
 partial_fail_combos_confidence_trimmed = []
@@ -283,6 +284,7 @@ for shifter in shifters:
           }
           combos_trimmed.append(trimmed_combo)
           if cassette["speeds"] <= shifter["speeds"]:
+            sensible_combos.append(combo)
             sensible_combos_trimmed.append(trimmed_combo)
       
       # Save combo if compatible cassette was found
@@ -324,6 +326,9 @@ with open(f"combinations.json", "w") as info_file:
 
 with open(f"combinations_trimmed.json", "w") as info_file:
   json.dump(combos_trimmed, info_file, indent=2)
+
+with open(f"sensible_combinations.json", "w") as info_file:
+  json.dump(sensible_combos, info_file, indent=2)
 
 with open(f"sensible_combinations_trimmed.json", "w") as info_file:
   json.dump(sensible_combos_trimmed, info_file, indent=2)
