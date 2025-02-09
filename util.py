@@ -260,56 +260,32 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
                   for i in range(0, len(cassette_pitches) + 1) ]
   
   # Calculate barrel adjuster
-  barrel_adjuster = 0
+  barrel_adjuster = np.min([r for r in (derailleur_curve - cog_positions[0]).roots()
+                            if r >= 0 and r < max_cable_pull])
   barrel_adjuster_values = [barrel_adjuster]
 
   # Use Newton's method to find the barrel adjuster amount that will minimize chain angles
   for i in range(0, 12):
-    cur_jockey_to_cog_distances = jockey_to_cog_distances[1:num_positions - 1]
     shift_positions = [barrel_adjuster + np.sum([shift_spacings[0:i]])
                       for i in range(0, len(shift_spacings) + 1) ]
-    jockey_positions = derailleur_curve(shift_positions)
-    cur_chain_roller_positions = jockey_positions[1:num_positions - 1]
+    jockey_lateral_positions = derailleur_curve(shift_positions)
 
-    chain_roller_positions = []
+    # chain_angles = np.arcsin(diffs_minus_free_play/jockey_to_cog_distances[1:num_positions - 1]) * 180 / np.pi
 
-    chain_at_cog_angles = [None] * (num_positions - 2)
-    while any([d for d in cur_jockey_to_cog_distances if d > 0]):
-      chain_roller_positions.append(cur_chain_roller_positions)
-      diffs = cog_positions[1:num_positions - 1] - cur_chain_roller_positions
+    jockey_yaw_angles_rad = np.deg2rad(yaw_curve(shift_positions))
 
-      diffs_minus_free_play = np.array([(
-          0 if abs(d) < roller_cog_free_play/2
-          else (
-            d - roller_cog_free_play/2 if d > 0
-            else d + roller_cog_free_play/2
-          )
-        )
-        for d in diffs])
+    chain_angle_results = [calculate_chain_angle_at_cog(jockey_angle_rad, jockey_to_cog_distance,
+                              jockey_lateral_position, cog_lateral_position, roller_cog_free_play)
+                           for jockey_angle_rad, jockey_to_cog_distance,
+                              jockey_lateral_position, cog_lateral_position
+                           in zip(jockey_yaw_angles_rad, jockey_to_cog_distances,
+                                  jockey_lateral_positions, cog_positions)]
 
-      chain_angles = np.arcsin(diffs_minus_free_play/cur_jockey_to_cog_distances) * 180 / np.pi
-      
-      jockey_angles = yaw_curve(shift_positions)[1:num_positions - 1]
-      jockey_max_angles = jockey_angles + chain_max_free_yaw
-      jockey_min_angles = jockey_angles - chain_max_free_yaw
-      
-      next_link_angles = np.min(
-        [np.max(
-          [chain_angles, jockey_min_angles],
-          axis=0),
-          jockey_max_angles], axis=0)
-      next_link_angles_diff = chain_angles - next_link_angles
+    chain_angles = np.array([r.angle_deg for r in chain_angle_results])
 
-      next_roller_position_diffs = np.sin(np.pi * next_link_angles/180) * np.min([[link_length]*8, cur_jockey_to_cog_distances], axis=0)
-
-      cur_chain_roller_positions = cur_chain_roller_positions + next_roller_position_diffs
-
-      chain_at_cog_angles = [p if jcd < link_length else cca for p,jcd,cca
-                             in zip(cur_chain_roller_positions, cur_jockey_to_cog_distances, chain_at_cog_angles)]
-
-      cur_jockey_to_cog_distances = cur_jockey_to_cog_distances - link_length
-
-    center_chain_angle = np.mean([chain_angles.min(), chain_angles.max()])
+    chain_angles_excluding_first_and_last = chain_angles[1:-1]
+    
+    center_chain_angle = np.mean([chain_angles_excluding_first_and_last.min(), chain_angles_excluding_first_and_last.max()])
 
     if np.abs(center_chain_angle) <= 0.01:
       break
@@ -325,19 +301,30 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
 
   barrel_adjuster_too_low = barrel_adjuster < 0
     
+  diffs = cog_positions[1:num_positions - 1] - jockey_lateral_positions[1:num_positions - 1]
+
+  diffs_minus_free_play = np.array([(
+      0 if abs(d) < roller_cog_free_play/2
+      else (
+        d - roller_cog_free_play/2 if d > 0
+        else d + roller_cog_free_play/2
+      )
+    )
+    for d in diffs])
+    
   max_diff_minus_free_play = max(np.abs([diffs_minus_free_play.min(), diffs_minus_free_play.max()]))
 
-  max_chain_angle = chain_angles.max()
+  max_chain_angle = chain_angles_excluding_first_and_last.max()
 
-  cable_pull_at_max_chain_angle = shift_positions[chain_angles.argmax() + 1]
+  cable_pull_at_max_chain_angle = shift_positions[chain_angles_excluding_first_and_last.argmax() + 1]
 
   # Calculate end jockey positions based on second smallest or second biggest positions, plus the cog pitch
   # Yeah, this ignores the motion multiplier, but it shouldn't affect the pull too low or pull too high determinations
   least_pull = get_cable_pull_for_jockey_position(derailleur,
-                                                  jockey_positions[1] - cassette_pitches[0])
+                                                  jockey_lateral_positions[1] - cassette_pitches[0])
   least_pull_too_low = least_pull < 0
   most_pull = get_cable_pull_for_jockey_position(derailleur,
-                                                 jockey_positions[-2] + cassette_pitches[-1])
+                                                 jockey_lateral_positions[-2] + cassette_pitches[-1])
   most_pull_too_high = derailleur_curve(most_pull) > derailleur["physicalHighLimit"]
   most_pull_jockey_position_diff = derailleur["physicalHighLimit"] - derailleur_curve(most_pull)
   cassette_total_pitch = max(cog_positions) - min(cog_positions)
@@ -552,7 +539,7 @@ if __name__ == '__main__':
 
   print(math.degrees(math.asin((cog_lateral_position - roller_lateral_position)/roller_to_cog_distance)), "deg")
 
-  roller_pos = RollerPositionInfo(prev_link_angle_rad=link_angle_rad,
+  roller_pos = RollerPositionResult(prev_link_angle_rad=link_angle_rad,
                                     roller_lateral_position=roller_lateral_position,
                                     roller_to_cog_distance=roller_to_cog_distance)
 
@@ -579,8 +566,6 @@ if __name__ == '__main__':
   print(get_cog_radius(11), 11 * (25.4 / 2) / (2 * np.pi))
   print(get_cog_radius(32), 32 * (25.4 / 2) / (2 * np.pi))
   print(get_cog_radius(52), 52 * (25.4 / 2) / (2 * np.pi))
-
-  exit()
 
   angles = calculate_max_chain_angle(
   {
