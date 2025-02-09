@@ -132,16 +132,19 @@ for shifter in shifters:
         smallest_cassette_too_big = smallest_cassette_too_big_official_max_tooth \
           and (smallest_cassette_too_big_unofficial_max_tooth or smallest_cassette_too_big_unofficial_max_tooth == None) \
           and (smallest_cassette_too_big_with_goat_link or smallest_cassette_too_big_with_goat_link == None)
-
-        fail_criteria = [
-          confidence_too_low, max_chain_angle_too_high, barrel_adjuster_too_low,
-          least_pull_too_low, not_enough_range_on_derailleur, smallest_cassette_too_big
-        ]
+        failed_to_converge = max_chain_angle_results["failed_to_converge"]
 
         supported = any([combo for combo in supported_combos
               if shifter["partNumber"] == combo["shifterPartNumber"]
               and derailleur["partNumber"] == combo["derailleurPartNumber"]
               and cassette["partNumber"] == combo["cassettePartNumber"]])
+
+        fail_criteria = [
+          (confidence_too_low and not supported), max_chain_angle_too_high, barrel_adjuster_too_low,
+          least_pull_too_low, not_enough_range_on_derailleur, smallest_cassette_too_big,
+          failed_to_converge
+        ]
+
 
         all_combos.append({
           "brand": brand,
@@ -177,6 +180,7 @@ for shifter in shifters:
           "smallest_cassette_too_big_unofficial_max_tooth": smallest_cassette_too_big_unofficial_max_tooth,
           "smallest_cassette_too_big_with_goat_link": smallest_cassette_too_big_with_goat_link,
           "smallest_cassette_too_big": bool(smallest_cassette_too_big),
+          "failed_to_converge": bool(failed_to_converge),
           "maxChainAngle": max_chain_angle_results["max_chain_angle"],
           "motionMultiplier": multiplier,
           "numberOfShiftsMatchesCogs": shifter["speeds"] == cassette["speeds"],
