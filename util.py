@@ -169,13 +169,13 @@ class ChainAngleAtCogResult(BaseModel):
   angle_deg: float
   chain_can_reach_cog_laterally: bool
 
-def calculate_chain_angle_at_cog(link_angle_rad: float, roller_to_cog_distance: float,
-                                 roller_lateral_position: float, cog_lateral_position: float,
+def calculate_chain_angle_at_cog(jockey_angle_rad: float, jockey_to_cog_distance: float,
+                                 jockey_lateral_position: float, cog_lateral_position: float,
                                  free_play_between_cog_and_chain: float) -> ChainAngleAtCogResult:
 
-  roller_pos_list = [RollerPositionResult(prev_link_angle_rad=link_angle_rad,
-                                    roller_lateral_position=roller_lateral_position,
-                                    roller_to_cog_distance=roller_to_cog_distance)]
+  roller_pos_list = [RollerPositionResult(prev_link_angle_rad=jockey_angle_rad,
+                                    roller_lateral_position=jockey_lateral_position,
+                                    roller_to_cog_distance=jockey_to_cog_distance)]
 
   while roller_pos_list[-1].can_calculate_next:
     roller_pos_list.append(

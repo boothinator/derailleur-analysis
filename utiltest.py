@@ -12,9 +12,9 @@ class TestUtil(unittest.TestCase):
 
     print(math.degrees(math.asin((cog_lateral_position - roller_lateral_position)/roller_to_cog_distance)), "deg")
 
-    result = calculate_chain_angle_at_cog(link_angle_rad=link_angle_rad,
-                                          roller_to_cog_distance=roller_to_cog_distance,
-                                          roller_lateral_position=roller_lateral_position,
+    result = calculate_chain_angle_at_cog(jockey_angle_rad=link_angle_rad,
+                                          jockey_to_cog_distance=roller_to_cog_distance,
+                                          jockey_lateral_position=roller_lateral_position,
                                           cog_lateral_position=cog_lateral_position,
                                           free_play_between_cog_and_chain=0)
 
@@ -35,9 +35,9 @@ class TestUtil(unittest.TestCase):
 
     print(math.degrees(math.asin((cog_lateral_position - roller_lateral_position)/roller_to_cog_distance)), "deg")
 
-    result = calculate_chain_angle_at_cog(link_angle_rad=link_angle_rad,
-                                          roller_to_cog_distance=roller_to_cog_distance,
-                                          roller_lateral_position=roller_lateral_position,
+    result = calculate_chain_angle_at_cog(jockey_angle_rad=link_angle_rad,
+                                          jockey_to_cog_distance=roller_to_cog_distance,
+                                          jockey_lateral_position=roller_lateral_position,
                                           cog_lateral_position=cog_lateral_position,
                                           free_play_between_cog_and_chain=0)
 
@@ -58,9 +58,9 @@ class TestUtil(unittest.TestCase):
 
     print(math.degrees(math.asin((cog_lateral_position - roller_lateral_position)/roller_to_cog_distance)), "deg")
 
-    result = calculate_chain_angle_at_cog(link_angle_rad=link_angle_rad,
-                                          roller_to_cog_distance=roller_to_cog_distance,
-                                          roller_lateral_position=roller_lateral_position,
+    result = calculate_chain_angle_at_cog(jockey_angle_rad=link_angle_rad,
+                                          jockey_to_cog_distance=roller_to_cog_distance,
+                                          jockey_lateral_position=roller_lateral_position,
                                           cog_lateral_position=cog_lateral_position,
                                           free_play_between_cog_and_chain=0)
 
