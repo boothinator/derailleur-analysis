@@ -125,6 +125,7 @@ def convert_to_floats(data):
 
 class RollerPositionInfo(BaseModel):
   prev_link_angle_rad: float
+  # TODO: rename to chain_length_from_roller_to_cog
   roller_to_cog_distance: float
   roller_lateral_position: float
 
@@ -132,12 +133,17 @@ class RollerPositionResult(RollerPositionInfo):
   can_calculate_next: bool = True
   chain_can_reach_cog_laterally: bool | None = None
 
-close_enough_roller_to_cog_distance = link_length * 0.1
+close_enough_roller_to_cog_distance = 0
 
 def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_position: float,
                                    free_play_between_cog_and_chain: float = 0) -> RollerPositionResult:
   # TODO: consider free_play_between_cog_and_chain
-  roller_to_cog_angle_rad = math.asin((cog_lateral_position - roller_pos.roller_lateral_position)/roller_pos.roller_to_cog_distance)
+  roller_to_cog_angle_rad = math.asin(
+    max(
+      min(((cog_lateral_position - roller_pos.roller_lateral_position)
+         /roller_pos.roller_to_cog_distance),
+         1),
+      -1))
 
   next_link_min_angle_rad = roller_pos.prev_link_angle_rad - chain_max_free_yaw_rad
   next_link_max_angle_rad = roller_pos.prev_link_angle_rad + chain_max_free_yaw_rad
@@ -145,18 +151,20 @@ def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_p
   next_link_angle_rad = min(next_link_max_angle_rad,
                             max(next_link_min_angle_rad, roller_to_cog_angle_rad))
   
-  next_roller_to_cog_distance = roller_pos.roller_to_cog_distance \
-    - link_length * math.cos(next_link_angle_rad)
+  next_roller_to_cog_distance = max(
+    roller_pos.roller_to_cog_distance - link_length * math.cos(next_link_angle_rad),
+    0
+  )
 
   next_roller_lateral_position = roller_pos.roller_lateral_position \
-    + link_length * math.sin(next_link_angle_rad)
+    + min(link_length, roller_pos.roller_to_cog_distance) * math.sin(next_link_angle_rad)
   
   close_enough = next_roller_to_cog_distance <= close_enough_roller_to_cog_distance
 
   chain_can_reach_cog_laterally = abs(cog_lateral_position - next_roller_lateral_position) \
                            <= next_roller_to_cog_distance
   
-  can_calculate_next = not close_enough and chain_can_reach_cog_laterally
+  can_calculate_next = not close_enough # and chain_can_reach_cog_laterally
 
   return RollerPositionResult(prev_link_angle_rad=next_link_angle_rad,
               roller_to_cog_distance=next_roller_to_cog_distance,
@@ -177,20 +185,22 @@ def calculate_chain_angle_at_cog(jockey_angle_rad: float, jockey_to_cog_distance
                                     roller_lateral_position=jockey_lateral_position,
                                     roller_to_cog_distance=jockey_to_cog_distance)]
 
-  while roller_pos_list[-1].can_calculate_next:
+  while roller_pos_list[-1].roller_to_cog_distance > 0:
     roller_pos_list.append(
       calculate_next_roller_position(roller_pos_list[-1],
                                      cog_lateral_position,
                                      free_play_between_cog_and_chain))
 
   last_pos = roller_pos_list[-1]
+
+  diff = abs(last_pos.roller_lateral_position - cog_lateral_position)
   
   return ChainAngleAtCogResult(roller_pos_list=roller_pos_list,
                                angle_deg=math.degrees(last_pos.prev_link_angle_rad),
-                               chain_can_reach_cog_laterally=last_pos.chain_can_reach_cog_laterally)
+                               chain_can_reach_cog_laterally=(diff == 0))
 
 
-def render_rollers(rollers: list[RollerPositionInfo]):
+def render_rollers(rollers: list[RollerPositionInfo], cog_lateral_position: float):
   g = draw.Group()
 
   link_scale = 7
@@ -229,8 +239,14 @@ def render_rollers(rollers: list[RollerPositionInfo]):
     g.append(draw.Circle(cur_roller_x, cur_roller_y, 7, fill="red"))
 
   cog_land_x = roller_coords[-1][2] + link_scale * rollers[-1].roller_to_cog_distance * math.cos(angle_scale * r.prev_link_angle_rad)
-  cog_land_y = roller_coords[-1][3] + link_scale * rollers[-1].roller_to_cog_distance * math.sin(angle_scale * r.prev_link_angle_rad)
   
+  if cog_lateral_position > rollers[-1].roller_lateral_position:
+    cog_land_y = roller_coords[-1][3] + 20
+  elif cog_lateral_position < rollers[-1].roller_lateral_position:
+    cog_land_y = roller_coords[-1][3] - 20
+  else:
+    cog_land_y = roller_coords[-1][3] + link_scale * rollers[-1].roller_to_cog_distance * math.sin(angle_scale * r.prev_link_angle_rad)
+
   g.append(draw.Circle(cog_land_x, cog_land_y, 5, fill="blue"))
   g.append(draw.Circle(roller_coords[0][2], roller_coords[0][3], 5, fill="green"))
   g.append(draw.Circle(roller_coords[1][2], roller_coords[1][3], 5, fill="green"))
@@ -552,7 +568,7 @@ if __name__ == '__main__':
   link_angle_rad = math.radians(1.8)
   roller_lateral_position = 14
   roller_to_cog_distance = link_length * 3
-  cog_lateral_position = 15
+  cog_lateral_position = 25
   positions = []
 
   print(math.degrees(math.asin((cog_lateral_position - roller_lateral_position)/roller_to_cog_distance)), "deg")
@@ -561,17 +577,22 @@ if __name__ == '__main__':
                                     roller_lateral_position=roller_lateral_position,
                                     roller_to_cog_distance=roller_to_cog_distance)
 
-  positions.append(roller_pos)
+  #positions.append(roller_pos)
   
-  while roller_pos.can_calculate_next:
-    roller_pos = calculate_next_roller_position(roller_pos, cog_lateral_position)
-    print(roller_pos)
-    positions.append(roller_pos)
+  #while roller_pos.can_calculate_next:
+  #  roller_pos = calculate_next_roller_position(roller_pos, cog_lateral_position)
+  #  print(roller_pos)
+  #  positions.append(roller_pos)
   
-  print("Chain at cog angle", math.degrees(roller_pos.prev_link_angle_rad), "deg")
+  #print("Chain at cog angle", math.degrees(roller_pos.prev_link_angle_rad), "deg")
+
+  result = calculate_chain_angle_at_cog(link_angle_rad, roller_to_cog_distance, roller_lateral_position,
+                               cog_lateral_position, 0)
+  
+  positions=result.roller_pos_list
 
   d = draw.Drawing(600, 300)
-  d.append(render_rollers(positions))
+  d.append(render_rollers(positions, cog_lateral_position))
   d.save_svg("test.svg")
 
   print("Gen:", get_cassette_cog_teeth(11,34, 10), "\nAct:", [11, 13, 15, 17, 19, 21, 23, 26, 30, 34], "\n")
