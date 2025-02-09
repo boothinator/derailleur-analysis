@@ -146,7 +146,7 @@ def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_p
                             max(next_link_min_angle_rad, roller_to_cog_angle_rad))
   
   next_roller_to_cog_distance = roller_pos.roller_to_cog_distance \
-    - link_length * math.cos(roller_to_cog_angle_rad - next_link_angle_rad)
+    - link_length * math.cos(next_link_angle_rad)
 
   next_roller_lateral_position = roller_pos.roller_lateral_position \
     + link_length * math.sin(next_link_angle_rad)
