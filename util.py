@@ -129,12 +129,6 @@ class RollerPositionInfo(BaseModel):
   chain_length_from_roller_to_cog: float
   roller_lateral_position: float
 
-class RollerPositionResult(RollerPositionInfo):
-  can_calculate_next: bool = True
-  chain_can_reach_cog_laterally: bool | None = None
-
-close_enough_roller_to_cog_distance = 0
-
 def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_position: float) -> RollerPositionInfo:
 
   roller_to_cog_angle_rad = math.asin(
@@ -573,7 +567,7 @@ if __name__ == '__main__':
 
   print(math.degrees(math.asin((cog_lateral_position - roller_lateral_position)/roller_to_cog_distance)), "deg")
 
-  roller_pos = RollerPositionResult(prev_link_angle_rad=link_angle_rad,
+  roller_pos = RollerPositionInfo(prev_link_angle_rad=link_angle_rad,
                                     roller_lateral_position=roller_lateral_position,
                                     chain_length_from_roller_to_cog=roller_to_cog_distance)
 
