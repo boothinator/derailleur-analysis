@@ -168,11 +168,14 @@ def calculate_chain_angle_at_cog(jockey_angle_rad: float, jockey_to_cog_distance
                                     roller_lateral_position=jockey_lateral_position,
                                     chain_length_from_roller_to_cog=jockey_to_cog_distance)]
 
-  while roller_pos_list[-1].chain_length_from_roller_to_cog > 0:
+  last_pos = None
+
+  while roller_pos_list[-1].chain_length_from_roller_to_cog > -link_length:
     roller_pos_list.append(
       calculate_next_roller_position(roller_pos_list[-1], cog_lateral_position))
 
-  last_pos = roller_pos_list[-1]
+    if not last_pos and roller_pos_list[-1].chain_length_from_roller_to_cog <= 0:
+      last_pos = roller_pos_list[-1]
 
   chain_position_at_axle = roller_pos_list[-2].roller_lateral_position \
     + math.sin(last_pos.prev_link_angle_rad) * roller_pos_list[-2].chain_length_from_roller_to_cog
@@ -191,14 +194,15 @@ def calculate_chain_angle_at_cog(jockey_angle_rad: float, jockey_to_cog_distance
                                chain_to_cog_lateral_distance_at_axle=chain_to_cog_lateral_distance_at_axle)
 
 
-def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_distance_at_axle: float):
-  g = draw.Group()
+def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_distance_at_axle: float,
+                   start_y = None, **kwargs):
+  g = draw.Group(**kwargs)
 
   link_scale = 7
 
   link_pixels = link_scale * link_length
 
-  angle_scale = 10
+  angle_scale = 4
 
   prev_roller_x = 50
   prev_roller_y = 0
@@ -207,8 +211,13 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
   min_roller_y = prev_roller_y
 
   roller_coords = [(prev_roller_x, prev_roller_y, prev_roller_x, prev_roller_y)]
-  for r in rollers:
-    cur_roller_x = prev_roller_x + link_pixels * math.cos(angle_scale * r.prev_link_angle_rad)
+  for i,r in enumerate(rollers):
+    if i == 0:
+      x_link_pixels = math.sin(2 * math.pi / 11) * link_pixels
+    else:
+      x_link_pixels = link_pixels
+    
+    cur_roller_x = prev_roller_x + x_link_pixels * math.cos(angle_scale * r.prev_link_angle_rad)
     cur_roller_y = prev_roller_y + link_pixels * math.sin(angle_scale * r.prev_link_angle_rad)
 
     roller_coords.append((prev_roller_x, prev_roller_y, cur_roller_x, cur_roller_y))
@@ -218,7 +227,10 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
 
     min_roller_y = min(cur_roller_y, min_roller_y)
 
-  offset_y = offset_y - min_roller_y
+  if start_y:
+    offset_y = start_y - roller_coords[-1][3]
+  else:
+    offset_y = offset_y - min_roller_y
 
   roller_coords = [(px, py + offset_y, x, y + offset_y) for px, py, x, y in roller_coords]
   
@@ -376,7 +388,8 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
     "max_chain_angle": float(max_chain_angle),
     "cable_pull_at_max_chain_angle": cable_pull_at_max_chain_angle,
     "jockey_to_cog_links": [float(d) for d in jockey_to_cog_distances / 25.4 * 2],
-    "chain_angles": chain_angles.tolist()
+    "chain_angles": chain_angles.tolist(),
+    "chain_angle_results": chain_angle_results
   }
 
 def get_cable_pull_for_jockey_position(derailleur, jockey_position):
@@ -709,4 +722,10 @@ if __name__ == '__main__':
   })
 
   import json
-  print(json.dumps(angles, indent=2))
+  print(json.dumps(angles, indent=2, default=lambda _: "skipped"))
+
+  d = draw.Drawing(600, 1200)
+  for i,r in enumerate(angles["chain_angle_results"]):
+    d.append(render_rollers(r.roller_pos_list, r.chain_to_cog_lateral_distance_at_axle,
+                            start_y=i*50 + 400))
+  d.save_svg("test2.svg")
