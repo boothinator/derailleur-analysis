@@ -67,5 +67,9 @@
   ],
   "yawNumberOfMeasurements": 126,
   "yawAffectsPullRatio": true,
+  "yawAtSmallestCog": -2.5046281362139453,
+  "yawAtSecondSmallestCog": -2.1323837299102526,
+  "yawAtSecondBiggestCog": 0.834133278012605,
+  "yawAtBiggestCog": 1.1802614392779622,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM SX 12-Speed/default.htm"
 }

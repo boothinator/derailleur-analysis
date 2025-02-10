@@ -67,5 +67,9 @@
   ],
   "yawNumberOfMeasurements": 141,
   "yawAffectsPullRatio": true,
+  "yawAtSmallestCog": -2.819456493215343,
+  "yawAtSecondSmallestCog": -2.0793326321095336,
+  "yawAtSecondBiggestCog": 2.0740424375667996,
+  "yawAtBiggestCog": 2.596150224821741,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm"
 }

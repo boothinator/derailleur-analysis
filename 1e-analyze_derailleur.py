@@ -48,6 +48,13 @@ def process_der(dir):
     yaw_affects_pull_ratio = jockey_adjustment_from_yaw != 0
     yaw_info["yawAffectsPullRatio"] = bool(yaw_affects_pull_ratio)
     pull_ratio = (total_pitch_inner_cogs + jockey_adjustment_from_yaw)/(second_biggest_cog_pull - second_smallest_cog_pull)
+
+    biggest_cog_pull = base_pull_ratio_info["pullRatioCalc"]["biggest_cog_pull"]
+    smallest_cog_pull = base_pull_ratio_info["pullRatioCalc"]["smallest_cog_pull"]
+    yaw_info["yawAtSmallestCog"] = yaw_angle_curve(smallest_cog_pull)
+    yaw_info["yawAtSecondSmallestCog"] = yaw_angle_curve(second_smallest_cog_pull)
+    yaw_info["yawAtSecondBiggestCog"] = yaw_angle_curve(second_biggest_cog_pull)
+    yaw_info["yawAtBiggestCog"] = yaw_angle_curve(biggest_cog_pull)
   else:
     pull_ratio = base_pull_ratio_info["basePullRatio"]
     yaw_affects_pull_ratio = False

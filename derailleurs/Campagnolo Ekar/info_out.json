@@ -67,5 +67,9 @@
   ],
   "yawNumberOfMeasurements": 126,
   "yawAffectsPullRatio": true,
+  "yawAtSmallestCog": -2.3426699755300215,
+  "yawAtSecondSmallestCog": -2.0934022280619757,
+  "yawAtSecondBiggestCog": 0.31484516650912164,
+  "yawAtBiggestCog": 0.6201134663448609,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo Ekar/default.htm"
 }

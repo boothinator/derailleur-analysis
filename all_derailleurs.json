@@ -68,6 +68,10 @@
     ],
     "yawNumberOfMeasurements": 126,
     "yawAffectsPullRatio": true,
+    "yawAtSmallestCog": -2.3426699755300215,
+    "yawAtSecondSmallestCog": -2.0934022280619757,
+    "yawAtSecondBiggestCog": 0.31484516650912164,
+    "yawAtBiggestCog": 0.6201134663448609,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo Ekar/default.htm"
   },
   {
@@ -139,6 +143,10 @@
     ],
     "yawNumberOfMeasurements": 141,
     "yawAffectsPullRatio": true,
+    "yawAtSmallestCog": -2.819456493215343,
+    "yawAtSecondSmallestCog": -2.0793326321095336,
+    "yawAtSecondBiggestCog": 2.0740424375667996,
+    "yawAtBiggestCog": 2.596150224821741,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm"
   },
   {
@@ -210,6 +218,10 @@
     ],
     "yawNumberOfMeasurements": 92,
     "yawAffectsPullRatio": false,
+    "yawAtSmallestCog": -0.37152978145556453,
+    "yawAtSecondSmallestCog": -0.16406161051717205,
+    "yawAtSecondBiggestCog": 1.0539182089713892,
+    "yawAtBiggestCog": 1.1887685172577602,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano 105 11-speed/default.htm"
   },
   {
@@ -605,6 +617,10 @@
     ],
     "yawNumberOfMeasurements": 106,
     "yawAffectsPullRatio": true,
+    "yawAtSmallestCog": -0.06485670192084865,
+    "yawAtSecondSmallestCog": 0.2766287943346533,
+    "yawAtSecondBiggestCog": 1.6295442968782017,
+    "yawAtBiggestCog": 1.7340352637502523,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano GRX 10-Speed/default.htm"
   },
   {
@@ -808,6 +824,10 @@
     ],
     "yawNumberOfMeasurements": 94,
     "yawAffectsPullRatio": true,
+    "yawAtSmallestCog": 0.3868788717776489,
+    "yawAtSecondSmallestCog": 0.8429246472860146,
+    "yawAtSecondBiggestCog": 2.3464727959560143,
+    "yawAtBiggestCog": 2.3685541770250182,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra RX 11-Speed/default.htm"
   },
   {
@@ -995,6 +1015,10 @@
     ],
     "yawNumberOfMeasurements": 126,
     "yawAffectsPullRatio": true,
+    "yawAtSmallestCog": -2.5046281362139453,
+    "yawAtSecondSmallestCog": -2.1323837299102526,
+    "yawAtSecondBiggestCog": 0.834133278012605,
+    "yawAtBiggestCog": 1.1802614392779622,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM SX 12-Speed/default.htm"
   }
 ]
