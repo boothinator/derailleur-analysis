@@ -21,7 +21,7 @@ class TestUtil(unittest.TestCase):
 
     roller_pos = result.roller_pos_list[-1]
 
-    self.assertGreater(0.1, roller_pos.roller_to_cog_distance)
+    self.assertGreater(0.1, roller_pos.chain_length_from_roller_to_cog)
     self.assertAlmostEqual(cog_lateral_position, roller_pos.roller_lateral_position,
                            delta=close_enough_roller_to_cog_distance)
     self.assertEqual(0, roller_pos.prev_link_angle_rad)
@@ -44,7 +44,7 @@ class TestUtil(unittest.TestCase):
 
     roller_pos = result.roller_pos_list[-1]
 
-    self.assertLess(0, roller_pos.roller_to_cog_distance)
+    self.assertLess(0, roller_pos.chain_length_from_roller_to_cog)
     self.assertAlmostEqual(cog_lateral_position, roller_pos.roller_lateral_position,
                            delta=close_enough_roller_to_cog_distance)
     self.assertAlmostEqual(0.0026, roller_pos.prev_link_angle_rad, places=4)
@@ -67,7 +67,7 @@ class TestUtil(unittest.TestCase):
 
     roller_pos = result.roller_pos_list[-1]
 
-    self.assertLess(0, roller_pos.roller_to_cog_distance)
+    self.assertLess(0, roller_pos.chain_length_from_roller_to_cog)
     self.assertAlmostEqual(cog_lateral_position, roller_pos.roller_lateral_position,
                            delta=close_enough_roller_to_cog_distance)
     # TODO: is this right?
@@ -91,7 +91,7 @@ class TestUtil(unittest.TestCase):
 
     roller_pos = result.roller_pos_list[-1]
 
-    self.assertLess(0, roller_pos.roller_to_cog_distance)
+    self.assertLess(0, roller_pos.chain_length_from_roller_to_cog)
     self.assertNotAlmostEqual(cog_lateral_position, roller_pos.roller_lateral_position,
                            delta=close_enough_roller_to_cog_distance)
     # TODO: is this right?
@@ -100,7 +100,7 @@ class TestUtil(unittest.TestCase):
 
   def test_calculate_next_roller_position4(self):
     roller_pos = RollerPositionResult(prev_link_angle_rad= -0.005023570242931465,
-                                      roller_to_cog_distance= 16.012976140890295,
+                                      chain_length_from_roller_to_cog= 16.012976140890295,
                                       roller_lateral_position= 49.78469548941524)
     
     cog_lateral_position = 44.760000000000005
