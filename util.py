@@ -254,6 +254,7 @@ def render_rollers(rollers: list[RollerPositionInfo], cog_lateral_position: floa
   return g
 
 def calculate_max_chain_angle(shifter, derailleur, cassette):
+  # TODO: account for interference with adjacent cogs
   derailleur_curve = np.polynomial.Polynomial(coef=derailleur["coefficients"])
 
   if "yawCoefficients" in derailleur:
