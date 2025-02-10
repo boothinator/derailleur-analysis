@@ -66,5 +66,9 @@
   ],
   "yawNumberOfMeasurements": 106,
   "yawAffectsPullRatio": true,
+  "yawAtSmallestCog": -0.06485670192084865,
+  "yawAtSecondSmallestCog": 0.2766287943346533,
+  "yawAtSecondBiggestCog": 1.6295442968782017,
+  "yawAtBiggestCog": 1.7340352637502523,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano GRX 10-Speed/default.htm"
 }

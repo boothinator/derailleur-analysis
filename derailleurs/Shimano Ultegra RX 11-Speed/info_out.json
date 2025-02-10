@@ -65,5 +65,9 @@
   ],
   "yawNumberOfMeasurements": 94,
   "yawAffectsPullRatio": true,
+  "yawAtSmallestCog": 0.3868788717776489,
+  "yawAtSecondSmallestCog": 0.8429246472860146,
+  "yawAtSecondBiggestCog": 2.3464727959560143,
+  "yawAtBiggestCog": 2.3685541770250182,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra RX 11-Speed/default.htm"
 }
