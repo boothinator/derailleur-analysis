@@ -678,6 +678,8 @@ if __name__ == '__main__':
 
   #print(json.dumps(angles, indent=2, default=lambda _: "skipped"))
 
+  # TODO: Update render_rollers to put teeth at correct distance for size of cog
+
   d = draw.Drawing(1000, 1200)
   for i,r in enumerate(angles["chain_angle_results"]):
     d.append(render_rollers(r.roller_pos_list, r.chain_to_cog_lateral_distance_at_axle,
