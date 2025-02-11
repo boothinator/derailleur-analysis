@@ -85,7 +85,7 @@ def process_der(dir):
   plt.plot(x_new, y_new)
   plt.xlim([0, max_pull])
   plt.ylim([0, curve(max_pull) + 10])
-  plt.savefig(f"derailleurs/{dir}/base_pull_curve.png")
+  plt.savefig(f"derailleurs/{dir}/pull_curve.png")
   plt.close()
   
   pull_ratio_curve = curve.deriv(1)
@@ -110,27 +110,27 @@ def process_der(dir):
   plt.annotate(f"Avg. Pull Ratio {round(pr_calc.pull_ratio, 2)}",
                  (avg_pull_ratio_annotation_x, pr_calc.pull_ratio),
                  xytext=(0, -12), textcoords="offset points")
-  plt.savefig(f"derailleurs/{dir}/base_pull_ratio_curve.png")
+  plt.savefig(f"derailleurs/{dir}/pull_ratio_curve.png")
   plt.close()
 
   # Info Output
   info_out = {
-    "basePullRatio": pr_calc.pull_ratio,
+    "pullRatio": pr_calc.pull_ratio,
     "maxPull": max_pull,
     "coefficients": [c for c in avg_coefs],
     "physicalLowLimit": curve(0),
     "physicalHighLimit": curve(max_pull),
     "numberOfMeasurements": number_of_measurements,
-    "Base Pull Ratio Averaged Across Pulling Runs": f"{round(pulling_pull_ratio_avg, 3):.3f} +/- {round(2*pulling_pull_ratio_stdev, 3):.3f}",
-    "Base Pull Ratio Averaged Across Relaxing Runs": f"{round(relaxing_pull_ratio_avg, 3):.3f} +/- {round(2*relaxing_pull_ratio_stdev, 3):.3f}",
-    "Base Pull Ratio Averaged Across All Runs": f"{round(pull_ratio_avg, 3):.3f} +/- {round(2*pull_ratio_stdev, 3):.3f}",
-    "Base Pull Ratio 95% Confidence Interval": f"{round(pull_ratio_avg - 2 * pull_ratio_stdev, 3):.3f} to {round(pull_ratio_avg + 2 * pull_ratio_stdev, 3):.3f}",
+    "Pull Ratio Averaged Across Pulling Runs": f"{round(pulling_pull_ratio_avg, 3):.3f} +/- {round(2*pulling_pull_ratio_stdev, 3):.3f}",
+    "Pull Ratio Averaged Across Relaxing Runs": f"{round(relaxing_pull_ratio_avg, 3):.3f} +/- {round(2*relaxing_pull_ratio_stdev, 3):.3f}",
+    "Pull Ratio Averaged Across All Runs": f"{round(pull_ratio_avg, 3):.3f} +/- {round(2*pull_ratio_stdev, 3):.3f}",
+    "Pull Ratio 95% Confidence Interval": f"{round(pull_ratio_avg - 2 * pull_ratio_stdev, 3):.3f} to {round(pull_ratio_avg + 2 * pull_ratio_stdev, 3):.3f}",
     "meas_method_percent_diffs": meas_method_percent_diffs,
     "Caliper vs Indicator percent difference": f"Caliper vs Indicator percent difference: {avg_meas_method_percent_diff} +/- {stdev_meas_method_percent_diff * 2}",
     "pullRatioCalc": pr_calc.model_dump()
   }
   
-  with open(f"derailleurs/{dir}/pullratio/base_pull_ratio_info.json", "w") as info_file:
+  with open(f"derailleurs/{dir}/pullratio/pull_ratio_info.json", "w") as info_file:
     json.dump(info_out, info_file, indent=2)
 
 
