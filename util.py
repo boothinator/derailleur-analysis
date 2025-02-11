@@ -252,6 +252,9 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
                        stroke_width="2px"))
     g.append(lg)
 
+    # TODO: Render jockey teeth here if we're rendering the first two links
+    # TODO: Start rendering the cog teeth here if the chain length from roller to cog is less than the link length
+
   for _, _, cur_roller_x, cur_roller_y, _ in roller_coords:
     g.append(draw.Circle(cur_roller_x, cur_roller_y, 7, fill="red"))
 
