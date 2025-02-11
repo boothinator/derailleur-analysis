@@ -663,119 +663,45 @@ if __name__ == '__main__':
   print(get_cog_radius(32), 32 * (25.4 / 2) / (2 * np.pi))
   print(get_cog_radius(52), 52 * (25.4 / 2) / (2 * np.pi))
 
-  angles = calculate_max_chain_angle(
-  {
-    "brand": "Microshift",
-    "name": "Advent X",
-    "partNumber": "SB-M100A",
-    "type": "drop-bar",
-    "speeds": 10,
-    "source": "https://youtu.be/FzP2hvDBTLs",
-    "hasMatchingFrontShifters": False,
-    "dataVideo": "https://youtu.be/JO-I4XVTsu4",
-    "analysisVideo": "https://youtu.be/FzP2hvDBTLs",
-    "shiftSpacings": [
-      3.6966666666666668,
-      3.4158333333333335,
-      3.1622222222222223,
-      3.3045833333333334,
-      3.4354166666666663,
-      3.3204166666666666,
-      3.518333333333333,
-      3.714166666666667,
-      4.45
-    ],
-    "cablePull": 3.410138888888889,
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Microshift Advent X/default.htm"
-  },{
-    "brand": "Microshift",
-    "name": "Advent X",
-    "partNumber": "RD-M6205AM",
-    "designSpeeds": 10,
-    "designCogPitch": 3.95,
-    "distanceFromCarriageToJockeyWheel": 35.75,
-    "jockeyWheelThickness": 2.2,
-    "minDropoutWidth": 12,
-    "maxDropoutWidth": 12,
-    "smallCogOffset": None,
-    "supportsMultipleFrontChainrings": True,
-    "parallelogramStyle": "slant",
-    "maxTooth": 44,
-    "maxToothUnofficial": None,
-    "maxToothWithGoatLink": None,
-    "chainWrap": 35,
-    #"linksFromJockeyToSmallestCog": 4,
-    "pullRatio": 1.0547866001173967,
-    "basePullRatio": 1.0480941756972713,
-    "maxPull": 44.80833333333334,
-    "coefficients": [
-      10.63609527393101,
-      0.8516019652813257,
-      0.008326715295997324,
-      -0.00010488856209232585
-    ],
-    "physicalLowLimit": 10.63609527393101,
-    "physicalHighLimit": 56.076868483895375,
-    "numberOfMeasurements": 577,
-    "Base Pull Ratio Averaged Across Pulling Runs": "1.048 +/- 0.011",
-    "Base Pull Ratio Averaged Across Relaxing Runs": "1.047 +/- 0.014",
-    "Base Pull Ratio Averaged Across All Runs": "1.048 +/- 0.013",
-    "Base Pull Ratio 95% Confidence Interval": "1.035 to 1.061",
-    "meas_method_percent_diffs": [
-      -0.08646779074792921,
-      0.1503113592441492,
-      -0.464396284829739,
-      -0.17714791851195372,
-      0.3050773589017227,
-      -0.1530723813689206
-    ],
-    "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.07094927621877843 +/- 0.4922167734024139",
-    "pullRatioCalc": {
-      "dropout_width": 12.0,
-      "small_cog_offset": 3.0,
-      "small_cog_position": 15.0,
-      "smallest_cog_pull": 4.903749371851818,
-      "second_smallest_cog_pull": 9.052737563946664,
-      "second_biggest_cog_pull": 35.433954673187,
-      "biggest_cog_pull": 39.252946798054474,
-      "biggest_cog_position": 50.550000000000004,
-      "total_pitch_inner_cogs": 27.650000000000002,
-      "pull_ratio": 1.0480941756972713,
-      "coefficients": [
-        10.63609527393101,
-        0.8516019652813257,
-        0.008326715295997324,
-        -0.00010488856209232585
-      ]
-    },
-    "yawCoefficients": [
-      -4.121358373136494,
-      0.2973675581670828,
-      -0.006696452527693453,
-      8.710513798395399e-05
-    ],
-    "yawNumberOfMeasurements": 141,
-    "yawAffectsPullRatio": True,
-    "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm"
-  },
-  {
-    "name": "Generic 10-Speed",
-    "brand": "Generic",
-    "partNumber": "generic-10-speed",
-    "speeds": 10,
-    "pitches": [ 3.95, 3.95, 3.95, 3.95, 3.95, 3.95, 3.95, 3.95, 3.95 ],
-    "averagePitch": 3.95,
-    "cogWidth": 1.65,
-    "chainRollerWidth": 2.2,
-    "maxToothAvailable": 48,
-    "source": "https://en.wikibooks.org/wiki/Bicycles/Maintenance_and_Repair/Gear-changing_Dimensions#Cog-set_Stack_Width"
-  })
-
   import json
-  print(json.dumps(angles, indent=2, default=lambda _: "skipped"))
+  
+  with open(f"all_shifters.json") as f:
+    shifters = json.load(f)
+  with open(f"all_derailleurs.json") as f:
+    derailleurs = json.load(f)
+  with open(f"cassettes.json") as f:
+    cassettes = json.load(f)
+
+  angles = calculate_max_chain_angle([s for s in shifters if s["partNumber"] == "SB-M100A"][0],
+                                     [d for d in derailleurs if d["partNumber"] == "RD-M6205AM"][0],
+                                     [c for c in cassettes if c["partNumber"] == "generic-10-speed"][0])
+
+  #print(json.dumps(angles, indent=2, default=lambda _: "skipped"))
 
   d = draw.Drawing(1000, 1200)
   for i,r in enumerate(angles["chain_angle_results"]):
     d.append(render_rollers(r.roller_pos_list, r.chain_to_cog_lateral_distance_at_axle,
                             start_y=i*100 + 100))
   d.save_svg("test2.svg")
+
+  
+
+  angles = calculate_max_chain_angle([s for s in shifters if s["partNumber"] == "SL-U6000-10R"][0],
+                                     [d for d in derailleurs if d["partNumber"] == "RD-U6020-10"][0],
+                                     [c for c in cassettes if c["partNumber"] == "CS-LG300-10"][0])
+
+  d = draw.Drawing(1000, 1200)
+  for i,r in enumerate(angles["chain_angle_results"]):
+    d.append(render_rollers(r.roller_pos_list, r.chain_to_cog_lateral_distance_at_axle,
+                            start_y=i*100 + 100))
+  d.save_svg("test3.svg")
+
+  angles = calculate_max_chain_angle([s for s in shifters if s["partNumber"] == "SL-M5100"][0],
+                                     [d for d in derailleurs if d["partNumber"] == "RD-M5120"][0],
+                                     [c for c in cassettes if c["partNumber"] == "shimano-11-speed"][0])
+
+  d = draw.Drawing(1000, 1200)
+  for i,r in enumerate(angles["chain_angle_results"]):
+    d.append(render_rollers(r.roller_pos_list, r.chain_to_cog_lateral_distance_at_axle,
+                            start_y=i*100 + 100))
+  d.save_svg("test4.svg")
