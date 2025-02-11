@@ -205,7 +205,7 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
 
   angle_scale = 4
 
-  prev_roller_x = 50
+  prev_roller_x = 400 - rollers[0].chain_length_from_roller_to_cog * link_scale
   prev_roller_y = 0
   offset_y = 50
   roller_diameter_pixels = 10
