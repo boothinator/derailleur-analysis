@@ -210,17 +210,15 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
 
   min_roller_y = prev_roller_y
 
-  roller_coords = [(prev_roller_x, prev_roller_y, prev_roller_x, prev_roller_y)]
+  roller_coords = [(prev_roller_x, prev_roller_y, prev_roller_x, prev_roller_y, 0)]
   for i,r in enumerate(rollers):
-    if i == 0:
-      x_link_pixels = math.sin(2 * math.pi / 11) * link_pixels
-    else:
-      x_link_pixels = link_pixels
     
-    cur_roller_x = prev_roller_x + x_link_pixels * math.cos(angle_scale * r.prev_link_angle_rad)
-    cur_roller_y = prev_roller_y + link_pixels * math.sin(angle_scale * r.prev_link_angle_rad)
+    scaled_angle = angle_scale * r.prev_link_angle_rad
+    
+    cur_roller_x = prev_roller_x + link_pixels * math.cos(scaled_angle)
+    cur_roller_y = prev_roller_y + link_pixels * math.sin(scaled_angle)
 
-    roller_coords.append((prev_roller_x, prev_roller_y, cur_roller_x, cur_roller_y))
+    roller_coords.append((prev_roller_x, prev_roller_y, cur_roller_x, cur_roller_y, scaled_angle))
 
     prev_roller_x = cur_roller_x
     prev_roller_y = cur_roller_y
@@ -232,13 +230,29 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
   else:
     offset_y = offset_y - min_roller_y
 
-  roller_coords = [(px, py + offset_y, x, y + offset_y) for px, py, x, y in roller_coords]
-  
-  for prev_roller_x, prev_roller_y, cur_roller_x, cur_roller_y in roller_coords:
-    g.append(draw.Line(prev_roller_x, prev_roller_y, cur_roller_x, cur_roller_y, stroke="black",
-                       stroke_width="2px"))
+  roller_coords = [(px, py + offset_y, x, y + offset_y, angle) for px, py, x, y, angle in roller_coords]
 
-  for _, _, cur_roller_x, cur_roller_y in roller_coords:
+  link_type = 0
+
+  for prev_roller_x, prev_roller_y, cur_roller_x, cur_roller_y, angle in roller_coords[1:]:
+    center_x = (cur_roller_x + prev_roller_x)/2
+    center_y = (cur_roller_y + prev_roller_y)/2
+
+    if link_type == 0:
+      link_width = 20
+      link_type = 1
+    else:
+      link_width = 30
+      link_type = 0
+
+    lg = draw.Group(transform=f"rotate({math.degrees(angle)}, {center_x}, {center_y})")
+    lg.append(draw.Line(center_x - link_pixels * 0.6, center_y - link_width/2, center_x + link_pixels * 0.6, center_y - link_width/2, stroke="black",
+                       stroke_width="2px"))
+    lg.append(draw.Line(center_x - link_pixels * 0.6, center_y + link_width/2, center_x + link_pixels * 0.6, center_y + link_width/2, stroke="black",
+                       stroke_width="2px"))
+    g.append(lg)
+
+  for _, _, cur_roller_x, cur_roller_y, _ in roller_coords:
     g.append(draw.Circle(cur_roller_x, cur_roller_y, 7, fill="red"))
 
   cog_land_x = roller_coords[-1][2] + link_scale * rollers[-1].chain_length_from_roller_to_cog * math.cos(angle_scale * r.prev_link_angle_rad)
@@ -250,10 +264,11 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
   else:
     cog_land_y = roller_coords[-2][3] + link_scale * rollers[-2].chain_length_from_roller_to_cog * math.sin(angle_scale * r.prev_link_angle_rad)
 
-  g.append(draw.Circle(cog_land_x, cog_land_y, 5, fill="blue"))
-  g.append(draw.Circle(cog_land_x + link_pixels, cog_land_y, 5, fill="blue"))
-  g.append(draw.Circle(roller_coords[0][2], roller_coords[0][3], 5, fill="green"))
-  g.append(draw.Circle(roller_coords[1][2], roller_coords[1][3], 5, fill="green"))
+  # These circles represent teeth now, not lands
+  g.append(draw.Circle(cog_land_x - link_pixels/2, cog_land_y, 5, fill="blue"))
+  g.append(draw.Circle(cog_land_x + link_pixels/2, cog_land_y, 5, fill="blue"))
+  g.append(draw.Circle(roller_coords[1][2] - link_pixels/2, (roller_coords[0][3] + roller_coords[1][3])/2, 10, fill="green"))
+  g.append(draw.Circle(roller_coords[2][2] - link_pixels/2, (roller_coords[1][3] + roller_coords[2][3])/2, 10, fill="green"))
   
   return g
 
@@ -724,8 +739,8 @@ if __name__ == '__main__':
   import json
   print(json.dumps(angles, indent=2, default=lambda _: "skipped"))
 
-  d = draw.Drawing(600, 1200)
+  d = draw.Drawing(1000, 1200)
   for i,r in enumerate(angles["chain_angle_results"]):
     d.append(render_rollers(r.roller_pos_list, r.chain_to_cog_lateral_distance_at_axle,
-                            start_y=i*50 + 400))
+                            start_y=i*100 + 100))
   d.save_svg("test2.svg")
