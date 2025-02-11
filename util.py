@@ -200,12 +200,16 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
   link_scale = 7
 
   link_pixels = link_scale * link_length
+  inner_link_width_pixels = 20
+  outer_link_width_pixels = 30
 
   angle_scale = 4
 
   prev_roller_x = 50
   prev_roller_y = 0
   offset_y = 50
+  roller_diameter_pixels = 10
+  roller_width_pixels = 10
 
   min_roller_y = prev_roller_y
 
@@ -231,31 +235,34 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
 
   roller_coords = [(px, py + offset_y, x, y + offset_y, angle) for px, py, x, y, angle in roller_coords]
 
-  link_type = 0
+  chain_group = draw.Group(fill="black", stroke="black", stroke_width="2px")
+  roller_group = draw.Group(fill="black", stroke="black", stroke_width="2px")
 
-  for prev_roller_x, prev_roller_y, cur_roller_x, cur_roller_y, angle in roller_coords[1:]:
-    center_x = (cur_roller_x + prev_roller_x)/2
-    center_y = (cur_roller_y + prev_roller_y)/2
+  for i,(prev_roller_x, prev_roller_y, cur_roller_x, cur_roller_y, link_angle) in enumerate(roller_coords[1:]):
 
-    if link_type == 0:
-      link_width = 20
-      link_type = 1
+    if i % 2 == 0:
+      link_width = inner_link_width_pixels
     else:
-      link_width = 30
-      link_type = 0
+      link_width = outer_link_width_pixels
 
-    lg = draw.Group(transform=f"rotate({math.degrees(angle)}, {center_x}, {center_y})")
-    lg.append(draw.Line(center_x - link_pixels * 0.6, center_y - link_width/2, center_x + link_pixels * 0.6, center_y - link_width/2, stroke="black",
-                       stroke_width="2px"))
-    lg.append(draw.Line(center_x - link_pixels * 0.6, center_y + link_width/2, center_x + link_pixels * 0.6, center_y + link_width/2, stroke="black",
-                       stroke_width="2px"))
-    g.append(lg)
+    # Render roller
+    rg = draw.Group(transform=f"rotate({math.degrees(link_angle)}, {prev_roller_x}, {prev_roller_y})")
+    rg.append(draw.Rectangle(prev_roller_x - roller_diameter_pixels/2, prev_roller_y - roller_width_pixels/2,
+                             roller_diameter_pixels, roller_width_pixels))
+    chain_group.append(rg)
+
+    # Render link
+    if i < len(roller_coords):
+      lg = draw.Group(transform=f"rotate({math.degrees(link_angle)}, {prev_roller_x}, {prev_roller_y})")
+      lg.append(draw.Line(prev_roller_x - roller_diameter_pixels/2, prev_roller_y - link_width/2, cur_roller_x + roller_diameter_pixels/2, prev_roller_y - link_width/2))
+      lg.append(draw.Line(prev_roller_x - roller_diameter_pixels/2, prev_roller_y + link_width/2, cur_roller_x + roller_diameter_pixels/2, prev_roller_y + link_width/2))
+      roller_group.append(lg)
 
     # TODO: Render jockey teeth here if we're rendering the first two links
     # TODO: Start rendering the cog teeth here if the chain length from roller to cog is less than the link length
 
-  for _, _, cur_roller_x, cur_roller_y, _ in roller_coords:
-    g.append(draw.Circle(cur_roller_x, cur_roller_y, 7, fill="red"))
+  g.append(chain_group)
+  g.append(roller_group)
 
   cog_land_x = roller_coords[-1][2] + link_scale * rollers[-1].chain_length_from_roller_to_cog * math.cos(angle_scale * r.prev_link_angle_rad)
   
