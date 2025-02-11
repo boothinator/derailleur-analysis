@@ -437,6 +437,19 @@
     "derailleurPartNumber": "RD-RX800",
     "derailleurName": "Ultegra RX",
     "derailleurBrand": "Shimano",
+    "cassettePartNumber": "sram-11-speed",
+    "cassetteName": "SRAM 11-speed",
+    "cassetteBrand": "SRAM"
+  },
+  {
+    "brand": "Mixed",
+    "name": "Sensah Empire Pro 12-Speed shifter/Shimano Ultegra RX 11-Speed derailleur/11-Speed cassette",
+    "shifterPartNumber": "sensah-empire-pro",
+    "shifterName": "Empire Pro",
+    "shifterBrand": "Sensah",
+    "derailleurPartNumber": "RD-RX800",
+    "derailleurName": "Ultegra RX",
+    "derailleurBrand": "Shimano",
     "cassettePartNumber": "shimano-11-speed",
     "cassetteName": "Shimano 11-speed",
     "cassetteBrand": "Shimano"
@@ -570,19 +583,6 @@
     "cassettePartNumber": "CS-HG-500-10",
     "cassetteName": "Shimano 10-Speed",
     "cassetteBrand": "Shimano"
-  },
-  {
-    "brand": "Mixed",
-    "name": "Sensah Team Pro 11-Speed shifter/Shimano Ultegra RX 11-Speed derailleur/10-Speed cassette",
-    "shifterPartNumber": "sensah-team-pro-11",
-    "shifterName": "Team Pro",
-    "shifterBrand": "Sensah",
-    "derailleurPartNumber": "RD-RX800",
-    "derailleurName": "Ultegra RX",
-    "derailleurBrand": "Shimano",
-    "cassettePartNumber": "CS-PG-1050-A1",
-    "cassetteName": "SRAM 10-Speed",
-    "cassetteBrand": "SRAM"
   },
   {
     "brand": "Mixed",
@@ -2133,16 +2133,16 @@
   },
   {
     "brand": "Shimano",
-    "name": "Shimano Ultegra 11-Speed shifter/Ultegra RX 11-Speed derailleur/10-Speed cassette",
+    "name": "Shimano Ultegra 11-Speed shifter/Ultegra RX 11-Speed derailleur/11-Speed cassette",
     "shifterPartNumber": "ST-R8020",
     "shifterName": "Ultegra",
     "shifterBrand": "Shimano",
     "derailleurPartNumber": "RD-RX800",
     "derailleurName": "Ultegra RX",
     "derailleurBrand": "Shimano",
-    "cassettePartNumber": "CS-PG-1050-A1",
-    "cassetteName": "SRAM 10-Speed",
-    "cassetteBrand": "SRAM"
+    "cassettePartNumber": "shimano-11-speed",
+    "cassetteName": "Shimano 11-speed",
+    "cassetteBrand": "Shimano"
   },
   {
     "brand": "Shimano",
@@ -2288,29 +2288,16 @@
     "cassetteBrand": "Shimano"
   },
   {
-    "brand": "Mixed",
-    "name": "SRAM Apex 1 11-Speed shifter/Campagnolo Ekar 13-Speed derailleur/10-Speed cassette",
-    "shifterPartNumber": "SB-APX-B1",
-    "shifterName": "Apex 1",
-    "shifterBrand": "SRAM",
-    "derailleurPartNumber": "RD21-EK13",
-    "derailleurName": "Ekar",
-    "derailleurBrand": "Campagnolo",
-    "cassettePartNumber": "generic-10-speed",
-    "cassetteName": "Generic 10-Speed",
-    "cassetteBrand": "Generic"
-  },
-  {
-    "brand": "Mixed",
-    "name": "SRAM Apex 1 11-Speed shifter/Campagnolo Ekar 13-Speed derailleur/10-Speed cassette",
-    "shifterPartNumber": "SB-APX-B1",
-    "shifterName": "Apex 1",
-    "shifterBrand": "SRAM",
-    "derailleurPartNumber": "RD21-EK13",
-    "derailleurName": "Ekar",
-    "derailleurBrand": "Campagnolo",
-    "cassettePartNumber": "CS-HG-500-10",
-    "cassetteName": "Shimano 10-Speed",
+    "brand": "Shimano",
+    "name": "Shimano Ultegra 11-Speed shifter/Ultegra RX 11-Speed derailleur/11-Speed cassette",
+    "shifterPartNumber": "ST-RS685-R",
+    "shifterName": "Ultegra",
+    "shifterBrand": "Shimano",
+    "derailleurPartNumber": "RD-RX800",
+    "derailleurName": "Ultegra RX",
+    "derailleurBrand": "Shimano",
+    "cassettePartNumber": "shimano-11-speed",
+    "cassetteName": "Shimano 11-speed",
     "cassetteBrand": "Shimano"
   },
   {

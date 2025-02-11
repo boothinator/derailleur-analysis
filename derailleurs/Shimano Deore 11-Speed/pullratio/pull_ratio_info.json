@@ -1,0 +1,44 @@
+{
+  "pullRatio": 1.0749604732774412,
+  "maxPull": 46.0,
+  "coefficients": [
+    7.384952692316141,
+    0.8488622484275746,
+    0.01082213502383337,
+    -0.00015177625861857337
+  ],
+  "physicalLowLimit": 7.384952692316141,
+  "physicalHighLimit": 54.55895992151853,
+  "numberOfMeasurements": 874,
+  "Pull Ratio Averaged Across Pulling Runs": "1.081 +/- 0.001",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.069 +/- 0.003",
+  "Pull Ratio Averaged Across All Runs": "1.075 +/- 0.012",
+  "Pull Ratio 95% Confidence Interval": "1.063 to 1.087",
+  "meas_method_percent_diffs": [
+    -1.1640439749946243,
+    -1.3157894736842244,
+    -0.9971818773032599,
+    -0.021677866897892934,
+    -0.6064544076240007,
+    -0.6709956709956605
+  ],
+  "Caliper vs Indicator percent difference": "Caliper vs Indicator percent difference: -0.7960238785832772 +/- 0.855273830804186",
+  "pullRatioCalc": {
+    "dropout_width": 8.0,
+    "small_cog_offset": 3.0,
+    "small_cog_position": 11.0,
+    "smallest_cog_pull": 4.060469438911287,
+    "second_smallest_cog_pull": 7.958937451460835,
+    "second_biggest_cog_pull": 35.86694034623999,
+    "biggest_cog_pull": 39.55408294942154,
+    "biggest_cog_position": 48.5,
+    "total_pitch_inner_cogs": 30.0,
+    "pull_ratio": 1.0749604732774412,
+    "coefficients": [
+      7.384952692316141,
+      0.8488622484275746,
+      0.01082213502383337,
+      -0.00015177625861857337
+    ]
+  }
+}
