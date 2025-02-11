@@ -211,6 +211,8 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
   roller_diameter_pixels = 10
   roller_width_pixels = 10
 
+  cog_width_pixels = 6
+
   min_roller_y = prev_roller_y
 
   roller_coords = []
@@ -283,7 +285,7 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
       
       if render_cog:
         # TODO: Start rendering the cog teeth here if the chain length from roller to cog is less than the link length
-        g.append(draw.Circle(prev_roller_x + link_pixels/2, cog_y + offset_y, 5, fill="blue"))
+        g.append(draw.Circle(prev_roller_x + link_pixels/2, cog_y + offset_y, cog_width_pixels, fill="blue"))
 
   g.append(chain_group)
   g.append(roller_group)
@@ -295,8 +297,8 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
   first_jockey_tooth_y = roller_coords[0][1] + jockey_tooth_delta_y
   second_jockey_tooth_x = roller_coords[0][2] + jockey_tooth_delta_x
   second_jockey_tooth_y = roller_coords[0][3] + jockey_tooth_delta_y
-  jockey_group.append(draw.Circle(first_jockey_tooth_x, first_jockey_tooth_y, 10))
-  jockey_group.append(draw.Circle(second_jockey_tooth_x, second_jockey_tooth_y, 10))
+  jockey_group.append(draw.Circle(first_jockey_tooth_x, first_jockey_tooth_y, roller_width_pixels))
+  jockey_group.append(draw.Circle(second_jockey_tooth_x, second_jockey_tooth_y, roller_width_pixels))
   g.append(jockey_group)
 
   # These circles represent teeth now, not lands
