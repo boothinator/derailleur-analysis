@@ -163,10 +163,11 @@ def calculate_chain_angle_at_cog(jockey_angle_rad: float, jockey_to_cog_distance
   
   assert(jockey_to_cog_distance > 0)
 
-  # TODO: Maybe chain_length_from_roller_to_cog should really be jockey_axle_to_wheel_axle_distance
-  # and this value should be rounded by the nearest number of links, since if it's slightly bigger
+  # TODO: Maybe this value should be rounded by the nearest number of links, since if it's slightly bigger
   # than n + half a link, then it the nth link won't touch, and if it's slightly smaller,
   # the nth link will definitely touch
+  # Actually, maybe I should track when the tooth in front of the touch point starts going
+  # through the link
 
   roller_pos_list = [RollerPositionInfo(prev_link_angle_rad=jockey_angle_rad,
                                     roller_lateral_position=jockey_lateral_position,
