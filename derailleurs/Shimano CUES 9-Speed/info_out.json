@@ -20,7 +20,6 @@
   "measurementNotes": "No observable yaw",
   "generalNotes": "",
   "pullRatio": 1.1135894598563885,
-  "basePullRatio": 1.1135894598563885,
   "maxPull": 41.27777777777777,
   "coefficients": [
     7.737001280923079,
@@ -31,10 +30,10 @@
   "physicalLowLimit": 7.737001280923079,
   "physicalHighLimit": 52.973579149442934,
   "numberOfMeasurements": 797,
-  "Base Pull Ratio Averaged Across Pulling Runs": "1.109 +/- 0.004",
-  "Base Pull Ratio Averaged Across Relaxing Runs": "1.119 +/- 0.010",
-  "Base Pull Ratio Averaged Across All Runs": "1.114 +/- 0.012",
-  "Base Pull Ratio 95% Confidence Interval": "1.101 to 1.126",
+  "Pull Ratio Averaged Across Pulling Runs": "1.109 +/- 0.004",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.119 +/- 0.010",
+  "Pull Ratio Averaged Across All Runs": "1.114 +/- 0.012",
+  "Pull Ratio 95% Confidence Interval": "1.101 to 1.126",
   "meas_method_percent_diffs": [
     -0.6928922664282255,
     -0.648479427549209,

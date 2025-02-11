@@ -16,8 +16,7 @@
   "chainWrap": 39,
   "dataVideo": "https://youtu.be/jk8TN2DK8EE",
   "analysisVideo": "https://youtu.be/pIl8qiARYjc",
-  "pullRatio": 1.517964217532473,
-  "basePullRatio": 1.5089633752449654,
+  "pullRatio": 1.5089633752449654,
   "maxPull": 32.22222222222222,
   "coefficients": [
     10.19548235625865,
@@ -28,10 +27,10 @@
   "physicalLowLimit": 10.19548235625865,
   "physicalHighLimit": 56.41613526906784,
   "numberOfMeasurements": 635,
-  "Base Pull Ratio Averaged Across Pulling Runs": "1.509 +/- 0.010",
-  "Base Pull Ratio Averaged Across Relaxing Runs": "1.510 +/- 0.006",
-  "Base Pull Ratio Averaged Across All Runs": "1.509 +/- 0.008",
-  "Base Pull Ratio 95% Confidence Interval": "1.501 to 1.517",
+  "Pull Ratio Averaged Across Pulling Runs": "1.509 +/- 0.010",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.510 +/- 0.006",
+  "Pull Ratio Averaged Across All Runs": "1.509 +/- 0.008",
+  "Pull Ratio 95% Confidence Interval": "1.501 to 1.517",
   "meas_method_percent_diffs": [
     0.17097670442401855,
     -0.40459965928447744,
@@ -67,9 +66,5 @@
   ],
   "yawNumberOfMeasurements": 94,
   "yawAffectsPullRatio": true,
-  "yawAtSmallestCog": 0.3868788717776489,
-  "yawAtSecondSmallestCog": 0.8429246472860146,
-  "yawAtSecondBiggestCog": 2.3464727959560143,
-  "yawAtBiggestCog": 2.3685541770250182,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra RX 11-Speed/default.htm"
 }

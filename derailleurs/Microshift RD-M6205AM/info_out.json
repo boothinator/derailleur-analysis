@@ -15,9 +15,7 @@
   "maxToothUnofficial": null,
   "maxToothWithGoatLink": null,
   "chainWrap": 35,
-  "linksFromJockeyToSmallestCog": 4,
-  "pullRatio": 1.0547866001173967,
-  "basePullRatio": 1.0480941756972713,
+  "pullRatio": 1.0480941756972713,
   "maxPull": 44.80833333333334,
   "coefficients": [
     10.63609527393101,
@@ -28,10 +26,10 @@
   "physicalLowLimit": 10.63609527393101,
   "physicalHighLimit": 56.076868483895375,
   "numberOfMeasurements": 577,
-  "Base Pull Ratio Averaged Across Pulling Runs": "1.048 +/- 0.011",
-  "Base Pull Ratio Averaged Across Relaxing Runs": "1.047 +/- 0.014",
-  "Base Pull Ratio Averaged Across All Runs": "1.048 +/- 0.013",
-  "Base Pull Ratio 95% Confidence Interval": "1.035 to 1.061",
+  "Pull Ratio Averaged Across Pulling Runs": "1.048 +/- 0.011",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.047 +/- 0.014",
+  "Pull Ratio Averaged Across All Runs": "1.048 +/- 0.013",
+  "Pull Ratio 95% Confidence Interval": "1.035 to 1.061",
   "meas_method_percent_diffs": [
     -0.08646779074792921,
     0.1503113592441492,
@@ -67,9 +65,5 @@
   ],
   "yawNumberOfMeasurements": 141,
   "yawAffectsPullRatio": true,
-  "yawAtSmallestCog": -2.819456493215343,
-  "yawAtSecondSmallestCog": -2.0793326321095336,
-  "yawAtSecondBiggestCog": 2.0740424375667996,
-  "yawAtBiggestCog": 2.596150224821741,
   "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm"
 }
