@@ -11,10 +11,10 @@ def process_der_yaw(dir):
   coefs = []
   number_of_measurements = 0
 
-  with open(f"derailleurs/{dir}/pullratio/base_pull_ratio_info.json") as f:
-    base_pull_ratio_info = json.load(f)
+  with open(f"derailleurs/{dir}/pullratio/pull_ratio_info.json") as f:
+    pull_ratio_info = json.load(f)
 
-  max_pull = base_pull_ratio_info["maxPull"]
+  max_pull = pull_ratio_info["maxPull"]
 
   if not os.path.exists(f"derailleurs/{dir}/yaw"):
     return
