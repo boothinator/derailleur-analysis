@@ -125,7 +125,6 @@ def convert_to_floats(data):
 
 class RollerPositionInfo(BaseModel):
   prev_link_angle_rad: float
-  # TODO: rename to chain_length_from_roller_to_cog
   chain_length_from_roller_to_cog: float
   roller_lateral_position: float
 
