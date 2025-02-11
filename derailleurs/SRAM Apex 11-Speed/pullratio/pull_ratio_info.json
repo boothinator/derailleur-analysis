@@ -1,5 +1,5 @@
 {
-  "basePullRatio": 1.2244597430897561,
+  "pullRatio": 1.2244597430897561,
   "maxPull": 36.575,
   "coefficients": [
     12.203260747463762,
@@ -10,10 +10,10 @@
   "physicalLowLimit": 12.203260747463762,
   "physicalHighLimit": 55.80106473400522,
   "numberOfMeasurements": 236,
-  "Base Pull Ratio Averaged Across Pulling Runs": "1.226 +/- 0.000",
-  "Base Pull Ratio Averaged Across Relaxing Runs": "1.224 +/- 0.000",
-  "Base Pull Ratio Averaged Across All Runs": "1.225 +/- 0.003",
-  "Base Pull Ratio 95% Confidence Interval": "1.222 to 1.227",
+  "Pull Ratio Averaged Across Pulling Runs": "1.226 +/- 0.000",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.224 +/- 0.000",
+  "Pull Ratio Averaged Across All Runs": "1.225 +/- 0.003",
+  "Pull Ratio 95% Confidence Interval": "1.222 to 1.227",
   "meas_method_percent_diffs": [
     -0.02400384061447649,
     -0.8604206500956009

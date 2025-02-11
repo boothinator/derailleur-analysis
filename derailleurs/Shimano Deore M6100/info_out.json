@@ -18,7 +18,6 @@
   "dataVideo": "https://www.youtube.com/watch?v=43R9U7ykdxc",
   "analysisVideo": "",
   "pullRatio": 1.0723700362156097,
-  "basePullRatio": 1.0723700362156097,
   "maxPull": 45.58166666666667,
   "coefficients": [
     8.270994114931078,
@@ -29,10 +28,10 @@
   "physicalLowLimit": 8.270994114931078,
   "physicalHighLimit": 56.4961830998342,
   "numberOfMeasurements": 570,
-  "Base Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.002",
-  "Base Pull Ratio Averaged Across Relaxing Runs": "1.074 +/- 0.001",
-  "Base Pull Ratio Averaged Across All Runs": "1.073 +/- 0.002",
-  "Base Pull Ratio 95% Confidence Interval": "1.071 to 1.075",
+  "Pull Ratio Averaged Across Pulling Runs": "1.073 +/- 0.002",
+  "Pull Ratio Averaged Across Relaxing Runs": "1.074 +/- 0.001",
+  "Pull Ratio Averaged Across All Runs": "1.073 +/- 0.002",
+  "Pull Ratio 95% Confidence Interval": "1.071 to 1.075",
   "meas_method_percent_diffs": [
     -0.3101462117855573,
     0.8563074352548263,
