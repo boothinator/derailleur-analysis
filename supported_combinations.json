@@ -85,5 +85,13 @@
     "derailleurPartNumber": "RD-RX400",
     "cassetteBrand": "Shimano",
     "cassettePartNumber": "CS-HG-500-10"
+  },
+  {
+    "brand": "Microshift",
+    "name": "Advent X",
+    "shifterPartNumber": "SB-M100A",
+    "derailleurPartNumber": "RD-M6205AM",
+    "cassetteBrand": "Generic",
+    "cassettePartNumber": "generic-10-speed"
   }
 ]
