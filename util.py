@@ -140,6 +140,7 @@ def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_p
   next_link_min_angle_rad = roller_pos.prev_link_angle_rad - chain_max_free_yaw_rad
   next_link_max_angle_rad = roller_pos.prev_link_angle_rad + chain_max_free_yaw_rad
 
+  # Make the next link angle stay within a chain's range of lateral motion
   next_link_angle_rad = min(next_link_max_angle_rad,
                             max(next_link_min_angle_rad, roller_to_cog_angle_rad))
   
