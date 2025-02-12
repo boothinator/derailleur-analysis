@@ -215,7 +215,7 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
   roller_diameter_pixels = 10
   roller_width_pixels = 10
 
-  cog_width_pixels = 6
+  cog_width_pixels = 7
 
   min_roller_y = prev_roller_y
 
