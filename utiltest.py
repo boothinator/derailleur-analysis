@@ -1,7 +1,7 @@
 import unittest
 import math
-from util import link_length, close_enough_roller_to_cog_distance, calculate_chain_angle_at_cog,\
-  RollerPositionResult, calculate_next_roller_position
+from util import link_length, calculate_chain_angle_at_cog, RollerPositionInfo,\
+  calculate_next_roller_position
 
 class TestUtil(unittest.TestCase):
   def test_calculate_next_roller_position(self):
@@ -108,6 +108,30 @@ class TestUtil(unittest.TestCase):
     result = calculate_next_roller_position(roller_pos, cog_lateral_position)
 
     self.assertEqual(False, result.can_calculate_next)
+
+  def test_calculate_next_roller_position5(self):
+    # CUES 10 speed 2nd largest cog
+    roller_pos = RollerPositionInfo(prev_link_angle_rad= 0,
+                                      chain_length_from_roller_to_cog= 46.5132,
+                                      roller_lateral_position= 46.513)
+    
+    cog_lateral_position = 47.760000000000005
+    
+    result = calculate_next_roller_position(roller_pos, cog_lateral_position)
+    angle_deg = math.degrees(result.prev_link_angle_rad)
+    pass
+
+  def test_calculate_next_roller_position6(self):
+    # CUES 10 speed 2nd largest cog
+    
+    cog_lateral_position = 47.760000000000005
+    
+    result = calculate_chain_angle_at_cog(jockey_angle_rad=0,
+                                          jockey_to_cog_distance=46.5132,
+                                          jockey_lateral_position=46.513,
+                                          cog_lateral_position=cog_lateral_position,
+                                          free_play_between_cog_and_chain=0)
+    pass
 
 if __name__ == '__main__':
     unittest.main()

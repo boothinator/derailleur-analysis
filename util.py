@@ -133,7 +133,7 @@ def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_p
   roller_to_cog_angle_rad = math.asin(
     max(
       min(((cog_lateral_position - roller_pos.roller_lateral_position)
-         /max(roller_pos.chain_length_from_roller_to_cog, link_length)),
+         /roller_pos.chain_length_from_roller_to_cog),
          1),
       -1))
 
@@ -207,7 +207,7 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
   inner_link_width_pixels = 20
   outer_link_width_pixels = 30
 
-  angle_scale = 4
+  angle_scale = 1
 
   prev_roller_x = 400 - rollers[0].chain_length_from_roller_to_cog * link_scale
   prev_roller_y = 0
