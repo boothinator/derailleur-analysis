@@ -390,6 +390,8 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
   if failed_to_converge:
     print("Failed to converge", shifter["name"], derailleur["name"], cassette["name"])
 
+  chain_misses_cog = any([r for r in chain_angle_results
+                          if r.chain_to_cog_lateral_distance_at_axle != 0])
 
   barrel_adjuster_too_low = barrel_adjuster < 0
     
@@ -443,7 +445,8 @@ def calculate_max_chain_angle(shifter, derailleur, cassette):
     "cable_pull_at_max_chain_angle": cable_pull_at_max_chain_angle,
     "jockey_to_cog_links": [float(d) for d in jockey_to_cog_distances / 25.4 * 2],
     "chain_angles": chain_angles.tolist(),
-    "chain_angle_results": chain_angle_results
+    "chain_angle_results": chain_angle_results,
+    "chain_misses_cog": chain_misses_cog
   }
 
 def get_cable_pull_for_jockey_position(derailleur, jockey_position):

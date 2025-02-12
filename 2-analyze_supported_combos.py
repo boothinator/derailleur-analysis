@@ -44,6 +44,9 @@ for combo in supported_combos:
   
   if max_chain_angle_results["failed_to_converge"]:
     raise Exception("Failed to converge")
+  
+  if max_chain_angle_results["chain_misses_cog"]:
+    raise Exception("Chain misses cog")
 
 names = [c["name"] for c in supported_combos]
 motion_multipliers = [c["motion_multiplier"] for c in supported_combos]
