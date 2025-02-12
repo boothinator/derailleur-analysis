@@ -1,15 +1,17 @@
 {
-  "motionMultiplierAvg": 1.0316612703715737,
-  "motionMultiplierStdev": 0.021122122554327383,
-  "motionMultiplierMin": 0.989417025262919,
-  "motionMultiplierMax": 1.0739055154802286,
+  "motionMultiplierAvg": 1.037314933242384,
+  "motionMultiplierStdev": 0.028202697274248862,
+  "motionMultiplierNumStdevs": 2.4055938982348404,
+  "motionMultiplierMin": 0.9694706967656866,
+  "motionMultiplierMax": 1.1051591697190815,
   "motionMultiplierMinObserved": 0.994640118731133,
-  "motionMultiplierMaxObserved": 1.0688613859514517,
-  "maxChainAngleAvg": 0.30866408752801827,
-  "maxChainAngleStdev": 0.3257212529708124,
-  "maxChainAngleNumStdevs": 2.6,
-  "maxChainAngleMax": 1.1555393452521305,
-  "maxChainAngleMaxObserved": 1.1431820996871922,
+  "motionMultiplierMaxObserved": 1.1051588876921088,
+  "motionMultiplierMinConfidence": 0.016146202025473455,
+  "maxChainAngleAvg": 0.3812801554633057,
+  "maxChainAngleStdev": 0.4087237838247863,
+  "maxChainAngleNumStdevs": 2.283226369996523,
+  "maxChainAngleMax": 1.3144890767368163,
+  "maxChainAngleMaxObserved": 1.3144849894989779,
   "groups": [
     "Apex 1 11-speed",
     "GX 10-speed",
@@ -22,7 +24,8 @@
     "Deore 10-speed RD-M5120",
     "Ultegra RX 11-speed",
     "Ultegra/105 11-speed",
-    "Tiagra 4700/GRX"
+    "Tiagra 4700/GRX",
+    "Advent X"
   ],
   "groupMotionMultipliers": [
     1.054539774947106,
@@ -36,20 +39,22 @@
     1.0286761207932513,
     0.994640118731133,
     1.0354894427583186,
-    1.0330601597819198
+    1.0330601597819198,
+    1.1051588876921088
   ],
   "groupMaxChainAngles": [
-    0.6682615635976887,
-    0.16731396068646562,
-    0.09772481495720232,
-    1.1431820996871922,
-    0.5534863292099323,
-    0.13784387888933647,
+    0.6640404211299747,
+    0.16509713651599914,
+    0.0899245749863681,
+    1.112383950748832,
+    0.5480809395409922,
+    0.13839315154621093,
     0.0,
-    0.47523527309337327,
-    0.19845389171437341,
-    0.14548532667378497,
-    0.1169819118268703,
-    0.0
+    0.482837350364851,
+    0.18431526152319658,
+    0.14135570011651663,
+    0.11572854505105519,
+    0.0,
+    1.3144849894989779
   ]
 }

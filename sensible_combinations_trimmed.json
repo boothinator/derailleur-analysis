@@ -1204,6 +1204,19 @@
     "derailleurPartNumber": "RD-M4120",
     "derailleurName": "Deore",
     "derailleurBrand": "Shimano",
+    "cassettePartNumber": "CS-LG300-10",
+    "cassetteName": "LinkGlide 10-Speed",
+    "cassetteBrand": "Shimano"
+  },
+  {
+    "brand": "Shimano",
+    "name": "Shimano Deore 10-Speed shifter/Deore 11-Speed derailleur/10-Speed cassette",
+    "shifterPartNumber": "SL-M4100",
+    "shifterName": "Deore",
+    "shifterBrand": "Shimano",
+    "derailleurPartNumber": "RD-M4120",
+    "derailleurName": "Deore",
+    "derailleurBrand": "Shimano",
     "cassettePartNumber": "CS-HG-500-10",
     "cassetteName": "Shimano 10-Speed",
     "cassetteBrand": "Shimano"
@@ -2754,6 +2767,19 @@
     "cassettePartNumber": "shimano-11-speed",
     "cassetteName": "Shimano 11-speed",
     "cassetteBrand": "Shimano"
+  },
+  {
+    "brand": "Mixed",
+    "name": "SRAM SX 12-Speed shifter/Shimano Deore 11-Speed derailleur/11-Speed cassette",
+    "shifterPartNumber": "SL-SX-1-A1",
+    "shifterName": "SX",
+    "shifterBrand": "SRAM",
+    "derailleurPartNumber": "RD-M4120",
+    "derailleurName": "Deore",
+    "derailleurBrand": "Shimano",
+    "cassettePartNumber": "sram-11-speed",
+    "cassetteName": "SRAM 11-speed",
+    "cassetteBrand": "SRAM"
   },
   {
     "brand": "Mixed",
