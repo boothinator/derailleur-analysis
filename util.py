@@ -210,7 +210,7 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
 
   angle_scale = 4
 
-  prev_roller_x = 400 - rollers[0].chain_length_from_roller_to_cog * link_scale
+  prev_roller_x = 450 - rollers[0].chain_length_from_roller_to_cog * link_scale
   prev_roller_y = 0
   offset_y = 50
   roller_diameter_pixels = 10
@@ -688,7 +688,7 @@ if __name__ == '__main__':
 
   # TODO: Update render_rollers to put teeth at correct distance for size of cog
 
-  d = draw.Drawing(1000, 1200)
+  d = draw.Drawing(700, 1200)
   for i,r in enumerate(angles["chain_angle_results"]):
     d.append(render_rollers(r.roller_pos_list, r.chain_to_cog_lateral_distance_at_axle,
                             start_y=i*100 + 100))
@@ -700,7 +700,7 @@ if __name__ == '__main__':
                                      [d for d in derailleurs if d["partNumber"] == "RD-U6020-10"][0],
                                      [c for c in cassettes if c["partNumber"] == "CS-LG300-10"][0])
 
-  d = draw.Drawing(1000, 1200)
+  d = draw.Drawing(700, 1200)
   for i,r in enumerate(angles["chain_angle_results"]):
     d.append(render_rollers(r.roller_pos_list, r.chain_to_cog_lateral_distance_at_axle,
                             start_y=i*100 + 100))
@@ -710,7 +710,7 @@ if __name__ == '__main__':
                                      [d for d in derailleurs if d["partNumber"] == "RD-M5120"][0],
                                      [c for c in cassettes if c["partNumber"] == "shimano-11-speed"][0])
 
-  d = draw.Drawing(1000, 1200)
+  d = draw.Drawing(700, 1200)
   for i,r in enumerate(angles["chain_angle_results"]):
     d.append(render_rollers(r.roller_pos_list, r.chain_to_cog_lateral_distance_at_axle,
                             start_y=i*100 + 100))
