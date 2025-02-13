@@ -128,11 +128,11 @@ class RollerPositionInfo(BaseModel):
   chain_length_from_roller_to_cog: float
   roller_lateral_position: float
 
-def calculate_next_roller_position(roller_pos: RollerPositionInfo, cog_lateral_position: float) -> RollerPositionInfo:
+def calculate_next_roller_position(roller_pos: RollerPositionInfo, target_cog_lateral_position: float) -> RollerPositionInfo:
 
   roller_to_cog_angle_rad = math.asin(
     max(
-      min(((cog_lateral_position - roller_pos.roller_lateral_position)
+      min(((target_cog_lateral_position - roller_pos.roller_lateral_position)
          /roller_pos.chain_length_from_roller_to_cog),
          1),
       -1))
@@ -174,9 +174,16 @@ def calculate_chain_angle_at_cog(jockey_angle_rad: float, jockey_to_cog_distance
 
   last_pos = None
 
+  if cog_lateral_position - jockey_lateral_position >= free_play_between_cog_and_chain/2:
+    target_cog_lateral_position = cog_lateral_position - free_play_between_cog_and_chain/2
+  elif cog_lateral_position - jockey_lateral_position <= -free_play_between_cog_and_chain/2:
+    target_cog_lateral_position = cog_lateral_position + free_play_between_cog_and_chain/2
+  else:
+    target_cog_lateral_position = cog_lateral_position
+
   while roller_pos_list[-1].chain_length_from_roller_to_cog > -link_length:
     roller_pos_list.append(
-      calculate_next_roller_position(roller_pos_list[-1], cog_lateral_position))
+      calculate_next_roller_position(roller_pos_list[-1], target_cog_lateral_position))
 
     if not last_pos and roller_pos_list[-1].chain_length_from_roller_to_cog <= 0:
       last_pos = roller_pos_list[-1]
