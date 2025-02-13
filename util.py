@@ -208,7 +208,7 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
   inner_link_width_pixels = 20
   outer_link_width_pixels = 30
 
-  angle_scale = 1
+  angle_scale = 4
 
   prev_roller_x = 400 - rollers[0].chain_length_from_roller_to_cog * link_scale
   prev_roller_y = 0
@@ -229,7 +229,7 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
     cur_roller_x = prev_roller_x + link_pixels * math.cos(scaled_angle)
     cur_roller_y = prev_roller_y + link_pixels * math.sin(scaled_angle)
 
-    if not render_cog and r.chain_length_from_roller_to_cog < link_length:
+    if not render_cog and r.chain_length_from_roller_to_cog < link_length/2:
       render_cog = True
 
       if chain_to_cog_lateral_distance_at_axle > 0:
@@ -239,7 +239,7 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
       else:
         cog_y = cur_roller_y + link_scale * r.chain_length_from_roller_to_cog * math.sin(angle_scale * r.prev_link_angle_rad)
 
-      if r.chain_length_from_roller_to_cog > 0:
+      if r.chain_length_from_roller_to_cog > -link_length/2:
         cog_contact_line_x = cur_roller_x + link_scale * r.chain_length_from_roller_to_cog * math.cos(angle_scale * r.prev_link_angle_rad)
         cog_contact_line_y = cur_roller_y + link_scale * r.chain_length_from_roller_to_cog * math.sin(angle_scale * r.prev_link_angle_rad)
 
