@@ -108,9 +108,13 @@ counts = []
 
 def graph_combos(prefix, combos):
 
-  names = [c["name"] for c in combos]
-  motion_multipliers = [c["motion_multiplier"] for c in combos]
-  max_chain_angles = [c["max_chain_angle"] for c in combos]
+  motion_multipler_combos = sorted(combos, key=lambda c: c["motion_multiplier"])
+  motion_multiplier_names = [c["name"] for c in motion_multipler_combos]
+  motion_multipliers = [c["motion_multiplier"] for c in motion_multipler_combos]
+
+  max_chain_angle_combos = sorted(combos, key=lambda c: c["max_chain_angle"])
+  max_chain_angle_names = [c["name"] for c in max_chain_angle_combos]
+  max_chain_angles = [c["max_chain_angle"] for c in max_chain_angle_combos]
 
   motion_multiplier_avg = np.mean(motion_multipliers)
   # Perhaps I should use the sample standard deviation (ddof=1), but using 
@@ -134,14 +138,15 @@ def graph_combos(prefix, combos):
   counts.append(len(combos))
 
   plt.clf()
-  plt.bar(names, motion_multipliers, color="purple")
-  plt.plot(names,[motion_multiplier_avg]*len(names),
-          names,[motion_multiplier_min]*len(names),
-          names,[motion_multiplier_max]*len(names))
-  plt.xticks(wrap=False, rotation="vertical", rotation_mode="anchor",
-            horizontalalignment="center", verticalalignment="top")
-  plt.tight_layout()
+  plt.bar(motion_multiplier_names, motion_multipliers, color="purple")
+  plt.plot(motion_multiplier_names,[motion_multiplier_avg]*len(motion_multiplier_names),
+          motion_multiplier_names,[motion_multiplier_min]*len(motion_multiplier_names),
+          motion_multiplier_names,[motion_multiplier_max]*len(motion_multiplier_names))
+  plt.xticks(wrap=False, rotation=45, rotation_mode="anchor",
+            horizontalalignment="right", verticalalignment="center")
   plt.ylim(motion_multiplier_min - motion_multiplier_stdev, motion_multiplier_max + motion_multiplier_stdev)
+  plt.ylabel("Motion Multiplier\n(Cog Pitch / Avg. Guide Pulley Movement Per Shift)")
+  plt.tight_layout()
   plt.savefig(f"combo_analysis/{prefix}motion_multiplier.png")
 
 
@@ -149,20 +154,25 @@ def graph_combos(prefix, combos):
   x = np.linspace(motion_multiplier_min, motion_multiplier_max)
 
   plt.clf()
-  plt.hist(motion_multipliers)
+  hist_counts,bins,_ = plt.hist(motion_multipliers, rwidth=0.8)
   plt.plot(x, curve.pdf(x)/10)
+  plt.xticks(ticks=np.round(bins, 3), wrap=False, rotation=45, rotation_mode="anchor",
+            horizontalalignment="right", verticalalignment="center")
+  plt.yticks(range(round(np.max(hist_counts) + 1)))
+  plt.xlabel("Motion Multiplier\n(Cog Pitch / Avg. Guide Pulley Movement Per Shift)")
+  plt.ylabel("Number of Supported Groupsets")
   plt.savefig(f"combo_analysis/{prefix}motion_multiplier_histogram.png")
 
 
   plt.clf()
-  plt.bar(names, max_chain_angles, color="purple")
-  plt.plot(names,[max_chain_angle_avg]*len(names),
-          names,[max_chain_angle_min]*len(names),
-          names,[max_chain_angle_max]*len(names))
-  plt.xticks(wrap=False, rotation="vertical", rotation_mode="anchor",
-            horizontalalignment="center", verticalalignment="top")
-  plt.tight_layout()
+  plt.bar(max_chain_angle_names, max_chain_angles, color="purple")
+  plt.plot(max_chain_angle_names,[max_chain_angle_avg]*len(max_chain_angle_names),
+          max_chain_angle_names,[max_chain_angle_min]*len(max_chain_angle_names),
+          max_chain_angle_names,[max_chain_angle_max]*len(max_chain_angle_names))
+  plt.xticks(wrap=False, rotation=45, rotation_mode="anchor",
+            horizontalalignment="right", verticalalignment="center")
   plt.ylim(0, max_chain_angle_max + max_chain_angle_stdev)
+  plt.ylabel("Maximum Chain Angle (deg)\n(from guide pulley to cog)")
   plt.savefig(f"combo_analysis/{prefix}max_chain_angle.png")
 
 
@@ -170,8 +180,13 @@ def graph_combos(prefix, combos):
   x = np.linspace(max_chain_angle_min, max_chain_angle_max)
 
   plt.clf()
-  plt.hist(max_chain_angles)
+  hist_counts,bins,_ = plt.hist(max_chain_angles, rwidth=0.8)
   plt.plot(x, curve.pdf(x)/10)
+  plt.xticks(ticks=np.round(bins, 3), wrap=False, rotation=45, rotation_mode="anchor",
+            horizontalalignment="right", verticalalignment="center")
+  plt.yticks(range(round(np.max(hist_counts) + 1)))
+  plt.xlabel("Max Chain Angle (deg)")
+  plt.ylabel("Number of Supported Groupsets")
   plt.savefig(f"combo_analysis/{prefix}max_chain_angle_histogram.png")
 
 graph_combos("all_", supported_combos)
