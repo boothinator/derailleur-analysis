@@ -85,6 +85,8 @@ def process_der(dir):
   plt.plot(x_new, y_new)
   plt.xlim([0, max_pull])
   plt.ylim([0, curve(max_pull) + 10])
+  plt.xlabel("Cable Pull (mm)")
+  plt.ylabel("Guide Pulley Distance From Outside Of Dropout (mm)")
   plt.savefig(f"derailleurs/{dir}/pull_curve.png")
   plt.close()
   

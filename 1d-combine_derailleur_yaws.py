@@ -44,36 +44,14 @@ def process_der_yaw(dir):
   plt.plot(x_new, y_new)
   plt.xlim([0, max_pull])
   plt.ylim([curve(0) - 1, curve(max_pull) + 1])
+  plt.xlabel("Cable Pull (mm)")
+  plt.ylabel("Guide Pulley Yaw Angle (deg)")
   plt.savefig(f"derailleurs/{dir}/yaw_curve.png")
-  plt.close()
-  
-  jockey_offset_curve = get_jockey_offset_curve(curve)
-  y_new = jockey_offset_curve(x_new)
-
-  yaw_affects_pull_ratio = y_new.min() != 0 or y_new.max() != 0
-  
-  plt.clf()
-  plt.plot(x_new, y_new)
-  plt.xlim([0, max_pull])
-  plt.ylim([jockey_offset_curve(0) - 0.2, jockey_offset_curve(max_pull) + 0.2])
-  plt.savefig(f"derailleurs/{dir}/effective_jockey_offset_from_yaw_curve.png")
-  plt.close()
-  
-  jockey_offset_rate_curve = get_jockey_offset_rate_curve(curve)
-
-  y_new = jockey_offset_rate_curve(x_new)
-  
-  plt.clf()
-  plt.plot(x_new, y_new)
-  plt.xlim([0, max_pull])
-  plt.ylim([jockey_offset_rate_curve(max_pull) - 0.2, jockey_offset_rate_curve(0) + 0.2])
-  plt.savefig(f"derailleurs/{dir}/effective_jockey_offset_rate_from_yaw_curve.png")
   plt.close()
 
   info_out = {
     "yawCoefficients": [*avg_coefs],
-    "yawNumberOfMeasurements": number_of_measurements,
-    "yawAffectsPullRatio": bool(yaw_affects_pull_ratio)
+    "yawNumberOfMeasurements": number_of_measurements
   }
 
   with open(f"derailleurs/{dir}/yaw/yaw_info.json", "w") as info_file:
