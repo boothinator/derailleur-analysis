@@ -161,6 +161,7 @@ def graph_combos(prefix, combos):
   plt.yticks(range(round(np.max(hist_counts) + 1)))
   plt.xlabel("Motion Multiplier\n(Cog Pitch / Avg. Guide Pulley Movement Per Shift)")
   plt.ylabel("Number of Supported Groupsets")
+  plt.tight_layout()
   plt.savefig(f"combo_analysis/{prefix}motion_multiplier_histogram.png")
 
 
@@ -173,6 +174,7 @@ def graph_combos(prefix, combos):
             horizontalalignment="right", verticalalignment="center")
   plt.ylim(0, max_chain_angle_max + max_chain_angle_stdev)
   plt.ylabel("Maximum Chain Angle (deg)\n(from guide pulley to cog)")
+  plt.tight_layout()
   plt.savefig(f"combo_analysis/{prefix}max_chain_angle.png")
 
 
@@ -187,6 +189,7 @@ def graph_combos(prefix, combos):
   plt.yticks(range(round(np.max(hist_counts) + 1)))
   plt.xlabel("Max Chain Angle (deg)")
   plt.ylabel("Number of Supported Groupsets")
+  plt.tight_layout()
   plt.savefig(f"combo_analysis/{prefix}max_chain_angle_histogram.png")
 
 graph_combos("all_", supported_combos)
