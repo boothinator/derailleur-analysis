@@ -273,6 +273,7 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
 
   chain_group = draw.Group(fill="black", stroke="black", stroke_width="2px")
   roller_group = draw.Group(fill="black", stroke="black", stroke_width="2px")
+  cog_group = draw.Group()
 
   for i,(prev_roller_x, prev_roller_y, cur_roller_x, cur_roller_y, link_angle, render_cog) \
       in enumerate(roller_coords):
@@ -297,10 +298,9 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
       
       if render_cog:
         # TODO: Start rendering the cog teeth here if the chain length from roller to cog is less than the link length
-        g.append(draw.Circle(prev_roller_x + link_pixels/2, cog_y + offset_y, cog_width_pixels, fill="blue"))
-
-  g.append(chain_group)
-  g.append(roller_group)
+        cog_group.append(draw.Circle(prev_roller_x + link_pixels/2, cog_y + offset_y, cog_width_pixels, fill="blue"))
+        cog_group.append(draw.Line(prev_roller_x + link_pixels/2, cog_y + offset_y, prev_roller_x + 3*link_pixels/2, cog_y + offset_y, stroke="blue", stroke_width="2px"))
+        cog_group.append(draw.Circle(prev_roller_x + 3*link_pixels/2, cog_y + offset_y, cog_width_pixels, fill="blue"))
 
   jockey_group = draw.Group(fill="green")
   jockey_tooth_delta_x = (roller_coords[0][2] - roller_coords[0][0])/2
@@ -309,14 +309,16 @@ def render_rollers(rollers: list[RollerPositionInfo], chain_to_cog_lateral_dista
   first_jockey_tooth_y = roller_coords[0][1] + jockey_tooth_delta_y
   second_jockey_tooth_x = roller_coords[0][2] + jockey_tooth_delta_x
   second_jockey_tooth_y = roller_coords[0][3] + jockey_tooth_delta_y
+  jockey_group.append(draw.Line(first_jockey_tooth_x, first_jockey_tooth_y, second_jockey_tooth_x, second_jockey_tooth_y, stroke_width="2px", stroke="green"))
   jockey_group.append(draw.Circle(first_jockey_tooth_x, first_jockey_tooth_y, roller_width_pixels))
   jockey_group.append(draw.Circle(second_jockey_tooth_x, second_jockey_tooth_y, roller_width_pixels))
   g.append(jockey_group)
 
-  # These circles represent teeth now, not lands
-  #g.append(draw.Circle(roller_coords[][2] - link_pixels/2, (roller_coords[0][3] + roller_coords[1][3])/2, 10, fill="green"))
-  #g.append(draw.Circle(roller_coords[2][2] - link_pixels/2, (roller_coords[1][3] + roller_coords[2][3])/2, 10, fill="green"))
-  
+  g.append(cog_group)
+
+  g.append(chain_group)
+  g.append(roller_group)
+
   return g
 
 def calculate_max_chain_angle(shifter, derailleur, cassette):
