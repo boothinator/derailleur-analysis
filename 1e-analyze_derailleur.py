@@ -48,6 +48,17 @@ def process_der(dir):
     'csvFile': 'pullratio/' + r
   } for r in run_files]
 
+  if os.path.exists(f"derailleurs/{dir}/yaw"):
+    yaw_run_files = [datafile for datafile in os.listdir(f"derailleurs/{dir}/yaw") if datafile.endswith('.csv')]
+  else:
+    yaw_run_files = []
+
+  yaw_runs = [{
+    'name': r.replace('.csv', ''),
+    'chart': 'yaw/'+r.replace('.csv', '.png'),
+    'csvFile': 'yaw/' + r
+  } for r in yaw_run_files]
+
   coefficients_str = f"{info_out['coefficients'][0]:.2f}, {info_out['coefficients'][1]:.3f}, {info_out['coefficients'][2]:.5f}, {info_out['coefficients'][3]:.6f}"
 
   info_render = {
@@ -56,7 +67,7 @@ def process_der(dir):
   }
 
   output = template.render(year=str(today.year), generation_date=str(today),
-                           info=info_render, runs=runs)
+                           info=info_render, runs=runs, yaw_runs=yaw_runs)
   
   with open(f"derailleurs/{dir}/default.htm", 'w') as f:
     print(output, file = f)

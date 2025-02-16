@@ -44,6 +44,12 @@
     <th>Pull Ratio 95% Confidence Interval</th>
     <td>{{info["Pull Ratio 95% Confidence Interval"]}}</td>
   </tr>
+  {% if info.measurementNotes %}
+  <tr>
+    <th>Measurement Notes</th>
+    <td>{{info.measurementNotes}}</td>
+  </tr>
+  {% endif %}
   {% if info.dataVideo %}
   <tr>
     <th>Data Video</th>
@@ -65,9 +71,16 @@
 <img src="pull_ratio_curve.png"/>
 <figcaption>Pull Ratio Curve. Second smallest and second largest cog positions marked by dots</figcaption>
 </figure>
+{% if yaw_runs | length > 0 %}
+<figure>
+<img src="yaw_curve.png"/>
+<figcaption>Yaw Curve</figcaption>
+</figure>
+<figure>
+{% endif %}
 </section>
 
-<h1>Runs</h1>
+<h1>Pull Ratio Runs</h1>
 {% for r in runs %}
 
 <section>
@@ -79,5 +92,22 @@
 </figure>
 </section>
 {% endfor %}
+
+{% if yaw_runs | length > 0 %}
+
+<h1>Yaw Runs</h1>
+{% for r in yaw_runs %}
+
+<section>
+<h2>{{r.name}}</h2>
+<a href="{{r.csvFile}}">Raw Measurement Data</a>
+<figure>
+<img src="{{r.chart}}"/>
+<figcaption>Data and best fit line</figcaption>
+</figure>
+</section>
+{% endfor %}
+
+{% endif %}
 
 {% endblock %}

@@ -64,7 +64,6 @@
       -0.00014384446460453165
     ],
     "yawNumberOfMeasurements": 126,
-    "yawAffectsPullRatio": true,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Campagnolo Ekar/default.htm"
   },
   {
@@ -132,7 +131,6 @@
       -0.0006861980068006238
     ],
     "yawNumberOfMeasurements": 141,
-    "yawAffectsPullRatio": true,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Microshift RD-M6205AM/default.htm"
   },
   {
@@ -200,7 +198,6 @@
       -0.00033257551680799667
     ],
     "yawNumberOfMeasurements": 92,
-    "yawAffectsPullRatio": false,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano 105 11-speed/default.htm"
   },
   {
@@ -580,7 +577,6 @@
       -0.0015108923003659827
     ],
     "yawNumberOfMeasurements": 106,
-    "yawAffectsPullRatio": true,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano GRX 10-Speed/default.htm"
   },
   {
@@ -648,7 +644,6 @@
       -0.0010304671174236376
     ],
     "yawNumberOfMeasurements": 72,
-    "yawAffectsPullRatio": true,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Tiagra 4600 10-Speed/default.htm"
   },
   {
@@ -775,7 +770,6 @@
       -0.0029846332809592654
     ],
     "yawNumberOfMeasurements": 94,
-    "yawAffectsPullRatio": true,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/Shimano Ultegra RX 11-Speed/default.htm"
   },
   {
@@ -955,7 +949,6 @@
       -0.00014384446460453165
     ],
     "yawNumberOfMeasurements": 126,
-    "yawAffectsPullRatio": true,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/derailleurs/SRAM SX 12-Speed/default.htm"
   }
 ]
