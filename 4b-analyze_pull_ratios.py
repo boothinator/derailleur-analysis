@@ -45,7 +45,7 @@ def generate_family_info(name, derailleurs):
   plt.savefig(f"pull_ratio_analysis/{name}_pull_ratio_curve.png")
 
   curve = scipy.stats.norm(pull_ratio_avg, pull_ratio_stdev)
-  x = np.linspace(pull_ratio_avg - 3*pull_ratio_stdev, pull_ratio_avg + 3*pull_ratio_stdev)
+  x = np.linspace(pull_ratio_avg - 2*pull_ratio_stdev, pull_ratio_avg + 2*pull_ratio_stdev)
   
   plt.clf()
   hist_counts,bins,_ = plt.hist(per_der_pull_ratios)
