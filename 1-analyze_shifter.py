@@ -75,6 +75,8 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement, name):
   absolute_ticks, absolute_labels = zip(*enumerate(df.groupby(["Gear Label"], sort=False).groups.keys()))
 
   avgs.plot.bar()
+  for i,a in enumerate(gear_averages):
+    plt.text(i, a + 0.2, round(a, 2), ha="center")
   plt.ylim(bottom=-1)
   plt.xticks(ticks=absolute_ticks, labels=absolute_labels)
   plt.tight_layout()
