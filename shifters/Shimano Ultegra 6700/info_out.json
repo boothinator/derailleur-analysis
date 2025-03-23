@@ -8,6 +8,7 @@
   "hasMatchingFrontShifters": true,
   "dataVideo": null,
   "analysisVideo": null,
+  "side": "right",
   "shiftSpacings": [
     2.4074999999999998,
     2.0016666666666674,

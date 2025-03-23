@@ -5,7 +5,7 @@
     "partNumber": "campagnolo-daytona-9-speed-left",
     "type": "drop-bar",
     "side": "left",
-    "speeds": 14,
+    "speeds": 3,
     "source": "",
     "hasMatchingFrontShifters": true,
     "dataVideo": "https://youtu.be/VEJab4Xg0ec",
@@ -25,7 +25,7 @@
       2.2216666666666667,
       1.9166666666666667
     ],
-    "cablePull": 2.2394823232323233,
+    "cablePull": 28.594305555555557,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Campagnolo Daytona 9-Speed Left/default.htm"
   },
   {
@@ -61,6 +61,7 @@
     "hasMatchingFrontShifters": false,
     "dataVideo": "https://www.youtube.com/watch?v=b7vJkpS-OoU",
     "analysisVideo": "https://youtu.be/54-PxbqoO-s",
+    "side": "right",
     "shiftSpacings": [
       2.866666666666666,
       2.351666666666667,
@@ -88,6 +89,7 @@
     "hasMatchingFrontShifters": false,
     "dataVideo": "https://youtu.be/JO-I4XVTsu4",
     "analysisVideo": "https://youtu.be/FzP2hvDBTLs",
+    "side": "right",
     "shiftSpacings": [
       3.6966666666666668,
       3.4158333333333335,
@@ -112,6 +114,7 @@
     "hasMatchingFrontShifters": true,
     "dataVideo": "https://youtu.be/TN4rN6veen8",
     "analysisVideo": "",
+    "side": "right",
     "shiftSpacings": [
       4.695714285714287,
       2.4407142857142854,
@@ -144,7 +147,7 @@
       3.6091666666666664,
       2.9716666666666662
     ],
-    "cablePull": 3.6091666666666664,
+    "cablePull": 10.590833333333332,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Sensah Empire Pro Left/default.htm"
   },
   {
@@ -157,6 +160,7 @@
     "hasMatchingFrontShifters": true,
     "dataVideo": "https://youtu.be/QP8kFjCt34A",
     "analysisVideo": "https://www.youtube.com/watch?v=yNHe6ZGHq5c",
+    "side": "right",
     "shiftSpacings": [
       2.944285714285715,
       2.440000000000001,
@@ -182,6 +186,7 @@
     "hasMatchingFrontShifters": true,
     "dataVideo": "https://www.youtube.com/watch?v=2-9jvMvxr_M",
     "analysisVideo": "https://youtu.be/_Q_7C2ZrstI",
+    "side": "right",
     "shiftSpacings": [
       4.821666666666666,
       3.700833333333333,
@@ -206,6 +211,7 @@
     "hasMatchingFrontShifters": true,
     "dataVideo": "https://youtu.be/-t1rh-h7NVI",
     "analysisVideo": "https://youtu.be/QhxCUEAp4PQ",
+    "side": "right",
     "shiftSpacings": [
       4.840000000000001,
       3.6555555555555563,
@@ -229,6 +235,7 @@
     "hasMatchingFrontShifters": true,
     "dataVideo": "https://youtu.be/aRrmOrzApkQ",
     "analysisVideo": "https://youtu.be/fbm876mdWKk",
+    "side": "right",
     "shiftSpacings": [
       4.629999999999999,
       3.475,
@@ -253,6 +260,7 @@
     "hasMatchingFrontShifters": true,
     "dataVideo": "https://youtu.be/WbRiElYEFec",
     "analysisVideo": "https://youtu.be/TScsDQyM9bU",
+    "side": "right",
     "shiftSpacings": [
       4.175,
       3.446666666666667,
@@ -278,6 +286,7 @@
     "hasMatchingFrontShifters": false,
     "dataVideo": null,
     "analysisVideo": null,
+    "side": "right",
     "shiftSpacings": [
       4.374285714285713,
       3.079285714285714,
@@ -304,6 +313,7 @@
     "hasMatchingFrontShifters": true,
     "dataVideo": "",
     "analysisVideo": "",
+    "side": "right",
     "shiftSpacings": [
       3.171666666666667,
       2.7683333333333326,
@@ -328,6 +338,7 @@
     "hasMatchingFrontShifters": true,
     "dataVideo": "https://youtu.be/rteGCukyrHg",
     "analysisVideo": "https://youtu.be/J-Yi6OzVvhc",
+    "side": "right",
     "shiftSpacings": [
       3.1161538461538467,
       2.6008333333333336,
@@ -353,6 +364,7 @@
     "hasMatchingFrontShifters": true,
     "dataVideo": "https://youtu.be/CaO5_VqXcRA",
     "analysisVideo": "https://youtu.be/b6UdoiLwwv4",
+    "side": "right",
     "shiftSpacings": [
       2.405,
       2.077083333333334,
@@ -377,6 +389,7 @@
     "hasMatchingFrontShifters": true,
     "dataVideo": null,
     "analysisVideo": null,
+    "side": "right",
     "shiftSpacings": [
       2.4074999999999998,
       2.0016666666666674,
@@ -407,7 +420,7 @@
       4.965833333333333,
       1.018333333333335
     ],
-    "cablePull": 4.965833333333333,
+    "cablePull": 7.670833333333335,
     "analysisUrl": "https://boothinator.github.io/derailleur-analysis/shifters/Shimano Ultegra ST-RS685-L/default.htm"
   },
   {
@@ -447,6 +460,7 @@
     "hasMatchingFrontShifters": false,
     "dataVideo": "https://youtu.be/A9q-Zv6gW7E",
     "analysisVideo": "https://youtu.be/jDw4xsK3_po",
+    "side": "right",
     "shiftSpacings": [
       3.27,
       3.025555555555555,
@@ -472,6 +486,7 @@
     "hasMatchingFrontShifters": true,
     "dataVideo": null,
     "analysisVideo": "https://youtu.be/jm1fDkf4wYY",
+    "side": "right",
     "shiftSpacings": [
       3.620000000000001,
       3.1233333333333326,
@@ -496,6 +511,7 @@
     "hasMatchingFrontShifters": false,
     "dataVideo": "https://youtu.be/uINRUYF45yU",
     "analysisVideo": "https://youtu.be/iPky8y1lex8",
+    "side": "right",
     "shiftSpacings": [
       3.943333333333333,
       3.17125,
