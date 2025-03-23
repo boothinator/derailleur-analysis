@@ -6,7 +6,11 @@
 
 {% block content %}
 <section>
+{% if info.side == "right" %}
 <h1>{{ info.brand }} {{ info.name }} {{info.speeds}}-Speed</h1>
+{% else %}
+<h1>{{ info.brand }} {{ info.name }} {{info.speeds}}-by</h1>
+{% endif %}
 <table>
   <tr>
     <th>Part Number</th>
@@ -44,10 +48,18 @@
       <td>
         {{ s[0] }}-{{ s[0]+1 }}
         {% if s[0] == 1 %}
-          (most cable pull/easiest gear)
+          {% if info.side == "right" %}
+            (most cable pull/easiest gear)
+          {% else %}
+            (most cable pull/biggest chainring)
+          {% endif %}
         {% endif %}
         {% if s[0] == shift_spacings | length %}
-          (least cable pull/hardest gear)
+          {% if info.side == "right" %}
+            (least cable pull/hardest gear)
+          {% else %}
+            (least cable pull/smallest chainring)
+          {% endif %}
         {% endif %}
       </td>
       <td>

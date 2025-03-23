@@ -78,6 +78,9 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement, name):
   plt.ylim(bottom=-1)
   plt.xticks(ticks=absolute_ticks, labels=absolute_labels)
   plt.tight_layout()
+  plt.ylabel("Cable Pull (mm)")
+  if info["side"] == "left":
+    plt.xlabel("Position")
   plt.savefig(f"{out_folder}/meas_avgs.png")
   plt.close()
 
@@ -91,6 +94,8 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement, name):
 
   avgs.plot.bar()
   plt.xticks(ticks=absolute_ticks, labels=absolute_labels)
+  if info["side"] == "left":
+    plt.xlabel("Position")
   plt.tight_layout()
   plt.savefig(f"{out_folder}/meas_stdev.png")
   plt.close()
@@ -100,6 +105,8 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement, name):
 
   relaxing_pulling_diffs.plot.bar()
   plt.xticks(ticks=absolute_ticks, labels=absolute_labels)
+  if info["side"] == "left":
+    plt.xlabel("Position")
   plt.tight_layout()
   plt.savefig(f"{out_folder}/meas_diffs.png")
   plt.close()
@@ -134,7 +141,10 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement, name):
 
   shift_avgs_df.plot.bar()
   plt.xticks(diff_ticks, diff_labels)
-  plt.xlabel("Shift")
+  if info["side"] == "right":
+    plt.xlabel("Shift")
+  else:
+    plt.xlabel("Position Change")
   plt.ylabel("Cable Pull (mm)")
   plt.tight_layout()
   plt.savefig(f"{out_folder}/shift_avgs.png")
@@ -142,17 +152,27 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement, name):
 
   # Cable Pull chart
 
-  cable_pull = np.mean(shift_averages[1:-1])
+  if info["side"] == "right":
+    cable_pull = np.mean(shift_averages[1:-1])
+  elif info["side"] == "left":
+    cable_pull = shift_averages.sum()
+  else:
+    raise Exception(info["side"])
+    
 
   shift_averages.plot.bar()
   plt.xticks(diff_ticks, diff_labels, ha='right')
-  plt.xlabel("Shift")
+  if info["side"] == "right":
+    plt.xlabel("Shift")
+  else:
+    plt.xlabel("Position Change")
   plt.ylabel("Cable Pull (mm)")
-  plt.plot([None] + [cable_pull] * (len(diff_labels)-2) + [None], color='tab:orange')
-  plt.annotate(f"Average Cable Pull: {round(cable_pull, 2)} mm",
-               (round(len(diff_labels) / 2), cable_pull),
-               xytext=(-72, 30), textcoords="offset points",
-               arrowprops={"facecolor": "black", "shrink": 0.1, "headwidth": 6, "headlength": 6, "width": 2})
+  if info["side"] == "right":
+    plt.plot([None] + [cable_pull] * (len(diff_labels)-2) + [None], color='tab:orange')
+    plt.annotate(f"Average Cable Pull: {round(cable_pull, 2)} mm",
+                (round(len(diff_labels) / 2), cable_pull),
+                xytext=(-72, 30), textcoords="offset points",
+                arrowprops={"facecolor": "black", "shrink": 0.1, "headwidth": 6, "headlength": 6, "width": 2})
   plt.title(f"{name} Cable Pull")
   plt.tight_layout()
   plt.savefig(f"{out_folder}/cable_pull.png", dpi=300)
@@ -169,6 +189,10 @@ def analyze(input_file, out_folder, mostPullIsLowestMeasurement, name):
   plt.clf()
   shift_stdevs_df.plot.bar()
   plt.xticks(diff_ticks, diff_labels)
+  if info["side"] == "right":
+    plt.xlabel("Shift")
+  else:
+    plt.xlabel("Position Change")
   plt.tight_layout()
   plt.savefig(f"{out_folder}/shift_stdev.png")
   plt.close()
@@ -204,10 +228,16 @@ for dir in os.listdir('shifters'):
 
   with open(f"shifters/{dir}/info.json") as info_file:
     info = json.load(info_file)
+  
+  if "side" not in info:
+    info["side"] = "right"
 
   mostPullIsLowestMeasurement = info["mostPullIsLowestMeasurement"] if "mostPullIsLowestMeasurement" in info else False
 
-  name = f"{info['brand']} {info['name']} {info['speeds']}-speed"
+  if info["side"] == "right":
+    name = f"{info['brand']} {info['name']} {info['speeds']}-speed"
+  else:
+    name = f"{info['brand']} {info['name']} {info['speeds']}-by"
   
   result = analyze(f"shifters/{dir}/measurements.csv", f"shifters/{dir}", mostPullIsLowestMeasurement, name)
 
